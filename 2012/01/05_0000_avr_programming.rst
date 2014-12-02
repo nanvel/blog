@@ -3,28 +3,28 @@ AVR-microcontroller programming under Ubuntu
 
 A programming device will be required for uploading firmware to uc. The easiest option is STK-200. How to assemble `read here <http://myrobot.ru/stepbystep/mc_programmer.php>`__. It is pretty simple:
 
-.. image:: https://raw.githubusercontent.com/nanvel/gblog/master/content/2012/01/stk200.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/01/stk200.png
     :width: 640px
     :alt: stk200 scheme
     :align: left
 
 This one was assembled by me:
 
-.. image:: https://raw.githubusercontent.com/nanvel/gblog/master/content/2012/01/stk200_my.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/01/stk200_my.png
     :width: 465px
     :alt: stk200 assembled by me
     :align: left
 
 There is one drawback in this program loader: LPT-port required. Another option is USB-ASP. Scheme, circuit board, and how to assemble read on `http://easyelectronics.ru <http://easyelectronics.ru>`__ or `elsewhere <https://www.google.com/search?q=usb-asp>`__. 
 
-.. image:: https://raw.githubusercontent.com/nanvel/gblog/master/content/2012/01/usb_asp_my.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/01/usb_asp_my.png
     :width: 500px
     :alt: usb asp programmer board
     :align: left
 
 I'll use a board on which ATMEGA8535, led and button are placed for demonstration.
 
-.. image:: https://raw.githubusercontent.com/nanvel/gblog/master/content/2012/01/test_board_my.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/01/test_board_my.png
     :width: 500px
     :alt: test board with avr uc
     :align: left

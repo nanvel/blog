@@ -1,7 +1,7 @@
 Good place to have a dinner on Chalong, Phuket
 ==============================================
 
-.. image:: https://raw.githubusercontent.com/nanvel/gblog/master/content/2014/11/phuket_chalong_tony.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/11/phuket_chalong_tony.png
     :width: 600px
     :alt: Tony's restaurant on Chalong, Phuket
     :align: left
