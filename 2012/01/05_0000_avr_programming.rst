@@ -183,6 +183,13 @@ Compilling assembler (AVRA):
 
     avra -I $(INCLUDEDIR) -fI -o $(FILE) $(FILE)
 
+.. youtube:: PV276wCVX2s
+    :align: left
+    :width: 500
+
+.. youtube:: toY4fjLI9GQ
+    :align: left
+    :width: 500
 
 .. info::
     :tags: Microcontrollers, AVR, Ubuntu
