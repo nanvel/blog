@@ -34,7 +34,7 @@ Looks like I can't easily select handler depends on request content in new torna
     # Ways I found:
     # - def get(self): if ... self.get_v20() else self.get_v10()
     # - override web.RequestHandler._execute
-    # override Application._get_host_handlers to allow to use HandlerFactory
+    # - override Application._get_host_handlers to allow to use HandlerFactory
 
 
     class TheApplication(web.Application):
