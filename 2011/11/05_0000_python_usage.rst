@@ -33,4 +33,4 @@
 
 .. info::
     :tags: Python, Ukrainian
-    :place: Alchevsk, Ukraine
+    :place: Alchevs'k, Ukraine

@@ -621,4 +621,4 @@ Have fun writing tests!
 
 .. info::
     :tags: Testing, TDD, Django
-    :place: Starobelsk, Ukraine
+    :place: Starobilsk, Ukraine

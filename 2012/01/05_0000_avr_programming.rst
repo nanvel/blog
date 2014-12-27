@@ -193,4 +193,4 @@ Compilling assembler (AVRA):
 
 .. info::
     :tags: Microcontrollers, AVR, Ubuntu
-    :place: Alchevsk, Ukraine
+    :place: Alchevs'k, Ukraine

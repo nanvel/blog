@@ -198,4 +198,4 @@ Django template tags
 
 .. info::
     :tags: Django
-    :place: Alchevsk, Ukraine
+    :place: Alchevs'k, Ukraine

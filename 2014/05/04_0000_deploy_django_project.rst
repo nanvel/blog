@@ -370,4 +370,4 @@ If You use it, keep in mind that only you responsible for possible damage caused
 
 .. info::
     :tags: Django, Nginx, Bash, DevOps
-    :place: Starobelsk, Ukraine
+    :place: Starobilsk, Ukraine
