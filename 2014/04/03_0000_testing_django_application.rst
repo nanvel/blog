@@ -615,7 +615,7 @@ Use StringIO to obtain stdout/stderr.
 Have fun writing tests!
 
 .. blockquote::
-    :content: Tests are the Programmer's stone, transmuting fear into boredom.
+    :content: Tests are the Programmer's stone,<br>transmuting fear into boredom.
     :author: Kent Beck
     :author_url: http://en.wikipedia.org/wiki/Kent_Beck
 
