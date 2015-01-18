@@ -103,3 +103,7 @@ Plans for 2015
 - Learn AngularJS
 - DynamoDB book
 - Leave more time for sport/relax
+
+.. info::
+    :tags: Life
+    :place: Phuket, Thailand
