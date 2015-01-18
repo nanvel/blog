@@ -6,7 +6,7 @@ New Year abroad
 
 2013-2014 I met on the highest point of Phuket island.
 
-2014-2015 I was wakened by fireworks bangs in hostel in Bangkok, and next day was spent riding bicycle and walking on Bangkok streets.
+2014-2015 I was wakened by fireworks bangs in hostel in Bangkok, and next day was spent riding bicycle and walking in Bangkok.
 
 A lot of people was met and places was seen
 -------------------------------------------
@@ -74,7 +74,7 @@ Spent hundreds of hours working with Tornado web framework and amazon web servic
 ---------------------
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/01/i2048.png
-    :width: 360px
+    :width: 240px
     :alt: 4096
     :align: left
 
@@ -91,7 +91,7 @@ I decide that it easier to write and store my blog posts in restructured text fo
 Stop my university education
 ------------------------------
 
-8 years in university it too much. And my university is under control of terrorists now. I decided that it is a right time to stop my university study, besides in last time I don't find anything interesting/useful for me in the university.
+8 years in university it too much. And my university is under control of terrorists now. I decided that now is a right time to stop my university study, besides in last time I don't find anything interesting/useful for me in the university.
 
 Plans for 2015
 --------------
