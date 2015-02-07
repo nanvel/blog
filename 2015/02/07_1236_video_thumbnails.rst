@@ -2,7 +2,7 @@ Get youtube/vimeo/vevo/vine videos thumbnails
 =============================================
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/02/thumbnails.png
-    :width: 809px
+    :width: 800px
     :alt: Video thumbnails
     :align: left
 
