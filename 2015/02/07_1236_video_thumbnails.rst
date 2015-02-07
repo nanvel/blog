@@ -1,6 +1,11 @@
 Get youtube/vimeo/vevo/vine videos thumbnails
 =============================================
 
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/02/thumbnails.png
+    :width: 809px
+    :alt: Video thumbnails
+    :align: left
+
 .. code-block:: python
 
     import re
