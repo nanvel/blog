@@ -1,5 +1,5 @@
-Get youtube/vimeo/vevo/vine videos thumbnails
-=============================================
+Get youtube/vimeo/vevo/vine video thumbnail
+===========================================
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/02/thumbnails.png
     :width: 800px
