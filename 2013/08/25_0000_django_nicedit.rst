@@ -156,4 +156,4 @@ See `testproject <https://github.com/nanvel/django-nicedit/tree/master/testproje
 
 .. info::
     :tags: Django, NicEdit
-    :place: Starobelsk, Ukraine
+    :place: Starobilsk, Ukraine
