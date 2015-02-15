@@ -94,7 +94,7 @@ HTML/CSS best practice
 18. Use '.8em' instead of '0.8em'
 ---------------------------------
 
-19. '#fff' more preferable than '#ffffff'
+19. '#fff' better than '#ffffff'
 -----------------------------------------
 
 20. New line for every selector
