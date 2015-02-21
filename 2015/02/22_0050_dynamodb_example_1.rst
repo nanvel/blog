@@ -7,7 +7,7 @@ Finally I decide that I spent enough time and made enough mistakes using dynamod
 
 and use these posts as source of examples.
 
-To run examples code locally You need to install botocore and place your amazon access keys to ~/.boto file:
+To run examples code locally, You need to install botocore and place your amazon access keys to ~/.boto file:
 
 ::
 
@@ -159,7 +159,7 @@ Brief description of arguments I passed to CreateTable request:
 Provisioned throughput [`Documentation <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProvisionedThroughputIntro.html>`__]
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You should specify how many read/write requests You expect. Don't bother about value You need on table creation, You always can edit throughput using `dynamodb console <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ConsoleDynamoDB.html>`__ or using `API <http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html>`__, it requires only few minutes to update it.
+You should specify how many read/write requests You expect. Don't bother about value You need on table creation, set it to 1, You always can edit throughput using `dynamodb console <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ConsoleDynamoDB.html>`__ or using `API <http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html>`__, it requires only few minutes to update.
 
 You pay for throughput, so better keep it as small as possible:
     - use caching
