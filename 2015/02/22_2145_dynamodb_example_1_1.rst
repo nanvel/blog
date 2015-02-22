@@ -251,7 +251,7 @@ DDBTable and fields classes:
                     val[self.FIELDS[key].AMAZON_TYPE])
             return data
 
-If You use tornado, try tornado-botocore:
+If You use tornado, try `tornado-botocore <https://github.com/nanvel/tornado-botocore>`__:
 
 .. code-block:: python
 
