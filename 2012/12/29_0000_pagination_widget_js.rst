@@ -1,9 +1,9 @@
 Pagination widget js
 ====================
 
-.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/12/pagination_js.png
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/12/pagination_js.png
     :width: 625px
-    :alt: Video thumbnails
+    :alt: Pagination widget
     :align: left
 
 `pagination.js at Bitbucket <https://bitbucket.org/nanvel/paginationjs>`__.
