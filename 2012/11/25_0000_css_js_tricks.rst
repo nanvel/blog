@@ -116,6 +116,28 @@ Disable autocomplete
 
     <input type="text" autocomplete="off">
 
+Open link in new tab
+--------------------
+
+.. code-block:: js
+
+    window.open(url, '_blank');
+    window.focus();
+
+Check browser is Chrome
+-----------------------
+
+.. code-block:: js
+
+    var is_chrome = /chrome/.test(navigator.userAgent.toLowerCase()
+
+Submit form in new tab
+----------------------
+
+.. code-block:: html
+
+    <form target="_blank">...</form>
+
 .. info::
     :tags: CSS, JS
     :place: Alchevs'k, Ukraine
