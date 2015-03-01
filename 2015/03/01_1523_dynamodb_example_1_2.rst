@@ -240,7 +240,7 @@ Updated User Wallet example:
         # not required, just for example
 
         def update_(self, user_id, balance):
-            """ Synchronous methos
+            """ Synchronous method
             """
             message = self._dynamodb(operation='UpdateItem').call(
                 TableName=self._get_table_name(),
