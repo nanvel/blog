@@ -42,7 +42,7 @@ Send smail in django code:
     def send_mail(template, context, emails, from_email=None):
         if not from_email:
             from_email = settings.DEFAULT_FROM_EMAIL
-        txt_content = render_to_string('{template}.txt',format(template=template), context)
+        txt_content = render_to_string('{template}.txt'.format(template=template), context)
         html_content = render_to_string('{template}.html'.format(template=template), context)
         subject = render_to_string('{template}_subject.txt'.format(template=template), context)
         subject = ' '.join(subject.split('\n'))
