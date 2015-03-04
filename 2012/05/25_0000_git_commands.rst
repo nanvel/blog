@@ -123,6 +123,13 @@ Pull latest branch code from remote repository:
 
     git pull origin my_branch
 
+Pull latest changes from remote repository and ignore local changes:
+
+.. code-block:: bash
+
+    git fetch
+    git reset --hard origin/mybranch
+
 Delete local branch:
 
 .. code-block:: bash
