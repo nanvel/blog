@@ -17,7 +17,7 @@ project/requirements.txt:
     django==1.4.3
     south==0.7.6
 
-Create project, add users application, add `users` and `south` to INSTALLED_APPS, configure  DATABASES.
+Create project, add users application, add ``users`` and ``south`` to INSTALLED_APPS, configure  DATABASES.
 
 .. code-block:: bash
 
@@ -126,18 +126,18 @@ As simple as before, just schemamigration -> migrate:
 
 **Increase complexity:**
 
-instead `name`, we need to use fname and lname, and we already have some data in the table.
+instead ``name``, we need to use fname and lname, and we already have some data in the table.
 
-We can accomplish this with two schema- and one data-migration. In data-migration we need to copy data from `name` field to `fname` and `lname` fields, for example:
+We can accomplish this with two schema- and one data-migration. In data-migration we need to copy data from ``name`` field to ``fname`` and ``lname`` fields, for example:
 
 .. code-block:: text
 
     (name == 'Mikuru Asahina') -> (fname == 'Mikuru', lname == 'Asahina')
 
 Roadmap:
-    - add `fname` and `lname` fields
-    - copy data from `name` field to `fname` and `lname`
-    - remove `name` field
+    - add ``fname`` and ``lname`` fields
+    - copy data from ``name`` field to ``fname`` and ``lname``
+    - remove ``name`` field
 
 .. code-block:: python
 
@@ -171,7 +171,7 @@ Create data-migration:
     python manage.py datamigration users split_name
     Created 0006_split_name.py.
 
-Edit automatically created project/users/migrations/0006_split_name.py file.
+Edit automatically created ``project/users/migrations/0006_split_name.py`` file.
 
 .. code-block:: python
 
@@ -206,7 +206,7 @@ Migration execution looks the same as for schema-migration:
      - Loading initial data for users.
     Installed 0 object(s) from 0 fixture(s)
 
-Finally remove `name` field:
+Finally remove ``name`` field:
 
 .. code-block:: python
 
