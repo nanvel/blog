@@ -90,4 +90,4 @@ Links:
 
 .. info::
     :tags: Django
-    :place: Alchevs'k, Ukraine
+    :place: Starobilsk, Ukraine
