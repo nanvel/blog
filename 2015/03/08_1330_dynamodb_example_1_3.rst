@@ -70,6 +70,28 @@ Let's write a functional test for our previous example to see how it works:
         # 
         # OK
 
+You also may use decorator like this instead ``@mock.patch``:
+
+.. code-block:: python
+
+    import functools
+
+    from mock import patch
+
+
+    DDB_LOCAL_URL = 'http://localhost:8010'
+
+
+    def with_ddb_local(method):
+
+        @functools.wraps(method)
+        def wrapper(self, *args, **kwargs):
+            return patch(
+                'example_1.DDBUserWallet._get_endpoint_url',
+                new=lambda x: DDB_LOCAL_URL)(
+                    method)(self, *args, **kwargs)
+        return wrapper
+
 .. info::
     :tags: DynamoDB, Testing
     :place: Phuket, Thailand
