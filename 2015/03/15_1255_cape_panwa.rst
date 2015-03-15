@@ -30,5 +30,5 @@ Places:
         - `Nice place to walk 3 <https://www.google.com.au/maps/place/7.816055,98.385389/@7.816055,98.385389,16z>`__
 
 .. info::
-    :tags: Places
+    :tags: Places, Phuket
     :place: Phuket, Thailand
