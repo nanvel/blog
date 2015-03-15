@@ -1,7 +1,7 @@
 [Django] Session. Control and testing
 =====================================
 
-Before use request.session.session_key in view, check that it exists first:
+Before use ``request.session.session_key`` in view, check that it exists first:
 
 .. code-block:: python
 
@@ -22,7 +22,7 @@ If we need to control session manually, we can do like this:
         return response
         # the first changes will be saved and the second - no
 
-As for testing, TestCase.client doesn't has session, but we can add it:
+As for testing, ``TestCase.client`` doesn't has session, but we can add it:
 
 .. code-block:: python
 
