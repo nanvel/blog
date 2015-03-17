@@ -1,7 +1,7 @@
 Books
 =====
 
-Before 2012
+Before 2013
 -----------
 
     - ...
@@ -9,23 +9,20 @@ Before 2012
     - Лезвие бритвы by Иван Ефремов
     - Пригоди Шерлока Холмса і доктора Ватсона by Артур Конан Дойль
     - Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds and David Diamond
-
-~ 2012
-------
-
     - I, Woz: Computer Geek to Cult Icon: Getting to the Core of Apple's Inventor by Steve Wozniak
     - Getting Things Done: The Art of Stress-Free Productivity by David Allen
     - ReWork: Change the Way You Work Forever by Jason Fried and David Heinemeier Hansson
     - Purple Cow: Transform Your Business by Being Remarkable by Seth Godin
-    - HTML5: Up and Running by Mark Pilgrim
+    - 
 
-~ 2013
-------
+2013
+----
 
     - Remote: Office Not Required by David Heinemeier Hansson and Jason Fried
     - The $100 Startup: Fire Your Boss, Do What You Love and Work Better to Live More by Chris Guillebeau
     - The 4-Hour Work Week: Escape the 9-5, Live Anywhere and Join the New Rich by Timothy Ferriss
     - A Japanese Schoolgirl by Yoko Kajihara
+    - HTML5: Up and Running by Mark Pilgrim
     - Two Scoops of Django: Best Practices for Django 1.5 by Daniel Greenfeld and Audrey Roy
 
 2014
