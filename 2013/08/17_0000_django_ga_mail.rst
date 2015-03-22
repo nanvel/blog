@@ -6,7 +6,7 @@ django-ga-mail reusable app
     :alt: Analytics letter
     :align: left
 
-Today I published django-ga-mail app on pypi. This app just sends analytics to my email box few times a week, so I don't need to open Google Analytics site to view analytics.
+Today I published ``django-ga-mail`` app on pypi. This app just sends analytics to my email box few times a week, so I don't need to open Google Analytics site to view analytics.
 
 GitHub: https://github.com/nanvel/django-ga-mail
 
@@ -18,7 +18,7 @@ Installation is quite simple.
 
     $ pip install django-ga-mail
 
-Add ga_mail to your INSTALLED_APPS:
+Add ga_mail to your ``INSTALLED_APPS``:
 
 .. code-block:: python
 
@@ -55,7 +55,7 @@ Available blocks:
 
 Call ``python manage.py ga_mail`` to send analytics report.
 
-I added next line to /etc/crontab to send analytics one time a week:
+I added next line to ``/etc/crontab`` to send analytics one time a week:
 
 .. code-block:: text
 
