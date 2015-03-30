@@ -22,6 +22,12 @@ Places:
     - `Secret Cove restauran <https://www.google.com.au/maps/place/7.814305,98.395755/@7.814305,98.395755,16z>`__
     - Noname
         - `Tasty pizza <https://www.google.com.au/maps/place/7.818940,98.400446/@7.818940,98.400446,16z>`__
+
+            .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/03/pizza_panwa.jpg
+                :width: 400px
+                :alt: Pizza on Panwa
+                :align: left
+
         - `Good view 1 <https://www.google.com.au/maps/place/7.817394,98.396323/@7.817394,98.396323,16z>`__
         - `Good view 2 <https://www.google.com.au/maps/place/7.835344,98.390355/@7.835344,98.390355,16z>`__
         - `Good view 3 <https://www.google.com.au/maps/place/7.836914,98.408443/@7.836914,98.408443,16z>`__
