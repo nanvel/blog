@@ -230,4 +230,4 @@ If You need to iterate through all query results:
 
 .. info::
     :tags: DynamoDB
-    :place: Kuala Lumpur, Malaysia
+    :place: KLIA2, Malaysia
