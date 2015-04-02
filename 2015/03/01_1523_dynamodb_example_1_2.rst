@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)
 ===================================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 The trick is to use tornado AsyncHTTPClient instead of one used in botocore.
 tornado-botocore just patch botocore code, it is dirty workaround but I didn't found easier way to make it works.
 I use it with botocore version 0.65.0 and It may be incompatible with other versions.

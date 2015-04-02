@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 2.3: Pagination
 =============================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 Let's add pagination for the page views example.
 
 .. code-block:: python

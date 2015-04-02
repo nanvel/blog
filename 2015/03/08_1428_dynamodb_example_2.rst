@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 2: Unique page views
 ==================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 The simplest case:
     - store user/page views
     - allow to check user already viewed specified page

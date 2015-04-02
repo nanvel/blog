@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 2.1: Key schema and counters
 ==========================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 DynamoDB table may have two variants of `key schema <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html#DataModel.PrimaryKey>`__:
     - HASH key
     - HASH key + RANGE key

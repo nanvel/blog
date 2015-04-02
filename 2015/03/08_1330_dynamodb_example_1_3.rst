@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 1.3: DynamoDB local and testing
 =============================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 May be useful for:
     - development without steady internet connection
     - testing

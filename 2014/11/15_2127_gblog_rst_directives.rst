@@ -74,6 +74,7 @@ Meta information
 
 Links:
     - `GBlog on GitHub <https://github.com/nanvel/gblog>`__
+    - `Restructured Text and Sphinx CheatSheet <http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`__
 
 .. info::
     :tags: RST

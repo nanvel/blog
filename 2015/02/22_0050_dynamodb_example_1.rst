@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 1: User wallet table
 ==================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 Finally I decide that I spent enough time and made enough mistakes using dynamodb to write my small tutorial for it. I am going to show few examples of dynamodb usage because of I didn't find good enough 'close to real life' examples. If You haven't any experience with dynamodb, I recommend to start from `dynamodb documentation <http://aws.amazon.com/documentation/dynamodb/>`__, or these books:
     - `Mastering DynamoDB <http://www.amazon.com/Mastering-DynamoDB-Tanmay-Deshpande-ebook/dp/B00N1X691W/>`__
     - `DynamoDB Applied Design Patterns <http://www.amazon.com/DynamoDB-Applied-Design-Patterns-Uchit-ebook/dp/B00NVDAWSS/>`__

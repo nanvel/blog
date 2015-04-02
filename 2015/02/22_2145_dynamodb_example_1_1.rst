@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 1.1: DDBTable class
 =================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 I refactored previous example into:
 
 .. code-block:: python

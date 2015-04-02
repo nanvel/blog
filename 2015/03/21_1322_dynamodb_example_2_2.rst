@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 2.2: Table secondary indexes
 ==========================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 DynamoDB table may have two kinds of secondary indexes:
     - local
     - global
