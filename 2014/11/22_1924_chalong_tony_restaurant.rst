@@ -22,7 +22,7 @@ What to try:
 Vegetable curry:
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/11/curry.jpg
-    :width: 800px
+    :width: 598px
     :alt: Vegetable curry
     :align: left
 
