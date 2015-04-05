@@ -19,6 +19,13 @@ What to try:
     - curry (massaman, green, red)
     - carbonara
 
+Vegetable curry:
+
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/11/curry.jpg
+    :width: 800px
+    :alt: Vegetable curry
+    :align: left
+
 .. coordinate:: 7.852532 98.347867
     :alt: Tony's restaurant on Chalong, Phuket
 
