@@ -5,7 +5,80 @@ How to create it
 ----------------
 
 - Abstract factory
-- Builder
+- `Builder <http://en.wikipedia.org/wiki/Builder_pattern>`__
+
+    Instead of using numerous constructors use only one + methods to modify it.
+
+    .. code-block:: python
+
+        class Car(object):
+
+            def __init__(self):
+                self._wheels = []
+                self._engine = None
+                self._body = None
+
+            def attachWheel(self, size):
+                self._wheels.append(Wheel(size=size))
+
+            def setEngine(self, horsepower):
+                self._engine = Engine(horsepower=horsepower)
+
+            def setBody(self, shape):
+                self._body = Body(shape=shape)
+
+            def getConfiguration(self):
+                return str(self._body), str(self._engine), str(self._wheels)
+
+
+        class Wheel(object):
+
+            def __init__(self, size=16):
+                self._size = size
+
+            def __str__(self):
+                return 'Wheel size {size}.'.format(size=self._size)
+
+
+        class Engine(object):
+
+            def __init__(self, horsepower=85):
+                self._horsepower = horsepower
+
+            def __str__(self):
+                return 'Engine horsepower {horsepower}.'.format(horsepower=self._horsepower)
+
+
+        class Body(object):
+
+            def __init__(self, shape='hatchback'):
+                self._shape = shape
+
+            def __str__(self):
+                return 'Body shape {shape}.'.format(shape=self._shape)
+
+
+        class CarBuilder(object):
+
+            def buid(self, wheel_size, engine_horsepower, body_shape):
+                car = Car()
+                car.setBody(shape=body_shape)
+                car.setEngine(horsepower=engine_horsepower)
+                for i in range(4):
+                    car.attachWheel(size=wheel_size)
+                return car
+
+
+        if __name__ == '__main__':
+            car = CarBuilder().buid(wheel_size=10, engine_horsepower=100, body_shape='hatchback')
+            print(car.getConfiguration())
+            # ('Body shape hatchback.', 'Engine horsepower 100.', '[<__main__.Wheel object at 0x10e0b01d0>, <__main__.Wheel object at 0x10e0b0210>, <__main__.Wheel object at 0x10e0b0250>, <__main__.Wheel object at 0x10e0b0290>]')
+
+
+    Links:
+        - https://gist.github.com/pazdera/1121157
+
+
 - `Factory method <http://en.wikipedia.org/wiki/Factory_method_pattern>`__
 
     The essence of this pattern is to "Define an interface for creating an object, but let the classes that implement the interface decide which class to instantiate. The Factory method lets a class defer instantiation to subclasses [`Design Patterns: Elements of Reusable Object-Oriented Software from the Gang Of Four <http://en.wikipedia.org/wiki/Design_Patterns>`__].
