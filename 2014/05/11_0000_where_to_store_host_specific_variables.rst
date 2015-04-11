@@ -63,4 +63,4 @@ To make ``SOME_VAR`` available in ``django.conf.settings``:
 
 .. info::
     :tags: Django
-    :place: Starobilsk, Ukraine
+    :place: Kyiv, Ukraine
