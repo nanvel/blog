@@ -28,6 +28,8 @@ Implemented tags feature (thanks to `tags manager <http://welldonethings.com/tag
     :alt: amvhub tags
     :align: left
 
+Edit:
+
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2013/07/amvhub_tags2.png
     :width: 413px
     :alt: amvhub tags edit
