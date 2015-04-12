@@ -1,6 +1,8 @@
 DynamoDB in examples, Example 3: Toys store orders
 ==================================================
 
+`Table of contents <http://nanvel.com/p/dynamodb>`__
+
 Lets imagin that we working on online toys store. Current task is:
     - track orders processing
     - save user/product purchases for analysing in future
