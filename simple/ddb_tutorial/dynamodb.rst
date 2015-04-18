@@ -11,3 +11,4 @@ Table of contents:
     - `DynamoDB in examples, Example 2.2 <http://nanvel.com/b/1426944120>`__: Table secondary indexes
     - `DynamoDB in examples, Example 2.3 <http://nanvel.com/b/1427633760>`__: Pagination
     - `DynamoDB in examples, Example 3 <http://nanvel.com/b/1428842700>`__: Toys store orders
+    - `DynamoDB in examples, Example 3.1 <http://nanvel.com/b/1429354560>`__: Does DynamoDB fits my requirements?
