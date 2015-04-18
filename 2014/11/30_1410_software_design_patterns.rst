@@ -227,7 +227,13 @@ How it behaves
 - Iterator
 - Mediator
 - Memento
-- Observer
+- `Observer <http://en.wikipedia.org/wiki/Observer_pattern>`__
+
+    Pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. 
+
+    Links:
+        - http://www.giantflyingsaucer.com/blog/?p=5117
+
 - State
 - Strategy
 - TemplateMethod

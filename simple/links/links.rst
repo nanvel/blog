@@ -15,6 +15,7 @@ Python:
 JS:
     - `jQuery учебник для начинающих <http://anton.shevchuk.name/jquery-book/>`__ by Anton Shevchuk 
     - `AngularJS video lessons on egghead.io <https://egghead.io/lessons/>`__
+    - `D3 (Data-Driven Documents) <http://d3js.org/>`__
 
 CSS:
     - `Pure: a set of small, responsive CSS modules <href="http://purecss.io/>`__
@@ -29,6 +30,9 @@ Instruments:
     - `Spinner gif generator <http://www.ajaxload.info/>`__
     - `Time Track Pro <https://itunes.apple.com/us/app/time-track-pro-document-web/id429813050>`__ - document and web activity monitoring
     - `Siege <http://www.joedog.org/siege-home/>`__ - Load testing
+
+Blogs:
+    - `Mike Bostock <http://bost.ocks.org/mike/>`__
 
 Startups
 --------
