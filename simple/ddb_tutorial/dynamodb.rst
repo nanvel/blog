@@ -12,3 +12,4 @@ Table of contents:
     - `DynamoDB in examples, Example 2.3 <http://nanvel.com/b/1427633760>`__: Pagination
     - `DynamoDB in examples, Example 3 <http://nanvel.com/b/1428842700>`__: Toys store orders
     - `DynamoDB in examples, Example 3.1 <http://nanvel.com/b/1429354560>`__: Does DynamoDB fits my requirements?
+    - `DynamoDB in examples, Example 3.2 <http://nanvel.com/b/1430491920>`__: FilterExpression and pagination issue

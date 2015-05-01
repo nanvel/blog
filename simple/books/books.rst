@@ -36,6 +36,11 @@ Before 2013
     - Forrest Gump by Winston Groom
     - Growth Hacker Marketing: A Primer on the Future of PR, Marketing and Advertising by Ryan Holiday
 
+2015
+----
+
+    - Data Science for Business: What you need to know about data mining and data-analytic thinking by Foster Provost and Tom Fawcett
+
 In progress
 -----------
 
@@ -43,4 +48,3 @@ In progress
     - A Practical Guide to Designing for the Web by Mark Boulton
     - A Tale for the Time Being by Ruth Ozeki
     - Learning Python Design Patterns by Gennadiy Zlobin
-    - Data Science for Business: What you need to know about data mining and data-analytic thinking by Foster Provost and Tom Fawcett
