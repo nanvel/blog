@@ -18,7 +18,7 @@
 Плата під'єднується до комп'ютера за допомогою data cable від мобільного телефону.
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2011/11/tetris3.jpg
-    :width: 640px
+    :width: 480px
     :alt: Tetris, board
     :align: left
 
