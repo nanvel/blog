@@ -5,7 +5,7 @@ Tesla coil experiment
     :align: left
     :width: 480
 
-Decided to check it really works.
+Decide to check it really works.
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2012/02/tc1.jpg
     :width: 400px
