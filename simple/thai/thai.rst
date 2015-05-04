@@ -43,5 +43,14 @@ Numbers
     - 100 000: **sa:en**
     - 1000 000: **la:n**
 
+2015-05-04
+----------
+
+    - ni-thao-rai - how much is this? (ni - this)
+    - su:n - zero
+    - neung - 1
+    - sa:wng - 2
+    - sa:m - 3
+
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
