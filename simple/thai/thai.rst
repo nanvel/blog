@@ -33,7 +33,7 @@ Numbers
     - 6: **hohk**
     - 7: **jet**
     - 8: **bpa:et**
-    - 9: **ga:0**
+    - 9: **ga:o**
 
 10 - 1000 000:
     - 10: **sip**
@@ -46,11 +46,24 @@ Numbers
 2015-05-04
 ----------
 
-    - ni-thao-rai - how much is this? (ni - this)
-    - su:n - zero
-    - neung - 1
-    - sa:wng - 2
-    - sa:m - 3
+============ ==============================
+ni-thao-rai  how much is this? (ni - this)
+su:n         zero
+neung        1
+sa:wng       2
+sa:m         3
+============ ==============================
+
+2015-05-05
+----------
+
+======= ==
+se      4
+ha      5
+hohk    6
+jet     7
+bpa:et  8
+======= ==
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
