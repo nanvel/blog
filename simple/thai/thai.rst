@@ -65,5 +65,16 @@ jet     7
 bpa:et  8
 ======= ==
 
+2015-05-06
+----------
+
+============= ==================
+ga:o          9
+sip           10
+r^a:wy        100
+mai-bpen-rai  it's not big deal
+no:k          bird
+============= ==================
+
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
