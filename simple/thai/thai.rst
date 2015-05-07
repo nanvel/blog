@@ -49,8 +49,8 @@ Numbers
 ============ ==============================
 ni-thao-rai  how much is this? (ni - this)
 su:n         zero
-neung        1
-sa:wng       2
+neun         1
+sa:wn        2
 sa:m         3
 ============ ==============================
 
@@ -58,7 +58,7 @@ sa:m         3
 ----------
 
 ======= ==
-se      4
+see     4
 ha      5
 hohk    6
 jet     7
@@ -75,6 +75,17 @@ r^a:wy        100
 mai-bpen-rai  it's not big deal
 no:k          bird
 ============= ==================
+
+2015-05-07
+----------
+
+============= ==========
+wan chan      Monday
+wan ankhaal   Tuesday
+wan put       Wednesday
+wan plua hut  Thursday
+wan suk       Friday
+============= ==========
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
