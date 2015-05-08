@@ -87,5 +87,16 @@ wan plua hut  Thursday
 wan suk       Friday
 ============= ==========
 
+2015-05-08
+----------
+
+========== ==========
+wan sor    Saturday
+wan athit  Sunday
+wanee      today
+meuwan     yesterday
+proongni   tomorrow
+========== ==========
+
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
