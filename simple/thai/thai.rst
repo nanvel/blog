@@ -79,13 +79,13 @@ no:k          bird
 2015-05-07
 ----------
 
-============= ==========
-wan chan      Monday
+============= ====================
+wan chan      Monday (wan == day)
 wan ankhaal   Tuesday
 wan put       Wednesday
 wan plua hut  Thursday
 wan suk       Friday
-============= ==========
+============= ====================
 
 2015-05-08
 ----------
@@ -97,6 +97,30 @@ wanee      today
 meuwan     yesterday
 proongni   tomorrow
 ========== ==========
+
+2015-05-09
+----------
+
+=============== ===========================
+do              see
+hen             see (looking on)
+mong            see (looking continuously)
+tham            do
+wehla           time
+wehla thao rai  what the time
+kii mong        what the time
+=============== ===========================
+
+2015-05-10
+----------
+
+======= ============
+wat     temple
+soi     side street
+sunakh  dog
+mew     cat
+yung    mosquito
+======= ============
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
