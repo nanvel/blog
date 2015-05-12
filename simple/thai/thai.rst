@@ -122,5 +122,7 @@ mew     cat
 yung    mosquito
 ======= ============
 
+kochai understand
+
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
