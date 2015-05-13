@@ -101,15 +101,13 @@ proongni   tomorrow
 2015-05-09
 ----------
 
-=============== ===========================
-do              see
-hen             see (looking on)
-mong            see (looking continuously)
-tham            do
-wehla           time
-wehla thao rai  what the time
+=============== ==============
+I am            shan
+he/she          khao
+wehla:          time
+wehla: thao rai what the time
 kii mong        what the time
-=============== ===========================
+=============== ==============
 
 2015-05-10
 ----------
@@ -122,7 +120,16 @@ mew     cat
 yung    mosquito
 ======= ============
 
-kochai understand
+2015-05-13
+----------
+
+============= ===========
+kochai        understand
+dee           good
+maak          so much
+dee maak      so good
+makkura khum  january
+============= ===========
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
