@@ -57,13 +57,13 @@ sa:m         3
 2015-05-05
 ----------
 
-======= ==
-see     4
-ha      5
-hohk    6
-jet     7
-bpa:et  8
-======= ==
+====== ==
+see    4
+ha     5
+hohk   6
+jet    7
+bpe:t   8
+====== ==
 
 2015-05-06
 ----------
@@ -71,7 +71,7 @@ bpa:et  8
 ============= ==================
 ga:o          9
 sip           10
-r^a:wy        100
+nin rrooi     100
 mai-bpen-rai  it's not big deal
 no:k          bird
 ============= ==================
@@ -130,6 +130,29 @@ maak          so much
 dee maak      so good
 makkura khum  january
 ============= ===========
+
+2015-05-14
+----------
+
+============ =====
+yee sip      20
+jesip        70
+bpaesip      80
+neung rroii  100
+phan         1000
+============ =====
+
+2015-05-15
+----------
+
+============== =======================
+sip at         11 (at == 1 for 11-91)
+thee neung     first
+thee sip et    11-th
+sabai dee mei  how are You?
+sabai dee      fine
+arrooe         tasty
+============== =======================
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
