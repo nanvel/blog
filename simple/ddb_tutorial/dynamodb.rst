@@ -14,3 +14,4 @@ Table of contents:
     - `DynamoDB in examples, Example 3.1 <http://nanvel.com/b/1429354560>`__: Does DynamoDB fits my requirements?
     - `DynamoDB in examples, Example 3.2 <http://nanvel.com/b/1430491920>`__: FilterExpression and pagination issue
     - `DynamoDB in examples, Example 3.3 <http://nanvel.com/b/1431299280>`__: Mark item as deleted
+    - `DynamoDB in examples, Example 4 <http://nanvel.com/b/1431880800>`__: Tweets. Throttled reads and caching

@@ -154,5 +154,20 @@ sabai dee      fine
 arrooe         tasty
 ============== =======================
 
+2015-05-17
+----------
+
+================ =============
+chok dee         bye
+ratri swat       goog night
+swaadi ton shao  good morning
+left             saay
+right            khwa
+================ =============
+
+fruits
+months
+colors
+
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
