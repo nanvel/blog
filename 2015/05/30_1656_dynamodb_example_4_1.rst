@@ -136,6 +136,6 @@ This example is pretty useless for implemetation search feature in real projects
 
 But in some cases this functionality may be enough (suggest hash tags for example). And it is pretty fast and scalable.
 
-.. info:
+.. info::
     :tags: DynamoDB
     :place: Chasopys, Kyiv, Ukraine
