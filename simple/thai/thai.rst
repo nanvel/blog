@@ -159,15 +159,31 @@ arrooe         tasty
 
 ================ =============
 chok dee         bye
-ratri swat       goog night
-swaadi ton shao  good morning
+ratri sawat      goog night
+arrun sawat      good morning
 left             saay
 right            khwa
 ================ =============
 
+2015-05-20
+----------
+
+see-kharw White
+see-dum Black
+see-khiaw Green
+see-daeng Red
+see-lhoerng Yellow
+see-far Blue
+see-num-tarn Brown
+see-som Orange
+see-chom-poo Pink
+see-tao Gray
+
+
 fruits
 months
 colors
+dishes
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__

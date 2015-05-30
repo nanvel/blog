@@ -15,3 +15,8 @@ Table of contents:
     - `DynamoDB in examples, Example 3.2 <http://nanvel.com/b/1430491920>`__: FilterExpression and pagination issue
     - `DynamoDB in examples, Example 3.3 <http://nanvel.com/b/1431299280>`__: Mark item as deleted
     - `DynamoDB in examples, Example 4 <http://nanvel.com/b/1431880800>`__: Tweets. Throttled reads and caching
+    - `DynamoDB in examples, Example 4.1 <http://nanvel.com/b/1433004960>`__: Search
+
+See also:
+    - `Amazon DynamoDB - DataStax Developer Blog <http://www.datastax.com/dev/blog/amazon-dynamodb>`__
+    - `Dynamo: Amazon’s Highly Available Key-value Store <http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf>`__
