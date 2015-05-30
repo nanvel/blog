@@ -6,8 +6,6 @@ Testing Django applications
     :alt: Tests results in console
     :align: left
 
-I wrote few posts about testing django applications and now I decide to join them all into one.
-
 .. blockquote::
     :content: Code without tests is broken by design.
     :author: Jacob Kaplan-Moss
