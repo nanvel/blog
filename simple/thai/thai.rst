@@ -168,21 +168,23 @@ right            khwa
 2015-05-20
 ----------
 
-see-kharw White
-see-dum Black
-see-khiaw Green
-see-daeng Red
-see-lhoerng Yellow
-see-far Blue
-see-num-tarn Brown
-see-som Orange
-see-chom-poo Pink
-see-tao Gray
-
+============= =======
+see-kharw     White
+see-dum       Black
+see-khiaw     Green
+see-daeng     Red
+see-lhoerng   Yellow
+see-far       Blue
+see-num-tarn  Brown
+see-som       Orange
+see-chom-poo  Pink
+see-tao       Gray
+============= =======
 
 fruits
+
 months
-colors
+
 dishes
 
 Links:
