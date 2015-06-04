@@ -189,3 +189,4 @@ dishes
 
 Links:
     - `Thai Numbers and Numerals <http://www.thai-language.com/ref/numbers>`__
+    - `Learn thai with Mod <http://learnthaiwithmod.com/>`__
