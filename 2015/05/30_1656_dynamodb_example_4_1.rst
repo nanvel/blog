@@ -123,6 +123,7 @@ DynamoDB in examples, Example 4.1: Search
         print(ddb_tweet.search(text='t'))
         print(ddb_tweet.search(text='text4'))
         print(ddb_tweet.search(text='not found'))
+
         # ([{'upper_first': 'T', 'upper_rest': 'EXT1', 'tweet_id': '5aac3887-3da4-41c3-b158-4d9624248e46', 'text': 'text1', 'created': '2015-05-30 13:43:01.174688'}, {'upper_first': 'T', 'upper_rest': 'EXT2', 'tweet_id': '95b8330a-0d56-41b8-9389-a8ae4fd27d70', 'text': 'text2', 'created': '2015-05-30 13:43:01.265926'}, {'upper_first': 'T', 'upper_rest': 'EXT3', 'tweet_id': 'd079d36b-e902-4f0e-91de-03b285756d27', 'text': 'text3', 'created': '2015-05-30 13:43:01.290698'}, {'upper_first': 'T', 'upper_rest': 'EXT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
         # ([{'upper_first': 'T', 'upper_rest': 'EXT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
         # ([], None)
