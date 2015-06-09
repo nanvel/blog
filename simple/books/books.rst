@@ -41,6 +41,7 @@ Before 2013
 
     - Data Science for Business: What you need to know about data mining and data-analytic thinking by Foster Provost and Tom Fawcett
     - Learning Apache Cassandra by Mat Brown
+    - Cassandra Data Modelling and Analysis by C.Y. Kan
 
 In progress
 -----------
