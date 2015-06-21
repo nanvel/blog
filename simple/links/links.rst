@@ -9,8 +9,12 @@ Core:
     - `Developers of Ukraine <http://dou.ua>`__
     - `Habrahabr <http://habrahabr.ru>`__
 
+Databases:
+    - `Avoiding SQL Antipatterns using Django (and Postgres) by Matthew Schinckel <http://schinckel.net/2014/08/26/avoiding-sql-antipatterns-using-django-(and-postgres)/>`__
+
 Python:
     - `UA Pycon videos <http://www.youtube.com/user/theuapycon?feature=watch>`__
+    - `Python 3 Patterns, Recipes and Idioms <http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html>`__
 
 JS:
     - `jQuery учебник для начинающих <http://anton.shevchuk.name/jquery-book/>`__ by Anton Shevchuk 

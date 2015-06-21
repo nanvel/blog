@@ -248,6 +248,7 @@ Architectural
 
 Links:
     - `Дизайн-патерни — просто, як двері <http://designpatterns.andriybuday.com/>`__
+    - `Python 3 Patterns, Recipes and Idioms <http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html>`__
 
 .. info::
     :tags: Software development
