@@ -8,6 +8,7 @@ Core:
     - `Дизайн патерни - просто, як двері <http://designpatterns.andriybuday.com/>`__ by Andriy Buday
     - `Developers of Ukraine <http://dou.ua>`__
     - `Habrahabr <http://habrahabr.ru>`__
+    - `The twelve-factor app <http://12factor.net>`__
 
 Databases:
     - `Avoiding SQL Antipatterns using Django (and Postgres) by Matthew Schinckel <http://schinckel.net/2014/08/26/avoiding-sql-antipatterns-using-django-(and-postgres)/>`__

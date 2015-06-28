@@ -51,3 +51,4 @@ In progress
     - A Practical Guide to Designing for the Web by Mark Boulton
     - A Tale for the Time Being by Ruth Ozeki
     - Learning Python Design Patterns by Gennadiy Zlobin
+    - Building Microservices by Sam Newman
