@@ -4,7 +4,99 @@ Software design patterns
 How to create it
 ----------------
 
-- Abstract factory
+- `Abstract factory <http://python-3-patterns-idioms-test.readthedocs.org/en/latest/Factory.html#abstract-factories>`__
+
+    Abstract Factory has more then one factory methods.
+    Each of the methods creates a different kind of object.
+    We can select methods behavior by selecting particular factory.
+
+    .. code-block:: python
+
+        class Obstacle:
+
+            def action(self):
+                pass
+
+
+        class Character:
+
+            def interactWith(self, obstacle):
+                pass
+
+
+        class Kitty(Character):
+
+            def interactWith(self, obstacle):
+                print("Kitty has encountered a", obstacle.action())
+
+
+        class KungFuGuy(Character):
+
+            def interactWith(self, obstacle):
+                print("KungFuGuy now battles a", obstacle.action())
+
+
+        class Puzzle(Obstacle):
+
+            def action(self):
+                return "Puzzle"
+
+
+        class NastyWeapon(Obstacle):
+
+            def action(self):
+                return "NastyWeapon"
+
+
+        # The Abstract Factory
+        class GameElementFactory:
+
+            def makeCharacter(self):
+                pass
+
+            def makeObstacle(self):
+                pass
+
+
+        # Concrete factories
+        class KittiesAndPuzzles(GameElementFactory):
+
+            def makeCharacter(self):
+                return Kitty()
+
+            def makeObstacle(self):
+                return Puzzle()
+
+
+        class KillAndDismember(GameElementFactory):
+
+            def makeCharacter(self):
+                return KungFuGuy()
+
+            def makeObstacle(self):
+                return NastyWeapon()
+
+
+        class GameEnvironment:
+
+            def __init__(self, factory):
+                self.factory = factory
+                self.character = factory.makeCharacter()
+                self.obstacle = factory.makeObstacle()
+
+            def play(self):
+                self.character.interactWith(obstacle=self.obstacle)
+
+
+        if __name__ == '__main__':
+
+            g1 = GameEnvironment(KittiesAndPuzzles())
+            g2 = GameEnvironment(KillAndDismember())
+            g1.play()
+            # Kitty has encountered a Puzzle
+            g2.play()
+            # KungFuGuy now battles a NastyWeapon
+
 - `Builder <http://en.wikipedia.org/wiki/Builder_pattern>`__
 
     Instead of using numerous constructors use only one + methods to modify it.
