@@ -44,6 +44,29 @@ About work in travel:
     - http://blogerator.ru/page/programmist-intervju-sergei-kishhenko-puteshestvija-daunshifting-tilarids-backpacker
     - http://putevoedelo.podster.fm/1
 
+**UPD: 2015-06-28**
+
+Big house on Panwa, Phuket
+
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/01/panwa_house.jpg
+    :width: 600px
+    :alt: Big house on Panwa, Phuket
+    :align: left
+
+House in mountain, Phuket
+
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/01/panwa_mountain_house.jpg
+    :width: 599px
+    :alt: Workspace
+    :align: left
+
+Siri homestay, Lamphun
+
+.. image:: https://raw.githubusercontent.com/nanvel/blog/master/2014/01/lamphun_siri.jpg
+    :width: 799px
+    :alt: Workspace
+    :align: left
+
 .. info::
     :tags: Workspace, Work in travel
     :place: Phuket, Thailand
