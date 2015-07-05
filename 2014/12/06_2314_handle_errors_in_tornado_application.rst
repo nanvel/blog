@@ -1,6 +1,10 @@
 Handle errors in tornado application, the right way
 ===================================================
 
+.. blockquote::
+    :content: Exceptions... allow error handling to be organized cleanly in a central or high-level place within the program structure.
+    :author: Doug Hellmann, Python Exception Handling Techniques
+
 After few false steps, seems like, I found the right way to handle errors in tornado application.
 
 Main points:
