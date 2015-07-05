@@ -72,6 +72,7 @@ Travelling
     - `Viaducstudio - фотосессии и видеоклипы в таиланде <http://viaducstudio.com>`__
     - `Nora Arendt - Офигительные истории <http://noraarendt.ru/>`__
     - `Goodbye normals - Кругосветное путешествие <https://www.youtube.com/channel/UCsixP2MXZpGcv2IgEfRwU_g>`__
+    - `The cost of living everywhere in the world in a single, awesome infographic <http://matadornetwork.com/life/the-cost-of-living-in-every-country-in-the-world-in-a-single-awesome-infographic/>`__
 
 Writing
 -------
