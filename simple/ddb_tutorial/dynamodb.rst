@@ -23,6 +23,7 @@ Table of contents:
 See also:
     - `Amazon DynamoDB - DataStax Developer Blog <http://www.datastax.com/dev/blog/amazon-dynamodb>`__
     - `Dynamo: Amazon’s Highly Available Key-value Store <http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf>`__
+    - `Presentation for KhmelnytskyiPy #1 <for http://nanvel.github.io/presentation_ddb>`__
 
 Errata / extend
 ---------------
