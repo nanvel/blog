@@ -64,7 +64,7 @@ Features:
     - Server-side javascript functions
     - Integrated text search
     - Geospatial indexing
-    - allows to execute complex queries (uses map/reduce tasks on each node)
+    - Allows to execute complex queries (uses map/reduce tasks on each node)
 
 `CouchDB <http://couchdb.apache.org/>`__
 ----------------------------------------
@@ -76,8 +76,8 @@ Interface: HTTP/REST
 Written in: Erlang
 
 Features:
-    - master-master replication
-    - embedded mapreduce
+    - Master-master replication
+    - Embedded mapreduce
 
 `HBase <http://hbase.apache.org/>`__
 ------------------------------------
