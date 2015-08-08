@@ -26,7 +26,7 @@ Features:
     - Secondary indexes (limited)
     - Strong consistency (optional)
     - AWS management console
-    - Amazon Elastic MapReduce, Redshift and other Amazon services integration
+    - Amazon Elastic MapReduce, Lambda and other Amazon services integration
 
 `Cassandra <http://cassandra.apache.org/>`__
 --------------------------------------------
@@ -64,6 +64,7 @@ Features:
     - Server-side javascript functions
     - Integrated text search
     - Geospatial indexing
+    - Allows to execute complex queries (uses map/reduce tasks on each node)
 
 `CouchDB <http://couchdb.apache.org/>`__
 ----------------------------------------
@@ -75,8 +76,8 @@ Interface: HTTP/REST
 Written in: Erlang
 
 Features:
-    - master-master replication
-    - embedded mapreduce
+    - Master-master replication
+    - Embedded mapreduce
 
 `HBase <http://hbase.apache.org/>`__
 ------------------------------------
