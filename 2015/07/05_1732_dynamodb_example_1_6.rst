@@ -64,6 +64,7 @@ Features:
     - Server-side javascript functions
     - Integrated text search
     - Geospatial indexing
+    - allows to execute complex queries (uses map/reduce tasks on each node)
 
 `CouchDB <http://couchdb.apache.org/>`__
 ----------------------------------------
