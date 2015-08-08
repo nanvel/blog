@@ -26,7 +26,7 @@ Features:
     - Secondary indexes (limited)
     - Strong consistency (optional)
     - AWS management console
-    - Amazon Elastic MapReduce, Redshift and other Amazon services integration
+    - Amazon Elastic MapReduce, Lambda and other Amazon services integration
 
 `Cassandra <http://cassandra.apache.org/>`__
 --------------------------------------------
