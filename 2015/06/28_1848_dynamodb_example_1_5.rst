@@ -17,6 +17,8 @@ The theorem states that in a distributed system, only two out of the three chara
     - BigTable: -Availability
     - DynamoDB, Cassandra: -Consistency
 
+Distributed system without Partition-tolerance makes no sense. So we have two choices: CP, AP.
+
 Compound (aka composite) key
 ----------------------------
 
