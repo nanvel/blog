@@ -16,7 +16,7 @@ What is microservice
     :alt: Modern application architecture
     :align: left
 
-Microservice can be rewrote in 2 weeks (Jon Eaves).
+Microservice can be rewrote in 2 weeks or less (Jon Eaves).
 
 Every microservice inside application infrastructure may be wrote in language that most suitable for the problem the microservice solving, use libraries and instruments it needs even if other microservices use another.
 
