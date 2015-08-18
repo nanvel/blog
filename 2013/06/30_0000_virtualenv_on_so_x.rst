@@ -2,7 +2,6 @@ Python virtualenv on Mac OS X
 =============================
 
 Installation (version 10.8):
-
     1. Install Xcode from apple store
     2. Additionally install Xcode Command Line Tools (see screenshot)
 
@@ -60,11 +59,11 @@ Installation (version 10.8):
             pip install virtualenv
 
 Links:
-    http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/
-    http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/
-    http://mxcl.github.io/homebrew/
-    http://en.wikipedia.org/wiki/Homebrew_%28package_management_software%29
-    https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python
+    - http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/
+    - http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/
+    - http://mxcl.github.io/homebrew/
+    - http://en.wikipedia.org/wiki/Homebrew_%28package_management_software%29
+    - https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python
 
 .. info::
     :tags: OS X
