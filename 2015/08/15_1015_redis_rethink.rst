@@ -158,7 +158,7 @@ The second issue is easy to fix: use flag in redis that shows that one of instan
 3. Combining 1 and 2
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/08/cache3.png
-    :width: 400px
+    :width: 600px
     :alt: Cache with manual expiration check
     :align: left
 
