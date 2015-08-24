@@ -419,7 +419,7 @@ Cons:
 
 
     def from_cache_decorator(key, timeout):
-        def tags_decorator(func):
+        def from_cache_decorator_inner(func):
             @wraps(func)
             def func_wrapper(**kwargs):
                 return from_cache(key=key, timeout=timeout, f=partial(func, **kwargs))
