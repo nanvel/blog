@@ -9,7 +9,7 @@ Lets imagine that we have some heavy task that returns a number that we need to 
 1. Using setex/get
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/08/cache1.png
-    :width: 400px
+    :width: 600px
     :alt: Cache using setex/get
     :align: left
 
