@@ -21,6 +21,7 @@ JS:
     - `jQuery учебник для начинающих <http://anton.shevchuk.name/jquery-book/>`__ by Anton Shevchuk 
     - `AngularJS video lessons on egghead.io <https://egghead.io/lessons/>`__
     - `D3 (Data-Driven Documents) <http://d3js.org/>`__
+    - `Ember: A framework for creating ambitious web applications <http://emberjs.com/>`__
 
 CSS:
     - `Pure: a set of small, responsive CSS modules <href="http://purecss.io/>`__

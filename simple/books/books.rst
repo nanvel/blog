@@ -31,7 +31,7 @@ Before 2013
     - The Richest Man in Babylon by George S. Clason
     - [+] Learning scikit-learn: Machine Learning in Python by Raúl Garreta and Guillermo Moncecchi
     - [+] Introduction to Tornado by Michael Dory
-    - Redis Applied Design Patterns by Arun Chinnachamy
+    - [+] Redis Applied Design Patterns by Arun Chinnachamy
     - The Moe Manifesto: An Insider's Look at the Worlds of Manga, Anime, and Gaming by Patrick W. Galbraith
     - Forrest Gump by Winston Groom
     - Growth Hacker Marketing: A Primer on the Future of PR, Marketing and Advertising by Ryan Holiday
@@ -44,6 +44,7 @@ Before 2013
     - Cassandra Data Modelling and Analysis by C.Y. Kan
     - The Docker Book: Containerization is the new virtualization by James Turnbull
     - [+] Building Microservices by Sam Newman
+    - Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future by Ashlee Vance
 
 In progress
 -----------
@@ -52,4 +53,4 @@ In progress
     - A Practical Guide to Designing for the Web by Mark Boulton
     - A Tale for the Time Being by Ruth Ozeki
     - Learning Python Design Patterns by Gennadiy Zlobin
-    - Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future by Ashlee Vance
+    - Dive into Python by Mark Pilgrim
