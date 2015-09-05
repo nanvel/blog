@@ -9,7 +9,7 @@ Lets imagine that we have some heavy task that returns a number that we need to 
 1. Using setex/get
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/08/cache1.png
-    :width: 400px
+    :width: 600px
     :alt: Cache using setex/get
     :align: left
 
@@ -158,7 +158,7 @@ The second issue is easy to fix: use flag in redis that shows that one of instan
 3. Combining 1 and 2
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2015/08/cache3.png
-    :width: 400px
+    :width: 600px
     :alt: Cache with manual expiration check
     :align: left
 
@@ -419,7 +419,7 @@ Cons:
 
 
     def from_cache_decorator(key, timeout):
-        def tags_decorator(func):
+        def from_cache_decorator_inner(func):
             @wraps(func)
             def func_wrapper(**kwargs):
                 return from_cache(key=key, timeout=timeout, f=partial(func, **kwargs))
