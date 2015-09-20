@@ -1,5 +1,4 @@
-Fabric helps to escape repeatable and annoying work
-===================================================
+# Fabric helps to escape repeatable and annoying work
 
 .. image:: https://raw.githubusercontent.com/nanvel/blog/master/2013/09/fabric.jpg
     :width: 320px

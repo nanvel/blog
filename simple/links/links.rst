@@ -36,6 +36,7 @@ Instruments:
     - `Spinner gif generator <http://www.ajaxload.info/>`__
     - `Time Track Pro <https://itunes.apple.com/us/app/time-track-pro-document-web/id429813050>`__ - document and web activity monitoring
     - `Siege <http://www.joedog.org/siege-home/>`__ - Load testing
+    - `log.io - Real-time log monitoring in your browser <http://logio.org/>`__
 
 Blogs:
     - `Mike Bostock <http://bost.ocks.org/mike/>`__
