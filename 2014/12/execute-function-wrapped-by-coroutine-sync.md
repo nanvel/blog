@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2014-12-07T20:47
+place: Kyiv, Ukraine
 
 # Execute function wrapped by tornado.gen.coroutine synchronously
 
@@ -43,5 +44,3 @@ def my_task():
     ioloop_inst.initialize()
     ioloop_inst.run_sync(sleep, timeout=1000)
 ```
-
-Place: Kyiv, Ukraine

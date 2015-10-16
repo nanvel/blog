@@ -1,6 +1,7 @@
 labels: Blog
         TaskQueue
 created: 2013-08-03T00:00
+place: Starobilsk, Ukraine
 
 # Huey - a nice celery alternative
 
@@ -211,5 +212,3 @@ Links:
 
 - [http://huey.readthedocs.org/en/latest/index.html](http://huey.readthedocs.org/en/latest/index.html)
 - [http://supervisord.org/](http://supervisord.org/)
-
-Place: Starobilsk, Ukraine

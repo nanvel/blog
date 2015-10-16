@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2014-12-27T14:41
+place: Kyiv, Ukraine
 
 # Python static method and class inheritance
 
@@ -47,5 +48,3 @@ None
 None
 None
 ```
-
-Place: Kyiv, Ukraine

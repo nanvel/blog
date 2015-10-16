@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-05-01T14:52
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 3.2: FilterExpression and pagination issue
 
@@ -171,5 +172,3 @@ if __name__ == '__main__':
 ```
 
 As we can see, ```get_user_orders``` returns only 7 results while limit set to 10.
-
-Place: Phuket, Thailand

@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2014-12-06T23:14
+place: Kyiv, Ukraine
 
 # Handle errors in tornado application, the right way
 
@@ -109,5 +110,3 @@ debug == True:
    }
 }
 ```
-
-Place: Kyiv, Ukraine

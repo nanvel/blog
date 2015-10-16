@@ -1,6 +1,7 @@
 labels: Blog
         SCM
 created: 2012-05-25T00:00
+place: Alchevs'k, Ukraine
 
 # Git commands
 
@@ -195,5 +196,3 @@ git stash apply
 Links:
 
 - [Git SCM](http://git-scm.com/)
-
-Place: Alchevs'k, Ukraine

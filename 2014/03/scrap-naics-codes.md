@@ -1,6 +1,7 @@
 labels: Blog
         Scrappers
 created: 2014-03-29T00:00
+place: Starobilsk, Ukraine
 
 # Scrap NAICS codes and save them to sqlite database
 
@@ -86,5 +87,3 @@ sqlite> select * from Codes where code like '111%';
 111998|All Other Miscellaneous Crop Farming
 sqlite> .q
 ```
-
-Place: Starobilsk, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         Django
         API
 created: 2013-06-13T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Trigger GA event on server side
 
@@ -67,5 +68,3 @@ The beautiful thing here is that while no Google Analytics objects added, tracki
 **4. add google analytics id to ```/admin/sites/site/1/``` (web property id, starts from ```UA-```)**
 
 **5. call ```ga_event('somecategory', 'someaction')``` when You need to trigger an event**
-
-Place: Starobilsk, Ukraine

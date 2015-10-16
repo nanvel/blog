@@ -1,6 +1,7 @@
 labels: Blog
         Projects
 created: 2013-07-07T00:00
+place: Starobilsk, Ukraine
 
 # AMV HUB project
 
@@ -55,5 +56,3 @@ Please let us know how you would like to proceed.
 Thank you,
 DigitalOcean Support
 ```
-
-Place: Starobilsk, Ukraine

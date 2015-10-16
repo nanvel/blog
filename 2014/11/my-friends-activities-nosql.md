@@ -2,6 +2,7 @@ labels: Blog
         Databases
         Lua
 created: 2014-11-09T00:00
+place: Kyiv, Ukraine
 
 # Select my friends activities, nosql way
 
@@ -114,5 +115,3 @@ Examples:
 - [Stream-Framework](https://github.com/tschellenbach/Stream-Framework)
 - [The Architecture Twitter Uses To Deal With 150M Active Users, 300K QPS, A 22 MB/S Firehose, And Send Tweets In Under 5 Seconds](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html)
 - [Facebook’s Instagram: Making the Switch to Cassandra from Redis, a 75% ‘Insta’ Savings](http://www.planetcassandra.org/blog/interview/facebooks-instagram-making-the-switch-to-cassandra-from-redis-a-75-insta-savings/)
-
-Place: Kyiv, Ukraine

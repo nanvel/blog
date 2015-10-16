@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-03-29T12:56
+place: KLIA2, Malaysia
 
 # DynamoDB in examples, Example 2.3: Pagination
 
@@ -229,5 +230,3 @@ if __name__ == '__main__':
             ddb_page_view.view(page_id=random.choice(pages), user_id=user_id)
     ddb_page_view.scan_page_views(page_id=pages[0])
 ```
-
-Place: KLIA2, Malaysia

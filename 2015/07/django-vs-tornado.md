@@ -2,6 +2,7 @@ labels: Blog
         Tornado
         Django
 created: 2015-07-04T14:07
+place: Kyiv, Ukraine
 
 # Django or Tornado?
 
@@ -39,5 +40,3 @@ If project is small, and we can make code works asynchronously - choose Tornado.
 If project is big (You need more than month to rewrite it): split it into microservices (see [Building Microservices](http://www.amazon.com/Building-Microservices-Sam-Newman-ebook/dp/B00T3N7XB4/) book by Sam Newman) and select language/framework for each microservices that best suit it.
 
 If time is valuable: choose Django.
-
-Place: Kyiv, Ukraine

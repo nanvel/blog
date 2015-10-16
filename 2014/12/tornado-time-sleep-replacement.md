@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2014-12-06T16:02
+place: Kyiv, Ukraine
 
 # Tornado time.sleep() replacement
 
@@ -75,5 +76,3 @@ self.sleep()
 [W 141206 15:54:40 tornado_sleep:17] Hello 4
 [I 141206 15:54:41 web:1635] 200 GET / (::1) 5033.03ms
 ```
-
-Place: Kyiv, Ukraine

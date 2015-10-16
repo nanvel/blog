@@ -1,6 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
+place: Kyiv, Ukraine
 
 # Software design patterns
 
@@ -395,5 +396,3 @@ Links:
 
 - [Дизайн-патерни — просто, як двері](http://designpatterns.andriybuday.com/)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
-
-Place: Kyiv, Ukraine

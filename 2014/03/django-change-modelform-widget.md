@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2014-03-24T00:00
+place: Starobilsk, Ukraine
 
 # Three ways to change widget in Django ModelForm
 
@@ -66,5 +67,3 @@ class MyForm(forms.ModelForm):
             'description': forms.Textarea,
         }
 ```
-
-Place: Starobilsk, Ukraine

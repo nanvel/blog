@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2011-11-04T00:00
+place: Alchevs'k, Ukraine
 
 # Python
 
@@ -25,5 +26,3 @@ Links:
 
 - [Learning Python](http://www.amazon.com/Learning-Python-Mark-Lutz-ebook/dp/B00DDZPC9S) by Mark Lutz
 - [Python project home page](http://www.python.org/)
-
-Place: Alchevs'k, Ukraine

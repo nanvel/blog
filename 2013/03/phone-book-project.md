@@ -2,6 +2,7 @@ labels: Blog
         Django
         Projects
 created: 2013-03-23T00:00
+place: Alchevs'k, Ukraine
 
 # Phone Book project
 
@@ -32,5 +33,3 @@ Popups:
 Admin:
 
 ![phone book, admin](pb6.png)
-
-Place: Alchevs'k, Ukraine

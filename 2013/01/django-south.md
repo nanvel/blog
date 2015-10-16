@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-01-01T00:00
+place: Alchevs'k, Ukraine
 
 # Schema- and data-migration in Django with South
 
@@ -234,5 +235,3 @@ If you want to use South in project that already has tables in database: [read a
 Links:
 
 - [Common Pitfalls with Django and South](http://andrewingram.net/2012/dec/common-pitfalls-django-south/)
-
-Place: Alchevs'k, Ukraine

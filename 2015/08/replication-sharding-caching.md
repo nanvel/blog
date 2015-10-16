@@ -1,6 +1,7 @@
 labels: Blog
         Databases
 created: 2015-08-08T23:40
+place: Kyiv, Ukraine
 
 #Thoughts on replication, sharding and caching
 
@@ -44,5 +45,3 @@ Pros:
 Cons:
 
 - complex and error prone cache invalidation/synchronization logic
-
-Place: Kyiv, Ukraine

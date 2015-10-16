@@ -2,6 +2,7 @@ labels: Blog
         DynamoDB
         Databases
 created: 2015-03-14T21:04
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 2.1: Key schema and counters
 
@@ -201,5 +202,3 @@ if __name__ == '__main__':
 ```
 
 Be careful when selecting place for counters: in my example, if single page will have a lot of views same time, we may have throttled writes problem.
-
-Place: Phuket, Thailand

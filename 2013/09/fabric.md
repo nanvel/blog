@@ -1,6 +1,7 @@
 labels: Blog
         DevOps
 created: 2013-09-07T00:00
+place: Starobilsk, Ukraine
 
 # Fabric helps to escape repeatable and annoying work
 
@@ -146,5 +147,3 @@ Links:
 - [http://docs.fabfile.org](http://docs.fabfile.org)
 
 [Image](http://www.flickr.com/photos/cogdog/2853087377/) by Alan Levine.
-
-Place: Starobilsk, Ukraine

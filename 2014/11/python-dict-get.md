@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2014-11-20T23:15
+place: Kyiv, Ukraine
 
 # Python dict.get()
 
@@ -32,5 +33,3 @@ The proper way is:
 >>> (a.get('b') or '')[:100]
 ''
 ```
-
-Place: Kyiv, Ukraine

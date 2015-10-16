@@ -1,6 +1,7 @@
 labels: Blog
         SignalProcessing
 created: 2013-09-27T00:00
+place: Starobilsk, Ukraine
 
 # Signal spectrum using NumPy
 
@@ -80,5 +81,3 @@ plt.show()
 Links:
 
 - [http://docs.scipy.org/doc/numpy/reference/routines.fft.html](http://docs.scipy.org/doc/numpy/reference/routines.fft.html)
-
-Place: Starobilsk, Ukraine

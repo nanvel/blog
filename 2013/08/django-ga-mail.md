@@ -2,6 +2,7 @@ labels: Blog
         Django
         Projects
 created: 2013-08-17T00:00
+place: Starobilsk, Ukraine
 
 # django-ga-mail reusable app
 
@@ -63,5 +64,3 @@ I added next line to ```/etc/crontab``` to send analytics one time a week:
 **UPD 2013-08-27**
 
 Updated letter templates. Added ```countries_30days_today``` block.
-
-Place: Starobilsk, Ukraine

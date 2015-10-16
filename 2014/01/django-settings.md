@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2014-01-12T00:00
+place: Phuket, Thailand
 
 # Django settings
 
@@ -283,5 +284,3 @@ SECRET_KEY = '-u&g%3b$3g=-(#iDD=e7i5q7!0mv71!-enbq6uu8_bf*dz+&YY'
 ```
 
 ```local.py``` should be added to ```.gitignore```.
-
-Place: Phuket, Thailand

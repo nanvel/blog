@@ -1,6 +1,7 @@
 labels: Blog
         Workspace
 created: 2014-01-19T00:00
+place: Phuket, Thailand
 
 # Workspace for software developer
 
@@ -66,5 +67,3 @@ Coworking in Batumi, Georgia.
 ![Georgia, Fan Fan](georgia_fanfan.jpg)
 
 [Pomodoro technique](http://pomodorotechnique.com/).
-
-Place: Phuket, Thailand

@@ -2,6 +2,7 @@ labels: Blog
         Projects
         Microcontrollers
 created: 2011-11-20T00:00
+place: Starobilsk, Ukraine
 
 # Маніпулятор для гри у тетріс на базі МЕМС-акселерометра
 
@@ -135,5 +136,3 @@ int main(void)
 Тетріс був написаний ще влітку на Delphi, just for fun, потрібно було лише додати підтримку маніпулятора.
 
 ![Tetris, game](tetris4.png)
-
-Place: Starobilsk, Ukraine

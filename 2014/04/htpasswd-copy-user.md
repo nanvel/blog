@@ -1,6 +1,7 @@
 labels: Blog
         Bash
 created: 2014-04-05T00:00
+place: Starobilsk, Ukraine
 
 # [bash] Copy user from one htpasswd file to another
 
@@ -101,5 +102,3 @@ proc = subprocess.Popen(
 output = proc.communicate()[0]
 code = proc.poll()
 ```
-
-Place: Starobilsk, Ukraine

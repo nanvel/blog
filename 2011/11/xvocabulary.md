@@ -2,6 +2,7 @@ labels: Blog
         Django
         Projects
 created: 2011-11-10T00:00
+place: Alchevs'k, Ukraine
 
 # XVocabulary project
 
@@ -29,5 +30,3 @@ Statistics:
 **UPD 2013-10-26**
 
 Today I had cancelled hosting subscription for xvocabulary.com.
-
-Place: Alchevs'k, Ukraine

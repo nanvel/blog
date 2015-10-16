@@ -1,6 +1,7 @@
 labels: Blog
         API
 created: 2013-10-26T00:00
+place: Starobilsk, Ukraine
 
 # Trac api
 
@@ -60,5 +61,3 @@ Links:
 
 - [http://trac.edgewall.org/](http://trac.edgewall.org/)
 - [http://www.hossainkhan.info/content/trac-xml-rpc-api-reference](http://www.hossainkhan.info/content/trac-xml-rpc-api-reference)
-
-Place: Starobilsk, Ukraine

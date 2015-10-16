@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2012-09-29T00:00
+place: Alchevs'k, Ukraine
 
 # [Django] Get admin page url
 
@@ -64,5 +65,3 @@ class AdminURLs(object):
 # usage:
 # url = AdminURLs.url(obj=user, action='change', id=123)
 ```
-
-Place: Alchevs'k, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         DynamoDB
         Tornado
 created: 2015-03-01T15:23
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)
 
@@ -322,5 +323,3 @@ if __name__ == "__main__":
 # nanvel-air:example_1_2 nanvel$ curl http://localhost:5000/wallet/aa4d10c5-dd78-42ca-a077-3789b52ebbe3
 # 123
 ```
-
-Place: Phuket, Thailand

@@ -1,6 +1,7 @@
 labels: Blog
         JS
 created: 2014-03-31T00:00
+place: Starobilsk, Ukraine
 
 # Easy filters bar, pure js
 
@@ -125,5 +126,3 @@ Only URI.js is required, no jQuery and similar libraries.
 </body>
 </html>
 ```
-
-Place: Starobilsk, Ukraine

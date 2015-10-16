@@ -1,6 +1,7 @@
 labels: Blog
         HTML
 created: 2013-03-05T00:00
+place: Starobilsk, Ukraine
 
 # HTML5 link relations
 
@@ -64,5 +65,3 @@ Links:
 
 - [http://blog.whatwg.org/the-road-to-html-5-link-relations](http://blog.whatwg.org/the-road-to-html-5-link-relations)
 - [HTML5: Up and Running by Mark Pilgrim](http://shop.oreilly.com/product/9780596806033.do)
-
-Place: Starobilsk, Ukraine

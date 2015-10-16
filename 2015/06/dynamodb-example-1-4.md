@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-06-06T22:09
+place: Dream Story, Kyiv, Ukraine
 
 # DynamoDB in examples, Example 1.4: DyanmoDB and Celery using green threads
 
@@ -159,5 +160,3 @@ $ python main.py
 [2015-06-06 21:58:00,039: WARNING/Worker-1] {'ResponseMetadata': {'HTTPStatusCode': 200, 'RequestId': 'OP19GVG098LQQ9D415FDIR15VNVV4KQNSO5AEMVJF66Q9ASUAAJG'}}
 [2015-06-06 21:58:00,039: WARNING/Worker-2] {'ResponseMetadata': {'HTTPStatusCode': 200, 'RequestId': 'APD8V79PV0TGKD6TTKUJNFPVJVVV4KQNSO5AEMVJF66Q9ASUAAJG'}}
 ```
-
-Place: Dream Story, Kyiv, Ukraine

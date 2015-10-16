@@ -2,6 +2,7 @@ labels: Blog
         Tornado
         AWS
 created: 2014-08-30T00:00
+place: Kyiv, Ukraine
 
 # [tornado] Asynchronous botocore
 
@@ -70,5 +71,3 @@ def send(self, ...):
         Source=source, Message=message, Destination=destination)
     raise gen.Return(res)
 ```
-
-Place: Kyiv, Ukraine

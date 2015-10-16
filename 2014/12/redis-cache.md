@@ -1,6 +1,7 @@
 labels: Blog
         Databases
 created: 2014-12-28T01:46
+place: Kyiv, Ukraine
 
 # Caching using redis get/setex issue
 
@@ -157,5 +158,3 @@ console2$ python test_cache.py
 [I 141228 01:42:23 test_cache:121] first result: b'1'
 [I 141228 01:42:23 test_cache:125] second result: b'1'
 ```
-
-Place: Kyiv, Ukraine

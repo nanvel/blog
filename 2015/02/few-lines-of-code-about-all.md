@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2015-02-17T00:00
+place: Phuket, Thailand
 
 # Few lines of code about ```__all__```
 
@@ -81,5 +82,3 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ImportError: cannot import name datetime
 ```
-
-Place: Phuket, Thailand

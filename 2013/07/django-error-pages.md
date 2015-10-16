@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-07-20T00:00
+place: Starobilsk, Ukraine
 
 # Django project error pages
 
@@ -122,5 +123,3 @@ handler404 = 'project.apps.core.views.handler404'
     </body>
 </html>
 ```
-
-Place: Starobilsk, Ukraine

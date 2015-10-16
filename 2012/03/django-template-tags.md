@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2012-03-20T00:00
+place: Alchevs'k, Ukraine
 
 # Django template tags
 
@@ -187,5 +188,3 @@ Y    - 1999
 z    - 0..365
 Z    - -43200 ... 43200 - зміщення часового поясу у секундах
 ```
-
-Place: Alchevs'k, Ukraine

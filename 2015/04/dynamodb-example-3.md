@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-04-12T12:45
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 3: Toys store orders
 
@@ -247,5 +248,3 @@ if __name__ == '__main__':
 
 Pay attention that I use ```order_status``` instead of ```status``` field name.
 DynamoDB has many [reserved words](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ReservedWords.html) that can't be used inside UpdateExpression.
-
-Place: Phuket, Thailand

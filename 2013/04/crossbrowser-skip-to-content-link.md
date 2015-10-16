@@ -1,6 +1,7 @@
 labels: Blog
         JS
 created: 2013-04-30T00:00
+place: Starobilsk, Ukraine
 
 # Crossbrowser skip to content link
 
@@ -55,5 +56,3 @@ Links:
 - [http://www.netmagazine.com/news/webkit-scuppers-skip-content-links-121741](http://www.netmagazine.com/news/webkit-scuppers-skip-content-links-121741)
 - [http://stackoverflow.com/questions/2074347/focus-not-working-in-safari-or-chrome](http://stackoverflow.com/questions/2074347/focus-not-working-in-safari-or-chrome)
 - [http://www.refinedpractice.com/examples/skiplink-redux.html](http://www.refinedpractice.com/examples/skiplink-redux.html)
-
-Place: Starobilsk, Ukraine

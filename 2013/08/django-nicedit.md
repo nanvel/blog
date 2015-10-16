@@ -2,6 +2,7 @@ labels: Blog
         Django
         Projects
 created: 2013-08-25T00:00
+place: Starobilsk, Ukraine
 
 # NicEdit widget for Django
 
@@ -140,5 +141,3 @@ class ItemAdmin(admin.ModelAdmin):
 ```
 
 See [testproject](https://github.com/nanvel/django-nicedit/tree/master/testproject) for example.
-
-Place: Starobilsk, Ukraine

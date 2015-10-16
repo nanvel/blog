@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-03-11T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Logging to syslog
 
@@ -89,5 +90,3 @@ Links:
 - [https://docs.djangoproject.com/en/dev/topics/logging/](https://docs.djangoproject.com/en/dev/topics/logging/)
 - [http://stackoverflow.com/questions/6205254/how-to-setup-sysloghandler-with-django-1-3-logging-dictionary-configuration](http://stackoverflow.com/questions/6205254/how-to-setup-sysloghandler-with-django-1-3-logging-dictionary-configuration)
 - [http://docs.python.org/2/library/logging.handlers.html#sysloghandler](http://docs.python.org/2/library/logging.handlers.html#sysloghandler)
-
-Place: Starobilsk, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         Django
         Databases
 created: 2013-10-02T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Database transactions
 
@@ -82,5 +83,3 @@ DATABASES = {
 Links:
 
 - [https://docs.djangoproject.com/en/1.5/topics/db/transactions/](https://docs.djangoproject.com/en/1.5/topics/db/transactions/)
-
-Place: Starobilsk, Ukraine

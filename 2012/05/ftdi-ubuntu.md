@@ -2,6 +2,7 @@ labels: Blog
         Microcontrollers
         Electronics
 created: 2012-05-04T00:00
+place: Alchevs'k, Ukraine
 
 # Зв’язок з FTDI в Ubuntu
 
@@ -87,5 +88,3 @@ SUBSYSTEM=="usb_device", BUS="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="60
 - [Документація до LibFTDI з intra2net.com](http://www.intra2net.com/en/developer/libftdi/index.php)
 - [libFTDI v0.18 with Ubuntu on idle-logic.com by Chris Zeh](http://idle-logic.com/2010/12/13/libftdi-v0-18-with-ubuntu-lucid-lynx/)
 - [embeddedheaven.com](http://www.embeddedheaven.com/solved-error-unable-to-open-ftdi-device-inappropriate-permissions-on-device.htm)
-
-Place: Alchevs'k, Ukraine

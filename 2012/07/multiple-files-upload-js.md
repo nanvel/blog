@@ -2,6 +2,7 @@ labels: Blog
         Django
         JS
 created: 2012-07-30T00:00
+place: Starobilsk, Ukraine
 
 # Multiple files uploading with Django and valums file-uploader
 
@@ -176,5 +177,3 @@ Added django code example.
 **UPD 2015-02-15**
 
 Fixed language
-
-Place: Starobilsk, Ukraine

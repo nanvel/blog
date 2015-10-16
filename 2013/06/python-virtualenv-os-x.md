@@ -2,6 +2,7 @@ labels: Blog
         Python
         OSX
 created: 2013-06-30T00:00
+place: Starobilsk, Ukraine
 
 # Python virtualenv on Mac OS X
 
@@ -63,5 +64,3 @@ Links:
 - [http://mxcl.github.io/homebrew/](http://mxcl.github.io/homebrew/)
 - [http://en.wikipedia.org/wiki/Homebrew_%28package_management_software%29](http://en.wikipedia.org/wiki/Homebrew_%28package_management_software%29)
 - [https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python](https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python)
-
-Place: Starobilsk, Ukraine

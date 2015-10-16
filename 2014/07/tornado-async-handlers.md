@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2014-07-26T00:00
+place: Kyiv, Ukraine
 
 # [tornado] Async handlers, code refactor
 
@@ -152,5 +153,3 @@ class FBHandler(RequestHandler):
 
 ...
 ```
-
-Place: Kyiv, Ukraine

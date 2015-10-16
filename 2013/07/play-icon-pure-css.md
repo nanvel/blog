@@ -1,6 +1,7 @@
 labels: Blog
         CSS
 created: 2013-07-06T00:00
+place: Starobilsk, Ukraine
 
 # Play icon using pure css
 
@@ -57,5 +58,3 @@ created: 2013-07-06T00:00
 Links:
 
 - [http://www.youtube.com/watch?v=4SdDPsdOjJw](http://www.youtube.com/watch?v=4SdDPsdOjJw)
-
-Place: Starobilsk, Ukraine

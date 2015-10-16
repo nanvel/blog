@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2013-02-16T00:00
+place: Starobilsk, Ukraine
 
 # Python way to create unix daemon
 
@@ -70,5 +71,3 @@ Links:
 - [https://github.com/arnaudsj/python-daemon](https://github.com/arnaudsj/python-daemon)
 - [http://www.gavinj.net/2012/06/building-python-daemon-process.html](http://www.gavinj.net/2012/06/building-python-daemon-process.html)
 - [http://stackoverflow.com/questions/10924309/how-can-i-run-my-python-script-in-the-background-on-a-schedule](http://stackoverflow.com/questions/10924309/how-can-i-run-my-python-script-in-the-background-on-a-schedule)
-
-Place: Starobilsk, Ukraine

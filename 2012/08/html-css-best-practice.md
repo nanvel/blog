@@ -2,6 +2,7 @@ labels: Blog
         CSS
         HTML
 created: 2012-08-23T00:00
+place: Alchevs'k, Ukraine
 
 # HTML/CSS best practice
 
@@ -93,5 +94,3 @@ Links:
 
 - [Руководство по оформлению HTML/CSS кода от Google](http://habrahabr.ru/post/143452/)
 - [Руководство по форматированию CSS](http://habrahabr.ru/post/149986/)
-
-Place: Alchevs'k, Ukraine

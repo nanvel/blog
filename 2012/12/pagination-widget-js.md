@@ -1,6 +1,7 @@
 labels: Blog
         JS
 created: 2012-12-29T00:00
+place: Alchevs'k, Ukraine
 
 # Pagination widget js
 
@@ -36,5 +37,3 @@ Usage:
 -    </div>
 +    <div class="pagination" data-pages="{{ page.paginator.num_pages }}"></div>
 ```
-
-Place: Alchevs'k, Ukraine

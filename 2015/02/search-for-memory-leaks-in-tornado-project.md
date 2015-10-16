@@ -2,6 +2,7 @@ labels: Blog
         Python
         Tornado
 created: 2015-02-15T13:01
+place: Phuket, Thailand
 
 # Search for memory leaks in tornado project
 
@@ -108,5 +109,3 @@ Partition of a set of 153822 objects. Total size = 206002744 bytes.
     29    202   0    11312   0 205843552 100 module
 <168 more rows. Type e.g. '_.more' to view.></pre>
 ```
-
-Place: Phuket, Thailand

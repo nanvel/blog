@@ -1,6 +1,7 @@
 labels: Blog
         API
 created: 2013-05-28T00:00
+place: Starobilsk, Ukraine
 
 # Python script retrieves my vk news feed
 
@@ -102,5 +103,3 @@ Links:
 
 - [http://habrahabr.ru/post/143972/](http://habrahabr.ru/post/143972/)
 - [http://vk.com/page-1_2369282](http://vk.com/page-1_2369282)
-
-Place: Starobilsk, Ukraine

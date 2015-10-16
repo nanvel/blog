@@ -2,6 +2,7 @@ labels: Blog
         Microservices
         SoftwareDevelopment
 created: 2015-08-09T14:28
+place: Kyiv, Ukraine
 
 # Notes on microservices
 
@@ -73,5 +74,3 @@ Nice idea is to temporary disconnect service if it start producing enormous numb
 - How to split monolithic application into microservices
 - Scaling databases (very clearly, in simple words)
 - ...
-
-Place: Kyiv, Ukraine

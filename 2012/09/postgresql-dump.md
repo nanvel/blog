@@ -1,6 +1,7 @@
 labels: Blog
         Databases
 created: 2012-09-21T00:00
+place: Alchevs'k, Ukraine
 
 # PostgreSQL dump
 
@@ -52,5 +53,3 @@ Binary dump restore:
 ```bash
 pg_restore -h {hostname} -d {database name} -c -U {username} {path to source file}
 ```
-
-Place: Alchevs'k, Ukraine

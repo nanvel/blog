@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-07-05T17:32
+place: Kyiv, Ukraine
 
 # DynamoDB in examples, Example 1.6: DynamoDB alternatives
 
@@ -108,5 +109,3 @@ Features:
 - Tunable trade-offs for distribution and replication
 - Pre- and post-commit hooks in JavaScript or Erlang, for validation and security
 - Mapreduce in JavaScript or Erlang
-
-Place: Kyiv, Ukraine

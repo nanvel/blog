@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-07-17T00:00
+place: Starobilsk, Ukraine
 
 # Django + haystack + elasticsearch simple example project
 
@@ -195,5 +196,3 @@ script.disable_dynamic: true
 ```
 
 to ```/etc/elasticsearch/elasticsearch.yml```
-
-Place: Starobilsk, Ukraine

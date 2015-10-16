@@ -1,6 +1,7 @@
 labels: Blog
         Places
 created: 2015-03-15T12:55
+place: Phuket, Thailand
 
 # Cape Panwa places, Phuket
 
@@ -30,5 +31,3 @@ Places:
     - [Nice place to walk 1](https://www.google.com.au/maps/place/7.805390,98.405590/@7.805390,98.405590,16z)
     - [Nice place to walk 2](https://www.google.com.au/maps/place/7.801486,98.406501/@7.801486,98.406501,16z)
     - [Nice place to walk 3](https://www.google.com.au/maps/place/7.816055,98.385389/@7.816055,98.385389,16z)
-
-Place: Phuket, Thailand

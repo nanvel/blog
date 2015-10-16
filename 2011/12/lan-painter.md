@@ -2,6 +2,7 @@ labels: Blog
         Projects
         Qt
 created: 2011-12-01T00:00
+place: Alchevs'k, Ukraine
 
 # Lan Painter project
 
@@ -69,5 +70,3 @@ Links:
 
 - [Програма на Qt-apps.org](http://qt-apps.org/content/show.php/Lan+painter?content=142898)
 - [Source code](lan_painter.zip)
-
-Place: Alchevs'k, Ukraine

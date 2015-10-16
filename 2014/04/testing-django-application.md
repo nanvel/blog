@@ -2,6 +2,7 @@ labels: Blog
         Django
         Testing
 created: 2014-04-03T00:00
+place: Starobilsk, Ukraine
 
 # Testing Django applications
 
@@ -579,5 +580,3 @@ Have fun writing tests!
 > transmuting fear into boredom.
 >
 > [Kent Beck](http://en.wikipedia.org/wiki/Kent_Beck)
-
-Place: Starobilsk, Ukraine

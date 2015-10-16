@@ -1,6 +1,7 @@
 labels: Blog
         CSS
 created: 2012-11-10T00:00
+place: Alchevs'k, Ukraine
 
 # CSS shadows
 
@@ -93,5 +94,3 @@ Links:
 - [http://www.w3schools.com/cssref/css3_pr_box-shadow.asp](http://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
 - [http://www.w3schools.com/cssref/css3_pr_text-shadow.asp](http://www.w3schools.com/cssref/css3_pr_text-shadow.asp)
 - [http://css-tricks.com/snippets/css/css-box-shadow/](http://css-tricks.com/snippets/css/css-box-shadow/)
-
-Place: Alchevs'k, Ukraine

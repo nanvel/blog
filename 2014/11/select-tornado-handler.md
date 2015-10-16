@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2014-11-22T11:21
+place: Kyiv, Ukraine
 
 # Ways to select tornado handler depends on request content
 
@@ -61,5 +62,3 @@ if __name__ == '__main__':
     application.listen(5000)
     ioloop.IOLoop.instance().start()
 ```
-
-Place: Kyiv, Ukraine

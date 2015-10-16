@@ -2,6 +2,7 @@ labels: Blog
         HTML
         JS
 created: 2013-02-18T00:00
+place: Starobilsk, Ukraine
 
 # HTML5 input types
 
@@ -39,5 +40,3 @@ In chromium I got following result:
 Links:
 
 - [HTML5: Up and Running by Mark Pilgrim](http://shop.oreilly.com/product/9780596806033.do)
-
-Place: Starobilsk, Ukraine

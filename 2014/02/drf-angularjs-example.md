@@ -2,6 +2,7 @@ labels: Blog
         Django
         AngularJS
 created: 2014-02-28T00:00
+place: Starobilsk, Ukraine
 
 # Django, Django Rest Framework, AngularJS example project
 
@@ -391,5 +392,3 @@ Links:
 - [http://angularjs.org/](http://angularjs.org/)
 - [http://www.django-rest-framework.org/](http://www.django-rest-framework.org/)
 - [http://blog.kevinastone.com/getting-started-with-django-rest-framework-and-angularjs.html](http://blog.kevinastone.com/getting-started-with-django-rest-framework-and-angularjs.html)
-
-Place: Starobilsk, Ukraine

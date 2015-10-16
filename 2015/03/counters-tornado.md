@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
 created: 2015-03-08T20:55
+place: Phuket, Thailand
 
 # Efficient actions counter using tornado IOLoop.add_timeout
 
@@ -117,5 +118,3 @@ sqlite> select * from counters;
 open_new_tab|3
 open_browser|21
 ```
-
-Place: Phuket, Thailand

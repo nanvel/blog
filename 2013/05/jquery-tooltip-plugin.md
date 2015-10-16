@@ -1,6 +1,7 @@
 labels: Blog
         JS
 created: 2013-05-31T00:00
+place: Starobilsk, Ukraine
 
 # jQuery tooltip plugin
 
@@ -22,5 +23,3 @@ Example:
 ![Tooltip example](tooltip.png)
 
 [Plugin code on BitBucket](https://bitbucket.org/nanvel/jquery-tooltip-plugin/).
-
-Place: Starobilsk, Ukraine

@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-09-17T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Compress response generator output
 
@@ -67,5 +68,3 @@ def myview(request):
     response['Content-Disposition'] = 'attachment; filename=mygenerator.gz'
 return response
 ```
-
-Place: Starobilsk, Ukraine

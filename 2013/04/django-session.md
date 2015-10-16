@@ -2,6 +2,7 @@ labels: Blog
         Django
         Testing
 created: 2013-04-27T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Session. Control and testing
 
@@ -50,5 +51,3 @@ class WithSessionTestCase(TestCase):
 Links:
 
 - [https://docs.djangoproject.com/en/dev/topics/http/sessions/](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
-
-Place: Starobilsk, Ukraine

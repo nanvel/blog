@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-02-22T00:50
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 1: User wallet table
 
@@ -174,5 +175,3 @@ For now, remember:
 
 - read throughput 1 == one read request with response up to 4KB per second
 - write throughput 1 == one write request with items size up to 1KB per second
-
-Place: Phuket, Thailand

@@ -1,6 +1,7 @@
 labels: Blog
         HTML
 created: 2013-03-08T00:00
+place: Starobilsk, Ukraine
 
 # media attribute in link[rel=stylesheet]
 
@@ -39,5 +40,3 @@ Result:
 Links:
 
 - [http://alistapart.com/article/responsive-web-design](http://alistapart.com/article/responsive-web-design)
-
-Place: Starobilsk, Ukraine

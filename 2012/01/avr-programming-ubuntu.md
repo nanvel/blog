@@ -2,6 +2,7 @@ labels: Blog
         Microcontrollecrs
         Linux
 created: 2012-01-05T00:00
+place: Alchevs'k, Ukraine
 
 # AVR-microcontroller programming under Ubuntu
 
@@ -171,5 +172,3 @@ avra -I $(INCLUDEDIR) -fI -o $(FILE) $(FILE)
 <iframe width="854" height="480" src="https://www.youtube.com/embed/PV276wCVX2s" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/toY4fjLI9GQ" frameborder="0" allowfullscreen></iframe>
-
-Place: Alchevs'k, Ukraine

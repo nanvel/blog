@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-02-22T21:45
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 1.1: DDBTable class
 
@@ -259,5 +260,3 @@ If You use tornado, try [tornado-botocore](https://github.com/nanvel/tornado-bot
 from tornado_botocore import Botocore
 ```
 to do requests asynchronously.
-
-Place: Phuket, Thailand

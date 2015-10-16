@@ -1,6 +1,7 @@
 labels: Blog
         AWS
 created: 2014-10-31T00:00
+place: Kyiv, Ukraine
 
 # Amazon CloudSearch spike project
 
@@ -214,5 +215,3 @@ if __name__ == '__main__':
     #    }
     # }
 ```
-
-Place: Kyiv, Ukraine

@@ -1,6 +1,7 @@
 labels: Blog
         Projects
 created: 2012-08-18T00:00
+place: Starobilsk, Ukraine
 
 # Animepixels project
 
@@ -151,5 +152,3 @@ Please let us know how you would like to proceed.
 Thank you,
 DigitalOcean Support
 ```
-
-Place: Starobilsk, Ukraine

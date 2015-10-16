@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2014-05-11T00:00
+place: Kyiv, Ukraine
 
 # [Django] Where to store host specific variables
 
@@ -58,5 +59,3 @@ from sys import environ
 
 SOME_VAR = getattr(environ, 'SOME_VAR', <default value>)
 ```
-
-Place: Kyiv, Ukraine

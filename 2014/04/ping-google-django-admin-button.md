@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2014-04-06T00:00
+place: Starobilsk, Ukraine
 
 # Ping google django admin button
 
@@ -96,5 +97,3 @@ Links:
 
 - [https://docs.djangoproject.com/en/dev/ref/contrib/sitemaps/#pinging-google](https://docs.djangoproject.com/en/dev/ref/contrib/sitemaps/#pinging-google)
 - [https://djangosnippets.org/snippets/1016/](https://djangosnippets.org/snippets/1016/)
-
-Place: Starobilsk, Ukraine

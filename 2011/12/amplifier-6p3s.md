@@ -2,6 +2,7 @@ labels: Blog
         Projects
         Electronics
 created: 2011-12-22T00:00
+place: Starobilsk, Ukraine
 
 # Низькочастотний підсилювач на 6П3С
 
@@ -40,5 +41,3 @@ created: 2011-12-22T00:00
 ![The amplifier, assembling](amp8.jpg)
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/cgD34ellU1I" frameborder="0" allowfullscreen></iframe>
-
-Place: Starobilsk, Ukraine

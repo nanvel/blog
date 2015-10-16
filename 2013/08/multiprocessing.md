@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2013-08-21T00:00
+place: Starobilsk, Ukraine
 
 # [Python] Multiprocessing is great
 
@@ -35,5 +36,3 @@ if __name__ == '__main__':
 ```
 
 Just try to change ```PROCESSES``` value.
-
-Place: Starobilsk, Ukraine

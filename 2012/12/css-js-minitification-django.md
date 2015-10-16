@@ -3,6 +3,7 @@ labels: Blog
         CSS
         JS
 created: 2012-12-05T00:00
+place: Alchevs'k, Ukraine
 
 # CSS and JS minification with django-pipeline
 
@@ -218,5 +219,3 @@ Links:
 **UPD 2014-04-02**
 
 Use less from node.js packages (npm install less) instead of ruby version.
-
-Place: Alchevs'k, Ukraine

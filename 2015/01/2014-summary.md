@@ -1,6 +1,7 @@
 labels: Blog
         Life
 created: 2015-01-18T12:22
+place: Phuket, Thailand
 
 # 2014 Summary
 
@@ -95,5 +96,3 @@ I decide that it easier to write and store my blog posts in restructured text fo
 - Learn AngularJS
 - DynamoDB book
 - Leave more time for sport/relax
-
-Place: Phuket, Thailand

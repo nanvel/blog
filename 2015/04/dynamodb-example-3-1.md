@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-04-18T10:56
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 3.1: Does DynamoDB fits my requirements?
 
@@ -25,5 +26,3 @@ When better not use DynamoDB:
 
 - if I have constant amount of data (list of product categories, list of cities, etc.)
 - when load is unpredictable (You'll need to hold higher throughput than You really use)
-
-Place: Phuket, Thailand

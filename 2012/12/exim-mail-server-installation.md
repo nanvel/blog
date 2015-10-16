@@ -2,6 +2,7 @@ labels: Blog
         Django
         DevOps
 created: 2012-12-12T00:00
+place: Alchevs'k, Ukraine
 
 # Exim mail server installation
 
@@ -61,5 +62,3 @@ Links:
 
 - [http://library.linode.com/email/exim/send-only-mta-debian-6-squeeze](http://library.linode.com/email/exim/send-only-mta-debian-6-squeeze)
 - [http://www.exim.org/](http://www.exim.org/)
-
-Place: Alchevs'k, Ukraine

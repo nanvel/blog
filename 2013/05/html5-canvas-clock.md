@@ -2,6 +2,7 @@ labels: Blog
         HTML
         JS
 created: 2013-05-01T00:01
+place: Starobilsk, Ukraine
 
 # [HTML5] Canvas, first steps
 
@@ -66,5 +67,3 @@ Simple example: display second arrow.
     </body>
 </html>
 ```
-
-Place: Starobilsk, Ukraine

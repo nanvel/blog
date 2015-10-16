@@ -1,6 +1,7 @@
 labels: Blog
         Projects
 created: 2012-12-16T00:00
+place: Alchevs'k, Ukraine
 
 # nanvel.name weblog project
 
@@ -22,5 +23,3 @@ New weblog location and storage:
 
 - [http://nanvel.com](http://nanvel.com)
 - [https://github.com/nanvel/blog](https://github.com/nanvel/blog)
-
-Place: Alchevs'k, Ukraine

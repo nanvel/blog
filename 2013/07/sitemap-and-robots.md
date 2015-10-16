@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-07-21T00:00
+place: Starobilsk, Ukraine
 
 # sitemap.xml and robots.txt
 
@@ -74,5 +75,3 @@ Links:
 
 - [http://fredericiana.com/2010/06/09/three-ways-to-add-a-robots-txt-to-your-django-project/](http://fredericiana.com/2010/06/09/three-ways-to-add-a-robots-txt-to-your-django-project/)
 - [http://www.wordsinarow.com/xml-sitemaps.html](http://www.wordsinarow.com/xml-sitemaps.html)
-
-Place: Starobilsk, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         Tornado
         Geo
 created: 2014-08-23T00:00
+place: Kyiv, Ukraine
 
 # Get country code/name by IP address
 
@@ -59,5 +60,3 @@ if __name__ == '__main__':
     application.listen(8000)
     IOLoop.instance().start()
 ```
-
-Place: Kyiv, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         DynamoDB
         Databases
 created: 2015-03-08T14:28
+place: Phuket, Thailand
 
 # DynamoDB in examples, Example 2: Unique page views
 
@@ -101,5 +102,3 @@ But what it we need also:
 ?
 
 These tasks require counters and indexes to be used.
-
-Place: Phuket, Thailand

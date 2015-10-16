@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-04-16T00:00
+place: Starobilsk, Ukraine
 
 # [Django] Pass iterator to response
 
@@ -27,5 +28,3 @@ def my_view(request):
     response['Content-Disposition'] = 'attachment; filename=sometext.txt'
     return response
 ```
-
-Place: Starobilsk, Ukraine

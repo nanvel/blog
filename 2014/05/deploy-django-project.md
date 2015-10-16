@@ -2,6 +2,7 @@ labels: Blog
         Django
         DevOps
 created: 2014-05-04T00:00
+place: Starobilsk, Ukraine
 
 # A way to deploy a django project, detailed instruction
 
@@ -347,5 +348,3 @@ sudo /etc/init.d/nginx restart
 
 **This is not the best configuration, even not preferred one, this one is just 'works for me'.
 If You use it, keep in mind that only you responsible for possible damage caused by using this material.**
-
-Place: Starobilsk, Ukraine

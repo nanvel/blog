@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2014-07-06T00:00
+place: Kyiv, Ukraine
 
 # [Django] Save model instance into json dict
 
@@ -69,5 +70,3 @@ TypeError: <User: exampleuser> is not JSON serializable
 >>> decode(json.loads(encoded))
 {u'count': 10, u'user': <User: exampleuser>, u'title': u'Example title'}
 ```
-
-Place: Kyiv, Ukraine

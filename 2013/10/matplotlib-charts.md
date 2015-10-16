@@ -1,6 +1,7 @@
 labels: Blog
         SignalProcessing
 created: 2013-10-05T00:00
+place: Starobilsk, Ukraine
 
 # Displaying charts with Matplotlib
 
@@ -117,5 +118,3 @@ if __name__ == '__main__':
 Links:
 
 - [http://matplotlib.org/users/pyplot_tutorial.html](http://matplotlib.org/users/pyplot_tutorial.html)
-
-Place: Starobilsk, Ukraine

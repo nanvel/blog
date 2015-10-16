@@ -1,6 +1,7 @@
 labels: Blog
         XML
 created: 2013-04-14T00:00
+place: Alchevs'k, Ukraine
 
 # SAX parser
 
@@ -85,5 +86,3 @@ Links:
 - [http://en.wikipedia.org/wiki/Simple_API_for_XML](http://en.wikipedia.org/wiki/Simple_API_for_XML)
 - [http://docs.python.org/2/library/xml.sax.html](http://docs.python.org/2/library/xml.sax.html)
 - [http://mail.python.org/pipermail/python-dev/2000-October/009946.html](http://mail.python.org/pipermail/python-dev/2000-October/009946.html)
-
-Place: Alchevs'k, Ukraine

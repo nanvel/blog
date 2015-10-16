@@ -2,6 +2,7 @@ labels: Blog
         RST
         Projects
 created: 2014-11-15T21:27
+place: Kyiv, Ukraine
 
 # GBlog custom rst directives
 
@@ -66,5 +67,3 @@ Links:
 
 - [GBlog on GitHub](https://github.com/nanvel/gblog)
 - [Restructured Text and Sphinx CheatSheet](http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
-
-Place: Kyiv, Ukraine

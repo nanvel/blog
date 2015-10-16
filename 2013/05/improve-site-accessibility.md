@@ -1,6 +1,7 @@
 labels: Blog
         Accessibility
 created: 2013-05-19T00:00
+place: Starobilsk, Ukraine
 
 # 10 steps to improve site accessibility
 
@@ -36,5 +37,3 @@ Links:
 - [http://webaim.org/techniques/tables/data](http://webaim.org/techniques/tables/data)
 - [http://webaim.org/articles/jaws/](http://webaim.org/articles/jaws/)
 - [http://webaim.org/articles/nvda/](http://webaim.org/articles/nvda/)
-
-Place: Starobilsk, Ukraine

@@ -1,6 +1,7 @@
 labels: Blog
         Electronics
 created: 2012-02-01T00:00
+place: Starobilsk, Ukraine
 
 # Tesla coil experiment
 
@@ -15,5 +16,3 @@ Decided to check it really works.
 ![Tesla coil experiment, elements](tc3.jpg)
 
 ![Tesla coil experiment, works](tc4.jpg)
-
-Place: Starobilsk, Ukraine

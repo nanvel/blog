@@ -1,6 +1,7 @@
 labels: Blog
         Python
 created: 2015-02-07T12:36
+place: Phuket, Thailand
 
 # Get youtube/vimeo/vevo/vine video thumbnail
 
@@ -69,5 +70,3 @@ if __name__ == '__main__':
     print Thumbnail.vevo(video_id='x9fMmU')
     print Thumbnail.vine(video_id='OUBbPBrh2qH')
 ```
-
-Place: Phuket, Thailand

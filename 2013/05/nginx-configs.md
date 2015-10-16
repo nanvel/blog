@@ -1,6 +1,7 @@
 labels: Blog
         DevOps
 created: 2013-05-01T00:00
+place: Starobilsk, Ukraine
 
 # Domain configuration in nginx config
 
@@ -41,5 +42,3 @@ Links:
 - [http://stackoverflow.com/questions/7947030/nginx-no-www-to-www-and-www-to-no-www](http://stackoverflow.com/questions/7947030/nginx-no-www-to-www-and-www-to-no-www)
 - [http://wiki.nginx.org/Pitfalls](http://wiki.nginx.org/Pitfalls)
 - [http://stackoverflow.com/questions/15452328/nginx-redirect-domain-trailing-dot](http://stackoverflow.com/questions/15452328/nginx-redirect-domain-trailing-dot)
-
-Place: Starobilsk, Ukraine

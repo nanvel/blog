@@ -1,6 +1,7 @@
 labels: Blog
         Documentation
 created: 2013-02-23T00:00
+place: Starobilsk, Ukraine
 
 # Project documentation with Sphinx
 
@@ -114,5 +115,3 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'myapp.settings'
 Links:
 
 - [http://sphinx-doc.org](http://sphinx-doc.org)
-
-Place: Starobilsk, Ukraine

@@ -1,6 +1,7 @@
 labels: Blog
         Places
 created: 2014-11-22T19:24
+place: Kyiv, Ukraine
 
 # Good place to have a dinner on Chalong, Phuket
 
@@ -26,5 +27,3 @@ Vegetable curry:
 ![Vegetable curry](curry.jpg)
 
 Coordinates: ```7.852532,98.347867``` (Tony's restaurant on Chalong, Phuket)
-
-Place: Kyiv, Ukraine

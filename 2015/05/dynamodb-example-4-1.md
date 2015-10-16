@@ -2,6 +2,7 @@ labels: Blog
         Databases
         DynamoDB
 created: 2015-05-30T16:56
+place: Chasopys, Kyiv, Ukraine
 
 # DynamoDB in examples, Example 4.1: Search
 
@@ -139,5 +140,3 @@ Here I wanted to turn your attention to two points:
 This example is pretty useless for implemetation search feature in real projects, use search engines like [Amazon CloudSearch](http://aws.amazon.com/cloudsearch/), [Elasticsearch](https://www.elastic.co/products/elasticsearch), [Apache Solr](http://lucene.apache.org/solr/) etc. instead.
 
 But in some cases this functionality may be enough (suggest hash tags for example). And it is pretty fast and scalable.
-
-Place: Chasopys, Kyiv, Ukraine

@@ -1,6 +1,7 @@
 labels: Blog
         Django
 created: 2013-08-28T00:00
+place: Starobilsk, Ukraine
 
 # Django startproject template
 
@@ -65,5 +66,3 @@ Differences from the original project template:
 - error pages
 - south included by default
 - requirements.txt
-
-Place: Starobilsk, Ukraine

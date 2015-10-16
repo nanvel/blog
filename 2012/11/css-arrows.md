@@ -1,6 +1,7 @@
 labels: Blog
         CSS
 created: 2012-11-29T00:00
+place: Starobilsk, Ukraine
 
 # CSS arrows
 
@@ -257,5 +258,3 @@ Arrow left:
 ```
 
 <div class="box arrow-left"></div>
-
-Place: Starobilsk, Ukraine

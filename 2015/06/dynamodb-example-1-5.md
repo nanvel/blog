@@ -4,6 +4,7 @@ labels: Blog
         Cassandra
         Distributed
 created: 2015-06-28T18:48
+place: Kyiv, Ukraine
 
 # DynamoDB in examples, Example 1.5: Distributed system terms
 
@@ -169,5 +170,3 @@ UUID('738edea6-1dae-11e5-9188-283737190a60')
 ```
 
 UUID is a replacement for autoincremental field for distributed databases.
-
-Place: Kyiv, Ukraine

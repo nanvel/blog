@@ -1,6 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2015-09-05T22:26
+place: Batumi, Georgia
 
 # Position/reverse/stop pagination
 
@@ -194,5 +195,3 @@ if __name__ == '__main__':
     # Request cursor: cD0yJnI9dA==, limit: 2
     # ['D1', 'D0']
 ```
-
-Place: Batumi, Georgia

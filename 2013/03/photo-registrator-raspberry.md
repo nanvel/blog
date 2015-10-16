@@ -2,6 +2,7 @@ labels: Blog
         Linux
         RaspberryPi
 created: 2013-03-02T00:00
+place: Starobilsk, Ukraine
 
 # Photo registrator on Raspberry Pi
 
@@ -214,5 +215,3 @@ Links:
 - [http://www.raspberrypi.org/](http://www.raspberrypi.org/)
 - [http://docs.python.org/2/howto/webservers.html](http://docs.python.org/2/howto/webservers.html)
 - [http://pc-freak.net/blog/linux-webcam-pictures-tty-console-terminal-pictures-plain-console-webcamera/](http://pc-freak.net/blog/linux-webcam-pictures-tty-console-terminal-pictures-plain-console-webcamera/)
-
-Place: Starobilsk, Ukraine

@@ -2,6 +2,7 @@ labels: Blog
         CSS
         JS
 created: 2012-11-25T00:00
+place: Alchevs'k, Ukraine
 
 # CSS and JS notes
 
@@ -127,5 +128,3 @@ var is_chrome = /chrome/.test(navigator.userAgent.toLowerCase()
 ```html
 <form target="_blank">...</form>
 ```
-
-Place: Alchevs'k, Ukraine
