@@ -17,3 +17,10 @@ Why do I need a blog:
 - I delve deeper into issue while writing about it
 
 ```Nanvel``` is name of an engineer from ```Bern Up! Excess``` anime. She creates incredible things that amaze others.
+
+I am on:
+
+- [Facabook](https://www.facebook.com/polyenoom)
+- [G+](https://plus.google.com/u/0/+OleksandrPolyeno)
+- [GitHub](https://github.com/nanvel)
+- [LinkedIn](http://ua.linkedin.com/pub/oleksandr-polyeno/54/359/239)

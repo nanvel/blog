@@ -40,4 +40,4 @@ place: Starobilsk, Ukraine
 
 ![The amplifier, assembling](amp8.jpg)
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/cgD34ellU1I" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/cgD34ellU1I" frameborder="0" allowfullscreen></iframe>

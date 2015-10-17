@@ -1,6 +1,7 @@
 labels: Blog
         Microservices
         SoftwareDevelopment
+        Distributed
 created: 2015-08-09T14:28
 place: Kyiv, Ukraine
 

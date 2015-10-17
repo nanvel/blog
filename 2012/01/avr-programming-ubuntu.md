@@ -169,6 +169,6 @@ Compilling assembler (AVRA):
 avra -I $(INCLUDEDIR) -fI -o $(FILE) $(FILE)
 ```
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/PV276wCVX2s" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/PV276wCVX2s" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/toY4fjLI9GQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/toY4fjLI9GQ" frameborder="0" allowfullscreen></iframe>

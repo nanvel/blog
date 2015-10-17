@@ -427,7 +427,7 @@ def my_patch(value=1):
 #     ...
 ```
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/7XiArCSZc3g" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/7XiArCSZc3g" frameborder="0" allowfullscreen></iframe>
 
 ## Testing models
 
