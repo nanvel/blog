@@ -1,5 +1,5 @@
 labels: Blog
-        Microcontrollecrs
+        Microcontrollers
         Linux
 created: 2012-01-05T00:00
 place: Alchevs'k, Ukraine
