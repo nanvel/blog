@@ -1,5 +1,6 @@
-labels: Blog
+labels: Databases
         DynamoDB
+        AWS
 created: 2015-02-22T00:00
 
 # DynamoDB in examples

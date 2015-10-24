@@ -46,6 +46,7 @@ created: 2014-01-01T00:00
 - [Spinner gif generator](http://www.ajaxload.info/)
 - [Siege](http://www.joedog.org/siege-home/) - Load testing
 - [log.io - Real-time log monitoring in your browser](http://logio.org/)
+- [Secure tunnels to localhost](https://ngrok.com/)
 
 ### Blogs
 
