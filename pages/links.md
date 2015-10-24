@@ -97,4 +97,4 @@ created: 2014-01-01T00:00
 ## Places
 
 - [Betaplace coworking - простір, відкритий для співпраці](http://betaplace.com.ua/)
-- 1234567
+- 12345678
