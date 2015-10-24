@@ -1,4 +1,5 @@
 labels: Blog
+		SoftwareDevelopment
 created: 2015-10-24T14:41
 place: Kyiv, Ukraine
 
