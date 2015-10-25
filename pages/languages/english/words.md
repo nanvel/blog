@@ -17,3 +17,5 @@ To faint (lose consciousness) - втратити свідомість, знеп�
 word-of-mouth (chinese radio) - з вуст в уста
 blushing - червоніти
 imply - мати на увазі
+For the sake - заради
+sake - користь
