@@ -32,6 +32,10 @@ It is a declarative programming paradigm, which means programming is done with e
 
 **K**eep it **s**imple, **s**tupid.
 
+## Lazy implementation
+
+A lazy implementation postpones producing values to the last possible moment. This saves memory and may avoid useless processing as well.
+
 ## OOP
 
 A programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
