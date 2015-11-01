@@ -14,6 +14,22 @@ Sleeve - рукав
 Fascinating - чарівний
 Hallmark - ознака що відрізняє
 To faint (lose consciousness) - втратити свідомість, знепритомніти
-word-of-mouth (chinese radio) - з вуст в уста
-blushing - червоніти
-imply - мати на увазі
+Word-of-mouth (chinese radio) - з вуст в уста
+Blushing - червоніти
+Imply - мати на увазі
+Convinced - переконаний, впевнений
+To persuade - вмовляти
+Absent-minded - неуважний
+Stunning - приголомшуючий
+To tear - рвати
+Posessions - майно
+Per diems - добові
+Convenience - зручність
+Flea market - блошиний ринок
+Nurture - виховувати
+Paramount - першорядний
+Interlocutor - співрозмовник
+Wig - перука
+Pile of papers - купа паперів
+Closet - шафа
+Wardrobe - шафа для одягу

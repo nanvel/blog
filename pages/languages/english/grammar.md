@@ -13,3 +13,14 @@ A little money - some money (enough).
 I used to do something ... (I did something before)
 I get used to ... (I have started to do something)
 To be used to ... (Doing it now)
+
+## Time
+
+at -> on -> in
+
+at 10:00
+on Sunday
+on 15-th of May
+in July
+in Summer
+in 1984

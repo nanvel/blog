@@ -40,3 +40,38 @@ It seems to me ...
 To consider ...
 To take into consideration ...
 To take into account ...
+
+## Important
+
+Important
+Essential
+Vital
+
+## To accomplish
+
+To accomplish
+To manage
+To succeed
+
+## To participate
+
+To take part
+To participate
+
+## Irretable
+
+Irretable
+He makes me nervous
+He drives me up the wall
+
+## To doubt
+
+To doubt
+To hesitate
+
+## Recomendations
+
+I advise doing ...
+I recommend ...
+I advise You to ...
+I recommend You to ...
