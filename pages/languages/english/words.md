@@ -33,3 +33,5 @@ Wig - перука
 Pile of papers - купа паперів
 Closet - шафа
 Wardrobe - шафа для одягу
+For the sake - заради
+Sake - користь
