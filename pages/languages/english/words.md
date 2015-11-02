@@ -35,3 +35,5 @@ Closet - шафа
 Wardrobe - шафа для одягу
 For the sake - заради
 Sake - користь
+Humble - скромний
+Piggy bank - скарбничка

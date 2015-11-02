@@ -15,3 +15,4 @@ To step into his shoes - постивити себе на його місце
 Put up with - миритися
 Rooted out - викорінений
 My rule of thumb - моє правило
+I run the risk of getting lost
