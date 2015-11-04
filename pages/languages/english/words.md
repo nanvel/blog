@@ -37,3 +37,5 @@ For the sake - заради
 Sake - користь
 Humble - скромний
 Piggy bank - скарбничка
+Kangaroo - кенгуру
+Inoculations - щеплення

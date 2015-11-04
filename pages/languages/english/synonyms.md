@@ -81,3 +81,26 @@ It's a good idea to ...
 It's worth ...
 Why don't you ...
 
+## Accent
+
+Make a point on ...
+Put an accent on ...
+Emphasize ...
+
+## Sure / not sure about
+
+99%:
+
+- definetively
+- centainly
+
+75%:
+
+- probably
+
+## My attitude
+
+Like
+Love
+Hate
+Enjoy

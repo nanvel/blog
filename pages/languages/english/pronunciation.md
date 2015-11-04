@@ -17,6 +17,10 @@ Thumb - /θʌm/
 Government - /ˈɡʌvənmənt/
 Quality - /ˈkwɒləti/
 Definitely - /ˈdef·ə·nət·li/
+Exact - /ɪɡˈzækt/
+Furniture - /ˈfɜr·nɪ·tʃər/
+Really - /ˈri·ə·li, ˈri·li/
+First of all - /fə:stəvɔ:l/
 
 Links:
 
