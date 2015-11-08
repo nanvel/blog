@@ -2,6 +2,7 @@ labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
 place: Kyiv, Ukraine
+comments: true
 
 # Software design patterns
 

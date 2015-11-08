@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2013-01-01T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Schema- and data-migration in Django with South
 

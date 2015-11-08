@@ -3,6 +3,7 @@ labels: Blog
         Databases
 created: 2013-10-02T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [Django] Database transactions
 

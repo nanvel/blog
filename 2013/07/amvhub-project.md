@@ -1,7 +1,9 @@
 labels: Blog
         Projects
 created: 2013-07-07T00:00
+modified: 2014-07-09T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # AMV HUB project
 

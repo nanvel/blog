@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2014-03-24T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Three ways to change widget in Django ModelForm
 

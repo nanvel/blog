@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2012-09-29T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # [Django] Get admin page url
 

@@ -2,6 +2,7 @@ labels: Blog
         JS
 created: 2013-04-30T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Crossbrowser skip to content link
 

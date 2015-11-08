@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-04-18T10:56
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 3.1: Does DynamoDB fits my requirements?
 

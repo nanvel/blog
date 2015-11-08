@@ -4,6 +4,7 @@ labels: Blog
         Databases
 created: 2015-03-08T13:30
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 1.3: DynamoDB local and testing
 

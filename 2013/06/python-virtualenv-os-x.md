@@ -3,6 +3,7 @@ labels: Blog
         OSX
 created: 2013-06-30T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Python virtualenv on Mac OS X
 

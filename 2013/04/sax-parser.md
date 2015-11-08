@@ -2,6 +2,7 @@ labels: Blog
         XML
 created: 2013-04-14T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # SAX parser
 

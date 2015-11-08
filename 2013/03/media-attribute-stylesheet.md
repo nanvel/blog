@@ -2,6 +2,7 @@ labels: Blog
         HTML
 created: 2013-03-08T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # media attribute in link[rel=stylesheet]
 

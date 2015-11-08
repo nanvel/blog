@@ -2,6 +2,7 @@ labels: Blog
         Python
 created: 2014-12-27T14:41
 place: Kyiv, Ukraine
+comments: true
 
 # Python static method and class inheritance
 

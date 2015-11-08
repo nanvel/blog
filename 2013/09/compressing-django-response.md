@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2013-09-17T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [Django] Compress response generator output
 

@@ -2,6 +2,7 @@ labels: Blog
         Scrappers
 created: 2014-03-29T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Scrap NAICS codes and save them to sqlite database
 

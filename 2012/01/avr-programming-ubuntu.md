@@ -3,6 +3,7 @@ labels: Blog
         Linux
 created: 2012-01-05T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # AVR-microcontroller programming under Ubuntu
 
@@ -68,18 +69,19 @@ sudo apt-get install avrdude
 
 Lets write a program and load it to the device. As an example: led flashes once per second. The led is connected to microcontroller's pin 1, and I use a crystal oscillator 4 MHz.
 
-Sometimes I look into io.h (in my case iom8535.h) to find necessary register names, but first we need to find it:
+!!! tip "locate"
+    Sometimes I look into io.h (in my case iom8535.h) to find necessary register names, but first we need to find it:
 
-```bash
-locate iom8535.h
-```
+    ```bash
+    locate iom8535.h
+    ```
 
-Output:
-```
-/usr/lib/avr/include/avr/iom8535.h
-```
+    Output:
+    ```
+    /usr/lib/avr/include/avr/iom8535.h
+    ```
 
-Look how interrupts and registers are called.
+    Look how interrupts and registers are called.
 
 The program:
 ```c

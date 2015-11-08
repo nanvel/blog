@@ -3,6 +3,7 @@ labels: Blog
         API
 created: 2013-06-13T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [Django] Trigger GA event on server side
 

@@ -3,6 +3,7 @@ labels: Blog
         Projects
 created: 2013-08-25T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # NicEdit widget for Django
 

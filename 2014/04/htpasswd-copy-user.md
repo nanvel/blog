@@ -2,6 +2,7 @@ labels: Blog
         Bash
 created: 2014-04-05T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [bash] Copy user from one htpasswd file to another
 

@@ -3,6 +3,7 @@ labels: Blog
         Redis
 created: 2015-08-15T10:15
 place: Kyiv, Ukraine
+comments: true
 
 # Redis, usage examples
 

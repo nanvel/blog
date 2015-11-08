@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-03-21T13:22
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 2.2: Table secondary indexes
 

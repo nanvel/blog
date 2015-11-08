@@ -2,6 +2,7 @@ labels: Blog
         Tornado
 created: 2014-12-06T16:02
 place: Kyiv, Ukraine
+comments: true
 
 # Tornado time.sleep() replacement
 

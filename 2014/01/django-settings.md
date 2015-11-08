@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2014-01-12T00:00
 place: Phuket, Thailand
+comments: true
 
 # Django settings
 

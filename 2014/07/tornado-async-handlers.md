@@ -2,6 +2,7 @@ labels: Blog
         Tornado
 created: 2014-07-26T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # [tornado] Async handlers, code refactor
 

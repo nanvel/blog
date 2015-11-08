@@ -2,6 +2,7 @@ labels: Blog
         XML
 created: 2014-06-22T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # Lightweight xml parser
 

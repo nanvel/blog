@@ -2,6 +2,7 @@ labels: Blog
         JS
 created: 2014-03-22T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Show thumbnails instead of youtube video player
 

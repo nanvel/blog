@@ -2,6 +2,7 @@ labels: Blog
         Accessibility
 created: 2013-05-19T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # 10 steps to improve site accessibility
 

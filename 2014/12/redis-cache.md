@@ -2,6 +2,7 @@ labels: Blog
         Databases
 created: 2014-12-28T01:46
 place: Kyiv, Ukraine
+comments: true
 
 # Caching using redis get/setex issue
 

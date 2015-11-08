@@ -2,11 +2,15 @@ labels: Blog
         Django
         JS
 created: 2012-07-30T00:00
+modified: 2015-02-15T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Multiple files uploading with Django and valums file-uploader
 
 ![Multiple files uploader](file_uploader.png)
+
+[TOC]
 
 ## Step 1: js/html
 
@@ -176,4 +180,4 @@ Added django code example.
 
 **UPD 2015-02-15**
 
-Fixed language
+Fixed language.

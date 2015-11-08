@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-05-01T14:52
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 3.2: FilterExpression and pagination issue
 

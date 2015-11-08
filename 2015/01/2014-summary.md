@@ -2,6 +2,7 @@ labels: Blog
         Life
 created: 2015-01-18T12:22
 place: Phuket, Thailand
+comments: true
 
 # 2014 Summary
 

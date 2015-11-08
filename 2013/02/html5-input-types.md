@@ -3,6 +3,7 @@ labels: Blog
         JS
 created: 2013-02-18T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # HTML5 input types
 

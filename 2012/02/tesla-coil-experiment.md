@@ -2,6 +2,7 @@ labels: Blog
         Electronics
 created: 2012-02-01T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Tesla coil experiment
 

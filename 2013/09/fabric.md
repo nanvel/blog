@@ -2,6 +2,7 @@ labels: Blog
         DevOps
 created: 2013-09-07T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Fabric helps to escape repeatable and annoying work
 

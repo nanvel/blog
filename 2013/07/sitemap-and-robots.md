@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2013-07-21T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # sitemap.xml and robots.txt
 

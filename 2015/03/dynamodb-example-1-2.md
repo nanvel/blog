@@ -3,6 +3,7 @@ labels: Blog
         Tornado
 created: 2015-03-01T15:23
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)
 

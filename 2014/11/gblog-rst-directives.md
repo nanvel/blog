@@ -3,6 +3,7 @@ labels: Blog
         Projects
 created: 2014-11-15T21:27
 place: Kyiv, Ukraine
+comments: true
 
 # GBlog custom rst directives
 

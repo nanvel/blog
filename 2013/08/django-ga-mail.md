@@ -2,7 +2,9 @@ labels: Blog
         Django
         Projects
 created: 2013-08-17T00:00
+modified: 2013-08-27T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # django-ga-mail reusable app
 

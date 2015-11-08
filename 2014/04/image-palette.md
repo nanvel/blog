@@ -3,6 +3,7 @@ labels: Blog
         ImageProcessing
 created: 2014-04-07T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Image palette using PIL
 

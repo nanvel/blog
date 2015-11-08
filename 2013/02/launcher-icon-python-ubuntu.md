@@ -3,6 +3,7 @@ labels: Blog
         Ubuntu
 created: 2013-02-24T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Launcher icon for python script on Ubuntu
 

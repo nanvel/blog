@@ -2,7 +2,9 @@ labels: Blog
         Databases
         Lua
 created: 2014-11-09T00:00
+modified: 2015-09-24T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # Select my friends activities, nosql way
 

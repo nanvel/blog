@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-07-05T17:32
 place: Kyiv, Ukraine
+comments: true
 
 # DynamoDB in examples, Example 1.6: DynamoDB alternatives
 

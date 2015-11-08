@@ -2,6 +2,7 @@ labels: Blog
         SoftwareDevelopment
 created: 2015-09-05T22:26
 place: Batumi, Georgia
+comments: true
 
 # Position/reverse/stop pagination
 

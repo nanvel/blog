@@ -1,7 +1,9 @@
 labels: Blog
         Databases
 created: 2012-09-21T00:00
+modified: 2015-02-21T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # PostgreSQL dump
 

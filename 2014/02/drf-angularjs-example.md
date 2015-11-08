@@ -3,6 +3,7 @@ labels: Blog
         AngularJS
 created: 2014-02-28T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Django, Django Rest Framework, AngularJS example project
 

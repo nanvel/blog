@@ -2,6 +2,7 @@ labels: Blog
         JS
 created: 2014-03-31T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Easy filters bar, pure js
 

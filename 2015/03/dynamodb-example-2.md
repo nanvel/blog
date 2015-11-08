@@ -3,6 +3,7 @@ labels: Blog
         Databases
 created: 2015-03-08T14:28
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 2: Unique page views
 

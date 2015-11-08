@@ -2,6 +2,7 @@ labels: Blog
         Tornado
 created: 2015-03-08T20:55
 place: Phuket, Thailand
+comments: true
 
 # Efficient actions counter using tornado IOLoop.add_timeout
 

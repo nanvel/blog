@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-06-06T22:09
 place: Dream Story, Kyiv, Ukraine
+comments: true
 
 # DynamoDB in examples, Example 1.4: DyanmoDB and Celery using green threads
 

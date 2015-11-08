@@ -2,6 +2,7 @@ labels: Blog
         API
 created: 2013-10-26T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Trac api
 

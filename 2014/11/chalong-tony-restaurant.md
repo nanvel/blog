@@ -2,6 +2,7 @@ labels: Blog
         Places
 created: 2014-11-22T19:24
 place: Kyiv, Ukraine
+comments: true
 
 # Good place to have a dinner on Chalong, Phuket
 

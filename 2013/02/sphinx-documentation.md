@@ -2,6 +2,7 @@ labels: Blog
         Documentation
 created: 2013-02-23T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Project documentation with Sphinx
 

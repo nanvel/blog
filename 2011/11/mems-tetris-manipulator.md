@@ -3,6 +3,7 @@ labels: Blog
         Microcontrollers
 created: 2011-11-20T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Маніпулятор для гри у тетріс на базі МЕМС-акселерометра
 

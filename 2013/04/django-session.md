@@ -3,6 +3,7 @@ labels: Blog
         Testing
 created: 2013-04-27T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [Django] Session. Control and testing
 

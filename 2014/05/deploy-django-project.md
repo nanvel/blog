@@ -3,6 +3,7 @@ labels: Blog
         DevOps
 created: 2014-05-04T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # A way to deploy a django project, detailed instruction
 

@@ -3,6 +3,7 @@ labels: Blog
         Databases
 created: 2015-03-14T21:04
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 2.1: Key schema and counters
 

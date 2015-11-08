@@ -2,6 +2,7 @@ labels: Blog
         SignalProcessing
 created: 2013-09-27T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Signal spectrum using NumPy
 

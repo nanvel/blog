@@ -2,6 +2,7 @@ labels: Blog
         API
 created: 2013-05-28T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Python script retrieves my vk news feed
 

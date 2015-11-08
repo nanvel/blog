@@ -2,6 +2,7 @@ labels: Blog
         SCM
 created: 2012-05-25T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Git commands
 

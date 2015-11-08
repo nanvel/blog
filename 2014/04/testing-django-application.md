@@ -3,6 +3,7 @@ labels: Blog
         Testing
 created: 2014-04-03T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Testing Django applications
 

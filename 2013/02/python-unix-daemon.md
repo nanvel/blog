@@ -2,6 +2,7 @@ labels: Blog
         Python
 created: 2013-02-16T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Python way to create unix daemon
 

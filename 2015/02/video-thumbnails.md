@@ -2,6 +2,7 @@ labels: Blog
         Python
 created: 2015-02-07T12:36
 place: Phuket, Thailand
+comments: true
 
 # Get youtube/vimeo/vevo/vine video thumbnail
 

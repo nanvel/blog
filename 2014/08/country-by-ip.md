@@ -3,6 +3,7 @@ labels: Blog
         Geo
 created: 2014-08-23T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # Get country code/name by IP address
 

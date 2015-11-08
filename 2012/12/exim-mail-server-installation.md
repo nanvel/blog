@@ -3,6 +3,7 @@ labels: Blog
         DevOps
 created: 2012-12-12T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Exim mail server installation
 

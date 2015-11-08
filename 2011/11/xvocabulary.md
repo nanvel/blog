@@ -2,7 +2,9 @@ labels: Blog
         Django
         Projects
 created: 2011-11-10T00:00
+modified: 2013-10-26T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # XVocabulary project
 

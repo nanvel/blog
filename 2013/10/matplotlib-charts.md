@@ -2,6 +2,7 @@ labels: Blog
         SignalProcessing
 created: 2013-10-05T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Displaying charts with Matplotlib
 

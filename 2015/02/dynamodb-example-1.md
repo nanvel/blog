@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-02-22T00:50
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 1: User wallet table
 

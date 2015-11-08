@@ -3,6 +3,7 @@ labels: Blog
         RaspberryPi
 created: 2013-03-02T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Photo registrator on Raspberry Pi
 

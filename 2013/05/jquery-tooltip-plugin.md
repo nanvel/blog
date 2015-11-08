@@ -2,6 +2,7 @@ labels: Blog
         JS
 created: 2013-05-31T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # jQuery tooltip plugin
 

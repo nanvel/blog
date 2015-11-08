@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2013-04-16T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # [Django] Pass iterator to response
 

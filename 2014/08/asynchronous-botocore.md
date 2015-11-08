@@ -3,6 +3,7 @@ labels: Blog
         AWS
 created: 2014-08-30T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # [tornado] Asynchronous botocore
 

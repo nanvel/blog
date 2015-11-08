@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2014-05-11T00:00
 place: Kyiv, Ukraine
+comments: true
 
 # [Django] Where to store host specific variables
 

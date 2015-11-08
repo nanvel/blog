@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-03-29T12:56
 place: KLIA2, Malaysia
+comments: true
 
 # DynamoDB in examples, Example 2.3: Pagination
 

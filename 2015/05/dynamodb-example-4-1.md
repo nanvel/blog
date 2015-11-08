@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-05-30T16:56
 place: Chasopys, Kyiv, Ukraine
+comments: true
 
 # DynamoDB in examples, Example 4.1: Search
 

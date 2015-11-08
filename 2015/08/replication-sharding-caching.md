@@ -2,6 +2,7 @@ labels: Blog
         Databases
 created: 2015-08-08T23:40
 place: Kyiv, Ukraine
+comments: true
 
 #Thoughts on replication, sharding and caching
 

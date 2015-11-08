@@ -3,6 +3,7 @@ labels: Blog
         JS
 created: 2012-11-25T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # CSS and JS notes
 

@@ -2,6 +2,7 @@ labels: Blog
         CSS
 created: 2013-07-06T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Play icon using pure css
 

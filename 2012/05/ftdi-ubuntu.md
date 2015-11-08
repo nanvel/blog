@@ -2,13 +2,17 @@ labels: Blog
         Microcontrollers
         Electronics
 created: 2012-05-04T00:00
+modified: 2012-08-10T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Зв’язок з FTDI в Ubuntu
 
 ![ft232rl](ft232rl.jpg)
 
 Рішення - використання відкритої бібліотеки libFTDI з сайту infra2net.com.
+
+[TOC]
 
 ## Встановлення LibFTDI
 
@@ -74,7 +78,7 @@ if __name__ == '__main__':
 
 [Список функцій для роботи з FTDI](<http://www.intra2net.com/en/developer/libftdi/documentation/group__libftdi.html).
 
-**UPD 2012.08.10**
+**UPD 2012-08-10**
 
 Section 5 update:
 

@@ -3,6 +3,7 @@ labels: Blog
         HTML
 created: 2012-08-23T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # HTML/CSS best practice
 

@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2014-04-06T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Ping google django admin button
 

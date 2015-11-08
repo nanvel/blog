@@ -3,6 +3,7 @@ labels: Blog
         Tornado
 created: 2015-02-15T13:01
 place: Phuket, Thailand
+comments: true
 
 # Search for memory leaks in tornado project
 

@@ -2,6 +2,7 @@ labels: Blog
         Django
 created: 2013-08-28T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Django startproject template
 

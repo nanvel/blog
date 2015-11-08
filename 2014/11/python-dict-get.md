@@ -2,6 +2,7 @@ labels: Blog
         Python
 created: 2014-11-20T23:15
 place: Kyiv, Ukraine
+comments: true
 
 # Python dict.get()
 

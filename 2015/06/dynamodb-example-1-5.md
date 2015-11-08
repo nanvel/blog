@@ -5,6 +5,7 @@ labels: Blog
         Distributed
 created: 2015-06-28T18:48
 place: Kyiv, Ukraine
+comments: true
 
 # DynamoDB in examples, Example 1.5: Distributed system terms
 

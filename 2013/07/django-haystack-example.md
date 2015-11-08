@@ -1,7 +1,9 @@
 labels: Blog
         Django
 created: 2013-07-17T00:00
+modified: 2014-07-13T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # Django + haystack + elasticsearch simple example project
 
@@ -188,7 +190,8 @@ Links:
 
 **UPD 2014-07-13**
 
-**!ATTN**: [Elasticsearch has a flaw in its default configuration which makes it possible for any webpage to execute arbitrary code on visitors with Elasticsearch installed](http://bouk.co/blog/elasticsearch-rce/).
+!!! attension "Elasticsearch has a flaw in its default configuration"
+    [Elasticsearch has a flaw in its default configuration which makes it possible for any webpage to execute arbitrary code on visitors with Elasticsearch installed](http://bouk.co/blog/elasticsearch-rce/).
 
 Add
 ```text

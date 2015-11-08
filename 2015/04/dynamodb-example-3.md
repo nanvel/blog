@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
 created: 2015-04-12T12:45
 place: Phuket, Thailand
+comments: true
 
 # DynamoDB in examples, Example 3: Toys store orders
 

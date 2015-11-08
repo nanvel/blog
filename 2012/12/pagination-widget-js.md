@@ -2,6 +2,7 @@ labels: Blog
         JS
 created: 2012-12-29T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Pagination widget js
 

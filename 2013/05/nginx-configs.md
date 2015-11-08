@@ -2,6 +2,7 @@ labels: Blog
         DevOps
 created: 2013-05-01T00:00
 place: Starobilsk, Ukraine
+comemnts: true
 
 # Domain configuration in nginx config
 

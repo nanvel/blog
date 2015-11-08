@@ -2,6 +2,7 @@ labels: Blog
         HTML
 created: 2013-03-24T00:00
 place: Starobilsk, Ukraine
+comments: true
 
 # ```<time>``` - HTML5 тег для зазначення часу
 
