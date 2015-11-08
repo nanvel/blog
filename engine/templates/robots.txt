@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /label
+Host: mysite.com
+
+User-agent: Goolebot
+Disallow: /label
+
+User-agent: *
+Crawl-delay: 30
+Disallow: /label

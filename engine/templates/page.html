@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page.title }}{% end %}
+
+{% block sidebar %}
+	<div class="sidebar-block">
+		<span class="block-title">Tags</span>
+		<ul class="tags">
+  		{% for label in page.labels %}
+      	<li><a href="{{ reverse_url('label', label.slug) }}">{{ label.title }}</a></li>
+  		{% end %}
+  	</ul>
+  </div>
+  <div class="sidebar-block">
+  	<span class="block-title">Created</span>
+  	<time datetime="{{ page.created.strftime('%Y-%M-%d') }}" pubdate>{{ page.created.strftime('%B %d, %Y') }}</time>
+  </div>
+  {% if page.created != page.modified %}
+  	<div class="sidebar-block">
+  		<span class="block-title">Modified</span>
+  		<time datetime="{{ page.modified.strftime('%Y-%M-%d') }}">{{ page.modified.strftime('%B %d, %Y') }}</time>
+  	</div>
+  {% end %}
+  {% if 'place' in page.meta %}
+  	<div class="sidebar-block">
+  		<span class="block-title">Place</span>
+  		{{ page.meta['place'][0] }}
+  	</div>
+  {% end %}
+  <div class="sidebar-block">
+  	<span class="block-title">Edit</span>
+  	<a href="https://github.com/nanvel/blog/blob/master/{{ page.uri }}.md" target="_blank">&#x270D; edit on GitHub</a>
+  </div>
+{% end %}
+{% block content %}
+  <article>
+    {% raw page.html %}
+    <time datetime="{{ page.created.strftime('%Y-%M-%d') }}" pubdate></time>
+    <div class="license">
+    	Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="creative-commons">CC BY-SA 3.0</a>
+    </div>
+  </article>
+  {% if 'comments' in page.meta %}
+  	<div id="disqus_thread" style="margin-top: 20px;"></div>
+		<script>
+			var disqus_config = function () {
+				this.page.url = 'http://nanvel.name{{ page.uri }}';
+				this.page.identifier = '{{ page.uri }}';
+			};
+			(function() {
+				var d = document, s = d.createElement('script');
+				s.src = '//nanvelname.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	{% end %}
+{% end %}

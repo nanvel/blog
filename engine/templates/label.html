@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ current.title }} - labels{% end %}
+
+{% block sidebar %}
+<div class="sidebar-block">
+  <span class="block-title">Tags</span>
+  <ul class="tags">
+    {% for label in labels %}
+      {% if label != current %}
+        <li><a href="{{ reverse_url('label', label.slug) }}">{{ label.title }}</a></li>
+      {% else %}
+        <li class="selected"><a href="#">{{ label.title }}</a></li>
+      {% end %}
+    {% end %}
+  </ul>
+</div>
+{% end %}
+
+{% block content %}
+  <ul class="pages">
+    {% for page in pages %}
+      <li><a href="{{ reverse_url('page', page.uri) }}">{{ page.title }}</a> <span>{{ page.created.strftime('%B %d, %Y') }}</span></li>
+    {% end %}
+  </ul>
+</section>
+{% end %}

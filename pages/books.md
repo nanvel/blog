@@ -1,5 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
+modified: 2015-11-08T00:02
 
 # Books
 
@@ -45,10 +46,11 @@ created: 2015-10-04T00:00
 - Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future by Ashlee Vance
 - Dive into Python by Mark Pilgrim
 - A Tale for the Time Being by Ruth Ozeki
+- [+] Fluent Python by Luciano Ramalho
 
 ## In progress
 
 - The New Digital Age: Reshaping the Future of People, Nations and Business by Eric Schmidt and Jared Cohen
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
-- Fluent Python by Luciano Ramalho
+- The Happiness Project by Gretchen Rubin

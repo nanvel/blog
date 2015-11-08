@@ -1,7 +1,9 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
+modified: 2015-11-08T00:02
 place: Kyiv, Ukraine
+comments: true
 
 # Pronciples from software development
 
@@ -30,7 +32,9 @@ It is a declarative programming paradigm, which means programming is done with e
 
 ## KISS
 
-**K**eep it **s**imple, **s**tupid.
+Stands for "**K**eep **I**t **S**imple, **S**tupid."
+
+This calls for seeking the simplest possible solution, with the fewest moving parts. The phrase was coined by Kelly Johnson, a highly accomplished aerospace engineer who worked in the real Area 51 designing some of the most advanced aircraft of the 20th centure.
 
 ## Lazy implementation
 
@@ -129,3 +133,9 @@ B. Abstractions should not depend on details. Details should depend on abstracti
 ## [The twelve-factor app](http://12factor.net/)
 
 The twelve-factor app is a methodology for building software-as-a-service apps.
+
+## YAGNI
+
+Stands for "**Y**ou **A**in't **G**onna **N**eed **I**t."
+
+A slogan to avoid implementing functionality that is not immediately necessary based on assumptions about future needs.
