@@ -1,7 +1,9 @@
 labels: Blog
         Python
 created: 2011-11-04T00:00
+modified: 2012-11-10T00:00
 place: Alchevs'k, Ukraine
+comments: true
 
 # Python
 
