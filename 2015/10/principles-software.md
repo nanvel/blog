@@ -5,7 +5,7 @@ modified: 2015-11-08T00:02
 place: Kyiv, Ukraine
 comments: true
 
-# Pronciples from software development
+# Principles from software development
 
 [TOC]
 

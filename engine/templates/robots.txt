@@ -1,6 +1,6 @@
 User-agent: Yandex
 Disallow: /label
-Host: mysite.com
+Host: nanvel.name
 
 User-agent: Goolebot
 Disallow: /label
