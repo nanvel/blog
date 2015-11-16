@@ -18,7 +18,7 @@ Word-of-mouth (chinese radio) - з вуст в уста
 Blushing - червоніти
 Imply - мати на увазі
 Convinced - переконаний, впевнений
-To persuade - вмовляти
+To persuade - вмовляти, переконувати
 Absent-minded - неуважний
 Stunning - приголомшуючий
 To tear - рвати
@@ -39,3 +39,11 @@ Humble - скромний
 Piggy bank - скарбничка
 Kangaroo - кенгуру
 Inoculations - щеплення
+Learn by heart - вчити напам'ять
+Not certain - не впевнений
+What is it called? - Як це називається?
+Notion - переконання, поняття
+Poultry - притця
+Meadow - луг
+Indeed - дійсно (really)
+Seldom - рідко (rarely)

@@ -1,5 +1,8 @@
 import os.path
 
+import sys
+sys.path.append('/User/nanvel/projects/c2p2')
+
 from c2p2 import app
 
 

@@ -21,6 +21,13 @@ Exact - /ɪɡˈzækt/
 Furniture - /ˈfɜr·nɪ·tʃər/
 Really - /ˈri·ə·li, ˈri·li/
 First of all - /fə:stəvɔ:l/
+Percent - /pəˈsent/
+Era - /ˈɪə.rə/
+Scheduled - /ˈʃedjuːld/
+Owl - /ɑʊl/
+Pronounce - /prəˈnɑʊns/
+Pronounciation - /prəˌnənsēˈāSHən/
+Tongue - /tʌŋ/
 
 Links:
 

@@ -47,6 +47,7 @@ modified: 2015-11-08T00:02
 - Dive into Python by Mark Pilgrim
 - A Tale for the Time Being by Ruth Ozeki
 - [+] Fluent Python by Luciano Ramalho
+- React.js Essentials by Artemij Fedosejev
 
 ## In progress
 

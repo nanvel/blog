@@ -1,5 +1,6 @@
 labels: Blog
         Workspace
+        Life
 created: 2014-01-19T00:00
 modified: 2015-10-22T00:00
 place: Phuket, Thailand

@@ -30,6 +30,10 @@ except KeyError:
 
 It is a declarative programming paradigm, which means programming is done with expressions.
 
+## Imperative vs Declarative style of programming
+
+Declarative style of programming tells a computer what to do without specifying how, while an imperative style style of programming describes how to do it.
+
 ## KISS
 
 Stands for "**K**eep **I**t **S**imple, **S**tupid."

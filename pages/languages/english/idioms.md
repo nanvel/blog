@@ -21,3 +21,4 @@ Rooted out - викорінений
 My rule of thumb - моє правило
 I run the risk of getting lost
 Put up with - tolerate
+On the one hand .... On the other hand ...
