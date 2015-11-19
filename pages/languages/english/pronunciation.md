@@ -28,6 +28,10 @@ Owl - /ɑʊl/
 Pronounce - /prəˈnɑʊns/
 Pronounciation - /prəˌnənsēˈāSHən/
 Tongue - /tʌŋ/
+Suburban - /səˈbɜː.bən/
+Squirrel - /ˈskwɪr.əl/
+Closer - /kləʊsə/
+Merely - /ˈmɪə.li/
 
 Links:
 

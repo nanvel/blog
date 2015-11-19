@@ -47,3 +47,4 @@ Poultry - притця
 Meadow - луг
 Indeed - дійсно (really)
 Seldom - рідко (rarely)
+Mansion - особняк
