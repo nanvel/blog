@@ -1,7 +1,7 @@
 import os.path
 
 from c2p2 import app
-from c2p2 import settings
+from c2p2.settings import settings
 
 
 rel = lambda p: os.path.join(os.path.dirname(os.path.realpath(__file__)), p)
