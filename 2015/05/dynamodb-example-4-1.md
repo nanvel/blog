@@ -66,8 +66,8 @@ class DDBTweet(DDBTable):
             'tweet_id': tweet_id,
             'text': text,
             'created': created,
-            'upper_first': upper[0],
-            'upper_rest': upper[1:],
+            'upper_first': upper[:2],
+            'upper_rest': upper[2:],
         }
         response = self._dynamodb(operation='PutItem').call(
             TableName=self._get_table_name(),
@@ -88,13 +88,13 @@ class DDBTweet(DDBTable):
                 'KeyConditions': {
                     'upper_first': {
                         'AttributeValueList': [{
-                            'S': upper[0],
+                            'S': upper[:2],
                         }],
                         'ComparisonOperator': 'EQ'
                     },
                     'upper_rest': {
                         'AttributeValueList': [{
-                            'S': upper[1:],
+                            'S': upper[2:],
                         }],
                         'ComparisonOperator': 'BEGINS_WITH'
                     }
@@ -105,7 +105,7 @@ class DDBTweet(DDBTable):
                 'KeyConditions': {
                     'upper_first': {
                         'AttributeValueList': [{
-                            'S': upper[0],
+                            'S': upper[:2],
                         }],
                         'ComparisonOperator': 'EQ'
                     },
@@ -128,15 +128,15 @@ if __name__ == '__main__':
     print(ddb_tweet.search(text='text4'))
     print(ddb_tweet.search(text='not found'))
 
-    # ([{'upper_first': 'T', 'upper_rest': 'EXT1', 'tweet_id': '5aac3887-3da4-41c3-b158-4d9624248e46', 'text': 'text1', 'created': '2015-05-30 13:43:01.174688'}, {'upper_first': 'T', 'upper_rest': 'EXT2', 'tweet_id': '95b8330a-0d56-41b8-9389-a8ae4fd27d70', 'text': 'text2', 'created': '2015-05-30 13:43:01.265926'}, {'upper_first': 'T', 'upper_rest': 'EXT3', 'tweet_id': 'd079d36b-e902-4f0e-91de-03b285756d27', 'text': 'text3', 'created': '2015-05-30 13:43:01.290698'}, {'upper_first': 'T', 'upper_rest': 'EXT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
-    # ([{'upper_first': 'T', 'upper_rest': 'EXT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
+    # ([{'upper_first': 'TE', 'upper_rest': 'XT1', 'tweet_id': '5aac3887-3da4-41c3-b158-4d9624248e46', 'text': 'text1', 'created': '2015-05-30 13:43:01.174688'}, {'upper_first': 'TE', 'upper_rest': 'XT2', 'tweet_id': '95b8330a-0d56-41b8-9389-a8ae4fd27d70', 'text': 'text2', 'created': '2015-05-30 13:43:01.265926'}, {'upper_first': 'TE', 'upper_rest': 'XT3', 'tweet_id': 'd079d36b-e902-4f0e-91de-03b285756d27', 'text': 'text3', 'created': '2015-05-30 13:43:01.290698'}, {'upper_first': 'TE', 'upper_rest': 'XT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
+    # ([{'upper_first': 'TE', 'upper_rest': 'XT4', 'tweet_id': '67e6c96b-f828-42dc-89b9-770f309e920e', 'text': 'Text4', 'created': '2015-05-30 13:43:01.314380'}], None)
     # ([], None)
 ```
 
-Here I wanted to turn your attention to two points:
+Here I want to turn your attention to two points:
 
 - use additional text field with uppercase or lowercase content, it allows to search case insensitive
-- hash key == first letter in text, it allows to spread data and load between nodes in DynamoDB cluster
+- hash key == first two letters in text, it allows to spread data and load between nodes in DynamoDB cluster
 
 This example is pretty useless for implemetation search feature in real projects, use search engines like [Amazon CloudSearch](http://aws.amazon.com/cloudsearch/), [Elasticsearch](https://www.elastic.co/products/elasticsearch), [Apache Solr](http://lucene.apache.org/solr/) etc. instead.
 
