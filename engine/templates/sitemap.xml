@@ -4,8 +4,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     {% for page in pages %}
     <url>
-        <loc>http://nanvel.name/{{ page.uri }}</loc>
-        <lastmod>{{ page.modified.strftime('%Y-%m-%d') }}</lastmod>
+        <loc>http://nanvel.name/{{ c.page.uri }}</loc>
+        <lastmod>{{ c.page.modified.strftime('%Y-%m-%d') }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>

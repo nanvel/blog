@@ -92,6 +92,8 @@ hr {
 }
 img {
     max-width: 600px;
+    border: 1px solid #eee;
+    padding: 1px;
 }
 button,
 input,

@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ c.label.title }} - labels{% end %}
+{% block title %}Index{% end %}
 
 {% block sidebar %}
 <div class="sidebar-block">
   <span class="block-title">Labels</span>
   <ul class="tags">
     {% for label in c.labels %}
-      {% if label != c.label %}
+      {% if not c.label or label != c.label %}
         <li><a href="{{ reverse_url('label', label.slug) }}">{{ label.title }}</a></li>
       {% else %}
         <li class="selected"><a href="#">{{ label.title }}</a></li>
@@ -19,7 +19,7 @@
 
 {% block content %}
   <ul class="pages">
-    {% for page in c.pages %}
+    {% for page in c.pages.for_label('blog') %}
       <li><a href="{{ reverse_url('page', page.uri) }}">{{ page.title }}</a> <span>{{ page.created.strftime('%B %d, %Y') }}</span></li>
     {% end %}
   </ul>
