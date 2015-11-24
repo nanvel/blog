@@ -48,10 +48,10 @@ modified: 2015-11-08T00:02
 - A Tale for the Time Being by Ruth Ozeki
 - [+] Fluent Python by Luciano Ramalho
 - React.js Essentials by Artemij Fedosejev
+- The New Digital Age: Reshaping the Future of People, Nations and Business by Eric Schmidt and Jared Cohen
 
 ## In progress
 
-- The New Digital Age: Reshaping the Future of People, Nations and Business by Eric Schmidt and Jared Cohen
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
 - The Happiness Project by Gretchen Rubin

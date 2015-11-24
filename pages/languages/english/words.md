@@ -48,3 +48,11 @@ Meadow - луг
 Indeed - дійсно (really)
 Seldom - рідко (rarely)
 Mansion - особняк
+Exile - вигнання
+Out of order - вийшов з ладу
+Has broken down - зламався
+Outcome - результат
+Consequences - наслідки
+Looks familiar to me - здається знайомим
+Sunbathe - засмагати
+Congestion area - зона заторів
