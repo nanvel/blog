@@ -13,6 +13,7 @@ created: 2014-01-01T00:00
 - [Developers of Ukraine](http://dou.ua)
 - [Habrahabr](http://habrahabr.ru)
 - [The twelve-factor app](http://12factor.net)
+- [DevDocs](http://devdocs.io) combines multiple API documentations in a fast, organized, and searchable interface
 
 ### Databases
 
