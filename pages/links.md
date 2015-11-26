@@ -75,7 +75,7 @@ created: 2014-01-01T00:00
 
 ## Travel
 
-- [Travel guides](http://www.bootsnall.com>`__
+- [Travel guides](http://www.bootsnall.com)
 - [Удивительная Азия. Секреты самостоятельных путешествий](http://travelasia.com.ua/)
 - [Азия-Сиам.ру. В Азию самостоятельно](http://www.asia-siam.ru/)
 - [Путевое дело. Программа о фрилансерах или владельцах бизнеса, которые живут и работают, путешествуя](http://putevoedelo.podster.fm/)
