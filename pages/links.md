@@ -15,6 +15,10 @@ created: 2014-01-01T00:00
 - [The twelve-factor app](http://12factor.net)
 - [DevDocs](http://devdocs.io) combines multiple API documentations in a fast, organized, and searchable interface
 
+### API
+
+- [REST CookBook](http://restcookbook.com/)
+
 ### Databases
 
 - [Avoiding SQL Antipatterns using Django (and Postgres) by Matthew Schinckel](http://schinckel.net/2014/08/26/avoiding-sql-antipatterns-using-django-(and-postgres)/)
