@@ -56,3 +56,5 @@ Consequences - наслідки
 Looks familiar to me - здається знайомим
 Sunbathe - засмагати
 Congestion area - зона заторів
+Thatched roof - солом'яний дах
+I meant to say - збирався сказати

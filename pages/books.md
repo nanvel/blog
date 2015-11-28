@@ -15,6 +15,8 @@ modified: 2015-11-08T00:02
 - [+] Getting Things Done: The Art of Stress-Free Productivity by David Allen
 - [+] ReWork: Change the Way You Work Forever by Jason Fried and David Heinemeier Hansson
 - Purple Cow: Transform Your Business by Being Remarkable by Seth Godin
+- Bridge to Terabithia by Katherine Paterson
+- [+] The Great Gilly Hopkins by Katherine Paterson
 
 ## 2013
 

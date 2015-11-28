@@ -25,33 +25,42 @@ in July
 in Summer
 in 1984
 
+09:30 AM
+Half past 9
+or
+Half to 10
+
+09:45 AM
+Quarter to 10
+
+01:15 PM
+Qurter past 1
+
+07:25 PM
+25 past 7
+
 ## Such vs so
 
 such a day (such -> noun)
 but
 day is so good (so -> adjective)
 
+There are **such** nice views!
+The views are **so** nice!
+
 ## Have or has
 
 Both of us have.
 Neither of us has.
 
-## Time
+## Will and will not
 
-09:30 AM
+It will certainly happen.
+It certainly won't happen.
 
-Half past 9
-or
-Half to 10
+It might happen
+I could happen
+I may happen
 
-09:45 AM
-
-Quarter to 10
-
-01:15 PM
-
-Qurter past 1
-
-07:25 PM
-
-25 past 7
+It migh not happen
+It may not happen

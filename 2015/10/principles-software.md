@@ -15,6 +15,12 @@ comments: true
 
 We want to avoid duplicating our system behavior and knowledge.
 
+## Duck typing
+
+> When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.
+>
+> James Whitcomb Riley
+
 ## EAFP
 
 **E**asier to **a**sk for **f**orgiveness than **p**ermission.

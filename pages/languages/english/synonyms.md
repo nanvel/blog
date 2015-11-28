@@ -118,6 +118,9 @@ What will you do?
 What do you intend to do?
 What have you done today?
 
+I was supposed to do ... - очікувалось що я ...
+I meant to say - збирався сказати
+
 ## Talking about something ...
 
 The main good thing is ...

@@ -21,4 +21,7 @@ Rooted out - викорінений
 My rule of thumb - моє правило
 I run the risk of getting lost
 Put up with - tolerate
-On the one hand .... On the other hand ...
+On the one hand .... on the other hand ...
+Lose my temper - втратити самовладання
+Driving me up the wall - зводить мене з розуму
+To cut down on - щоб скоротити
