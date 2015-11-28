@@ -51,6 +51,7 @@ modified: 2015-11-08T00:02
 - [+] Fluent Python by Luciano Ramalho
 - React.js Essentials by Artemij Fedosejev
 - The New Digital Age: Reshaping the Future of People, Nations and Business by Eric Schmidt and Jared Cohen
+- Get Going! Life is Short!: How to motivate yourself and achieve your goals. Seven easy steps for long-term change by Fred Juliusson
 
 ## In progress
 
