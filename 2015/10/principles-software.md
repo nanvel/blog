@@ -13,13 +13,15 @@ comments: true
 
 **D**on’t **r**epeat **y**ourself.
 
-We want to avoid duplicating our system behavior and knowledge.
+A software engineering principle stating that "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." It first appeared in the book The Pragmatic Programmer by Andy Hunt and Dave Thomas.
 
 ## Duck typing
 
 > When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.
 >
 > James Whitcomb Riley
+
+A form of polymorphism where functions operate on any object that implements the appropriate methods, regardless of their classes or explicit interface declarations.
 
 ## EAFP
 
@@ -31,6 +33,10 @@ try:
 except KeyError:
     # say sorry
 ```
+
+## Fail fast
+
+A system design approach recommending that errors should be reported as early as possible.
 
 ## Functional programming
 

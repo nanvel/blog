@@ -3,6 +3,7 @@ labels: Blog
 		Notes
 create: 2015-11-13T23:55
 visible: false
+comments: true
 
 # React js
 
