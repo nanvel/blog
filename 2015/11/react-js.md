@@ -2,6 +2,7 @@ labels: Blog
 		JS
 		Notes
 create: 2015-11-13T23:55
+place: Kyiv, Ukraine
 visible: false
 comments: true
 

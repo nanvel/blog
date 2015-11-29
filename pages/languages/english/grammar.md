@@ -64,3 +64,25 @@ I may happen
 
 It migh not happen
 It may not happen
+
+## Present (simple, continuous, perfect simple and perfect continuous)
+
+Present simple (fact):
+
+- I watch TV.
+- I don't watch TV.
+- Do I watch TV?
+
+Present continuous (process):
+
+- I am watching TV.
+- I am not watching TV.
+- Am I watching TV?
+
+Present perfect simple (fact):
+
+- I haven't watched TV for last 10 years.
+
+Present perfect continuous (process):
+
+- I have been working here for the last 10 years.

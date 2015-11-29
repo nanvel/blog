@@ -2,6 +2,7 @@ labels: Blog
 		Python
 created: 2015-11-22T21:33
 modified: 2015-11-29T18:51
+place: Kyiv, Ukraine
 visible: true
 comments: true
 

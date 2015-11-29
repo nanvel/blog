@@ -3,11 +3,6 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-Obstacle - перешкода / завада
-Meager - обмежений / убогий
-Onerous - обтяжливий
-To diminish - зменшити
-Merely use the data - просто використовувати дані
 To alleviate - щоб полегшити
 Thief - злодій
 Sleeve - рукав
@@ -15,7 +10,6 @@ Fascinating - чарівний
 Hallmark - ознака що відрізняє
 To faint (lose consciousness) - втратити свідомість, знепритомніти
 Word-of-mouth (chinese radio) - з вуст в уста
-Blushing - червоніти
 Imply - мати на увазі
 Convinced - переконаний, впевнений
 To persuade - вмовляти, переконувати
@@ -43,7 +37,7 @@ Learn by heart - вчити напам'ять
 Not certain - не впевнений
 What is it called? - Як це називається?
 Notion - переконання, поняття
-Poultry - притця
+Poultry - птиця
 Meadow - луг
 Indeed - дійсно (really)
 Seldom - рідко (rarely)
