@@ -58,3 +58,5 @@ modified: 2015-11-08T00:02
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
 - The Happiness Project by Gretchen Rubin
+- The China Study by T. Colin Campbell, Thomas M. Campbell II
+- The Great Gilly Hopkins by Katherine Paterson
