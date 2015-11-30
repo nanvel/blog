@@ -268,7 +268,7 @@ Don't do it.
 [1, 1]
 ```
 
-### Modification in place
+#### Modification in place
 
 When we pass mutable object as argument to function where it would be modified. This type of functions must return None value (it makes clear to the caller that the object itself was changed, and no new object was created).
 
