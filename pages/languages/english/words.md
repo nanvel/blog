@@ -52,3 +52,5 @@ Sunbathe - засмагати
 Congestion area - зона заторів
 Thatched roof - солом'яний дах
 I meant to say - збирався сказати
+Overwhelming - величезний, нездоланний
+Pace of life - темп життя

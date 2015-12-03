@@ -86,3 +86,30 @@ Present perfect simple (fact):
 Present perfect continuous (process):
 
 - I have been working here for the last 10 years.
+
+## Replace by or replace with
+
+Replace by: is something was broken (broken -> new)
+
+Replace with: try another, experiment (one -> another)
+
+## Try to do vs try doing
+
+Try to do: effort
+Try doing: experiment
+
+## Could usages
+
+1 - can II:
+I could do it yesterday.
+could - міг (was/were able to - зміг - managed to succeed)
+I couldn't do it yesterday.
+
+2 - unreal present:
+I could do it now, but I don't want to.
+
+3 - a polite request:
+Could You tell me ...
+
+4 - future possibility:
+Prices could change next spring.

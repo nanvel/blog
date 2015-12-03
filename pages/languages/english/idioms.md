@@ -25,3 +25,5 @@ On the one hand .... on the other hand ...
 Lose my temper - втратити самовладання
 Driving me up the wall - зводить мене з розуму
 To cut down on - щоб скоротити
+To put up with something (to tolerate) - миритися з чимось
+On the spur of the moment - експромтом, у цей момент
