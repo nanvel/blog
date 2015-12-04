@@ -1,5 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
+modified: 2015-12-04T10:07
 
 # Links storage
 
@@ -88,6 +89,7 @@ created: 2014-01-01T00:00
 - [Goodbye normals - Кругосветное путешествие](https://www.youtube.com/channel/UCsixP2MXZpGcv2IgEfRwU_g)
 - [The cost of living everywhere in the world in a single, awesome infographic](http://matadornetwork.com/life/the-cost-of-living-in-every-country-in-the-world-in-a-single-awesome-infographic/)
 - [Workaway - Volunteer and cultural exchange, integrate in local communities around the world](https://www.workaway.info/)
+- [Paganel studio](http://www.paganel.tv)
 
 ## Writing
 
