@@ -27,3 +27,11 @@ Driving me up the wall - зводить мене з розуму
 To cut down on - щоб скоротити
 To put up with something (to tolerate) - миритися з чимось
 On the spur of the moment - експромтом, у цей момент
+To catch on - become popular
+To take over - become dominant
+Keeping up with - maintain the same level as
+To slow down - become less rapid
+To die out - disappear completely
+To find out - to discover
+To pick up on - first to notice
+To buy into - to be influenced by

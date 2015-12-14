@@ -56,6 +56,12 @@ This calls for seeking the simplest possible solution, with the fewest moving pa
 
 A lazy implementation postpones producing values to the last possible moment. This saves memory and may avoid useless processing as well.
 
+## Minimum viable product
+
+MVP is the product with the highest return on investment versus risk. It is the sweet spot between products without the required features that fail at sunrise and the products with too many features that cut return and increase risk. The term was coined and defined by Frank Robinson, and popularized by Steve Blank, and Eric Ries.
+
+![Minimum viable product](mvp.jpg)
+
 ## OOP
 
 A programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.

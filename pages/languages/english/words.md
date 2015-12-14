@@ -54,3 +54,6 @@ Thatched roof - солом'яний дах
 I meant to say - збирався сказати
 Overwhelming - величезний, нездоланний
 Pace of life - темп життя
+Tipping points - переломні моменти
+Mavens - знатоки
+Negotiation skills - навички ведення перемовин
