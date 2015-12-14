@@ -1,5 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
+modified: 2015-12-04T10:07
 
 # Links storage
 
@@ -84,10 +85,10 @@ created: 2014-01-01T00:00
 - [Азия-Сиам.ру. В Азию самостоятельно](http://www.asia-siam.ru/)
 - [Путевое дело. Программа о фрилансерах или владельцах бизнеса, которые живут и работают, путешествуя](http://putevoedelo.podster.fm/)
 - [The Longest Way 1.0 - walk through China and grow a beard!](http://vimeo.com/4636202)
-- [Viaducstudio - фотосессии и видеоклипы в таиланде](http://viaducstudio.com)
 - [Goodbye normals - Кругосветное путешествие](https://www.youtube.com/channel/UCsixP2MXZpGcv2IgEfRwU_g)
 - [The cost of living everywhere in the world in a single, awesome infographic](http://matadornetwork.com/life/the-cost-of-living-in-every-country-in-the-world-in-a-single-awesome-infographic/)
 - [Workaway - Volunteer and cultural exchange, integrate in local communities around the world](https://www.workaway.info/)
+- [Paganel studio](http://www.paganel.tv)
 
 ## Writing
 

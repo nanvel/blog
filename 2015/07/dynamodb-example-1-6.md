@@ -1,6 +1,7 @@
 labels: Blog
         Databases
         DynamoDB
+        Cassandra
 created: 2015-07-05T17:32
 place: Kyiv, Ukraine
 comments: true
