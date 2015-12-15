@@ -282,7 +282,7 @@ When we pass mutable object as argument to function where it would be modified. 
 {'a': 2}
 ```
 
-### Closures
+#### Closures
 
 A closure is a function with an extended scope that encompasses nonglobal variables referenced in the body of the function but not defined there (can access nonglobal variables that are defined outside of its body).
 
