@@ -136,3 +136,14 @@ A big minus is ...
 One thing I don't like ...
 
 Another thing worth mentioning ...
+
+## I want to
+
+I am willing to do.
+I am eager to do.
+I am reluctant to do.
+
+## Good / bad
+
+Wonderful - very good.
+Awful, horrible - very bad.

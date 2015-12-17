@@ -113,3 +113,11 @@ Could You tell me ...
 
 4 - future possibility:
 Prices could change next spring.
+
+## Whether
+
+We always can replace whether with if.
+
+I don't know whether they want it or not.
+I don't know whether or not they want it.
+I don't know whether they want it.

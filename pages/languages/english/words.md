@@ -4,12 +4,8 @@ created: 2015-10-24T22:20
 # Words to learn
 
 To alleviate - щоб полегшити
-Thief - злодій
 Sleeve - рукав
-Fascinating - чарівний
-Hallmark - ознака що відрізняє
-To faint (lose consciousness) - втратити свідомість, знепритомніти
-Word-of-mouth (chinese radio) - з вуст в уста
+Fascinating - very interesting, зачаровуючий
 Imply - мати на увазі
 Convinced - переконаний, впевнений
 To persuade - вмовляти, переконувати
@@ -57,3 +53,11 @@ Pace of life - темп життя
 Tipping points - переломні моменти
 Mavens - знатоки
 Negotiation skills - навички ведення перемовин
+Compulsory - обов'язково
+Authorities - адміністрація, представники влади
+Exhausted - виснажений
+Persuade - переконувати, вмовляти
+Dissuade - відмовляти
+In an unexpected way - unexpectedly
+Safe and sound - живий і здоровий
+Starving - дуже голодний
