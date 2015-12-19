@@ -28,6 +28,7 @@ modified: 2015-12-04T10:07
 
 - [UA Pycon videos](http://www.youtube.com/user/theuapycon?feature=watch)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
+- [Fluent Python](http://www.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/) by Luciano Ramalho
 
 ### JS
 
