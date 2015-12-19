@@ -103,3 +103,9 @@ modified: 2015-12-04T10:07
 ## Places
 
 - [Betaplace coworking - простір, відкритий для співпраці](http://betaplace.com.ua/)
+
+## Health
+
+- [Dr. McDougall's Health and Medical center](https://www.drmcdougall.com/)
+- [The China Study](http://www.amazon.com/China-Study-Comprehensive-Nutrition-Implications-ebook/dp/B0041D843M/) by T. Colin Campbell
+
