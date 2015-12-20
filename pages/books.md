@@ -52,11 +52,13 @@ modified: 2015-11-08T00:02
 - React.js Essentials by Artemij Fedosejev
 - The New Digital Age: Reshaping the Future of People, Nations and Business by Eric Schmidt and Jared Cohen
 - Get Going! Life is Short!: How to motivate yourself and achieve your goals. Seven easy steps for long-term change by Fred Juliusson
+- [+] The China Study by T. Colin Campbell, Thomas M. Campbell II
 
 ## In progress
 
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
 - The Happiness Project by Gretchen Rubin
-- The China Study by T. Colin Campbell, Thomas M. Campbell II
 - The Great Gilly Hopkins by Katherine Paterson
+- IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
+- ClosureScript: Up and Running by Stuart Sierra and Luke VanderHart
