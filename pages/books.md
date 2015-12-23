@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2015-11-08T00:02
+modified: 2015-12-23T00:02
 
 # Books
 
@@ -62,3 +62,4 @@ modified: 2015-11-08T00:02
 - The Happiness Project by Gretchen Rubin
 - The Great Gilly Hopkins by Katherine Paterson
 - IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
+- The Swift Programming Language by Apple
