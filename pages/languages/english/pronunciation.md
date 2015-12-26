@@ -32,6 +32,8 @@ Suburban - /səˈbɜː.bən/
 Squirrel - /ˈskwɪr.əl/
 Closer - /kləʊsə/
 Merely - /ˈmɪə.li/
+Woman - /-wʊm.ən/
+Library - /ˈlaɪ.brər.i/
 
 Links:
 

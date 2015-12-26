@@ -3,9 +3,6 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-To alleviate - щоб полегшити
-Sleeve - рукав
-Fascinating - very interesting, зачаровуючий
 Imply - мати на увазі
 Convinced - переконаний, впевнений
 To persuade - вмовляти, переконувати
@@ -13,9 +10,7 @@ Absent-minded - неуважний
 Stunning - приголомшуючий
 To tear - рвати
 Posessions - майно
-Per diems - добові
 Convenience - зручність
-Flea market - блошиний ринок
 Nurture - виховувати
 Paramount - першорядний
 Interlocutor - співрозмовник
