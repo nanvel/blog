@@ -54,6 +54,7 @@ modified: 2015-12-23T00:02
 - Get Going! Life is Short!: How to motivate yourself and achieve your goals. Seven easy steps for long-term change by Fred Juliusson
 - [+] The China Study by T. Colin Campbell, Thomas M. Campbell II
 - ClosureScript: Up and Running by Stuart Sierra and Luke VanderHart
+- The Swift Programming Language by Apple Inc.
 
 ## In progress
 
@@ -62,4 +63,3 @@ modified: 2015-12-23T00:02
 - The Happiness Project by Gretchen Rubin
 - The Great Gilly Hopkins by Katherine Paterson
 - IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
-- The Swift Programming Language by Apple
