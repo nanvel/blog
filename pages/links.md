@@ -28,6 +28,7 @@ modified: 2015-12-04T10:07
 
 - [UA Pycon videos](http://www.youtube.com/user/theuapycon?feature=watch)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
+- [Fluent Python](http://www.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/) by Luciano Ramalho
 
 ### JS
 
@@ -103,3 +104,9 @@ modified: 2015-12-04T10:07
 ## Places
 
 - [Betaplace coworking - простір, відкритий для співпраці](http://betaplace.com.ua/)
+
+## Health
+
+- [Dr. McDougall's Health and Medical center](https://www.drmcdougall.com/)
+- [The China Study](http://www.amazon.com/China-Study-Comprehensive-Nutrition-Implications-ebook/dp/B0041D843M/) by T. Colin Campbell
+
