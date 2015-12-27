@@ -4,6 +4,7 @@ labels: Blog
         Cassandra
         Distributed
 created: 2015-06-28T18:48
+modified: 2015-12-27T21:59
 place: Kyiv, Ukraine
 comments: true
 
@@ -12,6 +13,10 @@ comments: true
 [TOC]
 
 ## CAP theorem
+
+> Despite your best efforts, your system will experience enough faults that it will have to make a choice between reducing yield (i.e., stop answering requests) and reducing harvest (i.e., giving answers based on incomplete data). This decision should be based on business requirements.
+>
+> [Coda Hale](http://codahale.com/you-cant-sacrifice-partition-tolerance)
 
 [The CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) (Eric A. Brewer's theorem).
 
