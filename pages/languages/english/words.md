@@ -3,15 +3,11 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-Imply - мати на увазі
-Convinced - переконаний, впевнений
 To persuade - вмовляти, переконувати
-Absent-minded - неуважний
 Stunning - приголомшуючий
 To tear - рвати
 Posessions - майно
 Convenience - зручність
-Nurture - виховувати
 Paramount - першорядний
 Interlocutor - співрозмовник
 Wig - перука
@@ -21,7 +17,6 @@ Wardrobe - шафа для одягу
 For the sake - заради
 Sake - користь
 Humble - скромний
-Piggy bank - скарбничка
 Kangaroo - кенгуру
 Inoculations - щеплення
 Learn by heart - вчити напам'ять
@@ -56,3 +51,23 @@ Dissuade - відмовляти
 In an unexpected way - unexpectedly
 Safe and sound - живий і здоровий
 Starving - дуже голодний
+Obligatory - обов'язковий
+Compulsory - обов'язковий
+Life expectency - ймовірна тривалість життя
+Lifespan - тривалість життя
+Burden - тягар, ноша
+Bottom dollar - the last bit of money,something you wouldn't risk losing
+Intertwine - переплітатися
+A nest egg - a sum of money saved for the future
+To lend money - позичати гроші (давати)
+To borrow - позичати (брати)
+Pay back - повертати борг
+In terms of this - у цьому плані
+In this respect - у цьому відношенні
+Dough - тісто
+Dull - не цікавий (boring)
+Mud slides - грязеві зсуви
+Nonetheless - проте ...
+A fine, penalty - штраф
+Offensive - образливо
+Thick - товстий

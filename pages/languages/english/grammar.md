@@ -121,3 +121,32 @@ We always can replace whether with if.
 I don't know whether they want it or not.
 I don't know whether or not they want it.
 I don't know whether they want it.
+
+## Man ws men
+
+men and women are plural.
+
+man - чоловік / людина.
+men - чоловіки / люди.
+woman - жінка.
+women - жінки.
+
+## Friend's vs friends'
+
+Friend's - one, friends' - many.
+
+## I have no time vs I don't have a time
+
+I have not time is stronger.
+
+## Tens + ones
+
+twenty-one, sevety-two.
+
+## Raise vs rise
+
+To raise a hand.
+To raise my eyes.
+Sun is rising.
+Sunrise.
+Pay rise.

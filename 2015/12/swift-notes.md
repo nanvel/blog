@@ -33,6 +33,21 @@ a: Int = 1
   3> a += 1
 ```
 
+Multiple variables inline:
+```bash
+  1> var one = 1, two = 2
+one: Int = 1
+two: Int = 2
+```
+
+Using unicode and reserved words for variable name:
+```bash
+  1> let сім = 7
+сім: Int = 7
+  2> var `for` = 1
+for: Int = 1
+```
+
 ### Type casting
 
 ```bash
@@ -156,7 +171,7 @@ Functions are a first-class type.
 $R1: Int = 3
 ```
 
-Variable number or argument:
+Variable number or arguments:
 ```bash
   1> func sumOf(numbers: Int...) -> Int { 
   2.   var s = 0 
@@ -189,6 +204,67 @@ $R0: [Int] = 3 values {
   [0] = 2
   [1] = 4
   [2] = 6
+}
+```
+
+### Enumeration
+
+```bash
+  1> enum Numbers: Int { 
+  2.   case One, Two 
+  3.   case Three, Four, Five 
+  4. } 
+  5. 
+  5> Numbers.One
+$R0: Numbers = One
+```
+
+Enumerations can have methods associated with them:
+```bash
+  1> enum Numbers: Int { 
+  2.   case One, Two 
+  3.   func to_int() -> Int { 
+  4.     switch self { 
+  5.       case .One: 
+  6.         return 1 
+  7.       case .Two: 
+  8.         return 2 
+  9.       default: 
+ 10.         return 0 
+ 11.     } 
+ 12.   } 
+ 13. } 
+ 14> let one = Numbers.One
+one: Numbers = One
+ 15> print(one.rawValue)
+0
+ 16> print(one.to_int())
+1
+```
+
+It is possible to use string or floating-point numbers as the raw type of an anumeration:
+```bash
+  1> enum Numbers: String { 
+  2.   case One = "one", Two = "two"
+  3. } 
+  4. 
+  4> Numbers.One.rawValue
+$R0: String = "one"
+```
+
+### Structure
+
+One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
+
+```bash
+  1> struct Example { 
+  2.   var text: String 
+  3.   let one = 1
+  4. } 
+  5> let example = Example(text: "Some text")
+example: Example = {
+  text = "Some text"
+  one = 1
 }
 ```
 
@@ -318,6 +394,18 @@ Set name
 
 Comments can include Markdown syntax to add rich text and embedded images that display in Xcode’s Quick Help.
 
+One line comment (two forward-slashes):
+```bash
+// comment cotent
+```
+
+Multiline comment:
+```bash
+/* multiple line
+comment */
+```
+Multiline comments can be nested (allows to comment large blocks of code even if them already contain comments).
+
 ### Std output
 
 ```bash
@@ -373,6 +461,30 @@ Classic c++ like for loop:
 #### while loop
 
 #### repeat-while loop
+
+## Vocabulary
+
+### Type-safe language
+
+The language helps you to be clear about the types of values your code can work with.
+
+```bash
+  1> var a = 1
+a: Int = 1
+  2> a = "1"
+repl.swift:2:5: error: cannot assign value of type 'String' to type 'Int'
+a = "1"
+    ^~~
+```
+
+### Type annotation
+
+Providing type explicitly:
+
+```bash
+  1> let one: Double = 1
+one: Double = 1
+```
 
 ## Instruments
 
