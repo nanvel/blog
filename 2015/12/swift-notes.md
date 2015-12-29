@@ -3,7 +3,7 @@ labels: Blog
 		Mobile
 		iOS
 created: 2015-12-27T09:55
-modified: 2015-12-28T23:17
+modified: 2015-12-29T22:06
 place: Kyiv, Ukraine
 
 # Swift language notes
