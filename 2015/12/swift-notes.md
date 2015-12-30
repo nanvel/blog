@@ -3,7 +3,7 @@ labels: Blog
 		Mobile
 		iOS
 created: 2015-12-27T09:55
-modified: 2015-12-29T22:06
+modified: 2015-12-30T22:59
 place: Kyiv, Ukraine
 
 # Swift language notes
@@ -75,6 +75,16 @@ a: Int = 100
 $R0: Double = 101.2
 ```
 
+### Type aliases
+
+Defines an alternative name for an existing type.
+
+```bash
+  1> typealias MyInt = UInt32
+  2> let a: MyInt = 10
+a: MyInt = 10
+```
+
 ### Optional and default values
 
 To mark the value as optional - add question mark (?) after the type of a value.
@@ -115,15 +125,38 @@ $R1: Range<Int> = 1..<4
 
 ### Tuple
 
+Group multiple values into a single compound value. Values may be of any type.
+
 ```bash
-  1> let a = ("One", 1, 1.2)
-a: (String, Int, Double) = {
-  0 = "One"
-  1 = 1
-  2 = 1.2
+  1> let a = (1, true, "One")
+a: (Int, Bool, String) = {
+  0 = 1
+  1 = true
+  2 = "One"
 }
-  2> a.0
-$R1: String = "One"
+  2> var i: Int = 0
+i: Int = 0
+  3> (i, _, _) = a
+  4> i
+$R0: Int = 1
+  5> a.0
+$R1: Int = 1
+```
+
+Named tuple:
+```bash
+  1> let a = (name: "Name", number: 1)
+a: (name: String, number: Int) = {
+  name = "Name"
+  number = 1
+}
+  2> a.name
+$R0: String = "Name"
+  3> var t: String = ""
+t: String = ""
+  4> (t, _) = a
+  5> t
+$R1: String = "Name"
 ```
 
 ### Array
@@ -388,6 +421,72 @@ Get name for (0, 0)
 Set name
 ```
 
+### Integer
+
+```bash
+  1> let a: Int = 1
+a: Int = 1
+  2> let a: UInt = 1  // Unsigned integer
+a: UInt = 1
+  3> Int.max
+$R0: Int = 9223372036854775807
+```
+
+### Float and Double
+
+Double represents a 64-bit floating-point number (precision of at least 15 decimal digits).
+Float represents a 32-bit floating-point number (precision can be as little as 6 decimal digits).
+
+Numeric literals:
+```bash
+  1> 10
+$R0: Int = 10
+  2> 0b1010
+$R1: Int = 10
+  3> 0o12
+$R3: Int = 10
+  4> 0x0A
+$R5: Int = 10
+  5> 0x0a
+$R6: Int = 10
+  6> 1e2
+$R7: Double = 100
+  7> 1e-2
+$R8: Double = 0.01
+ 8> 10_000
+$R10: Int = 10000
+```
+
+### String
+
+#### Empty string
+
+```bash
+  1> let s1 = ""
+s1: String = ""
+  2> let s2 = String()
+s2: String = ""
+  3> s1 == s2
+$R0: Bool = true
+  4> s1.isEmpty
+$R1: Bool = true
+```
+
+### nil
+
+Special value allows to set an optional variable to a valueless state:
+```bash
+  1> var i: Int? = 10
+i: Int? = 10
+  2> i
+$R0: Int? = 10
+  3> i = nil
+  4> i
+$R1: Int? = nil
+```
+
+I Swift, ```nil``` is not a pointer - it is the absence of a value of a certain type.
+
 ## Syntax
 
 ### Comments
@@ -417,6 +516,32 @@ Hello!
 a: Int = 1
   4> print("a = \(a).")
 a = 1.
+```
+
+### Optional value unwrapping
+
+```bash
+  1> var v: String? = "Test"
+v: String? = "Test"
+  2> if let message = v { 
+  3.   print(message)
+  4. } 
+  5. 
+Test
+  5> v = nil
+  6> if let message = v { 
+  7.   print(message) 
+  8. } 
+  9.  
+  9>  
+```
+
+Forsed unwrapping:
+```bash
+  1> var v: String? = "Test"
+v: String? = "Test"
+  2> v!
+$R0: String = "Test"
 ```
 
 ### Flow control
@@ -462,6 +587,8 @@ Classic c++ like for loop:
 
 #### repeat-while loop
 
+### Error handling
+
 ## Vocabulary
 
 ### Type-safe language
@@ -485,6 +612,12 @@ Providing type explicitly:
   1> let one: Double = 1
 one: Double = 1
 ```
+
+### Unary/Binary/Ternary operators
+
+**Unary** operator operate on a single target (```!a```).
+**Binary** operator operate on two targets (```a + b```).
+**Ternary** operator operate on three targets (```a ? b : c```).
 
 ## Instruments
 
