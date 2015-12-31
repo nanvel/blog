@@ -3,7 +3,7 @@ labels: Blog
 		Mobile
 		iOS
 created: 2015-12-27T09:55
-modified: 2015-12-30T22:59
+modified: 2015-12-31T20:36
 place: Kyiv, Ukraine
 
 # Swift language notes
@@ -161,6 +161,8 @@ $R1: String = "Name"
 
 ### Array
 
+Array is an ordered list.
+
 ```bash
   1> var a = ["One", "Two", "Three"]
 a: [String] = 3 values {
@@ -174,7 +176,154 @@ Create empty array:
 ```
   1> var a = [String]()
 a: [String] = 0 values
+  2> var b = Array<Int>()
+b: [Int] = 0 values
 ```
+  
+Default value for array:
+```bash
+  1> var a = [Int](count: 5, repeatedValue: 10)
+a: [Int] = 5 values {
+  [0] = 10
+  [1] = 10
+  [2] = 10
+  [3] = 10
+  [4] = 10
+}
+```
+
+#### Edit
+
+```bash
+  1> var a: [Int] = [1, 2, 3]
+a: [Int] = 3 values {
+  [0] = 1
+  [1] = 2
+  [2] = 3
+}
+  2> a.append(4)
+  3> a
+$R0: [Int] = 4 values {
+  [0] = 1
+  [1] = 2
+  [2] = 3
+  [3] = 4
+}
+  4> a[0] = 5
+  5> a
+$R1: [Int] = 4 values {
+  [0] = 5
+  [1] = 2
+  [2] = 3
+  [3] = 4
+}
+  6> a[1...2] = [4, 3]
+  7> a
+$R2: [Int] = 4 values {
+  [0] = 5
+  [1] = 4
+  [2] = 3
+  [3] = 4
+}
+  8> a.insert(1, atIndex: 3)
+  9> a
+$R3: [Int] = 5 values {
+  [0] = 5
+  [1] = 4
+  [2] = 3
+  [3] = 1
+  [4] = 4
+}
+ 10> a.removeAtIndex(4)
+$R4: Int = 4
+ 11> a
+$R5: [Int] = 4 values {
+  [0] = 5
+  [1] = 4
+  [2] = 3
+  [3] = 1
+}
+```
+
+#### Iteration
+
+```bash
+  1> let a = [1, 2, 3]
+a: [Int] = 3 values {
+  [0] = 1
+  [1] = 2
+  [2] = 3
+}
+  2> for item in a { 
+  3.   print(item)
+  4. } 
+  5. 
+1
+2
+3
+  5> for (index, item) in a.enumerate() { 
+  6.   print(index, item)
+  7. } 
+  8. 
+0 1
+1 2
+2 3
+```
+
+### Set
+
+Stores distinct values of the same type in a collection with no defined ordering.
+
+```bash
+  1> var a = Set<Int>()
+a: Set<Int> = {}
+  2> a.count
+$R0: Int = 0
+  3> a.insert(1)
+  4> a.insert(2)
+  5> a
+$R1: Set<Int> = {
+  [0] = 2
+  [1] = 1
+}
+  6> a.insert(1)
+  7> a
+$R2: Set<Int> = {
+  [0] = 2
+  [1] = 1
+}
+```
+
+Shorter form of initialization:
+```
+  1> var a: Set = [1, 2, 3]
+a: Set<Int> = {
+  [0] = 2
+  [1] = 3
+  [2] = 1
+}
+```
+
+Properties:
+
+- count
+- isEmpty
+
+Methods:
+
+- insert
+- remove
+- contains
+- sort
+- interset (creates a new set with only the values common to both sets)
+- exclusiveOr (creates a new set with values in either set, but not both)
+- union (creates a new set with all of the values in both sets)
+- subtract (creates a new set with values not in the specified set)
+- == (equal)
+- isSubsetOf (returns true whether all of the values of a set are contained in the specified set)
+- isSupersetOf (returns true whether a set contains all of the values in a specified set)
+- isStrictSubsetOf/isStrictSupersetOf (returns true if set is a subset or superset but not equal to)
+- isDisjointWith (returns true if both sets have any values in common)
 
 ### Dictionary
 
@@ -472,6 +621,28 @@ $R0: Bool = true
 $R1: Bool = true
 ```
 
+#### String interpolation
+
+```bash
+  1> var a = 1
+a: Int = 1
+  2> "a = \(a)"
+$R0: String = "a = 1"
+  3> "a = \(a * 5)"
+$R1: String = "a = 5"
+  4> "a = \(Double(a) * 5)" 
+$R2: String = "a = 5.0"
+```
+
+#### Unicode
+
+```bash
+  1> "\u{24}"
+$R0: String = "$"
+  2> "\u{1f496}"
+$R1: String = "💖"
+```
+
 ### nil
 
 Special value allows to set an optional variable to a valueless state:
@@ -550,7 +721,117 @@ $R0: String = "Test"
 
 In a ```if``` statement, the conditional must be a Boolean expression.
 
+```bash
+  1> if true { 
+  2.   print("true") 
+  3. } else { 
+  4.   print("false")
+  5. } 
+  6. 
+true
+```
+
 #### switch condition
+
+Considers a value and compares it against several posible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully.
+
+```bash
+  1> func check(i: Int) { 
+  2.   switch i { 
+  3.     case 1: 
+  4.       print("1")
+  5.     case 2, 4: 
+  6.       print("2 or 4")
+  7.     case 5...10: 
+  8.       print("Between 5 and 10")
+  9.     default: 
+ 10.       print("Other")
+ 11.   } 
+ 12. } 
+ 13. 
+ 13> check(1)
+1
+ 14> check(4)
+2 or 4
+ 15> check(6)
+Between 5 and 10
+ 16> check(3)
+Other
+```
+
+Matching tuples:
+```bash
+  1> let point = (10, 2)
+point: (Int, Int) = {
+  0 = 10
+  1 = 2
+}
+  2> switch point { 
+  3.   case (_, 2): 
+  4.     print("The second element is 2") 
+  5.   default: 
+  6.     print("Not found")
+  7. } 
+  8. 
+The second element is 2
+  8> switch point { 
+  9.   case (100...200, 2): 
+ 10.     print("100..200 and 2") 
+ 11.   case (1...20, 1...20): 
+ 12.     print("1..20, 1..20")
+ 13.   default: 
+ 14.     print("Not found") 
+ 15. } 
+ 16. 
+1..20, 1..20
+```
+
+Value binding:
+```bash
+  1> let point = (10, 2) 
+point: (Int, Int) = {
+  0 = 10
+  1 = 2
+}
+  2> switch point { 
+  3.   case (10, let b):  // case let (x, y) where x == y:
+  4.     print("10, \(b)") 
+  5.   default: 
+  6.     print("Default")
+  7. } 
+10, 2
+```
+
+Break causes the switch statement to end it's execution immediately, and to transfer controlto the first line after the switch statement's closing brace:
+```bash
+  1> let i = 1
+i: Int = 1
+  2> switch i { 
+  3.   case 0: 
+  4.     print("0") 
+  5.   default: 
+  6.     break 
+  7.     print("After break")
+  8. } 
+  9>  
+```
+
+Using ```fallthrough```:
+```bash
+  1> let i = 10
+  2> switch i { 
+  3.   case 10, 11: 
+  4.     print("10 or 11") 
+  5.     fallthrough 
+  6.   case 1...100: 
+  7.     print("Between 1..100") 
+  8.   default: 
+  9.     break 
+ 10. } 
+ 11.  
+10 or 11
+Between 1..100
+```
 
 ### Loops
 
@@ -585,7 +866,29 @@ Classic c++ like for loop:
 
 #### while loop
 
+```bash
+  1> var i = 2
+i: Int = 2
+  2> while i > 0 { 
+  3.   print(i) 
+  4.   i -= 1
+  5. } 
+2
+1
+```
+
 #### repeat-while loop
+
+```bash
+  1> var i = 2
+i: Int = 2
+  2> repeat { 
+  3.   print(i) 
+  4.   i -= 1
+  5. } while i > 0
+2
+1
+```
 
 ### Error handling
 

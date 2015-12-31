@@ -71,3 +71,4 @@ Nonetheless - проте ...
 A fine, penalty - штраф
 Offensive - образливо
 Thick - товстий
+Generous - щедрий
