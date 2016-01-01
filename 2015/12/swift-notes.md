@@ -3,7 +3,7 @@ labels: Blog
 		Mobile
 		iOS
 created: 2015-12-27T09:55
-modified: 2015-12-31T20:36
+modified: 2016-01-01T17:58
 place: Kyiv, Ukraine
 
 # Swift language notes
@@ -353,6 +353,32 @@ Functions are a first-class type.
 $R1: Int = 3
 ```
 
+Function parameters are constants by default. But it is possible to make them variable:
+```bash
+  1> func testVarArg(var s: String) -> String { 
+  2.   s += " test" 
+  3.   return s
+  4. } 
+  5> var i = "Word"
+i: String = "Word"
+  6> testVarArg(i)
+$R0: String = "Word test"
+  7> i
+$R1: String = "Word"
+```
+
+Allow to modify parameter value (modification in-place):
+```bash
+  1> func testVarArg(inout s: String) {
+  2.   s += " test"
+  3. } 
+  4> var i = "Word"
+i: String = "Word"
+  5> testVarArg(&i)
+  6> i
+$R0: String = "Word test"
+```
+
 Variable number or arguments:
 ```bash
   1> func sumOf(numbers: Int...) -> Int { 
@@ -366,9 +392,44 @@ Variable number or arguments:
   8> sumOf(1, 2, 3)
 $R0: Int = 6
 ```
+A variadic parameter accepts zero or more values of a specified type. A function may have at most one variadic parameter.
+
+External parameter names:
+```bash
+  1> func testParams(externalParam localParam: Int) { 
+  2.   print(localParam)
+  3. } 
+  4> testParams(externalParam: 1)
+1
+  5>  
+```
+If you provide an external parameter name for a parameter, that external name must always be used when you call the function.
+
+Omitting external parameter names:
+```bash
+  1> func testParams(_ firstParam:Int, _ secondParam: Int) { 
+  2.   print(firstParam, secondParam)
+  3. } 
+  4> testParams(1, 2)
+1 2
+```
+The first param omits its external parameter name by default.
+
+Default parameters:
+```bash
+  1> func testParams(i: Int = 0) { 
+  2.   print(i)
+  3. } 
+  4> testParams(5)
+5
+  5> testParams()
+0
+```
 
 ### Closure
 
+Closures in Swift are similar to lambdas in other programming languages.
+Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables, hense the name "closures".
 The code in a closure has access to objects that were available in the scope where the closure was created.
 
 ```bash
@@ -717,7 +778,7 @@ $R0: String = "Test"
 
 ### Flow control
 
-#### If condition
+#### If statement
 
 In a ```if``` statement, the conditional must be a Boolean expression.
 
@@ -731,7 +792,28 @@ In a ```if``` statement, the conditional must be a Boolean expression.
 true
 ```
 
-#### switch condition
+#### Guard statement
+
+Unlike an if statement, a guard statement always has an else clause.
+
+```bash
+  1> enum MyError: ErrorType { 
+  2.   case Error1
+  3. } 
+  4> guard true else { 
+  5.   throw MyError.Error1  // must transfer control to exit the code block, use one of: return, break, continue or throw
+  6. } 
+  7. 
+  7> guard false else { 
+  8.   throw MyError.Error1 
+  9. } 
+ 10. 
+$E0: MyError = Error1
+```
+
+It lets you write the code that's typically executed without wrapping it in an ```else``` block, and it lets you keep the code that handles a violated requirement next to the requirement.
+
+#### Switch statement
 
 Considers a value and compares it against several posible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully.
 
@@ -890,7 +972,96 @@ i: Int = 2
 1
 ```
 
+#### Labels
+
+Works with brek and continue.
+
+```bash
+  1> label1: for i in 1...3 { 
+  2.   label2: for j in 1...3 { 
+  3.     if j == 2 { 
+  4.       break label1
+  5.     } 
+  6.     print(i, j) 
+  7.   }  
+  8. } 
+  9. 
+1 1
+  9> label1: for i in 1...3 { 
+ 10.   label2: for j in 1...3 { 
+ 11.     if j == 2 { 
+ 12.       break label2
+ 13.     } 
+ 14.     print(i, j) 
+ 15.   }  
+ 16. } 
+ 17. 
+1 1
+2 1
+3 1
+```
+
 ### Error handling
+
+See [Error Handling in Swift 2.0](https://www.bignerdranch.com/blog/error-handling-in-swift-2/) by Juan Pablo Claude.
+
+Enumerations are used for classifying errors:
+```bash
+  1> enum MyError: ErrorType { 
+  2.   case Bad 
+  3.   case Worse 
+  4. }
+```
+
+Functions must be marked with throws to be able to propagate an error:
+```bash
+  1> enum MyError: ErrorType { 
+  2.   case Bad 
+  3.   case Worse 
+  4. }
+  5> func not_throws() { 
+  6.   throw MyError.Bad
+  7. } 
+repl.swift:6:3: error: error is not handled because the enclosing function is not declared 'throws'
+  throw MyError.Bad
+  ^
+
+  5> func throws_bad() throws {
+  6.   throw MyError.Bad 
+  7. } 
+  > try throws_bad()
+$E0: MyError = Bad
+```
+
+Catching errors with do/catch:
+```bash
+  1> enum MyError: ErrorType { 
+  2.   case Bad 
+  3.   case Worse 
+  4. } 
+  5> do { 
+  6.   throw MyError.Bad
+  7. } catch MyError.Bad { 
+  8.   print("Bad error")
+  9. } catch MyError.Worse { 
+ 10.   print("Worse error")
+ 11. } 
+Bad error
+```
+
+If you mark a throwing call with ```try!```, you are promising the compiler that that error will never happen and you do not need to catch it. If the statement does produce an error, the application will stop execution and you should start debugging:
+```bash
+  1> enum MyError: ErrorType { 
+  2.   case Bad 
+  3.   case Worse 
+  4. } 
+  5> func throws_bad() throws { 
+  6.   throw MyError.Bad 
+  7. } 
+  8. 
+  8> try! throws_bad()
+fatal error: 'try!' expression unexpectedly raised an error: MyError.Bad: file /Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-700.1.101.15/src/swift/stdlib/public/core/ErrorType.swift, line 50
+```
 
 ## Vocabulary
 

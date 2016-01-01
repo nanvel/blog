@@ -5,21 +5,15 @@ created: 2015-10-24T22:20
 
 To persuade - вмовляти, переконувати
 Stunning - приголомшуючий
-To tear - рвати
 Posessions - майно
 Convenience - зручність
-Paramount - першорядний
 Interlocutor - співрозмовник
 Wig - перука
-Pile of papers - купа паперів
 Closet - шафа
 Wardrobe - шафа для одягу
-For the sake - заради
-Sake - користь
 Humble - скромний
 Kangaroo - кенгуру
 Inoculations - щеплення
-Learn by heart - вчити напам'ять
 Not certain - не впевнений
 What is it called? - Як це називається?
 Notion - переконання, поняття
