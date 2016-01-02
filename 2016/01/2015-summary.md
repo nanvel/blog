@@ -25,7 +25,7 @@ With beautiful view, snake, few big gecko and a guard:
 ### An accident
 
 ![An accident](accident.jpg)
-Vanita, thank you for helping get hospital and delicious food.
+Vanita, thank you for helping me get hospital and delicious food.
 
 ### Motorbike purchase and driver license
 
