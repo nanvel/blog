@@ -3,8 +3,9 @@ labels: Blog
 		Mobile
 		iOS
 created: 2015-12-27T09:55
-modified: 2016-01-01T17:58
+modified: 2016-01-02T23:09
 place: Kyiv, Ukraine
+comments: true
 
 # Swift language notes
 
@@ -495,6 +496,65 @@ It is possible to use string or floating-point numbers as the raw type of an anu
 $R0: String = "one"
 ```
 
+Once enum type is known, you can use a shorter dot syntax:
+```bash
+  1> enum Number { 
+  2.   case One 
+  3.   case Two
+  4. } 
+  5> var number = Number.One
+number: Number = One
+  6> number = .Two
+  7> number
+$R0: Number = Two
+```
+
+You can use shorter dot syntax also in switch statement:
+```bash
+  1> enum Number { 
+  2.   case One 
+  3.   case Two 
+  4. } 
+  5> var number = Number.One
+number: Number = One
+  6> switch number { 
+  7.   case .One: 
+  8.     print("One") 
+  9.   case .Two: 
+ 10.     print("Two") 
+ 11.   default: 
+ 12.     print("Unknown")
+ 13. } 
+ 14. 
+One
+```
+
+#### Mutating methods
+
+Mutating methods for enumerations can set the implicit set parameter to be a different case from the same enumeration.
+
+```bash
+  1> enum Resolution { 
+  2.   case VGA, XVGA 
+  3.   mutating func bigger() { 
+  4.     switch self { 
+  5.       case VGA: 
+  6.         self = XVGA 
+  7.       case XVGA: 
+  8.         print("This one is the largest.")
+  9.     } 
+ 10.   } 
+ 11. } 
+ 12. 
+ 12> var resolution = Resolution.VGA
+resolution: Resolution = VGA
+ 13> resolution.bigger()
+ 14> resolution
+$R0: Resolution = XVGA
+ 15> resolution.bigger() 
+This one is the largest.
+```
+
 ### Structure
 
 One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
@@ -511,7 +571,50 @@ example: Example = {
 }
 ```
 
+#### Memberwise Initializers
+
+```bash
+  1> struct Resolution { 
+  2.   var width: Int 
+  3.   var height: Int
+  4. } 
+  5> var resolution = Resolution(width: 640, height: 480)
+resolution: Resolution = {
+  width = 640
+  height = 480
+}
+```
+
+#### Mutating methods
+
+Structure are value type, so its properties are immutable by default. However, if you need to modify the property of your structure or enumeration within a particular method, you can opt in to mutating behavior for that method.
+
+```bash
+  1> struct Resolution { 
+  2.   var width = 640 
+  3.   var height = 480 
+  4.   mutating func resize(scale: Double) { 
+  5.     self.width = Int(Double(self.width) * scale) 
+  6.     self.height = Int(Double(self.height) * scale) 
+  7.   } 
+  8. } 
+  9. 
+ 10> var resolution = Resolution() 
+resolution: Resolution = {
+  width = 640
+  height = 480
+}
+ 11> resolution.resize(0.5)
+ 12> resolution
+$R0: Resolution = {
+  width = 320
+  height = 240
+}
+```
+
 ### Class
+
+Unlike other origramming languages, Swift does not required you to create separate interface and implementation files for custom classes and structures.
 
 ```bash
   1> class Point { 
@@ -524,6 +627,24 @@ point: Point = {
   y = 0
 }
 ```
+
+#### Class vs Structure
+
+Classes have additional capabilities that structures do not:
+
+- Inheritance enables one class to inherit the characeristics of another
+- Type casting enables you to check and interpret the type of a class instance at runtime
+- Deinitializers enable an instance of a class to free up any resources it has assigned
+- Reference counting allows more than one reference to a class instance
+
+Structures are always copied when they are passed around in your code, and do not use reference counting.
+
+When to choose structures:
+
+- The structure's primary purpose is to encapsulate a few relatively simple data values
+- It is resonable to expect that the encapsulated values will be copied rather than referenced when you assign or pass around an instance of that structure
+- Any properties stored by the structure are themselves value types, which would also be expected to be copied rather than referenced
+- The structure does not need to inherit properties or behavior from another existing type
 
 #### Init / deinit
 
@@ -630,6 +751,143 @@ Get name for (0, 0)
  16> point.name = "New name"
 Set name
 ```
+
+#### Identity operators
+
+```bash
+  1> class Resolution { 
+  2.   var width = 640 
+  3.   var height = 480
+  4. } 
+  5> let resolution1 = Resolution()
+resolution1: Resolution = {
+  width = 640
+  height = 480
+}
+  6> let resolution2 = Resolution()
+resolution2: Resolution = {
+  width = 640
+  height = 480
+}
+  7> resolution1 === resolution2
+$R0: Bool = false
+  8> resolution1 !== resolution2
+$R1: Bool = true
+  9> let resolution3 = resolution1
+resolution3: Resolution = {
+  width = 640
+  height = 480
+}
+ 10> resolution3 === resolution1
+$R2: Bool = true
+```
+
+```Identical to``` (```===```) vs ```Equal to``` (```==```): ```Identical to``` means that two constants or variables of class type refer to exactly the same class instance, ```Equal to``` means that they are considered equal or equivalent in value.
+
+#### Lazy properties
+
+A lazy stored property is a property whose initial value is not calculated until the first time it is used.
+
+```bash
+  1> class AnotherCls { 
+  2.   init() {
+  3.     print("AnotherCls init ...")
+  4.   } 
+  5. } 
+  6. 
+  6> class MainCls { 
+  7.   lazy var anotherObj = AnotherCls() 
+  8.   init() { 
+  9.     print("MainCls init ...")
+ 10.   } 
+ 11. } 
+ 12> let main_obj = MainCls()
+MainCls init ...
+main_obj: MainCls = {
+  anotherCls.storage = nil
+}
+ 13> main_obj.anotherObj
+AnotherCls init ...
+$R0: AnotherCls = {}
+```
+
+#### Computed properties
+
+Classes, structures and anumerations can define computed properties, which do not actually store a value, they provide a getter and an optional setter instead.
+
+```bash
+  1> class Resolution { 
+  2.   var width = 640 
+  3.   var height = 480 
+  4.   var title: String { 
+  5.     return("Resolution: \(self.width):\(self.height)")
+  6.   } 
+  7. } 
+  8> var resolution = Resolution()
+resolution: Resolution = {
+  width = 640
+  height = 480
+}
+  9> resolution.title
+$R0: String = "Resolution: 640:480"
+ 10> resolution.width = 1000
+ 11> resolution.title 
+$R1: String = "Resolution: 1000:480"
+```
+
+If a computed property's setter does not define a name for the new value to be set, a default name of newValue is used.
+
+A computer property with a getter but no setter known as a read-only computed property.
+
+#### Property observers
+
+Property observers observe and respond to chnges in a property's value.
+
+It is possible to specify name for changed parameter value, default names are newValue and oldValue.
+
+```bash
+  1> class Resolution { 
+  2.   var width = 640 { 
+  3.     willSet { 
+  4.       print("New value: \(newValue)")
+  5.     } 
+  6.     didSet { 
+  7.       print("Old value: \(oldValue)")
+  8.     } 
+  9.   } 
+ 10. } 
+ 11. 
+ 11> var resolution = Resolution()
+resolution: Resolution = {
+  width = 640
+}
+ 12> resolution.width = 1000
+New value: 1000
+Old value: 640
+```
+
+#### Type properties
+
+Belongs to type, not instance.
+
+```bash
+  1> class Resolution { 
+  2.   static let dpi = 300
+  3.   var width = 640 
+  4.   var height = 480
+  5. } 
+  6> var resolution = Resolution()
+resolution: Resolution = {
+  width = 640
+  height = 480
+}
+  7> resolution.dpi
+repl.swift:8:1: error: static member 'dpi' cannot be used on instance of type 'Resolution'
+resolution.dpi
+^~~~~~~~~~~ ~~~
+  7> Resolution.dpi
+$R0: Int = 300 
+ ```
 
 ### Integer
 
@@ -1086,6 +1344,12 @@ Providing type explicitly:
   1> let one: Double = 1
 one: Double = 1
 ```
+
+### A value type
+
+A ```value type``` is a type whose value is copied when it is assigned to variable or constant, or when it is passed to a function.
+
+Structures and enumerations are value type, classes are reference types.
 
 ### Unary/Binary/Ternary operators
 
