@@ -1,9 +1,9 @@
 labels: Blog
-		Swift
-		Mobile
-		iOS
+        Swift
+		    Mobile
+		    iOS
 created: 2015-12-27T09:55
-modified: 2016-01-02T23:09
+modified: 2016-01-03T18:31
 place: Kyiv, Ukraine
 comments: true
 
@@ -612,6 +612,33 @@ $R0: Resolution = {
 }
 ```
 
+#### Failable initializer
+
+A failable initializer for a value type (that is, a structure or enumeration) can trigger an initialization failure at any point within its initializer implementation.
+```bash
+  1> class Name { 
+  2.   var name: String 
+  3.   init?(name: String) {
+  4.     self.name = name 
+  5.     if name == "fail" { 
+  6.       return nil
+  7.     } 
+  8.   } 
+  9. } 
+ 10> var name = Name(name: "fail") 
+name: Name? = nil
+ 11> var name = Name(name: "ok") 
+name: Name? = (name = "ok") {
+  name = "ok"
+}
+ 12> if let name = Name(name: "fail") { 
+ 13.   print(name.name) 
+ 14. } else { 
+ 15.   print("Fail") 
+ 16. } 
+Fail
+```
+
 ### Class
 
 Unlike other origramming languages, Swift does not required you to create separate interface and implementation files for custom classes and structures.
@@ -648,6 +675,8 @@ When to choose structures:
 
 #### Init / deinit
 
+Initialization is the process of preparing an instance of a class, structure, or enumeration for use. Instances of class types can also implement a deinitializer, which performs any custom cleanup just before an instance of that class is deallocated.
+
 Initializer:
 ```bash
  1> class Point { 
@@ -669,7 +698,117 @@ point: Point = {
 }
 ```
 
+Deinit example:
+```bash
+  1> class Name { 
+  2.   var name = "Name" 
+  3.   deinit { 
+  4.     print("Deinit.") 
+  5.   } 
+  6. } 
+  7.  
+  7> var name1: Name? = Name()
+name1: Name? = (name = "Name") {
+  name = "Name"
+}
+  8> var name2 = name1
+name2: Name? = (name = "Name") {
+  name = "Name"
+}
+  9> name2 = nil
+ 10> name1 = nil
+Deinit.
+ 11> func writeName() { 
+ 12.   var name = Name() 
+ 13.   print(name.name)
+ 14. } 
+ 15. 
+ 15> writeName()
+Name
+Deinit.
+```
+
+Swift provides two ways to resolve strong reference cycles when you work with properties of class type: weak references and unowned references.
+
+Classes and structures must set all of their stored properties to an appropriate initial value. Stored properties cannot be left in an indeterminate state:
+```bash
+  1> class TestInit { 
+  2.   var a: Int
+  3. } 
+  4. 
+repl.swift:2:7: note: stored property 'a' without initial value prevents synthesized initializers
+  1> class TestInit { 
+  2.   var a: Int 
+  3.   init() { 
+  4.     self.a = 0
+  5.   } 
+  6. } 
+  7. 
+```
+If your custom type has a stored property that is logically allowed to have "no value" - declare the property with an optional type. Properties with of optional type are automatically initialized with value of nill.
+
+Alternative initializers and initializers without external names:
+```bash
+  1> class TestInit { 
+  2.   var a: Int 
+  3.   init(a aVal: Int) { 
+  4.     print("Init 1")
+  5.     self.a = aVal 
+  6.   } 
+  7.   init(_ aVal: Int) { 
+  8.     print("Init 2")
+  9.     self.a = aVal 
+ 10.   } 
+ 11. } 
+ 12. 
+ 12> var testInit1 = TestInit(10) 
+Init 2
+testInit1: TestInit = {
+  a = 10
+}
+ 13> var testInit2 = TestInit(a: 10) 
+Init 1
+testInit2: TestInit = {
+  a = 10
+}
+```
+
+#### Designated and convenience initializers
+
+Designated initializers are default.
+
+A designated initializer must call a designated initializer from its immediate superclass.
+
+A convenience initializer must call another initilizer from the same class. A convenience initializer must ultimately call a designated initializer.
+
+```bash
+  1> class Name { 
+  2.   var name: String 
+  3.   init(name: String) { 
+  4.     print("Init.")
+  5.     self.name = name 
+  6.   } 
+  7.   convenience init() { 
+  8.     print("Convenience init.")
+  9.     self.init(name: "Unnamed") 
+ 10.   } 
+ 11. } 
+ 12> var name = Name()
+Convenience init.
+Init.
+name: Name = {
+  name = "Unnamed"
+}
+ 13> var name = Name(name: "Haruhi") 
+Init.
+name: Name = {
+  name = "Haruhi"
+}
+```
+
 #### Inheritance
+
+A class can inherit methods, properties, and other characteristics from another class.
 
 ```bash
   1> class Point { 
@@ -697,8 +836,9 @@ namedPoint: NamedPoint = {
 }
 ```
 
-#### Override methods
+Any class that does not inherit from another class is known as a base class.
 
+Override methods:
 ```bash
   1> class Point { 
   2.   var x = 0 
@@ -722,6 +862,57 @@ point: LongNamePoint = {
 }
  14> print(point.name())
 Long name of (0, 0).
+```
+
+Using ```super``` keyword:
+```
+  1> class Name { 
+  2.   var fname = "Ryuko" 
+  3.   var lname = "Matoi" 
+  4.   func name() -> String { 
+  5.     return "\(self.fname) \(self.lname)"
+  6.   } 
+  7. } 
+  8> class LongName: Name { 
+  9.   override func name() -> String { 
+ 10.     return "This is long name of \(super.name())"
+ 11.   } 
+ 12. } 
+ 13> let name = Name()
+name: Name = {
+  fname = "Ryuko"
+  lname = "Matoi"
+}
+ 14> let longName = LongName()
+longName: LongName = {
+  __lldb_expr_1.Name = {
+    fname = "Ryuko"
+    lname = "Matoi"
+  }
+}
+ 15> name.name()
+$R0: String = "Ryuko Matoi"
+ 16> longName.name() 
+$R1: String = "This is long name of Ryuko Matoi"
+```
+
+You can prevent a method, property, pr subscript from being overriden by marking it as final:
+```bash
+  1> class Name { 
+  2.   var fname = "Ryuko" 
+  3.   var lname = "Matoi" 
+  4.   final func name() -> String { 
+  5.     return "\(self.fname) \(self.lname)" 
+  6.   } 
+  7. } 
+  8. 
+  8> class LongName: Name { 
+  9.   override func name() -> String { 
+ 10.     return "This is long name of \(super.name())" 
+ 11.   } 
+ 12. } 
+ 13.  
+repl.swift:9:17: error: instance method overrides a 'final' instance method
 ```
 
 #### Property getter/setter
@@ -887,7 +1078,50 @@ resolution.dpi
 ^~~~~~~~~~~ ~~~
   7> Resolution.dpi
 $R0: Int = 300 
- ```
+```
+
+#### Type methods
+
+```bash
+  1> class TestTypeMtehod { 
+  2.   static let message = "Static method." 
+  3.   static func type_method() { 
+  4.     print(self.message) 
+  5.   } 
+  6. } 
+  7> TestTypeMethod.type_method()
+Static method.
+```
+
+### Subscripts
+
+Classes, structures, and enumerations can define subscripts, which are shortcuts for accessing the member elements of a collection, list, or sequence.
+
+```bash
+  1> class Resolution { 
+  2.   subscript(width: Int, height: Int) -> String {
+  3.     get { 
+  4.       return("Resolution: \(width):\(height)") 
+  5.     } 
+  6.     set { 
+  7.       print("Set resolution \(width):\(height) to \(newValue)") 
+  8.     } 
+  9.   } 
+ 10. } 
+ 11. 
+ 11> var resolution = Resolution()
+resolution: Resolution = {}
+ 12> resolution[640, 480]
+$R0: String = "Resolution: 640:480"
+ 13> resolution[640, 480] = "New value"
+Set resolution 640:480 to New value
+```
+
+A class or structure can provice as many subscript implementations as it needs, and the appropriate subscript to be used will be inferred based on the types of the value or values that are contained within the subscript brackets at the point that the subscript is used (subscript overloading).
+
+#### Optional chaining
+
+You can use optional chaining to try to retrieve and set a value from a subscript on an optional value, and to check whether that subscript call is successful.
 
 ### Integer
 
@@ -1319,6 +1553,16 @@ If you mark a throwing call with ```try!```, you are promising the compiler that
   8. 
   8> try! throws_bad()
 fatal error: 'try!' expression unexpectedly raised an error: MyError.Bad: file /Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-700.1.101.15/src/swift/stdlib/public/core/ErrorType.swift, line 50
+```
+
+#### Assert
+
+```bash
+  1> assert(1 == 1)
+  2> assert(1 == 2)
+assertion failed: : file /var/folders/ds/mbjdvd2n3qlcck8x3s694n5h0000gn/T/./lldb/11395/repl4.swift, line 2
+Execution interrupted. Enter Swift code to recover and continue.
+Enter LLDB commands to investigate (type :help for assistance.)
 ```
 
 ## Vocabulary
