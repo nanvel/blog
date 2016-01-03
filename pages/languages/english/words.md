@@ -66,3 +66,12 @@ A fine, penalty - штраф
 Offensive - образливо
 Thick - товстий
 Generous - щедрий
+To distract - відволікати
+To envy - заздрити
+Envious - заздрісний
+Jealous - заздрісний
+Mean - жалюгідний, підлий
+Jewelry - ювелірні вироби
+Utilities - комунпльні послуги
+Recycling and disposal - переробка та утилізація
+It will do for now - наразі досить

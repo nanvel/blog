@@ -35,6 +35,7 @@ Merely - /ˈmɪə.li/
 Woman - /-wʊm.ən/
 Library - /ˈlaɪ.brər.i/
 Organization - /ˌɔːɡənaɪˈzeɪʃən/
+Cucumber - /ˈkjuː.kʌm.bər/
 
 Links:
 

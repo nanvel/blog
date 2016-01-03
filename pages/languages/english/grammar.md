@@ -150,3 +150,8 @@ To raise my eyes.
 Sun is rising.
 Sunrise.
 Pay rise.
+
+## Indirect speach vs reported speach
+
+Indirect speach:
+He said tha he was at home.
