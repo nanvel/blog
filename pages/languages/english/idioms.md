@@ -37,7 +37,7 @@ To pick up on - first to notice
 To buy into - to be influenced by
 Living out of a suitcase - to stay very briefly in several places, never unpacking one's luggage
 To stop off - to stay somewhere
-Take of - взлітати
+To take off - взлітати
 Once in a blue moon - very rare
 Put up with something - to tolerate (миритися з чимось)
 To give a list (to give a ride) - підвезти
