@@ -36,6 +36,7 @@ Woman - /-wʊm.ən/
 Library - /ˈlaɪ.brər.i/
 Organization - /ˌɔːɡənaɪˈzeɪʃən/
 Cucumber - /ˈkjuː.kʌm.bər/
+Allow - /əˈlaʊ/
 
 Links:
 

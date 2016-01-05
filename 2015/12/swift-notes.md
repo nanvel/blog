@@ -3,7 +3,7 @@ labels: Blog
 		    Mobile
 		    iOS
 created: 2015-12-27T09:55
-modified: 2016-01-03T18:31
+modified: 2016-01-05T21:48
 place: Kyiv, Ukraine
 comments: true
 
@@ -75,6 +75,10 @@ a: Int = 100
   2> Double(a) + 1.2
 $R0: Double = 101.2
 ```
+
+#### is and as
+
+Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
 
 ### Type aliases
 
@@ -1497,12 +1501,28 @@ Works with brek and continue.
 
 See [Error Handling in Swift 2.0](https://www.bignerdranch.com/blog/error-handling-in-swift-2/) by Juan Pablo Claude.
 
+In Swift, errors are represented by values of types that conform to the ErrorType protocol. This empty protocol indicates that a type can be used for error handling.
+
 Enumerations are used for classifying errors:
 ```bash
   1> enum MyError: ErrorType { 
   2.   case Bad 
   3.   case Worse 
   4. }
+```
+
+Throwing an error lets you indicate that something unexpected happened:
+```bash
+  1> class MyError: ErrorType { 
+  2.   var message: String
+  3.   init(message: String) { 
+  4.     self.message = message
+  5.   } 
+  6. } 
+  7> throw MyError(message: "Something bad happened :(")
+$E0: MyError = {
+  message = "Something bad happened :("
+}
 ```
 
 Functions must be marked with throws to be able to propagate an error:
@@ -1524,6 +1544,15 @@ repl.swift:6:3: error: error is not handled because the enclosing function is no
   > try throws_bad()
 $E0: MyError = Bad
 ```
+
+A throwing function propagates errors that are thrown inside of it to the scope from which it's called. Any errors thrown inside a nonthrowing function must be handled inside the function.
+
+There are four ways to handle errors in Swift. You can:
+
+- propagate the error from a function to the code that calls that function
+- handle the error using a do-catch statement
+- handle the error as an optional value
+- assert that the error will not occur
 
 Catching errors with do/catch:
 ```bash
@@ -1553,6 +1582,41 @@ If you mark a throwing call with ```try!```, you are promising the compiler that
   8. 
   8> try! throws_bad()
 fatal error: 'try!' expression unexpectedly raised an error: MyError.Bad: file /Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-700.1.101.15/src/swift/stdlib/public/core/ErrorType.swift, line 50
+```
+
+Converting errors to Optional Values:
+```bash
+// If an error is thrown while evaluating the try? expression, the value of the expression is nil.
+  1> class MyError: ErrorType {} 
+  2> func funcThrows() throws -> Int {
+  3.   throw MyError() 
+  4.   return 1
+  5. } 
+  6. 
+  7> var i: Int?
+i: Int? = nil
+  8> i = try? funcThrows()
+  9> i
+$R0: Int? = nil
+```
+
+#### A deffer statement
+
+You use a defer statement to execute a set of statements just before code execution leaves the current block. Performs regardless of how execution leaves the current block of code: error, return or break.
+
+```bash
+  1> class MyError: ErrorType {}
+  2> func raisesError() throws { 
+  3.   defer { 
+  4.     print("Call anyway") 
+  5.   } 
+  6.   print("Before error")
+  7.   throw MyError() 
+  8. } 
+  9> try raisesError() 
+Before error
+Call anyway
+$E2: MyError = {}
 ```
 
 #### Assert
