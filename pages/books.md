@@ -56,6 +56,10 @@ modified: 2015-12-23T00:02
 - ClosureScript: Up and Running by Stuart Sierra and Luke VanderHart
 - The Swift Programming Language by Apple Inc.
 
+## 2016
+
+- [+] The Monk Who Sold his Ferrari by Robin Sharma
+
 ## In progress
 
 - A Practical Guide to Designing for the Web by Mark Boulton
