@@ -40,7 +40,7 @@ To stop off - to stay somewhere
 To take off - взлітати
 Once in a blue moon - very rare
 Put up with something - to tolerate (миритися з чимось)
-To give a list (to give a ride) - підвезти
+To give a lift (to give a ride) - підвезти
 Fit as fiddle - здоровий як бик
 Put on weight - (to gain weight) - набирати вагу
 White collars - білі комірці
