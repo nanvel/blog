@@ -64,6 +64,9 @@ modified: 2015-12-23T00:02
 
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
-- The Happiness Project by Gretchen Rubin
 - The Great Gilly Hopkins by Katherine Paterson
 - IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
+
+## Archive
+
+- The Happiness Project by Gretchen Rubin (55%)

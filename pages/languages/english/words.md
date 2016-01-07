@@ -3,10 +3,7 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-To persuade - вмовляти, переконувати
 Stunning - приголомшуючий
-Posessions - майно
-Convenience - зручність
 Interlocutor - співрозмовник
 Wig - перука
 Closet - шафа

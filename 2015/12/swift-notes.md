@@ -80,6 +80,64 @@ $R0: Double = 101.2
 
 Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
 
+Use ```is``` to check whether an instance is of a certain subclass type:
+```bash
+  1> class Cat {}
+  2> class Dog {}
+  3> let cat = Cat()
+cat: Cat = {}
+  4> cat is Cat
+$R0: Bool = true
+  5> cat is Dog
+$R1: Bool = false
+```
+
+There are two forms for downcasting operator: the conditional form (```as?``` - returns an optional value of the type you are trying to downcast) and the forsed (```as!``` - attempts to downcast and force-unwraps the result).
+```bash
+  1> class Animal {}
+  2> class Cat: Animal {}
+  3> class Dog: Animal {}
+  4> let cat = Cat()
+cat: Cat = {
+  __lldb_expr_1.Animal = {}
+}
+  5> if let c = cat as? Cat { 
+  6.   print("works")
+  7. } 
+  8. 
+works
+  8> if let c = cat as? Dog {
+  9.   print("works") 
+ 10. } 
+ 11. 
+ 11> if let c = cat as? Animal {
+ 12.   print("works") 
+ 13. } 
+ 14. 
+works
+```
+
+#### Any and AnyObject
+
+Swift provides two special type aliases for working with non-specific types:
+
+- AnyObject - can represent an instance of any class type
+- Any - can represent an instance of any type at all, including function type
+
+```bash
+  1> var things = [Any]()
+things: [Any] = 0 values
+  2> things.append(1)
+  3> things.append("Text")
+  4> things.append(1.2)
+  5> things
+$R0: [Any] = 3 values {
+  [0] = 1
+  [1] = "Text"
+  [2] = 1.2
+}
+```
+
 ### Type aliases
 
 Defines an alternative name for an existing type.
@@ -429,6 +487,20 @@ Default parameters:
 5
   5> testParams()
 0
+```
+
+#### Generic
+
+Generic code enablws you to write reusable fucntions and type that can work with any type.
+
+```bash
+  1> func doublePrint<T>(a: T) { 
+  2.   print("\(a) \(a)")
+  3. } 
+  4> doublePrint(42)
+42 42
+  5> doublePrint("Hi")
+Hi Hi
 ```
 
 ### Closure
@@ -1127,6 +1199,82 @@ A class or structure can provice as many subscript implementations as it needs, 
 
 You can use optional chaining to try to retrieve and set a value from a subscript on an optional value, and to check whether that subscript call is successful.
 
+### Extension
+
+Extensions add new functionality to an existing class, structure, enumeration, or protocol type (but cannot override existing functionality).
+
+Extensions in Swift can:
+
+- Add computed properties and computed type properties
+- Define instance methods and type methods
+- Provide new initializers
+- Define subscripts
+- Define and use new nested types
+- Make an existing type conform to a protocol
+
+```bash
+  1> class Name { 
+  2.   var firstName = "Ryuko"
+  3.   var lastName = "Matoi"
+  4. } 
+  5> extension Name { 
+  6.   var fullName: String {
+  7.     return "\(self.firstName) \(self.lastName)" 
+  8.   } 
+  9. } 
+ 10> let name = Name()
+name: Name = {
+  firstName = "Ryuko"
+  lastName = "Matoi"
+}
+ 11> name.fullName
+$R0: String = "Ryuko Matoi"
+```
+
+An extension can extend an existing type to make it adopt one or more protocols:
+```bash
+extension SomeType: SomeProtocol, AnotherProtocol {
+  ...
+}
+```
+
+Extension works with native types:
+```bash
+  1> extension Int { 
+  2.   func say(fraze: String) {
+  3.     for _ in 0..<self { 
+  4.       print(fraze)
+  5.     } 
+  6.   } 
+  7. } 
+  8> 3.say("Hello world!")
+Hello world!
+Hello world!
+Hello world!
+```
+
+### Protocol
+
+A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can be adopted by a class, structure, or enumeration.
+
+```bash
+  1> protocol MyProtocol { 
+  2.   var setableVariable: String { get set } 
+  3. } 
+  4> class MyClass: MyProtocol {}
+repl.swift:4:7: error: type 'MyClass' does not conform to protocol 'MyProtocol'
+class MyClass: MyProtocol {}
+      ^
+repl.swift:2:7: note: protocol requires property 'setableVariable' with type 'String'
+  var setableVariable: String { get set }
+      ^
+
+  4> class MyClass: MyProtocol { 
+  5.   var setableVariable: String = "Test"
+  6. } 
+  7>  
+```
+
 ### Integer
 
 ```bash
@@ -1629,6 +1777,31 @@ Execution interrupted. Enter Swift code to recover and continue.
 Enter LLDB commands to investigate (type :help for assistance.)
 ```
 
+### Access Control
+
+Access control restricts access to parts of your code from other source files and modules.
+
+Swift provides three different access levels for entities within your code:
+
+- Public access enables entities to be used within any source file from their defining module, and also in a source file from another module that imports the defining module. You typically use public access when specifying the public interface to a framework
+- Internal access enables entities to be used within any source file from their defining module, but not in any source file outside of that module. You typically use internal access when defining an app's or a framework's internal structure (default)
+- Private access restricts the use of an entity to its own defining source file. Use private access to hide the implementation details of a specific piece of functionality
+
+Guiding principle of access levels: No entity can be defined in terms of another entity that has lower (more restrictive) access level.
+
+```bash
+public class SomePublicClass {}
+internal func SomeInternalFunction() {}
+private var somePrivateVariable = 0
+```
+
+### Operator overloading
+
+Classes and structures can provide their own implementations of existing operators.
+
+```bash
+```
+
 ## Vocabulary
 
 ### Type-safe language
@@ -1664,6 +1837,10 @@ Structures and enumerations are value type, classes are reference types.
 **Unary** operator operate on a single target (```!a```).
 **Binary** operator operate on two targets (```a + b```).
 **Ternary** operator operate on three targets (```a ? b : c```).
+
+### A module
+
+A module is a single unit of code distribution - a framework or application that is built and shipped as a single unit and that can be imported by another module with Swift's ```import``` keyword.
 
 ## Instruments
 
