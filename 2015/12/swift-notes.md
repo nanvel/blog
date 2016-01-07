@@ -1169,6 +1169,19 @@ $R0: Int = 300
 Static method.
 ```
 
+#### Declaration modifiers
+
+Declaration modifiers are keywords context-sensitive keywords that modify the behavior or meaning of a declaration.
+
+Available modifiers:
+
+- dynamic - Apply this modifier to any member of a class that can be represented by Objective-C
+- final - Apply this modifier to a class or to a property, method, os subscript member of a class. It's applied to a class to indicate that the class can't be subclassed. It's applied to a property, method, or subscript of a class to indicate that a class member can't be overriden in any subclass
+- lazy - Apply this modifier to a stored variable property of a class or structure to indicate that the property's initial value is calculated and stored at most once, when the property is first accessed
+- optional - Apply this modifier to a protocol's property, method, or subscript members to indicate that a conforming type isn't required to implement those members
+- required - Apply this modifier to designated or convenience initializer of a class to indicate that every subclass must implement that initializer
+- weak - The weak modifier is applied to a variable or a stored variable property to indicate that variable or property has a week reference to the object stored as its value
+
 ### Subscripts
 
 Classes, structures, and enumerations can define subscripts, which are shortcuts for accessing the member elements of a collection, list, or sequence.
@@ -1800,6 +1813,51 @@ private var somePrivateVariable = 0
 Classes and structures can provide their own implementations of existing operators.
 
 ```bash
+  1> struct Vector { 
+  2.   var x: Double 
+  3.   var y: Double
+  4. } 
+  5> func + (left: Vector, right: Vector) -> Vector { 
+  6.   return Vector(x: left.x + right.x, y: left.y + right.y)
+  7. } 
+  8> let v1 = Vector(x: 10, y: 10)
+v1: Vector = {
+  x = 10
+  y = 10
+}
+  9> let v2 = Vector(x: 0, y: 2)
+v2: Vector = {
+  x = 0
+  y = 2
+}
+ 10> v1 + v2
+$R0: Vector = {
+  x = 10
+  y = 12
+}
+```
+
+### Literal expression
+
+```bash
+  1> __FILE__
+$R0: String = "/var/folders/ds/mbjdvd2n3qlcck8x3s694n5h0000gn/T/./lldb/13457/repl2.swift"
+  2> __LINE__
+$R1: Int = 2
+  3> __COLUMN__
+$R2: Int = 1
+  4> __FUNCTION__
+$R3: String = "__lldb_expr_8"
+```
+
+#### A wildcard expression
+
+```bash
+  1> var x = 0
+x: Int = 0
+  2> (x, _) = (10, 20) 
+  3> x
+$R0: Int = 10
 ```
 
 ## Vocabulary
