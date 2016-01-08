@@ -1,9 +1,9 @@
 labels: Blog
         Swift
-		    Mobile
-		    iOS
+        Mobile
+        iOS
 created: 2015-12-27T09:55
-modified: 2016-01-05T21:48
+modified: 2016-01-08T20:23
 place: Kyiv, Ukraine
 comments: true
 
@@ -41,7 +41,7 @@ one: Int = 1
 two: Int = 2
 ```
 
-Using unicode and reserved words for variable name:
+Using unicode and reserved words as variable name:
 ```bash
   1> let сім = 7
 сім: Int = 7
@@ -76,7 +76,7 @@ a: Int = 100
 $R0: Double = 101.2
 ```
 
-#### is and as
+#### is and as ()
 
 Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
 
@@ -92,7 +92,7 @@ $R0: Bool = true
 $R1: Bool = false
 ```
 
-There are two forms for downcasting operator: the conditional form (```as?``` - returns an optional value of the type you are trying to downcast) and the forsed (```as!``` - attempts to downcast and force-unwraps the result).
+There are two forms for downcasting operator: the conditional form (```as?``` - returns an optional value of the type you are trying to downcast) and the forced (```as!``` - attempts to downcast and force-unwraps the result).
 ```bash
   1> class Animal {}
   2> class Cat: Animal {}
@@ -491,7 +491,7 @@ Default parameters:
 
 #### Generic
 
-Generic code enablws you to write reusable fucntions and type that can work with any type.
+Generic code enables you to write reusable functions and type that can work with any type.
 
 ```bash
   1> func doublePrint<T>(a: T) { 
@@ -506,7 +506,7 @@ Hi Hi
 ### Closure
 
 Closures in Swift are similar to lambdas in other programming languages.
-Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables, hense the name "closures".
+Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables, hence the name "closures".
 The code in a closure has access to objects that were available in the scope where the closure was created.
 
 ```bash
@@ -562,7 +562,7 @@ one: Numbers = One
 1
 ```
 
-It is possible to use string or floating-point numbers as the raw type of an anumeration:
+It is possible to use string or floating-point numbers as the raw type of an enumeration:
 ```bash
   1> enum Numbers: String { 
   2.   case One = "one", Two = "two"
@@ -688,9 +688,9 @@ $R0: Resolution = {
 }
 ```
 
-#### Failable initializer
+#### Fallible initializer
 
-A failable initializer for a value type (that is, a structure or enumeration) can trigger an initialization failure at any point within its initializer implementation.
+A fallible initializer for a value type (that is, a structure or enumeration) can trigger an initialization failure at any point within its initializer implementation.
 ```bash
   1> class Name { 
   2.   var name: String 
@@ -717,7 +717,7 @@ Fail
 
 ### Class
 
-Unlike other origramming languages, Swift does not required you to create separate interface and implementation files for custom classes and structures.
+Unlike other programming languages, Swift does not required you to create separate interface and implementation files for custom classes and structures.
 
 ```bash
   1> class Point { 
@@ -735,7 +735,7 @@ point: Point = {
 
 Classes have additional capabilities that structures do not:
 
-- Inheritance enables one class to inherit the characeristics of another
+- Inheritance enables one class to inherit the characteristics of another
 - Type casting enables you to check and interpret the type of a class instance at runtime
 - Deinitializers enable an instance of a class to free up any resources it has assigned
 - Reference counting allows more than one reference to a class instance
@@ -745,7 +745,7 @@ Structures are always copied when they are passed around in your code, and do no
 When to choose structures:
 
 - The structure's primary purpose is to encapsulate a few relatively simple data values
-- It is resonable to expect that the encapsulated values will be copied rather than referenced when you assign or pass around an instance of that structure
+- It is reasonable to expect that the encapsulated values will be copied rather than referenced when you assign or pass around an instance of that structure
 - Any properties stored by the structure are themselves value types, which would also be expected to be copied rather than referenced
 - The structure does not need to inherit properties or behavior from another existing type
 
@@ -821,7 +821,7 @@ repl.swift:2:7: note: stored property 'a' without initial value prevents synthes
   6. } 
   7. 
 ```
-If your custom type has a stored property that is logically allowed to have "no value" - declare the property with an optional type. Properties with of optional type are automatically initialized with value of nill.
+If your custom type has a stored property that is logically allowed to have "no value" - declare the property with an optional type. Properties with of optional type are automatically initialized with value of nil.
 
 Alternative initializers and initializers without external names:
 ```bash
@@ -855,7 +855,7 @@ Designated initializers are default.
 
 A designated initializer must call a designated initializer from its immediate superclass.
 
-A convenience initializer must call another initilizer from the same class. A convenience initializer must ultimately call a designated initializer.
+A convenience initializer must call another initializer from the same class. A convenience initializer must ultimately call a designated initializer.
 
 ```bash
   1> class Name { 
@@ -972,7 +972,7 @@ $R0: String = "Ryuko Matoi"
 $R1: String = "This is long name of Ryuko Matoi"
 ```
 
-You can prevent a method, property, pr subscript from being overriden by marking it as final:
+You can prevent a method, property, pr subscript from being overridden by marking it as final:
 ```bash
   1> class Name { 
   2.   var fname = "Ryuko" 
@@ -1176,12 +1176,12 @@ Declaration modifiers are keywords context-sensitive keywords that modify the be
 Available modifiers:
 
 - dynamic - Apply this modifier to any member of a class that can be represented by Objective-C
-- final - Apply this modifier to a class or to a property, method, os subscript member of a class. It's applied to a class to indicate that the class can't be subclassed. It's applied to a property, method, or subscript of a class to indicate that a class member can't be overriden in any subclass
+- final - Apply this modifier to a class or to a property, method, os subscript member of a class. It's applied to a class to indicate that the class can't be subclassed. It's applied to a property, method, or subscript of a class to indicate that a class member can't be overridden in any subclass
 - lazy - Apply this modifier to a stored variable property of a class or structure to indicate that the property's initial value is calculated and stored at most once, when the property is first accessed
 - optional - Apply this modifier to a protocol's property, method, or subscript members to indicate that a conforming type isn't required to implement those members
 - required - Apply this modifier to designated or convenience initializer of a class to indicate that every subclass must implement that initializer
 - weak - The weak modifier is applied to a variable or a stored variable property to indicate that variable or property has a week reference to the object stored as its value
-
+  
 ### Subscripts
 
 Classes, structures, and enumerations can define subscripts, which are shortcuts for accessing the member elements of a collection, list, or sequence.
@@ -1206,7 +1206,7 @@ $R0: String = "Resolution: 640:480"
 Set resolution 640:480 to New value
 ```
 
-A class or structure can provice as many subscript implementations as it needs, and the appropriate subscript to be used will be inferred based on the types of the value or values that are contained within the subscript brackets at the point that the subscript is used (subscript overloading).
+A class or structure can provide as many subscript implementations as it needs, and the appropriate subscript to be used will be inferred based on the types of the value or values that are contained within the subscript brackets at the point that the subscript is used (subscript overloading).
 
 #### Optional chaining
 
@@ -1374,7 +1374,7 @@ $R0: Int? = 10
 $R1: Int? = nil
 ```
 
-I Swift, ```nil``` is not a pointer - it is the absence of a value of a certain type.
+In Swift, ```nil``` is not a pointer - it is the absence of a value of a certain type.
 
 ## Syntax
 
@@ -1425,7 +1425,7 @@ Test
   9>  
 ```
 
-Forsed unwrapping:
+Forced unwrapping:
 ```bash
   1> var v: String? = "Test"
 v: String? = "Test"
@@ -1631,7 +1631,7 @@ i: Int = 2
 
 #### Labels
 
-Works with brek and continue.
+Works with break and continue.
 
 ```bash
   1> label1: for i in 1...3 { 
@@ -1878,7 +1878,6 @@ a = "1"
 ### Type annotation
 
 Providing type explicitly:
-
 ```bash
   1> let one: Double = 1
 one: Double = 1

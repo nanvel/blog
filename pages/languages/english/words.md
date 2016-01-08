@@ -4,10 +4,7 @@ created: 2015-10-24T22:20
 # Words to learn
 
 Stunning - приголомшуючий
-Interlocutor - співрозмовник
-Wig - перука
 Closet - шафа
-Wardrobe - шафа для одягу
 Humble - скромний
 Kangaroo - кенгуру
 Inoculations - щеплення
@@ -43,7 +40,6 @@ In an unexpected way - unexpectedly
 Safe and sound - живий і здоровий
 Starving - дуже голодний
 Obligatory - обов'язковий
-Compulsory - обов'язковий
 Life expectency - ймовірна тривалість життя
 Lifespan - тривалість життя
 Burden - тягар, ноша

@@ -59,6 +59,7 @@ modified: 2015-12-23T00:02
 ## 2016
 
 - [+] The Monk Who Sold his Ferrari by Robin Sharma
+- Eight Lessons I learnt From Losing 30k in My Quest by Ken Chong
 
 ## In progress
 
