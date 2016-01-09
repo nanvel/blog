@@ -3,7 +3,7 @@ labels: Blog
         Mobile
         iOS
 created: 2015-12-27T09:55
-modified: 2016-01-08T20:23
+modified: 2016-01-09T20:54
 place: Kyiv, Ukraine
 comments: true
 
@@ -87,6 +87,13 @@ a: [String] = 3 values {
   [2] = "Three"
 }
 ```
+
+Available methods:
+
+- ```append(value)```
+- ```insert(value, atIndex: 0)```
+- ```removeAtIndex(2)```
+- ```removeLast()```
 
 Create an empty array:
 ```
@@ -259,6 +266,14 @@ $R0: [String : Int] = 1 key/value pair {
 }
 ```
 
+Currently only String, Int, Double and Bool data types are suitable for use as keys within s Swift dictionary.
+
+Available methods and properties:
+
+- ```count```
+- ```updateValue(value, forKey: key)```
+- ```removeValueForKey(key)``` (or ```d[key] = nil```)
+
 ### Function
 
 Function is a first-class type.
@@ -314,6 +329,20 @@ $R0: Int = 6
 ```
 A variadic parameter accepts zero or more values of a specified type. A function may have at most one variadic parameter.
 
+Default parameters:
+```bash
+  1> func testParams(i: Int = 0) {
+  2.   print(i)
+  3. }
+  4> testParams(5)
+5
+  5> testParams()
+0
+```
+
+#### Internal and external parameter names
+
+```
 External parameter names:
 ```bash
   1> func testParams(externalParam localParam: Int) {
@@ -333,18 +362,7 @@ Omitting external parameter names:
   4> testParams(1, 2)
 1 2
 ```
-The first param omits its external parameter name by default.
-
-Default parameters:
-```bash
-  1> func testParams(i: Int = 0) {
-  2.   print(i)
-  3. }
-  4> testParams(5)
-5
-  5> testParams()
-0
-```
+The first parameter omits its external parameter name by default.
 
 ### Enumeration
 
@@ -1012,6 +1030,19 @@ a: UInt = 1
 $R0: Int = 9223372036854775807
 ```
 
+Increment:
+```bash
+  1> var x = 1
+x: Int = 1
+  2> x += 1
+  3> x
+$R0: Int = 2
+  4> x++
+$R1: Int = 2
+  5> x
+$R2: Int = 3
+```
+
 ### Float and Double
 
 Double represents a 64-bit floating-point number (precision of at least 15 decimal digits).
@@ -1088,6 +1119,17 @@ Commonly used special characters:
 $R0: String = "$"
   2> "\u{1f496}"
 $R1: String = "💖"
+```
+
+### Boolean
+
+```bash
+  1> true
+$R0: Bool = true
+  2> 1 == 1
+$R1: Bool = true
+  3> (1 == 1) && ("a" == "b")
+$R2: Bool = false
 ```
 
 ### nil
@@ -1257,6 +1299,22 @@ optionalString: String? = nil
 Value
 ```
 
+Same using ```== nil``` check:
+```bash
+  1> var optionalString: String?
+optionalString: String? = nil
+  2> if optionalString != nil {
+  3.   print(optionalString!)
+  4. }
+  5> optionalString = "Value"
+  6> if optionalString != nil {
+  7.   print(optionalString!)
+  8. }
+Value
+```
+
+If an optional has a value assigned to it, that value is said to be "wrapped" within the optional. That's why we use "!" to force unwrap the value.
+
 Use default value:
 ```bash
   1> var optionalString: String?
@@ -1268,6 +1326,17 @@ $R0: String = "Optional value"
 $R1: String = "Value"
 ```
 
+Where statement to disallow optional binding:
+```bash
+  1> var optionalString: String? = "optional"
+optionalString: String? = "optional"
+  2> var number = 1
+number: Int = 1
+  3> if let s = optionalString where number > 1 {
+  4.   print(s)
+  5. }
+```
+
 ### Ranges
 
 ```bash
@@ -1276,6 +1345,8 @@ $R0: Range<Int> = 1..<5
   2> 1..<4
 $R1: Range<Int> = 1..<4
 ```
+
+In "```1..<10```" "```..<```" - half-closed range operator.
 
 ### Generic
 
@@ -1494,6 +1565,14 @@ In a ```if``` statement, the conditional must be a Boolean expression.
 true
 ```
 
+The ternary operator:
+```bash
+  1> var i = 10
+i: Int = 10
+  2> i > 5 ? i+5 : i
+$R0: Int = 15
+```
+
 #### Guard statement
 
 Unlike an if statement, a guard statement always has an else clause.
@@ -1541,6 +1620,27 @@ Considers a value and compares it against several posible matching patterns. It 
 Between 5 and 10
  16> check(3)
 Other
+```
+
+The where statement may be used within a switch case match to add additional criteria required for a positive match:
+```bash
+  1> var a = 10, b = 11
+a: Int = 10
+b: Int = 11
+  2> switch a {
+  3.   case 1...20 where a % 2 == 1:
+  4.     print("passed")
+  5.   default:
+  6.     print("not passed")
+  7. }
+  8> switch (b) {
+  9.   case 1...20 where b % 2 == 1:
+ 10.     print("passed")
+ 11.   default:
+ 12.     print("not passed")
+ 13. }
+ 14.
+passed
 ```
 
 Matching tuples:
@@ -1615,6 +1715,18 @@ Using ```fallthrough```:
  11.  
 10 or 11
 Between 1..100
+```
+
+Use break in empty default:
+```bash
+  1> var i = 10
+i: Int = 10
+  2> switch i {
+  3.   case 1...5:
+  4.     print("passed")
+  5.   default:
+  6.     break
+  7. }
 ```
 
 ### Loops
@@ -1702,6 +1814,10 @@ Works with break and continue.
 2 1
 3 1
 ```
+
+#### Continue statement
+
+The continue statement causes all remaining code statements in a loop to be skipped, and execution to be returned to the top of the loop.
 
 ### Error handling
 
@@ -1951,6 +2067,22 @@ A concept allows to construct string using combination of strings, variables, co
 ### Type safe
 
 Type safe programming language means that once the data type of a variable has been identified, that variable cannot subsequently be used to store data of any other type without inducing a compilation error.
+
+### Upcasting and downcasting
+
+There are two types of casting: upcasting and downcasting.
+Upcasting occurs when an object of a particular class is cast to one of its superclasses.
+Downcasting occurs when a conversion if made from one class to another where there is no guarantee that the cast can be made safely or that an invalid casting attempt will be caught by the compiler.
+
+### Parameter vs argument
+
+The values that a function is able to accept when it is called are referred to as **parameters**.
+At the point that the function is actually called and passed those values, however, they are referred to as **arguments**.
+
+### Closure vs closure expression
+
+Closure expression is self-contained block of code, like function but without name.
+A closure refers to the combination of a self-contained block of code and one or more variables that exist in the context surrounding that code block.
 
 ## Instruments
 
