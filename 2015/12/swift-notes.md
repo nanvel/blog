@@ -2081,8 +2081,8 @@ At the point that the function is actually called and passed those values, howev
 
 ### Closure vs closure expression
 
-Closure expression is self-contained block of code, like function but without name.
-A closure refers to the combination of a self-contained block of code and one or more variables that exist in the context surrounding that code block.
+**Closure expression** is self-contained block of code, like function but without name.
+A **closure** refers to the combination of a self-contained block of code and one or more variables that exist in the context surrounding that code block.
 
 ## Instruments
 
