@@ -56,6 +56,8 @@ $R0: Int = 1
 $R1: Int = 1
 ```
 
+Perhaps the most powerful use of tuples is the ability to return multiple values from a function.
+
 #### Named tuple
 
 ```bash
@@ -1063,6 +1065,22 @@ $R1: String = "a = 5"
 $R2: String = "a = 5.0"
 ```
 
+#### Special characters aka escape sequences
+
+These special characters are identified by prefixing the character with a backslash (escaping).
+
+Commonly used special characters:
+
+- ```\n``` - New line
+- ```\r``` - Carriage return
+- ```\t``` - Horizontal tab
+- ```\\``` - Backslash
+- ```\"``` - Double quote
+- ```\'``` - Single quote
+- ```\u{nn}``` - Single by Unicode scalar
+- ```\u{nnnn}``` - Double byte Unicode scalar
+- ```\u{nnnnnnnn}``` - Four byte Unicode scalar
+
 #### Unicode
 
 ```bash
@@ -1090,6 +1108,8 @@ In Swift, ```nil``` is not a pointer - it is the absence of a value of a certain
 ## Data manipulation
 
 ### Constants vs variables
+
+For greater code efficiency and execution performance, Apple recommends the use of constants rather than variables whenever possible.
 
 ```bash
   1> let a = 1
@@ -1121,6 +1141,22 @@ Using unicode and reserved words as variable name:
 сім: Int = 7
   2> var `for` = 1
 for: Int = 1
+```
+
+### Type annotation and type inference
+
+Swift is a [type safe](#type-safe) programming language.
+
+There are two ways in which the the type may be identified:
+
+- type annotation at the point of constant or variable declaration
+- type inference - the compiler looks to see what type of value is being assigned at the point that it is initialized and uses that as the type
+
+```bash
+  1> let a: String = "string"
+a: String = "string"
+  2> let a = "string"
+a: String = "string"
 ```
 
 ### Type casting
@@ -1201,7 +1237,9 @@ Defines an alternative name for an existing type.
 a: MyInt = 10
 ```
 
-### Optional and default values
+### Optional type and default values
+
+The purpose of the optional type is to provide a safe and consistent approach to handling situations where a variable or constant may not have any value assigned to it.
 
 To mark the value as optional - add question mark (?) after the type of a value.
 
@@ -1905,6 +1943,14 @@ Structures and enumerations are value type, classes are reference types.
 ### A module
 
 A module is a single unit of code distribution - a framework or application that is built and shipped as a single unit and that can be imported by another module with Swift's ```import``` keyword.
+
+### String interpolation
+
+A concept allows to construct string using combination of strings, variables, constants, expressions, and functions calls.
+
+### Type safe
+
+Type safe programming language means that once the data type of a variable has been identified, that variable cannot subsequently be used to store data of any other type without inducing a compilation error.
 
 ## Instruments
 
