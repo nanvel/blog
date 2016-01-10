@@ -1,6 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
+modified: 2016-01-09T21:22
 place: Kyiv, Ukraine
 comments: true
 
@@ -382,6 +383,11 @@ TODO
 ### [Observer](http://en.wikipedia.org/wiki/Observer_pattern)
 
 Pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+
+Also known as:
+
+- Signals and slots (Qt)
+- Target-Action pattern (iOS, IBOutlets/IBActions)
 
 Links:
 
