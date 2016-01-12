@@ -3,26 +3,14 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-Stunning - приголомшуючий
-Closet - шафа
-Humble - скромний
-Kangaroo - кенгуру
 Inoculations - щеплення
-Not certain - не впевнений
 What is it called? - Як це називається?
-Notion - переконання, поняття
-Poultry - птиця
-Meadow - луг
 Indeed - дійсно (really)
 Seldom - рідко (rarely)
-Mansion - особняк
-Exile - вигнання
 Out of order - вийшов з ладу
 Has broken down - зламався
-Outcome - результат
 Consequences - наслідки
 Looks familiar to me - здається знайомим
-Sunbathe - засмагати
 Congestion area - зона заторів
 Thatched roof - солом'яний дах
 I meant to say - збирався сказати
