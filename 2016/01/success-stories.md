@@ -1,6 +1,7 @@
 labels: Blog
-		Life
+        Life
 created: 2016-01-10T16:38
+modified: 2016-01-12T08:32
 place: Kyiv, Ukraine
 comments: true
 
