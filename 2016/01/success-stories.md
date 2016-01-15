@@ -16,3 +16,6 @@ One day - one success story.
 - [THEY WANTED TO MAKE A VIDEO GAME PHENOMENON. THEY MADE $10 MILLION. THE STORY OF CROSSY ROAD](http://www.polygon.com/2015/3/3/8142247/crossy-road-earnings-10-million-gdc-2015) by Dave Tach
 - [The Best Shot At Success For Indie Developers: Go Work For "The Man"](http://readwrite.com/2015/07/20/indie-app-developers-success-enterprise-the-man)
 - [+] [15 Tips for Succeeding as an Independent App Developer](http://www.entrepreneur.com/article/247622)
+- [5 Development Mistakes That Can Destroy Your Mobile App](http://www.entrepreneur.com/article/238849)
+- [5 Questions to Ask Before Developing a Mobile App](http://www.entrepreneur.com/article/231411)
+- [How to Survive Your First 100 Days of App Development](http://www.entrepreneur.com/article/229652)
