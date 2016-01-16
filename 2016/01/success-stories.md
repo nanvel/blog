@@ -1,7 +1,7 @@
 labels: Blog
         Life
 created: 2016-01-10T16:38
-modified: 2016-01-12T08:32
+modified: 2016-01-16T08:32
 place: Kyiv, Ukraine
 comments: true
 
@@ -19,3 +19,4 @@ One day - one success story.
 - [5 Development Mistakes That Can Destroy Your Mobile App](http://www.entrepreneur.com/article/238849)
 - [5 Questions to Ask Before Developing a Mobile App](http://www.entrepreneur.com/article/231411)
 - [How to Survive Your First 100 Days of App Development](http://www.entrepreneur.com/article/229652)
+- [A Step-by-Step Guide To Building Your First Mobile App](http://www.entrepreneur.com/article/231145)
