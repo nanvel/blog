@@ -60,14 +60,15 @@ modified: 2015-12-23T00:02
 
 - [+] The Monk Who Sold his Ferrari by Robin Sharma
 - Eight Lessons I learnt From Losing 30k in My Quest by Ken Chong
+- IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
 
 ## In progress
 
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
 - The Great Gilly Hopkins by Katherine Paterson
-- IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
 - Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
+- SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Bill Karwin
 
 ## Archive
 

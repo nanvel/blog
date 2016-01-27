@@ -3,33 +3,10 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-Inoculations - щеплення
-What is it called? - Як це називається?
-Indeed - дійсно (really)
-Seldom - рідко (rarely)
-Out of order - вийшов з ладу
-Has broken down - зламався
-Consequences - наслідки
-Looks familiar to me - здається знайомим
-Congestion area - зона заторів
-Thatched roof - солом'яний дах
-I meant to say - збирався сказати
-Overwhelming - величезний, нездоланний
-Pace of life - темп життя
-Tipping points - переломні моменти
-Mavens - знатоки
-Negotiation skills - навички ведення перемовин
 Compulsory - обов'язково
-Authorities - адміністрація, представники влади
-Exhausted - виснажений
-Persuade - переконувати, вмовляти
-Dissuade - відмовляти
-In an unexpected way - unexpectedly
 Safe and sound - живий і здоровий
 Starving - дуже голодний
 Obligatory - обов'язковий
-Life expectency - ймовірна тривалість життя
-Lifespan - тривалість життя
 Burden - тягар, ноша
 Bottom dollar - the last bit of money,something you wouldn't risk losing
 Intertwine - переплітатися
