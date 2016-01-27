@@ -88,7 +88,7 @@ Thanks to [@alexander.andreev](https://www.instagram.com/alexander.andreev/) for
 
 ### Software development
 
-Improved my knowledge in Python language, software design, databases.
+Improved my knowledge in the Python language, software design, databases.
 
 [c2p2](https://github.com/nanvel/c2p2) now looks well for me.
 
