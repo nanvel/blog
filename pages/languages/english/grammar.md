@@ -155,3 +155,12 @@ Pay rise.
 
 Indirect speach:
 He said tha he was at home.
+
+## Worth ...ing
+
+Worth trying (not worth to try).
+
+## Few vs a few
+
+Few - not enough.
+A few - a little but enough.

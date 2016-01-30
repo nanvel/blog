@@ -37,7 +37,8 @@ Library - /ˈlaɪ.brər.i/
 Organization - /ˌɔːɡənaɪˈzeɪʃən/
 Cucumber - /ˈkjuː.kʌm.bər/
 Allow - /əˈlaʊ/
-
+Great - /ɡreɪt-/
+Exaggerate - /ɪɡˈzædʒ.ə.reɪt/
 Links:
 
 - http://dictionary.cambridge.org/pronunciation/english/above

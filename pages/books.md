@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2015-12-23T00:02
+modified: 2016-01-30T20:56
 
 # Books
 
@@ -61,6 +61,7 @@ modified: 2015-12-23T00:02
 - [+] The Monk Who Sold his Ferrari by Robin Sharma
 - Eight Lessons I learnt From Losing 30k in My Quest by Ken Chong
 - IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
+- Australia: A Very Short Introduction by Kenneth Morgan
 
 ## In progress
 

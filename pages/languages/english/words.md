@@ -33,3 +33,9 @@ Jewelry - ювелірні вироби
 Utilities - комунпльні послуги
 Recycling and disposal - переробка та утилізація
 It will do for now - наразі досить
+To fill - заповнювати
+To feel - відчувати
+Digress - відволікатися
+Greedy - жадібний
+Exaggerate - перебільшувати
+Blue collars - сині комірці
