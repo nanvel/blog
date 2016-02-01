@@ -39,3 +39,23 @@ Digress - відволікатися
 Greedy - жадібний
 Exaggerate - перебільшувати
 Blue collars - сині комірці
+Scare away - відлякувати
+Crucial - вирішальний
+Abundance - достаток
+Provides for - забезпечує фінансово
+Spare time - вільний час
+Leisure - дозвілля
+To asses - оцінювати
+Sidewalk (Pawement) - тротуар
+Remorse - каяття
+Offence - злочин
+To tell a lie - збрехати
+To tell the truth - казати правду
+Complexion - колір обляччя
+Toddlers - малюки
+Despise - зневажати
+Oversleep - проспати
+Occasionally - іноді
+By mistake (accidentally) - помилково
+To sweat - потіти
+Unwillingness - небажання

@@ -39,6 +39,8 @@ Cucumber - /ˈkjuː.kʌm.bər/
 Allow - /əˈlaʊ/
 Great - /ɡreɪt-/
 Exaggerate - /ɪɡˈzædʒ.ə.reɪt/
+occasionally - /əˈkeɪ·ʒə·nəl·i/
+
 Links:
 
 - http://dictionary.cambridge.org/pronunciation/english/above

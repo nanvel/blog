@@ -46,3 +46,12 @@ Put on weight - (to gain weight) - набирати вагу
 White collars - білі комірці
 To set out - відправлятися у подорож
 To stop off - зупинятися (ненадовго)
+From rags to riches - з грязі в крязі
+Effigy - чучало
+Scarecrow - опудало
+Obligations - забов'язання
+Smearing - вимазуватись
+Trunk - стовбур, тулуб
+Threshold - поріг
+Pear - груша
+Slip off the road - з'їхати з дороги

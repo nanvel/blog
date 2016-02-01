@@ -147,3 +147,9 @@ I am reluctant to do.
 
 Wonderful - very good.
 Awful, horrible - very bad.
+
+## Weird
+
+Weird
+Bizzare
+Strange
