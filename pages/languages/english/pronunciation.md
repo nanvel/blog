@@ -39,7 +39,10 @@ Cucumber - /ˈkjuː.kʌm.bər/
 Allow - /əˈlaʊ/
 Great - /ɡreɪt-/
 Exaggerate - /ɪɡˈzædʒ.ə.reɪt/
-occasionally - /əˈkeɪ·ʒə·nəl·i/
+Occasionally - /əˈkeɪ·ʒə·nəl·i/
+Capacity - /kəˈpæsəti/
+Group - /ɡruːp/
+Failure - /ˈfeɪljər/
 
 Links:
 

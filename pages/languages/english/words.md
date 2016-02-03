@@ -4,16 +4,13 @@ created: 2015-10-24T22:20
 # Words to learn
 
 Compulsory - обов'язково
-Safe and sound - живий і здоровий
 Starving - дуже голодний
 Obligatory - обов'язковий
 Burden - тягар, ноша
-Bottom dollar - the last bit of money,something you wouldn't risk losing
 Intertwine - переплітатися
 A nest egg - a sum of money saved for the future
 To lend money - позичати гроші (давати)
 To borrow - позичати (брати)
-Pay back - повертати борг
 In terms of this - у цьому плані
 In this respect - у цьому відношенні
 Dough - тісто
@@ -59,3 +56,18 @@ Occasionally - іноді
 By mistake (accidentally) - помилково
 To sweat - потіти
 Unwillingness - небажання
+Effigy - чучало
+Scarecrow - опудало
+Obligations - забов'язання
+Smearing - вимазуватись
+Trunk - стовбур, тулуб
+Threshold - поріг
+Pear - груша
+Sublime - неперевершаний
+Eavesdrop - підслуховувати
+Overheard - випадково почув
+Mulled wine - глінтвейн
+Rush hour - час пік
+Great famine - великий голод
+Mouth-watering - апетитні
+Pastry - кондитерські вироби

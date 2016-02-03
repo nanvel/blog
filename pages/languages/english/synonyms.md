@@ -153,3 +153,17 @@ Awful, horrible - very bad.
 Weird
 Bizzare
 Strange
+
+## Forbidden
+
+Forbidden
+Prohibited
+
+## Sometimes
+
+Sometimes
+From time to time
+Occasionally
+Once in a while
+Every now and then
+Now and again
