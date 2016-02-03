@@ -2,6 +2,7 @@ labels: Blog
         Databases
         Redis
 created: 2015-08-15T10:15
+modified: 2016-02-03T23:29
 place: Kyiv, Ukraine
 comments: true
 
@@ -841,3 +842,9 @@ Time complexity for keys is O(N) with N being the number of keys in the database
 ### 5. Use expire to be sure that database contains only data that actively in use
 
 ### 6. Use HGET, HSET to decrease number of keys
+
+### 7. Twemproxy
+
+[https://github.com/twitter/twemproxy](https://github.com/twitter/twemproxy)
+
+Allows to scale horizontally.
