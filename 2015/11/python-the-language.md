@@ -1,7 +1,7 @@
 labels: Blog
 		Python
 created: 2015-11-22T21:33
-modified: 2015-11-29T18:51
+modified: 2016-02-06T11:22
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -951,6 +951,50 @@ An iterable object that builds all its items at once. In Python, a list comprehe
 Class metaprogramming is the art of creating or customizing classes at runtime.
 
 Means that we manage object creation, for example: create a class using ```type()``` or overriding ```__new__()``` method to return alternative object instance instead of creating new.
+
+A useful example - register class on class initialization:
+```
+class Registry(object):
+
+    _items = {}
+
+    @classmethod
+    def register(cls, item):
+        if item.__name__ not in cls._items:
+            cls._items[item.__name__] = item
+
+    @classmethod
+    def get(cls, name):
+        return cls._items.get(name)
+
+    @classmethod
+    def list(cls):
+      return cls._items.values()
+
+
+class ClassMeta(type):
+
+    def __init__(cls, name, bases, attrs):
+        super(ClassMeta, cls).__init__(name, bases, attrs)
+        Registry.register(item=cls)
+
+
+class Class1(object, metaclass=ClassMeta):
+
+  pass
+
+
+class Class2(object, metaclass=ClassMeta):
+
+  pass
+
+
+if __name__ == '__main__':
+  print(Registry.list())
+  # python3.5 meta_example.py
+  # dict_values([<class '__main__.Class1'>, <class '__main__.Class2'>])
+
+```
 
 ## Links
 

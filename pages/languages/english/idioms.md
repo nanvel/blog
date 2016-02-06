@@ -50,3 +50,4 @@ From rags to riches - з грязі в крязі
 Slip off the road - з'їхати з дороги
 To turn down - to reject
 To lose temper - втратити самовладання
+It will do for now - наразі досить
