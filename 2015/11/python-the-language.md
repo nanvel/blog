@@ -953,7 +953,7 @@ Class metaprogramming is the art of creating or customizing classes at runtime.
 Means that we manage object creation, for example: create a class using ```type()``` or overriding ```__new__()``` method to return alternative object instance instead of creating new.
 
 A useful example - register class on class initialization:
-```
+```python
 class Registry(object):
 
     _items = {}
