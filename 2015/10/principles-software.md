@@ -9,6 +9,12 @@ comments: true
 
 [TOC]
 
+## [5 Whys](https://en.wikipedia.org/wiki/5_Whys)
+
+The primary goal of the technique is to determine the root cause of a defect or problem by repeating the question "Why?" Each question forms the basis of the next question. The "5" in the name derives from an empirical observation on the number of iterations typically required to resolve the problem.
+
+The technique was formally developed by Sakichi Toyoda and was used within the Toyota Motor Corporation during the evolution of its manufacturing methodologies.
+
 ## DRY
 
 **D**on’t **r**epeat **y**ourself.
