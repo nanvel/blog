@@ -15,7 +15,7 @@ The primary goal of the technique is to determine the root cause of a defect or 
 
 The technique was formally developed by Sakichi Toyoda and was used within the Toyota Motor Corporation during the evolution of its manufacturing methodologies.
 
-### [AAR](https://en.wikipedia.org/wiki/After-action_review)
+## [AAR](https://en.wikipedia.org/wiki/After-action_review)
 
 An **A**fter **A**ction **R**eview is a structured review or de-brief process for analyzing what happened, why it happened, and how it can be done better.
 
