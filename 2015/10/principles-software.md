@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2015-11-08T00:02
+modified: 2016-02-14T10:11
 place: Kyiv, Ukraine
 comments: true
 
@@ -14,6 +14,19 @@ comments: true
 The primary goal of the technique is to determine the root cause of a defect or problem by repeating the question "Why?" Each question forms the basis of the next question. The "5" in the name derives from an empirical observation on the number of iterations typically required to resolve the problem.
 
 The technique was formally developed by Sakichi Toyoda and was used within the Toyota Motor Corporation during the evolution of its manufacturing methodologies.
+
+### [AAR](https://en.wikipedia.org/wiki/After-action_review)
+
+An **A**fter **A**ction **R**eview is a structured review or de-brief process for analyzing what happened, why it happened, and how it can be done better.
+
+To apply this tool ask yourself:
+
+- What was supposed to happen?
+- What did happen?
+- What are some improvements?
+- What are some sustainments?
+- What can be done to improve the result?
+- Summary.
 
 ## DRY
 
