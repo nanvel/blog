@@ -17,3 +17,7 @@ created: 2015-10-05
 - [RunLab Ukraine Run 5K](https://www.facebook.com/events/1445925612381616/) (July 18, 2015)
 - [KhmelnytskyiPy #1](https://www.youtube.com/playlist?list=PLq8sY4Lwwt29WGmGk0ssgCHNgEA-0D9Ha) (July 25, 2015), DynamoDB and Cassandra
 - Coworking in Georgia (September 5-15, 2015)
+
+## 2016
+
+- [Visit New York] (February 8-19, 2016)
