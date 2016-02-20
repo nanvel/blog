@@ -1,9 +1,104 @@
 labels: Databases
-        Draft
+        Blog
 created: 2016-02-07T19:01
+modified: 2016-02-20T23:19
 place: New York, USA
 comments: true
 
 # SQL
 
-pass
+[TOC]
+
+SQL (**S**tructured **Q**uery **L**anguage) is a declarative programming language.
+Pronunciation: ```/ˈɛs kjuː ˈɛl/``` (**an** SQL query).
+
+## Database I use in examples
+
+```bash
+psql template1
+template1=# CREATE USER test WITH PASSWORD 'test';
+template1=# CREATE DATABASE test;
+template1=# GRANT ALL PRIVILEGES ON DATABASE test TO test;
+template1=# \q
+psql -d test
+```
+
+## Practice
+
+### CSV/JSON/etc. or Foreign Key?
+
+Storing lists in a text field is a bad practice:
+
+- We are limited in number of items can be placed into text field (mostly because of performance degradation)
+- Foreign Key helps us to keep data consistency on database layer
+- Additional validation, encoding/decoding logic may be required on the client side
+- Unable to use joins and ```IN``` statement (must use ```LIKE``` or regexp)
+- No chance to use the field as part of compound index
+- We can't use count (and other aggregation functions) to get number of value usages
+- Updates are much easier if you use Foreign Key
+
+About regexp:
+> Some people, when confronted with a problem, think, "I know, I'll use regular expressions." Now they have two problems.
+> Jamie Zawinski
+
+If you are concerned about performance:
+
+- Joins must work fast enough if number of possible values is small (hundreds and even thousands)
+- Use caching to speedup your app
+- Remember about YAGNI, caching or demoralisation may not worth time spent on their implementation (do it only if you have evidence that it will improve performance drastically)
+
+Example of Foreign Key constrain usage:
+```sql
+CREATE TABLE anime (
+    anime_key CHAR(255) PRIMARY KEY,
+    title CHAR(255) NOT NULL
+);
+CREATE TABLE genre (
+    genre_key CHAR(255) PRIMARY KEY,
+    title CHAR(255) NOT NULL
+);
+CREATE TABLE anime_genre (
+    anime_key CHAR(255) REFERENCES anime,
+    genre_key CHAR(255) REFERENCES genre,
+    PRIMARY KEY (anime_key, genre_key)
+);
+INSERT INTO anime (anime_key, title) VALUES ('kill-la-kill', 'Kill La Kill');
+INSERT INTO genre (genre_key, title) VALUES ('action', 'Action');
+INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
+```
+
+```anime_genre``` is an intersection table.
+
+## Vocabulary
+
+### Antipattern
+
+**Antipattern** is a technique that is intended to solve a problem but that often leads to other problems.
+
+### Intersection table
+
+Aka join table, many-to-may table or mapping table.
+
+Intersection table has foreign keys referencing two tables (implements many-to-many relationship).
+
+### Relational database
+
+A [relational database](https://en.wikipedia.org/wiki/Relational_database) is a digital database whose organization is based on the relational model of data, as proposed by E.F. Codd in 1970.
+
+Alternative technologies:
+
+- object-oriented databases
+- key/value stores
+- column-oriented databases
+- document-oriented databases
+- hierarchical databases
+- network databases
+- map/reduce frameworks
+- semantic data stores
+- graph databases
+
+## Links
+
+[SQL Antipatterns: Avoiding the Pitfalls of Database Programming](http://www.amazon.com/SQL-Antipatterns-Programming-Pragmatic-Programmers-ebook/dp/B00A376BB2/) by Bill Karwin

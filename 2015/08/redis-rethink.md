@@ -2,7 +2,7 @@ labels: Blog
         Databases
         Redis
 created: 2015-08-15T10:15
-modified: 2016-02-03T23:29
+modified: 2016-02-20T21:31
 place: Kyiv, Ukraine
 comments: true
 
@@ -817,6 +817,12 @@ See also [how twitter uses redis to store user feeds](http://highscalability.com
 See: [Tornado-Redis vs Redis-py](https://github.com/leporo/tornado-redis#tornado-redis-vs-redis-py).
 
 "I recommend using both tornado-redis and redis-py clients for your Tornado Web Application. Use tornado-redis to subscribe to Pub/Sub notifications and for blocking commands such as BLPOP, BRPOP, BRPOPLPUSH. You may safely use redis-py for most of other cases."
+
+#### UPD 2016-02-20: cases when asynchronous client is better solution
+
+1. When we use operations more complicated than get/set (run a lua script, hmget/hmset, etc.)
+2. When we use proxy (like twemproxy) or network latency is high as it increases response time
+3. When we need to execute many requests separately (we can yield list of futures instead of run chain of requests)
 
 ### 3. If redis works slow
 
