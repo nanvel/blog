@@ -67,6 +67,7 @@ INSERT INTO genre (genre_key, title) VALUES ('action', 'Action');
 INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
+SELECT genre.title from anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
 ```
 
 ```anime_genre``` is an intersection table.
