@@ -20,4 +20,4 @@ created: 2015-10-05
 
 ## 2016
 
-- [Visit New York] (February 8-19, 2016)
+- Visit New York (February 8-19, 2016)
