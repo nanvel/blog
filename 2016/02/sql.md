@@ -67,10 +67,59 @@ INSERT INTO genre (genre_key, title) VALUES ('action', 'Action');
 INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
-SELECT genre.title from anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
+SELECT genre.title FROM anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
 ```
 
 ```anime_genre``` is an intersection table.
+
+Invalid data example:
+```bash
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('unknown-anime', 'comedy');
+ERROR:  insert or update on table "anime_genre" violates foreign key constraint "anime_genre_anime_key_fkey"
+DETAIL:  Key (anime_key)=(unknown-anime) is not present in table "anime".
+```
+
+### GROUP BY and aggregate
+
+```sql
+SELECT anime.title, COUNT(anime_genre.*) as genre_count FROM anime LEFT JOIN anime_genre USING (anime_key) GROUP BY anime.anime_key;
+```
+
+```
+anime        | genre_count
+Kill La Kill | 2
+```
+
+### DISTINCT
+
+Use it carefully, may cause performance problems on large data sets.
+
+### Trees (hierarchical data)
+
+The most obvious solution is to use parent_key field (adjacency list). The solution has its benefits:
+
+- simple
+- easy to modify (copy/move tree leaves)
+
+Drawbacks:
+
+- leaf remove is complex (needs to find and remove all leaves in the subtree, ```ON DELETE CASCADE``` solves the problem)
+
+If You need to know how many children has the leave, how many descendants has the tree, etc., in most cases better just to use counters instead of query all the tree each time.
+
+But the simple parent_key solution fails if you need to select all descendants (for instance: get full replies tree).
+
+Exception is two level tree:
+```sql
+SELECT FROM nodes as n1 LEFT OUTER JOIN nodes as n2 ON n2.parent_id = n1.node_id;
+```
+
+There are approaches may help:
+
+- ```PostgreSQL>=8.4``` supports recursive queries
+- Path enumeration technique (drawbacks: no referral integrity)
+- Nested sets (drawbacks: hard to insert/delete, complex, no referral integrity)
+- Closure table (benefits: allow node to belong to multiple trees, drawback: requires additional table)
 
 ## Vocabulary
 
