@@ -217,6 +217,83 @@ GUID (uuid4 usually) is solution for distributed (horizontally) databases.
 
 Compound key is a good solution for intersection table (there are a lot of cases where it may be used).
 
+### NULL and the third state
+
+Sometimes I hear that the third state is bad, only True and False must be allowed. I am not agree with it, unknown is natural third state. Sometimes we not sure about something, and there is no right answer except "I don't know".
+
+NULL in SQL is the best implementation of unknown I ever seen:
+```sql
+DO language plpgsql $$
+BEGIN
+    RAISE NOTICE 'NULL OR TRUE = %', NULL OR TRUE;
+    RAISE NOTICE 'NULL AND TRUE = %', NULL AND TRUE;
+    RAISE NOTICE 'NULL OR NULL = %', NULL OR NULL;
+    RAISE NOTICE 'NULL AND NULL = %', NULL AND NULL;
+    RAISE NOTICE 'NULL + 1 = %', NULL + 1;
+END
+$$;
+```
+
+```
+NOTICE:  NULL OR TRUE = t
+NOTICE:  NULL AND TRUE = <NULL>
+NOTICE:  NULL OR NULL = <NULL>
+NOTICE:  NULL AND NULL = <NULL>
+NOTICE:  NULL + 1 = <NULL>
+```
+
+In SQL NONE plays important role: allows to show that there are no value was assigned or no reference exists.
+
+Check field value is NULL:
+```sql
+SELECT title FROM artwork WHERE autor_id IS NULL;
+```
+
+### FOREIGN KEY
+
+```FOREIGN KEY``` if a "key" to consistency.
+
+How to declare:
+```sql
+CREATE TABLE artwork (
+    artwork_id SERIAL PRIMARY KEY,
+    author_id INTEGER REFERENCES author
+)
+
+/* or */
+
+CREATE TABLE artwork (
+    artwork_id SERIAL PRIMARY KEY,
+    author_id INTEGER,
+    FOREIGN KEY (author_id) REFERENCES author
+)
+
+/* or */
+
+CREATE TABLE artwork (
+    artwork_id SERIAL PRIMARY KEY,
+    author_id INTEGER
+)
+
+ALTER TABLE artwork ADD CONSTRAINT artwork_author_id_fk FOREIGN KEY (author_id) REFERENCES author (author_id);
+```
+
+#### CASCADE UPDATE/DELETE
+
+Allows to update or delete the parent row and lets the database takes care of any child rows that reference it.
+
+```sql
+CREATE TABLE artwork (
+    artwork_id SERIAL PRIMARY KEY,
+    author_id INTEGER,
+    FOREIGN KEY (author_id) REFERENCES author ON UPDATE CASCADE ON DELETE SET DEFAULT
+)
+```
+
+### DEFAULT
+
+Be careful when alter existing table with great number of rows, it locks database.
+
 ## Vocabulary
 
 ### Antipattern
