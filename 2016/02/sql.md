@@ -114,12 +114,100 @@ Exception is two level tree:
 SELECT FROM nodes as n1 LEFT OUTER JOIN nodes as n2 ON n2.parent_id = n1.node_id;
 ```
 
-There are approaches may help:
+There are alternative solutions:
 
 - ```PostgreSQL>=8.4``` supports recursive queries
 - Path enumeration technique (drawbacks: no referral integrity)
 - Nested sets (drawbacks: hard to insert/delete, complex, no referral integrity)
 - Closure table (benefits: allow node to belong to multiple trees, drawback: requires additional table)
+
+### PRIMARY KEY
+
+PRIMARY KEY needs to:
+
+- Prevent a table from containing duplicate rows (as it creates ```UNIQUE INDEX```)
+- Support foreign key reference
+
+How to declare:
+```sql
+CREATE TABLE artwork (
+    artwork_id INTEGER PRIMARY KEY
+);
+
+/* or */
+
+CREATE TABLE artwork (
+    artwork_id INTEGER,
+    PRIMARY KEY (artwork_id)
+);
+
+/* or */
+
+CREATE TABLE artwork (
+    artwork_id INTEGER
+);
+ALTER TABLE artwork ADD PRIMARY KEY (artwork_id);
+```
+
+Result is the same:
+```bash
+test=# \d+ artwork
+                         Table "public.artwork"
+   Column   |  Type   | Modifiers | Storage | Stats target | Description
+------------+---------+-----------+---------+--------------+-------------
+ artwork_id | integer | not null  | plain   |              |
+Indexes:
+    "artwork_pkey" PRIMARY KEY, btree (artwork_id)
+```
+
+#### PRIMARY KEY name
+
+A good practice is to use next pattern:
+```
+{table name}_id
+```
+
+Fields references the table must have the same name, it allows to use ```JOIN USING``` syntax:
+```sql
+SELECT artwork.title, author.name FROM artwork JOIN author USING (author_id);
+
+/* instead */
+
+SELECT artwork.title, author.name FROM artwork JOIN author ON author.author_id = artwork.author_id;
+```
+
+#### PRIMARY KEY value
+
+There are primary key value types:
+
+- autoincrement field
+- natural id
+- guid (**G**lobally **U**nique **ID**entifier)
+- compound (aka composite) primary key
+
+Autoincrement field example (PG):
+```sql
+CREATE TABLE items (
+    item_id SERIAL PRIMARY KEY,
+    title VARCHAR(255)
+);
+INSERT INTO items (title) VALUES ('item1');
+INSERT INTO items (title) VALUES ('item2');
+SELECT * FROM items;
+```
+
+```
+ item_id | title
+---------+-------
+       1 | item1
+       2 | item2
+```
+
+Natural id, if it is short and unique, usually the best solution for primary key. For example: phone numbers, usernames, etc.
+
+GUID (uuid4 usually) is solution for distributed (horizontally) databases.
+
+Compound key is a good solution for intersection table (there are a lot of cases where it may be used).
 
 ## Vocabulary
 
