@@ -123,6 +123,8 @@ There are alternative solutions:
 
 ### PRIMARY KEY
 
+PRIMARY KEY is a constraint.
+
 PRIMARY KEY needs to:
 
 - Prevent a table from containing duplicate rows (as it creates ```UNIQUE INDEX```)
@@ -176,6 +178,8 @@ SELECT artwork.title, author.name FROM artwork JOIN author USING (author_id);
 SELECT artwork.title, author.name FROM artwork JOIN author ON author.author_id = artwork.author_id;
 ```
 
+```artwork.artwork_id``` vs ```artwork.id```: ```artwork_id``` is more clear.
+
 #### PRIMARY KEY value
 
 There are primary key value types:
@@ -184,6 +188,10 @@ There are primary key value types:
 - natural id
 - guid (**G**lobally **U**nique **ID**entifier)
 - compound (aka composite) primary key
+
+Autoincrement and guid fields known as pseudokeys or surrogate keys.
+
+Most databases provide a mechanism to generate unique integer integer values serially, outside the scope of transaction isolation.
 
 Autoincrement field example (PG):
 ```sql
