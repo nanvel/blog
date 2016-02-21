@@ -25,60 +25,6 @@ psql -d test
 
 ## Practice
 
-### CSV/JSON/etc. or Foreign Key?
-
-Storing lists in a text field is a bad practice:
-
-- We are limited in number of items can be placed into text field (mostly because of performance degradation)
-- Foreign Key helps us to keep data consistency on database layer
-- Additional validation, encoding/decoding logic may be required on the client side
-- Unable to use joins and ```IN``` statement (must use ```LIKE``` or regexp)
-- No chance to use the field as part of compound index
-- We can't use count (and other aggregation functions) to get number of value usages
-- Updates are much easier if you use Foreign Key
-
-About regexp:
-> Some people, when confronted with a problem, think, "I know, I'll use regular expressions." Now they have two problems.
-> Jamie Zawinski
-
-If you are concerned about performance:
-
-- Joins must work fast enough if number of possible values is small (hundreds and even thousands)
-- Use caching to speedup your app
-- Remember about YAGNI, caching or demoralisation may not worth time spent on their implementation (do it only if you have evidence that it will improve performance drastically)
-
-Example of Foreign Key constrain usage:
-```sql
-CREATE TABLE anime (
-    anime_key CHAR(255) PRIMARY KEY,
-    title CHAR(255) NOT NULL
-);
-CREATE TABLE genre (
-    genre_key CHAR(255) PRIMARY KEY,
-    title CHAR(255) NOT NULL
-);
-CREATE TABLE anime_genre (
-    anime_key CHAR(255) REFERENCES anime,
-    genre_key CHAR(255) REFERENCES genre,
-    PRIMARY KEY (anime_key, genre_key)
-);
-INSERT INTO anime (anime_key, title) VALUES ('kill-la-kill', 'Kill La Kill');
-INSERT INTO genre (genre_key, title) VALUES ('action', 'Action');
-INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
-INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
-INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
-SELECT genre.title FROM anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
-```
-
-```anime_genre``` is an intersection table.
-
-Invalid data example:
-```bash
-INSERT INTO anime_genre (anime_key, genre_key) VALUES ('unknown-anime', 'comedy');
-ERROR:  insert or update on table "anime_genre" violates foreign key constraint "anime_genre_anime_key_fkey"
-DETAIL:  Key (anime_key)=(unknown-anime) is not present in table "anime".
-```
-
 ### GROUP BY and aggregate
 
 ```sql
@@ -249,6 +195,10 @@ Check field value is NULL:
 SELECT title FROM artwork WHERE autor_id IS NULL;
 ```
 
+#### COALESCE
+
+The function returns its first not-null argument.
+
 ### FOREIGN KEY
 
 ```FOREIGN KEY``` if a "key" to consistency.
@@ -290,9 +240,97 @@ CREATE TABLE artwork (
 )
 ```
 
+#### CSV/JSON/etc. or Foreign Key?
+
+Storing lists in a text field is a bad practice:
+
+- We are limited in number of items can be placed into text field (mostly because of performance degradation)
+- Foreign Key helps us to keep data consistency on database layer
+- Additional validation, encoding/decoding logic may be required on the client side
+- Unable to use joins and ```IN``` statement (must use ```LIKE``` or regexp)
+- No chance to use the field as part of compound index
+- We can't use count (and other aggregation functions) to get number of value usages
+- Updates are much easier if you use Foreign Key
+
+About regexp:
+> Some people, when confronted with a problem, think, "I know, I'll use regular expressions." Now they have two problems.
+> Jamie Zawinski
+
+If you are concerned about performance:
+
+- Joins must work fast enough if number of possible values is small (hundreds and even thousands)
+- Use caching to speedup your app
+- Remember about YAGNI, caching or demoralisation may not worth time spent on their implementation (do it only if you have evidence that it will improve performance drastically)
+
+Example of Foreign Key constrain usage:
+```sql
+CREATE TABLE anime (
+    anime_key CHAR(255) PRIMARY KEY,
+    title CHAR(255) NOT NULL
+);
+CREATE TABLE genre (
+    genre_key CHAR(255) PRIMARY KEY,
+    title CHAR(255) NOT NULL
+);
+CREATE TABLE anime_genre (
+    anime_key CHAR(255) REFERENCES anime,
+    genre_key CHAR(255) REFERENCES genre,
+    PRIMARY KEY (anime_key, genre_key)
+);
+INSERT INTO anime (anime_key, title) VALUES ('kill-la-kill', 'Kill La Kill');
+INSERT INTO genre (genre_key, title) VALUES ('action', 'Action');
+INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
+SELECT genre.title FROM anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
+```
+
+```anime_genre``` is an intersection table.
+
+Invalid data example:
+```bash
+INSERT INTO anime_genre (anime_key, genre_key) VALUES ('unknown-anime', 'comedy');
+ERROR:  insert or update on table "anime_genre" violates foreign key constraint "anime_genre_anime_key_fkey"
+DETAIL:  Key (anime_key)=(unknown-anime) is not present in table "anime".
+```
+
 ### DEFAULT
 
 Be careful when alter existing table with great number of rows, it locks database.
+
+### UNION
+
+Query results can be combined with ```UNION``` only if their columns are the same in number and type (provide NULL placeholders for columns that are unique to each table).
+
+### Wildcard in SELECT
+
+There are few thoughts why better to specify columns explicitly:
+
+- when we ask for only fields used in the index: request must be executed faster (no need to query the main table)
+- blob and text fields stored separately from main table (it stores only references to them), if don't ask for these fields, we decrease response time and network usage
+
+### FLOAT VS NUMERIC (DECIMAL)
+
+The advantage of NUMERIC (DECIMAL) are that they store rational numbers without rounding, as the FLOAT data types do.
+
+Example:
+```sql
+CREATE TABLE numbers (
+    number_id SERIAL PRIMARY KEY,
+    value_float FLOAT,
+    value_decimal NUMERIC(10,2)
+);
+INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
+INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
+INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
+SELECT SUM(value_float) * 1000 as sum_float, SUM(value_decimal) * 1000 as sum_decimal from numbers;
+```
+
+```
+ sum_float | sum_decimal
+-----------+-------------
+      1000 |      990.00
+```
 
 ## Vocabulary
 
@@ -321,6 +359,10 @@ Alternative technologies:
 - map/reduce frameworks
 - semantic data stores
 - graph databases
+
+### EAV design
+
+Stands for **E**ntity-**A**ttribute-**V**alue. Aka open schema, schemaless or name-value pairs.
 
 ## Links
 
