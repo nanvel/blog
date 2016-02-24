@@ -240,7 +240,7 @@ CREATE TABLE artwork (
 )
 ```
 
-#### CSV/JSON/etc. or Foreign Key?
+#### CSV/JSON/etc. or FOREIGN KEY?
 
 Storing lists in a text field is a bad practice:
 

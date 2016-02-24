@@ -6,20 +6,13 @@ created: 2015-10-24T22:20
 Compulsory - обов'язково
 Starving - дуже голодний
 Obligatory - обов'язковий
-Burden - тягар, ноша
-Intertwine - переплітатися
 A nest egg - a sum of money saved for the future
 To lend money - позичати гроші (давати)
-To borrow - позичати (брати)
 In terms of this - у цьому плані
 In this respect - у цьому відношенні
-Dough - тісто
-Dull - не цікавий (boring)
-Mud slides - грязеві зсуви
 Nonetheless - проте ...
 A fine, penalty - штраф
 Offensive - образливо
-Thick - товстий
 Generous - щедрий
 To distract - відволікати
 To envy - заздрити
@@ -71,3 +64,4 @@ Rush hour - час пік
 Great famine - великий голод
 Mouth-watering - апетитні
 Pastry - кондитерські вироби
+Freckles - веснянки
