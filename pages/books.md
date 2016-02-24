@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-02-14T22:12
+modified: 2016-02-22T21:15
 
 # Books
 
@@ -63,12 +63,12 @@ modified: 2016-02-14T22:12
 - IOS 8 APP Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2 by Neil Smyth
 - Australia: A Very Short Introduction by Kenneth Morgan
 - [+] SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Bill Karwin
+- The Great Gilly Hopkins by Katherine Paterson
 
 ## In progress
 
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
-- The Great Gilly Hopkins by Katherine Paterson
 - Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
 - Elasticsearch: The Definitive Guide by Clinton Gormley, Zachary Tong
 
