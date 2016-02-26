@@ -3,16 +3,6 @@ created: 2015-10-24T22:20
 
 # Words to learn
 
-Compulsory - обов'язково
-Starving - дуже голодний
-Obligatory - обов'язковий
-A nest egg - a sum of money saved for the future
-To lend money - позичати гроші (давати)
-In terms of this - у цьому плані
-In this respect - у цьому відношенні
-Nonetheless - проте ...
-A fine, penalty - штраф
-Offensive - образливо
 Generous - щедрий
 To distract - відволікати
 To envy - заздрити
@@ -20,7 +10,7 @@ Envious - заздрісний
 Jealous - заздрісний
 Mean - жалюгідний, підлий
 Jewelry - ювелірні вироби
-Utilities - комунпльні послуги
+Utilities - комунальні послуги
 Recycling and disposal - переробка та утилізація
 It will do for now - наразі досить
 To fill - заповнювати
