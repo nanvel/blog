@@ -1,7 +1,7 @@
 labels: Databases
         Blog
 created: 2016-02-07T19:01
-modified: 2016-02-28T12:38
+modified: 2016-02-28T17:04
 place: New York, USA
 comments: true
 
@@ -165,6 +165,10 @@ Compound key is a good solution for intersection table (there are a lot of cases
 
 ### NULL and the third state
 
+> Using null is not the antipattern; the antipattern is using null like an ordinary value or using an ordinary value like null.
+>
+> SQL Antipatterns: Avoiding the Pitfalls of Database Programming  by Bill Karwin
+
 Sometimes I hear that the third state is bad, only True and False must be allowed. I am not agree with it, unknown is natural third state. Sometimes we not sure about something, and there is no right answer except "I don't know".
 
 NULL in SQL is the best implementation of unknown I ever seen:
@@ -176,6 +180,10 @@ BEGIN
     RAISE NOTICE 'NULL OR NULL = %', NULL OR NULL;
     RAISE NOTICE 'NULL AND NULL = %', NULL AND NULL;
     RAISE NOTICE 'NULL + 1 = %', NULL + 1;
+    RAISE NOTICE 'NULL || ''abc'' = %', NULL || 'abc';
+    RAISE NOTICE 'NOT NULL = %', NOT NULL;
+    RAISE NOTICE 'NULL == NULL = %', NULL = NULL;
+    RAISE NOTICE 'NULL != NULL = %', NULL != NULL;
 END
 $$;
 ```
@@ -186,13 +194,29 @@ NOTICE:  NULL AND TRUE = <NULL>
 NOTICE:  NULL OR NULL = <NULL>
 NOTICE:  NULL AND NULL = <NULL>
 NOTICE:  NULL + 1 = <NULL>
+NOTICE:  NULL || 'abc' = <NULL>
+NOTICE:  NOT NULL = <NULL>
+NOTICE:  NULL == NULL = <NULL>
+NOTICE:  NULL != NULL = <NULL>
 ```
 
-In SQL NONE plays important role: allows to show that there are no value was assigned or no reference exists.
+In SQL NONE plays important role:
 
-Check field value is NULL:
+- Shows that there are no value was assigned (not available yet)
+- No reference exists
+- An outer join uses ```NULL``` values as placeholders for the columns of an unmatched table in an outer join
+
+Searching for ```NULL``` values:
 ```sql
 SELECT title FROM artwork WHERE autor_id IS NULL;
+SELECT title FROM artwork WHERE autor_id IS NOT NULL;
+```
+
+Using ```IS DISTINCT FROM```:
+```sql
+SELECT title FROM artwork WHERE author_id IS DISTINCT FROM 123;
+/* is equal to */
+SELECT title FROM artwork WHERE author_id IS NULL OR author_id != 123;
 ```
 
 #### COALESCE
@@ -300,9 +324,11 @@ Be careful when alter existing table with great number of rows, it locks databas
 
 ### UNION
 
-Query results can be combined with ```UNION``` only if their columns are the same in number and type (provide NULL placeholders for columns that are unique to each table).
+Query results can be combined with ```UNION``` only if their columns are the same in number and type (provide ```NULL``` placeholders for columns that are unique to each table).
 
 ### Wildcard in SELECT
+
+The ```*``` symbol means every column (the list of columns is implicit).
 
 There are few thoughts why better to specify columns explicitly:
 
@@ -311,7 +337,7 @@ There are few thoughts why better to specify columns explicitly:
 
 ### FLOAT VS NUMERIC (DECIMAL)
 
-The advantage of NUMERIC (DECIMAL) are that they store rational numbers without rounding, as the FLOAT data types do.
+The advantage of ```NUMERIC``` (```DECIMAL```) are that they store rational numbers without rounding, as the ```FLOAT``` data types do.
 
 Example:
 ```sql
@@ -336,7 +362,7 @@ SELECT SUM(value_float) * 1000 as sum_float, SUM(value_decimal) * 1000 as sum_de
 
 One advantage of IEEE-754 is that by using the exponent, it can represent fractional values that are both very small and very large.
 
-DECIMAL is appropriate type for amount of money because it can handle money values just as easy as FLOAT and more accurately.
+```DECIMAL``` is appropriate type for amount of money because it can handle money values just as easy as ```FLOAT``` and more accurately.
 
 ### CHECK constraint
 
@@ -356,7 +382,7 @@ ERROR:  new row for relation "daysofweek" violates check constraint "daysofweek_
 DETAIL:  Failing row contains (Another             ).
 ```
 
-Use it only if You are 100% sure that the list of allowed options will be constant, otherwise - use FOREIGN KEY:
+Use it only if You are 100% sure that the list of allowed options will be constant, otherwise - use ```FOREIGN KEY```:
 ```sql
 CREATE TABLE GenderChoices (
     gender VARCHAR(20) PRIMARY KEY
@@ -378,7 +404,7 @@ ERROR:  insert or update on table "users" violates foreign key constraint "users
 DETAIL:  Key (gender)=(other) is not present in table "genderchoices".
 ```
 
-There are other ways to solve the problem: ENUM field and restriction on the application side.
+There are other ways to solve the problem: ```ENUM``` field and restriction on the application side.
 
 ### BLOB field
 
@@ -409,7 +435,7 @@ Mistakes in defining indexes:
 MENTOR - technique to maintain indexes:
 
 - **M**easure (analyze logs, search for slowest/most time consuming/most popular queries)
-- **E**xplain (analyze query execution plan using EXPLAIN)
+- **E**xplain (analyze query execution plan using ```EXPLAIN```)
 - **N**ominate
 - **T**est
 - **O**ptimize
@@ -422,6 +448,22 @@ MENTOR - technique to maintain indexes:
 !!! alert "Create index concurrently"
 
     Creating new indexes blocks the table. Use [CONCURRENTLY](http://www.postgresql.org/docs/9.5/static/sql-createindex.html) to do it in background.
+
+### ORDER BY RANDOM()
+
+```sql
+SELECT artwork_id FROM artwork ORDER BY RANDOM() LIMIT 1;
+```
+It is expensive and unreliable.
+
+An alternative:
+```sql
+SELECT artwork_id FROM artwork LIMIT 1 OFFSET FLOOR(RANDOM() * (SELECT COUNT(*) FROM artwork));
+```
+
+### Full-text search
+
+Use specialized search engine, for instance: [Elasticsearch](https://www.elastic.co/products/elasticsearch).
 
 ## Vocabulary
 
@@ -454,6 +496,27 @@ Alternative technologies:
 ### EAV design
 
 Stands for **E**ntity-**A**ttribute-**V**alue. Aka open schema, schemaless or name-value pairs.
+
+### One-way cryptographic hash function
+
+The function transforms its its input string into a new string, called the hash, that is unrecognizable.
+Another characteristic of a hash is that it's not reversible. You can't recover the input string from its hash because the hashing algorithm is designed to "lose" some information about the input.
+
+Example using [bcrypt](http://bcrypt.sourceforge.net/) (adaptive hashing function):
+```python
+import bcrypt
+
+
+hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt(12))
+```
+
+### Normalization
+
+Objectives of normalization:
+
+- To represent facts about the real world in a way that we can understand
+- To reduce storing facts redundantly and to prevent anomalous or inconsistent data
+- To support integrity constrains
 
 ## Links
 
