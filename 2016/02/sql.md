@@ -1,7 +1,7 @@
 labels: Databases
         Blog
 created: 2016-02-07T19:01
-modified: 2016-02-21T12:39
+modified: 2016-02-28T12:38
 place: New York, USA
 comments: true
 
@@ -331,6 +331,97 @@ SELECT SUM(value_float) * 1000 as sum_float, SUM(value_decimal) * 1000 as sum_de
 -----------+-------------
       1000 |      990.00
 ```
+
+[IEEE-754 (IEEE Standard for Floating-Point Arithmetic)](https://en.wikipedia.org/wiki/IEEE_floating_point)
+
+One advantage of IEEE-754 is that by using the exponent, it can represent fractional values that are both very small and very large.
+
+DECIMAL is appropriate type for amount of money because it can handle money values just as easy as FLOAT and more accurately.
+
+### CHECK constraint
+
+Example:
+```sql
+CREATE TABLE DaysOfWeek (
+    name CHAR(20) PRIMARY KEY,
+    CHECK (name IN ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'))
+);
+INSERT INTO DaysOfWeek(name) VALUES ('Sunday');
+INSERT INTO DaysOfWeek(name) VALUES ('Another');
+```
+
+```
+INSERT 0 1
+ERROR:  new row for relation "daysofweek" violates check constraint "daysofweek_name_check"
+DETAIL:  Failing row contains (Another             ).
+```
+
+Use it only if You are 100% sure that the list of allowed options will be constant, otherwise - use FOREIGN KEY:
+```sql
+CREATE TABLE GenderChoices (
+    gender VARCHAR(20) PRIMARY KEY
+);
+INSERT INTO GenderChoices(gender) VALUES ('male');
+INSERT INTO GenderChoices(gender) VALUES ('female');
+
+CREATE TABLE users (
+    name VARCHAR(100) PRIMARY KEY,
+    gender VARCHAR(20) REFERENCES GenderChoices ON UPDATE CASCADE
+);
+INSERT INTO users(name, gender) VALUES ('user1', 'male');
+INSERT INTO users(name, gender) VALUES ('user2', 'other');
+```
+
+```
+INSERT 0 1
+ERROR:  insert or update on table "users" violates foreign key constraint "users_gender_fkey"
+DETAIL:  Key (gender)=(other) is not present in table "genderchoices".
+```
+
+There are other ways to solve the problem: ENUM field and restriction on the application side.
+
+### BLOB field
+
+Storing images inside the database has some advantages:
+
+- The image data is stored in the database. There is no extra step to load it. There is no risk that the file's pathname is incorrect
+- Deleting a row deletes the image automatically
+- Changes to an image are not visible to other clients until you commit the change
+- Rolling back a transaction restores previous state of the image
+- Updating a row creates a lock, so no other client can update the same image concurrently
+- Database backups include all the images
+- SQL privileges control access to the image as well as the row
+
+Disadvantages are:
+
+- Performance
+- Database network usage
+- Backups size
+
+### INDEX
+
+Mistakes in defining indexes:
+
+- Defining no indexes or not enough indexes
+- Defining too many indexes or indexes that don't help
+- Running queries that no index can help
+
+MENTOR - technique to maintain indexes:
+
+- **M**easure (analyze logs, search for slowest/most time consuming/most popular queries)
+- **E**xplain (analyze query execution plan using EXPLAIN)
+- **N**ominate
+- **T**est
+- **O**ptimize
+- **R**ebuild
+
+!!! note "A fat index may be fast"
+
+    If your query references only the columns included in the index data structure, the database generates your query results by reading only the index.
+
+!!! alert "Create index concurrently"
+
+    Creating new indexes blocks the table. Use [CONCURRENTLY](http://www.postgresql.org/docs/9.5/static/sql-createindex.html) to do it in background.
 
 ## Vocabulary
 

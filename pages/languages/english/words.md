@@ -55,3 +55,4 @@ Great famine - великий голод
 Mouth-watering - апетитні
 Pastry - кондитерські вироби
 Freckles - веснянки
+Feasible - здійсненний
