@@ -65,6 +65,7 @@ modified: 2016-03-01T22:16
 - [+] SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Bill Karwin
 - The Great Gilly Hopkins by Katherine Paterson
 - [+] Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
+- Wrong Attitude: A brief guide to living and visiting Thailand by Steve Price
 
 ## In progress
 
