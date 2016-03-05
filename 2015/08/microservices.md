@@ -3,10 +3,13 @@ labels: Blog
         SoftwareDevelopment
         Distributed
 created: 2015-08-09T14:28
+modified: 2016-03-05T16:34
 place: Kyiv, Ukraine
 comments: true
 
 # Notes on microservices
+
+[TOC]
 
 Notes on microservices pattern made after reading [Building Microservices](http://www.amazon.com/Building-Microservices-Sam-Newman-ebook/dp/B00T3N7XB4/) by Sam Newman.
 
@@ -76,3 +79,7 @@ Nice idea is to temporary disconnect service if it start producing enormous numb
 - How to split monolithic application into microservices
 - Scaling databases (very clearly, in simple words)
 - ...
+
+## Related
+
+See [AWS Lambda](https://aws.amazon.com/documentation/lambda/).

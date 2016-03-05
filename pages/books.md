@@ -73,6 +73,7 @@ modified: 2016-03-01T22:16
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Elasticsearch: The Definitive Guide by Clinton Gormley, Zachary Tong
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
 
 ## Archive
 
