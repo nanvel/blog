@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-02-22T21:15
+modified: 2016-03-01T22:16
 
 # Books
 
@@ -64,13 +64,15 @@ modified: 2016-02-22T21:15
 - Australia: A Very Short Introduction by Kenneth Morgan
 - [+] SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Bill Karwin
 - The Great Gilly Hopkins by Katherine Paterson
+- [+] Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
+- Wrong Attitude: A brief guide to living and visiting Thailand by Steve Price
 
 ## In progress
 
 - A Practical Guide to Designing for the Web by Mark Boulton
 - Learning Python Design Patterns by Gennadiy Zlobin
-- Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
 - Elasticsearch: The Definitive Guide by Clinton Gormley, Zachary Tong
+- Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 
 ## Archive
 
