@@ -5,12 +5,9 @@ created: 2015-10-24T22:20
 
 Generous - щедрий
 To distract - відволікати
-To envy - заздрити
-Envious - заздрісний
 Jealous - заздрісний
 Mean - жалюгідний, підлий
 Jewelry - ювелірні вироби
-Utilities - комунальні послуги
 Recycling and disposal - переробка та утилізація
 It will do for now - наразі досить
 To fill - заповнювати
@@ -22,7 +19,6 @@ Blue collars - сині комірці
 Scare away - відлякувати
 Crucial - вирішальний
 Abundance - достаток
-Provides for - забезпечує фінансово
 Spare time - вільний час
 Leisure - дозвілля
 To asses - оцінювати
@@ -56,3 +52,11 @@ Mouth-watering - апетитні
 Pastry - кондитерські вироби
 Freckles - веснянки
 Feasible - здійсненний
+Awareness - обізнаність, усвідомлення
+Badass - задирака
+Knobs - ручки
+Twiddle - вертіти
+Scam - шахрайство
+ad hoc - спеціальний
+Gulls - чайки
+Realm - галузь, сфера
