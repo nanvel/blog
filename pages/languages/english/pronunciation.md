@@ -43,6 +43,11 @@ Occasionally - /əˈkeɪ·ʒə·nəl·i/
 Capacity - /kəˈpæsəti/
 Group - /ɡruːp/
 Failure - /ˈfeɪljər/
+Noticeable - /ˈnoʊ·t̬ɪ·sə·bəl/
+Audience - /ˈɔːdiəns/
+Ancient - /ˈeɪn·ʃənt/
+Boght - /bɔːt/
+Yacht - /jɒt/
 
 Links:
 

@@ -49,3 +49,14 @@ Gulls - чайки
 Realm - галузь, сфера
 Crayon - кольоровий олівець
 Opaque - непрозорий
+Amusing - кумедний
+Persuasive - переконливий
+Witty - дотепний, розумний
+Tiles - плийтка
+Sufficient - достатній
+Salmon - лосось
+Outfit - спорядження
+Grease - мастило
+Threats - загрози
+Bribe - хабар
+Mortgage - іпотека
