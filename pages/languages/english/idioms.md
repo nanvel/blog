@@ -1,5 +1,6 @@
 labels: English
 created: 2015-10-24T23:13
+modified: 2016-03-15T21:15
 
 # Idioms
 
@@ -53,3 +54,19 @@ To lose temper - втратити самовладання
 It will do for now - наразі досить
 Hadn't a clue - поняття не мав
 Highway robbery - грабіж на рівному місці
+A pretty penny - дорого
+I lived beyond my means - I spent far more money than I was earning
+I paid an arm and leg for it - The price I paid was way too high
+I got it at face value - I paid exactly the amount of money printed on the item
+I have a nest agg - I have some money saved in case I need it in the future
+I bet my bottom dollar on it - I really believed it would be ok so I risked all my money
+I both it for a song - I was much cheaper than it should have been
+We went Dutch - When I went out with her, both of us paid our own part of the bill
+I offered a penny for his thoughts - I asked him what was on his mind
+I cooked the books - When the money didn't add up properly, I dishonestly changed the figures
+I was strapped for cache - I was almost penniless
+I bought him off - I gave money to stop the threats
+I broke even - I didn't make any profit (but I didn't lose either)
+I cut my losses - I had already lost some money and decided not to waste any more
+I'll probably have to grease her palm - I think a bribe may be necessary
+I decided to foot the bill - I paid for everything

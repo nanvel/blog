@@ -1,7 +1,10 @@
 labels: English
 created: 2015-10-24T23:18
+modified: 2016-03-15T21:15
 
 # Grammar
+
+[TOC]
 
 ## A little vs little
 
@@ -164,3 +167,10 @@ Worth trying (not worth to try).
 
 Few - not enough.
 A few - a little but enough.
+
+## If + would
+
+If [past], would ...
+
+If I were you, I would ...
+
