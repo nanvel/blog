@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-03-01T22:16
+modified: 2016-03-19T21:59
 
 # Books
 
@@ -74,6 +74,7 @@ modified: 2016-03-01T22:16
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
+- AWS Lambda: A Guide to Serverless Microservices by Matthew Fuller
 
 ## Archive
 
