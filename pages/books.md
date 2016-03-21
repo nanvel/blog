@@ -67,6 +67,7 @@ modified: 2016-03-19T21:59
 - [+] Meaningful: The Story of Ideas That Fly by Bernadette Jiwa
 - Wrong Attitude: A brief guide to living and visiting Thailand by Steve Price
 - [+] Elasticsearch: The Definitive Guide by Clinton Gormley, Zachary Tong
+- AWS Lambda: A Guide to Serverless Microservices by Matthew Fuller
 
 ## In progress
 
@@ -74,7 +75,7 @@ modified: 2016-03-19T21:59
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
-- AWS Lambda: A Guide to Serverless Microservices by Matthew Fuller
+- The Backpacker by John Harris
 
 ## Archive
 
