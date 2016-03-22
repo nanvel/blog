@@ -36,7 +36,7 @@ git add main.c module.c
 git commit -a -m 'init'
 ```
 
-Add remote repository:
+Add a remote repository:
 ```bash
 git remote add github git@github.com:username/project.git
 # or edit .git/config manually
@@ -94,7 +94,7 @@ git blame path/to/file -L <line number>
 
 ## Branches
 
-Create new branch:
+Create a new branch:
 ```bash
 git branch my_branch_name
 git checkout my_branch_name
@@ -102,7 +102,7 @@ git checkout my_branch_name
 git checkout -b my_branch_name
 ```
 
-Pull latest branch code from remote repository:
+Pull the latest branch code from remote repository:
 ```bash
 git pull origin my_branch
 ```
@@ -113,12 +113,12 @@ git fetch
 git reset --hard origin/mybranch
 ```
 
-Delete local branch:
+Delete a local branch:
 ```bash
 git branch -d the_local_branch
 ```
 
-Delete remote branch:
+Delete a remote branch:
 ```bash
 git push origin --delete branch_to_remove
 ```
@@ -151,7 +151,7 @@ git mv my_file.c new_name.c
 git rm my_file.c
 ```
 
-Repair deleted files:
+Restore deleted files:
 ```bash
 git checkout deleted_file.c
 ```
@@ -164,7 +164,7 @@ git add some_new_file.c
 git commit -a --amend
 ```
 
-Rollback last commit:
+Rollback the last commit:
 ```bash
 git reset --hard HEAD^
 ```
