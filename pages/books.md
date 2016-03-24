@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-03-19T21:59
+modified: 2016-03-24T21:44
 
 # Books
 
@@ -75,8 +75,8 @@ modified: 2016-03-19T21:59
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
-- The Backpacker by John Harris
 
 ## Archive
 
 - The Happiness Project by Gretchen Rubin (55%)
+- The Backpacker by John Harris (13%)
