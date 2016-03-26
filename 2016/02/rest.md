@@ -1,7 +1,7 @@
 labels: SoftwareDevelopment
         Blog
 created: 2016-02-14T08:59
-modified: 2016-03-05T17:05
+modified: 2016-03-26T21:15
 place: New York, USA
 comments: true
 
@@ -171,4 +171,4 @@ Relating to meaning in language or logic.
 ## Links
 
 [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
-[How to do stuff RESTful](http://restcookbook.com/) ([GitHub](https://github.com/restcookbook/restcookbook))
+[How to do stuff RESTful](http://restcookbook.com/) ([source](https://github.com/restcookbook/restcookbook))
