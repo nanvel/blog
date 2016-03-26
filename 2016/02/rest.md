@@ -171,3 +171,4 @@ Relating to meaning in language or logic.
 ## Links
 
 [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+[How to do stuff RESTful](http://restcookbook.com/) ([GitHub](https://github.com/restcookbook/restcookbook))
