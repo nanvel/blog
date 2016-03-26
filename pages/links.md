@@ -6,7 +6,7 @@ modified: 2015-12-04T10:07
 
 [TOC]
 
-## Programming
+## Software engineering
 
 ### Core
 
@@ -58,6 +58,10 @@ modified: 2015-12-04T10:07
 ### Blogs
 
 - [Mike Bostock](http://bost.ocks.org/mike/)
+
+## Design
+
+- [Khoi Vinh's blog](https://www.subtraction.com/)
 
 ## Business
 
