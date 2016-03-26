@@ -1,7 +1,7 @@
 labels: Blog
         Django
 created: 2013-07-17T00:00
-modified: 2014-07-13T00:00
+modified: 2016-03-26T15:56
 place: Starobilsk, Ukraine
 comments: true
 
@@ -199,3 +199,8 @@ script.disable_dynamic: true
 ```
 
 to ```/etc/elasticsearch/elasticsearch.yml```
+
+**UPD 2016-03-26**
+
+Elsticsearch has a beautiful http rest api. I don't see any benefits in using haystack, just talk to elasticsearch directly using your favourite http client.
+Read [Elasticsearch: The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html) first.
