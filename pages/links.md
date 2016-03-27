@@ -95,6 +95,7 @@ modified: 2015-12-04T10:07
 - [Workaway - Volunteer and cultural exchange, integrate in local communities around the world](https://www.workaway.info/)
 - [Paganel studio](http://www.paganel.tv)
 - [Lowcost Avia Ukraine](http://lowcostavia.com.ua/) - дешеві авіаквитки
+- [Sunny in Thailand vblog](https://www.youtube.com/channel/UCDY8ECqy73sUyqQuJNITNSQ)
 
 ## Writing
 
