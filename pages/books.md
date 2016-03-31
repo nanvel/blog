@@ -69,12 +69,12 @@ modified: 2016-03-27T21:22
 - [+] Elasticsearch: The Definitive Guide by Clinton Gormley, Zachary Tong
 - AWS Lambda: A Guide to Serverless Microservices by Matthew Fuller
 - A Practical Guide to Designing for the Web by Mark Boulton
+- A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
-- A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
 
 ## Archive
 
