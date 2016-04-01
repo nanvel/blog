@@ -70,6 +70,7 @@ modified: 2016-03-27T21:22
 - AWS Lambda: A Guide to Serverless Microservices by Matthew Fuller
 - A Practical Guide to Designing for the Web by Mark Boulton
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
+- Chiang Mai Bucket List by Antonio Araujo (top places in Chiang Mai, Thailand)
 
 ## In progress
 
