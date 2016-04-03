@@ -76,6 +76,8 @@ modified: 2016-03-27T21:22
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- How to make a Living with Your Writing by Joanna Penn
+- Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen
 
 ## Archive
 
