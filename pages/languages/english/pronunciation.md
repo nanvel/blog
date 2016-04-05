@@ -48,6 +48,7 @@ Audience - /ˈɔːdiəns/
 Ancient - /ˈeɪn·ʃənt/
 Boght - /bɔːt/
 Yacht - /jɒt/
+Opaque - /əʊˈpeɪk/
 
 Links:
 

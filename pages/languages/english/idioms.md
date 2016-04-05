@@ -70,3 +70,10 @@ I broke even - I didn't make any profit (but I didn't lose either)
 I cut my losses - I had already lost some money and decided not to waste any more
 I'll probably have to grease her palm - I think a bribe may be necessary
 I decided to foot the bill - I paid for everything
+Do you fancy going to the cinema? - Do you want to go to the cinema?
+The other day - інший день
+On the whole - in general
+By chance - incidentally
+It cost a pretty penny - дорогий
+To be aimed at - спрямовувати на
+Off the cuff - експромтом

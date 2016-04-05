@@ -174,3 +174,12 @@ If [past], would ...
 
 If I were you, I would ...
 
+## I did, I had, ...
+
+I haven't eaten meat for 4 months.
+She hasn't succeeded yet.
+
+## Much, far, a lot
+
+Much | far | a lot + II form.
+A bit | a little | slightly + II form.

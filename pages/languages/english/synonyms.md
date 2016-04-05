@@ -167,3 +167,13 @@ Occasionally
 Once in a while
 Every now and then
 Now and again
+
+## Allow/disallow
+
+You can do it.
+It is allowed.
+It is permitted.
+
+You can't do it.
+It is prohibited.
+It is forbidden.

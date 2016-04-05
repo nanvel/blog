@@ -55,4 +55,8 @@ Bribe - хабар
 Mortgage - іпотека
 To be aimed at - спрямовуваний на
 Persuasive - переконливий
+To payoff - розплатится
+Payout - виплата
+To clear debts - повернути борги
+To opt for - обрати
 
