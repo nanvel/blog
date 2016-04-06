@@ -71,12 +71,12 @@ modified: 2016-03-27T21:22
 - A Practical Guide to Designing for the Web by Mark Boulton
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
 - Chiang Mai Bucket List by Antonio Araujo (top places in Chiang Mai, Thailand)
+- How to make a Living with Your Writing by Joanna Penn
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
-- How to make a Living with Your Writing by Joanna Penn
 - Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen
 
 ## Archive
