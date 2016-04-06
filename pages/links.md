@@ -82,6 +82,7 @@ modified: 2015-12-04T10:07
 ## Foreign languages
 
 - [LinguaLeo](http://lingualeo.com/)
+- [Learn Thai language & culture](http://womenlearnthai.com/index.php/the-farang-thai-song-555/)
 
 ## Travel
 
