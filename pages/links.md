@@ -54,6 +54,7 @@ modified: 2015-12-04T10:07
 - [Siege](http://www.joedog.org/siege-home/) - Load testing
 - [log.io - Real-time log monitoring in your browser](http://logio.org/)
 - [Secure tunnels to localhost](https://ngrok.com/)
+- [Load testing, Gatling](http://gatling.io)
 
 ### Blogs
 
