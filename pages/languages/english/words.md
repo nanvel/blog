@@ -59,4 +59,21 @@ To payoff - розплатится
 Payout - виплата
 To clear debts - повернути борги
 To opt for - обрати
-
+Embarrassed - зніяковілий, збертежений
+To get annoyed - дратуватися
+Righteous - доброчесний, справедливий
+Celestial - небожитель
+Astonished - вражений
+Terrific - приголомшливий
+To shout - кричати
+Yelling - волати
+Furious - розлючений
+Enraged - розлючений
+Even-tempered - врівноважений
+Calm - спокійний
+Stubborn - впертий
+Devastated - спустошений
+Ancestors - предки
+Descendants - нащадки
+To induce - спонукати
+Rotten - гнилий, тухлий

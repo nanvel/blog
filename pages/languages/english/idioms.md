@@ -77,3 +77,5 @@ By chance - incidentally
 It cost a pretty penny - дорогий
 To be aimed at - спрямовувати на
 Off the cuff - експромтом
+She is close to crying - She is about to cry
+To feel blue (to feel a bit down) - сумувати

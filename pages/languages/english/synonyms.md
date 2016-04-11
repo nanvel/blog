@@ -147,6 +147,8 @@ I am reluctant to do.
 
 Wonderful - very good.
 Awful, horrible - very bad.
+Horrified - шокований, жах.
+Terrific - приголомшливий.
 
 ## Weird
 
@@ -177,3 +179,17 @@ It is permitted.
 You can't do it.
 It is prohibited.
 It is forbidden.
+
+## Surprised
+
+Astonished == very surprised
+
+## Calm
+
+Even-tempered - врівноважений
+Calm - спокійний
+
+## Furious
+
+Furious - розлючений
+Enraged - розлючений
