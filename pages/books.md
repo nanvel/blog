@@ -77,9 +77,9 @@ modified: 2016-03-27T21:22
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
-- Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen
 
 ## Archive
 
 - The Happiness Project by Gretchen Rubin (55%)
 - The Backpacker by John Harris (13%)
+- Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen (23%)
