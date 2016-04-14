@@ -4,31 +4,12 @@ modified: 2016-03-15T21:12
 
 # Words to learn
 
-Jealous - заздрісний
-Jewelry - ювелірні вироби
 Digress - відволікатися
 Exaggerate - перебільшувати
-To asses - оцінювати
-Remorse - каяття
-Offence - злочин
-Complexion - колір обляччя
 Despise - зневажати
-Occasionally - іноді
 To sweat - потіти
-Unwillingness - небажання
-Effigy - чучало
-Scarecrow - опудало
 Obligations - забов'язання
-Smearing - вимазуватись
-Trunk - стовбур, тулуб
-Threshold - поріг
 Pear - груша
-Sublime - неперевершаний
-Eavesdrop - підслуховувати
-Overheard - випадково почув
-Mulled wine - глінтвейн
-Great famine - великий голод
-Mouth-watering - апетитні
 Pastry - кондитерські вироби
 Freckles - веснянки
 Feasible - здійсненний
@@ -77,3 +58,4 @@ Ancestors - предки
 Descendants - нащадки
 To induce - спонукати
 Rotten - гнилий, тухлий
+Queerness - дивина
