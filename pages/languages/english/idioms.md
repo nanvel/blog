@@ -79,3 +79,7 @@ To be aimed at - спрямовувати на
 Off the cuff - експромтом
 She is close to crying - She is about to cry
 To feel blue (to feel a bit down) - сумувати
+My boss rather a cold fish - Shows no sympathy or fear
+She has a heart of gold - very kind, generous
+He's such a pain in the neck - annoying, difficult
+She's as hard as nails - distant, unfriendly
