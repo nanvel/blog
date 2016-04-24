@@ -72,11 +72,14 @@ modified: 2016-03-27T21:22
 - A Brief History of Time: From Big Bang To Black Holes by Stephen Hawking
 - Chiang Mai Bucket List by Antonio Araujo (top places in Chiang Mai, Thailand)
 - How to make a Living with Your Writing by Joanna Penn
+- Bautiful Fighting Girl by Sait Tamaki
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- The Art of Startup Fundraising by Alejandro Cremades
+- Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Richard Murphy, Betsy Beyer, Chris Jones
 
 ## Archive
 
