@@ -59,3 +59,4 @@ Descendants - нащадки
 To induce - спонукати
 Rotten - гнилий, тухлий
 Queerness - дивина
+Emergence - поява
