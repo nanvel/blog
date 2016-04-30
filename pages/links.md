@@ -86,6 +86,7 @@ modified: 2016-04-30T19:49
 - [Learn Thai language & culture](http://womenlearnthai.com/index.php/the-farang-thai-song-555/)
 - [Lang-8. Let our community of native speakers
 support your language learning](http://lang-8.com)
+- [Tae Kim's Guide to Learning Japanese](http://www.guidetojapanese.org/learn/)
 
 ## Travel
 
