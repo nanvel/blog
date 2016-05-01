@@ -2,6 +2,7 @@ labels: Blog
         Django
         Testing
 created: 2014-04-03T00:00
+modified: 2016-04-27T20:58
 place: Starobilsk, Ukraine
 comments: true
 
@@ -20,6 +21,12 @@ comments: true
 ![Test Drived Development on image](tests_tdd.jpg)
 
 The most efficient way is to write tests and feature in parallel, part by part. For example: create url entry, add view and then write test that checks access rights, fix view, extend test to check what view returns, extend view, ...
+
+## Do I need 100% tests coverage?
+
+> Extreme reliability comes at a cost: maximizing stability limits how quickly products can be delivered to users, and dramatically increases their cost, which in turn reduces the numbers of features a team can afford to offer.
+>
+> Mark Alvidrez, Site Reliability Engineering: How Google Runs Production Systems
 
 ## Place for tests code
 

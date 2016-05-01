@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2015-12-04T10:07
+modified: 2016-04-30T19:49
 
 # Links storage
 
@@ -84,6 +84,9 @@ modified: 2015-12-04T10:07
 
 - [LinguaLeo](http://lingualeo.com/)
 - [Learn Thai language & culture](http://womenlearnthai.com/index.php/the-farang-thai-song-555/)
+- [Lang-8. Let our community of native speakers
+support your language learning](http://lang-8.com)
+- [Tae Kim's Guide to Learning Japanese](http://www.guidetojapanese.org/learn/)
 
 ## Travel
 
@@ -97,7 +100,7 @@ modified: 2015-12-04T10:07
 - [Workaway - Volunteer and cultural exchange, integrate in local communities around the world](https://www.workaway.info/)
 - [Paganel studio](http://www.paganel.tv)
 - [Lowcost Avia Ukraine](http://lowcostavia.com.ua/) - дешеві авіаквитки
-- [Sunny in Thailand vblog](https://www.youtube.com/channel/UCDY8ECqy73sUyqQuJNITNSQ)
+- [Sunny in Thailand vlog](https://www.youtube.com/channel/UCDY8ECqy73sUyqQuJNITNSQ)
 
 ## Writing
 
