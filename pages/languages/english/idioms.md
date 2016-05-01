@@ -83,3 +83,7 @@ My boss rather a cold fish - Shows no sympathy or fear
 She has a heart of gold - very kind, generous
 He's such a pain in the neck - annoying, difficult
 She's as hard as nails - distant, unfriendly
+Sees the world or sees a situation "through rose-tinted glasses" - optimistic
+With flying colors - very very well
+Tickled pink - very very happy
+Paint the town red - to have a good time

@@ -62,6 +62,7 @@ pre {
     white-space: pre-wrap;
     border-left: 4px solid #cccccc;
     padding: 5px 20px;
+    font-size: 100%;
 }
 code {
     font-family: Consolas, Monaco, Andale Mono, monospace;
