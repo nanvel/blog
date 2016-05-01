@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2016-01-09T21:22
+modified: 2016-05-01T12:15
 place: Kyiv, Ukraine
 comments: true
 
@@ -283,6 +283,42 @@ if __name__ == '__main__':
     print(instance1, instance2, instance3)
     # <__main__.MyClass object at 0x10b3a4990> <__main__.MyClass object at 0x10b3a4990> <__main__.MyClass object at 0x10b3a49d0>
 ```
+
+Using metaclasses:
+```python
+class Singleton(type):
+
+    _instances = {}
+
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+        return cls._instances[cls]
+
+
+class SingletonClass(metaclass=Singleton):
+    pass
+
+class RegularClass:
+    pass
+
+
+if __name__ == '__main__':
+
+	x = SingletonClass()
+	y = SingletonClass()
+	print(x == y)
+
+	x = RegularClass()
+	y = RegularClass()
+	print(x == y)
+
+# True
+# False
+```
+
+Links:
+- [Python Course - Metaclasses](http://www.python-course.eu/python3_metaclasses.php)
 
 ### [Monostate (Borg pattern)](http://placidrage.bitbucket.org/0-computer/0-software-engineer/0-design-patterns/0-monostate/index.html)
 
