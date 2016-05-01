@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-04-30T19:49
+modified: 2016-05-01T23:32
 
 # Links storage
 
@@ -36,6 +36,7 @@ modified: 2016-04-30T19:49
 - [AngularJS video lessons on egghead.io](https://egghead.io/lessons/)
 - [D3 (Data-Driven Documents)](http://d3js.org/)
 - [Ember: A framework for creating ambitious web applications](http://emberjs.com/)
+- [Node.js free books](https://devfreebooks.org/nodejs/)
 
 ### CSS
 
@@ -55,6 +56,7 @@ modified: 2016-04-30T19:49
 - [log.io - Real-time log monitoring in your browser](http://logio.org/)
 - [Secure tunnels to localhost](https://ngrok.com/)
 - [Load testing, Gatling](http://gatling.io)
+- [GitHub Atom editor](http://flight-manual.atom.io/)
 
 ### Blogs
 
