@@ -6,6 +6,8 @@ comments: true
 
 # Tornado utils. Settings
 
+[TOC]
+
 There is [options](http://www.tornadoweb.org/en/stable/options.html) module in tornado similar to what I call settings, it allows to parse options passed via command line or settings file. The options module doesn't cover a few features I use widely: load settings from environ variables and initialize class variables with settings values (options must be available on class initialization, i.e. import). Things I don't like from the options: I usually must execute ```parse_command_line``` or ```parse_config_file``` before using options, there are two options (```tornado.options``` and ```tornado.options.options```) that confuses a bit, I want options to be immutable (there must be a special method to change them in runtime). I had tried different approaches to overcome the issues and came up with small patch of tornado options and few conventions.
 
 ## Usage example
