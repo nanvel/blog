@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-05-01T23:32
+modified: 2016-05-02T10:23
 
 # Links storage
 
@@ -36,7 +36,6 @@ modified: 2016-05-01T23:32
 - [AngularJS video lessons on egghead.io](https://egghead.io/lessons/)
 - [D3 (Data-Driven Documents)](http://d3js.org/)
 - [Ember: A framework for creating ambitious web applications](http://emberjs.com/)
-- [Node.js free books](https://devfreebooks.org/nodejs/)
 - [ES6 resources](https://github.com/ericdouglas/ES6-Learning)
 
 ### CSS
