@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-05-02T10:23
+modified: 2016-05-06T20:57
 
 # Links storage
 
@@ -71,6 +71,7 @@ modified: 2016-05-02T10:23
 - [Rework](http://www.amazon.com/gp/product/B002MUAJ2A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002MUAJ2A&linkCode=as2&tag=httpnanvelnam-20) by Jason Fried
 - [Purple Cow](http://www.amazon.com/gp/product/1591843170/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591843170&linkCode=as2&tag=httpnanvelnam-20) by Seth Godin
 - [What is a Pitch deck](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
+- [#7daystatup on Twitter](https://twitter.com/search?q=%237daystartup)
 
 ## Life hacking
 
