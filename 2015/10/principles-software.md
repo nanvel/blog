@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2016-02-14T10:11
+modified: 2016-05-07T16:51
 place: Kyiv, Ukraine
 comments: true
 
@@ -78,6 +78,10 @@ A lazy implementation postpones producing values to the last possible moment. Th
 ## Minimum viable product
 
 MVP is the product with the highest return on investment versus risk. It is the sweet spot between products without the required features that fail at sunrise and the products with too many features that cut return and increase risk. The term was coined and defined by Frank Robinson, and popularized by Steve Blank, and Eric Ries.
+
+> The first step is to enter the Build phase as quickly as possible with a minimum viable product (MVP). The MVP is that version of the product that enables a full turn of the Build-Measure-Learn loop with a minimum amount of effort and the least amount of development time.
+>
+> Eric Ries
 
 ![Minimum viable product](mvp.jpg)
 
