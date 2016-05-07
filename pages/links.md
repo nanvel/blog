@@ -109,6 +109,7 @@ support your language learning](http://lang-8.com)
 ## Writing
 
 - [The Elements of Style](http://www.amazon.com/gp/product/B00AMXXNBI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AMXXNBI&linkCode=as2&tag=httpnanvelnam-20&linkId=7RM3PBKH477ZNHSO) by William Strunk Jr.
+- [The Copywriting Checklist](https://mixergy.com/Master-Class/Copywriting/TheCopywritingChecklist.pdf) by Dane Maxwell
 
 ## Other
 
