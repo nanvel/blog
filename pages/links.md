@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-05-06T20:57
+modified: 2016-05-09T23:03
 
 # Links storage
 
@@ -37,6 +37,7 @@ modified: 2016-05-06T20:57
 - [D3 (Data-Driven Documents)](http://d3js.org/)
 - [Ember: A framework for creating ambitious web applications](http://emberjs.com/)
 - [ES6 resources](https://github.com/ericdouglas/ES6-Learning)
+- [Node.js resources](https://github.com/sindresorhus/awesome-nodejs)
 
 ### CSS
 
