@@ -61,3 +61,6 @@ Rotten - гнилий, тухлий
 Queerness - дивина
 Emergence - поява
 To embrace - охоплювати
+Ubiquitous - всюдисущий
+Acquainted - ознайомлений
+To harness - приборкати
