@@ -80,6 +80,8 @@ modified: 2016-03-27T21:22
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- Node.js: JavaScript based framework. Easy Guide Book by Rick L.
+- Learning React Native: Building Native Mobile Apps with JavaScript by Bonnie Eisenman
 
 ## Archive
 
