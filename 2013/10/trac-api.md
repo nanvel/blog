@@ -6,7 +6,7 @@ comments: true
 
 # Trac api
 
-There are many ways to install trac, I use next one:
+There are many ways to install trac, I use the next one:
 
 ```bash
 # apt-get install apache2-utils # for ubuntu
@@ -33,7 +33,7 @@ tracd -p 8020 -s --basic-auth="*,/PATH_TO_TRAC/mytrac/.htpasswd,realm" /PATH_TO_
 # navigate to http://127.0.0.1:8020
 ```
 
-Using trac api to create new ticket:
+Using trac api to create a new ticket:
 ```python
 import xmlrpclib
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     print 'Ticket #{ticket_id} was created'.format(ticket_id=ticket_id)
 ```
 
-Result (navigate to http://127.0.0.1:8020/ticket/1):
+Result (navigate to ```http://127.0.0.1:8020/ticket/1```):
 
 ![Trac ticket](trac_result.png)
 
