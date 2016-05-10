@@ -904,6 +904,12 @@ Also known as special or magic methods.
 !!! hint "Magic"
 	"Magic method" term was adopted from Ruby. Actually, these methods are opposite to magic, their behavior quite straightforward.
 
+### Future
+
+Also known as promise.
+
+An object which represents the result of a function call which is asynchronous.
+
 ### Hashable
 
 > An object is hashable if it has a hash value which never changes during its lifetime (it needs a ```__hash__()``` method), and can be compared to other objects (it needs an ```__eq__()``` method). Hashable objects which compare equal must have the same hash value.
