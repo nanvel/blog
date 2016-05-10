@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-04-30T19:49
+modified: 2016-05-09T23:03
 
 # Links storage
 
@@ -36,6 +36,8 @@ modified: 2016-04-30T19:49
 - [AngularJS video lessons on egghead.io](https://egghead.io/lessons/)
 - [D3 (Data-Driven Documents)](http://d3js.org/)
 - [Ember: A framework for creating ambitious web applications](http://emberjs.com/)
+- [ES6 resources](https://github.com/ericdouglas/ES6-Learning)
+- [Node.js resources](https://github.com/sindresorhus/awesome-nodejs)
 
 ### CSS
 
@@ -55,6 +57,7 @@ modified: 2016-04-30T19:49
 - [log.io - Real-time log monitoring in your browser](http://logio.org/)
 - [Secure tunnels to localhost](https://ngrok.com/)
 - [Load testing, Gatling](http://gatling.io)
+- [GitHub Atom editor](http://flight-manual.atom.io/)
 
 ### Blogs
 
@@ -68,6 +71,8 @@ modified: 2016-04-30T19:49
 
 - [Rework](http://www.amazon.com/gp/product/B002MUAJ2A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002MUAJ2A&linkCode=as2&tag=httpnanvelnam-20) by Jason Fried
 - [Purple Cow](http://www.amazon.com/gp/product/1591843170/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591843170&linkCode=as2&tag=httpnanvelnam-20) by Seth Godin
+- [What is a Pitch deck](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
+- [#7daystatup on Twitter](https://twitter.com/search?q=%237daystartup)
 
 ## Life hacking
 
@@ -105,6 +110,7 @@ support your language learning](http://lang-8.com)
 ## Writing
 
 - [The Elements of Style](http://www.amazon.com/gp/product/B00AMXXNBI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AMXXNBI&linkCode=as2&tag=httpnanvelnam-20&linkId=7RM3PBKH477ZNHSO) by William Strunk Jr.
+- [The Copywriting Checklist](https://mixergy.com/Master-Class/Copywriting/TheCopywritingChecklist.pdf) by Dane Maxwell
 
 ## Other
 

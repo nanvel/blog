@@ -1,7 +1,7 @@
 labels: Blog
 		Python
 created: 2015-11-22T21:33
-modified: 2016-02-06T11:22
+modified: 2016-05-10T22:05
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -175,6 +175,9 @@ Functions in Python are first-class objects (like integers, strings, dictionarie
 - assigned to variable or element in a data structure
 - passed as an argument to a function
 - returned as the result of a function
+
+!!! note "First-class object"
+    In programming, something is said to be a first-class citizen when it can be used as a value, meaning it can be passed into a function, returned from a function, and assigned to a variable.
 
 ```bash
 >>> dir(a)
@@ -900,6 +903,12 @@ Also known as special or magic methods.
 
 !!! hint "Magic"
 	"Magic method" term was adopted from Ruby. Actually, these methods are opposite to magic, their behavior quite straightforward.
+
+### Future
+
+Also known as promise.
+
+An object which represents the result of a function call which is asynchronous.
 
 ### Hashable
 

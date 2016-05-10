@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2016-05-01T12:15
+modified: 2016-05-08T09:46
 place: Kyiv, Ukraine
 comments: true
 
@@ -16,6 +16,8 @@ comments: true
 Abstract Factory has more then one factory methods.
 Each of the methods creates a different kind of object.
 We can select methods behavior by selecting particular factory.
+
+Abstract Factory is used when you need to create a family of objects that do some work together.
 
 ```python
 class Obstacle:
