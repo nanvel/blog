@@ -75,11 +75,13 @@ modified: 2016-03-27T21:22
 - Bautiful Fighting Girl by Sait Tamaki
 - [+] The Art of Startup Fundraising by Alejandro Cremades
 - [+] The 7 Day Startup: You Don't Learn Until You Launch by Dan Norris and Rob Walling
+- Node.js: JavaScript based framework. Easy Guide Book by Rick L.
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- Learning React Native: Building Native Mobile Apps with JavaScript by Bonnie Eisenman
 
 ## Archive
 
