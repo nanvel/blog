@@ -598,6 +598,58 @@ obj.value = 20;
 obj.printValue(); // 20
 ```
 
+Computed member names may be handy here to keep setter and getter names the same.
+
+### Static methods
+
+```js
+class MyClass {
+  static printSomething(something) {
+    console.log(something);
+  }
+}
+MyClass.printSomething('Hi!'); // Hi!
+const obj = new MyClass();
+obj.printSomething('Hi!'); // Uncaught TypeError: obj.printSomething is not a function
+```
+
+Static members are not accessible from instances.
+
+### Constructor
+
+Equal to ```__init__``` in Python.
+
+```js
+class MyClass {
+  constructor(something) {
+    this._something = something;
+  }
+  printSomething() {
+    console.log(this._something);
+  }
+}
+
+const obj = new MyClass("Something.");
+obj.printSomething(); // Something.
+```
+
+### Inheritance
+
+```js
+class Say {
+  printSomething(something) {
+    console.log(something);
+  }
+}
+class SayPlus extends Say {
+  printSomething(something) {
+    super.printSomething(something + " Plus.")
+  }
+}
+const obj = new SayPlus();
+obj.printSomething("Something"); // Something Plus.
+```
+
 ## Symbols
 
 A js primitive value. Harder to accidentally change or overwrite than strings or numbers.
