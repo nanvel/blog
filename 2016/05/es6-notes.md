@@ -395,6 +395,43 @@ const [...aClone] = a
 console.log(aClone, a === aClone); // ["one", "two", "three"] false
 ```
 
+### Array.of and Array.from
+
+```js
+let a = Array.of(1);
+console.log(a); // [1]
+a = Array.of(1, 2);
+console.log(a); // [1, 2]
+```
+
+Converting an Array-like object (or iterable) into the Array:
+```js
+function f() {
+  let a = Array.from(arguments);
+  console.log(a);
+}
+f(1, 2, 3); // [1, 2 ,3]
+```
+
+### find and findIndex methods
+
+```js
+const a = [1, 2, 3, 4, 5]
+console.log(a.find(i => i > 3), a.findIndex(i => i > 3)); // 4 3
+```
+
+### fill method
+
+Changes all values to specified one.
+
+```js
+const a = [1, 2, 3];
+a.fill(10);
+console.log(a); // [10, 10, 10]
+```
+
+The method accepts start and end indexes.
+
 ## Sets
 
 ```js
@@ -650,6 +687,47 @@ const obj = new SayPlus();
 obj.printSomething("Something"); // Something Plus.
 ```
 
+### ABC
+
+```js
+class MyABC {
+  constructor(something) {
+    if (new.target === MyABC) {
+        throw new Error("ABC can't be instantiated directly.");
+    }
+  }
+  saySomething() {
+    throw new Error("Override me.");
+  }
+}
+
+class MyClass extends MyABC {
+  saySomething() {
+    console.log("Something.");
+  }
+}
+
+const obj = new MyClass();
+obj.saySomething(); // Something.
+const abc_obj = new MyABC(); // Uncaught Error: ABC can't be instantiated directly.
+```
+
+## Promise
+
+```js
+const promise = new Promise(function(resolve, reject) {
+  setTimeout(
+    function() {
+      resolve("Done!");
+    },
+    500
+  )
+});
+promise.then(function(result) {
+  console.log(result); // Done! (in 0.5s)
+});
+```
+
 ## Symbols
 
 A js primitive value. Harder to accidentally change or overwrite than strings or numbers.
@@ -670,7 +748,7 @@ import {foo, bar} from 'someModule'
 
 ### Promise
 
-Also known as "future". An object which represents the result of a function call which is asynchronous.
+Also known as "future". A promise is a placeholder for the result of an asynchronous operation.
 
 Related:
 
@@ -681,6 +759,11 @@ Related:
 - Resolution: a promise which has been resolved, and then it makes progress towards a fulfillment or a rejection
 - Errback: a function which has been executed if a promise has been rejected
 - Deferred: an object which can be used for creation and manipulation of promises (similar to ```gen.Engine``` in Python/Tornado)
+
+The Promise lifecycle:
+
+- pending (operation is not completed yet)
+- fulfilled or rejected
 
 ## Links
 
