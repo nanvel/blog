@@ -1,6 +1,7 @@
 labels: Blog
 				JS
 created: 2016-05-02T11:12
+modified: 2016-05-16T10:49
 place: Kyiv, Ukraine
 comments: true
 
@@ -169,7 +170,6 @@ console.log(someFunction.name); // someFunction
 ### Block-level functions
 
 ```js
-"use strict";
 if(true) {
   function a() {
     console.log('Call a.')
@@ -255,7 +255,7 @@ const mixin = {
 }
 
 const obj = {
-  a: `Hi!`,
+  a: "Hi!",
 };
 
 const o = Object.assign(obj, mixin);
@@ -266,7 +266,6 @@ o.saySomething(o.a); // Hi!
 ### Duplicate object literals
 
 ```js
-"use strict";
 const a = {
   b: 1,
   b: 2
@@ -277,7 +276,6 @@ console.log(a); // Object {b: 2}
 ### Object keys (ordered)
 
 ```js
-"use strict";
 const a = {
   b: 1,
   c: 2
@@ -714,40 +712,6 @@ const abc_obj = new MyABC(); // Uncaught Error: ABC can't be instantiated direct
 
 ## Promise
 
-```js
-const promise = new Promise(function(resolve, reject) {
-  setTimeout(
-    function() {
-      resolve("Done!");
-    },
-    500
-  )
-});
-promise.then(function(result) {
-  console.log(result); // Done! (in 0.5s)
-});
-```
-
-## Symbols
-
-A js primitive value. Harder to accidentally change or overwrite than strings or numbers.
-
-## Imports
-
-```js
-import React from './react'
-/* is equal to */
-var React = require('./react');
-```
-
-```js
-import {foo, bar} from 'someModule'
-```
-
-## Vocabulary
-
-### Promise
-
 Also known as "future". A promise is a placeholder for the result of an asynchronous operation.
 
 Related:
@@ -764,6 +728,79 @@ The Promise lifecycle:
 
 - pending (operation is not completed yet)
 - fulfilled or rejected
+
+```js
+const promise = new Promise(function(resolve, reject) {
+  setTimeout(
+    function() {
+      resolve("Done!");
+    },
+    500
+  )
+});
+promise.then(function(result) {
+  console.log(result); // Done! (in 0.5s)
+});
+```
+
+## Symbols
+
+A js primitive value. Harder to accidentally change or override than strings or numbers.
+
+## Modules
+
+### Imports
+
+```js
+import React from './react'
+/* is equal to */
+var React = require('./react');
+```
+
+```js
+import {foo, bar} from 'someModule'
+```
+
+### export keyword
+
+Makes an object available for import.
+
+```js
+export let name = "Name";
+export function f() {
+	console.log("Hi!");
+}
+function f1() {
+	return 1;
+}
+export f;
+```
+
+### export as / import as
+
+```js
+export {a as b};
+import {a as b} from "file.js";
+```
+
+### Export default
+
+```js
+export default function() {
+    return 1;
+}
+```
+
+The default keyword indicates that this is a default export and the function doesn’t require a name because the module itself represents the function.
+
+## Style guide
+
+[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
+
+Linter: [ESLint](http://eslint.org/) with [babel-eslint](https://github.com/babel/babel-eslint).
+[Atom ESLint plugin](https://atom.io/packages/linter-eslint).
+
+[React style guide](https://github.com/airbnb/javascript/tree/master/react).
 
 ## Links
 
