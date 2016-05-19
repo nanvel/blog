@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-05-09T23:03
+modified: 2016-05-19T19:08
 
 # Links storage
 
@@ -38,6 +38,7 @@ modified: 2016-05-09T23:03
 - [Ember: A framework for creating ambitious web applications](http://emberjs.com/)
 - [ES6 resources](https://github.com/ericdouglas/ES6-Learning)
 - [Node.js resources](https://github.com/sindresorhus/awesome-nodejs)
+- [Redux](http://redux.js.org)
 
 ### CSS
 
