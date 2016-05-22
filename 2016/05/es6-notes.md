@@ -366,6 +366,22 @@ console.log(attr3); // 2
 
 All object properties are public in ES6.
 
+### Spread syntax
+
+!!! attention "ES7"
+    Awailable with Babel.
+
+```js
+return Object.assign({}, state, {
+  didInvalidate: true
+})
+```
+
+Is equal to:
+```js
+return { ...state, didInvalidate: true }
+```
+
 ## Arrays
 
 ### Array destructuring
