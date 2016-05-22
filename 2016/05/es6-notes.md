@@ -1,7 +1,7 @@
 labels: Blog
-				JS
+        JS
 created: 2016-05-02T11:12
-modified: 2016-05-16T10:49
+modified: 2016-05-22T18:50
 place: Kyiv, Ukraine
 comments: true
 
@@ -429,6 +429,17 @@ console.log(a); // [10, 10, 10]
 ```
 
 The method accepts start and end indexes.
+
+### Generate a range
+
+```bash
+> const START = 1, NUMBER = 2
+undefined
+> let pages = Array.from(new Array(NUMBER), (x, i) => i + START)
+undefined
+> pages
+[ 1, 2 ]
+```
 
 ## Sets
 
