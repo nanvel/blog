@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:20
-modified: 2016-05-13T09:18
+modified: 2016-05-19T12:48
 
 # Words to learn
 
@@ -45,3 +45,12 @@ Ubiquitous - всюдисущий
 Acquainted - ознайомлений
 To harness - приборкати
 Betrothal - заручення
+On demand - на вимогу
+To recap - робити підсумки
+Whining - ниття
+Unquenchable thirst - невтамовна жага
+To flatter - підлещуватися
+Gratification - задоволення
+Testimonials - відгуки
+Bummer - ледар
+Heritage - спадщина

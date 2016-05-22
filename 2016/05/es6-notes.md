@@ -802,6 +802,12 @@ Linter: [ESLint](http://eslint.org/) with [babel-eslint](https://github.com/babe
 
 [React style guide](https://github.com/airbnb/javascript/tree/master/react).
 
+## Vocabulary
+
+### Pure function
+
+Returns a value depends only on passed arguments and has no side effects.
+
 ## Links
 
 [Moving to ES6 from CoffeeScript](https://gist.github.com/danielgtaylor/0b60c2ed1f069f118562) by Daniel G. Taylor
