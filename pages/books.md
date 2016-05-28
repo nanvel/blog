@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-05-15T21:47
+modified: 2016-05-28T17:20
 
 # Books
 
@@ -77,6 +77,7 @@ modified: 2016-05-15T21:47
 - [+] The 7 Day Startup: You Don't Learn Until You Launch by Dan Norris and Rob Walling
 - Node.js: JavaScript based framework. Easy Guide Book by Rick L.
 - [+] Learning React Native: Building Native Mobile Apps with JavaScript by Bonnie Eisenman
+- 10 Secrets of the New Rich by Kevin J Donaldson
 
 ## In progress
 
