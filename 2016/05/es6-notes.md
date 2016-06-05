@@ -829,6 +829,10 @@ Linter: [ESLint](http://eslint.org/) with [babel-eslint](https://github.com/babe
 
 [React style guide](https://github.com/airbnb/javascript/tree/master/react).
 
+### Semicolons
+
+ECMAScript 6 coders nowadays can get rid of nearly all semicolons and remove clutter from their source code.
+
 ## Vocabulary
 
 ### Pure function
@@ -839,3 +843,5 @@ Returns a value depends only on passed arguments and has no side effects.
 
 [Moving to ES6 from CoffeeScript](https://gist.github.com/danielgtaylor/0b60c2ed1f069f118562) by Daniel G. Taylor
 [Understanding ECMAScript 6](https://leanpub.com/understandinges6/read) by Nicholas C. Zakas
+[ECMAScript 6: Feature Overview & Comparison](https://github.com/rse/es6-features)
+[Standard ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)

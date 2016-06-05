@@ -54,3 +54,4 @@ Gratification - задоволення
 Testimonials - відгуки
 Bummer - ледар
 Heritage - спадщина
+Leverages - важелі

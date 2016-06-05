@@ -1,5 +1,6 @@
 labels: Blog
         Django
+        SearchEngines
 created: 2013-07-17T00:00
 modified: 2016-03-26T15:56
 place: Starobilsk, Ukraine
@@ -106,7 +107,7 @@ class NoteIndex(indexes.SearchIndex, indexes.Indexable):
         return self.get_model().objects.filter(timestamp__lte=timezone.now())
 ```
 
-This was a little bit confusing for me. 
+This was a little bit confusing for me.
 The text field here is the most important. All You want to be available for search should be here.
 I want to search by Note.title and Note.body. To add them to the text field, I need to edit notes_text.txt.
 Let's create it.
