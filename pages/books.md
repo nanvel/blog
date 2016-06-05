@@ -78,12 +78,13 @@ modified: 2016-05-28T17:20
 - Node.js: JavaScript based framework. Easy Guide Book by Rick L.
 - [+] Learning React Native: Building Native Mobile Apps with JavaScript by Bonnie Eisenman
 - 10 Secrets of the New Rich by Kevin J Donaldson
+- Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
-- Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
+- Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
 
 ## Archive
 
