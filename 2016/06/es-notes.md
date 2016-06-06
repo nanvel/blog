@@ -2,12 +2,13 @@ labels: Draft
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
+modified: 2016-06-06T22:13
 place: Kyiv, Ukraine
 comments: true
 
 # Elasticsearch notes
 
-Loc: 2027
+Loc: 2131
 
 [TOC]
 
@@ -499,9 +500,49 @@ How well the document matches the query.
 
 How the data in each field is interpreted.
 
+Every type has its own mapping (schema definition).
+
 ### Analysis
 
 How full text is processed to make it searchable.
+
+Analysis consists of:
+
+- tokenizing a block of text into individual terms suitable for use in an inverted index
+- normalizing these terms into a standard form to improve their "searchability"
+
+Built-in analyzers:
+
+- Standard analyzer (splits the text on word boundaries, removes most punctuation, and lowercase all items)
+- Simple analyzer (splits the text on anything that isn't a letter, and lowercase the items)
+- Whitespace analyzer (splits the text on whitespace, doesn't lowercase)
+- [Language analyzers](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html) (language specific analyzers)
+
+```text
+GET /_analyze?analyzer=standard
+"Some text."
+```
+
+```json
+{
+  "tokens": [
+    {
+      "token": "some",
+      "start_offset": 0,
+      "end_offset": 4,
+      "type": "<ALPHANUM>",
+      "position": 0
+    },
+    {
+      "token": "text",
+      "start_offset": 5,
+      "end_offset": 9,
+      "type": "<ALPHANUM>",
+      "position": 1
+    }
+  ]
+}
+```
 
 ## Other features
 
@@ -519,7 +560,8 @@ Allows to generate sophisticated analytics over your data.
 
 ## Instruments
 
-[Kibana](https://www.elastic.co/guide/en/marvel/current/introduction.html)
+[Kibana - an open source analytics and visualization platform designed to work with Elasticsearch](https://www.elastic.co/guide/en/marvel/current/introduction.html)
+[Sense - a Cool JSON Aware Interface to Elasticsearch](https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch)
 
 Clients:
 [Elasticsearch Python client](https://elasticsearch-py.readthedocs.io/en/master/)

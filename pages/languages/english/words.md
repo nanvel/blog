@@ -4,26 +4,17 @@ modified: 2016-05-19T12:48
 
 # Words to learn
 
-Pastry - кондитерські вироби
-Freckles - веснянки
-Amusing - кумедний
-Tiles - плитка
 Sufficient - достатній
 Salmon - лосось
-Outfit - спорядження
 Grease - мастило
 Threats - загрози
-Bribe - хабар
-Mortgage - іпотека
 To be aimed at - спрямовуваний на
 To payoff - розплатится
-Payout - виплата
 To clear debts - повернути борги
 To opt for - обрати
-Embarrassed - зніяковілий, збертежений
+Embarrassed - зніяковілий, збентежений
 To get annoyed - дратуватися
 Righteous - доброчесний, справедливий
-Celestial - небожитель
 Astonished - вражений
 Terrific - приголомшливий
 To shout - кричати
