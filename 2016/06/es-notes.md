@@ -2,13 +2,13 @@ labels: Draft
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
-modified: 2016-06-06T22:13
+modified: 2016-06-07T21:17
 place: Kyiv, Ukraine
 comments: true
 
 # Elasticsearch notes
 
-Loc: 2131
+Loc: 2294
 
 [TOC]
 
@@ -273,6 +273,46 @@ PUT /myindex2
 }
 ```
 
+### Specifying field mapping
+
+Mapping attributes: index and analyzer ("whitespace", "simple", "english", ...).
+
+The index attribute controls how the string will be indexed:
+
+- analyzed (default): analyze -> index
+- not_analyzed: index the value exactly as specified
+- no: don't index the field
+
+```text
+PUT /myindex
+{
+  "mappings": {
+    "mytype": {
+      "properties": {
+        "mystr": {
+          "type": "string",
+          "analyzer": "english"
+        },
+        "mynumber": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "acknowledged": true
+}
+```
+
+It is possible to add a new field type with
+```
+PUT /myindex/_mapping/newfield
+```
+
 ### Cluster
 
 ```text
@@ -501,6 +541,14 @@ How well the document matches the query.
 How the data in each field is interpreted.
 
 Every type has its own mapping (schema definition).
+
+Simple field types:
+
+- string: ```string```
+- number: ```byte```, ```short```, ```integer```, ```long```
+- floating point: ```float```, ```double```
+- boolean: ```boolean```
+- date: ```date```
 
 ### Analysis
 
