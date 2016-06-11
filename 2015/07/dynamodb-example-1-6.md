@@ -3,6 +3,7 @@ labels: Blog
         DynamoDB
         Cassandra
 created: 2015-07-05T17:32
+modified: 2016-06-11T09:35
 place: Kyiv, Ukraine
 comments: true
 
@@ -84,6 +85,21 @@ Features:
 - Master-master replication
 - Embedded mapreduce
 
+JS uses for mapreduce functions:
+```js
+module.exports = {
+  /* let us find items by a particular author */
+  by_author: {
+    map: function(doc) {
+      if ('author' in doc) {
+        doc.authors.forEach(emit)
+      }
+    }
+  }.toString(),
+  reduce: '_count'
+}
+```
+
 ## [HBase](http://hbase.apache.org/)
 
 License: Apache
@@ -104,7 +120,7 @@ License: Apache
 
 Interface: HTTP/REST or custom binary
 
-Written in: Erlang & C, some JavaScript 
+Written in: Erlang & C, some JavaScript
 
 Features:
 

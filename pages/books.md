@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-06-05T15:25
+modified: 2016-06-11T23:20
 
 # Books
 
@@ -79,12 +79,13 @@ modified: 2016-06-05T15:25
 - [+] Learning React Native: Building Native Mobile Apps with JavaScript by Bonnie Eisenman
 - 10 Secrets of the New Rich by Kevin J Donaldson
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
+- [+] Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
-- Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
+- Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
 
 ## Archive
 

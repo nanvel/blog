@@ -1,7 +1,7 @@
 labels: SoftwareDevelopment
         Blog
 created: 2016-02-14T08:59
-modified: 2016-03-26T21:15
+modified: 2016-06-11T23:21
 place: New York, USA
 comments: true
 
@@ -13,6 +13,8 @@ comments: true
 
 **RE**presentational **S**tate **T**ransfer is the software architectural style of the World Wide Web.
 The term representational state transfer was introduced and defined in 2000 by Roy Fielding in his doctoral dissertation at UC Irvine.
+
+REST is a set of principles built on top of HTTP (request/reply protocol). Each URL path points to a specific resource (thing). The HTTP method for an incoming request determines what kind of action the server should take on the resource indicated in the URL.
 
 Goals:
 
@@ -125,6 +127,7 @@ In case if you need to return a list of results, use a ```results``` node:
 ```403``` - Forbidden
 ```404``` - Not found
 ```500``` - Unknown error
+```503``` - Service unavailable
 
 See more: [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 

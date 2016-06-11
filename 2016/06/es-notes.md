@@ -2,13 +2,13 @@ labels: Draft
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
-modified: 2016-06-07T21:17
+modified: 2016-06-11T23:20
 place: Kyiv, Ukraine
 comments: true
 
 # Elasticsearch notes
 
-Loc: 2294
+Loc: 2642
 
 [TOC]
 
@@ -256,6 +256,46 @@ GET /myindex/mytype/_search
 }
 ```
 
+There are two DSLs:
+
+- query DSL (asks: how well does this document match?)
+- filter DSL (yes or no for document, uses only with exact values)
+
+Filter examples:
+
+- the date is in range ...
+- does it contain the field
+- is the coordinates field within 10km of a specified point?
+
+Query examples:
+
+- full text search, best matching results
+- documents containing specified tags - the more tags, the more relevant the document
+
+Filters are more efficient in the most cases, they are easy to calculate and cache.
+
+!!! note "The goal of filters"
+    The goal of filters is to reduce the number of documents that have to be examined by the query.
+
+As a general rule, use query clauses for full-text search or for any condition that should effect the relevance score, and use filter clauses for everything else.
+
+Available filters:
+
+- term filter (filter by exact values)
+- terms filter (allows to specify multiple filters to match)
+- range filter (find numbers or dates that fall into a specified range)
+- exists and missing filters (has one or more values or doesn't have any values)
+- bool filter (used to combine multiple filter clauses)
+
+Available queries:
+
+- match_all query (matches all documents)
+- match query (use it for a full-text or exact value)
+- multi_match query (match on multiple fields)
+- bool query (combine multiple query clauses, calculates a relevance score)
+
+See also [filtered query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html) and [combining queries together](https://www.elastic.co/guide/en/elasticsearch/guide/current/combining-queries-together.html).
+
 ### Index settings
 
 ```text
@@ -266,6 +306,7 @@ PUT /myindex2
     "number_of_replicals": 1
   }
 }
+```
 
 ```json
 {
@@ -309,7 +350,7 @@ PUT /myindex
 ```
 
 It is possible to add a new field type with
-```
+```text
 PUT /myindex/_mapping/newfield
 ```
 
@@ -371,6 +412,16 @@ GET /myindex/mytype/_search
 
 Search type inside all indexes:
 GET /_all/mytype/_search
+```
+
+equal to:
+```text
+GET /_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
 ```
 
 ```json
@@ -459,6 +510,24 @@ GET /myindex/mytype/_search
 
 Doesn't return "lorem something ipsum", but returns "lorem ipsum something".
 
+### Combining multiple clauses
+
+Clauses can be as follows:
+
+- Leaf clause (match)
+- Compaund clauses (combine other other query clauses, including other compound clouses)
+
+Compaund clause:
+```json
+{
+  "bool": {
+    "must": {},
+    "must_not": {},
+    "should": {}
+  }
+}
+```
+
 ### Ordering
 
 By default, Elasticsearch orders matching results by their relevance score.
@@ -542,13 +611,19 @@ How the data in each field is interpreted.
 
 Every type has its own mapping (schema definition).
 
-Simple field types:
+Simple core field types:
 
 - string: ```string```
 - number: ```byte```, ```short```, ```integer```, ```long```
 - floating point: ```float```, ```double```
 - boolean: ```boolean```
 - date: ```date```
+
+Complex core field types:
+
+- null
+- arrays
+- objects
 
 ### Analysis
 
