@@ -8,7 +8,7 @@ comments: true
 
 # Elasticsearch notes
 
-Loc: 2642
+Loc: 5781
 
 [TOC]
 
@@ -259,7 +259,7 @@ GET /myindex/mytype/_search
 There are two DSLs:
 
 - query DSL (asks: how well does this document match?)
-- filter DSL (yes or no for document, uses only with exact values)
+- filter DSL (yes or no for document, uses only with exact values, do not calculate relevance)
 
 Filter examples:
 
@@ -296,6 +296,21 @@ Available queries:
 
 See also [filtered query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html) and [combining queries together](https://www.elastic.co/guide/en/elasticsearch/guide/current/combining-queries-together.html).
 
+!!! caution "Filter order"
+    More specific filters must be placed before less-specific filters in order to exclude as many documents as possible, as early as possible.
+    Cached filters are very fast, so they should be placed before filters that are not cacheable.
+
+### Validate a query
+
+```text
+GET /myindex/mytype/_validate/query[?explain]
+{
+  "query": {
+
+  }
+}
+```
+
 ### Index settings
 
 ```text
@@ -313,6 +328,14 @@ PUT /myindex2
   "acknowledged": true
 }
 ```
+
+See also:
+
+- [refresh_interval](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html).
+
+### Rename or update index
+
+See [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html).
 
 ### Specifying field mapping
 
@@ -508,7 +531,19 @@ GET /myindex/mytype/_search
 }
 ```
 
-Doesn't return "lorem something ipsum", but returns "lorem ipsum something".
+Same as:
+```json
+{
+  "query": {
+    "match": {
+      "attr1": "lorem ipsum",
+      "type": "phrase"
+    }
+  }
+}
+```
+
+The match_phrase query first analyses the query string to produce a list of terms. It then searches for all the terms, but keeps only documents that contain **all** of the search terms, **in the same position** relative to each other.
 
 ### Combining multiple clauses
 
@@ -528,9 +563,99 @@ Compaund clause:
 }
 ```
 
-### Ordering
+### Filtering a query
+
+```json
+{
+  "query": {
+    "filtered": {
+      "query": {
+
+      },
+      "filter": {
+
+      }
+    }
+  }
+}
+```
+
+Filtering multiple values:
+```json
+{
+  "query": {
+    "filtered": {
+      "filter": {
+        "terms": {
+          "price": [20, 30]
+        }
+      }
+    }
+  }
+}
+```
+
+### A query as a filter
+
+```json
+{
+  "query": {
+    "filtered": {
+      "filter": {
+        "bool": {
+          "must": {
+
+          },
+          "query": {
+
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Sorting / ordering
 
 By default, Elasticsearch orders matching results by their relevance score.
+
+```json
+{
+  "query": {
+
+  },
+  "sort": {
+    "myfield": {
+      "order": "desc"
+    }
+  }
+}
+```
+
+Multilevel sorting:
+
+```json
+{
+  "query": {
+
+  },
+  "sort": [
+    {
+      "myfield": {
+        "order": "desc"
+      },
+    },
+    {
+      "_score": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+```
+
+[Sorting on Multivalue Fields (arrays)](https://www.elastic.co/guide/en/elasticsearch/guide/current/_sorting.html#_sorting_on_multivalue_fields).
 
 ### Pagination
 
@@ -538,7 +663,7 @@ Use size and from keywords.
 The size indicates the number of results that should be returned, default to 10.
 The from indicates the number of initial results that should be skipped, default to 0.
 
-Deep pagination is inefficient in Elasticsearch. Keep (from + size) under 1000.
+[Deep pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) is inefficient in Elasticsearch. Keep (from + size) under 1000.
 
 ## Vocabulary
 
@@ -558,8 +683,8 @@ A nodes container, holds a slice of all the data in the index.
 
 #### Primary vs replica shards
 
-The number of primary shards in an index is fixed at the time that an index is created.
-The number of replica shards can be changed at any time.
+The number of primary shards in an index is fixed at the time that an index is created (defaults to 5).
+The number of replica shards can be changed at any time (defaults to 0).
 
 A replica shard is just a copy of a primary shard. Used to provide redundant copies of your data to protect against hardware failure, and to serve more read requests.
 
@@ -604,6 +729,8 @@ Finds all documents matching the search keywords, and returns them ordered by re
 ### Relevance score
 
 How well the document matches the query.
+
+See boost and [tie_breaker](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-dis-max-query.html).
 
 ### Mapping
 
@@ -667,6 +794,44 @@ GET /_analyze?analyzer=standard
 }
 ```
 
+Analyzer is a wrapper that combines three functions into a single package:
+
+- character filters (removes html tags, etc.)
+- tokenizers (breaks up a string into individual terms)
+- token filters (change, add, or remove tokens)
+
+Creating a custom analyzer:
+```text
+PUT /myindex
+{
+  "settings": {
+    "analysis": {
+      "char_filter": {
+
+      },
+      "tokenizer": {
+
+      },
+      "filter": {
+
+      },
+      "analyzer": {
+
+      }
+    }
+  }
+}
+```
+
+### Relevance
+
+Relevance is the algorithm that we use to calculate how similar the contents of a full-text field are to a full-text query string.
+
+The standard similarity algorithm used in Elasticsearch is known as "term frequency/inverse document frequency" (TF/IDF).
+
+Term frequency - how often does the term appear in the field.
+Inverse document frequency - how often does each term appear in the index.
+
 ## Other features
 
 ### Highlight
@@ -680,6 +845,45 @@ Highlights fragments from the original text.
 Allows to generate sophisticated analytics over your data.
 
 [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)
+
+## Best practices
+
+### Index per time period (for time based data)
+
+It may be one day or month for example.
+
+### Index templates
+
+See [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html).
+
+### Index the same data into multiple fields (use different analysis)
+
+A common technique for fine-tuning relevance is to index the same data into multiple fields, each with its own analysis chain.
+
+### Dealing with redundant data
+
+```text
+PUT /myindex
+{
+  "mappings": {
+    "user": {
+      "first_name": {
+        "type": "string",
+        "copy_to": "full_name"
+      },
+      "last_name": {
+        "type": "string",
+        "copy_to": "full_name"
+      },
+      "full_name": {
+        "type": "string"
+      }
+    }
+  }
+}
+```
+
+There also search time solution exists.
 
 ## Instruments
 
