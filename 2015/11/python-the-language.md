@@ -623,6 +623,8 @@ Traceback (most recent call last):
 StopIteration
 ```
 
+For comprehensive explanation see: [Coroutines at wla.berkeley.edu](http://wla.berkeley.edu/~cs61a/fa11/lectures/streams.html#coroutines).
+
 ### Exceptions
 
 EAFP stands for **E**asier to **A**sk for **F**orgiveness than **P**ermission.
