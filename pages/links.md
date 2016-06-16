@@ -94,6 +94,7 @@ modified: 2016-06-06T07:30
 - [Lang-8. Let our community of native speakers
 support your language learning](http://lang-8.com)
 - [Tae Kim's Guide to Learning Japanese](http://www.guidetojapanese.org/learn/)
+- [Bubble languages](https://www.bubblelanguages.com/)
 
 ## Travel
 
