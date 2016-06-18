@@ -22,7 +22,7 @@ Be ready to spend some extra time on writing tests if You choose Tornado.
 
 ## Project growth
 
-When project is growing, we may need to extend team in order to support it; finding a developer who has experience with Django is much easier comparing to Tornado. Although Tornado is easy to start with, a new team member will need some time to feel comfortable with asynchronous code and new project structure.
+When project is growing, we may need to extend team in order to support it; finding a developer who has experience with Django is much easier comparing to Tornado. Although Tornado is easy to start with, a new team member will need some time to get feeling comfortable with asynchronous code and new project structure.
 Django uses a project structure that is proven by years of usage and allows to make project development easier.
 
 ## Technology stack
