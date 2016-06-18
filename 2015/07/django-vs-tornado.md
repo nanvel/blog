@@ -27,7 +27,7 @@ Django uses a project structure that is proven by years of usage and allows to m
 
 ## Technology stack
 
-Django has much bigger community comparing to Tornado. As a result, we have a lot of ready to use solutions, great documentation, huge knowledge database on StackOverflow and other resources.
+Django has much bigger community comparing to Tornado. As a result, we have a lot of ready to use solutions, great documentation, huge knowledge base on StackOverflow and other resources.
 Tornado works great when code runs asynchronously, but there is a big chance that library You want to use doesn't work asynchronously, so You'll need to search for alternatives or patch the library or write Your own.
 
 ## Performance
