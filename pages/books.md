@@ -86,6 +86,7 @@ modified: 2016-06-11T23:20
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
+- Innovation Thinking Methods by Osama A. Hashmi
 
 ## Archive
 
