@@ -1,6 +1,7 @@
 labels: Draft
         Business
 created: 2016-06-12T15:59
+modified: 2016-06-20T23:35
 place: Kyiv, Ukraine
 comments: true
 
@@ -37,3 +38,25 @@ According to [Traction: How Any Startup Can Achieve Explosive Customer Growth](h
 - Offline Events
 - Speaking Engagements
 - Community Building
+
+## Management and Leadership
+
+Management:
+
+- Planning
+- Budgeting
+- Organizing
+- Staffing
+- Measuring
+- Problem Solving
+- Doing what we know how to do exceptionally well in order to produce reliable, efficient results constantly
+
+Leadership:
+
+- Establishing Direction
+- Aligning People
+- Motivating
+- Inspiring
+- Mobilizing people to see opportunities, overcome barriers, and leap quickly, agilely, and innovatively into a prosperous future
+
+According to [That's Not How We Do it Here!](https://www.amazon.com/Thats-Not-Here-Organizations-Fall-ebook/dp/B016JPTFBO/) by John Kotter and Holger Rathgeber.

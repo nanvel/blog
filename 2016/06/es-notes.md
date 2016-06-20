@@ -2,13 +2,13 @@ labels: Draft
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
-modified: 2016-06-11T23:20
+modified: 2016-06-20T23:35
 place: Kyiv, Ukraine
 comments: true
 
 # Elasticsearch notes
 
-Loc: 5781
+Loc: 12460
 
 [TOC]
 
@@ -519,6 +519,10 @@ GET /myindex/mytype/_search
 }
 ```
 
+See [languages elasticsearch supports](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html).
+
+For language detection see [chromium-compact-language-detector](https://github.com/mikemccand/chromium-compact-language-detector).
+
 ### Phrase Search
 
 ```json
@@ -544,6 +548,29 @@ Same as:
 ```
 
 The match_phrase query first analyses the query string to produce a list of terms. It then searches for all the terms, but keeps only documents that contain **all** of the search terms, **in the same position** relative to each other.
+
+### Wildcard queries
+
+Wildcards available:
+
+- ? matches any character
+- * matches zero or more characters
+
+```json
+{
+  "query": {
+    "wildcard": {
+      "postcode": "w?F*HW"
+    }
+  }
+}
+```
+
+See also [regexp query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html).
+
+### Fuzzy query
+
+The fuzzy query is the fuzzy equivalent of the term query. See [fuzzy query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html) documentation for details.
 
 ### Combining multiple clauses
 
@@ -616,6 +643,31 @@ Filtering multiple values:
 }
 ```
 
+### Boosting
+
+```json
+{
+  "query": {
+    "bool": {
+      "should": {
+        "match": {
+          "myfield": {
+            "query": "some query",
+            "boost": 2
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Practically, there is no simple formula for deciding on the "correct" boost value for a particular query clause. It's a matter of try-it-and-see.
+
+It id possible to [boost an index](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-index-boost.html).
+
+The boosting logic can be much more intelligent, refer the documentation for details.
+
 ### Sorting / ordering
 
 By default, Elasticsearch orders matching results by their relevance score.
@@ -664,6 +716,28 @@ The size indicates the number of results that should be returned, default to 10.
 The from indicates the number of initial results that should be skipped, default to 0.
 
 [Deep pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) is inefficient in Elasticsearch. Keep (from + size) under 1000.
+
+### Aggregation
+
+Two main concepts:
+
+- buckets: collections of documents that meet a criterion (similar to grouping in SQL)
+- metrics: statistics calculated on the documents in a bucket (similar to count(), sum(), etc. in SQL)
+
+```text
+GET /myindex/mytype/_search?search_type=count
+{
+  "aggs": {
+    "aggname": {
+      "terms": {
+        "field": "myfield"
+      }
+    }
+  }
+}
+```
+
+Elasticsearch supports [nested aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-nested-aggregation.html) and combining aggregations and search.
 
 ## Vocabulary
 
@@ -832,6 +906,14 @@ The standard similarity algorithm used in Elasticsearch is known as "term freque
 Term frequency - how often does the term appear in the field.
 Inverse document frequency - how often does each term appear in the index.
 
+### How far apart
+
+How many times do you need to move a term in order to make the query and document match.
+
+### Full-text search
+
+Full-text search is a battle between precision - returning as few irrelevant documents as possible - and recall - returning as many relevant documents as possible.
+
 ## Other features
 
 ### Highlight
@@ -845,6 +927,19 @@ Highlights fragments from the original text.
 Allows to generate sophisticated analytics over your data.
 
 [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)
+
+### Geolocation
+
+Elasticsearch allows us to combine geolocation with full-text search, structured search, and analytics.
+
+There are four geo-point filters:
+
+- geo_bounding_box: find geo-points that fall within the specified rectangle
+- geo_distance: find geo-points within the specified distance of a central point
+- geo_distance_range: find geo-points within specified minimum and maximum distance from a central point
+- geo_polygon: find geo-points that fall within the specified polygon (very expensive)
+
+There are a lot of geolocation search optimizations including [geohashes](https://www.elastic.co/guide/en/elasticsearch/guide/current/geohashes.html).
 
 ## Best practices
 
@@ -884,6 +979,16 @@ PUT /myindex
 ```
 
 There also search time solution exists.
+
+### Use scroll with deep pagination
+
+The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request.
+
+See [Scroll documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html).
+
+### Field-level index-time boost
+
+Don't use it, use [query-time boost](https://www.elastic.co/guide/en/elasticsearch/guide/current/query-time-boosting.html) instead. Query-time boosting is a much simpler, cleaner, more flexible option.
 
 ## Instruments
 

@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:20
-modified: 2016-05-19T12:48
+modified: 2016-06-20T23:35
 
 # Words to learn
 
@@ -46,3 +46,21 @@ Testimonials - відгуки
 Bummer - ледар
 Heritage - спадщина
 Leverages - важелі
+Beggar - жебрак
+Leafy - листовий
+Well-off - заможний
+Widen, broaden - розширювати
+Lukewarm - тепленький
+Rush - порив
+Marital status - сімейний стан
+Stain - пляма
+Bulky - громіздкий
+To digress - leave the main subject temporarily in speech or writing
+Prescription - рецепт (medical)
+Recipe - рецепт приготування їжі
+Self-esteem - самооцінка
+Counterfeit - підробка
+Alongside - пліч-о-пліч
+Pilgrims - паломники
+To overlook - випустити з уваги
+Two-storied - двоповерховий

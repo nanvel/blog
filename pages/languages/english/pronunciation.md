@@ -1,5 +1,6 @@
 labels: English
 created: 2015-10-24T22:31
+modified: 2016-06-20T23:35
 
 # Pronunciation
 
@@ -49,6 +50,7 @@ Ancient - /ˈeɪn·ʃənt/
 Boght - /bɔːt/
 Yacht - /jɒt/
 Opaque - /əʊˈpeɪk/
+Persuade - /pəˈsweɪd/
 
 Links:
 

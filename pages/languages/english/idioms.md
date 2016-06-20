@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:13
-modified: 2016-03-15T21:15
+modified: 2016-06-20T23:35
 
 # Idioms
 
@@ -84,6 +84,16 @@ She has a heart of gold - very kind, generous
 He's such a pain in the neck - annoying, difficult
 She's as hard as nails - distant, unfriendly
 Sees the world or sees a situation "through rose-tinted glasses" - optimistic
-With flying colors - very very well
+With flying colours - very very well
 Tickled pink - very very happy
 Paint the town red - to have a good time
+Jet lag - extreme tiredness and other physical effects felt by a person after a long flight across several time zones
+I was close to tears - пройняло до сліз
+To take/make a decision - прийняти рішення
+To split up - come apart
+To carry on - продовжувати
+To get over - to overcome
+To call off - скасовувати
+So far - до тепер
+At your fingertips - під рукою
+On the spur of the moment - експромтом

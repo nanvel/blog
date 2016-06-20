@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:18
-modified: 2016-03-15T21:15
+modified: 2016-06-20T23:35
 
 # Grammar
 
@@ -101,6 +101,22 @@ Replace with: try another, experiment (one -> another)
 Try to do: effort
 Try doing: experiment
 
+Use to do with:
+
+- allow
+- permit
+
+and -int with:
+
+- forbid
+- advise
+- recommend
+- encourage
+
+Look forward to ...
+Be used to ...
+Get used to ...
+
 ## Could usages
 
 1 - can II:
@@ -173,6 +189,7 @@ A few - a little but enough.
 If [past], would ...
 
 If I were you, I would ...
+If we did it, it would be ...
 
 ## I did, I had, ...
 
@@ -183,3 +200,7 @@ She hasn't succeeded yet.
 
 Much | far | a lot + II form.
 A bit | a little | slightly + II form.
+
+## Difficulty in
+
+I have difficulty **in doing** something.

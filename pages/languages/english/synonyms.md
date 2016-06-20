@@ -1,5 +1,6 @@
 labels: English
 created: 2015-10-24T22:56
+modified: 2016-06-20T23:35
 
 # Synonyms
 
@@ -102,6 +103,10 @@ Emphasize ...
 
 - probably
 
+50%:
+
+- possibly
+
 ## My attitude
 
 Like
@@ -193,3 +198,39 @@ Calm - спокійний
 
 Furious - розлючений
 Enraged - розлючений
+
+## Characterizing things
+
+attention-grabbing
+eye-catching
+catchy
+shocking
+effective
+persuasive (переконливий)
+witty
+sophisticated
+dull
+original
+exotic
+
+## A little, to much
+
+a little louder
+the most worrying
+a lot higher
+a bit better
+a bit more
+much more confident
+much better / much faster
+slightly better
+less important
+significantly better
+noticeably less
+worse than
+far more
+
+## Rich
+
+rich
+wealthy
+well-off
