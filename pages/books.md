@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-06-11T23:20
+modified: 2016-06-20T23:34
 
 # Books
 
@@ -80,12 +80,14 @@ modified: 2016-06-11T23:20
 - 10 Secrets of the New Rich by Kevin J Donaldson
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - [+] Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
+- [+] Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
+- That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Car Rise Again by John Kotter and Holger Rathgeber
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
-- Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
+- Innovation Thinking Methods by Osama A. Hashmi
 
 ## Archive
 
