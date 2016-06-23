@@ -145,12 +145,13 @@ Use status codes to show that transaction succeeded.
 
 ### Error response
 
-May contains a ```message```, ```code```, ```errors``` and ```traceback``` nodes.
+May contains a ```title``` (to show as alert view title), ```message```, ```code```, ```errors``` and ```traceback``` nodes.
 
 Example:
 ```json
 {
-   "message": "Error ....",
+   "title": "Some error",
+   "message": "Error details",
    "code": 10,
    "errors": [
       {
