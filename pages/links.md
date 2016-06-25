@@ -75,6 +75,7 @@ modified: 2016-06-06T07:30
 - [Purple Cow](http://www.amazon.com/gp/product/1591843170/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591843170&linkCode=as2&tag=httpnanvelnam-20) by Seth Godin
 - [What is a Pitch deck](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 - [#7daystatup on Twitter](https://twitter.com/search?q=%237daystartup)
+- [The Art of The Start](https://www.youtube.com/watch?v=7mEQ0ono8mg) by Guy Kawasaki
 
 ## Life hacking
 

@@ -82,12 +82,12 @@ modified: 2016-06-20T23:34
 - [+] Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
 - [+] Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
 - That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Car Rise Again by John Kotter and Holger Rathgeber
+- Innovation Thinking Methods by Osama A. Hashmi
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
-- Innovation Thinking Methods by Osama A. Hashmi
 
 ## Archive
 

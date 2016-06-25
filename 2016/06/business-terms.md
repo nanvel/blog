@@ -9,6 +9,12 @@ comments: true
 
 [TOC]
 
+## First principles thinking
+
+Find the most basic form of "thing", then build up from there.
+
+According to [Innovative Thinking Methods](https://www.amazon.com/Innovation-Thinking-Methods-Modern-Entrepreneur-ebook/dp/B01D6VAIXI/) by Osama A. Hashmi
+
 ## Startup
 
 > A startup is a company designed to grow fast. Being newly founded does not in itself make a company a startup. Nor is it necessary for a startup to work on technology, or take venture funding, or have some sort of "exit". The only essential thing is growth. Everything else we associate with startups follows from growth.
