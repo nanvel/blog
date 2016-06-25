@@ -41,6 +41,10 @@ According to [Traction: How Any Startup Can Achieve Explosive Customer Growth](h
 
 ## Management and Leadership
 
+> Circles versus squares, want to versus have to.
+>
+> That's Not How We Do it Here! by John Kotter and Holger Rathgeber
+
 Management:
 
 - Planning
