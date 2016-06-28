@@ -507,6 +507,14 @@ hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt(12))
 
 A [relational database](https://en.wikipedia.org/wiki/Relational_database) is a digital database whose organization is based on the relational model of data, as proposed by E.F. Codd in 1970.
 
+Relational databases are specifically designed to manage relationships:
+
+- each entity (row) can be uniquely identified by a primary key
+- entities are normalized. The data for a unique entity is stored only once, and related entities store just its primary key. Changing the data of an entity has to happen in only one place
+- entities can be joined at query time, allowing for cross-entity search
+- changes to a single entity are atomic, consistent, isolated, and durable (ACID)
+- most relational databases support ACID transactions across multiple entities
+
 Alternative technologies:
 
 - object-oriented databases

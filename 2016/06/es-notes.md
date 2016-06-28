@@ -2,13 +2,11 @@ labels: Draft
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
-modified: 2016-06-20T23:35
+modified: 2016-06-28T13:12
 place: Kyiv, Ukraine
 comments: true
 
 # Elasticsearch notes
-
-Loc: 12460
 
 [TOC]
 
@@ -27,10 +25,6 @@ Elasticsearch is a real-time distributed search and analytics engine built on to
 brew install elasticsearh
 curl http://localhost:9200/?pretty
 ```
-
-## Configuration
-
-Change cluster.name (elasticsearch.yml) to stop your nodes from trying to join another cluster on the same network with the same name.
 
 ## API
 
@@ -70,7 +64,7 @@ co(function *() {
 }).catch(error => console.log(error))
 ```
 
-### Status
+### Elasticsearch status
 
 ```text
 GET /
@@ -100,6 +94,38 @@ Response headers and status code:
 200
 ```
 
+### Cluster health
+
+```text
+GET /_cluster/health
+```
+
+```json
+{
+  "cluster_name": "elasticsearch_nanvel",
+  "status": "yellow",
+  "timed_out": false,
+  "number_of_nodes": 1,
+  "number_of_data_nodes": 1,
+  "active_primary_shards": 5,
+  "active_shards": 5,
+  "relocating_shards": 0,
+  "initializing_shards": 0,
+  "unassigned_shards": 5,
+  "delayed_unassigned_shards": 0,
+  "number_of_pending_tasks": 0,
+  "number_of_in_flight_fetch": 0,
+  "task_max_waiting_in_queue_millis": 0,
+  "active_shards_percent_as_number": 50
+}
+```
+
+Status names:
+
+- green: all primary and replica shards are active
+- yellow: all primary shards are active, but not all replica shards are active
+- red: not all primary shards are active
+
 ### Index a document
 
 ```text
@@ -126,6 +152,14 @@ PUT /myindex/mytype/1
 ```
 
 Elasticsearch creates an index and type automatically if they don't exist.
+
+### Check whether a document exists
+
+```text
+HEAD /myindex/mytype/1
+```
+
+Response status code == 200 if the document was found or 404 otherwise.
 
 ### Get a document
 
@@ -167,14 +201,6 @@ DELETE /myindex/mytype/1
   }
 }
 ```
-
-### Checking whether a document exists
-
-```text
-HEAD /myindex/mytype/1
-```
-
-Response status code == 200 if the document was found or 404 otherwise.
 
 ### Search lite
 
@@ -333,10 +359,6 @@ See also:
 
 - [refresh_interval](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html).
 
-### Rename or update index
-
-See [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html).
-
 ### Specifying field mapping
 
 Mapping attributes: index and analyzer ("whitespace", "simple", "english", ...).
@@ -375,45 +397,6 @@ PUT /myindex
 It is possible to add a new field type with
 ```text
 PUT /myindex/_mapping/newfield
-```
-
-### Cluster
-
-```text
-GET /_cluster/health
-```
-
-```json
-{
-  "cluster_name": "elasticsearch_nanvel",
-  "status": "yellow",
-  "timed_out": false,
-  "number_of_nodes": 1,
-  "number_of_data_nodes": 1,
-  "active_primary_shards": 5,
-  "active_shards": 5,
-  "relocating_shards": 0,
-  "initializing_shards": 0,
-  "unassigned_shards": 5,
-  "delayed_unassigned_shards": 0,
-  "number_of_pending_tasks": 0,
-  "number_of_in_flight_fetch": 0,
-  "task_max_waiting_in_queue_millis": 0,
-  "active_shards_percent_as_number": 50
-}
-```
-
-Status names:
-
-- green: all primary and replica shards are active
-- yellow: all primary shards are active, but not all replica shards are active
-- red: not all primary shards are active
-
-### Marvel
-
-```text
-/_plugin/marvel/
-/_plugin/marvel/sense/
 ```
 
 ## Queries
@@ -739,6 +722,122 @@ GET /myindex/mytype/_search?search_type=count
 
 Elasticsearch supports [nested aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-nested-aggregation.html) and combining aggregations and search.
 
+## Features
+
+### Highlight
+
+Highlights fragments from the original text.
+
+[Highlighting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html)
+
+### Aggregations
+
+Allows to generate sophisticated analytics over your data.
+
+[Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)
+
+### Geolocation
+
+Elasticsearch allows us to combine geolocation with full-text search, structured search, and analytics.
+
+There are four geo-point filters:
+
+- geo_bounding_box: find geo-points that fall within the specified rectangle
+- geo_distance: find geo-points within the specified distance of a central point
+- geo_distance_range: find geo-points within specified minimum and maximum distance from a central point
+- geo_polygon: find geo-points that fall within the specified polygon (very expensive)
+
+There are a lot of geolocation search optimizations including [geohashes](https://www.elastic.co/guide/en/elasticsearch/guide/current/geohashes.html) and [geoshapes](https://www.elastic.co/guide/en/elasticsearch/reference/1.4/mapping-geo-shape-type.html).
+
+### Relations
+
+Elasticsearch, like most NoSQL databases, treats the world as though it were flat.
+
+The FlatWorld advantages:
+
+- indexing is fast and lock-free
+- searching is fast and lock-free
+- massive amounts of data can be spread across multiple nodes, because each document is independent of the others
+
+If relations is required, consider these techniques:
+
+- [application-side joins](https://www.elastic.co/guide/en/elasticsearch/guide/current/application-joins.html)
+- [data denormalization](https://www.elastic.co/guide/en/elasticsearch/guide/current/denormalization.html)
+- [nested objects](https://www.elastic.co/guide/en/elasticsearch/guide/current/nested-objects.html)
+- [parent/child relationship](https://www.elastic.co/guide/en/elasticsearch/guide/current/parent-child.html)
+
+## Best practices
+
+### Index per time period (for time based data)
+
+It may be one day or month for example.
+
+### Index templates
+
+Index templates can be used to control which settings should be applied to newly created indexes.
+
+See [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html).
+
+### Index the same data into multiple fields (use different analysis)
+
+A common technique for fine-tuning relevance is to index the same data into multiple fields, each with its own analysis chain.
+
+### Dealing with redundant data
+
+```text
+PUT /myindex
+{
+  "mappings": {
+    "user": {
+      "first_name": {
+        "type": "string",
+        "copy_to": "full_name"
+      },
+      "last_name": {
+        "type": "string",
+        "copy_to": "full_name"
+      },
+      "full_name": {
+        "type": "string"
+      }
+    }
+  }
+}
+```
+
+There also search time solution exists.
+
+### Use scroll with deep pagination
+
+The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request.
+
+See [Scroll documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html).
+
+### Field-level index-time boost
+
+Don't use it, use [query-time boost](https://www.elastic.co/guide/en/elasticsearch/guide/current/query-time-boosting.html) instead. Query-time boosting is a much simpler, cleaner, more flexible option.
+
+### [Capacity planning](https://www.elastic.co/guide/en/elasticsearch/guide/current/capacity-planning.html) (how many shards do I need?)
+
+There are too many variables: hardware, size, document complexity, queries, aggregations, etc.
+
+Try to play with a single server node:
+
+- create a cluster consisting of a single server
+- create an index with one primary shard and no replicas
+- fill it with real documents
+- run real queries and aggregations
+
+Push this single shard until it "breaks". Once you define the capacity of a single shard, it is easy to find the number of primary shards required.
+
+### Configuration
+
+Change cluster.name (elasticsearch.yml) to stop your nodes from trying to join another cluster on the same network with the same name.
+
+### Index rename or update
+
+Use [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html).
+
 ## Vocabulary
 
 ### A node
@@ -754,6 +853,12 @@ One node in the cluster is elected to be the master node, which is in charge of 
 ### A shard
 
 A nodes container, holds a slice of all the data in the index.
+
+Algorithm uses to route documents to shards:
+```text
+shard = hash(routing) % number_of_primary_shards
+```
+That's why we can't increase the number of shards for an existing index.
 
 #### Primary vs replica shards
 
@@ -914,90 +1019,24 @@ How many times do you need to move a term in order to make the query and documen
 
 Full-text search is a battle between precision - returning as few irrelevant documents as possible - and recall - returning as many relevant documents as possible.
 
-## Other features
-
-### Highlight
-
-Highlights fragments from the original text.
-
-[Highlighting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html)
-
-### Aggregations
-
-Allows to generate sophisticated analytics over your data.
-
-[Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)
-
-### Geolocation
-
-Elasticsearch allows us to combine geolocation with full-text search, structured search, and analytics.
-
-There are four geo-point filters:
-
-- geo_bounding_box: find geo-points that fall within the specified rectangle
-- geo_distance: find geo-points within the specified distance of a central point
-- geo_distance_range: find geo-points within specified minimum and maximum distance from a central point
-- geo_polygon: find geo-points that fall within the specified polygon (very expensive)
-
-There are a lot of geolocation search optimizations including [geohashes](https://www.elastic.co/guide/en/elasticsearch/guide/current/geohashes.html).
-
-## Best practices
-
-### Index per time period (for time based data)
-
-It may be one day or month for example.
-
-### Index templates
-
-See [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html).
-
-### Index the same data into multiple fields (use different analysis)
-
-A common technique for fine-tuning relevance is to index the same data into multiple fields, each with its own analysis chain.
-
-### Dealing with redundant data
-
-```text
-PUT /myindex
-{
-  "mappings": {
-    "user": {
-      "first_name": {
-        "type": "string",
-        "copy_to": "full_name"
-      },
-      "last_name": {
-        "type": "string",
-        "copy_to": "full_name"
-      },
-      "full_name": {
-        "type": "string"
-      }
-    }
-  }
-}
-```
-
-There also search time solution exists.
-
-### Use scroll with deep pagination
-
-The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request.
-
-See [Scroll documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html).
-
-### Field-level index-time boost
-
-Don't use it, use [query-time boost](https://www.elastic.co/guide/en/elasticsearch/guide/current/query-time-boosting.html) instead. Query-time boosting is a much simpler, cleaner, more flexible option.
-
 ## Instruments
 
-[Kibana - an open source analytics and visualization platform designed to work with Elasticsearch](https://www.elastic.co/guide/en/marvel/current/introduction.html)
-[Sense - a Cool JSON Aware Interface to Elasticsearch](https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch)
+[Kibana](https://www.elastic.co/guide/en/marvel/current/introduction.html) - an open source analytics and visualization platform designed to work with Elasticsearch
+[Sense](https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch) - a Cool JSON Aware Interface to Elasticsearch
+[Marvel](https://www.elastic.co/guide/en/marvel/current/introduction.html) - enables you to easily monitor Elasticsearch through Kibana
+
+ELK stack (for logging):
+
+- Elasticsearch
+- Logstash (collects, parses, and enriches logs before indexing them into Easticsearch)
+- Kibana (is a graphic frontend that makes it easy query and visualize what is happening across your network in near real-time)
 
 Clients:
 [Elasticsearch Python client](https://elasticsearch-py.readthedocs.io/en/master/)
 [Elasticsearch Node.js client](https://www.npmjs.com/package/elasticsearch)
+
+Services:
+[Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/)
 
 ## Links
 
