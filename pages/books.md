@@ -88,6 +88,8 @@ modified: 2016-06-20T23:34
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
+- The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
+- The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
 
 ## Archive
 

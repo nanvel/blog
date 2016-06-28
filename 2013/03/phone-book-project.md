@@ -7,9 +7,9 @@ comments: true
 
 # Phone Book project
 
-Created for Donbass State Technical University telephone station department.
+Created for the Donbass State Technical University telephone station department.
 
-Source code available at [Bitbucket](https://bitbucket.org/nanvel/pb).
+The source code is available at [Bitbucket](https://bitbucket.org/nanvel/pb).
 
 Index page:
 
