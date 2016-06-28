@@ -1,4 +1,4 @@
-labels: Draft
+labels: Blog
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
@@ -289,8 +289,8 @@ There are two DSLs:
 
 Filter examples:
 
-- the date is in range ...
-- does it contain the field
+- the date is in range ...?
+- does it contain the field?
 - is the coordinates field within 10km of a specified point?
 
 Query examples:
@@ -311,14 +311,14 @@ Available filters:
 - terms filter (allows to specify multiple filters to match)
 - range filter (find numbers or dates that fall into a specified range)
 - exists and missing filters (has one or more values or doesn't have any values)
-- bool filter (used to combine multiple filter clauses)
+- bool filter (uses to combine multiple filter clauses)
 
 Available queries:
 
 - match_all query (matches all documents)
 - match query (use it for a full-text or exact value)
 - multi_match query (match on multiple fields)
-- bool query (combine multiple query clauses, calculates a relevance score)
+- bool query (combines multiple query clauses, calculates a relevance score)
 
 See also [filtered query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html) and [combining queries together](https://www.elastic.co/guide/en/elasticsearch/guide/current/combining-queries-together.html).
 
@@ -451,7 +451,8 @@ GET /_search
 
 ### Exact match
 
-```json
+```text
+GET /_search
 {
   "query": {
     "match": {
@@ -530,14 +531,14 @@ Same as:
 }
 ```
 
-The match_phrase query first analyses the query string to produce a list of terms. It then searches for all the terms, but keeps only documents that contain **all** of the search terms, **in the same position** relative to each other.
+The ```match_phrase``` query first analyses the query string to produce a list of terms. It then searches for all the terms, but keeps only documents that contain **all** of the search terms, **in the same position** relative to each other.
 
 ### Wildcard queries
 
 Wildcards available:
 
-- ? matches any character
-- * matches zero or more characters
+- ```?``` - matches any character
+- ```*``` - matches zero or more characters
 
 ```json
 {
@@ -560,9 +561,9 @@ The fuzzy query is the fuzzy equivalent of the term query. See [fuzzy query](htt
 Clauses can be as follows:
 
 - Leaf clause (match)
-- Compaund clauses (combine other other query clauses, including other compound clouses)
+- Compound clause (combine other query clauses, including other compound clauses)
 
-Compaund clause:
+Compound clause:
 ```json
 {
   "bool": {
@@ -647,9 +648,7 @@ Filtering multiple values:
 
 Practically, there is no simple formula for deciding on the "correct" boost value for a particular query clause. It's a matter of try-it-and-see.
 
-It id possible to [boost an index](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-index-boost.html).
-
-The boosting logic can be much more intelligent, refer the documentation for details.
+It id possible to [boost an index](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-index-boost.html). The boosting logic can be much more intelligent, refer the documentation for details.
 
 ### Sorting / ordering
 
@@ -669,7 +668,6 @@ By default, Elasticsearch orders matching results by their relevance score.
 ```
 
 Multilevel sorting:
-
 ```json
 {
   "query": {
@@ -694,9 +692,9 @@ Multilevel sorting:
 
 ### Pagination
 
-Use size and from keywords.
-The size indicates the number of results that should be returned, default to 10.
-The from indicates the number of initial results that should be skipped, default to 0.
+Use ```size``` and ```from``` keywords.
+The ```size``` indicates the number of results that should be returned, default to 10.
+The ```from``` indicates the number of initial results that should be skipped, default to 0.
 
 [Deep pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) is inefficient in Elasticsearch. Keep (from + size) under 1000.
 
@@ -705,7 +703,7 @@ The from indicates the number of initial results that should be skipped, default
 Two main concepts:
 
 - buckets: collections of documents that meet a criterion (similar to grouping in SQL)
-- metrics: statistics calculated on the documents in a bucket (similar to count(), sum(), etc. in SQL)
+- metrics: statistics calculated on the documents in a bucket (similar to ```count()```, ```sum()```, etc. in SQL)
 
 ```text
 GET /myindex/mytype/_search?search_type=count
@@ -726,26 +724,22 @@ Elasticsearch supports [nested aggregations](https://www.elastic.co/guide/en/ela
 
 ### Highlight
 
-Highlights fragments from the original text.
-
-[Highlighting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html)
+Highlights fragments from the original text. See [Highlighting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) documentation for details.
 
 ### Aggregations
 
-Allows to generate sophisticated analytics over your data.
-
-[Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)
+[Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) allows to generate sophisticated analytics over your data.
 
 ### Geolocation
 
 Elasticsearch allows us to combine geolocation with full-text search, structured search, and analytics.
 
-There are four geo-point filters:
+There are four geo-point filters available:
 
-- geo_bounding_box: find geo-points that fall within the specified rectangle
-- geo_distance: find geo-points within the specified distance of a central point
-- geo_distance_range: find geo-points within specified minimum and maximum distance from a central point
-- geo_polygon: find geo-points that fall within the specified polygon (very expensive)
+- ```geo_bounding_box```: find geo-points that fall within the specified rectangle
+- ```geo_distance```: find geo-points within the specified distance of a central point
+- ```geo_distance_range```: find geo-points within specified minimum and maximum distance from a central point
+- ```geo_polygon```: find geo-points that fall within the specified polygon (very expensive)
 
 There are a lot of geolocation search optimizations including [geohashes](https://www.elastic.co/guide/en/elasticsearch/guide/current/geohashes.html) and [geoshapes](https://www.elastic.co/guide/en/elasticsearch/reference/1.4/mapping-geo-shape-type.html).
 
@@ -753,13 +747,13 @@ There are a lot of geolocation search optimizations including [geohashes](https:
 
 Elasticsearch, like most NoSQL databases, treats the world as though it were flat.
 
-The FlatWorld advantages:
+The "flat world" advantages:
 
 - indexing is fast and lock-free
 - searching is fast and lock-free
 - massive amounts of data can be spread across multiple nodes, because each document is independent of the others
 
-If relations is required, consider these techniques:
+If relations are required, consider these techniques:
 
 - [application-side joins](https://www.elastic.co/guide/en/elasticsearch/guide/current/application-joins.html)
 - [data denormalization](https://www.elastic.co/guide/en/elasticsearch/guide/current/denormalization.html)
@@ -774,9 +768,7 @@ It may be one day or month for example.
 
 ### Index templates
 
-Index templates can be used to control which settings should be applied to newly created indexes.
-
-See [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html).
+Index templates can be used to control which settings should be applied to newly created indexes. See [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html).
 
 ### Index the same data into multiple fields (use different analysis)
 
@@ -805,13 +797,11 @@ PUT /myindex
 }
 ```
 
-There also search time solution exists.
+A search time solution also available.
 
 ### Use scroll with deep pagination
 
-The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request.
-
-See [Scroll documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html).
+The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request. See [Scroll documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html).
 
 ### Field-level index-time boost
 
@@ -819,7 +809,7 @@ Don't use it, use [query-time boost](https://www.elastic.co/guide/en/elasticsear
 
 ### [Capacity planning](https://www.elastic.co/guide/en/elasticsearch/guide/current/capacity-planning.html) (how many shards do I need?)
 
-There are too many variables: hardware, size, document complexity, queries, aggregations, etc.
+There are too many variables: hardware, data size, document complexity, queries, aggregations, etc.
 
 Try to play with a single server node:
 
@@ -832,7 +822,7 @@ Push this single shard until it "breaks". Once you define the capacity of a sing
 
 ### Configuration
 
-Change cluster.name (elasticsearch.yml) to stop your nodes from trying to join another cluster on the same network with the same name.
+Change ```cluster.name``` (```elasticsearch.yml```) to stop your nodes from trying to join another cluster on the same network with the same name.
 
 ### Index rename or update
 
@@ -840,96 +830,29 @@ Use [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/curr
 
 ## Vocabulary
 
+### A cluster
+
+Is a group of nodes with the same ```cluster.name```.
+
+One node in the cluster is elected to be the master node, which is in charge of managing cluster-wide changes (does not need to be involved in document-level changes or search).
+
 ### A node
 
 Is a running instance of Elasticsearch.
-
-### A cluster
-
-Is a group of nodes with the same cluster.name.
-
-One node in the cluster is elected to be the master node, which is in charge of managing cluster-wide changes (does not need to be involved in document-level changes or search).
 
 ### A shard
 
 A nodes container, holds a slice of all the data in the index.
 
 Algorithm uses to route documents to shards:
-```text
+```python
 shard = hash(routing) % number_of_primary_shards
 ```
 That's why we can't increase the number of shards for an existing index.
 
-#### Primary vs replica shards
-
-The number of primary shards in an index is fixed at the time that an index is created (defaults to 5).
-The number of replica shards can be changed at any time (defaults to 0).
-
-A replica shard is just a copy of a primary shard. Used to provide redundant copies of your data to protect against hardware failure, and to serve more read requests.
-
-By default, indexes are assigned five primary shards.
-
-Any newly indexed document will first be stored on a primary shard, and then copied in parallel to the associated replica shard(s).
-
-### Indexing
-
-The act of storing data in Elasticsearch.
-
-### Document and type
-
-In Elasticsearch, a document belongs to a type, and those types live inside an index.
-
-Parallels to a traditional relational database:
-
-- Databases -> Indexes
-- Tables -> Types
-- Rows -> Documents
-- Columns -> Fields
-
-Every type has its own mapping or schema definition.
-Every field in a document is indexed and can be queried.
-
 ### An index
 
 A logical namespace that points to one or more physical shards.
-
-### Document id
-
-The id is a string that, when combined with the _index and _type, uniquely identified a document in Elasticsearch.
-
-### Inverted index
-
-An inverted index consists of a list of all the unique words that appear in any document, and for each word, a list of the documents in which it appears.
-
-### A full-text search
-
-Finds all documents matching the search keywords, and returns them ordered by relevance.
-
-### Relevance score
-
-How well the document matches the query.
-
-See boost and [tie_breaker](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-dis-max-query.html).
-
-### Mapping
-
-How the data in each field is interpreted.
-
-Every type has its own mapping (schema definition).
-
-Simple core field types:
-
-- string: ```string```
-- number: ```byte```, ```short```, ```integer```, ```long```
-- floating point: ```float```, ```double```
-- boolean: ```boolean```
-- date: ```date```
-
-Complex core field types:
-
-- null
-- arrays
-- objects
 
 ### Analysis
 
@@ -1002,22 +925,78 @@ PUT /myindex
 }
 ```
 
-### Relevance
+### Document id
 
-Relevance is the algorithm that we use to calculate how similar the contents of a full-text field are to a full-text query string.
+The ```id``` is a string that, when combined with the ```_index``` and ```_type```, uniquely identified a document in Elasticsearch.
 
-The standard similarity algorithm used in Elasticsearch is known as "term frequency/inverse document frequency" (TF/IDF).
+### Document type
 
-Term frequency - how often does the term appear in the field.
-Inverse document frequency - how often does each term appear in the index.
+In Elasticsearch, a document belongs to a type, and those types live inside an index.
+
+Parallels to a traditional relational database:
+
+- Databases -> Indexes
+- Tables -> Types
+- Rows -> Documents
+- Columns -> Fields
+
+Every type has its own mapping or schema definition.
+Every field in a document is indexed and can be queried.
+
+### Full-text search
+
+Finds all documents matching the search keywords, and returns them ordered by relevance.
+
+Full-text search is a battle between precision - returning as few irrelevant documents as possible, and recall - returning as many relevant documents as possible.
 
 ### How far apart
 
 How many times do you need to move a term in order to make the query and document match.
 
-### Full-text search
+### Indexing
 
-Full-text search is a battle between precision - returning as few irrelevant documents as possible - and recall - returning as many relevant documents as possible.
+The act of storing data in Elasticsearch.
+
+#### Primary vs replica shards
+
+The number of primary shards in an index is fixed at the time that an index is created (defaults to 5). The number of replica shards can be changed at any time (defaults to 0).
+
+A replica shard is just a copy of a primary shard. Used to provide redundant copies of your data to protect against hardware failure, and to serve more read requests.
+
+Any newly indexed document will first be stored on a primary shard, and then copied in parallel to the associated replica shard(s).
+
+### Inverted index
+
+An inverted index consists of a list of all the unique words that appear in any document, and for each word, a list of the documents in which it appears.
+
+### Mapping
+
+How the data in each field is interpreted.
+
+Every type has its own mapping (schema definition).
+
+Simple core field types:
+
+- string: ```string```
+- number: ```byte```, ```short```, ```integer```, ```long```
+- floating point: ```float```, ```double```
+- boolean: ```boolean```
+- date: ```date```
+
+Complex core field types:
+
+- null
+- arrays
+- objects
+
+### Relevance
+
+Relevance is the algorithm that we use to calculate how similar the contents of a full-text field are to a full-text query string. The standard similarity algorithm used in Elasticsearch is known as "Term Frequency / Inverse Document Frequency" (TF/IDF).
+
+Term Frequency - how often does the term appear in the field.
+Inverse Document Frequency - how often does each term appear in the index.
+
+Relevance score - how well the document matches the query.
 
 ## Instruments
 
