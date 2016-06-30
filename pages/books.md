@@ -97,3 +97,4 @@ modified: 2016-06-20T23:34
 - The Backpacker by John Harris (13%)
 - Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen (23%)
 - Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Richard Murphy, Betsy Beyer, Chris Jones (14%)
+- Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
