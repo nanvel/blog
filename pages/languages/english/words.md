@@ -64,3 +64,16 @@ Alongside - пліч-о-пліч
 Pilgrims - паломники
 To overlook - випустити з уваги
 Two-storied - двоповерховий
+Disgust - гидота, несмак
+Embarrassed - збентежений
+To swear - лаятись
+Arrogant - зарозумілий
+Assertive - самовпевнений
+Bad-tempered - дратівливий
+Cheerful - веселий
+Conscientious - сумлінний
+Easy-going - безтурботний
+Stubborn - впертий
+Vain - марнославний
+Dumbfounded - приголомшиний
+Juvenile - юнак

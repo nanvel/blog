@@ -234,3 +234,8 @@ far more
 rich
 wealthy
 well-off
+
+## Get / give
+
+to gain popularity
+to lose popularity

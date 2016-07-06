@@ -97,3 +97,4 @@ To call off - скасовувати
 So far - до тепер
 At your fingertips - під рукою
 On the spur of the moment - експромтом
+Sweet tooth - ласун

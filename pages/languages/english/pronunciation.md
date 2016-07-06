@@ -51,7 +51,9 @@ Boght - /bɔːt/
 Yacht - /jɒt/
 Opaque - /əʊˈpeɪk/
 Persuade - /pəˈsweɪd/
+Receipt - /rɪˈsiːt/
+Recipe - /ˈresəpi/
 
 Links:
 
-- http://dictionary.cambridge.org/pronunciation/english/above
+- http://www.oxfordlearnersdictionaries.com/definition/english/receipt

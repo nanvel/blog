@@ -204,3 +204,15 @@ A bit | a little | slightly + II form.
 ## Difficulty in
 
 I have difficulty **in doing** something.
+
+## Passive voice
+
+They say he is rich.
+
+It is said he is rich.
+He is said [believed, thought] to be rich.
+... to know a lot.
+... to have 5 wives.
+... to have had 5 wives.
+... to rob banks.
+... to have robbed 5 banks.
