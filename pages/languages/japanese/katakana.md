@@ -1,7 +1,7 @@
 labels: Japanese
 created: 2016-07-10T20:35
 
-# Hiragana
+# Katakana
 
 /a/ - ア (underground)
 /i/ - イ (i)
