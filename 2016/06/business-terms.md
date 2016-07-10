@@ -11,7 +11,7 @@ comments: true
 
 ## CEO
 
-CEO stands for Chief Executive Officer.
+CEO stands for Chief Executive Officer. The highest-ranking full-time employee of the company to whom all other employees ultimately report. The CEO, in turn, reports directly to the full board of directors.
 
 CEO of a startup:
 
