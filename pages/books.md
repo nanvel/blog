@@ -83,13 +83,14 @@ modified: 2016-06-20T23:34
 - [+] Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
 - That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Car Rise Again by John Kotter and Holger Rathgeber
 - Innovation Thinking Methods by Osama A. Hashmi
+- The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
-- The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
+- Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez
 
 ## Archive
 
