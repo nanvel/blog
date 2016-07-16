@@ -90,7 +90,6 @@ modified: 2016-07-16T15:04
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
-- Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez
 
 ## Archive
 
@@ -99,3 +98,4 @@ modified: 2016-07-16T15:04
 - Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen (23%)
 - Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Richard Murphy, Betsy Beyer, Chris Jones (14%)
 - Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
+- Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez (5%)
