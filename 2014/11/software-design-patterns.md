@@ -364,9 +364,57 @@ TODO
 
 TODO
 
-### Facade
+### Facade (façade)
 
-TODO
+> If something is ugly, hide it inside an object.
+
+Goal: make a software library easier to use, understand and test.
+
+This design pattern aggregates classes that implement the functionality of the subsystem but does not hide them completely. Should not add any new functionality, just simplify the access to a system.
+
+```python
+class WheelBuilder():
+
+    def build_a_wheel(self):
+        return "Wheel"
+
+
+class BodyBuilder():
+
+    def build_a_body(self):
+        return "Body"
+
+
+class EngineBuilder():
+
+    def build_an_engine(self):
+        return "Engine"
+
+
+def give_a_name():
+    return "Some name"
+
+
+class BuildACarFacade:
+
+    wheel_builder = WheelBuilder()
+    body_builder = BodyBuilder()
+    engine_builder = EngineBuilder()
+
+    @classmethod
+    def build_a_car(cls):
+        return [
+            cls.wheel_builder.build_a_wheel() * 4,
+            cls.body_builder.build_a_body(),
+            cls.engine_builder.build_an_engine(),
+            "Name: " + give_a_name()
+        ]
+
+
+if __name__ == '__main__':
+    print(BuildACarFacade.build_a_car())
+    # ['WheelWheelWheelWheel', 'Body', 'Engine', 'Name: Some name']
+```
 
 ### Flyweight
 

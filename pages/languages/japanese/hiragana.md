@@ -50,7 +50,7 @@ created: 2016-06-25T21:18
 /yo/ - よ (yoga)
 
 /ra/ - ら
-/ri/ - り
+/ri/ - り (looks similar to い)
 /ru/ - る
 /re/ - れ
 /ro/ - ろ

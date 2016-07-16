@@ -17,4 +17,11 @@ created: 2016-06-28T11:21
 おやすみなさい - Good night.
 ありがとう - Thank you.
 どういたしまして - You are welcome.
-すみません - I am sorry, Excuse me.
+すみません - Excuse me.
+ごめんなさい - Sorry.
+
+## Shopping
+
+いくらですか - How much is it?
+これください - This, please.
+くうこうにいってください - Please go to the airport.

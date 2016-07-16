@@ -67,7 +67,7 @@ Everything in Python is an object:
 <class 'module'>
 >>> def a():
 ...   pass
-... 
+...
 >>> type(a)
 <class 'function'>
 ```
@@ -91,7 +91,7 @@ The ```==``` operator compares the values (uses ```__eq__()``` method) of object
 ...   __a = 1
 ...   def get(self):
 ...     return self.__a
-... 
+...
 >>> a = A()
 >>> a.__a
 Traceback (most recent call last):
@@ -130,17 +130,17 @@ Another benefit of ```len``` is that you don't need to memorize which function n
 ```bash
 >>> class A(object):
 ...   pass
-... 
+...
 >>> class B(object):
 ...   def __bool__(self):
 ...     return False
-... 
+...
 >>> class C(object):
 ...   def __len__(self):
 ...     return 0
-... 
+...
 >>> D = []
->>> 
+>>>
 >>> bool(A)
 True
 >>> bool(B)
@@ -193,7 +193,7 @@ To specify keyword-only arguments when defining a function, name them after the 
 ```bash
 >>> def f(a, *, b):
 ...   print(a, b)
-... 
+...
 >>> f(1, 2)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -213,7 +213,7 @@ Python 3 provides syntax to attach metadata to the parameters of a function decl
 ```bash
 >>> def f(a:str, b:'int < 10') -> str:
 ...   return a * b
-... 
+...
 >>> f('a', 2)
 'aa'
 >>> f('a', 15)
@@ -231,11 +231,11 @@ No processing is done with the annotations. They are merely stored in the ```__a
 ```bash
 >>> def a():
 ...   print(id)
-... 
+...
 >>> def b():
 ...   print(id)
 ...   id = 1
-... 
+...
 >>> a()
 <built-in function id>
 >>> b()
@@ -247,7 +247,7 @@ UnboundLocalError: local variable 'id' referenced before assignment
 ...   global id
 ...   print(id)
 ...   id = 1
-... 
+...
 >>> c()
 <built-in function id>
 >>> c()
@@ -264,7 +264,7 @@ Don't do it.
 >>> def f(a=[]):
 ...   a.append(1)
 ...   print(a)
-... 
+...
 >>> f()
 [1]
 >>> f()
@@ -279,7 +279,7 @@ When we pass mutable object as argument to function where it would be modified. 
 >>> a = {'a': 1}
 >>> def f(x):
 ...   x['a'] += 1
-... 
+...
 >>> f(a)
 >>> a
 {'a': 2}
@@ -298,7 +298,7 @@ An example from the Fluent Python book:
 ...     total = sum(series)
 ...     return total / len(series)
 ...   return averager
-... 
+...
 >>> avg = make_averager()
 >>> avg(10)
 10.0
@@ -464,7 +464,7 @@ Every collection in Python is iterable.
 >>> s = 'abc'
 >>> for c in s:
 ...   print(c)
-... 
+...
 a
 b
 c
@@ -478,10 +478,10 @@ If an object has ```__getitem__``` and ```__len__``` methods, it is iterable:
 ...     return len(self._a)
 ...   def __getitem__(self, index):
 ...     return self._a[index]
-... 
+...
 >>> for c in C():
 ...   print(c)
-... 
+...
 1
 2
 3
@@ -494,10 +494,10 @@ Another way to create an iterable object is to define ```__iter__``` method that
 ...     self._a = (1, 2, 3)
 ...   def __iter__(self):
 ...     return self._a.__iter__()
-... 
+...
 >>> for c in C():
 ...   print(c)
-... 
+...
 1
 2
 3
@@ -516,16 +516,16 @@ We can create our own iterator, it sould be a class with ```__iter__``` and ```_
 ...       raise StopIteration()
 ...     self._position += 1
 ...     return self._items[self._position - 1]
-... 
+...
 >>> class C(object):
 ...   def __init__(self):
 ...     self._items = (1, 2, 3)
 ...   def __iter__(self):
 ...     return CIterator(items=self._items)
-... 
+...
 >>> for c in C():
 ...   print(c)
-... 
+...
 1
 2
 3
@@ -538,10 +538,10 @@ Also we can return a generator as iterator:
 ...     self._items = (1, 2, 3)
 ...   def __iter__(self):
 ...     return (i for i in self._items)
-... 
+...
 >>> for c in C():
 ...   print(c)
-... 
+...
 1
 2
 3
@@ -567,18 +567,18 @@ There are two ways to define a generator:
 >>> def b():
 ...   for i in (1, 2, 3):
 ...     yield i
-... 
+...
 >>> type(b)
 <class 'function'>
 >>> for i in a:
 ...   print(i)
-... 
+...
 1
 2
 3
 >>> for i in b():
 ...   print(i)
-... 
+...
 1
 2
 3
@@ -609,7 +609,7 @@ As for me, the essential of coroutine is that it consumes data while generator c
 ...     x = yield
 ...     print("Received:", x)
 ...   print("Finish")
-... 
+...
 >>> c = coroutine()
 >>> next(c)
 Start
@@ -642,7 +642,7 @@ In Python, ```try/except``` commonly used for control flow, and not just for err
 ...   finally:
 ...     print('Runs anyway.')
 ...   return value
-... 
+...
 >>> f(1)
 Success
 Runs anyway.
@@ -663,10 +663,10 @@ The context manager protocol consists of the ```__enter__``` and ```__exit__``` 
 ...     print('Enter')
 ...   def __exit__(self, exc_type, exc_value, traceback):
 ...     print('Exit')
-... 
+...
 >>> with ContextManager() as cm:
 ...   print('Inner')
-... 
+...
 Enter
 Inner
 Exit
@@ -681,10 +681,10 @@ The same using ```contextlib```:
 ...   print('Enter')
 ...   yield None
 ...   print('Exit')
-... 
+...
 >>> with context_manager() as cm:
 ...   print('Inner')
-... 
+...
 Enter
 Inner
 Exit
@@ -701,7 +701,7 @@ Namedtuple represents object with only data user attributes, it uses less memory
 ...   def __init__(self, a, b):
 ...     self.a = a
 ...     self.b = b
-... 
+...
 >>> from collections import namedtuple
 >>> B = namedtuple('B', ['a', 'b'])
 >>> a = A(a=1, b=2)
@@ -773,7 +773,7 @@ A weak reference to an object is not enough to keep the object alive: when the o
 >>> import weakref
 >>> class A(object):
 ...   pass
-... 
+...
 >>> a = A()
 >>> b = weakref.ref(a)
 >>> id(a)
@@ -805,17 +805,17 @@ ABC uses to check if the object has an interface we need (for example, if it can
 ...   @abc.abstractmethod
 ...   def quack(self):
 ...     pass
-... 
+...
 >>> class C(Duck):
 ...   def quack(self):
 ...     print('quack')
-... 
+...
 >>> c = C()
 >>> isinstance(c, Duck)
 True
 >>> class D(Duck):
 ...   pass
-... 
+...
 >>> d = D()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -834,11 +834,17 @@ For example:
 >>> while i < 0.6:
 ...   i += next(counter)
 ...   print(i)
-... 
+...
 0
 0.2
 0.6000000000000001
 ```
+
+## Thirdparty
+
+### ujson
+
+More efficient ```json``` alternative.
 
 ## Vocabulary
 
@@ -873,7 +879,7 @@ Deep copy is a copy of an object in which all the objects that are attributes of
 >>> class C(object):
 ...   def __init__(self, a):
 ...     self.a = a
-... 
+...
 >>> c = C(a={'x': 1})
 >>> id(c.a)
 4333741320
