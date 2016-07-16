@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-06-20T23:34
+modified: 2016-07-16T15:04
 
 # Books
 
@@ -81,14 +81,14 @@ modified: 2016-06-20T23:34
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - [+] Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
 - [+] Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
-- That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Car Rise Again by John Kotter and Holger Rathgeber
+- That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Can Rise Again by John Kotter and Holger Rathgeber
 - Innovation Thinking Methods by Osama A. Hashmi
+- The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
-- The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
 
 ## Archive
@@ -98,3 +98,4 @@ modified: 2016-06-20T23:34
 - Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen (23%)
 - Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Richard Murphy, Betsy Beyer, Chris Jones (14%)
 - Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
+- Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez (5%)
