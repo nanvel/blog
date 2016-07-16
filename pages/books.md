@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-06-20T23:34
+modified: 2016-07-16T15:04
 
 # Books
 
@@ -81,7 +81,7 @@ modified: 2016-06-20T23:34
 - Cool Japan: A Guide to Tokyo, Kyoto, Tohoku and Japanese Culture Past and Present by Sumiko Kajiyama
 - [+] Node.js the Right Way: Practical, Server-Side JavaScript That Scales by Jim R. Wilson
 - [+] Traction: How Any Startup Can Achieve Explosive Customer Growth by Gabriel Weinberg and Justin Mares
-- That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Car Rise Again by John Kotter and Holger Rathgeber
+- That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Can Rise Again by John Kotter and Holger Rathgeber
 - Innovation Thinking Methods by Osama A. Hashmi
 - The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 
