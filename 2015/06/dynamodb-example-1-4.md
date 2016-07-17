@@ -5,7 +5,7 @@ created: 2015-06-06T22:09
 place: Dream Story, Kyiv, Ukraine
 comments: true
 
-# DynamoDB in examples, Example 1.4: DyanmoDB and Celery using green threads
+# DynamoDB in examples, Example 1.4: DynamoDB and Celery using green threads
 
 Usually we set concurrency [equal to number of processors](http://celery.readthedocs.org/en/latest/configuration.html#concurrency-settings).
 But if we using eventlet, we able to set much bigger value, like ~ 1000.

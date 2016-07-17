@@ -2,28 +2,29 @@ labels: Databases
         DynamoDB
         AWS
 created: 2015-02-22T00:00
+modified: 2016-07-17T20:13
 
 # DynamoDB in examples
 
 Table of contents:
 
-- DynamoDB in examples, Example 1: User wallet table
-- DynamoDB in examples, Example 1.1: DDBTable class
-- DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)
-- DynamoDB in examples, Example 1.3: DynamoDB local and testing
-- DynamoDB in examples, Example 1.4: DyanmoDB and Celery using green threads
-- DynamoDB in examples, Example 1.5: Distributed system terms
-- DynamoDB in examples, Example 1.6: DynamoDB alternatives
-- DynamoDB in examples, Example 2: Unique page views
-- DynamoDB in examples, Example 2.1: Key schema and counters
-- DynamoDB in examples, Example 2.2: Table secondary indexes
-- DynamoDB in examples, Example 2.3: Pagination
-- DynamoDB in examples, Example 3: Toys store orders
-- DynamoDB in examples, Example 3.1: Does DynamoDB fits my requirements?
-- DynamoDB in examples, Example 3.2: FilterExpression and pagination issue
-- DynamoDB in examples, Example 3.3: Mark item as deleted
-- DynamoDB in examples, Example 4: Tweets. Throttled reads and caching
-- DynamoDB in examples, Example 4.1: Search
+- [DynamoDB in examples, Example 1: User wallet table](/2015/02/dynamodb-example-1)
+- [DynamoDB in examples, Example 1.1: DDBTable class](/2015/02/dynamodb-example-1-1)
+- [DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)](/2015/03/dynamodb-example-1-2)
+- [DynamoDB in examples, Example 1.3: DynamoDB local and testing](/2015/03/dynamodb-example-1-3)
+- [DynamoDB in examples, Example 1.4: DynamoDB and Celery using green threads](/2015/06/dynamodb-example-1-4)
+- [DynamoDB in examples, Example 1.5: Distributed system terms](/2015/06/dynamodb-example-1-5)
+- [DynamoDB in examples, Example 1.6: DynamoDB alternatives](/2015/07/dynamodb-example-1-6)
+- [DynamoDB in examples, Example 2: Unique page views](/2015/03/dynamodb-example-2)
+- [DynamoDB in examples, Example 2.1: Key schema and counters](/2015/03/dynamodb-example-2-1)
+- [DynamoDB in examples, Example 2.2: Table secondary indexes](/2015/03/dynamodb-example-2-2)
+- [DynamoDB in examples, Example 2.3: Pagination](/2015/03/dynamodb-example-2-3)
+- [DynamoDB in examples, Example 3: Toys store orders](/2015/04/dynamodb-example-3)
+- [DynamoDB in examples, Example 3.1: Does DynamoDB fits my requirements?](/2015/04/dynamodb-example-3-1)
+- [DynamoDB in examples, Example 3.2: FilterExpression and pagination issue](/2015/05/dynamodb-example-3-2)
+- [DynamoDB in examples, Example 3.3: Mark item as deleted](/2015/05/dynamodb-example-3-3)
+- [DynamoDB in examples, Example 4: Tweets. Throttled reads and caching](/2015/05/dynamodb-example-4)
+- [DynamoDB in examples, Example 4.1: Search](/2015/05/dynamodb-example-4-1)
 
 See also:
 
@@ -33,4 +34,4 @@ See also:
 
 ## Errata / extend
 
-If You found an error or have something to add, fell free to click "Edit on GitHub" and create pull request, or just leave a comment.
+If You found an error or have something to add, feel free to click "Edit on GitHub" and create a pull request, or just leave a comment.

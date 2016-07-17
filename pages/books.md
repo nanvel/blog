@@ -90,6 +90,7 @@ modified: 2016-07-16T15:04
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
+- The Disease-Free Revolution by Ron Garner
 
 ## Archive
 
