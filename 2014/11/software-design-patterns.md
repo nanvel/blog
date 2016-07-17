@@ -422,7 +422,48 @@ TODO
 
 ### Proxy
 
-TODO
+Relates to: State (or State provider), Surrogate. Proxy is used to control access to its implementation, while State allows you to change the implementation dynamically. Surrogate - uses for both (controlling access to implementation).
+
+A Proxy is a design pattern that helps to decouple the client code from the object that the client code uses. Proxy acts like a real object but delegates all calls to the real object.
+
+Use cases:
+
+- lazy initialization
+- logging
+- facilitate network connections
+- control access to shared objects
+- caching
+- ...
+
+```python
+class SomeImplementation:
+
+	def do_something(self):
+		print("Something.")
+
+	def do_something_else(self):
+		print("Something else.")
+
+
+class ImplementationProxy:
+
+	def __init__(self):
+		self._implementation = SomeImplementation()
+
+	def __getattr__(self, name):
+		print("Call method {name}.".format(name=name))
+		return getattr(self._implementation, name)
+
+
+if __name__ == '__main__':
+	implementation_proxy = ImplementationProxy()
+	implementation_proxy.do_something()
+	implementation_proxy.do_something_else()
+	# Call method do_something.
+	# Something.
+	# Call method do_something_else.
+	# Something else.
+```
 
 ## How it behaves
 
@@ -452,7 +493,9 @@ TODO
 
 ### State
 
-TODO
+Or State provide.
+
+See Proxy.
 
 ### Strategy
 
