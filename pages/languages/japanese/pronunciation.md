@@ -29,6 +29,10 @@ Image source: [Why Can’t Japanese People Say L’s or R’s?](http://skeptikai
 
 More strongly.
 
+### Consonant clusters
+
+There are no consonant clusters in Japanese. Consonants, except "n", must always be followed by a vowel.
+
 ## Sounds missing in Japanese
 
 ### "l" sound

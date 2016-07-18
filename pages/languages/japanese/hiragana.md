@@ -61,13 +61,19 @@ created: 2016-06-25T21:18
 
 ## Digraphs and diacritics
 
+Use dokuten for:
+
 k -> g: か /ka/ -> が /ga/
 s -> z: さ /sa/ -> ざ /za/
 t -> d: た /ta/ -> だ /da/ (except ぢ /dzi/, づ /zu/)
 h -> b: は /ha/ -> ば /ba/
+u -> vu: う /u/ -> ゔ /vu/
+
+Use handakuten for:
+
 h -> p: は /ha/ -> ぱ /pa/
 
-u -> vu: う /u/ -> ゔ /vu/
+Docuten and handakuten are similar to diacritics (also known as "accents") which uses with Latin letters.
 
 ?ゃ ads /ja/ or /a/: き /ki/ -> きゃ /kya/
 ?ゅ ads /yu/ or /u/: き /ki/ -> きゅ /kyu/

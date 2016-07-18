@@ -19,6 +19,7 @@ created: 2016-06-28T11:21
 どういたしまして - You are welcome.
 すみません - Excuse me.
 ごめんなさい - Sorry.
+どこ - Where.
 
 ## Shopping
 

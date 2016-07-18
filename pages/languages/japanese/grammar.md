@@ -16,3 +16,18 @@ Things that make Japanese simpler to learn:
 ## Sentence
 
 Word order: Subject - Object - Verb.
+
+## Am / is / are
+
+です is analogous to the English am, is and are.
+
+## Number in Japanese
+
+There is no grammatical number in Japanese. 犬 (いぬ) can mean either a dog or dogs.
+
+## Particles
+
+Indicates the purpose of the word.
+
+の - indicates possession (of).
+から - indicates origin (from).
