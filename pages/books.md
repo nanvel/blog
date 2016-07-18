@@ -101,3 +101,4 @@ modified: 2016-07-17T22:47
 - Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
 - Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez (5%)
 - The Disease-Free Revolution by Ron Garner (7%)
+- The Founder's Mentality by Chris Zook and James Allen (1%)
