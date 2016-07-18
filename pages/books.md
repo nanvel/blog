@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-07-16T15:04
+modified: 2016-07-17T22:47
 
 # Books
 
@@ -90,7 +90,6 @@ modified: 2016-07-16T15:04
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
-- The Disease-Free Revolution by Ron Garner
 
 ## Archive
 
@@ -100,3 +99,4 @@ modified: 2016-07-16T15:04
 - Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Richard Murphy, Betsy Beyer, Chris Jones (14%)
 - Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
 - Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez (5%)
+- The Disease-Free Revolution by Ron Garner (7%)
