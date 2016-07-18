@@ -90,6 +90,7 @@ modified: 2016-07-17T22:47
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
+- Japanese: Japanese in 10 days! by Patrice Lowe
 
 ## Archive
 
