@@ -19,6 +19,7 @@ modified: 2016-06-06T07:30
 ### API
 
 - [REST CookBook](http://restcookbook.com/)
+- [Swagger](http://swagger.io) and [bravado](http://bravado.readthedocs.io)
 
 ### Databases
 
