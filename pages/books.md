@@ -84,6 +84,7 @@ modified: 2016-07-17T22:47
 - That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Can Rise Again by John Kotter and Holger Rathgeber
 - Innovation Thinking Methods by Osama A. Hashmi
 - The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
+- Thailand: 99 Travel Tips by The Blether
 
 ## In progress
 
