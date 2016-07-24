@@ -88,6 +88,7 @@ modified: 2016-06-06T07:30
 - [Анапанасати: Развитие осознанности с дыханием](http://ru.dipabhavan.org/uploads/6/4/2/7/6427883/anapanasati_web.pdf) by Буддадаса Биккху
 - [daYoga - онлайн школа шойги](http://dayoga.ru) or [YouTube channel](https://www.youtube.com/user/dayogaru)
 - [Pomodoro technique](http://pomodorotechnique.com/)
+- [A day in the life of a digital nomad](http://digitalnomadacademy.com)
 
 ## Foreign languages
 
