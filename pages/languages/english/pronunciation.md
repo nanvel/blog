@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:31
-modified: 2016-06-20T23:35
+modified: 2016-07-24T21:09
 
 # Pronunciation
 
@@ -30,7 +30,7 @@ Pronounce - /prəˈnɑʊns/
 Pronounciation - /prəˌnənsēˈāSHən/
 Tongue - /tʌŋ/
 Suburban - /səˈbɜː.bən/
-Squirrel - /ˈskwɪr.əl/
+Squirrel - /ˈskwɪrəl/
 Closer - /kləʊsə/
 Merely - /ˈmɪə.li/
 Woman - /-wʊm.ən/
@@ -47,12 +47,20 @@ Failure - /ˈfeɪljər/
 Noticeable - /ˈnoʊ·t̬ɪ·sə·bəl/
 Audience - /ˈɔːdiəns/
 Ancient - /ˈeɪn·ʃənt/
-Boght - /bɔːt/
+Bought - /bɔːt/
 Yacht - /jɒt/
 Opaque - /əʊˈpeɪk/
 Persuade - /pəˈsweɪd/
 Receipt - /rɪˈsiːt/
 Recipe - /ˈresəpi/
+Occasionally - /əˈkeɪʒnəli/
+Hotel - /həʊˈtel/
+Won't - /woʊnt/
+Mice - /maɪs/
+Louse - /laʊs/
+Wrong - /rɔːŋ/
+Vehicle -  /ˈviːəkl/
+via - /ˈvaɪə/, /ˈviːə/
 
 Links:
 

@@ -15,5 +15,7 @@ created: 2016-07-16T17:39
 9 - 九 (キュウ, ここのつ)
 10 - 十 (ジュウ, とう)
 
+10 000 - 万 (マン)
+
 Links:
 [Numbers in Japanese on Omniglot](http://www.omniglot.com/language/numbers/japanese.htm)

@@ -31,3 +31,5 @@ Indicates the purpose of the word.
 
 の - indicates possession (of).
 から - indicates origin (from).
+ある (あります) - to exist (to have).
+か - a question.

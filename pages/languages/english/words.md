@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:20
-modified: 2016-06-20T23:35
+modified: 2016-07-24T21:09
 
 # Words to learn
 
@@ -77,3 +77,40 @@ Stubborn - впертий
 Vain - марнославний
 Dumbfounded - приголомшиний
 Juvenile - юнак
+Mugger - грабіжник
+Burglar - зломщик, грабіжник
+Smuggling - контрабанда
+Perception - сприйняття
+To meddle - втручатися
+Eternal - вічний
+Therefore - тому
+Bizarre - ексцентричний, дивний
+Unconscious - несвідомий
+Conscientious - доброслвісний, сумлінний
+To spill - розлити
+To insult - ображати
+Sensible - розсудливий
+Legibility - розбірливість
+Self-esteem - самооцінка
+Coward - боягуз
+Assertive - цілеспрямований, впертий
+Superficial - поверхневий
+Hot headed, hot tempered - запальний
+To pour - наливати
+Hostile - ворожий
+Hospitable - гостинний
+Sympathetic - співчитливий
+Forehead - лоб
+Token fee - символічна плата
+Pilgrim - паломник
+Tenant - орендар
+To deny - заперечувати
+Residential area - житловий (спальний) район
+A tycoon - магнат, олігарх
+To be accustomed to ... - звикнув до
+A bun - булочка
+A pie - пиріг
+A love affair - роман
+A full consent - повна згода
+Deterrent - запобіжний засіб (deterrent to crime)
+A bullion - злиток

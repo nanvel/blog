@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:18
-modified: 2016-06-20T23:35
+modified: 2016-07-24T21:09
 
 # Grammar
 
@@ -67,6 +67,19 @@ I may happen
 
 It migh not happen
 It may not happen
+
+## No "will" after
+
+After:
+
+- after
+- before
+- if (in case)
+- when
+- as soon as
+- as long as
+- until
+- unless (if not)
 
 ## Present (simple, continuous, perfect simple and perfect continuous)
 
@@ -216,3 +229,51 @@ He is said [believed, thought] to be rich.
 ... to have had 5 wives.
 ... to rob banks.
 ... to have robbed 5 banks.
+
+## Price
+
+How much is it?
+How much does it cost?
+
+## The very, that, do
+
+You are the very person I need to talk to.
+It's not that expensive.
+I do know that.
+Gone are the days ... (The days are gone ...)
+
+## Neither/either
+
+I drink neither tea nor coffee.
+I don't drink either tea or coffee.
+
+## Until vs till
+
+till uses for time.
+
+## Loose vs lose
+
+Loose is an adjective, the opposite of tight or contained.
+
+My shoes are loose.
+
+Lose (lost) is a verb that means to suffer the loss of, to miss.
+
+Don't lose your keys!
+
+## Been to
+
+I newer been to [country].
+
+## To make do
+
+I run out of coffee, I have to make do (обходитися) with tea.
+
+## Agree and refuse
+
+Not agree == refuse.
+
+## Casualties vs victims
+
+Casualties - natural disaster.
+Victims - violence.

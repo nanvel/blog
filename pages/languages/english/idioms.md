@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:13
-modified: 2016-06-20T23:35
+modified: 2016-07-24T21:09
 
 # Idioms
 
@@ -84,7 +84,7 @@ She has a heart of gold - very kind, generous
 He's such a pain in the neck - annoying, difficult
 She's as hard as nails - distant, unfriendly
 Sees the world or sees a situation "through rose-tinted glasses" - optimistic
-With flying colours - very very well
+With flying colors - very very well
 Tickled pink - very very happy
 Paint the town red - to have a good time
 Jet lag - extreme tiredness and other physical effects felt by a person after a long flight across several time zones
@@ -98,3 +98,16 @@ So far - до тепер
 At your fingertips - під рукою
 On the spur of the moment - експромтом
 Sweet tooth - ласун
+To cope with - впоратися з чимось
+Take for granted - вважати само собою зрозумілим
+I can't stand - терпіти не можу ...
+I can't bear - не можу винести ...
+A lazy bones - ледар
+Get away with (doing) something - сходити з рук
+To tend to - бути схильним
+Trick someone into (doing) something - to fool someone; to deceive someone; to cheat someone
+To make do - обходитися
+To see someone out - to accompany or escort someone out of something or some place
+To have something to do with - бути пов'язаним з
+I couldn't care less about that - зовсім не непокоїть
+Don't let me down - не підведи!

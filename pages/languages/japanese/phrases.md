@@ -20,6 +20,7 @@ created: 2016-06-28T11:21
 すみません - Excuse me.
 ごめんなさい - Sorry.
 どこ - Where.
+やがて - Soon.
 
 ## Shopping
 

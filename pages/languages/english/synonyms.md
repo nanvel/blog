@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:56
-modified: 2016-06-20T23:35
+modified: 2016-07-24T21:09
 
 # Synonyms
 
@@ -239,3 +239,27 @@ well-off
 
 to gain popularity
 to lose popularity
+
+## Intention
+
+I intend to ...
+I am going to ...
+I would like to ...
+
+## Remote
+
+Remote
+Far away
+Distant
+
+## Me too
+
+I like something.
+Me too.
+So do I.
+I don't.
+
+I don't like something.
+Me neither.
+Neither do I.
+I do.
