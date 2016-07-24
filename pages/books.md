@@ -84,12 +84,14 @@ modified: 2016-07-17T22:47
 - That's Not How We Do It Here!: A Story about How Organizations Rise and Fall and Can Rise Again by John Kotter and Holger Rathgeber
 - Innovation Thinking Methods by Osama A. Hashmi
 - The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
+- Thailand: 99 Travel Tips by The Blether
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
+- Japanese: Japanese in 10 days! by Patrice Lowe
 
 ## Archive
 
@@ -100,3 +102,4 @@ modified: 2016-07-17T22:47
 - Monetizing Innovation by Madhavan Ramanujam and Georg Tacke (49%)
 - Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley by Antonio Garcia Martinez (5%)
 - The Disease-Free Revolution by Ron Garner (7%)
+- The Founder's Mentality by Chris Zook and James Allen (1%)
