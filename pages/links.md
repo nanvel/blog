@@ -89,6 +89,7 @@ modified: 2016-06-06T07:30
 - [daYoga - онлайн школа шойги](http://dayoga.ru) or [YouTube channel](https://www.youtube.com/user/dayogaru)
 - [Pomodoro technique](http://pomodorotechnique.com/)
 - [A day in the life of a digital nomad](http://digitalnomadacademy.com)
+- [The surprising benefits of a mid-career break](http://www.bbc.com/capital/story/20160325-the-surprising-benefits-of-a-mid-career-break) on bbc
 
 ## Foreign languages
 
