@@ -85,6 +85,7 @@ modified: 2016-07-17T22:47
 - Innovation Thinking Methods by Osama A. Hashmi
 - The Startup Checklist: 25 Steps to a Scalable, High-Growth Business by David S. Rose
 - Thailand: 99 Travel Tips by The Blether
+- Japan: the ultimate Japan travel guide by a traveler for a traveler
 
 ## In progress
 
