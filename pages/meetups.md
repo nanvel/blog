@@ -1,5 +1,6 @@
 labels: Pages
 created: 2015-10-05
+modified: 2016-08-20
 
 # Meetups
 
@@ -21,3 +22,5 @@ created: 2015-10-05
 ## 2016
 
 - Visit New York (February 8-19, 2016)
+- Japan (August 2-17, 2016)
+- Summer [Comiket](http://www.comiket.co.jp/) 90 (August 12-14, 2016)
