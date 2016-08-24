@@ -263,3 +263,15 @@ I don't like something.
 Me neither.
 Neither do I.
 I do.
+
+## Very
+
+Very beautiful: gorgeous, stunning, ravishing.
+Very angry: furious, irate, incensed.
+Very loud: deafening, earsplitting, thunderous.
+Very tired: exhausted, fatigued, weary.
+Very happy: ecstatic, elated, euphoric.
+Very sad: despondent, depressed, crestfallen.
+Very confused: perplexed, confounded, baffled.
+Very big: massive, colossal, gigantic.
+Very small: tiny, minuscule, teeny.

@@ -75,6 +75,8 @@ This index has no limitation on size.
 
 ## Hash
 
+> A digital fingerprint of some binary input.
+
 Small change in hash function argument leads to drastically change of hash function output. Length of hash function output is fixed and don't depends on input.
 
 ```python

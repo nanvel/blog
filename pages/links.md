@@ -70,6 +70,10 @@ modified: 2016-06-06T07:30
 - [Khoi Vinh's blog](https://www.subtraction.com/)
 - [Design at Google](https://design.google.com/)
 
+### UI
+
+- [58 signs of a good user interface](https://webuilddesign.com/58-signs-of-a-good-interface/)
+
 ## Business
 
 - [Rework](http://www.amazon.com/gp/product/B002MUAJ2A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002MUAJ2A&linkCode=as2&tag=httpnanvelnam-20) by Jason Fried
@@ -118,6 +122,7 @@ support your language learning](http://lang-8.com)
 - [The Elements of Style](http://www.amazon.com/gp/product/B00AMXXNBI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AMXXNBI&linkCode=as2&tag=httpnanvelnam-20&linkId=7RM3PBKH477ZNHSO) by William Strunk Jr.
 - [The Copywriting Checklist](https://mixergy.com/Master-Class/Copywriting/TheCopywritingChecklist.pdf) by Dane Maxwell
 - [What is AsciiDoc? Why do we need it?](http://asciidoctor.org/docs/what-is-asciidoc/)
+- [Tips to Becoming a Better Writer — from a Terrible Writer](https://medium.com/the-mission/tips-to-becoming-a-better-writer-from-a-terrible-writer-623c3973c30b) by Tom Ayling
 
 ## Other
 
