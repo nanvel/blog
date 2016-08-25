@@ -134,6 +134,7 @@ support your language learning](http://lang-8.com)
 ## Places
 
 - [Betaplace coworking - простір, відкритий для співпраці](http://betaplace.com.ua/)
+- [KoHub - Tropical Coworking Community](http://kohub.org/)
 
 ## Health
 
