@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-07-17T22:47
+modified: 2016-08-28T10:48
 
 # Books
 
@@ -91,8 +91,7 @@ modified: 2016-07-17T22:47
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
-- Mastering Bitcoin: Unlocking Digital Cryptocurrencies by Andreas M. Antonopoulos
-- Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
+- The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
 
 ## Archive
 
@@ -106,3 +105,5 @@ modified: 2016-07-17T22:47
 - The Founder's Mentality by Chris Zook and James Allen (1%)
 - The Most Basic Japanese - All You Need to Know to Get By by James McGlasson
 - Japanese: Japanese in 10 days! by Patrice Lowe
+- Mastering Bitcoin: Unlocking Digital Cryptocurrencies by Andreas M. Antonopoulos
+- Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
