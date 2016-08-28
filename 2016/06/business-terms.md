@@ -1,13 +1,19 @@
-labels: Draft
+labels: Blog
         Business
 created: 2016-06-12T15:59
-modified: 2016-06-20T23:35
+modified: 2016-08-28T10:45
 place: Kyiv, Ukraine
 comments: true
 
 # Business terms
 
 [TOC]
+
+## An enterpreneur
+
+> An individual who can walk into chaos and create order, someone who can invent, connect, create and make thing happen.
+>
+> [Linchpin: Are You Indispensable?](https://www.amazon.com/Linchpin-Are-Indispensable-Seth-Godin/dp/1591844096) by Seth Godin
 
 ## CEO
 
