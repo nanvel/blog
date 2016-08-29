@@ -21,7 +21,6 @@ Elasticsearch and haystack used for search feature.
 
 The project development is stopped.
 
-New weblog location and storage:
+New weblog storage:
 
-- [http://nanvel.com](http://nanvel.com)
 - [https://github.com/nanvel/blog](https://github.com/nanvel/blog)
