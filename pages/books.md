@@ -87,11 +87,11 @@ modified: 2016-08-28T10:48
 - Thailand: 99 Travel Tips by The Blether
 - Japan: the ultimate Japan travel guide by a traveler for a traveler
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
+- [+] The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
-- The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
 
 ## Archive
 
