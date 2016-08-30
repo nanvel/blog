@@ -9,6 +9,12 @@ comments: true
 
 [TOC]
 
+## Amara's Law
+
+> We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.
+>
+> Roy Amara
+
 ## An enterpreneur
 
 > An individual who can walk into chaos and create order, someone who can invent, connect, create and make thing happen.
@@ -92,12 +98,24 @@ According to [That's Not How We Do it Here!](https://www.amazon.com/Thats-Not-He
 > A startup is a company designed to grow fast. Being newly founded does not in itself make a company a startup. Nor is it necessary for a startup to work on technology, or take venture funding, or have some sort of "exit". The only essential thing is growth. Everything else we associate with startups follows from growth.
 >
 > Paul Graham, founder of The Y Combinator
+---
+> A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty.
+>
+> Eric Ries
 
 There are three characteristics that together make a startup business model truly scalable (The startup checklist by David S. Rose):
 
 - You have to be able to start small
 - Your marginal costs must drop over time so that each additional dollar of revenue costs less than the previous dollar
 - Your scalability needs to be built into your business model, rather than relying on any special exogenous factors
+
+Startup comparatively to business (according to Dan Norris):
+
+- High impact potential
+- High levels of innovation
+- High levels of uncertainty
+
+## The Turkey problem
 
 ## Traction channels
 
