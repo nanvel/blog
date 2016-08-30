@@ -24,7 +24,7 @@ Statistics:
 
 - Launch date - autumn 2011
 - Registered users - 10
-- Active users - 1 (I am)
+- Active users - 1 (Me)
 - Words added by me: 224
 - Studied words - 71
 - Server time cost: ~40$
