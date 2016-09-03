@@ -2,6 +2,7 @@ labels: Draft
         Business
 created: 2016-08-30T10:20
 place: Phuket, Thailand
+comments: true
 
 # Business
 
@@ -47,8 +48,10 @@ Questions:
 - Is it much me?
 - Is it scalable?
 - Does it has potential to make a significant impact in its field?
-- Is there any original/effective ideas to bring leads and convert them to customers?
+- Is there any original/effective ideas (viral?) to bring leads and convert them to customers?
 - How many time it would take to lunch?
+- Do you have enough knowledge/talent/passion in the field?
+- Related phrases on [Google Trends](https://www.google.com/trends/)
 
 #### Take a look at the Long Tail
 
@@ -59,6 +62,9 @@ The [Long Tail](http://www.longtail.com/about.html) is getting fatter, longer, a
 [#7daystartup on Twitter](https://twitter.com/search?q=%237daystartup)
 [Techcrunch](https://techcrunch.com)
 [CrunchBase](https://www.crunchbase.com)
+[Kickstarter](https://www.kickstarter.com/discover/categories/technology)
+[iTunes apps](http://www.apple.com/itunes/charts/paid-apps/)
+[Google Play Market](https://play.google.com/store/apps)
 
 ### 2. Minimum Viable Product
 

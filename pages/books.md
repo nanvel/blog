@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-08-28T10:48
+modified: 2016-09-02T21:08
 
 # Books
 
@@ -88,6 +88,7 @@ modified: 2016-08-28T10:48
 - Japan: the ultimate Japan travel guide by a traveler for a traveler
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - [+] The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
+- SEO 2016: Learn search engine optimization with smart internet marketing strategies by Adam Clarke
 
 ## In progress
 

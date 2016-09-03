@@ -115,8 +115,6 @@ Startup comparatively to business (according to Dan Norris):
 - High levels of innovation
 - High levels of uncertainty
 
-## The Turkey problem
-
 ## Traction channels
 
 According to [Traction: How Any Startup Can Achieve Explosive Customer Growth](https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer-ebook/dp/B00ZE96ZWY/) by Gabriel Weinberg and Justin Mares.
