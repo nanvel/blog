@@ -1,7 +1,7 @@
 labels: Blog
         JS
 created: 2016-05-02T11:12
-modified: 2016-05-22T18:50
+modified: 2016-09-05T21:02
 place: Kyiv, Ukraine
 comments: true
 
@@ -832,6 +832,79 @@ Linter: [ESLint](http://eslint.org/) with [babel-eslint](https://github.com/babe
 ### Semicolons
 
 ECMAScript 6 coders nowadays can get rid of nearly all semicolons and remove clutter from their source code.
+
+## ES6 -> ES5
+
+### Babel
+
+```bash
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-es2015 babel-preset-stage-0
+```
+
+`.babelrc`:
+```json
+{
+  "presets": ["es2015", "stage-0"]
+}
+```
+
+Build:
+```text
+babel -w source/ -d build -s"
+```
+
+Key `-w` - watch changes.
+Key `-s` - generate sourcemaps.
+
+### Webpack
+
+```bash
+sudo npm install webpack -g
+```
+
+`webpack.config.js` (with react plugins):
+```js
+const webpack = require('webpack');
+
+
+module.exports = {
+  entry: './client/source/app.js',
+  output: {
+    path: './client/build',
+    filename: 'app.bundle.js',
+  },
+  module: {
+    loaders: [{
+      test: /\.jsx?$/,
+      excludes: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: [
+          'es2015',
+          'stage-0',
+          'react'
+        ],
+        plugins: [
+          'react-require',
+          'transform-object-rest-spread'
+        ]
+      }
+    }]
+  },
+  devtool: 'source-map'
+}
+```
+
+Watch changes:
+```
+webpack --watch
+```
+
+Optimized for production:
+```
+webpack -p --progress
+```
 
 ## Vocabulary
 

@@ -1,7 +1,7 @@
 labels: Draft
         JS
         NodeJS
-created: 2016-08-13T15:27
+created: 2016-09-05T21:02
 place: Japan, Tokyo
 comments: true
 
@@ -9,50 +9,9 @@ comments: true
 
 [TOC]
 
-## Babel
+## Babel and Webpack
 
-### Example project structure
-
-```text
-- source/
--- index.js
--- another.js
-- build/
-- package.json
-- .babelrc
-```
-
-### Requirements
-
-```bash
-npm init
-npm install --save-dev babel-cli
-npm install --save-dev babel-preset-es2015 babel-preset-stage-0
-```
-
-### Babel configuration
-
-```json
-{
-  "presets": ["es2015", "stage-0"]
-}
-```
-
-### Transpile
-
-Add "build" target to the package.json:
-```text
-"scripts": {
-  "build": "babel -w source/ -d build -s"
-}
-```
-
-Key `-w` - watch changes.
-Key `-s` - generate sourcemaps.
-
-```bash
-npm build
-```
+See [ES6 notes / ES5 -> ES6](/2016/05/es6-notes#es6-es5).
 
 ## Links
 
