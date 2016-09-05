@@ -89,6 +89,7 @@ modified: 2016-09-02T21:08
 - My Experiments with Truth: An Autobiography of Mahatma Gandhi
 - [+] The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
 - SEO 2016: Learn search engine optimization with smart internet marketing strategies by Adam Clarke
+- Blockchain: The Comprehensive Guide to Mastering the Hidden Economy by Timothy Short
 
 ## In progress
 
