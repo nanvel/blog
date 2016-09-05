@@ -1,8 +1,9 @@
 labels: Draft
         JS
         NodeJS
-created: 2016-09-05T21:02
-place: Japan, Tokyo
+created: 2016-08-13T15:27
+modified: 2016-09-05T21:02
+place: Tokyo, Japan
 comments: true
 
 # Node.js environment notes
@@ -11,7 +12,7 @@ comments: true
 
 ## Babel and Webpack
 
-See [ES6 notes / ES5 -> ES6](/2016/05/es6-notes#es6-es5).
+See [ES6 notes / ES6 -> ES5](/2016/05/es6-notes#es6-es5).
 
 ## Links
 
