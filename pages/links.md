@@ -81,6 +81,7 @@ modified: 2016-06-06T07:30
 - [What is a Pitch deck](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 - [#7daystartup on Twitter](https://twitter.com/search?q=%237daystartup)
 - [The Art of The Start](https://www.youtube.com/watch?v=7mEQ0ono8mg) by Guy Kawasaki
+- [iglu.net - Work in Thailand](http://iglu.net)
 
 ## Life hacking
 
