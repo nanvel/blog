@@ -95,6 +95,8 @@ modified: 2016-09-11T16:59
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
+- Getting Things Done (2015 edition) by David Allen
+- Phuket 25 secrets by Antonio Araujo
 
 ## Archive
 
