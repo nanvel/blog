@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-09-02T21:08
+modified: 2016-09-20T21:30
 
 # Books
 
@@ -90,10 +90,13 @@ modified: 2016-09-02T21:08
 - [+] The End of Jobs: Money, Meaning and Freedom Without the 9-to-5 by Taylor Pearson
 - SEO 2016: Learn search engine optimization with smart internet marketing strategies by Adam Clarke
 - Blockchain: The Comprehensive Guide to Mastering the Hidden Economy by Timothy Short
+- 101 jobs you can do anywhere in the world by Sonya Duck
+- Phuket 25 secrets by Antonio Araujo
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
+- Getting Things Done (2015 edition) by David Allen
 
 ## Archive
 
