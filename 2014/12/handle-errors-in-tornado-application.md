@@ -10,12 +10,12 @@ comments: true
 >
 > Doug Hellmann, Python Exception Handling Techniques
 
-After few false steps, seems like, I found the right way to handle errors in tornado application.
+After a few false steps, seems like, I found the right way to handle errors in a tornado application.
 
 Main points:
 
-- use tornado.web.HTTPError exception as parent for ApplicationException we will use to return our application custom errors (like "user was not found" or "specified age is out of allowed boundaries")
-- override tornado.web.RequestHandler.write_error so it will return errors in json format
+- use ApplicationException(inherited from tornado.web.HTTPError) exception to return the application custom errors (like "user was not found" or "specified age is invalid")
+- override tornado.web.RequestHandler.write_error, make it return errors in json format
 
 See [my question on stackoverflow](http://stackoverflow.com/questions/26371051/better-way-to-handle-errors-in-tornado-request-handler/26392743).
 
