@@ -50,11 +50,6 @@ modified: 2016-06-06T07:30
 - [The Definitive Guide to Django: Web Development Done Right (Expert's Voice in Web Development)](http://www.amazon.com/gp/product/B004VJ46OM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004VJ46OM&linkCode=as2&tag=httpnanvelnam-20) by Adrian Holovaty
 - [Two Scoops of Django: Best Practices for Django 1.5](http://www.amazon.com/gp/product/B00CCK619K/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00CCK619K&linkCode=as2&tag=httpnanvelnam-20) by Daniel Greenfeld
 
-### Network
-
-- [Peer-to-Peer Networks](http://www2.cs.uni-paderborn.de/cs/ag-madh/WWW/Teaching/2004SS/AlgInternet/Submissions/02-P2P-Networks.pdf), University of Paderborn, Seminar: Algorithms of the Internet, Christian Schindelhauer
-- [Distributed Algorithms. Peer-to-Peer Systems](http://disi.unitn.it/~montreso/ds/handouts/10-p2p.pdf), Alberto Montresor, University of Trento, Italy
-
 ### Instruments
 
 - [Sublime Text 2](http://www.sublimetext.com/) - crossplatform code editor
