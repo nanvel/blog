@@ -84,7 +84,7 @@ print(binascii.b2a_hex(second_hash[::-1]))
 ## SHA-256
 
 This code has been written just for fun, it is slow and may produce inaccurate results.
-The idea was to transition from mathematics to a simple algorithm. There is no large numbers and complex mathematics, only bits (represented as lists of 0 and 1) and simple python.
+The idea was to transition from mathematics to an algorithm.
 
 [sha256.py gist](https://gist.github.com/nanvel/9e606cb7271126b1cb2413b7415d560d) on GitHub.
 
