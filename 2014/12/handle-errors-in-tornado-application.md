@@ -4,7 +4,7 @@ created: 2014-12-06T23:14
 place: Kyiv, Ukraine
 comments: true
 
-# Handle errors in tornado application, the right way
+# Handle errors in a tornado application, the right way
 
 > Exceptions... allow error handling to be organized cleanly in a central or high-level place within the program structure.
 >
