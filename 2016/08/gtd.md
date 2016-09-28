@@ -10,6 +10,22 @@ comments: true
 
 Plan 90 days at a time.
 
+> If an action will take less than two minutes, it should be done at the moment it's defined.
+>
+> Getting Things Done by David Allen
+
+I don't need to remember, I write it all.
+
+Small wins.
+
+Set up reminders and forget.
+
+Have something tasty for morning.
+
+Next action must be defined.
+
+Share a lists to a team members (feature).
+
 ## Goldratt's framework
 
 See [theory of constraints](https://en.wikipedia.org/wiki/Theory_of_constraints).
@@ -22,4 +38,5 @@ Questions:
 
 ## Links
 
-The End of Jobs by Taylor Pearson
+[The End of Jobs by Taylor Pearson](https://www.amazon.com/End-Jobs-Meaning-9-5-ebook/dp/B010L8SYRG)
+[Getting Things Done: The Art of Stress-free Productivity](https://www.amazon.com/Getting-Things-Done-Stress-free-Productivity-ebook/dp/B00SHL3V8M) by David Allen

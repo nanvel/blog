@@ -12,7 +12,7 @@ comments: true
 
 ## Babel and Webpack
 
-See [ES6 notes / ES6 -> ES5](/2016/05/es6-notes#es6-es5).
+See [ES6 notes / ES6(ES7) -> ES5](/2016/05/es6-notes#es6-es5).
 
 ## Links
 

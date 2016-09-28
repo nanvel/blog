@@ -79,6 +79,8 @@ This index has no limitation on size.
 
 Small change in hash function argument leads to drastically change of hash function output. Length of hash function output is fixed and don't depends on input.
 
+Employing the analogy of the human fingerprint, given a single fingerprint, we would find it impossible to identify the person who left it unless that person had been fingerprinted beforehand.
+
 ```python
 >>> import hashlib
 >>> m = hashlib.md5()
