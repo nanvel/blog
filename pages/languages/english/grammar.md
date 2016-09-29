@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:18
-modified: 2016-07-24T21:09
+modified: 2016-09-29T19:10
 
 # Grammar
 
@@ -154,6 +154,8 @@ I don't know whether they want it or not.
 I don't know whether or not they want it.
 I don't know whether they want it.
 
+Whether or not there had been a big bang singularity ....
+
 ## Man ws men
 
 men and women are plural.
@@ -277,3 +279,7 @@ Not agree == refuse.
 
 Casualties - natural disaster.
 Victims - violence.
+
+## Had had
+
+A salesman who had had to change companies.

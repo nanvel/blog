@@ -26,6 +26,18 @@ Next action must be defined.
 
 Share a lists to a team members (feature).
 
+Someday/maybe list.
+
+Weekly review (at the last work day).
+
+External brain.
+
+> Pick battles big enough to matter, small enough to win.
+>
+> Jonathan Kozol
+
+Frustration, anxiety - because of unfilled commitments.
+
 ## Goldratt's framework
 
 See [theory of constraints](https://en.wikipedia.org/wiki/Theory_of_constraints).

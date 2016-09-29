@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T22:20
-modified: 2016-07-24T21:09
+modified: 2016-09-29T19:10
 
 # Words to learn
 
@@ -114,3 +114,36 @@ A love affair - роман
 A full consent - повна згода
 Deterrent - запобіжний засіб (deterrent to crime)
 A bullion - злиток
+Prone - схильний
+Cannot subsequently be changed - згодом
+Tremble - тримтіти, shivering
+To plead - благати
+Turtleneck sweaters - светри водолазки
+Forbearance is a form of generosity - терпіння є формою щедрості
+Aggravation - посилення
+Cannot sustain your business - не може підтримувати свій бізнес
+Ubiquitous - всюдисущий
+Jaywalking - cross or walk in the street or road unlawfully or without regard for approaching traffic
+I was not chuffed - не був задоволений
+Spatial - просторова
+Jigsaw - головоломка
+The laws that the universe obeyed - коритися, підкорюється
+Anxiety - тривога
+Intrinsic - притаманний, сластивий
+This is all that I am aiming for - прагнути
+Toil - важка праця
+Savvy - здоровий глузд
+Reservoir - резервуар
+Delighted - у захваті
+Сoncise - виразний, стислий
+Robust - міцний, надійний
+Hyphen - дефіс
+Perception - сприйняття
+Cohesive - зруртований, зв'язаний
+Terse - стислий, небагатослівний
+Sprinkled - посипаний
+Easy-to-digest - легкозасвоювані
+Unobtrusive - ненав'язливий
+Intricacies - складнощі
+Admonition - засторога, умовляння
+Ham radio - радіоаматор

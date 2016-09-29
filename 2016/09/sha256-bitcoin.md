@@ -3,7 +3,7 @@ labels: Blog
         Blockchain
         Bitcoin
 created: 2016-09-27T12:47
-modified: 2016-09-27T12:47
+modified: 2016-09-28T17:13
 place: Phuket, Thailand
 comments: true
 

@@ -1,6 +1,6 @@
 labels: English
 created: 2015-10-24T23:13
-modified: 2016-07-24T21:09
+modified: 2016-09-29T19:10
 
 # Idioms
 
@@ -49,7 +49,7 @@ To set out - відправлятися у подорож
 To stop off - зупинятися (ненадовго)
 From rags to riches - з грязі в крязі
 Slip off the road - з'їхати з дороги
-To turn down - to reject
+To turn down - to reject, to decline in something
 To lose temper - втратити самовладання
 It will do for now - наразі досить
 Hadn't a clue - поняття не мав
@@ -111,3 +111,34 @@ To see someone out - to accompany or escort someone out of something or some pla
 To have something to do with - бути пов'язаним з
 I couldn't care less about that - зовсім не непокоїть
 Don't let me down - не підведи!
+We each breathed a sigh of relief when ... - зітхнути з полегшенням
+To make room - звільнити місце
+If we are to create something ... - якщо ми хочемо щось створити ...
+To spill the beans - відкрити секрет, проговоритися
+To go for - I think I will also go for a nice juice
+To nail - done, done increadibly (to nail the forecast)
+That's the whole point - у цьому вся справа
+It makes things easier - полегшало
+I haven't given it much thought - я про це ще не думав
+You'll hear from me - я вам повідомлю
+You bet! - you may be sure; certainly
+Hear me out! - вислухайте мене
+Let happen whatever would happen - хай буде що буде
+It never crossed my mind (that)... - ніколи не приходило мені на думку
+You have a point there - теж правильно, згоден з вами
+Let's get to the point - блище до справи
+So far so good - наразі все добре
+Without further ado - без зайвого галасу
+How come, (that) ...? - Як так сталось що ...
+What have I got to do? - Що ще мені залишалось робити?
+What's the use of? - навіщо?
+What makes you think (that) ...? - Чому ти так вважаєш?
+Coming along? - Йдеш зі мною?
+Are you getting the picture? - Розуміш про що йдеться?
+Can you be more specific? - Що ви маєте на увазі?
+What is this all about? - У чому справа?
+So what's the hitch? - У чому затик?
+Can you manage it? - Ти справшся?
+Take it easy! – Не хвилюйся!
+Take it or leave it – на ваш розсуд
+Tell that to the marines! – розкажи це комуст іншому
