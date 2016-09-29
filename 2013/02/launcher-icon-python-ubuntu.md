@@ -5,7 +5,7 @@ created: 2013-02-24T00:00
 place: Starobilsk, Ukraine
 comments: true
 
-# Launcher icon for python script on Ubuntu
+# Launcher icon for a python script on Ubuntu
 
 ![Python application icon on unity bar](unitybaricon.png)
 
