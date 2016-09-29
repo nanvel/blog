@@ -6,7 +6,7 @@ modified: 2015-10-22T00:00
 place: Phuket, Thailand
 comments: true
 
-# Workspace for software developer
+# Workspace for a software developer
 
 ![Workspace](workspace.png)
 
