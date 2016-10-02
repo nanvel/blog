@@ -24,6 +24,10 @@ Have something tasty for morning.
 
 Next action must be defined.
 
+> The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small, manageable tasks, and then starting on the first one.
+>
+> Mark Twain
+
 Share a lists to a team members (feature).
 
 Someday/maybe list.
