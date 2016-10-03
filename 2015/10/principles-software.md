@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2016-05-07T16:51
+modified: 2016-10-03T17:03
 place: Kyiv, Ukraine
 comments: true
 
@@ -174,6 +174,14 @@ B. Abstractions should not depend on details. Details should depend on abstracti
 ## TDD
 
 **T**est-**d**riven **d**esign (also seen test-driven development).
+
+## The next action
+
+A powerful principle from [GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) technique: Next action must be defined.
+
+> The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small, manageable tasks, and then starting on the first one.
+>
+> Mark Twain
 
 ## [The twelve-factor app](http://12factor.net/)
 
