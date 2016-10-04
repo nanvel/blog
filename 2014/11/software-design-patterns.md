@@ -1,11 +1,17 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2016-05-08T09:46
+modified: 2016-10-04T10:48
 place: Kyiv, Ukraine
 comments: true
 
 # Software design patterns
+
+Do we need them all? Maybe there are a few principles we may use instead?
+
+> As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.
+>
+> Ralph Waldo Emerson
 
 [TOC]
 
