@@ -92,11 +92,12 @@ modified: 2016-09-20T21:30
 - Blockchain: The Comprehensive Guide to Mastering the Hidden Economy by Timothy Short
 - 101 jobs you can do anywhere in the world by Sonya Duck
 - Phuket 25 secrets by Antonio Araujo
+- Getting Things Done (2015 edition) by David Allen
 
 ## In progress
 
 - Learning Python Design Patterns by Gennadiy Zlobin
-- Getting Things Done (2015 edition) by David Allen
+- The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
 
 ## Archive
 
