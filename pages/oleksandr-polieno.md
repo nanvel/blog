@@ -23,4 +23,4 @@ I am on:
 - [Facabook](https://www.facebook.com/polyenoom)
 - [G+](https://plus.google.com/u/0/+OleksandrPolyeno)
 - [GitHub](https://github.com/nanvel)
-- [LinkedIn](http://ua.linkedin.com/pub/oleksandr-polyeno/54/359/239)
+- [LinkedIn](https://ua.linkedin.com/in/oleksandr-polieno-23935954)
