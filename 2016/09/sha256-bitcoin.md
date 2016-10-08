@@ -11,7 +11,7 @@ comments: true
 
 [TOC]
 
-There is a lottery in bitcoin network that takes place every ~10 minutes. The lottery winner submits a new block to blockchain (if the majority of the network agrees with it) and awards with 25 bitcoins. The winner is someone who was first to find a nonce (a number) that beeing concatenated with some other data (including previous block hash and timestamp) results in a hash function output smaller than some value (difficulty, adjusts every ~2 weeks in order to keep the time needs to resolve the task in about 10 minutes).
+There is a lottery in bitcoin network that takes place every ~10 minutes. The lottery winner submits a new block to blockchain (if the majority of the network agrees with it) and awards with bitcoins (25 initally, halve every 210000 blocks or ~4 years). The winner is someone who was first to find a nonce (a number) that beeing concatenated with some other data (including previous block hash and timestamp) results in a hash function output smaller than some value (difficulty, adjusts every ~2 weeks in order to keep the time needs to resolve the task in about 10 minutes).
 
 What to hash:
 
