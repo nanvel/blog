@@ -2,6 +2,18 @@
 
 {% block title %}{{ c.page.title }}{% end %}
 
+{% block meta %}
+<meta property="og:title" content="{{ c.page.title }}">
+{% if c.page.meta.description %}
+<meta name="description" content="{{ c.page.meta.description }}"/>
+<meta property="og:description" content="{{ c.page.meta.description }}"/>
+{% end %}
+{% if c.page.meta.keywords %}<meta name="keywords" content="{{ c.page.meta.keywords }}"/>{% end %}
+{% if c.page.meta.image %}
+<meta property="og:image" content="{{ c.page.meta.image }}"/>
+{% end %}
+{% end %}
+
 {% block sidebar %}
 	<div class="sidebar-block">
 		<span class="block-title">Labels</span>
@@ -19,12 +31,6 @@
   	<div class="sidebar-block">
   		<span class="block-title">Modified</span>
   		<time datetime="{{ c.page.modified.strftime('%Y-%M-%d') }}">{{ c.page.modified.strftime('%B %d, %Y') }}</time>
-  	</div>
-  {% end %}
-  {% if c.page.meta.place %}
-  	<div class="sidebar-block">
-  		<span class="block-title">Place</span>
-  		{{ c.page.meta.place }}
   	</div>
   {% end %}
   <div class="sidebar-block">
