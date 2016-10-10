@@ -2,6 +2,9 @@ labels: Blog
         Cryptography
         Blockchain
         Bitcoin
+image: /2016/09/bitcoinmining.png
+description: There is a lottery in bitcoin network that takes place every ~10 minutes. The lottery winner submits a new block to blockchain and awards with bitcoins. The winner is someone who was first to find a nonce that beeing concatenated with some other data  results in a hash function output smaller than some value
+keywords: bitcoin,mining,sha256
 created: 2016-09-27T12:47
 modified: 2016-10-02T11:52
 place: Phuket, Thailand
