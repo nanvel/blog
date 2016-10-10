@@ -1,5 +1,5 @@
 labels: Blog
-        DevOps
+        Server
 created: 2013-05-01T00:00
 place: Starobilsk, Ukraine
 comemnts: true

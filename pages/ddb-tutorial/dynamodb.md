@@ -34,4 +34,4 @@ See also:
 
 ## Errata / extend
 
-If You found an error or have something to add, feel free to click "Edit on GitHub" and create a pull request, or just leave a comment.
+If You found an error or have something to add, feel free to click "Edit on GitHub" and create a pull request.

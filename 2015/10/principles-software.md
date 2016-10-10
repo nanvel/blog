@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2016-05-07T16:51
+modified: 2016-10-07T14:17
 place: Kyiv, Ukraine
 comments: true
 
@@ -14,6 +14,15 @@ comments: true
 The primary goal of the technique is to determine the root cause of a defect or problem by repeating the question "Why?" Each question forms the basis of the next question. The "5" in the name derives from an empirical observation on the number of iterations typically required to resolve the problem.
 
 The technique was formally developed by Sakichi Toyoda and was used within the Toyota Motor Corporation during the evolution of its manufacturing methodologies.
+
+The benefits of asking why (according to [GTD](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280)):
+
+- it defines success
+- it creates decision-making criteria
+- it aligns resources
+- it motivates
+- it clarifies focus
+- it expands options
 
 ## [AAR](https://en.wikipedia.org/wiki/After-action_review)
 

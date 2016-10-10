@@ -1,6 +1,6 @@
 labels: Blog
         Django
-        DevOps
+        Server
 created: 2014-05-04T00:00
 place: Starobilsk, Ukraine
 comments: true

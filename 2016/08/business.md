@@ -1,6 +1,7 @@
 labels: Draft
         Business
 created: 2016-08-30T10:20
+modified: 2016-10-08T10:32
 place: Phuket, Thailand
 comments: true
 
@@ -36,11 +37,17 @@ Business success components:
 
 ### 1. The idea
 
+Collect all ideas you have (go for quantity, not quality) into a list.
+
+> Nothing is more dangerous than an idea when it is the only one you have.
+>
+> Emile Chartier
+
+The idea must be passionate, profitable, scalable.
+
 > It makes no sense to start a business that is going to have you doing work you don't enjoy.
 >
 > The 7 Day Startup by Dan Norris
-
-Must be passionate, profitable, scalable.
 
 Questions:
 
@@ -65,6 +72,12 @@ The [Long Tail](http://www.longtail.com/about.html) is getting fatter, longer, a
 [Kickstarter](https://www.kickstarter.com/discover/categories/technology)
 [iTunes apps](http://www.apple.com/itunes/charts/paid-apps/)
 [Google Play Market](https://play.google.com/store/apps)
+
+#### Other
+
+> If you do things that are safe but feel risky, you gain a significant advantage in the marketplace.
+>
+> Seth Godin
 
 ### 2. Minimum Viable Product
 
