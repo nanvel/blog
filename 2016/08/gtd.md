@@ -35,18 +35,13 @@ Critical success factor: the weekly review.
 
 ### External brain
 
-> If your mind is empty, it is always ready for anything;
-> it is open for everything.
+> Your mind is for having ideas, not for holding them.
 >
-> Shunryu Suzuki
+> Getting Things Done by David Allen
 
 External brain - tools that can do routine categorization and remembering for us.
 
 #### Information
-
-> Your mind is for having ideas, not for holding them.
->
-> Getting Things Done by David Allen
 
 Thoughts, ideas, links, etc. may be useful in future.
 
