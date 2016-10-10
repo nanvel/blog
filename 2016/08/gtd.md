@@ -139,7 +139,7 @@ Small wins can keep you motivated.
 
 ### GTD
 
-[GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) (**G**etting **T**hings **D**one) is a time-management method, described in a book of the same title[1] by productivity consultant David Allen.
+[GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) (**G**etting **T**hings **D**one) is a time-management method, described in a book of the same title by productivity consultant David Allen.
 
 GTD essential: recognizes anything that has your attention (concerns, worries, problems, issues, tensions) and translates them into achievable outcomes (projects), to be executed with concrete next actions.
 
