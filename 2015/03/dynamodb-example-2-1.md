@@ -21,7 +21,7 @@ A few points to understand about DynamoDB primary keys:
 - RANGE field index stores on a single server (selected by HASH key)
 
 These points will help us to find out which key schema will work best for us.
-For now, it should be clear that table items may be distributed across a great number of servers and to count them would be a time and resources consuming task. So DynamoDB haven't items count feature (like ```SELECT count(*) FROM page_views WHERE page_id = '{page_id}';```; actually, we can see items count in dynamodb table console, but it updates only once per day).
+For now, it should be clear that table items may be distributed across a great number of servers and to count them would be a time and resources consuming task. So DynamoDB haven't items count feature (like ```SELECT count(*) FROM page_views WHERE page_id = '{page_id}'```; actually, we can see items count in dynamodb table console, but it updates only once per day).
 
 With current ```page_views``` table implementation, the only way to count particular page views count is [scan](http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) all items:
 ```python
