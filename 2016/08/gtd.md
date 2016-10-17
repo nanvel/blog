@@ -1,6 +1,6 @@
 labels: Blog
   		GTD
-image: urgency.png
+image: /2016/08/urgency.png
 description: I put here some notes I made after reading Getting Things Done book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted
 keywords: getting things done,gtd,external brain,project management
 created: 2016-08-29T21:23
