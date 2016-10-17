@@ -2,26 +2,26 @@ labels: Blog
         DynamoDB
         Databases
 created: 2015-03-14T21:04
+modified: 2016-10-11T07:52
 place: Phuket, Thailand
 comments: true
 
 # DynamoDB in examples, Example 2.1: Key schema and counters
 
-DynamoDB table may have two variants of [key schema](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html#DataModel.PrimaryKey):
+There are two variants of [DynamoDB table primary keys](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html#DataModel.PrimaryKey):
 
 - HASH key
 - HASH key + RANGE key
 
-The main points You need to understand:
+A few points to understand about DynamoDB primary keys:
 
 - HASH key generates from content inside HASH field (hash field may contains string, number, binary data, etc.) using [hash function](http://en.wikipedia.org/wiki/Hash_function)
 - depends on hash key DynamoDB selects server to store the item. It allows to scale horizontally with easily (see [hash ring](http://en.wikipedia.org/wiki/Consistent_hashing))
 - HASH field is unsorted and RANGE - sorted
-- RANGE field index stores on single server (selects depends on HASH key)
+- RANGE field index stores on a single server (selected by HASH key)
 
-These points will help us to find out which key schema will work for us best.
-For now, it should be clear that table items stores on great amount of servers and to count them is a difficult task.
-So DynamoDB haven't items count feature (like ```SELECT count(*) FROM page_views WHERE page_id = '{page_id}';```), and developers have to implement it themselves (actually, we can see items count in dynamodb table console, but it updates only once per day).
+These points will help us to find out which key schema will work best for us.
+For now, it should be clear that table items may be distributed across a great number of servers and to count them would be a time and resources consuming task. So DynamoDB haven't items count feature (like ```SELECT count(*) FROM page_views WHERE page_id = '{page_id}'```; actually, we can see items count in dynamodb table console, but it updates only once per day).
 
 With current ```page_views``` table implementation, the only way to count particular page views count is [scan](http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) all items:
 ```python
@@ -78,9 +78,9 @@ if __name__ == '__main__':
 
 **DON'T DO LIKE THIS! ^**
 
-If we will have index on page_id, it may be much more efficient (and also we can use FilterExpression), but still not good.
+If we will have an index on `page_id`, it may be much more efficient (and also we can use `FilterExpression`), but still not good enough.
 
-If You need to know views count only once per year, it may be best solution. But if you need these numbers be uptodate, best way is to use counters.
+As for counts, if you need to know views count only once per year, it may be the best solution. But if you need these numbers to be uptodate, the best way is to implement counters.
 
 ```python
 from uuid import uuid4
@@ -202,4 +202,4 @@ if __name__ == '__main__':
     # 34
 ```
 
-Be careful when selecting place for counters: in my example, if single page will have a lot of views same time, we may have throttled writes problem.
+Be careful selecting a place for counters: in my example, if a single page will have a lot of views same time, we may face a throttled writes issue.
