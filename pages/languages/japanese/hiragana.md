@@ -69,15 +69,29 @@ t -> d: た /ta/ -> だ /da/ (except ぢ /dzi/, づ /zu/)
 h -> b: は /ha/ -> ば /ba/
 u -> vu: う /u/ -> ゔ /vu/
 
+This mark changes the pronounciations of all the kana in the series beginning ka, sa, ta, and ha to vibrating sounds: ga, za, da, and ba.
+
+![Vibrating sound](images/vibratingsound.png)
+
 Use handakuten for:
 
 h -> p: は /ha/ -> ぱ /pa/
+
+This mark changes the pronounciations of ha, hi, fu, he, and ho to "popping" sounds: pa, pi, pu, pe, and po.
 
 Docuten and handakuten are similar to diacritics (also known as "accents") which uses with Latin letters.
 
 ?ゃ ads /ja/ or /a/: き /ki/ -> きゃ /kya/
 ?ゅ ads /yu/ or /u/: き /ki/ -> きゅ /kyu/
 ?ょ ads /yo/ or /o/: き /ki/ -> きょ /kyo/
+
+These kana written small turn ki, shi, chi, ni, hi, mi, ri into kya, sha, cha, nya, hya, mya, rya, kyu, shu, chu, nyu, hyu, myu, ryu and kyo, sho, cho.
+
+![Popping sound](images/poppingsound.png)
+
+The kana u is used to double the O and U vowel sounds of other kana: ko -> koo, ku -> kuu.
+
+Certain consonants are doubled by a smaller, silent tsu.
 
 ## Links
 
