@@ -43,7 +43,7 @@ modified: 2016-10-30T21:29
 
 ### iOS
 
-[Let's Build That App](http://letsbuildthatapp.com/) ([YouTube channel](https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA))
+- [Let's Build That App](http://letsbuildthatapp.com/) ([YouTube channel](https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA))
 
 ### CSS
 
