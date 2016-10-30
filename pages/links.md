@@ -41,6 +41,10 @@ modified: 2016-06-06T07:30
 - [Node.js resources](https://github.com/sindresorhus/awesome-nodejs)
 - [Redux](http://redux.js.org)
 
+### iOS
+
+[Let's Build That App](http://letsbuildthatapp.com/), ([YouTube channel](https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA))
+
 ### CSS
 
 - [Pure: a set of small, responsive CSS modules](http://purecss.io/)
