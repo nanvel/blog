@@ -79,6 +79,8 @@ h -> p: は /ha/ -> ぱ /pa/
 
 This mark changes the pronounciations of ha, hi, fu, he, and ho to "popping" sounds: pa, pi, pu, pe, and po.
 
+![Popping sound](images/poppingsound.png)
+
 Docuten and handakuten are similar to diacritics (also known as "accents") which uses with Latin letters.
 
 ?ゃ ads /ja/ or /a/: き /ki/ -> きゃ /kya/
@@ -86,8 +88,6 @@ Docuten and handakuten are similar to diacritics (also known as "accents") which
 ?ょ ads /yo/ or /o/: き /ki/ -> きょ /kyo/
 
 These kana written small turn ki, shi, chi, ni, hi, mi, ri into kya, sha, cha, nya, hya, mya, rya, kyu, shu, chu, nyu, hyu, myu, ryu and kyo, sho, cho.
-
-![Popping sound](images/poppingsound.png)
 
 The kana u is used to double the O and U vowel sounds of other kana: ko -> koo, ku -> kuu.
 

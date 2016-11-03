@@ -3,7 +3,7 @@ labels: Blog
         Mobile
         iOS
 created: 2015-12-27T09:55
-modified: 2016-01-09T20:54
+modified: 2016-10-22T10:24
 place: Kyiv, Ukraine
 comments: true
 
@@ -282,9 +282,14 @@ Function is a first-class type.
   1> func mySum(arg1: Int, arg2: Int) -> Int {
   2.   return arg1 + arg2
   3. }
-  4> mySum(1, arg2: 2)
+  4> mySum(arg1: 1, arg2: 2)
 $R1: Int = 3
 ```
+
+!!! attention "Swift 3"
+    All labels are required.
+
+    You can't write anymore: ```mySum(1, arg2: 2)```
 
 #### Function usage
 
@@ -296,7 +301,7 @@ Function parameters are constants by default. But it is possible to make them va
   4. }
   5> var i = "Word"
 i: String = "Word"
-  6> testVarArg(i)
+  6> testVarArg(s: i)
 $R0: String = "Word test"
   7> i
 $R1: String = "Word"
@@ -342,7 +347,6 @@ Default parameters:
 
 #### Internal and external parameter names
 
-```
 External parameter names:
 ```bash
   1> func testParams(externalParam localParam: Int) {
@@ -1119,6 +1123,28 @@ Commonly used special characters:
 $R0: String = "$"
   2> "\u{1f496}"
 $R1: String = "💖"
+```
+
+#### Methods
+
+```bash
+  1> import Foundation
+  2> "  Hello  ".trimmingCharacters(in: .whitespacesAndNewlines) 
+$R0: String = "Hello"
+  3> "Taylor".contains("ayl")
+$R1: Bool = true
+  4> "1,2,3,4,5".components(separatedBy: ",")
+$R2: [String] = 5 values {
+  [0] = "1"
+  [1] = "2"
+  [2] = "3"
+  [3] = "4"
+  [4] = "5"
+}
+  5> "Hello, world".replacingOccurrences(of: "Hello", with: "Goodbye")
+$R3: String = "Goodbye, world"
+  6> "Hello, world".capitalized  // lowercased(), uppercased()
+$R4: String = "Hello, World"
 ```
 
 ### Boolean
@@ -2021,6 +2047,53 @@ x: Int = 0
 $R0: Int = 10
 ```
 
+## Patterns
+
+### Singleton
+
+```swift
+final class Shared {
+     static let shared = Shared()
+
+     var intValue: Int = 10
+}
+
+
+class ViewControllerA {
+  
+  var state = Shared.shared
+
+}
+
+
+class ViewControllerB {
+  
+  var state = Shared.shared
+
+}
+
+
+var viewControllerA = ViewControllerA()
+var viewControllerB = ViewControllerB()
+
+
+viewControllerA.state.intValue = 100
+print(viewControllerA.state.intValue)
+print(viewControllerB.state.intValue)
+```
+
+## Style guide
+
+### Case
+
+Classes, structs, and enums use UpperCamelCase (`MyStruct`, `WeatherType.Cloudy`), properties and parameter names use lowerCamelCase (`emailAddress`, `requestString`).
+
+Use lowerCamelCase in enum cases: `NSTextAlignment.left`.
+
+### Verbs or nouns
+
+When the operation is naturally described by a verb, use the verb’s imperative for the mutating method and apply the "ed" or "ing" suffix to name its nonmutating counterpart. Prefer to name the nonmutating variant using the verb’s past participle: `myArray.reversed()`.
+
 ## Vocabulary
 
 ### Type-safe language
@@ -2118,3 +2191,4 @@ Hello World!
 - [The Swift Programming Language](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
 - [iOS 8 App Development Essentials - Second Edition: Learn to Develop iOS 8 Apps using Xcode and Swift 1.2](http://www.amazon.com/iOS-App-Development-Essentials-Edition-ebook/dp/B00R1QW0S6)
 - [Swift home page](https://swift.org)
+- [What's new in Swift 3.0](https://www.hackingwithswift.com/swift3)

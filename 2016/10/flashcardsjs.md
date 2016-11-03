@@ -1,8 +1,9 @@
 labels: Blog
-		Algorithms
-		Projects
+        Algorithms
+        Projects
 created: 2016-10-11T08:31
 modified: 2016-10-17T13:17
+image: 2016/10/flashcardsjs.png
 place: Phuket, Thailand
 comments: true
 
