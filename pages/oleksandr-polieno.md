@@ -21,6 +21,7 @@ Why do I need a blog:
 I am on:
 
 - [Facabook](https://www.facebook.com/polyenoom)
+- [Instagram](https://www.instagram.com/polyenoom/)
 - [G+](https://plus.google.com/u/0/+OleksandrPolyeno)
 - [GitHub](https://github.com/nanvel)
 - [LinkedIn](https://ua.linkedin.com/in/oleksandr-polieno-23935954)
