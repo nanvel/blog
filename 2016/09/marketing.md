@@ -128,6 +128,10 @@ Register your business on Google+: [Google - My Business](https://www.google.com
 
 Learn who your customers are.
 
+## iOS app marketing
+
+See [iOS дайджест #12: Публікація в App Store та маркетинг](https://dou.ua/lenta/digests/ios-digest-12/).
+
 ## Hacking
 
 Be a growth hacker!
