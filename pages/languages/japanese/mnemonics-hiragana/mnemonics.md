@@ -279,7 +279,7 @@ tsunami
 
 ![h tu](htu.png)
 
-![h tu5](htu5.png)
+![h tu5](htsu5.png)
 
 Tsu-ku-e.
 
