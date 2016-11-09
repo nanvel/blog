@@ -1,7 +1,7 @@
 labels: Japanese
-created: 2016-10-18T09:29
+created: 2016-11-06T21:42
 
-# Katakana mnemonics
+# Katakana tips
 
 [TOC]
 

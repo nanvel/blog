@@ -48,6 +48,22 @@ Colors elicit emotions.
 Contrast ration: >4.
 
 iOS font: San Francisco.
+System fonts:
+```
+font-family: -apple-system
+font: -apple-system-body
+font: -apple-system-headline
+font: -apple-system-subheadline
+font: -apple-system-caption1
+font: -apple-system-caption2
+font: -apple-system-footnote
+font: -apple-system-short-body
+font: -apple-system-short-headline
+font: -apple-system-short-subheadline
+font: -apple-system-short-caption1
+font: -apple-system-short-footnote
+font: -apple-system-tall-body
+```
 
 `UIFont.systemFont(ofSize: 14)`
 
@@ -70,6 +86,26 @@ Remove story boards: see [How to remove storyboards from your project](https://w
 ## Views
 
 Subclasses of UIView: UILabel, UIImageView, UIButton, UITextField, UIWindow.
+
+## Data persistance
+
+[iOS From Scratch With Swift: Data Persistence and Sandboxing on iOS](https://code.tutsplus.com/tutorials/ios-from-scratch-with-swift-data-persistence-and-sandboxing-on-ios--cms-25505)
+
+App home directory:
+
+- the application bundle
+- Documents (user data)
+- Library (application data)
+- Library/Caches (isn't backed up)
+- tmp (should only be used for temporarily storing files, the operating system is free to empty this directory at any time, isn't included in backups)
+
+Data persistence options:
+
+- defaults system
+- property list
+- SQLite
+- Core Data
+- iCloud Storage
 
 ## Links
 

@@ -14,21 +14,31 @@ Cyrilic tip.
 
 あし - leg.
 
+Like [ah] in English.
+
 ## /i/ - い
 
 いす - chair.
+
+Like [ee] in English.
 
 ## /u/ - う
 
 うし - cow.
 
+Like [uh] in English.
+
 ## /e/ - え
 
 えんぴつ - pencil.
 
+Like [eh] in English.
+
 ## /o/ - お
 
 おりがみ - origami.
+
+Like [oh] in English.
 
 ## /ka/ - か
 
@@ -78,11 +88,15 @@ pronounced as /shi/
 
 たいこ - drum.
 
+だ - [d] is pronounced more strongly than in English, because otherwise it sounds similar to [r].
+
 ## /ti/ (/chi/) - ち
 
 Pronounced as /chi/
 
 ちず - map.
+
+ぢ - [d] is pronounced more strongly than in English, because otherwise it sounds similar to [r].
 
 ## /tu/ (/tsu/) - つ
 
@@ -92,15 +106,21 @@ A small tsu っ, called a sokuon, indicates that the following consonant is gemi
 
 つくえ - desk.
 
+づ - [d] is pronounced more strongly than in English, because otherwise it sounds similar to [r].
+
 ## /te/ - て
 
 Looks like т.
 
 て - hand (palm).
 
+で - [d] is pronounced more strongly than in English, because otherwise it sounds similar to [r].
+
 ## /to/ - と
 
 とけい - clock.
+
+ど - [d] is pronounced more strongly than in English, because otherwise it sounds similar to [r].
 
 ## /na/ - な
 
@@ -180,21 +200,31 @@ Looks like "ю".
 
 らくだ - camel.
 
+The [r] is pronounced in the slightly more trilled manner of other European languages, such as French and Spanish.
+
 ## /ri/ - り
 
 りんご - apple.
+
+The [r] is pronounced in the slightly more trilled manner of other European languages, such as French and Spanish.
 
 ## /ru/ - る
 
 かえる - frog.
 
+The [r] is pronounced in the slightly more trilled manner of other European languages, such as French and Spanish.
+
 ## /re/ - れ
 
 れいぞうこ - refrigerator.
 
+The [r] is pronounced in the slightly more trilled manner of other European languages, such as French and Spanish.
+
 ## /ro/ - ろ
 
 ろうそく - candle.
+
+The [r] is pronounced in the slightly more trilled manner of other European languages, such as French and Spanish.
 
 ## /wa/ - わ
 

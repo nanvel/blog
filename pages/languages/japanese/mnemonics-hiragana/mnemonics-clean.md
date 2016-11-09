@@ -7,7 +7,7 @@ created: 2016-11-03T17:32
 
 ## /a/ - あ
 
-Ah! I see the letter "あ".
+Ah! I see the letter "A".
 
 ![h a2](ha2.png)
 
