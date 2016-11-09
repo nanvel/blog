@@ -12,7 +12,7 @@ comments: true
 
 [TOC]
 
-I put here some notes I made after reading [Getting Things Done](#gtd) book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted.
+I put here some notes I made after reading [Getting Things Done](#gtd) book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique are omitted.
 
 ## Vertical planning
 
