@@ -4,21 +4,21 @@ created: 2013-02-16T00:00
 place: Starobilsk, Ukraine
 comments: true
 
-# Python way to create unix daemon
+# Python way to create a unix daemon
 
-We can easily put program into background using '&':
+We can easily put a program into background using '&':
 ```bash
 python myprogram.py &
 ```
 
-But that does not correctly detach the process from the terminal session that started it. So, if I'll close terminal, program will be terminated.
+But that does not correctly detach the process from the terminal session that started it. So, if I'll close terminal, the program will be terminated.
 
-Here are the steps to create proper daemon:
+Here are steps to create a proper daemon:
 [http://www.steve.org.uk/Reference/Unix/faq_2.html#SEC16](http://www.steve.org.uk/Reference/Unix/faq_2.html#SEC16).
 
-[python-daemon](http://pypi.python.org/pypi/python-daemon/1.6) package allows us to create proper unix daemon with ease.
+[python-daemon](http://pypi.python.org/pypi/python-daemon/1.6) package allows us to create a proper unix daemon with ease.
 
-This is small example of the daemon that saves current time to file every 10 seconds:
+This is a small example of a daemon that saves current time to file every 10 seconds:
 ```python
 # mydaemon.py
 import os

@@ -25,12 +25,12 @@
   </div>
   <div class="sidebar-block">
   	<span class="block-title">Created</span>
-  	<time datetime="{{ c.page.created.strftime('%Y-%M-%d') }}" pubdate>{{ c.page.created.strftime('%B %d, %Y') }}</time>
+  	<time datetime="{{ c.page.created.strftime('%Y-%m-%d') }}" pubdate>{{ c.page.created.strftime('%B %d, %Y') }}</time>
   </div>
   {% if c.page.created != c.page.modified %}
   	<div class="sidebar-block">
   		<span class="block-title">Modified</span>
-  		<time datetime="{{ c.page.modified.strftime('%Y-%M-%d') }}">{{ c.page.modified.strftime('%B %d, %Y') }}</time>
+  		<time datetime="{{ c.page.modified.strftime('%Y-%m-%d') }}">{{ c.page.modified.strftime('%B %d, %Y') }}</time>
   	</div>
   {% end %}
   <div class="sidebar-block">

@@ -107,6 +107,15 @@ Data persistence options:
 - Core Data
 - iCloud Storage
 
+## iOS application publication
+
+Join the Apple Developer Program.
+Verify the iOS destribution certificate (Xcode -> Preferences... -> Acounts).
+App icons.
+Launch screen / image (required).
+Xcode menu -> Product -> Archive.
+Register the app on iTunes Connect.
+
 ## Links
 
 [Let's Build That App](http://letsbuildthatapp.com/)

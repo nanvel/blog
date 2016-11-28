@@ -5,7 +5,7 @@ created: 2015-02-15T13:01
 place: Phuket, Thailand
 comments: true
 
-# Search for memory leaks in tornado project
+# Search for memory leaks in a tornado project
 
 Guppy doesn't work with Python 3 (for February 2015).
 

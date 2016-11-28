@@ -591,6 +591,13 @@ Generator retrieves items from a collection, while a generator can produce items
 
 In the Python community lingo iterator and generator are fairly close synonyms.
 
+#### New in Python 3.3: Delegating to a Subgenerator
+
+See [PEP 380: Syntax for Delegating to a Subgenerator](https://docs.python.org/3/whatsnew/3.3.html#pep-380).
+
+An example with an iterable:
+`for item in iterable: yield item` -> `yield from iterable`.
+
 ### Coroutines
 
 > - Generators produce data for iteration
@@ -624,6 +631,10 @@ StopIteration
 ```
 
 For comprehensive explanation see: [Coroutines at wla.berkeley.edu](http://wla.berkeley.edu/~cs61a/fa11/lectures/streams.html#coroutines).
+
+#### New in Python 3.5: async and await syntax
+
+See [PEP 492 - Coroutines with async and await syntax](https://www.python.org/dev/peps/pep-0492/).
 
 ### Exceptions
 
