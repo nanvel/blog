@@ -1,5 +1,6 @@
 labels: Blog
         Tornado
+        Asynchronous
 created: 2014-07-26T00:00
 place: Kyiv, Ukraine
 comments: true

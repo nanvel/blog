@@ -4,7 +4,7 @@ created: 2015-02-17T00:00
 place: Phuket, Thailand
 comments: true
 
-# Few lines of code about ```__all__```
+# A few lines of code about ```__all__```
 
 ```text
 dates/

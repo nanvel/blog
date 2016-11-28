@@ -1,6 +1,7 @@
 labels: Blog
         Tornado
         AWS
+        Asynchronous
 created: 2014-08-30T00:00
 place: Kyiv, Ukraine
 comments: true

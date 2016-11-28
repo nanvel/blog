@@ -1,6 +1,7 @@
 labels: Blog
         DynamoDB
         Tornado
+        Asynchronous
 created: 2015-03-01T15:23
 place: Phuket, Thailand
 comments: true

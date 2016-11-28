@@ -1,6 +1,7 @@
 labels: Blog
         Django
         SearchEngines
+        Elasticsearch
 created: 2013-07-17T00:00
 modified: 2016-03-26T15:56
 place: Starobilsk, Ukraine

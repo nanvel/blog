@@ -1,7 +1,7 @@
 labels: Blog
         Python
 created: 2011-11-04T00:00
-modified: 2012-11-10T00:00
+modified: 2016-11-28T14:54
 place: Alchevs'k, Ukraine
 comments: true
 
@@ -23,6 +23,12 @@ Python (рекомендоване прочитання — «Па́йтон», 
 **UPD 2012-11-10**
 
 Python was an early response to the needs of system administrators and scientific programmers.
+
+**UPD 2016-11-28**
+
+Guido talks about the future of Python and Python roots (PyCon 2016):
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/YgtL4S7Hrwo" frameborder="0" allowfullscreen></iframe>
 
 Links:
 
