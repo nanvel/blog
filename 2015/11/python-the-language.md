@@ -1,7 +1,7 @@
 labels: Blog
-		Python
+        Python
 created: 2015-11-22T21:33
-modified: 2016-05-10T22:05
+modified: 2016-11-29T18:30
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -591,6 +591,16 @@ Generator retrieves items from a collection, while a generator can produce items
 
 In the Python community lingo iterator and generator are fairly close synonyms.
 
+#### Generator vs function
+
+According to [Improve Your Python: 'yield' and Generators Explained](https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/) by Jeff Knupp:
+
+When we call a normal Python function, execution starts at function's first line and continues until a return statement, exception, or the end of the function (which is seen as an implicit return None) is encountered. Once a function returns control to its caller, that's it. Any work done by the function and stored in local variables is lost. A new call to the function creates everything from scratch.
+
+This is all very standard when discussing functions (more generally referred to as subroutines) in computer programming. There are times, though, when it's beneficial to have the ability to create a "function" which, instead of simply returning a single value, is able to yield a series of values. To do so, such a function would need to be able to "save its work," so to speak.
+
+I said, "yield a series of values" because our hypothetical function doesn't "return" in the normal sense. return implies that the function is returning control of execution to the point where the function was called. "Yield," however, implies that the transfer of control is temporary and voluntary, and our function expects to regain it in the future.
+
 #### New in Python 3.3: Delegating to a Subgenerator
 
 See [PEP 380: Syntax for Delegating to a Subgenerator](https://docs.python.org/3/whatsnew/3.3.html#pep-380).
@@ -607,6 +617,8 @@ An example with an iterable:
 > - Note: There is a use of having yield produce a value in a coroutine, but it's not tied to iteration.
 >
 > David Beazley, A Curious Course on Coroutines and Concurrency
+
+An ability of generators to accept data was added in 2005, see [PEP-342](https://www.python.org/dev/peps/pep-0342/).
 
 As for me, the essential of coroutine is that it consumes data while generator can only produce it:
 ```bash
@@ -702,6 +714,12 @@ Exit
 ```
 
 ## Standard library
+
+### asyncio
+
+[asyncio](https://docs.python.org/3/library/asyncio.html) is a part of the standard library since Python 3.4.
+
+asyncio provides infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O access over sockets and other resources, running network clients and servers, and other related primitives.
 
 ### collections.namedtuple
 
@@ -928,6 +946,18 @@ Also known as special or magic methods.
 Also known as promise.
 
 An object which represents the result of a function call which is asynchronous.
+
+### GIL
+
+[GIL](https://wiki.python.org/moin/GlobalInterpreterLock) or Global Interpreter Lock is a mutex that prevents multiple native threads from executing Python bytecodes at once.
+
+Jython and IronPython have no GIL. PyPy and CPython have a GIL.
+
+GIL disadvantage: prevents multithreaded CPython programs from taking full advantage of multiprocessor systems in certain situations. There is no good enough GILless CPython implementation yet.
+
+How to workaround this issue: use [multiprocessing module](https://docs.python.org/3.5/library/multiprocessing.html).
+
+There is a great [talk by David Beazley on PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4) that shows how Python concurrency works on an example.
 
 ### Hashable
 

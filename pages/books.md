@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-09-20T21:30
+modified: 2016-11-29T23:56
 
 # Books
 
@@ -98,6 +98,7 @@ modified: 2016-09-20T21:30
 
 - Learning Python Design Patterns by Gennadiy Zlobin
 - The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
+- Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 
 ## Archive
 
