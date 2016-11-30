@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-10-30T21:29
+modified: 2016-11-30T16:14
 
 # Links storage
 
@@ -85,7 +85,7 @@ modified: 2016-10-30T21:29
 
 ### Colors
 
-[A Simple Web Developer’s Guide To Color](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/) by Laura Elizabeth
+- [A Simple Web Developer’s Guide To Color](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/) by Laura Elizabeth
 
 ## Business
 
