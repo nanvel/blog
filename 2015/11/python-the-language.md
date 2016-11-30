@@ -605,8 +605,26 @@ I said, "yield a series of values" because our hypothetical function doesn't "re
 
 See [PEP 380: Syntax for Delegating to a Subgenerator](https://docs.python.org/3/whatsnew/3.3.html#pep-380).
 
-An example with an iterable:
-`for item in iterable: yield item` -> `yield from iterable`.
+```python
+def subgenerator():
+
+  for i in (0, 1, 2, 3):
+    yield i
+
+
+def generator():
+
+  # For Python < 3.3:
+  # for i in subgenerator():
+  #     yield i
+
+  yield from subgenerator()
+
+
+if __name__ == '__main__':
+  for i in generator():
+    print(i)
+```
 
 ### Coroutines
 
@@ -647,6 +665,18 @@ For comprehensive explanation see: [Coroutines at wla.berkeley.edu](http://wla.b
 #### New in Python 3.5: async and await syntax
 
 See [PEP 492 - Coroutines with async and await syntax](https://www.python.org/dev/peps/pep-0492/).
+
+Since Python 3.5 native coroutines are their own completely distinct type, before they were just [enhanced generators](https://www.python.org/dev/peps/pep-0342/). `async` syntax makes coroutines a native Python language feature, and clearly separates them from generators.
+
+```
+@asyncio.coroutine
+def py34_coroutine():
+    yield from avaitable()
+
+
+async def py35_coroutine():
+    await avaitable()
+```
 
 ### Exceptions
 

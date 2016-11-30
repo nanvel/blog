@@ -230,6 +230,7 @@ aio-s3
 ```python
 from aiohttp import web
 
+
 def index(request):
     return web.Response(text="Welcome home!")
 
