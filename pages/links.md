@@ -73,10 +73,19 @@ modified: 2016-10-30T21:29
 
 - [Khoi Vinh's blog](https://www.subtraction.com/)
 - [Design at Google](https://design.google.com/)
+- [Tracy Osborn Web Design for Non Designers PyCon 2016](https://www.youtube.com/watch?v=uKpfO331DY4) at YouTube
 
 ### UI
 
 - [58 signs of a good user interface](https://webuilddesign.com/58-signs-of-a-good-interface/)
+
+### Fonts
+
+- [Beautiful Web Type](http://chad.is/beautiful-web-type/) - A showcase of the best typefaces from the Google web fonts directory
+
+### Colors
+
+[A Simple Web Developer’s Guide To Color](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/) by Laura Elizabeth
 
 ## Business
 
