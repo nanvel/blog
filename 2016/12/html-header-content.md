@@ -20,16 +20,15 @@ comments: true
 <link rel="shortcut icon" href="/favicon.ico">
 ```
 
-Classic: 16x16 px. [Favicon](https://en.wikipedia.org/wiki/Favicon) was introduced in 1999 by Internet Explorer 5.
-Mostly deprecated in favor of favicon.png, but a good fallback solution.
+[Favicon](https://en.wikipedia.org/wiki/Favicon) was introduced in 1999 by Internet Explorer 5. Mostly deprecated in favor of favicon.png, but still a good fallback solution.
 
 `.ico` supports multiple versions of an image. `favicon.ico` should contain 16x16, 32x32 and 64x64 images.
 
-![ico file layers](ico_gimp.png =100x100)
+![ico file layers](ico_gimp.png)
 
 **/favicon.png**
 
-The sizes attribute was introduced in HTML5 to specify several different versions of the same icon, and those can be PNG files.
+The `sizes` attribute was introduced in HTML5 to specify several different versions of the same icon, and those can be PNG files.
 
 ```html
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
@@ -83,11 +82,11 @@ IE11: `/browserconfig.xml`
 </browserconfig>
 ```
 
-Tile size: 270x270 recommended.
+Tile size: 270x270 is recommended.
 
 **/safari-pinned-tab.svg**
 
-Safari finally got pinned tabs in OS X 10.11. Safari pinned tabs use a new type of icon: `mask-icon`. If it is not provided - the first letter of domain uses. `mask-icon` must be [a black square SVG image with no background](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html).
+Safari got pinned tabs in OS X 10.11. Safari pinned tabs use a new type of icon: `mask-icon`. If it is not provided - the first letter of domain uses. `mask-icon` must be [a black square SVG image with no background](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html).
 
 ```html
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="orange">
@@ -133,7 +132,9 @@ Images from the xml must be available: `android-chrome-192x192.png`, `android-ch
 
 `theme-color` meta tag allows to set the toolbar color in Chrome for Android starting from version 39.
 
-## Keywords
+## meta
+
+### keywords
 
 See [how to generate a list of keywords](/2016/09/marketing#ideas-for-keywords).
 
