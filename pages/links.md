@@ -64,6 +64,7 @@ modified: 2016-10-30T21:29
 - [Secure tunnels to localhost](https://ngrok.com/)
 - [Load testing, Gatling](http://gatling.io)
 - [GitHub Atom editor](http://flight-manual.atom.io/)
+- [Favicon Generator. For real.](https://realfavicongenerator.net/)
 
 ### Blogs
 
