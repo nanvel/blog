@@ -1,4 +1,4 @@
-labels: Draft
+labels: Blog
         HTML
         WebDevelopment
 created: 2016-12-02T09:28
