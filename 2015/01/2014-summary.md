@@ -23,7 +23,7 @@ to Lera for english lessons and yoga on Ao Yon beach,
 
 to Dasha who showed me a lot of places on Phuket I would never find myself,
 
-to Andrey, Vova, Tonya, Sasha and all people I met on Nai Harn and Panva,
+to Andrey, Vova, Tonya, Sasha and all people I met on Nai Harn and Panwa,
 
 to tam Hubert for his lections on Koh Samui,
 
