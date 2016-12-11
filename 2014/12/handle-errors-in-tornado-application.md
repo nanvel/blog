@@ -21,10 +21,8 @@ See [my question on stackoverflow](http://stackoverflow.com/questions/26371051/b
 
 ```python
 import json
-import os.path
 import traceback
 
-from sys import exc_info
 from tornado import web, options, ioloop
 
 
@@ -37,7 +35,7 @@ class MyAppBaseHandler(web.RequestHandler):
 
     def write_error(self, status_code, **kwargs):
 
-        self.set_header('Content-Type', 'text/json')
+        self.set_header('Content-Type', 'application/json')
         if self.settings.get("serve_traceback") and "exc_info" in kwargs:
             # in debug mode, try to send a traceback
             lines = []
