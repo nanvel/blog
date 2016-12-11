@@ -4,7 +4,6 @@ body{
     color: #444444;
     line-height: 1;
     max-width: 900px;
-    min-width: 600px;
     padding: 20px;
 }
 h1, h2, h3, h4 {
@@ -19,6 +18,7 @@ p {
     margin-bottom: 12px;
     margin-top: 24px;
     padding: 0;
+    text-align: justify;
 }
 h1 { font-size: 48px; }
 h2 {
@@ -63,16 +63,12 @@ pre {
     border-left: 4px solid #cccccc;
     padding: 5px 20px;
     font-size: 100%;
+    overflow-x: scroll;
 }
 code {
     font-family: Consolas, Monaco, Andale Mono, monospace;
     line-height: 1.5;
     font-size: 13px;
-}
-aside {
-    display: block;
-    float: right;
-    width: 390px;
 }
 blockquote {
     border-left:.5em solid #eee;
@@ -388,20 +384,7 @@ aside {
     width: 200px;
     padding: 20px 0;
     border-right: 1px solid #aaa;
-}
-
-aside ul {
-    list-style-type: none;
-    padding: 0 5px 0 0;
-    margin-top: 5px;
-}
-aside ul li {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-aside ul li.selected {
-    text-decoration: underline;
+    display: block;
 }
 aside > .sidebar-block {
     padding: 10px 0;
@@ -447,7 +430,7 @@ aside > .sidebar-block {
 }
 /* content */
 section {
-    padding: 20px 0 0 0;
+    padding: 1em 0;
     margin-left: 220px;
 }
 article > h1 {
@@ -460,4 +443,16 @@ article > div.license {
 }
 footer {
     margin-top: 20px;
+}
+@media screen and (max-width: 36em) {
+    aside {
+        width: none;
+        float: none;
+        display: inline-block;
+        width: 100%;
+        border-right: none;
+    }
+    section {
+        margin-left: 0;
+    }
 }

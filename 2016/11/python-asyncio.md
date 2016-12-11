@@ -266,6 +266,10 @@ Flags:
 - `--worker-class` (`-k`) - set custom worker subclass (e.g. `aiohttp.worker.GunicornWebWorker`)
 - `--workers` (`-w`) - number of workers to use for handling requests (`(2 x $num_cores) + 1`)
 
+Links:
+
+[How to Deploy Python WSGI Apps Using Gunicorn HTTP Server Behind Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-python-wsgi-apps-using-gunicorn-http-server-behind-nginx)
+
 ### UVLoop
 
 [uvloop](https://github.com/MagicStack/uvloop) is a fast, drop-in replacement of the built-in asyncio event loop. uvloop is implemented in Cython and uses libuv under the hood.

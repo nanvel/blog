@@ -798,6 +798,16 @@ defaultdict(<type 'list'>, {'x': [1]})
 {'x': [1]}
 ```
 
+### http
+
+A simple way to serve static:
+```bash
+cd static
+python -m http.server 8001
+```
+
+See [http.server](https://docs.python.org/3.5/library/http.server.html#module-http.server).
+
 ### map, filter, reduce
 
 Use list/generator comprehensions instead.

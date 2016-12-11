@@ -275,3 +275,9 @@ Very sad: despondent, depressed, crestfallen.
 Very confused: perplexed, confounded, baffled.
 Very big: massive, colossal, gigantic.
 Very small: tiny, minuscule, teeny.
+Very often: frequently
+Very old: ancient
+Very old-fashioned: archaic
+Very open: transparent
+Very painful: excruciating
+Very perfect: flawless

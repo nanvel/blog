@@ -138,6 +138,23 @@ Images from the xml must be available: `android-chrome-192x192.png`, `android-ch
 
 See [how to generate a list of keywords](/2016/09/marketing#ideas-for-keywords).
 
+### Open Graph
+
+[og](http://ogp.me/) meta example:
+```html
+<meta property="og:url" content="http://kana.nanvel.com">
+<meta property="og:title" content="Memorize Japanese kana">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://kana.nanvel.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:description" content="Memorize hiragana and katakana with mnemonics and flash cards game">
+```
+
+[Image size](https://www.h3xed.com/web-and-internet/how-to-use-og-image-meta-tag-facebook-reddit) = ~1200x1200.
+
+Also see [schema.org](http://schema.org/) and [app links](http://applinks.org/documentation/).
+
 ## Instruments
 
 [Favicon Generator. For real.](https://realfavicongenerator.net/)

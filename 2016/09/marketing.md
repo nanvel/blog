@@ -8,6 +8,12 @@ comments: true
 
 [TOC]
 
+## Brand
+
+### Colors
+
+Eliminate your competitors’ colors. If one of your main competitors has a strong brand color, don’t copy it if you can help it. Find your competitors’ colors to eliminate them from your own color schemes. See more on [A Simple Web Developer’s Guide To Color](https://www.smashingmagazine.com/2016/04/web-developer-guide-color/).
+
 ## SEO
 
 [Search ranking factors on Moz](https://moz.com/search-ranking-factors).
@@ -68,7 +74,7 @@ Check list:
 - 404 / 500 error pages, watch them
 - readability, use simple language (see [Readability score](https://readability-score.com/))
 - social networks share
-- use [schema.org](http://schema.org/) and [ogp](http://ogp.me/) meta
+- use [schema.org](http://schema.org/), [ogp](http://ogp.me/) and [app links](http://applinks.org/documentation/) meta
 
 If you have a duplicate page, use this tag:
 ```html

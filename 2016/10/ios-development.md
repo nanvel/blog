@@ -33,7 +33,7 @@ See [Visual Format Language](https://developer.apple.com/library/content/documen
 
 **Text Size**: Text should be at least 11 points so it's legible at a typical viewing distance without zooming.
 
-**Contrast**: Make sure there is ample contrast between the font color and the background so text is legible. 
+**Contrast**: Make sure there is ample contrast between the font color and the background so text is legible.
 
 **Spacing**: Don't let text overlap. Improve legibility by increasing line height or letter spacing.
 
@@ -113,7 +113,8 @@ Join the Apple Developer Program.
 Verify the iOS destribution certificate (Xcode -> Preferences... -> Acounts).
 App icons.
 Launch screen / image (required).
-Xcode menu -> Product -> Archive.
+Xcode menu -> Product -> Archive (change target to Generic iOS Device).
+For paid apps - request a contract for paid applications (Agreements, Tax, and Banking in iTunes connect).
 Register the app on iTunes Connect.
 
 ## Links
