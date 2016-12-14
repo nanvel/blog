@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2016-11-30T14:52
+modified: 2016-12-14T09:40
 place: Phuket, Thailand
 comments: true
 
@@ -265,6 +265,12 @@ Flags:
 - `--bind` (`-b`) - server's socket address (e.g. `localhost:8080`)
 - `--worker-class` (`-k`) - set custom worker subclass (e.g. `aiohttp.worker.GunicornWebWorker`)
 - `--workers` (`-w`) - number of workers to use for handling requests (`(2 x $num_cores) + 1`)
+
+```bash
+#!/bin/bash
+
+exec .env/bin/gunicorn -b 0.0.0.0:9001 -k aiohttp.worker.GunicornWebWorker -w 2 -t 60 app:app --env=APP_EMAIL=... --env SMTP_PORT=...
+```
 
 Links:
 

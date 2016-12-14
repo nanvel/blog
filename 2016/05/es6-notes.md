@@ -1,7 +1,7 @@
 labels: Blog
         JS
 created: 2016-05-02T11:12
-modified: 2016-09-05T21:02
+modified: 2016-12-14T09:40
 place: Kyiv, Ukraine
 comments: true
 
@@ -850,12 +850,17 @@ npm install --save-dev babel-preset-es2015 babel-preset-stage-0
 ```
 
 Build:
-```text
+```bash
 babel -w source/ -d build -s"
 ```
 
 Key `-w` - watch changes.
 Key `-s` - generate sourcemaps.
+
+For single file:
+```bash
+babel static/app.js -o static/app.min.js -s --presets=es2015,stage-0 --no-babelrc
+```
 
 ### Webpack
 
