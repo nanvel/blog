@@ -7,7 +7,7 @@ comments: true
 
 # Photo registrator on Raspberry Pi
 
-![Photo registrator on RaspberryPi](raspberry1.jpg)
+![Photo registrator on RaspberryPi](raspberry1.JPG)
 
 This weekend I decide to do something with my raspberry.
 
