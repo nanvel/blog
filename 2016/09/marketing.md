@@ -1,6 +1,7 @@
 labels: Draft
         Business
 created: 2016-09-02T21:42
+modified: 2016-12-14T13:45
 place: Phuket, Thailand
 comments: true
 
@@ -118,7 +119,7 @@ How to find directories:
 
 Some directories:
 
-- http://www.manta.com/claim
+- http://www.manta.com/claim (US only)
 - https://www.linkedin.com/company/add/show
 - http://www.hotfrog.com/AddYourBusinessSingle.aspx
 - http://www.angieslistbusinesscenter.com
@@ -137,6 +138,8 @@ Learn who your customers are.
 ## iOS app marketing
 
 See [iOS дайджест #12: Публікація в App Store та маркетинг](https://dou.ua/lenta/digests/ios-digest-12/).
+
+[App Store Marketing Guidelines](https://developer.apple.com/app-store/marketing/guidelines/).
 
 ## Hacking
 

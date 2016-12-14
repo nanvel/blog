@@ -1,6 +1,7 @@
 labels: Blog
         Microcontrollers
         Electronics
+        Ubuntu
 created: 2012-05-04T00:00
 modified: 2012-08-10T00:00
 place: Alchevs'k, Ukraine

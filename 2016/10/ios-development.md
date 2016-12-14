@@ -71,6 +71,8 @@ font: -apple-system-tall-body
 
 What are we making?
 
+[Making Great Apps for the App Store](https://developer.apple.com/app-store/).
+
 ## Story boards
 
 > Given that Interface Builder is heavily touted by Apple as the ideal solution for building UI, I was very reluctant to ditch it, especially given how wordy programmatic layout used to be. Once I saw how concise and declarative doing auto-layout in Swift could be, I decided to give it a shot. After defaulting to no xibs for about a week, I was totally sold. I feel the maintainability of my view code has gone up considerably, a few blocks of Swift code is much more approachable to a new developer than a tangled mess of Interface Builder constraints, and tracking changes over time in version control is also possible where it really wasn’t before.”
@@ -116,6 +118,11 @@ Launch screen / image (required).
 Xcode menu -> Product -> Archive (change target to Generic iOS Device).
 For paid apps - request a contract for paid applications (Agreements, Tax, and Banking in iTunes connect).
 Register the app on iTunes Connect.
+
+## Marketing
+
+Download on App Store image:
+[https://developer.apple.com/app-store/marketing/guidelines/#downloadOnAppstore](https://developer.apple.com/app-store/marketing/guidelines/#downloadOnAppstore).
 
 ## Links
 
