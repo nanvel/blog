@@ -28,3 +28,9 @@ https://www.youtube.com/watch?v=8UvP1TXz4s8
 ## Money
 
 1 Baht == 100 stan.
+
+## Ordinal
+
+Khun re - first.
+Khun teea son - second.
+Khun teea sam - 3-rd.

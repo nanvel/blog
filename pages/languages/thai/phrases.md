@@ -31,6 +31,7 @@ lek - small
 yai - big
 noi - little
 leho - bad
+suay (sway) - beautiful.
 
 ## Greetings
 
@@ -41,8 +42,18 @@ Laew kun la khap? - And you?
 
 Khun ma chak nai khap? - Where are you from?
 Khun chee arrai khap? - What is your name?
+Khun areyou thao rai? - How old are you?
+Khun thannan arrai khap? - What is your profession?
+Phut cha cha dai mai khap - please repeat slower.
+Put mai khap - please repeat again.
+
+Kin mai khap - are you hangry?
+Dim mai khap - are you thirsty?
+
 Mai khap - no.
-Pa sa Thai riot arrai khap.
+Phom mai ruu - I don't know.
+Phom mai kochai - I don't understand.
+Pa sa Thai riet arrai khap? - How you call this in Thai?
 
 ## You, me, she, he
 
@@ -68,3 +79,17 @@ Nan - not close.
 ## Food
 
 Khao Pat Tha Lei - fried rice seafood.
+Khap Pat Phak - fried rice with vegetables.
+Som tam - papaya salad.
+Yam phak - vegetable salad.
+Chaa yen - Thai milk ice tea (milk and sugar are included by defaul).
+Cafe yen - ice coffee.
+Cafe ron - hot coffee.
+
+neet noi - a little bit.
+pet - spacy.
+waan - sweet.
+kunt - shrimp.
+
+
+Phom au khao pat tha lei - I want fried rice seafood (fried rice seafood please).
