@@ -2,7 +2,7 @@ labels: Draft
 		SoftwareDevelopment
 		WebDevelopment
 created: 2016-11-29T11:56
-modified: 2016-11-29T11:56
+modified: 2016-12-17T17:10
 place: Phuket, Thailand
 comments: true
 
@@ -11,6 +11,7 @@ comments: true
 ## To investigate
 
 Server sent events (https://www.youtube.com/watch?v=8-PxeTgTx6s).
+[Splash - A javascript rendering service](http://splash.readthedocs.io/en/stable/).
 
 ## img title vs image alt
 

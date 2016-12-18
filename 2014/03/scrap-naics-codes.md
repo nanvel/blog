@@ -1,5 +1,5 @@
 labels: Blog
-        Scrappers
+        Scrapers
 created: 2014-03-29T00:00
 place: Starobilsk, Ukraine
 comments: true

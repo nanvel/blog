@@ -1,7 +1,7 @@
 labels: Draft
         Business
 created: 2016-09-02T21:42
-modified: 2016-12-14T13:45
+modified: 2016-12-16T12:13
 place: Phuket, Thailand
 comments: true
 
@@ -146,6 +146,8 @@ See [iOS дайджест #12: Публікація в App Store та марке
 Be a growth hacker!
 
 Crowdfunding sites (allows to test an idea, get traction). Shows how many people willing to pay for it.
+
+Viral.
 
 ## Vocabulary
 

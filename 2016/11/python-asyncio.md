@@ -276,6 +276,17 @@ Links:
 
 [How to Deploy Python WSGI Apps Using Gunicorn HTTP Server Behind Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-python-wsgi-apps-using-gunicorn-http-server-behind-nginx)
 
+### asyncio.Semaphore
+
+[Semaphore](https://docs.python.org/3.4/library/asyncio-sync.html#semaphores) is a synchronization tool that can be used to limit the number of coroutines that do something at some point.
+
+```python
+sem = asyncio.Semaphore(5) 
+
+with (yield from sem):  
+    page = yield from get(url, compress=True)
+```
+
 ### UVLoop
 
 [uvloop](https://github.com/MagicStack/uvloop) is a fast, drop-in replacement of the built-in asyncio event loop. uvloop is implemented in Cython and uses libuv under the hood.
