@@ -479,7 +479,55 @@ TODO
 
 ### Command
 
-TODO
+Choosing the operation at runtime.
+
+Use for:
+
+- keep a history of calls
+- decouple an invoker from an executor
+- macro command - a sequence of simpler commands
+
+```python
+import abc
+
+
+class BaseCommand(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def execute(self):
+        pass
+
+
+class Command1(BaseCommand):
+
+    def execute(self):
+        print('Comamnd 1')
+
+
+class Command2(BaseCommand):
+
+    def execute(self):
+        print('Comamnd 2')
+
+
+class Macro:
+
+    def __init__(self, *commands):
+        self._commands = commands
+
+    def execute(self):
+        for command in self._commands:
+            command.execute()
+
+
+if __name__ == '__main__':
+
+    macro = Macro(Command1(), Command2())
+    macro.execute()
+
+# Comamnd 1
+# Comamnd 2
+```
 
 ### Interpreter
 
@@ -608,3 +656,4 @@ Links:
 
 - [Дизайн-патерни — просто, як двері](http://designpatterns.andriybuday.com/)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
+- [A collection of design patterns/idioms in Python](https://github.com/faif/python-patterns)
