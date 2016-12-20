@@ -47,7 +47,7 @@ Jor Jaan group
 จ - Jor Jaan
 ฉ - Chor Ching
 ล - Lor Ling
-ส - Sor Saa Laa
+ส - Sor Sua (tiger)
 อ - Or Aang
 ฮ - Hor Nog Hoog
 
