@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2016-10-04T10:48
+modified: 2016-12-20T21:31
 place: Kyiv, Ukraine
 comments: true
 
@@ -242,7 +242,7 @@ if __name__ == '__main__':
 
 Links:
 
-- http://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Factory_method
+- [Factory method](http://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Factory_method) on Wikipedia
 
 ### Prototype
 
@@ -519,14 +519,84 @@ TODO
 
 Pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
 
+Tries to facilitate one-to-many relationship in software engineering. Reduces coupling between objects.
+
+There are a Subject (aka Observable) and Observers:
+
+- a subject knows only a list observers and an interface
+- a subject can broadcast a message to all observers subscribed to it
+- number of subscriptions is not limited and can be changed at runtime
+
+```python
+import abc
+
+
+class BaseObserver(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def on_message(self, message):
+        print(message)
+
+
+class Subject:
+
+    def __init__(self):
+        self._observers = {}
+
+    def connect_observer(self, observer):
+        self._observers[observer.__class__.__name__] = observer
+
+    def disconnect_observer(self, observer):
+        name = observer.__class__.__name__
+        if name in self._observers:
+            del self._observers[name]
+
+    def emit_message(self, message):
+        for observer in self._observers.values():
+            observer.on_message(message)
+
+
+class Observer1(BaseObserver):
+
+    def on_message(self, message):
+        print("Observer 1:", message)
+
+
+class Observer2(BaseObserver):
+
+    def on_message(self, message):
+        print("Observer 2:", message)
+
+
+if __name__ == '__main__':
+    observer1 = Observer1()
+    observer2 = Observer2()
+
+    subject = Subject()
+    subject.connect_observer(observer1)
+    subject.connect_observer(observer2)
+
+    subject.emit_message("Hi!")
+
+    subject.disconnect_observer(observer1)
+
+    subject.emit_message("Again!")
+
+# Observer 2: Hi!
+# Observer 1: Hi!
+# Observer 2: Again!
+```
+
 Also known as:
 
 - Signals and slots (Qt)
 - Target-Action pattern (iOS, IBOutlets/IBActions)
+- Publishing-subscriber pattern
 
 Links:
 
 - [http://www.giantflyingsaucer.com/blog/?p=5117](http://www.giantflyingsaucer.com/blog/?p=5117)
+- [Observer - Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Observer.html)
 
 ## Architectural
 

@@ -87,6 +87,16 @@ Project-only commands:
 - parse
 - bench
 
+## Debug
+
+```python
+from scrapy.utils.response import open_in_browser
+open_in_browser(response)
+
+from scrapy.shell import inspect_response
+inspect_response(response, self)
+```
+
 ## Logging
 
 ```python
