@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-11-29T23:56
+modified: 2016-12-21T14:39
 
 # Books
 
@@ -93,12 +93,13 @@ modified: 2016-11-29T23:56
 - 101 jobs you can do anywhere in the world by Sonya Duck
 - Phuket 25 secrets by Antonio Araujo
 - Getting Things Done (2015 edition) by David Allen
+- Learning Python Design Patterns by Gennadiy Zlobin
 
 ## In progress
 
-- Learning Python Design Patterns by Gennadiy Zlobin
 - The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
+- Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 
 ## Archive
 

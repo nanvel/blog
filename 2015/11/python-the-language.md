@@ -1,7 +1,7 @@
 labels: Blog
         Python
 created: 2015-11-22T21:33
-modified: 2016-11-29T18:30
+modified: 2016-12-21T14:34
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -1017,6 +1017,10 @@ TypeError: unhashable type: 'list'
 >>> hash(a)
 3713081631934410656
 ```
+
+### Hooks vs primitive operations
+
+A hook is a method that can be defined in an abstract class and can be overridden in concrete classes. The difference between primitive operations and hooks is that **hooks can be overridden by a derived class but is not obligated to do so**, while **a primitive operation must be implemented** or `NotImplementedError` will be raised.
 
 ### Immutable
 

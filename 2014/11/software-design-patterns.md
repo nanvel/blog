@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2016-12-20T21:31
+modified: 2016-12-21T15:01
 place: Kyiv, Ukraine
 comments: true
 
@@ -244,7 +244,7 @@ Links:
 
 - [Factory method](http://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Factory_method) on Wikipedia
 
-### Prototype
+### Prototype (TODO)
 
 TODO
 
@@ -354,19 +354,19 @@ if __name__ == '__main__':
 
 ## Structure of it
 
-### Adapter
+### Adapter (TODO)
 
 TODO
 
-### Bridge
+### Bridge (TODO)
 
 TODO
 
-### Composite
+### Composite (TODO)
 
 TODO
 
-### Decorator
+### Decorator (TODO)
 
 TODO
 
@@ -422,7 +422,7 @@ if __name__ == '__main__':
     # ['WheelWheelWheelWheel', 'Body', 'Engine', 'Name: Some name']
 ```
 
-### Flyweight
+### Flyweight (TODO)
 
 TODO
 
@@ -473,7 +473,7 @@ if __name__ == '__main__':
 
 ## How it behaves
 
-### Chain of Responsibility
+### Chain of Responsibility (TODO)
 
 TODO
 
@@ -529,19 +529,19 @@ if __name__ == '__main__':
 # Comamnd 2
 ```
 
-### Interpreter
+### Interpreter (TODO)
 
 TODO
 
-### Iterator
+### Iterator (TODO)
 
 TODO
 
-### Mediator
+### Mediator (TODO)
 
 TODO
 
-### Memento
+### Memento (TODO)
 
 TODO
 
@@ -551,15 +551,74 @@ Or State provide.
 
 See Proxy.
 
-### Strategy
+### Strategy (TODO)
 
 TODO
 
-### TemplateMethod
+### Template method
 
-TODO
+Defines the basis of an algorithm and enables successors to redefine some steps of the algorithm without changing its structure.
 
-### Visitor
+There is a method that calls some other methods. Some of these methods remain the same for different algorithms and some may be changed.
+
+Benefits:
+
+- extensibility
+- minimize code duplication
+- easier algorithm modification
+
+```python
+class Car:
+
+    CAR_NAME = "Base car"
+
+    def start_engine(self):
+        print("Start engine.")
+
+    def check_fasten(self):
+        print("Check is fasten.")
+        return True
+
+    def switch_gear(self):
+        print("Switch gear.")
+
+    def accelerate(self):
+        print("Accelerate.")
+
+    def run(self):
+        print("Running a {name} ...".format(name=self.CAR_NAME))
+        self.start_engine()
+        is_fasten = self.check_fasten()
+        if is_fasten:
+            self.switch_gear()
+            self.accelerate()
+
+
+class NoBeltsCar(Car):
+
+    CAR_NAME = "No belts car"
+
+    def check_fasten(self):
+        print("No belts.")
+        return False
+
+
+if __name__ == '__main__':
+    Car().run()
+    NoBeltsCar().run()
+
+
+# Running a Base car ...
+# Start engine.
+# Check is fasten.
+# Switch gear.
+# Accelerate.
+# Running a No belts car ...
+# Start engine.
+# No belts.
+```
+
+### Visitor (TODO)
 
 TODO
 
