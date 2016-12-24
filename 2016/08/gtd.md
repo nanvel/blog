@@ -4,7 +4,7 @@ image: /2016/08/urgency.png
 description: I put here some notes I made after reading Getting Things Done book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted
 keywords: getting things done,gtd,external brain,project management
 created: 2016-08-29T21:23
-modified: 2016-10-10T09:14
+modified: 2016-12-21T16:53
 place: Phuket, Thailand
 comments: true
 
@@ -45,6 +45,10 @@ Critical success factor: the weekly review.
 External brain - tools that can do routine categorization and remembering for us.
 
 #### Information
+
+> Consider a future device for individual use, which is a sort of mechanized private file and library. It needs a name, and, to coin one at random, "memex" will do. A memex is a device in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory.
+>
+> Vannevar Bush, As We May Think, 1945
 
 Thoughts, ideas, links, etc. may be useful in future.
 

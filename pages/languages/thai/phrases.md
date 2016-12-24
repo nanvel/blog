@@ -83,6 +83,7 @@ Khap Pat Phak - fried rice with vegetables.
 Som tam - papaya salad.
 Yam phak - vegetable salad.
 Chaa yen - Thai milk ice tea (milk and sugar are included by defaul).
+Chaa khai mook - booble tea.
 Cafe yen - ice coffee.
 Cafe ron - hot coffee.
 

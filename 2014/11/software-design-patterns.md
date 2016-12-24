@@ -7,6 +7,14 @@ comments: true
 
 # Software design patterns
 
+> Conformity to patterns is not a measure of goodness.
+>
+> Ralph Johnson, Coauthor of the Design Patterns classic
+
+> When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write.
+>
+> Paul Graham, Lisp hacker and venture capitalist
+
 Do we need them all? Maybe there are a few principles we may use instead?
 
 > As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.

@@ -981,6 +981,12 @@ Also known as special or magic methods.
 !!! hint "Magic"
 	"Magic method" term was adopted from Ruby. Actually, these methods are opposite to magic, their behavior quite straightforward.
 
+### Functional language
+
+> Python is, by design, not a functional language - whatever that means. Python just borrows a few good ideas from functional languages.
+>
+> Fluent Python by Luciano Ramalho
+
 ### Future
 
 Also known as promise.
@@ -998,6 +1004,10 @@ GIL disadvantage: prevents multithreaded CPython programs from taking full advan
 How to workaround this issue: use [multiprocessing module](https://docs.python.org/3.5/library/multiprocessing.html).
 
 There is a great [talk by David Beazley on PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4) that shows how Python concurrency works on an example.
+
+> Concurrency: one of the most difficult topics in computer science (usually best avoided).
+>
+> David Beazley
 
 ### Hashable
 

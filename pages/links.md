@@ -15,6 +15,7 @@ modified: 2016-11-30T16:14
 - [Habrahabr](http://habrahabr.ru)
 - [The twelve-factor app](http://12factor.net)
 - [DevDocs](http://devdocs.io) combines multiple API documentations in a fast, organized, and searchable interface
+- [Code Smells](https://sourcemaking.com/refactoring/smells)
 
 ### API
 

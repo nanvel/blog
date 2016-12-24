@@ -37,6 +37,10 @@ To apply this tool ask yourself:
 - What can be done to improve the result?
 - Summary.
 
+## [Brooks's law](https://en.wikipedia.org/wiki/Brooks's_law)
+
+Adding manpower to a late software project makes it later.
+
 ## DRY
 
 **D**on’t **r**epeat **y**ourself.
@@ -77,6 +81,7 @@ Declarative style of programming tells a computer what to do without specifying 
 ## KISS
 
 Stands for "**K**eep **I**t **S**imple, **S**tupid."
+Simplest solution is often the best.
 
 This calls for seeking the simplest possible solution, with the fewest moving parts. The phrase was coined by Kelly Johnson, a highly accomplished aerospace engineer who worked in the real Area 51 designing some of the most advanced aircraft of the 20th centure.
 
@@ -104,6 +109,9 @@ There are four main principles:
 - Abstraction
 - Inheritance
 
+!!! note "Code smell"
+	Code smell - a symptom of bad OO design.
+
 ### Encapsulation
 
 In programming languages, encapsulation is used to refer to one of two related but distinct notions, and sometimes to the combination thereof:
@@ -116,6 +124,10 @@ In programming languages, encapsulation is used to refer to one of two related b
 Abstraction is a technique for managing complexity of computer systems. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the current level.
 
 ### Inheritance
+
+> [We] started to push on the inheritance idea as a way to let novices build on frameworks that could only be designed by experts.
+>
+> Alan Kay, [The Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)
 
 Inheritance is when an object or class is based on another object (prototypal inheritance) or class (class-based inheritance), using the same implementation (inheriting from an object or class) specifying implementation to maintain the same behavior (realizing an interface; inheriting behavior).
 
@@ -154,6 +166,10 @@ My case:
 **D**ependency inversion
 
 ### Single responsibility (SRP)
+
+> Gather together those things that change for the same reason, and separate those things that change for different reasons.
+>
+> Robert C. Martin, Single Responsibility Principle
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Single_responsibility_principle):
 

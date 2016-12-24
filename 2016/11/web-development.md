@@ -12,6 +12,9 @@ comments: true
 
 Server sent events (https://www.youtube.com/watch?v=8-PxeTgTx6s).
 [Splash - A javascript rendering service](http://splash.readthedocs.io/en/stable/).
+[The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
+
+[Code Smells](https://sourcemaking.com/refactoring/smells)
 
 ## img title vs image alt
 

@@ -103,6 +103,7 @@ Strategies:
 - create valuable content, worth sharing (link bait)
 - google+, facebook, twitter and other social profiles
 - backlink other sites (they may backlink you)
+- link exchange services
 
 Startup listings:
 
