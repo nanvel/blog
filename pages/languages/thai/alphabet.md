@@ -87,3 +87,41 @@ Thor group
 ฒ - Thor Phoo Thao
 ถ - Thor Thoong
 ธ - Thor Thong
+
+## Vowels
+
+`-ะ` - a
+`-า` - aa/ah/ar
+`ิ` - i
+`ี` - ee
+`ึ` - eu
+`ื` - eu
+`ุ` - oo
+`ู` - oo
+`เ-ะ` - ay
+`เ-` - ay/e
+`แ-ะ` - ae
+`แ-` - ae
+`โ-ะ` - oh/o
+`โ-` - oh/o
+`เ-าะ` - aw/au
+`-อ` - aw/or
+`ั-วะ` - ua
+`ั-ว` - ua/uah
+`เ-ียะ` - ia/ie
+`เ-ีย` - ia/ie
+`เ-ือะ` - eua/ua
+`เ-ือ` - eua/ua
+`เ-อะ` - er/ur
+`เ-อ` - er/oe/ur
+`-วย` - uai/uay/oo-ey
+`-อย` - oy
+`ั-ย` - ai
+`ั-น` - u/a
+`-าย` - aai
+`-าว` - ao/ow
+`-ำ` - um/am
+`ิว` - iew/iu
+`เ-ย` - oei/oey/er-y
+`เ-็ว` - eo/eow (short)
+`เ-ว` - eo/eow (long)

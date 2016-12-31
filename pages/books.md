@@ -4,6 +4,8 @@ modified: 2016-12-21T14:39
 
 # Books
 
+[TOC]
+
 ## Before 2013
 
 - ...
