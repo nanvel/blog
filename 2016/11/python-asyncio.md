@@ -293,6 +293,12 @@ with (yield from sem):
 
 There is a gunicorn worker for it: `aiohttp.worker.GunicornUVLoopWebWorker`.
 
+### aiopg
+
+SQLAlchemy usage
+
+[SQLAlchemy Object Relational Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+
 ## Links
 
 [«Asyncio stack для веб разработчика» Ігор Давиденко LvivPy#4](https://www.youtube.com/watch?v=jqU8l9EBQ54) at YouTube, [slides](http://igordavydenko.com/talks/lvivpy-4/)
