@@ -73,6 +73,7 @@ Shirahama
 - Shirahama white sand beach
 
 Next time:
+
 - Running in the Imperial Palace loop
 - Kyoto and Fukuoka
 - Rabbit Island (Okunoshima)
@@ -111,3 +112,8 @@ Phut neet noi.
 Published my first iOS application: [Kana memorize](https://itunes.apple.com/us/app/kana-memorize/id1184225723).
 
 ![Kana memorize](kanamemo.png)
+
+## Studied
+
+ES6, React, Node.js, Swift, iOS.
+Software development principles and patterns.
