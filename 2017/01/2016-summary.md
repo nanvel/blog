@@ -113,7 +113,7 @@ Published my first iOS application: [Kana memorize](https://itunes.apple.com/us/
 
 ![Kana memorize](kanamemo.png)
 
-## Studied
+## Was studying
 
 ES6, React, Node.js, Swift, iOS.
 Software development principles and patterns.

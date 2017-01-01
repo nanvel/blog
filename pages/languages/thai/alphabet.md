@@ -125,3 +125,14 @@ Thor group
 `เ-ย` - oei/oey/er-y
 `เ-็ว` - eo/eow (short)
 `เ-ว` - eo/eow (long)
+`เ-็น` - e/eh
+`เ-ำ` - ao
+`เ-ิ` - er
+`เ-ียว` - io, iaw
+`เ-ือย` - eui
+`เเ-ว` - aeo, aew
+`ใ-` - ai
+`ไ-` - ai
+`โ-ย` - ouy
+`ุย` - auy/ui
+`-รร-` - un/unra
