@@ -55,6 +55,9 @@ def parse(self, response):
 >>> response = HtmlResponse(url='http://example.com', body=body)
 >>> response.selector.xpath('//span/text()').extract()
 [u'good']
+
+>>> response.selector.xpath('//span/text()').extract_first()
+u'good'
 ```
 
 Conditions separated by "/" are known as steps.
@@ -86,6 +89,10 @@ Project-only commands:
 - edit
 - parse
 - bench
+
+Running a spider:
+
+`scrapy crawl <spidername> -s CLOSESPIDER_ITEMCOUNT=10`
 
 ## Debug
 

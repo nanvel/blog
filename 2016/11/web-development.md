@@ -23,3 +23,8 @@ Server sent events (https://www.youtube.com/watch?v=8-PxeTgTx6s).
 Image **title** should provide additional information and follow the rules of a regular title: it should be relevant, short, catchy, and concise (A title “offers advisory information about the element for which it is set.“).
 
 Source: [Image Alt Text Vs. Image Title: What’s the Difference?](https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/).
+
+## Python batteries
+
+[textract](https://github.com/deanmalmgren/textract) - extract text from pdf, odt, csv, etc.
+[Python dictionaries validation](https://github.com/nicolaiarocci/cerberus)

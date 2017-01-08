@@ -22,7 +22,7 @@ Khao khron - brown rice.
 ### Fried rice
 
 Khao Pat Tha Lei - fried rice seafood.
-Khap Pat Phak - fried rice with vegetables.
+Khao Pat Phak - fried rice with vegetables.
 Khao Pat G(k)ai - fried rice with chicken.
 
 ### Salads

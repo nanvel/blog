@@ -66,6 +66,7 @@ modified: 2016-11-30T16:14
 - [Load testing, Gatling](http://gatling.io)
 - [GitHub Atom editor](http://flight-manual.atom.io/)
 - [Favicon Generator. For real.](https://realfavicongenerator.net/)
+- [Centralized logging](https://airbrake.io/)
 
 ### Blogs
 

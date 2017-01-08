@@ -72,6 +72,10 @@ Yin dee khap. - My pleasure.
 Mai bpen rai khap. - No problem.
 Kap khun khap. - Thank you.
 
+## Sorry
+
+Kor Thod na khrap - sorry / excusme
+
 ## Relatives
 
 Luk chai - son.
@@ -85,3 +89,7 @@ Nan - not close.
 ## Gas station
 
 Tem tunk - full tank
+
+## Other
+
+Pii Mai - new year (Pii - year)

@@ -97,6 +97,10 @@ modified: 2016-12-21T14:39
 - Getting Things Done (2015 edition) by David Allen
 - Learning Python Design Patterns by Gennadiy Zlobin
 
+## 2017
+
+- Wake Up Successful by S.J. Scott
+
 ## In progress
 
 - The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
