@@ -70,7 +70,7 @@ Chan - me (female)
 
 Yin dee khap. - My pleasure.
 Mai bpen rai khap. - No problem.
-Kap khun khap. - Thank you.
+Kop khun khap. - Thank you.
 
 ## Sorry
 
@@ -86,10 +86,16 @@ Luk sou - doter.
 Nii - close.
 Nan - not close.
 
-## Gas station
+## Transport
 
 Tem tunk - full tank
+Song thaew - local transport
 
 ## Other
 
 Pii Mai - new year (Pii - year)
+Mai dee - not good
+Mai koi dee - not so good
+Dee khиn neet noi - better than before
+Yee lon - gtetting worse (down)
+Mai dee khиn - not better

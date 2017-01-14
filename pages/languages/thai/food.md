@@ -57,4 +57,6 @@ Take away:
 - saichron (put into a box)
 - chrap baan - take home
 
+Keen tii nee - eat here.
+
 Mai au khap - I don't want.
