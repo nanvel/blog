@@ -60,3 +60,9 @@ Take away:
 Keen tii nee - eat here.
 
 Mai au khap - I don't want.
+
+Phom au mиan khan - I want the same.
+Phom au (pat thai) duey - Pat thai too.
+
+Phom au sиa thua nee - I want this t-shirt.
+

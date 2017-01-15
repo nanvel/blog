@@ -27,6 +27,7 @@ lek - small
 yai - big
 noi - little
 suay (sway) - beautiful
+thalat - market
 
 ## Greetings
 
@@ -85,11 +86,39 @@ Luk sou - doter.
 
 Nii - close.
 Nan - not close.
+far - clai (ไกล).
+close - cla^i (ใกล้)
 
 ## Transport
 
 Tem tunk - full tank
 Song thaew - local transport
+
+## Properties
+
+Suun - high
+Tia - small (not tall)
+Yaa[k] - difficult
+Pasa thai yaa[k] maak - Thai is very difficult.
+Ngai - easy.
+Oon (uan) - fat person.
+Phom - thin.
+
+## Price
+
+Pand - expensive
+Too[k] - cheap
+Lot rakaa, noi dai mae khrap? - Pls, reduce the price.
+Lot noi, dai mai khrap? - Pls, reduce the price.
+Too[k] noi dai mai - Pls make cheaper.
+
+## To go somewhere
+
+Pai baan - go home.
+Pai nai - where are you going?
+Khun cha pai nai - where will you go?
+
+maa - to come.
 
 ## Other
 

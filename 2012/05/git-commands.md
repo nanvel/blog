@@ -1,6 +1,7 @@
 labels: Blog
         SCM
 created: 2012-05-25T00:00
+modified: 2017-01-15T11:57
 place: Alchevs'k, Ukraine
 comments: true
 
@@ -192,6 +193,18 @@ git stash
 git stash list
 # restore latest stashed changes
 git stash apply
+```
+
+Rebase (interactive):
+```bash
+git checkout master
+git pull origin master
+fir checkout my_branch
+git rebase -i origin/master
+# follow instructions
+# to squash all commits into one: mark all commits with "s" except the first one
+# force push:
+git push -f origin my_branch
 ```
 
 Links:
