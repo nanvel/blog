@@ -85,6 +85,8 @@ The [Long Tail](http://www.longtail.com/about.html) is getting fatter, longer, a
 >
 > Eric Ries
 
+An idea for collecting data: web scraping (it may be beneficial for both sides).
+
 ### 3. Choose a name
 
 Tricks:

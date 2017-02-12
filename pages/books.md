@@ -100,13 +100,13 @@ modified: 2016-12-21T14:39
 ## 2017
 
 - Wake Up Successful by S.J. Scott
+- [+] Learning Scrapy by Dimitris Kouzis-Loukas
 
 ## In progress
 
 - The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
-- Learning Scrapy by Dimitris Kouzis-Loukas
 
 ## Archive
 

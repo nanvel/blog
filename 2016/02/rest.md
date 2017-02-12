@@ -26,6 +26,8 @@ Goals:
 - Portability
 - Reliability
 
+REST vs SOAP: REST is simpler and more lightweight than SOAP.
+
 ## Semantic versioning
 
 Pattern: ```major.minor.patch```.
