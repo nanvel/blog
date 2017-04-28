@@ -23,3 +23,10 @@ iTunes Connect stats:
 ~1 download per day.
 
 Territories: USA, Japan, Indonesia, France, Singapore, China, Saudi Arabia, Israel, Mexico, Italy.
+
+**UPD** 2017-04-28
+
+iTunes Connect stats:
+
+90 downloads.
+kana.nanvel.com - 10-20 monthly visits.
