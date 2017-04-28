@@ -101,10 +101,12 @@ modified: 2016-12-21T14:39
 
 - Wake Up Successful by S.J. Scott
 - [+] Learning Scrapy by Dimitris Kouzis-Loukas
+- [+] The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
+- Machine learning with random forests and decision trees by Scott Hartshorn
 
 ## In progress
 
-- The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
+- Culture & Empire: Digital Revolution by Pieter Hintjens
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - ZGuide
