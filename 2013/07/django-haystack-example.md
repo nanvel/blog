@@ -11,7 +11,7 @@ comments: true
 
 ![Search with haystack](search_example.png)
 
-This article was entitled 'Django + haystack + whoosh simple example project' yesterday. But after I tried to use whoosh on amvhub.com, it turned out that it has few nasty sides:
+This article was entitled 'Django + haystack + whoosh simple example project' yesterday. But after I tried to use whoosh on `amvhub.com`, it turned out that it has a few nasty sides:
 
 - SpellChecker class was removed from latest version of whoosh but haystack still needs it. Switching to ```whoosh==2.4``` solves the problem.
 - ```update_index``` causes adding repeating entries to SearchQuerySet. And I didn't found a way how to it. There is ticket in whoosh issues tracker: [https://bitbucket.org/mchaput/whoosh/issue/97/search-index-contains-a-lot-of-duplicates](https://bitbucket.org/mchaput/whoosh/issue/97/search-index-contains-a-lot-of-duplicates).

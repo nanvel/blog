@@ -25,6 +25,13 @@ modified: 2016-11-30T16:14
 ### Databases
 
 - [Avoiding SQL Antipatterns using Django (and Postgres) by Matthew Schinckel](http://schinckel.net/2014/08/26/avoiding-sql-antipatterns-using-django-(and-postgres)/)
+- [RocksDB](http://rocksdb.org/), a persistent key-value store for fast storage environments
+
+### Serialization
+
+- json/ujson
+- protocol buffers
+- msgpack
 
 ### Python
 
@@ -67,6 +74,11 @@ modified: 2016-11-30T16:14
 - [GitHub Atom editor](http://flight-manual.atom.io/)
 - [Favicon Generator. For real.](https://realfavicongenerator.net/)
 - [Centralized logging](https://airbrake.io/)
+- [Cloudcraft: Visualize your cloud architecture](https://cloudcraft.co/)
+- [Codility: Source, Assess, Interview and Hire top Programmers](https://codility.com/)
+- [Paper](https://www.dropbox.com/paper) from Dropbox, a flexible workspace that brings people and ideas together
+- Monitoring: Sentry, Kibana
+- [Gitter IM](https://gitter.im) for team communitction
 
 ### Blogs
 

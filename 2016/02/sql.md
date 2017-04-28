@@ -520,6 +520,9 @@ Alternative technologies:
 - object-oriented databases
 - key/value stores
 - column-oriented databases
+> The Tables Have Turned.
+>
+> Vertica slogan
 - document-oriented databases
 - hierarchical databases
 - network databases

@@ -107,6 +107,7 @@ modified: 2016-12-21T14:39
 - The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
+- ZGuide
 
 ## Archive
 
@@ -122,3 +123,4 @@ modified: 2016-12-21T14:39
 - Japanese: Japanese in 10 days! by Patrice Lowe
 - Mastering Bitcoin: Unlocking Digital Cryptocurrencies by Andreas M. Antonopoulos
 - Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
+- Reach by Andy Molinsky (13%)

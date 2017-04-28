@@ -1,7 +1,7 @@
 labels: Draft
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2016-12-24T19:55
+modified: 2017-02-23T18:16
 place: Phuket, Thailand
 comments: true
 
@@ -58,3 +58,23 @@ An SQL injection:
 - Oh, yes. Little Bobby tables we call him.
 - Well, we've lost this year's student records. I hope yo're happy.
 - And I hope you've learned to sanitize your database inputs.
+
+## Columnal database
+
+> The Tables Have Turned.
+>
+> Vertica slogan
+
+## Programming
+
+> Programming is science dressed up as art because most of us don't understand the physics of softwware and it's rarely, if ever, taught.
+> ...
+> This is the science of programming: make building blocks that people can understand and use easily, and people will work together to solve the very largest problems.
+>
+> zguide
+
+## Ugly code
+
+> Ugly code hides problems and makes it hard for others to help you. You might get used to meaningless variable names, but people reading your code won't. Use names that are real words, that say something other than "I'm too careless to tell you what this variable is really for". Use consistent indentation and clean layout. Write nice code and your world will be more comfortable.
+>
+> zguide
