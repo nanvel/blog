@@ -719,7 +719,7 @@ Links:
 
 We need smart models, thin controllers and dumb views.
 
-Links:
+## Links
 
 - [Дизайн-патерни — просто, як двері](http://designpatterns.andriybuday.com/)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
