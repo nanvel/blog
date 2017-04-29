@@ -261,6 +261,24 @@ scrapy shell -s SOME_SETTING=VALUE
 
 ## Twisted
 
+[Twisted - hello asynchronous programming](http://jessenoller.com/2009/02/11/twisted-hello-asynchronous-programming/)
+[Twisted Introduction](http://krondo.com/an-introduction-to-asynchronous-programming-and-twisted/)
+[Introduction to Deferreds](https://twistedmatrix.com/documents/current/core/howto/defer-intro.html)
+
+`@defer.inlineCallback` accepts a function as an argument, that function can yield a deffered or call returnValue, essentially anywhere where you would normally block, you simply yield.
+
+Deferred:
+```
+deferred = defer.Deferred()
+deferred.addCallback(handler1)
+deferred.addCallback(handler2)
+deferred.callback('result')
+reactor.callLater(60, reactor.stop)
+reactor.run()
+```
+
+The reactor is the event loop mechanism for Twisted. It takes care of executing all of the various timed actions and the execution of the callback/errback stack. Timed actions can be deferreds, etc. Deferreds are simply objects executed by the Reactor.
+
 ### treq
 
 [treq](https://github.com/twisted/treq) - an asynchronous equivalent for requests package.

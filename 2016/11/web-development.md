@@ -2,7 +2,7 @@ labels: Draft
 		SoftwareDevelopment
 		WebDevelopment
 created: 2016-11-29T11:56
-modified: 2017-02-12T12:58
+modified: 2017-04-28T11:40
 place: Phuket, Thailand
 comments: true
 
@@ -91,3 +91,20 @@ RFC - request for comments.
 [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG) is a finite directed graph with no directed cycles. That is, it consists of finitely many vertices and edges, with each edge directed from one vertex to another, such that there is no way to start at any vertex v and follow a consistently-directed sequence of edges that eventually loops back to v again. Equivalently, a DAG is a directed graph that has a topological ordering, a sequence of the vertices such that every edge is directed from earlier to later in the sequence.
 
 See [airflow](https://airflow.incubator.apache.org/).
+
+### Thread safety
+
+> [Thread-safe code](http://mindprod.com/jgloss/threadsafe.html) is code that will work even if many threads are executing it simultaneously within the same process.
+
+[Thread safety](https://en.wikipedia.org/wiki/Thread_safety) is a computer programming concept applicable to multi-threaded code. Thread-safe code only manipulates shared data structures in a manner that guarantees safe execution by multiple threads.
+
+Software libraries can provide certain thread-safety guarantees. For example, concurrent reads might be guaranteed to be thread-safe, but concurrent writes might not be:
+
+- Thread safe: Implementation is guaranteed to be free of race conditions when accessed by multiple threads simultaneously
+- Conditionally safe: Different threads can access different objects simultaneously, and access to shared data is protected from race conditions
+- Not thread safe: Code should not be accessed simultaneously by different threads
+
+Ways to achieve thread safety:
+
+- avoid shared state (thread-local storage, immutable objects)
+- synchronization (ensure only one thread writes or reads the same data at any time, atomic)
