@@ -725,3 +725,4 @@ Links:
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
 - [A collection of design patterns/idioms in Python](https://github.com/faif/python-patterns)
 - [Design Patterns](https://sourcemaking.com/design_patterns) on sourcemaking.com
+- [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
