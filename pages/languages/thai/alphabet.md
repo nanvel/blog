@@ -13,80 +13,80 @@ https://www.youtube.com/watch?v=t_REY-8sVJs
 
 Gor Gai group
 
-ก - Gor Gai
-ถ - Thor Thoong (bag)
-ฌ - Chor Cher
-ญ - Yor Ying
-ณ - Nor Nen
-ภ - Phor Sam Phao (junk)
-ฎ - Dor Cha Daa
-ฏ - Tor Pa Tag
+ก - Gor Gai (middle tone)
+ถ - Thor Thoong (rising tone)
+ฌ - Chor Cher (low tone)
+ญ - Yor Ying (low tone)
+ณ - Nor Nen (low tone)
+ภ - Phor Sam Phao (low tone)
+ฎ - Dor Cha Daa (middle tone)
+ฏ - Tor Pa Tag (middle tone)
 
 Khor Khai group
 
-ข - Khor Khai
-ฃ - Khor Khuad
-ช - Chor Chaang
-ซ - Sor So
-บ - Bor Bai Mai
-ป - Por Plaa
-ย - Yor Yag
-ษ - Sor Reu See
+ข - Khor Khai (rising tone)
+[ฃ - Khor Khuad (rising tone)]
+ช - Chor Chaang (low tone)
+ซ - Sor So (low tone)
+บ - Bor Bai Mai (middle tone)
+ป - Por Plaa (middle tone)
+ย - Yor Yag (low tone)
+ษ - Sor Reu See (rising tone)
 
 Kor Kwaai group
 
-ค - Kor Kwaai
-ฅ - Kor Kon
-ฒ - Thor Phoo Thao
-ด - Dor Deg
-ต - Tor Tao
-ศ - Sor Saa Laa
+ค - Kor Kwaai (low tone)
+[ฅ - Kor Kon (low tone)]
+ฒ - Thor Phoo Thao (low tone)
+ด - Dor Deg (middle tone)
+ต - Tor Tao (middle)
+ศ - Sor Saa Laa (rising tone)
 
 Jor Jaan group
 
-จ - Jor Jaan
-ฉ - Chor Ching
-ล - Lor Ling
-ส - Sor Sua (tiger)
-อ - Or Aang
-ฮ - Hor Nog Hoog
+จ - Jor Jaan (middle tone)
+ฉ - Chor Ching (rising tone)
+ล - Lor Ling (low tone)
+ส - Sor Sua (rising tone)
+อ - Or Aang (middle tone)
+ฮ - Hor Nog Hoog (low tone)
 
 Phor Pheung group
 
-ผ - Phor Pheung
-ฝ - Fhor Fhaa
-พ - Phor Phaan
-ฟ - For Fan
-ฬ - Lor Joo Laa
+ผ - Phor Pheung (rising tone)
+ฝ - Fhor Fhaa (rising tone)
+พ - Phor Phaan (low tone)
+ฟ - For Fan (low tone)
+ฬ - Lor Joo Laa (low tone)
 
 Thor Thong group
 
-ธ - Thor Thong
-ฐ - Thor Thaan
-ร - Ror Rua
+ธ - Thor Thong (low tone)
+ฐ - Thor Thaan (rising tone)
+ร - Ror Rua (low tone)
 
 Thor Mon Tho group
 
-ฑ - Thor Mon Tho
-ท - Tor Ta Haan
-ห - Hor Heeb
+ฑ - Thor Mon Tho (low tone)
+ท - Tor Ta Haan (low tone)
+ห - Hor Heeb (rising tone)
 
 Nor Noo group
 
-น - Nor Noo
-ม - Mor Maa
+น - Nor Noo (low tone)
+ม - Mor Maa (low tone)
 
 Ngor Ngoo group
 
-ง - Ngor Ngoo
+ง - Ngor Ngoo (low tone)
 
 Thor group
 
-ฐ - Thor Thaan
-ฑ - Thor Mon Tho
-ฒ - Thor Phoo Thao
-ถ - Thor Thoong
-ธ - Thor Thong
+ฐ - Thor Thaan (rising tone)
+ฑ - Thor Mon Tho (low tone)
+ฒ - Thor Phoo Thao (low tone)
+ถ - Thor Thoong (rising tone)
+ธ - Thor Thong (low tone)
 
 ## Vowels
 
