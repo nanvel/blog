@@ -20,3 +20,7 @@ My question on StackOverflow: [Get my friends activities using redis (redis JOIN
 ## Fanout-On-Write approach
 
 Minimize read costs is they significantly outweight writes.
+
+## Queues
+
+https://www.rabbitmq.com/tutorials/amqp-concepts.html

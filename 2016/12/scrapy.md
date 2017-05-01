@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-04-28T09:00
+modified: 2017-05-01T23:27
 place: Phuket, Thailand
 comments: true
 
@@ -118,6 +118,98 @@ Using re: `.re('\d+ (.+)')` or `.re_first('\d+ (.+)')`
 
 Parsing, sanitizing, and more: [w3lib - a Python library of web-related functions](http://w3lib.readthedocs.io/en/latest/w3lib.html).
 
+### Asynchronous IO
+
+We can't write asynchronous code in spiders. As parse methods can return on dicts, Request objects and None, not deferred. What if we need some extra io:
+
+- do it outside the spider (item pipeline)
+- if there are only a few requests, or connection is fast enough (e.g. redis on localhost) - use blocking client
+- do requests same way we request sites when scraping
+
+S3 example:
+```
+from threading import Lock
+
+from botocore.endpoint import Endpoint
+import botocore.session
+from scrapy import Request
+import treq
+
+
+class BotocoreRequest(Exception):
+
+    def __init__(self, request, *args, **kwargs):
+        super(BotocoreRequest, self).__init__(*args, **kwargs)
+        self.method = request.method
+        # https://github.com/twisted/treq/issues/185
+        self.url = request.url.replace('https://', 'http://')
+        self.headers = dict(request.headers)
+        self.body = request.body and request.body.read()
+
+
+def _send_request(self, request_dict, operation_model):
+    request = self.create_request(request_dict, operation_model)
+    raise BotocoreRequest(request=request)
+
+
+class ScrapyAWSClient(object):
+    def __init__(self, service, access_key, secret_key, region, timeout=30):
+        session = botocore.session.get_session()
+        session.set_credentials(
+            access_key=access_key,
+            secret_key=secret_key
+        )
+        self.client = session.create_client(service, region_name=region)
+        self.timeout = timeout
+
+    def request(self, method, callback, meta, **kwargs):
+        _send_request_original = Endpoint._send_request
+        lock = Lock()
+        try:
+            lock.acquire()
+            Endpoint._send_request = _send_request
+            getattr(self.client, method)(**kwargs)
+        except BotocoreRequest as e:
+            return Request(
+                method=e.method,
+                url=e.url,
+                body=e.body,
+                headers=e.headers,
+                meta=meta,
+                callback=callback,
+                dont_filter=True
+            )
+        finally:
+            Endpoint._send_request = _send_request_original
+            lock.release()
+
+
+class MySpider(Spider):
+
+    def __init__(self, *args, **kwargs):
+        super(MySpider, self).__init__(*args, **kwargs)
+        self.client = ScrapyAWSClient(
+            service='s3',
+            access_key='',
+            secret_key='',
+            region='your-region'
+        )
+
+    def parse(self, response):
+        ...
+        yield self.client.request(
+            method='get_object',
+            Bucket='my-s3-bucket',
+            Key='my-key',
+            callback=self.my_parser,
+            meta={
+                'handle_httpstatus_list': [200, 403]
+            }
+        )
+```
+
+[My answer on stackoverflow](http://stackoverflow.com/questions/9752539/scrapy-async-database-request-in-spider-middleware/43722144#43722144).
+
 ## Items
 
 [Items](https://doc.scrapy.org/en/1.2/topics/items.html) provide the container of scraped data, while [Item Loaders](https://doc.scrapy.org/en/1.2/topics/loaders.html) provide the mechanism for populating that container.
@@ -187,9 +279,13 @@ class Builder(object):
         }
 ```
 
-### Item pipelines
+## Item pipelines
 
 Use if the problem is domain specific and the pipeline can be reused across projects.
+
+### Files pipeline
+
+Don't like s3 storage implementation: blocking botocore + threads. But it may be a good way to do it, efficient enough, reliable and stable.
 
 ## Spider middlewares
 
@@ -336,6 +432,12 @@ class MongoDBPipeline(object):
 ```
 
 [txredisapi](https://github.com/fiorix/txredisapi)
+
+### Async MQ clients
+
+[Pika](http://pika.readthedocs.io/en/0.10.0/index.html) (AMQP)
+
+Use [twisted_connection adapter](http://pika.readthedocs.io/en/0.10.0/examples/twisted_example.html).
 
 ### Using threads
 

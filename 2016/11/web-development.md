@@ -108,3 +108,5 @@ Ways to achieve thread safety:
 
 - avoid shared state (thread-local storage, immutable objects)
 - synchronization (ensure only one thread writes or reads the same data at any time, atomic)
+
+See [Thread Synchronization Mechanisms in Python](http://effbot.org/zone/thread-synchronization.htm).
