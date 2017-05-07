@@ -79,6 +79,7 @@ Throughput:
 [High Scalability: Building bigger, faster, more reliable websites](http://highscalability.com/)
 [Data Pipeline Architect - Resources to help you with data planning and plumbing](http://datapipelinearchitect.com/articles/)
 [Why You Shouldn’t Build Your Own Data Pipeline](https://blog.stitchdata.com/why-you-shouldnt-build-your-own-data-pipeline-16c767fd8f46)
+[Spark talk on PyCon Ukraine 2017](https://www.youtube.com/watch?v=vieASGQ6FP0) by Taras Lehinevych
 
 ## Vocabulary
 

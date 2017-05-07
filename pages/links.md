@@ -79,6 +79,7 @@ modified: 2016-11-30T16:14
 - [Paper](https://www.dropbox.com/paper) from Dropbox, a flexible workspace that brings people and ideas together
 - Monitoring: Sentry, Kibana
 - [Gitter IM](https://gitter.im) for team communitction
+- CI: [CircleCI](https://circleci.com/)
 
 ### Blogs
 

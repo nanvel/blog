@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2016-12-14T09:40
+modified: 2017-05-07T22:36
 place: Phuket, Thailand
 comments: true
 
@@ -287,6 +287,26 @@ with (yield from sem):
     page = yield from get(url, compress=True)
 ```
 
+### Executors
+
+ThreadPoolExecutor:
+
+- Less overhead
+- GIL still there
+- Passes arbitrary arguments
+- Based on threading
+
+Use for networking, if no async client available.
+
+ProcessPoolExecutor:
+
+- More overhead
+- No GIL
+- Passes only picklable arguments
+- Based on multiprocessing
+
+Use for CPU heavy jobs.
+
 ### UVLoop
 
 [uvloop](https://github.com/MagicStack/uvloop) is a fast, drop-in replacement of the built-in asyncio event loop. uvloop is implemented in Cython and uses libuv under the hood.
@@ -301,6 +321,7 @@ SQLAlchemy usage
 
 ## Links
 
+["Think in coroutines" talk on PyCon Ukraine 2017](https://www.youtube.com/watch?v=jutk9tHMi5U) by Lukash Langa
 [«Asyncio stack для веб разработчика» Ігор Давиденко LvivPy#4](https://www.youtube.com/watch?v=jqU8l9EBQ54) at YouTube, [slides](http://igordavydenko.com/talks/lvivpy-4/)
 [«Продвинутый async/await в Python 3.5» Igor Davydenko LvivPy#5](https://www.youtube.com/watch?v=8-PxeTgTx6s) at YouTube
 [Введение в aiohttp. Андрей Светлов](https://www.youtube.com/watch?v=F6sa6G0lJCk) at YouTube

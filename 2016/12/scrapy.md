@@ -291,6 +291,10 @@ Don't like s3 storage implementation: blocking botocore + threads. But it may be
 
 Use if the problem is domain specific and the middleware can be reused across projects. Use to modify or drop items.
 
+Useful middlewares:
+
+- `scrapy_fake_useragent.middleware.RandomUserAgentMiddleware`
+
 ## Downloader middlewares
 
 Use for custom login or special cookies handling.

@@ -24,3 +24,5 @@ Minimize read costs is they significantly outweight writes.
 ## Queues
 
 https://www.rabbitmq.com/tutorials/amqp-concepts.html
+
+https://derickbailey.com/2016/03/28/dealing-with-dead-letters-and-poison-messages-in-rabbitmq/
