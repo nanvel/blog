@@ -3,10 +3,15 @@ labels: Blog
         AWS
         Asynchronous
 created: 2014-08-30T00:00
+modified: 2017-05-14T15:25
 place: Kyiv, Ukraine
 comments: true
 
 # [tornado] Asynchronous botocore
+
+[TOC]
+
+## `tornado-botocore`
 
 AWS services and boto project are great things, but that we can't use them asynchronously in tornado is a big disadvantage.
 
@@ -72,4 +77,76 @@ def send(self, ...):
     res = yield gen.Task(ses_send_email.call,
         Source=source, Message=message, Destination=destination)
     raise gen.Return(res)
+```
+
+## HTTP client independent approach
+
+UPD: 2017-05-14
+
+```python
+from threading import Lock
+
+from botocore.endpoint import Endpoint
+import botocore.session
+
+
+class BotocoreRequest(Exception):
+
+    def __init__(self, request, *args, **kwargs):
+        super(BotocoreRequest, self).__init__(*args, **kwargs)
+        self.method = request.method
+        self.url = request.url
+        self.headers = dict(request.headers)
+        self.headers['User-Agent'] = 'my-useragent'
+        self.body = request.body and request.body.read()
+
+
+def _send_request(self, request_dict, operation_model):
+    request = self.create_request(request_dict, operation_model)
+    raise BotocoreRequest(request=request)
+
+
+class AWSClient(object):
+    """
+    client = AWSClient(
+        service='s3',
+        access_key='<access key>',
+        secret_key='<secret key>',
+        region='<s3 region>'
+    )
+
+    request = client.request(
+        method='head_object',
+        Bucket='<s3 bucket>',
+        Key='<key>'
+    )
+
+    See botocore api reference: http://botocore.readthedocs.io/en/latest/reference/index.html
+    """
+    def __init__(self, service, access_key, secret_key, region, timeout=30):
+        session = botocore.session.get_session()
+        session.set_credentials(
+            access_key=access_key,
+            secret_key=secret_key
+        )
+        self.client = session.create_client(service, region_name=region)
+        self.timeout = timeout
+
+    def request(self, method, **kwargs):
+        _send_request_original = Endpoint._send_request
+        lock = Lock()
+        try:
+            lock.acquire()
+            Endpoint._send_request = _send_request
+            getattr(self.client, method)(**kwargs)
+        except BotocoreRequest as e:
+            return {
+                'method': e.method,
+                'url': e.url,
+                'headers': e.headers,
+                'body': e.body
+            }
+        finally:
+            Endpoint._send_request = _send_request_original
+            lock.release()
 ```
