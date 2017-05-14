@@ -2,11 +2,13 @@ labels: Draft
 		SoftwareDevelopment
 		WebDevelopment
 created: 2016-11-29T11:56
-modified: 2017-04-28T11:40
+modified: 2017-05-10T12:36
 place: Phuket, Thailand
 comments: true
 
 # Web development
+
+[TOC]
 
 ## To investigate
 
@@ -15,6 +17,8 @@ Server sent events (https://www.youtube.com/watch?v=8-PxeTgTx6s).
 [The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
 
 [Code Smells](https://sourcemaking.com/refactoring/smells)
+
+Kubernetes
 
 ## img title vs image alt
 
@@ -76,6 +80,10 @@ Throughput:
 - medium = <5000/s
 - high = >5000/s
 
+Numbers:
+
+- Airbnb, [100k messages being sent on mobile per hour](https://medium.com/airbnb-engineering/messaging-sync-scaling-mobile-messaging-at-airbnb-659142036f06)
+
 [High Scalability: Building bigger, faster, more reliable websites](http://highscalability.com/)
 [Data Pipeline Architect - Resources to help you with data planning and plumbing](http://datapipelinearchitect.com/articles/)
 [Why You Shouldn’t Build Your Own Data Pipeline](https://blog.stitchdata.com/why-you-shouldnt-build-your-own-data-pipeline-16c767fd8f46)
@@ -111,3 +119,10 @@ Ways to achieve thread safety:
 - synchronization (ensure only one thread writes or reads the same data at any time, atomic)
 
 See [Thread Synchronization Mechanisms in Python](http://effbot.org/zone/thread-synchronization.htm).
+
+## Shifts in software engineering
+
+The cloud has effectively knocked down the logistical and economic barriers to
+accessing production-ready infrastructure. Any organization or individual can
+now harness the same technologies powering some of the biggest companies in
+the world (Monitoring Modern Infrastructure by John Matson and K Young).

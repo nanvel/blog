@@ -193,6 +193,10 @@ class AsyncIterable:
         ...
 ```
 
+## Tasks and coroutines
+
+See [Python Tasks and coroutines documentation](https://docs.python.org/3/library/asyncio-task.html)
+
 ## Debug
 
 ```python
@@ -328,6 +332,7 @@ SQLAlchemy usage
 [Yury Selivanov - async/await in Python 3.5 and why it is awesome](https://www.youtube.com/watch?v=m28fiN9y_r8) at YouTube
 [Łukasz Langa - Thinking In Coroutines - PyCon 2016](https://www.youtube.com/watch?v=l4Nn-y9ktd4) at YouTube
 [How the heck does async/await work in Python 3.5?](http://www.snarky.ca/how-the-heck-does-async-await-work-in-python-3-5) by Brett Cannon
+[Building Apps with Asyncio on PyCon Ukraine 2017](https://www.youtube.com/watch?v=ECZBxwE5eQc) by Nikolay Novik
 
 [PEP 342](https://www.python.org/dev/peps/pep-0342/) - Coroutines via Enhanced Generators
 [PEP 380](https://www.python.org/dev/peps/pep-0380/) - Syntax for Delegating to a Subgenerator

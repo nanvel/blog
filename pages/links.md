@@ -1,6 +1,6 @@
 labels: Pages
 created: 2014-01-01T00:00
-modified: 2016-11-30T16:14
+modified: 2017-05-14T14:42
 
 # Links storage
 
@@ -38,6 +38,7 @@ modified: 2016-11-30T16:14
 - [UA Pycon videos](http://www.youtube.com/user/theuapycon?feature=watch)
 - [Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html)
 - [Fluent Python](http://www.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/) by Luciano Ramalho
+- Testing using [PyTest](https://docs.pytest.org/en/latest/)
 
 ### JS
 

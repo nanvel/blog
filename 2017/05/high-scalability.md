@@ -11,3 +11,4 @@ comments: true
 ## Links
 
 [High Scalability: Building bigger, faster, more reliable websites](http://highscalability.com/) by Todd Hoff
+[Apache Kafka talk on Pycon Ukraine 2017](https://www.youtube.com/watch?v=dKUQFLgtW24) by Taras Voinarovskyy

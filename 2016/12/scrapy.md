@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-05-01T23:27
+modified: 2017-05-14T14:54
 place: Phuket, Thailand
 comments: true
 
@@ -612,6 +612,137 @@ Each spider execution requires extra ~30 seconds to start on scrapycloud. So 1 s
 
 In case if you use blocking db client, you'll, probably, see effect of it. Blocking db clients performs fine if connection is fast: db located on the same server or network.
 Example, a few db requests on local network vs the Internet: 57ms vs 1.19s.
+
+#### Custom images
+
+Use cases: add custom binaries, choose another framework for scraping (like use aiohttp).
+
+See [custom images contract](https://github.com/scrapinghub/shub/blob/master/docs/custom-images-contract.rst).
+
+##### `Dockerfile`
+
+```
+FROM python:3.6-slim
+RUN mkdir -p /app
+WORKDIR /app
+ADD . /app
+RUN pip install -r requirements.txt
+RUN ln -s /app/scripts/start-crawl /usr/sbin/start-crawl
+RUN ln -s /app/scripts/list-spiders /usr/sbin/list-spiders
+RUN chmod +x /app/scripts/start-crawl /app/scripts/list-spiders
+ENV PYTHONPATH "$PYTHONPATH:/app"
+```
+
+##### `.dockerignore`
+
+```
+*.pyc
+*/*.pyc
+*/*/*.pyc
+*/*/*/*.pyc
+*/*/*/*/*.pyc
+.env
+.git
+.idea
+.DS_Store
+.releases
+```
+
+##### Logging; saving scraped items, requests
+
+For logging use [Scrapy Cloud Write Entrypoint](https://doc.scrapinghub.com/scrapy-cloud-write-entrypoint.html), see [the code](https://github.com/scrapinghub/scrapinghub-entrypoint-scrapy/blob/master/sh_scrapy/writer.py).
+
+##### `scrapinghub.yml`
+
+```yml
+projects:
+  default: 12345
+
+images:
+  default: myuser/myrepository
+```
+
+##### Scripts
+
+```
+scripts
+- list-spiders
+- start-crawl
+```
+
+`list-spider`:
+```python
+#!/usr/local/bin/python
+import re
+import sys
+
+
+def list_spiders():
+    print("myspider")
+
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(list_spiders())
+```
+
+`start-crawl`:
+```python
+#!/usr/local/bin/python
+import re
+import sys
+
+from myproject.app import main
+
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+```
+
+##### Settings
+
+```python
+import json
+import os
+
+
+SHUB_SETTINGS = json.loads(os.getenv('SHUB_SETTINGS', '{}'))
+project_settings = SHUB_SETTINGS.get('project_settings', {})
+```
+
+See [other available settings](https://github.com/scrapinghub/shub/blob/master/docs/custom-images-contract.rst#shub_settings).
+
+##### Deploy
+
+Use [shub](https://shub.readthedocs.io/en/stable/) command line tool.
+
+```bash
+shub image build
+shub image push --username=<docker hub username> --password <docker hub password> --email <docker hub email>
+shub image deploy <scrapycloud project name> --username=<docker hub username> --password <docker hub password> --email <docker hub email>
+```
+
+##### Troubleshooting
+
+Run `build` with `--debug` key:
+```
+shub image build --debug
+```
+
+`sh` into the image:
+```bash
+docker run -it <container id> bash
+```
+
+On OSX I have an error when I run `shub image build` for first time:
+`Detected error connecting to Docker daemon's host.`
+
+Try this to solve it:
+```bash
+docker-machine restart default
+eval $(docker-machine env default)
+```
 
 ## Best practices
 
