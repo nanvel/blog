@@ -1,7 +1,7 @@
-labels: Draft
+labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2017-02-23T18:16
+modified: 2017-05-21T13:14
 place: Phuket, Thailand
 comments: true
 
@@ -9,9 +9,21 @@ comments: true
 
 [TOC]
 
+See also [Principles from software development](/2015/10/principles-software) and [DynamoDB in examples, Example 1.5: Distributed system terms](/2015/06/dynamodb-example-1-5).
+
+## Async frameworks
+
+Async frameworks use a single thread as much as possible. Uses modern operation system's IO multiplexing functions: `select()`, `poll()` and `epoll()`. If we are single-threaded, we don't suffer the costs of context switches and save resources that extra thread requires.
+
+The largest benefit of single thread is code simplicity, writing thread-safe code is more difficult.
+
 ## Code smell
 
 Code smell - a symptom of bad OO design. Smells are certain structures in the code that indicate violation of fundamental design principles and negatively impact design quality.
+
+## Complex universal vs simple specific
+
+Vote for simple specific. [KISS](/2015/10/principles-software#kiss).
 
 ## Composition vs inheritance
 
@@ -19,15 +31,27 @@ Code smell - a symptom of bad OO design. Smells are certain structures in the co
 >
 > Design Patterns by Gamma et al.
 
-## Concurency vs parallelism
+## Concurrency vs parallelism
 
-> Concurency is about dealing with lots of things at once.
+> Concurrency is about dealing with lots of things at once.
 > Parallelism is about doing lots of things at once.
 > Not the same, but related.
 > One is about structure, one is about execution.
-> Concurency provides a way to structure a solution to solve a problem that may (but not necessary) be parallelizable.
+> Concurrency provides a way to structure a solution to solve a problem that may (but not necessary) be parallelizable.
 >
 > Rob Pike, Co-inventor of the Go language
+
+## Duck typing
+
+> When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.
+>
+> James Whitcomb Riley
+
+A form of polymorphism where functions operate on any object that implements the appropriate methods, regardless of their classes or explicit interface declarations.
+
+## Functional programming
+
+It is a declarative programming paradigm, which means programming is done with expressions.
 
 ## Hacker
 
@@ -48,30 +72,36 @@ There are two schools of thought about teaching computer science. We might caric
 
 Brian Harvey and Matthew Wright, Preface by [Simply Scheme](https://people.eecs.berkeley.edu/~bh/ss-toc2.html)
 
-## SQL injection
+## Lazy implementation
 
-An SQL injection:
-
-- Hi, this is you sons school, we're having some computer trouble.
-- Oh, dear - did he break something? In a way -)
-- Do you really name your son "Robert'); DROP TABLE Students;"?
-- Oh, yes. Little Bobby tables we call him.
-- Well, we've lost this year's student records. I hope yo're happy.
-- And I hope you've learned to sanitize your database inputs.
-
-## Columnal database
-
-> The Tables Have Turned.
->
-> Vertica slogan
+A lazy implementation postpones producing values to the last possible moment. This saves memory and may avoid useless processing as well.
 
 ## Programming
 
-> Programming is science dressed up as art because most of us don't understand the physics of softwware and it's rarely, if ever, taught.
+> Programming is science dressed up as art because most of us don't understand the physics of software and it's rarely, if ever, taught.
 > ...
 > This is the science of programming: make building blocks that people can understand and use easily, and people will work together to solve the very largest problems.
 >
 > zguide
+
+## Thread safety
+
+> [Thread-safe code](http://mindprod.com/jgloss/threadsafe.html) is code that will work even if many threads are executing it simultaneously within the same process.
+
+[Thread safety](https://en.wikipedia.org/wiki/Thread_safety) is a computer programming concept applicable to multi-threaded code. Thread-safe code only manipulates shared data structures in a manner that guarantees safe execution by multiple threads.
+
+Software libraries can provide certain thread-safety guarantees. For example, concurrent reads might be guaranteed to be thread-safe, but concurrent writes might not be:
+
+- Thread safe: Implementation is guaranteed to be free of race conditions when accessed by multiple threads simultaneously
+- Conditionally safe: Different threads can access different objects simultaneously, and access to shared data is protected from race conditions
+- Not thread safe: Code should not be accessed simultaneously by different threads
+
+Ways to achieve thread safety:
+
+- avoid shared state (thread-local storage, immutable objects)
+- synchronization (ensure only one thread writes or reads the same data at any time, atomic)
+
+See [Thread Synchronization Mechanisms in Python](http://effbot.org/zone/thread-synchronization.htm).
 
 ## Ugly code
 

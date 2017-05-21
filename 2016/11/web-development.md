@@ -2,7 +2,7 @@ labels: Draft
 		SoftwareDevelopment
 		WebDevelopment
 created: 2016-11-29T11:56
-modified: 2017-05-10T12:36
+modified: 2017-05-21T13:07
 place: Phuket, Thailand
 comments: true
 
@@ -10,15 +10,9 @@ comments: true
 
 [TOC]
 
-## To investigate
-
-Server sent events (https://www.youtube.com/watch?v=8-PxeTgTx6s).
-[Splash - A javascript rendering service](http://splash.readthedocs.io/en/stable/).
-[The Unofficial Guide to Rich Hickey's Brain](http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/)
-
-[Code Smells](https://sourcemaking.com/refactoring/smells)
-
-Kubernetes
+> The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something that was man-made. When was the last time a technology with a scale like that was so error-free?
+>
+> Alan Kay, in the interview with Dr Dobb's Journal (2012)
 
 ## img title vs image alt
 
@@ -28,101 +22,8 @@ Image **title** should provide additional information and follow the rules of a 
 
 Source: [Image Alt Text Vs. Image Title: What’s the Difference?](https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/).
 
-## HTML parsing
-
-Replace tags and more:
-http://w3lib.readthedocs.io/en/latest/w3lib.html
-
-## Python batteries
-
-[textract](https://github.com/deanmalmgren/textract) - extract text from pdf, odt, csv, etc.
-[Python dictionaries validation](https://github.com/nicolaiarocci/cerberus)
-
-## Exceptions
-
-> Do you keep an endpoint on your site that purposely causes an exception to test changes to 
-exception handling? Asking for a friend.
->
-> Mark Roddy @digitallogic
-
-## Async
-
-Async frameworks use a single thread as much as possible.
-Uses modern operation system's IO multiplexing functions: select(), poll() and epoll().
-If we are single-threaded , we don't suffer the costs of context switches and save resources that extra thread required.
-The largest benefit of single thread is code simplicity, writing thread-safe code is more difficult.
-
-## Naming conventions
-
-Compound names: "from less specific to more specific" works best in the most cases.
-
-## Schema validation
-
-[validictory - general purpose python data validator](https://pypi.python.org/pypi/validictory)
-
-## Complex universal vs simple specific
-
-Vote for simple specific. KISS.
-
-## Thoughts on scale
-
-### Queues
-
-Help to handle spikes, scale horizintally and make system more reliable.
-
-### Big data?
-
-Big data if amount of data or resources to process it is the current system limit.
-
-Throughput:
-
-- low = <100/s
-- medium = <5000/s
-- high = >5000/s
-
-Numbers:
-
-- Airbnb, [100k messages being sent on mobile per hour](https://medium.com/airbnb-engineering/messaging-sync-scaling-mobile-messaging-at-airbnb-659142036f06)
-
-[High Scalability: Building bigger, faster, more reliable websites](http://highscalability.com/)
-[Data Pipeline Architect - Resources to help you with data planning and plumbing](http://datapipelinearchitect.com/articles/)
-[Why You Shouldn’t Build Your Own Data Pipeline](https://blog.stitchdata.com/why-you-shouldnt-build-your-own-data-pipeline-16c767fd8f46)
-[Spark talk on PyCon Ukraine 2017](https://www.youtube.com/watch?v=vieASGQ6FP0) by Taras Lehinevych
-
 ## Vocabulary
 
 ### RFC
 
 RFC - request for comments.
-
-### Directed acyclic graph
-
-[Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG) is a finite directed graph with no directed cycles. That is, it consists of finitely many vertices and edges, with each edge directed from one vertex to another, such that there is no way to start at any vertex v and follow a consistently-directed sequence of edges that eventually loops back to v again. Equivalently, a DAG is a directed graph that has a topological ordering, a sequence of the vertices such that every edge is directed from earlier to later in the sequence.
-
-See [airflow](https://airflow.incubator.apache.org/).
-
-### Thread safety
-
-> [Thread-safe code](http://mindprod.com/jgloss/threadsafe.html) is code that will work even if many threads are executing it simultaneously within the same process.
-
-[Thread safety](https://en.wikipedia.org/wiki/Thread_safety) is a computer programming concept applicable to multi-threaded code. Thread-safe code only manipulates shared data structures in a manner that guarantees safe execution by multiple threads.
-
-Software libraries can provide certain thread-safety guarantees. For example, concurrent reads might be guaranteed to be thread-safe, but concurrent writes might not be:
-
-- Thread safe: Implementation is guaranteed to be free of race conditions when accessed by multiple threads simultaneously
-- Conditionally safe: Different threads can access different objects simultaneously, and access to shared data is protected from race conditions
-- Not thread safe: Code should not be accessed simultaneously by different threads
-
-Ways to achieve thread safety:
-
-- avoid shared state (thread-local storage, immutable objects)
-- synchronization (ensure only one thread writes or reads the same data at any time, atomic)
-
-See [Thread Synchronization Mechanisms in Python](http://effbot.org/zone/thread-synchronization.htm).
-
-## Shifts in software engineering
-
-The cloud has effectively knocked down the logistical and economic barriers to
-accessing production-ready infrastructure. Any organization or individual can
-now harness the same technologies powering some of the biggest companies in
-the world (Monitoring Modern Infrastructure by John Matson and K Young).

@@ -1,7 +1,7 @@
 labels: Blog
         API
 created: 2013-10-26T00:00
-place: Starobilsk, Ukraine
+place: Starobil's'k, Ukraine
 comments: true
 
 # Trac api
@@ -45,12 +45,16 @@ if __name__ == '__main__':
     attributes = {
         'status': 'new',
         'priority': 'major',
-        'type': 'common'}
+        'type': 'common'
+    }
     subject = 'Some issue'
     description = 'Some description ...'
     server = xmlrpclib.ServerProxy(API_URL)
     ticket_id = server.ticket.create(
-        subject, description, attributes)
+        subject,
+        description,
+        attributes
+    )
     print 'Ticket #{ticket_id} was created'.format(ticket_id=ticket_id)
 ```
 

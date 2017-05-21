@@ -515,21 +515,6 @@ Relational databases are specifically designed to manage relationships:
 - changes to a single entity are atomic, consistent, isolated, and durable (ACID)
 - most relational databases support ACID transactions across multiple entities
 
-Alternative technologies:
-
-- object-oriented databases
-- key/value stores
-- column-oriented databases
-> The Tables Have Turned.
->
-> Vertica slogan
-- document-oriented databases
-- hierarchical databases
-- network databases
-- map/reduce frameworks
-- semantic data stores
-- graph databases
-
 ## Links
 
 [SQL Antipatterns: Avoiding the Pitfalls of Database Programming](http://www.amazon.com/SQL-Antipatterns-Programming-Pragmatic-Programmers-ebook/dp/B00A376BB2/) by Bill Karwin

@@ -103,13 +103,15 @@ modified: 2016-12-21T14:39
 - [+] Learning Scrapy by Dimitris Kouzis-Loukas
 - [+] The book of Satoshi: The collected writings of bitcoin creator Satoshi Nakamoto by Phil Champagne
 - Machine learning with random forests and decision trees by Scott Hartshorn
+- Culture & Empire: Digital Revolution by Pieter Hintjens
 
 ## In progress
 
-- Culture & Empire: Digital Revolution by Pieter Hintjens
+- Designing Data-Intensive Applications by Martin Kleppmann
+- ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
-- ZGuide
+- watchOS 2 App Development Essentials by Neil Smyth
 
 ## Archive
 

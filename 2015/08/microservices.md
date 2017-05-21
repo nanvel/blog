@@ -83,3 +83,7 @@ Nice idea is to temporary disconnect service if it start producing enormous numb
 ## Related
 
 See [AWS Lambda](https://aws.amazon.com/documentation/lambda/).
+
+## Links
+
+[The Truth about Microservices](https://developers.redhat.com/blog/2017/05/04/the-truth-about-microservices/) by Brian Atkisson

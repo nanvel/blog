@@ -47,14 +47,6 @@ Adding manpower to a late software project makes it later.
 
 A software engineering principle stating that "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." It first appeared in the book The Pragmatic Programmer by Andy Hunt and Dave Thomas.
 
-## Duck typing
-
-> When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.
->
-> James Whitcomb Riley
-
-A form of polymorphism where functions operate on any object that implements the appropriate methods, regardless of their classes or explicit interface declarations.
-
 ## EAFP
 
 **E**asier to **a**sk for **f**orgiveness than **p**ermission.
@@ -70,10 +62,6 @@ except KeyError:
 
 A system design approach recommending that errors should be reported as early as possible.
 
-## Functional programming
-
-It is a declarative programming paradigm, which means programming is done with expressions.
-
 ## Imperative vs Declarative style of programming
 
 Declarative style of programming tells a computer what to do without specifying how, while an imperative style style of programming describes how to do it.
@@ -84,10 +72,6 @@ Stands for "**K**eep **I**t **S**imple, **S**tupid."
 Simplest solution is often the best.
 
 This calls for seeking the simplest possible solution, with the fewest moving parts. The phrase was coined by Kelly Johnson, a highly accomplished aerospace engineer who worked in the real Area 51 designing some of the most advanced aircraft of the 20th centure.
-
-## Lazy implementation
-
-A lazy implementation postpones producing values to the last possible moment. This saves memory and may avoid useless processing as well.
 
 ## Minimum viable product
 
