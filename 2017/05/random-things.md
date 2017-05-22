@@ -55,3 +55,8 @@ The cloud has effectively knocked down the logistical and economic barriers to
 accessing production-ready infrastructure. Any organization or individual can
 now harness the same technologies powering some of the biggest companies in
 the world (Monitoring Modern Infrastructure by John Matson and K Young).
+
+## Hard disk mean time to failure
+
+~ 10-50 years.
+

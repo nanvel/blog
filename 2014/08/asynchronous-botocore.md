@@ -3,7 +3,7 @@ labels: Blog
         AWS
         Asynchronous
 created: 2014-08-30T00:00
-modified: 2017-05-14T15:25
+modified: 2017-05-22T23:07
 place: Kyiv, Ukraine
 comments: true
 
@@ -84,9 +84,8 @@ def send(self, ...):
 UPD: 2017-05-14
 
 ```python
-from threading import Lock
+from types import MethodType
 
-from botocore.endpoint import Endpoint
 import botocore.session
 
 
@@ -130,14 +129,13 @@ class AWSClient(object):
             secret_key=secret_key
         )
         self.client = session.create_client(service, region_name=region)
+        # https://tryolabs.com/blog/2013/07/05/run-time-method-patching-python/
+        endpoint = self.client._endpoint
+        endpoint._send_request = MethodType(_send_request, endpoint)
         self.timeout = timeout
 
     def request(self, method, **kwargs):
-        _send_request_original = Endpoint._send_request
-        lock = Lock()
         try:
-            lock.acquire()
-            Endpoint._send_request = _send_request
             getattr(self.client, method)(**kwargs)
         except BotocoreRequest as e:
             return {
@@ -146,7 +144,4 @@ class AWSClient(object):
                 'headers': e.headers,
                 'body': e.body
             }
-        finally:
-            Endpoint._send_request = _send_request_original
-            lock.release()
 ```
