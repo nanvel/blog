@@ -23,9 +23,9 @@ Notes on microservices pattern made after reading [Building Microservices](http:
 
 Microservice can be rewrote in 2 weeks or less (Jon Eaves).
 
-Every microservice inside application infrastructure may be wrote in language that most suitable for the problem the microservice solving, use libraries and instruments it needs even if other microservices use another.
+Each microservice inside an application infrastructure may be written in a language that is most suitable for the problem the microservice is solving, use libraries and instruments it needs even if other microservices use other.
 
-Small team (see Two-pizza teams) can own one small microservice. Small teams works with small codebase are more efficient and can be easily distributed across the globe.
+Small team (see Two-pizza teams) can own one small microservice. Small teams work with small codebases are more efficient and can be easily distributed across the globe.
 
 Microservices allows us to deliver new features faster. Although deploy and infrastructure may be a bit more sophisticated comparatively to solid application.
 Microservices allows us to use resources more efficiently, manage them more agile.
