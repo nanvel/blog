@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2017-05-21T13:14
+modified: 2017-05-28T13:49
 place: Phuket, Thailand
 comments: true
 
@@ -10,6 +10,12 @@ comments: true
 [TOC]
 
 See also [Principles from software development](/2015/10/principles-software) and [DynamoDB in examples, Example 1.5: Distributed system terms](/2015/06/dynamodb-example-1-5).
+
+## Accidental complexity
+
+Complexity is accidental if it is not inherent in the problem that the software solves (as seen by the users) but arises only from the implementation.
+
+"Out of the Tar Pit" by Ben Moseley and Peter Marks
 
 ## Async frameworks
 

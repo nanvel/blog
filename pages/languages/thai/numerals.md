@@ -4,19 +4,19 @@ modified: 2016-12-14T09:40
 
 # Thai numerals
 
-0 - su:n
-1 - neung (nunn)
-2 - sawng (soonn)
-3 - sa:m (saam)
-4 - se (sii)
-5 - ha (haa)
-6 - hawk (hok)
-7 - jet
-8 - bpaet (bpet)
-9 - ga:o (gaao)
-10 - sep (sip)
+0 - ศูนย์ (su:n) - long rising
+1 - หนึ่ง (nenng) - long low
+2 - สอง (so:nn) - rising
+3 - sa:m (sa:m) - long rising
+4 - สี่ (see) - long low
+5 - ห้า (ha:) - long falling
+6 - หก (hok) - short low
+7 - เจ็ด (jaet) - short low tone
+8 - แปด (bpaet) - long low tone
+9 - เก้า (ga:o) - short falling
+10 - สิบ (sib) - short low
 
-11 - sip ed
+11 - สิบเอ็ด (sib ed)
 12 - sip som
 20 - yii sip
 21 - yii sip ed

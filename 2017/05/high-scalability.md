@@ -10,6 +10,15 @@ comments: true
 
 [TOC]
 
+Obsticles:
+
+- reads
+- writes
+- data size
+- data complexity
+- response time
+- access patterns
+
 ## CPU
 
 Many applications today are data-intensive. Raw CPU power is rarely a limiting factor.

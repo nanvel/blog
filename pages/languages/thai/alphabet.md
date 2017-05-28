@@ -88,32 +88,37 @@ Thor group
 ถ - Thor Thoong (rising tone)
 ธ - Thor Thong (low tone)
 
-## Vowels
+## Vowels (สระ)
 
-`-ะ` - a
-`-า` - aa/ah/ar
+`-ะ` (`-ั`) - a
+`-า` - aa
 `ิ` - i
-`ี` - ee
-`ึ` - eu
-`ื` - eu
-`ุ` - oo
-`ู` - oo
-`เ-ะ` - ay
-`เ-` - ay/e
-`แ-ะ` - ae
-`แ-` - ae
-`โ-ะ` - oh/o
-`โ-` - oh/o
-`เ-าะ` - aw/au
-`-อ` - aw/or
+`ี` - i:
+`ึ` - eu (ы)
+`ื` - eu: (ы:)
+`ุ` - u
+`ู` - u:
+`เ-ะ` - e (э)
+`เ-` - e: (э:)
+`แ-ะ` - ae (aэ)
+`แ-` - ae: (aэ:)
+`โ-ะ` - o
+`โ-` - o:
+`เ-าะ` - oa
+`-อ` - oa:
 `ั-วะ` - ua
-`ั-ว` - ua/uah
-`เ-ียะ` - ia/ie
-`เ-ีย` - ia/ie
-`เ-ือะ` - eua/ua
-`เ-ือ` - eua/ua
-`เ-อะ` - er/ur
-`เ-อ` - er/oe/ur
+`ั-ว` - ua:
+`เ-ียะ` - ia
+`เ-ีย` - ia:
+`เ-ือะ` - uea (uы)
+`เ-ือ` - uea: (uы:)
+`เ-อะ` - ia
+`เ-อ` - ia:
+`ไ-` - ai
+`ใ-` - ayi (aї)
+`เ-ำ` - ao
+`-ำ` - am
+
 `-วย` - uai/uay/oo-ey
 `-อย` - oy
 `ั-ย` - ai
@@ -126,13 +131,10 @@ Thor group
 `เ-็ว` - eo/eow (short)
 `เ-ว` - eo/eow (long)
 `เ-็น` - e/eh
-`เ-ำ` - ao
 `เ-ิ` - er
 `เ-ียว` - io, iaw
 `เ-ือย` - eui
 `เเ-ว` - aeo, aew
-`ใ-` - ai
-`ไ-` - ai
 `โ-ย` - ouy
 `ุย` - auy/ui
 `-รร-` - un/unra
