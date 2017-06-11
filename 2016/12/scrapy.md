@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-05-14T14:54
+modified: 2017-06-11T11:00
 place: Phuket, Thailand
 comments: true
 
@@ -442,6 +442,10 @@ class MongoDBPipeline(object):
 [Pika](http://pika.readthedocs.io/en/0.10.0/index.html) (AMQP)
 
 Use [twisted_connection adapter](http://pika.readthedocs.io/en/0.10.0/examples/twisted_example.html).
+
+!!! caution "A few problems with pika twisted adapter"
+    First: if you call `basic_publish` too often, some messages can be not delivered to the broker. There is no errors or warnings both on `basic_publish` and `connection.close()`. Waiting for delivery confirmation solved the problem.
+    Another one: there is no reconnection after connection was lost. And it loses connection after a few minutes of inactivity: [pika issue #820](https://github.com/pika/pika/issues/820).
 
 ### Using threads
 

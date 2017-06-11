@@ -15,7 +15,7 @@ comments: true
 2. PostgreSQL
 3. It depends
 
-See [PayCon Ukraine 2016, lighting talks](https://www.youtube.com/watch?v=mgPBtKaDQww).
+See [PyCon Ukraine 2016, lighting talks](https://www.youtube.com/watch?v=mgPBtKaDQww).
 
 ## DB types
 
@@ -23,15 +23,49 @@ See [PayCon Ukraine 2016, lighting talks](https://www.youtube.com/watch?v=mgPBtK
 - object-oriented databases
 - key/value stores
 - column-oriented databases
-> The Tables Have Turned.
->
-> Vertica slogan
 - document-oriented databases
 - hierarchical databases
-- network databases
+    a tree, each node has one parent.
+- network databases (CODASYL model)
+    like hierarchical, but a record can have multiple perents.
+    The only way of accessing a record is from a root record along chains of links (access path).
 - map/reduce frameworks
 - semantic data stores
 - graph databases
+
+By storage:
+
+- in memory
+- disk
+
+## Relational model
+
+Proposed by Edgar Codd in 1970. Active usage - since mid-1980s (SQL, RDBMSs). The dominance of relational databases has lasted around 25-30 years.
+
+Data is organized into relations (called tables in SQL), where each relation is an unordered collection of tuples (rows in SQL).
+
+## Databases
+
+### Couchbase
+
+Weak durability by writing to disk asynchronously.
+
+### Redis
+
+Weak durability by writing to disk asynchronously.
+
+See also [Redis, usage examples](/2015/08/redis-rethink).
+
+## Miscelenous
+
+### Primary vs secondary indexes
+
+Both are key: document/row pairs.
+Primary index keys are unique, secondary index keys can be not unique.
+
+### Durable RAM
+
+Battery powered RAM.
 
 ## Vocabulary
 
@@ -51,3 +85,7 @@ An SQL injection:
 > The Tables Have Turned.
 >
 > Vertica slogan
+
+### Levenshtein automaton
+
+pass
