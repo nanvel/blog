@@ -1,7 +1,8 @@
 labels: SoftwareDevelopment
+        API
         Blog
 created: 2016-02-14T08:59
-modified: 2016-06-11T23:21
+modified: 2017-06-11T21:26
 place: New York, USA
 comments: true
 
@@ -83,6 +84,14 @@ There are a lot of ways to split words in an url making it more readable we can 
 
 You can use even a colon as a splitter.
 Using dash looks the best practice. You are allowed to use what you think is right, but mixing them is a bad decision.
+
+Here are a few points in favor of the dashes ([source](https://stackoverflow.com/questions/119312/urls-dash-vs-underscore)):
+
+- dashes are recommended by Google over underscores
+- dashes are more familiar to the end user
+- dashes are easier to write on a standard keyboard (no need to Shift)
+- dashes don't hide behind underlines
+- dashes feel more native in the context of URLs as they are allowed in domain names
 
 ## Request body format
 

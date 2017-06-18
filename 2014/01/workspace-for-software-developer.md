@@ -3,7 +3,7 @@ labels: Blog
         Life
         GTD
 created: 2014-01-19T00:00
-modified: 2015-10-22T00:00
+modified: 2017-06-15T11:45
 place: Phuket, Thailand
 comments: true
 
@@ -52,11 +52,11 @@ About work in travel:
 
 **UPD: 2015-06-28**
 
-Big house on Panwa, Phuket
+A house on Panwa, Phuket
 
 ![Big house on Panwa, Phuket](panwa_house.jpg)
 
-House in mountain, Phuket
+A sea view house, Phuket
 
 ![House in mountain](panwa_mountain_house.jpg)
 
@@ -71,3 +71,13 @@ Coworking in Batumi, Georgia.
 ![Georgia, Fan Fan](georgia_fanfan.jpg)
 
 [Pomodoro technique](http://pomodorotechnique.com/).
+
+**UPD: 2017-06-15**
+
+Bkstg.
+
+![Bkstg](bkstg_ws.jpg)
+
+Thailand 2017.
+
+![Thailand 2017](thailand_2017.jpg)

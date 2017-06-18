@@ -11,6 +11,8 @@ comments: true
 
 ## How to choose a DB
 
+If short:
+
 1. Use MongoDB (joke)
 2. PostgreSQL
 3. It depends
@@ -44,6 +46,10 @@ Proposed by Edgar Codd in 1970. Active usage - since mid-1980s (SQL, RDBMSs). Th
 
 Data is organized into relations (called tables in SQL), where each relation is an unordered collection of tuples (rows in SQL).
 
+## Column oriented storage
+
+Don't store all the values from one row together, but store all the values from each column together.
+
 ## Databases
 
 ### Couchbase
@@ -56,6 +62,10 @@ Weak durability by writing to disk asynchronously.
 
 See also [Redis, usage examples](/2015/08/redis-rethink).
 
+### AWS RedShift
+
+Hosted version of ParAccel.
+
 ## Miscelenous
 
 ### Primary vs secondary indexes
@@ -66,6 +76,14 @@ Primary index keys are unique, secondary index keys can be not unique.
 ### Durable RAM
 
 Battery powered RAM.
+
+### SQL-on-Hadoop projects
+
+Apache Hive, Spark SQL, Cloudera Impala, Facebook Presto, Apache Tajo, Apache Drill.
+
+### Parquet
+
+A columnar storage format that supports a document data model, based on Google's Dremel.
 
 ## Vocabulary
 
@@ -89,3 +107,18 @@ An SQL injection:
 ### Levenshtein automaton
 
 pass
+
+### Data warehouse
+
+A separate database for analytics purposes. A trend from late 1980s and early 1990s.
+The process of getting data in the warehouse is known as Extract-Transform-Load (ETL).
+
+### Star schema
+
+Aka dimensional modeling.
+Star - event and connections to dimension tables like the rays of a star.
+There is a fact table represents events and dimension tables represent who, when (allows to represent additional information, like publick holidays), where, what, how and why.
+
+## Links
+
+[Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) by Martin Kleppmann

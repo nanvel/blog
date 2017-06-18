@@ -6,6 +6,18 @@ modified: 2016-07-24T21:09
 
 [TOC]
 
+## Short forms
+
+Gonna - going to.
+Gotta - got to.
+Wanna - want to.
+Gimme - give me.
+Hafta - have to.
+Hasta - has to.
+Dunnon - don't know.
+Outta - out of.
+Kinda - kind of.
+
 ## Making suggestions
 
 It has just came to my mind ...
