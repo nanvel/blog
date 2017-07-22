@@ -81,6 +81,7 @@ modified: 2017-05-14T14:42
 - Monitoring: Sentry, Kibana
 - [Gitter IM](https://gitter.im) for team communitction
 - CI: [CircleCI](https://circleci.com/)
+- APM (Application Performance Monitoring): [DataDog](http://docs.datadoghq.com/)
 
 ### Blogs
 

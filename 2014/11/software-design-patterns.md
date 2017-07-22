@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2017-04-29T21:41
+modified: 2017-07-21T12:23
 place: Kyiv, Ukraine
 comments: true
 
@@ -854,6 +854,10 @@ Links:
 ### [Model View Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
 We need smart models, thin controllers and dumb views.
+
+## Other
+
+[Circuit breaker design pattern](https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern)
 
 ## Links
 

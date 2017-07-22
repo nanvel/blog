@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-06-11T11:00
+modified: 2017-07-21T09:52
 place: Phuket, Thailand
 comments: true
 
@@ -775,6 +775,10 @@ If the spider scrapes a single domain, a common practice is to name the spider a
 ### User-Agent
 
 Set `User-Agent` header to something that identifies you.
+
+### Crawling in large scale
+
+See [scrapy cluste](rhttp://scrapy-cluster.readthedocs.io/).
 
 ## Vocabulary
 

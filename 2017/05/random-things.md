@@ -60,3 +60,14 @@ the world (Monitoring Modern Infrastructure by John Matson and K Young).
 
 ~ 10-50 years.
 
+## Encoding
+
+Aka serialization, marshalling.
+
+Translation from in-memory representation to byte sequence.
+
+## Decoding
+
+Aka parsing, deserialization, unmarshaling.
+
+Translation from bytes representation to in-memory representation.

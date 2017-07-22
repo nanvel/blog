@@ -53,6 +53,18 @@ Alternatives to ECS web console:
 - [Convox rack](https://github.com/convox/rack)
 - [Empire](https://github.com/remind101/empire)
 
+## VPC
+
+VPC is a software-defined network (SDN) optimized for moving massive amounts of packets into, out of and across AWS regions.
+
+[How should I connect to my Amazon virtual private cloud?](https://aws.amazon.com/premiumsupport/knowledge-center/connect-vpc/)
+
+### Subnets
+
+> Ensure that no backend EC2 instances are provisioned in public subnets in order to protect them from exposure to the Internet. In this context, backend instances are EC2 instances that do not require direct access to the public internet such as database, API or caching servers. As best practice, all EC2 instances that are not Internet-facing should run within a private subnet, behind a NAT gateway that allows downloading software updates and implementing security patches or accessing other AWS resources like SQS and SNS.
+>
+> [Cloud Conformity](https://www.cloudconformity.com/conformity-rules/EC2/instance-not-in-public-subnet.html)
+
 ## To investigate
 
 ECS vs Kubernetes (k8s).
@@ -97,3 +109,30 @@ To check: [credstash](https://github.com/fugue/credstash).
 ### Cowboy coding
 
 Cowboy coding - working directly in a production environment, not documenting or incapsulating changes in code, and not having a way to roll back to a previous version.
+
+### Subnet masks
+
+Standard subnet masks:
+
+- Class A: 255.0.0.0
+- Class B: 255.255.0.0
+- Class C: 255.255.255.0
+
+10.0.0.0/16 - 65536 private IPv4 addresses.
+10.0.0.0/24 - 256 private IPv4 addresses.
+
+### Private network addresses
+
+https://en.wikipedia.org/wiki/Private_network
+
+```text
+10.0.0.0 – 10.255.255.255
+172.16.0.0 – 172.31.255.255
+192.168.0.0 – 192.168.255.255
+```
+
+Private network: the shared [private networking on DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-digitalocean-private-networking) droplets is represented by a second interface on each server that has no internet access.
+
+## Links
+
+[Practical VPC Design](https://medium.com/aws-activate-startup-blog/practical-vpc-design-8412e1a18dcc) by Amazon Web Services Startup Program

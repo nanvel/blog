@@ -1,5 +1,5 @@
 labels: Draft
-		Tools
+        Tools
 created: 2017-06-12T18:44
 modified: 2017-06-18T22:50
 place: Phuket, Thailand
@@ -72,11 +72,11 @@ Example:
   pre_tasks:
     ...
   tasks:
-	- name: Install ... {{ myvar }}
-	  yum: ...
-	  notity:
-	    - do something
-	- include: my-tasks.yml
+  - name: Install ... {{ myvar }}
+    yum: ...
+    notity:
+      - do something
+  - include: my-tasks.yml
   post_tasks:
     ...
   handlers:
@@ -140,7 +140,7 @@ See [Ansible modules](http://docs.ansible.com/ansible/modules_by_category.html).
 `when`:
 ```yaml
 - apt:
-	name: vim
+  name: vim
   when: is_local
   # when: "(is_local is defined) and is_local"
   # when: "'ready' in my_result.stdout"
@@ -253,9 +253,9 @@ Vagrant features:
 - tasks
   - name: "Set an environment variable"
     lineinfile:
-    	path=~/.bash_profile
-    	regexp=^ENV_VAR=
-    	line=ENV_VAR=value
+      path=~/.bash_profile
+      regexp=^ENV_VAR=
+      line=ENV_VAR=value
 ```
 
 Can use `register` to store env variable and use later.
@@ -283,9 +283,42 @@ Use `10.0.2.2`.
 - include: playbook2.yml
 ```
 
+### AWS guide
+
+See [Ansible AWS Guide](http://docs.ansible.com/ansible/guide_aws.html).
+
+### Run ansible through a bastion host
+
+See [Running Ansible Through an SSH Bastion Host](http://blog.scottlowe.org/2015/12/24/running-ansible-through-ssh-bastion-host/) by Scott Lowe.
+
+Example:
+
+```text
+# custom ssh configuration file
+Host 10.10.10.*
+  ProxyCommand ssh -W %h:%p bastion.example.com
+  IdentityFile ~/.ssh/private_key.pem
+
+Host bastion.example.com
+  Hostname bastion.example.com
+  User ubuntu
+  IdentityFile ~/.ssh/private_key.pem
+  ControlMaster auto
+  ControlPath ~/.ssh/ansible-%r@%h:%p
+  ControlPersist 5m
+```
+
+```text
+# ansible.cfg
+[ssh_connection]
+ssh_args = -F ./ssh.cfg -o ControlMaster=auto -o ControlPersist=30m
+control_path = ~/.ssh/ansible-%%r@%%h:%%p
+```
+
 ## Best practices
 
 See [Ansible Best Practices](http://docs.ansible.com/ansible/playbooks_best_practices.html).
+[Ansible for AWS](https://leanpub.com/ansible-for-aws) book.
 
 ### Documentation
 

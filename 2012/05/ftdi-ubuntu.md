@@ -11,7 +11,7 @@ comments: true
 
 ![ft232rl](ft232rl.jpg)
 
-Рішення - використання відкритої бібліотеки libFTDI з сайту infra2net.com.
+Рішення - використання відкритої бібліотеки `libFTDI` з сайту infra2net.com.
 
 [TOC]
 
@@ -26,7 +26,7 @@ sudo apt-get install libusb-dev # потрібні для компіляції L
 
 2. Завантажити останню версію бібліотеки можна тут: [libftdi at www.intra2net.com](http://www.intra2net.com/en/developer/libftdi/download.php).
 
-Я завантажив архів libftdi-0.20.tar.gz.
+Я завантажив архів `libftdi-0.20.tar.gz`.
 
 3. Розархівовуємо:
 ```bash
@@ -34,7 +34,7 @@ tar -xvf libftdi-0.20.tar.gz
 cd libftdi-0.20
 ```
 
-4. Компіляція та встановлення бібліотеки LibFTDI
+4. Компіляція та встановлення бібліотеки `LibFTDI`
 
 Я збираюсь писати програму на Python, тому потрібно активувати python-біндінг.
 ```bash
@@ -53,7 +53,7 @@ sudo vim /etc/udev/rules.d/60-FTDIRT232R-usb.rules
 ATTR{idVendor}=="0403", ATTR{idProduct}=="6001", MODE="0666"
 ```
 
-idVendor та idProduct можна подивитись у списку пристроїв, що підключені до USB:
+`idVendor` та `idProduct` можна подивитись у списку пристроїв, що підключені до USB:
 ```bash
 lsusb
 ```

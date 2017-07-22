@@ -26,3 +26,5 @@ Minimize read costs is they significantly outweight writes.
 https://www.rabbitmq.com/tutorials/amqp-concepts.html
 
 https://derickbailey.com/2016/03/28/dealing-with-dead-letters-and-poison-messages-in-rabbitmq/
+
+[Building a Data Pipeline with Clojure and Kafka](https://www.youtube.com/watch?v=6xlyWjqFDWs) by David Pick

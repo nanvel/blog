@@ -119,6 +119,16 @@ Aka dimensional modeling.
 Star - event and connections to dimension tables like the rays of a star.
 There is a fact table represents events and dimension tables represent who, when (allows to represent additional information, like publick holidays), where, what, how and why.
 
+### Replication and Partitioning
+
+**Replication** - keeping a copy of the same data on several different nodes:
+
+- keep data geographically close to users
+- availability
+- read throughput
+
+**Partitioning** (aka sharding) - Splitting a big database into smaller subsets called partitions so that different partitions can be assigned to different nodes.
+
 ## Links
 
 [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) by Martin Kleppmann
