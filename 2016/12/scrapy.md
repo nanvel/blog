@@ -478,6 +478,11 @@ Blocking code slows done items processing, and it may become a bottleneck. Examp
 
 See [How does scrapy react to a blocked Ppipeline?](http://www.leehodgkinson.com/blog/scrapy-pipelines/)
 
+### How fast a single spider
+
+It depends.
+I saw 20rps, but with `aiohttp` able to reach 100rps.
+
 ## Debug
 
 ```python
@@ -777,6 +782,9 @@ If the spider scrapes a single domain, a common practice is to name the spider a
 Set `User-Agent` header to something that identifies you.
 
 ### Crawling in large scale
+
+Easy to grow horizontally, just add more spiders, more machines.
+But, in order to be able to crawl faster, we may need to scale vertically (more CPU, more bandwidth) or build a cluster with each spider effort coordinated (distribute requests to the same domain across many machines).
 
 See [scrapy cluste](rhttp://scrapy-cluster.readthedocs.io/).
 

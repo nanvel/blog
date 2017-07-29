@@ -113,6 +113,7 @@ modified: 2016-12-21T14:39
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - watchOS 2 App Development Essentials by Neil Smyth
+- Terraform: Up and Running by Yevgeniy Brikman
 
 ## Archive
 

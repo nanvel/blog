@@ -18,6 +18,13 @@ Terraform is a tool for building, changing, and versioning infrastructure safely
 !!! note "Infrastructure as Code"
     Infrastructure is described using a high-level configuration syntax. This allows a blueprint of your datacenter to be versioned and treated as you would any other code. Additionally, infrastructure can be shared and re-used.
 
-# Links
+## Vocabulary
+
+### Infrastructure as Code
+
+Infrastructure as Code (IAC) - write and execute code to define, deploy, and update your infrastructure.
+
+## Links
 
 [Terraform At Scale](https://www.youtube.com/watch?v=RldRDryLiXs) by Calvin French-Owen on YouTube
+[Terraform: Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code-ebook/dp/B06XKHGJHP/) by Yevgeniy Brikman

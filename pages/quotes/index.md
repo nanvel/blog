@@ -1,7 +1,7 @@
 labels: Pages
         Quotes
 created: 2017-07-22T20:50
-modified: 2017-07-22T20:50
+modified: 2017-07-29T12:51
 
 # Quotes
 
@@ -902,3 +902,37 @@ Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future
 > Intelligence is dangerous. Intelligence means you will start thinking on your own; you will start looking around on your own. You will not believe in the scriptures; you will believe only in your own experience.
 >
 > Osho
+---
+> Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.
+>
+> Linus Torvalds
+---
+> I'd rather be a looser than a sucker.
+>
+> Unknown
+---
+> The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something that was man-made. When was the last time a technology with a scale like that was so error-free?
+>
+> Alan Kay, in the interview with Dr Dobb's Journal (2012)
+---
+> I have not failed, I've just found 10000 ways that won't work.
+>
+> Thomas Edison
+---
+> If eveything is under control, you are going too slow.
+>
+> Mario Adretti
+---
+> Men have become the tools of their tools.
+>
+> Henry David Thoreau
+---
+> A pint of sweat saves a gallon of blood.
+>
+> General Patton
+---
+> One machine can do the work of fifty ordinary men.
+> No machine can do the work of one extraordinary man.
+>
+> Elbert Hubbard
+---

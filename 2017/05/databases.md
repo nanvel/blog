@@ -1,7 +1,7 @@
 labels: Draft
 		Databases
 created: 2017-05-10T12:38
-modified: 2017-05-21T13:15
+modified: 2017-08-27T11:04
 place: Phuket, Thailand
 comments: true
 
@@ -123,11 +123,47 @@ There is a fact table represents events and dimension tables represent who, when
 
 **Replication** - keeping a copy of the same data on several different nodes:
 
-- keep data geographically close to users
+- latency (keep data geographically close to users)
 - availability
-- read throughput
+- scalability (read throughput)
 
-**Partitioning** (aka sharding) - Splitting a big database into smaller subsets called partitions so that different partitions can be assigned to different nodes.
+Variations:
+
+- single-leader
+- multi-leader
+- leaderless
+
+**Partitioning** (aka sharding) - Splitting a big database into smaller subsets called partitions so that different partitions can be assigned to different nodes. Distribute large dataset across many disks, distribute query load across many processors.
+
+Partition aka:
+
+- **Shard** in: MongoDB, Elasticsearch, SolrCloud.
+- **Region** in: HBase.
+- **Tablet** in: Bigtable.
+- **Vnode** in: Cassandra and Riak.
+- **vBucket** in Couchbase.
+
+Keys distribution:
+
+- by keys range
+- by key hash range (hash function makes data uniformly distributed, Cassandra and MongoDB use MD5)
+
+### Service discovery in distributed databases
+
+Knowledge about partitions may be stored in:
+
+- each node
+- a routing tier
+- in a client
+
+Many use ZooKeeper (LinkedIn's Expresso/Helix, HBase, SolrCloud, Kafka). 
+
+Kassandra and Reak use gossip protocol (there is no external coordination service).
+
+## Databases index
+
+HBase (opensource BigTable)
+Ketama
 
 ## Links
 

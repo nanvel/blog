@@ -2,7 +2,7 @@ labels: Draft
         AWS
         HighScalability
 created: 2017-06-08T16:38
-modified: 2017-06-08T16:38
+modified: 2017-07-29T13:32
 place: Phuket, Thailand
 comments: true
 
@@ -96,6 +96,56 @@ Resources monitoring:
 - Munin
 - Cacti
 
+## Deployment
+
+Deployment strategies:
+
+- single server deployment
+- zero-downtime multi-server deployment
+- capistrano-style and blue-green deployments
+
+## Security
+
+Your infrastructure as weak as the weakest server.
+
+Use secure and encrypten communication.
+Disable root login and use sudo.
+Remove unused software, open only required ports.
+Use the principle of least privilege.
+Update the OS and installed software.
+Use a properly configured firewall.
+Make sure log files are populated and rotated.
+Monitor logins and block suspect ip addresses.
+Disable password based ssh authentication.
+Use a nonstandard port for ssh.
+
+## Bash
+
+Memory usage:
+```bash
+free -f
+```
+
+Disk usage:
+```bash
+df -h
+```
+
+Date:
+```bash
+date
+```
+
+Get a service status:
+```bash
+service <service name> status
+```
+
+Watch file changes:
+```bash
+tail -f <file path>
+```
+
 ## Best practices
 
 ### Credentials
@@ -132,6 +182,12 @@ https://en.wikipedia.org/wiki/Private_network
 ```
 
 Private network: the shared [private networking on DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-digitalocean-private-networking) droplets is represented by a second interface on each server that has no internet access.
+
+### Viartual machine vs Container
+
+Viartual machine (VM) emulates an entire computer system, including hardware. Example: ViartualBox.
+
+A container emulates the user space of an operating system. Examples: Docker, CoreOS.
 
 ## Links
 
