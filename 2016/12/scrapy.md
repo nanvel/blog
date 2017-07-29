@@ -615,7 +615,7 @@ Use [shub](http://shub.readthedocs.io/en/stable/deploying.html) utility.
 
 Autothrottle addon is enabled by default on scrapycloud.
 It may cause a few times slower scraping rate, sometimes 5 times or more.
-use `UTOTHROTTLE_ENABLED = false` setting to disable it.
+use `AUTOTHROTTLE_ENABLED = false` setting to disable it.
 
 Each spider execution requires extra ~30 seconds to start on scrapycloud. So 1 spider does 100 requests is much better than 100 spiders each sends only 1 requests.
 
