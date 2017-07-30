@@ -24,6 +24,8 @@ Ansible aims to be:
 - efficient
 - secure
 
+Initial release: 2012.
+
 > When developers begin to think of infrastructure as part of their application, stability and performance become normative.
 >
 > Ansible for DevOps by Jeff Geerling

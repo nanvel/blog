@@ -18,6 +18,34 @@ Terraform is a tool for building, changing, and versioning infrastructure safely
 !!! note "Infrastructure as Code"
     Infrastructure is described using a high-level configuration syntax. This allows a blueprint of your datacenter to be versioned and treated as you would any other code. Additionally, infrastructure can be shared and re-used.
 
+Terraform allows to write code that is specific to each provider, taking advantage of that provicer's unique functionality, but to use the same language and toolset.
+
+Initial release: 2014.
+
+Other provisioning tools:
+
+- Chef
+- Puppet
+- Ansible
+- SaltStack
+- CloudFormation
+- OpenStack Heat
+
+## Tips
+
+Starting service on image setup:
+```text
+resource "aws_instance" "app" {
+	...
+
+	user_data = <<-EOF
+	#!bin/bash
+	sudo service myservice start
+	EOF
+}
+```
+`user_data` - a script that executes when the server is booting.
+
 ## Vocabulary
 
 ### Infrastructure as Code

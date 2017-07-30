@@ -1,6 +1,6 @@
 labels: Thai
 created: 2016-09-13T17:22
-modified: 2016-12-17T13:47
+modified: 2017-07-30T10:58
 
 # Alphabet
 
@@ -138,3 +138,9 @@ Thor group
 `โ-ย` - ouy
 `ุย` - auy/ui
 `-รร-` - un/unra
+
+## Fonts
+
+![Thai fonts](fonts.png)
+
+See [Thai fonts pdf](thai_fonts.pdf).
