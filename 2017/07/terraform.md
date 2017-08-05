@@ -30,6 +30,20 @@ Other provisioning tools:
 - SaltStack
 - CloudFormation
 - OpenStack Heat
+## Commands
+
+Commands:
+
+- get
+- plan
+- apply
+- graph (use [Graphviz](http://dreampuf.github.io/GraphvizOnline/) to vizualize)
+- destroy
+
+AWS ENV:
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
 
 ## Tips
 

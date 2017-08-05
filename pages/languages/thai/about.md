@@ -1,6 +1,6 @@
 labels: Thai
 created: 2017-06-07T14:16
-modified: 2017-06-07T14:16
+modified: 2017-08-05T10:03
 
 # Thai language
 
@@ -48,3 +48,5 @@ Low class consonants:
 - ล
 - ฬ
 - ว
+
+Use ห and อ to influence tone.

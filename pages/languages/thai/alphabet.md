@@ -1,6 +1,6 @@
 labels: Thai
 created: 2016-09-13T17:22
-modified: 2017-07-30T10:58
+modified: 2017-08-05T10:04
 
 # Alphabet
 
@@ -138,6 +138,37 @@ Thor group
 `โ-ย` - ouy
 `ุย` - auy/ui
 `-รร-` - un/unra
+
+Sounds with a consonant:
+
+ก์ - silent ga
+ก้ - short ga
+กิ - short gi
+กุ - short gu
+กึ - short gи
+กา - long ga
+กี - long gi
+กู - long gu
+กื - long gи
+เกะ - shor ge
+เเกะ - short gae
+โกะ - short go
+เก　- long ge
+เเก - long gae
+โก - long go
+เกาะ - go
+เกอะ - goe
+เกีย - gia
+ก้ว - gua
+เกย - goe:y
+กอ - long go
+เกอ - long goe
+เกือ - gua
+เกา - gau
+ไก - gai
+กำ - gam
+ใก - gai
+กฤ - gru
 
 ## Fonts
 
