@@ -2,7 +2,7 @@ labels: Draft
         AWS
         HighScalability
 created: 2017-06-08T16:38
-modified: 2017-07-29T13:32
+modified: 2017-08-19T12:30
 place: Phuket, Thailand
 comments: true
 
@@ -15,6 +15,10 @@ AWS EC2 instance - virtual computing environment.
 AWS AMI - preconfigured templates for instances (operation system and additional software). You can launch different types of instances from a single AMI.
 
 ## AWS
+
+### AWS terms in plain English
+
+[Amazon Web Services in Plain English](https://www.expeditedssl.com/aws-in-plain-english).
 
 ### Terraform
 
@@ -52,6 +56,13 @@ Alternatives to ECS web console:
 
 - [Convox rack](https://github.com/convox/rack)
 - [Empire](https://github.com/remind101/empire)
+
+## AWS Lambda
+
+### OCR
+
+OCR speed: ~1 page per execution, ~320MB * 1minute.
+See [lambda-text-extractor](https://github.com/skylander86/lambda-text-extractor/blob/master/README.md) on GitHub.
 
 ## VPC
 
@@ -192,3 +203,5 @@ A container emulates the user space of an operating system. Examples: Docker, Co
 ## Links
 
 [Practical VPC Design](https://medium.com/aws-activate-startup-blog/practical-vpc-design-8412e1a18dcc) by Amazon Web Services Startup Program
+[Dev2Ops](http://dev2ops.org/)
+[AWS blog](https://aws.amazon.com/blogs/aws/)

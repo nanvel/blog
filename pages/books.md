@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2016-12-21T14:39
+modified: 2017-08-19T16:04
 
 # Books
 
@@ -105,6 +105,7 @@ modified: 2016-12-21T14:39
 - Machine learning with random forests and decision trees by Scott Hartshorn
 - Culture & Empire: Digital Revolution by Pieter Hintjens
 - [+] Ansible for DevOps by Jeff Geerling
+- Terraform: Up and Running by Yevgeniy Brikman
 
 ## In progress
 
@@ -113,7 +114,6 @@ modified: 2016-12-21T14:39
 - Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - watchOS 2 App Development Essentials by Neil Smyth
-- Terraform: Up and Running by Yevgeniy Brikman
 
 ## Archive
 

@@ -34,6 +34,21 @@ A subscribed can set many subscriptions.
 
 Protocol Buffers.
 
+## RabbitMQ
+
+### Acknowledgements vs publisher confirms
+
+Acknowledgements: delivery processing acknowledgements from consumers to RabbitMQ.
+Publisher confirms: broker acknowledgements to publishers.
+
+### Prefetch count
+
+Prefetch count - max number of unacknowledged deliveries that are permitted on a channel.
+
+### [Dead Letter Exchanges](https://www.rabbitmq.com/dlx.html)
+
+Messages from a queue can be 'dead-lettered'; that is, republished to another exchange when rejected.
+
 ## Terms
 
 ### Slow joiner

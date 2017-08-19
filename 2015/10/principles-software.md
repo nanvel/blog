@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2016-12-20T23:24
+modified: 2017-08-05T10:24
 place: Kyiv, Ukraine
 comments: true
 
@@ -43,9 +43,13 @@ Adding manpower to a late software project makes it later.
 
 ## DRY
 
-**D**on’t **r**epeat **y**ourself.
+**D**on’t **R**epeat **Y**ourself.
 
 A software engineering principle stating that "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." It first appeared in the book The Pragmatic Programmer by Andy Hunt and Dave Thomas.
+
+> Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+>
+> The Pragmatic Probrammer by Andy Hunt and Dave Thomas
 
 ## EAFP
 

@@ -3,7 +3,7 @@ labels: Blog
         Life
         GTD
 created: 2014-01-19T00:00
-modified: 2017-06-15T11:45
+modified: 2017-08-05T10:32
 place: Phuket, Thailand
 comments: true
 
@@ -81,3 +81,9 @@ Bkstg.
 Thailand 2017.
 
 ![Thailand 2017](thailand_2017.jpg)
+
+**UPD: 2017-08-05**
+
+Hatch coworking, Phuket.
+
+![Hatch](hatch.jpg)

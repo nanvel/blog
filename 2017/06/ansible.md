@@ -2,7 +2,7 @@ labels: Blog
         Tools
         Server
 created: 2017-06-12T18:44
-modified: 2017-07-29T15:25
+modified: 2017-08-19T12:24
 place: Phuket, Thailand
 comments: true
 
@@ -486,6 +486,25 @@ Specify it in inventories:
 ```conf
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
+```
+
+### Copy source code
+
+One way:
+```yaml
+---
+- tasks
+  - name: "Synchronize the source"
+      synchronize:
+        dest: "/home/{{ user }}/{{ app }}/"
+        src: "{{ item }}"
+        rsync_opts:
+          - "--exclude=*.pyc"
+      become_user: "{{ user }}"
+      with_items:
+        - ../<some folder>
+        - ../<some file>
+      notify: server restart
 ```
 
 ## Best practices

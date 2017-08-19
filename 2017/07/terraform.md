@@ -1,7 +1,7 @@
 labels: Draft
         Tools
 created: 2017-07-07T20:12
-modified: 2017-07-07T20:12
+modified: 2017-08-19T13:23
 place: Phuket, Thailand
 comments: true
 
@@ -45,6 +45,47 @@ AWS ENV:
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 
+## Syntax
+
+### Input varaibles
+
+```text
+variable "<name>" {
+	[description = "<description>"]
+	[default = <default value>]
+	[type = "<type>"]
+}
+```
+
+Providing a variable value:
+
+- command line (`-var`, `-var-file`)
+- ENV variable (`TF_VAR_<variable name>`)
+- default value
+- user prompt
+
+Type options (terrafomr can gues the type):
+
+- string
+- list
+- map
+
+### Outputs variables
+
+```text
+output "<name>" {
+	value = <value>
+}
+```
+
+### Data sources
+
+A data source represents a piece of read-only information that is fetched from the provider.
+
+### Lifecycle
+
+`create_before_destroy`: create a replacement resource before destroying the original.
+
 ## Tips
 
 Starting service on image setup:
@@ -59,6 +100,88 @@ resource "aws_instance" "app" {
 }
 ```
 `user_data` - a script that executes when the server is booting.
+
+### Don't put terraform state under version control
+
+Problems:
+
+- someone can forget to push it after changes was applied
+- someone can forget to pull the latest version before applyying new changes
+- all secrets are stored in plain text in state file
+
+Use remote state storage. Available options:
+
+- Amazon S3
+- Azure storage
+- HashiCorp Consul and Terraform Pro/Enterprise
+- Terragrunt (s3 + ddb)
+
+S3 remote storage:
+```text
+provider "aws" {
+	region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "terraform_state" {
+	bucket = "my-bucket-name"
+	versioning {
+		enabled = true
+	}
+	lifecycle {
+		prevent_destroy = true
+	}
+}
+```
+
+```bash
+terraform apply
+terraform remote config \
+	-backend=s3 \
+	-backend-config="bucket=my-bucket-name" \
+	-backend-config="key=global/s3/terraform.tfstate" \
+	-backend-config="region=us-east-1" \
+	-backend-config="encrypt=true"
+```
+
+### Project structure and isolation
+
+Use a folder per environment.
+
+Resource folder:
+
+- `main.tf`
+- `vars.tf`
+- `outputs.tf`
+
+### Templet files
+
+Use templates files instead of interpolation, for large scripts.
+
+### Module versioning
+
+Use versioning for modules.
+
+### Count
+
+```text
+resource "aws_iam_user" "example" {
+    count = 10
+	name = "myuser.${count.index}"
+}
+```
+
+Or
+
+```text
+resource "aws_iam_user" "example" {
+    count = "${length(var.names)}"
+	name = "${element(var.names,count.index)}"
+}
+```
+
+### If statement
+
+Use `count`.
 
 ## Vocabulary
 

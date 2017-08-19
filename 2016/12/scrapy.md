@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-07-21T09:52
+modified: 2017-08-05T19:41
 place: Phuket, Thailand
 comments: true
 
@@ -152,7 +152,7 @@ def _send_request(self, request_dict, operation_model):
     raise BotocoreRequest(request=request)
 
 
-class ScrapyAWSClient(object):
+class ScrapyAWSClient:
     def __init__(self, service, access_key, secret_key, region, timeout=30):
         session = botocore.session.get_session()
         session.set_credentials(
@@ -160,14 +160,12 @@ class ScrapyAWSClient(object):
             secret_key=secret_key
         )
         self.client = session.create_client(service, region_name=region)
+        endpoint = self.client._endpoint
+        endpoint._send_request = MethodType(_send_request, endpoint)
         self.timeout = timeout
 
     def request(self, method, callback, meta, **kwargs):
-        _send_request_original = Endpoint._send_request
-        lock = Lock()
         try:
-            lock.acquire()
-            Endpoint._send_request = _send_request
             getattr(self.client, method)(**kwargs)
         except BotocoreRequest as e:
             return Request(
@@ -179,9 +177,6 @@ class ScrapyAWSClient(object):
                 callback=callback,
                 dont_filter=True
             )
-        finally:
-            Endpoint._send_request = _send_request_original
-            lock.release()
 
 
 class MySpider(Spider):

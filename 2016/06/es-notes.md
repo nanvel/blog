@@ -2,7 +2,7 @@ labels: Blog
         SearchEngines
         Elasticsearch
 created: 2016-06-04T10:33
-modified: 2016-06-28T13:12
+modified: 2017-08-09T19:40
 place: Kyiv, Ukraine
 comments: true
 
@@ -828,6 +828,14 @@ Change ```cluster.name``` (```elasticsearch.yml```) to stop your nodes from tryi
 
 Use [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html).
 
+### 9200 port forwarding
+
+```bash
+ssh -L 9201:localhost:9200 <server user>@<server ip>
+```
+
+`server:9200` -> `localhost:9201`.
+
 ## Vocabulary
 
 ### A cluster
@@ -1001,7 +1009,7 @@ Relevance score - how well the document matches the query.
 ## Instruments
 
 [Kibana](https://www.elastic.co/guide/en/marvel/current/introduction.html) - an open source analytics and visualization platform designed to work with Elasticsearch
-[Sense](https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch) - a Cool JSON Aware Interface to Elasticsearch
+[Sense](https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch) - a Cool JSON Aware Interface to Elasticsearch (Chrome plugin)
 [Marvel](https://www.elastic.co/guide/en/marvel/current/introduction.html) - enables you to easily monitor Elasticsearch through Kibana
 
 ELK stack (for logging):
