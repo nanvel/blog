@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-08-05T19:41
+modified: 2017-08-21T10:50
 place: Phuket, Thailand
 comments: true
 
@@ -128,8 +128,6 @@ We can't write asynchronous code in spiders. As parse methods can return on dict
 
 S3 example:
 ```
-from threading import Lock
-
 from botocore.endpoint import Endpoint
 import botocore.session
 from scrapy import Request
