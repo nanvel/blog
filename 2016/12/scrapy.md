@@ -128,6 +128,8 @@ We can't write asynchronous code in spiders. As parse methods can return on dict
 
 S3 example:
 ```
+from types import MethodType
+
 from botocore.endpoint import Endpoint
 import botocore.session
 from scrapy import Request
