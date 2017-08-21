@@ -1,7 +1,7 @@
 labels: Blog
         Python
 created: 2015-11-22T21:33
-modified: 2016-12-21T14:34
+modified: 2017-08-21T12:54
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -705,6 +705,34 @@ Error: Can't convert 'int' object to str implicitly
 Runs anyway.
 'a'
 ```
+
+#### Reraise a catched exception
+
+Just use `raise`.
+
+`except Exception as e: raise` is equal to `except Exception as e: raise e`.
+
+```text
+>>> try:
+...   a = int('a')
+... except Exception as e:
+...   raise
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: invalid literal for int() with base 10: 'a'
+>>> try:
+...   a = int('a')
+... except Exception as e:
+...   raise e
+...
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "<stdin>", line 2, in <module>
+ValueError: invalid literal for int() with base 10: 'a'
+```
+
+`raise` is preferable as we don't have `File "<stdin>", line 4, in <module>` line in the traceback.
 
 ### Context managers
 
