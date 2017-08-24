@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2017-05-07T22:36
+modified: 2017-08-24T12:47
 place: Phuket, Thailand
 comments: true
 
@@ -322,6 +322,84 @@ There is a gunicorn worker for it: `aiohttp.worker.GunicornUVLoopWebWorker`.
 SQLAlchemy usage
 
 [SQLAlchemy Object Relational Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+
+### aioamqp
+
+Retries:
+```python
+import logging
+import time
+
+import asyncio
+import aioamqp
+
+
+RETRY_DELAY = (1, 2, 4, 8, 30, 60)
+
+logger = logging.getLogger(__name__)
+channel = None
+
+
+async def consumer(channel, body, envelope, properties):
+    print(body)
+    await channel.basic_client_ack(delivery_tag=envelope.delivery_tag)
+
+
+async def connect():
+    transport, protocol = await aioamqp.connect(
+        host='localhost',
+        port=5672,
+        login='guest',
+        password='guest',
+        virtualhost='/'
+    )
+    channel = await protocol.channel()
+    await channel.queue_declare(
+        queue_name='test',
+        durable=True
+    )
+    await channel.basic_consume(
+        consumer,
+        queue_name='test'
+    )
+
+    return protocol, channel
+
+
+async def main():
+    global channel
+    retry = 0
+    while True:
+        retry += 1
+        start = time.time()
+        try:
+            protocol, channel = await connect()
+            # https://github.com/Polyconseil/aioamqp/issues/65#issuecomment-301737344
+            await protocol.wait_closed()
+            channel = None
+            logger.warning("Channel was closed unexpectedly.")
+        except OSError:
+            logger.warning("Connection attempt failed.")
+        if time.time() - start > RETRY_DELAY[-1] * 2:
+            # if we got connection and lost it
+            retry = 1
+        try:
+            delay = RETRY_DELAY[retry - 1]
+        except IndexError:
+            delay = RETRY_DELAY[-1]
+        logger.warning("Retry in {} seconds ...".format(delay))
+        await asyncio.sleep(delay)
+
+
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_until_complete(main())
+    finally:
+        if channel:
+            loop.run_until_complete(channel.close())
+            logger.warning("Connection closed in a clean way.")
+```
 
 ## Links
 
