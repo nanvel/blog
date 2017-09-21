@@ -226,6 +226,7 @@ aiozmq
 aio-s3
 ...
 ```
+Datadog - [aiomeasures](https://pypi.python.org/pypi/aiomeasures/0.5.13).
 
 ### aiohttp.web
 

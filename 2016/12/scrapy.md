@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-08-21T10:50
+modified: 2017-09-21T10:59
 place: Phuket, Thailand
 comments: true
 
@@ -802,6 +802,12 @@ UR2IM:
 ### JSON Line format
 
 `.jl` files have one JSON object per line, so they can be read more efficiently.
+
+## Thoughts on scraping
+
+Headers may contain Last Modified or even ETag, so this must be enough to understand if a file was changed since last time, no need to download the file, only get headers.
+
+If you persist raw responses or extracted data on s3, you may not need a database to store meta information, use s3 object meta only.
 
 ## Links
 

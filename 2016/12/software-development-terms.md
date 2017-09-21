@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2017-05-28T13:49
+modified: 2017-09-14T10:12
 place: Phuket, Thailand
 comments: true
 
@@ -46,6 +46,10 @@ Vote for simple specific. [KISS](/2015/10/principles-software#kiss).
 > Concurrency provides a way to structure a solution to solve a problem that may (but not necessary) be parallelizable.
 >
 > Rob Pike, Co-inventor of the Go language
+
+## Deterministic
+
+The same operation produces the same result.
 
 ## Duck typing
 
