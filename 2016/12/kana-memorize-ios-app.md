@@ -30,3 +30,9 @@ iTunes Connect stats:
 
 90 downloads.
 kana.nanvel.com - 10-20 monthly visits.
+
+**UPD** 2017-10-15
+
+iTunes downloads from China.
+
+![Kana memorize analytics](kana_memorize_analytics_2017_10.png)

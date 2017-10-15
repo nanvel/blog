@@ -4,6 +4,17 @@ modified: 2017-08-20T21:55
 
 # Vocabulary
 
+Learn vocabulary:
+
+- consonants
+- vovels
+- tone marks and special symbols
+- consonants in different fonts
+- consonant groups
+- how to pronounce
+- basic words
+- basic phrases
+
 ## Food
 
 กระเพรา - fried meat with basil leaves
