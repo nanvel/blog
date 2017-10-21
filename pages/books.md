@@ -106,12 +106,11 @@ modified: 2017-08-19T16:04
 - Culture & Empire: Digital Revolution by Pieter Hintjens
 - [+] Ansible for DevOps by Jeff Geerling
 - Terraform: Up and Running by Yevgeniy Brikman
+- [+] Designing Data-Intensive Applications by Martin Kleppmann
 
 ## In progress
 
-- Designing Data-Intensive Applications by Martin Kleppmann
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
-- Learn Thai by Thanapol (Lamduan) Chadchaidee and Sam Sackett
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - watchOS 2 App Development Essentials by Neil Smyth
 
