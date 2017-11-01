@@ -1,6 +1,6 @@
 labels: Thai
 created: 2017-10-13T12:21
-modified: 2017-10-25T00:26
+modified: 2017-10-26T13:08
 
 # Basic words
 
@@ -10,6 +10,7 @@ modified: 2017-10-25T00:26
 
 ครับ - for male speaker
 ค่ะ - for female speaker
+... หน่อยครับ - ... please
 
 ## Yes, not
 
@@ -17,6 +18,7 @@ modified: 2017-10-25T00:26
 ไม่ - not
 ยังครับ - not yet
 ไน่มีอะไร - there is nothing (an anwer to อะไร)
+ไม่ใช่ - I am not (negative to be)
 
 ## You, me, he, she, it
 
@@ -51,9 +53,12 @@ modified: 2017-10-25T00:26
 ## Want, need, like, can
 
 เอา - want
+ขอ - want (would like, polite)
 ชอบ - to like
 อยาก - want to do something
 ได้ - can do something
+ต้อง - need
+ผมอยากให้คุณ ... - I want you to ...
 
 ## To know, understand
 
@@ -87,15 +92,19 @@ modified: 2017-10-25T00:26
 
 วัน - day
 วันนี้ - today (this day)
+พรุ่งนี้ - tomorrow
 สัปดาห์ - week
 สัปดาห์นี้ - this week
 เดือน - month
+ปี - year
 ตอน - at (time)
 ตอนนี้ - this moment
 จะ - will
 ครั้งหน้า - next time, later
 ต้อง - must, have to
 อยู - add to the end for continuous tense
+do มา time เเล้ว - do for some time already ...
+you กำลัง do - adds continuous (doing)
 
 ## Actions
 
@@ -114,6 +123,10 @@ modified: 2017-10-25T00:26
 เข้าใจ - understand
 รู้ - know
 ปิด - to turn off, to close
+เลี้ยว - to turn
+ตรงไป - go straight
+หยุด - stop
+ส่ง - to send
 
 ## Directions
 
@@ -127,6 +140,10 @@ modified: 2017-10-25T00:26
 ปิด - closed
 เล็ก - small
 ใหญ่ - big
+พัง - broken
+เสีย - broken
+เต็ม - full
+ร้อน - hoto
 
 ## Locations
 
@@ -136,6 +153,9 @@ modified: 2017-10-25T00:26
 ใกล้ - near
 สุดท้าย - last
 ถัดไป - next
+ตรงนี้ - here
+ขวา - right
+ซ้าย - left
 
 ## Countries
 
@@ -146,6 +166,12 @@ modified: 2017-10-25T00:26
 
 ภูเก็ต - Phuket
 ป่าตอง - Patong
+
+## Classifiers
+
+ตัว - for animals, clothes, furniture.
+
+Tip: if don't remember or not sure, use the same word.
 
 ## Daily
 
@@ -162,3 +188,8 @@ modified: 2017-10-25T00:26
 คุณเป็นอะไร - What happened with you?
 คุณอายุเท่าไหร่ - How old are you?
 คุณทำอะไรอยูครับ - What are you doing now?
+คุณกำลังทำอะไร - What are you doing now?
+ไม่เป็นไร - Nevermind, forget it.
+โอเค - Ok
+ผมอยู่ในภูเก็ตมาหนึ่งปีแล้ว - I live on Phuket for 1 year already
+คุณช่วยผมได้ไหม - Could you help me?

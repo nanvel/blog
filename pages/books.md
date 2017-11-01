@@ -107,12 +107,15 @@ modified: 2017-08-19T16:04
 - [+] Ansible for DevOps by Jeff Geerling
 - Terraform: Up and Running by Yevgeniy Brikman
 - [+] Designing Data-Intensive Applications by Martin Kleppmann
+- Numsense! Data Science for the Layman: No Math Added by Annalyn Ng and Kenneth Soo
+- Investing in Ethereum: Understanding Cryptocurrencies for the Smart Investor by Michael K. Nungesser
 
 ## In progress
 
+- watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
-- watchOS 2 App Development Essentials by Neil Smyth
+- [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
 
 ## Archive
 
