@@ -1,11 +1,13 @@
 labels: Draft
         ML
 created: 2017-04-02T23:32
-modified: 2017-04-02T23:32
+modified: 2017-11-04T20:01
 place: Phuket, Thailand
 comments: true
 
 # Machine learning
+
+Machine learning is valuable because it lets us use computers to automate decision-making processes.
 
 The basics of most machine learning:
 

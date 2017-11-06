@@ -2,13 +2,15 @@ labels: Draft
 		HighScalability
 		SoftwareDevelopment
 created: 2017-05-07T20:54
-modified: 2017-05-07T20:54
+modified: 2017-11-06T15:01
 place: Phuket, Thailand
 comments: true
 
 # High scalability
 
 [TOC]
+
+Loc 971
 
 Obsticles:
 
@@ -18,6 +20,26 @@ Obsticles:
 - data complexity
 - response time
 - access patterns
+
+Instruments to solve:
+
+- NoSQL
+- message queues
+- caches
+- search indexes
+- batch and stream processing frameworks
+
+## Load
+
+Checking what happens when increasing load:
+
+- increase load, keep the system resources unchanged, see how is the system performance affected
+- increase load, see how much resources you need to add to keep the system performance unchanged
+
+Describing performance:
+
+- throughput (number of records/requests we process per some period of time)
+- response time (the time between request was sent and response was received)
 
 ## CPU
 
@@ -31,7 +53,7 @@ See [Feeds](/2016/08/feeds).
 
 ## Big data?
 
-Big data if amount of data or resources to process it is the current system limit.
+Big data - if amount of data or resources to process it is the current system limit.
 
 Throughput:
 
@@ -54,6 +76,10 @@ Numbers:
 
 Limiting factors are the amount of data, the complexity of data, the speed at which it is changing.
 
+### Compute-intensive application
+
+Where CPU cycles are the bottleneck.
+
 ### Stream processing
 
 Send a message to another process, to be handled asynchronously.
@@ -70,9 +96,21 @@ The system should continue to work correctly even in the face of adversity (hard
 
 As the system grows, there should be reasonable ways of dealing with that growth.
 
+Vertical scaling (scaling up) - moving to a more powerful machine.
+Horizontal scaling (scaling out) - distributing the load across multiple machines.
+
+!!! tip "Be pragmatic"
+    Using several fairly powerful machines can still be simpler and cheaper than a large number of small virtual machines.
+
 ### Maintainability
 
 Over time, many different people will work on the system, and they should be able to work on it productively.
+
+### Latency vs response time
+
+Response time - what a client sees (includes network and queuing delays).
+
+Latency - is the time a request is waiting to be handled (during this period the request is latent).
 
 ## Links
 

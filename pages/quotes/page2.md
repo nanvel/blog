@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2017-09-14T10:20
+modified: 2017-11-06T14:53
 
 # Quotes page 2
 
@@ -8,3 +8,7 @@ modified: 2017-09-14T10:20
 >
 > Coda Hale
 ---
+> Knowing others is intelligence; knowing yourself is true wisdom.
+> Mastering others is strength; mastering yourself is true power.
+>
+> Laozi

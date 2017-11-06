@@ -1,7 +1,7 @@
 labels: Draft
 		Databases
 created: 2017-05-10T12:38
-modified: 2017-08-27T11:04
+modified: 2017-11-04T16:56
 place: Phuket, Thailand
 comments: true
 
@@ -49,6 +49,22 @@ Data is organized into relations (called tables in SQL), where each relation is 
 ## Column oriented storage
 
 Don't store all the values from one row together, but store all the values from each column together.
+
+The column-oriented storage layour relies on each column file containing the rows in the same order. If you need to reassemble an entire row, you can take the N-th entry from each of the individual column files and put them together to form the N-th row of the table.
+
+## Network model and hierarchical model
+
+1970s-1980s.
+
+## Object oriented model
+
+Appeared in 1980s, 1990s.
+
+## XML model
+
+2000s.
+
+## Relational model
 
 ## Databases
 
@@ -159,6 +175,10 @@ Knowledge about partitions may be stored in:
 Many use ZooKeeper (LinkedIn's Expresso/Helix, HBase, SolrCloud, Kafka). 
 
 Kassandra and Reak use gossip protocol (there is no external coordination service).
+
+### NoSQL
+
+A catchy Twitter tag, retroactively reinterpreted as Not Only SQL.
 
 ## Databases index
 

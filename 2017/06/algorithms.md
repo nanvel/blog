@@ -1,7 +1,7 @@
 labels: Draft
-		Algorithms
+        Algorithms
 created: 2017-06-11T10:45
-modified: 2017-06-11T10:45
+modified: 2017-11-05T18:05
 place: Phuket, Thailand
 comments: true
 
@@ -9,4 +9,7 @@ comments: true
 
 ## To investigate
 
-Levenshtein automaton
+Levenshtein automaton.
+Forward decay.
+t-digest.
+HdrHistogram.

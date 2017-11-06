@@ -105,10 +105,13 @@ modified: 2017-10-26T13:08
 อยู - add to the end for continuous tense
 do มา time เเล้ว - do for some time already ...
 you กำลัง do - adds continuous (doing)
+ตลอด - always
+ผมอยู่...ตลอด - been, been for a while
 
 ## Actions
 
 ไป - to go
+เดิน (เดินไป) - to walk
 ทำ - to do
 กลับมา - come back
 ลืน - to forget
@@ -127,6 +130,7 @@ you กำลัง do - adds continuous (doing)
 ตรงไป - go straight
 หยุด - stop
 ส่ง - to send
+รอ - to wait
 
 ## Directions
 
@@ -143,7 +147,11 @@ you กำลัง do - adds continuous (doing)
 พัง - broken
 เสีย - broken
 เต็ม - full
-ร้อน - hoto
+ร้อน - hot
+ไม่กี่ ... - few ... (not many)
+หลาย - many
+เร็ว - fast
+เยอะ - a lot
 
 ## Locations
 
@@ -156,6 +164,7 @@ you กำลัง do - adds continuous (doing)
 ตรงนี้ - here
 ขวา - right
 ซ้าย - left
+จากที่นี่ - from here
 
 ## Countries
 
@@ -193,3 +202,5 @@ Tip: if don't remember or not sure, use the same word.
 โอเค - Ok
 ผมอยู่ในภูเก็ตมาหนึ่งปีแล้ว - I live on Phuket for 1 year already
 คุณช่วยผมได้ไหม - Could you help me?
+ขอโทษ - sorry
+คุณไปไหนมา - where you been
