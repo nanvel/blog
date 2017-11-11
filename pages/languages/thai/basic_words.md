@@ -1,6 +1,6 @@
 labels: Thai
 created: 2017-10-13T12:21
-modified: 2017-10-26T13:08
+modified: 2017-11-08T20:10
 
 # Basic words
 
@@ -33,6 +33,8 @@ modified: 2017-10-26T13:08
 ผู้หญิง - girl, lady
 ผู้ชาย - boy, man
 เอง - myself (รียนเอง - learn myself)
+ด้วยกัน - together
+เธอ - she/her
 
 ## Is
 
@@ -57,8 +59,9 @@ modified: 2017-10-26T13:08
 ชอบ - to like
 อยาก - want to do something
 ได้ - can do something
-ต้อง - need
+ต้อง (ต้องการ) - need
 ผมอยากให้คุณ ... - I want you to ...
+หมด ... - Don't have ... (run out of ...)
 
 ## To know, understand
 
@@ -80,6 +83,9 @@ modified: 2017-10-26T13:08
 ที่ไหน - where?
 เท่าไร - how much?
 ใคร - who?
+แค่ไหนแล้ว - how long?
+อันไหน - which one?
+คนไหน - who?
 
 ## This, that
 
@@ -98,7 +104,7 @@ modified: 2017-10-26T13:08
 เดือน - month
 ปี - year
 ตอน - at (time)
-ตอนนี้ - this moment
+ตอนนี้ - this moment (now)
 จะ - will
 ครั้งหน้า - next time, later
 ต้อง - must, have to
@@ -107,6 +113,18 @@ do มา time เเล้ว - do for some time already ...
 you กำลัง do - adds continuous (doing)
 ตลอด - always
 ผมอยู่...ตลอด - been, been for a while
+นานเท่าไร - how much time it takes (how long)?
+เช้า - morning
+โมง - o'clock
+กลางคืน - night time
+หลังจาก - after
+บ่าย - afternoon
+เทียง - midday
+เดี๋ยว - soon
+นาน - long time
+เย็น - evening
+รึยัง - yet, already
+ชั่วโมง - one hour (duration)
 
 ## Actions
 
@@ -131,6 +149,9 @@ you กำลัง do - adds continuous (doing)
 หยุด - stop
 ส่ง - to send
 รอ - to wait
+ซ่อม - to fix
+ลืม - to forget
+ให้ - to give
 
 ## Directions
 
@@ -152,6 +173,12 @@ you กำลัง do - adds continuous (doing)
 หลาย - many
 เร็ว - fast
 เยอะ - a lot
+เกง - well, good
+สูง - tall
+แพง - expensive
+ถูก - cheap
+น้อย - few
+หลาย - many (a lot)
 
 ## Locations
 
@@ -162,14 +189,17 @@ you กำลัง do - adds continuous (doing)
 สุดท้าย - last
 ถัดไป - next
 ตรงนี้ - here
+ที่นี่ - here
 ขวา - right
 ซ้าย - left
 จากที่นี่ - from here
+ถึงที่นั่น - to there
 
 ## Countries
 
 ประเทศ - Country
 ยูเครน - Ukraine
+คนพม่า - Burmese people
 
 ## Cities
 
@@ -204,3 +234,5 @@ Tip: if don't remember or not sure, use the same word.
 คุณช่วยผมได้ไหม - Could you help me?
 ขอโทษ - sorry
 คุณไปไหนมา - where you been
+ฝันดี - good night! (good dreams)
+แล้วคุณล่ะ - and what (how) about you?

@@ -1,6 +1,6 @@
 labels: Draft
-		HighScalability
-		SoftwareDevelopment
+        HighScalability
+        SoftwareDevelopment
 created: 2017-05-07T20:54
 modified: 2017-11-06T15:01
 place: Phuket, Thailand
@@ -10,7 +10,7 @@ comments: true
 
 [TOC]
 
-Loc 971
+Loc 1975
 
 Obsticles:
 
@@ -111,6 +111,12 @@ Over time, many different people will work on the system, and they should be abl
 Response time - what a client sees (includes network and queuing delays).
 
 Latency - is the time a request is waiting to be handled (during this period the request is latent).
+
+### MapReduce
+
+MapReduce is a programming model for processing large amounts of data in bulk across many machines.
+
+MapReduce is neither a declarative query language nor a fully imperative query API, but somewhere in between.
 
 ## Links
 

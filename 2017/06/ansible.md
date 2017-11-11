@@ -2,7 +2,7 @@ labels: Blog
         Tools
         Server
 created: 2017-06-12T18:44
-modified: 2017-08-19T12:24
+modified: 2017-11-08T20:18
 place: Phuket, Thailand
 comments: true
 
@@ -505,6 +505,61 @@ One way:
         - ../<some folder>
         - ../<some file>
       notify: server restart
+```
+
+## Examples
+
+### Simple Python code deploy
+
+```yaml
+---
+- name: Deploy
+  hosts: <hosts>
+  become: true
+  vars_files:
+    - variables/base.yml
+  vars:
+    - user: deploy
+  tasks:
+    - name: "apt-get update"
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+    - name: "apt-get install"
+      apt:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - build-essential
+        - virtualenv
+        - python3-dev
+    - name: "Create deploy group"
+      group:
+        name="{{ user }}"
+        state=present
+    - name: "Create deploy user"
+      user:
+        name="{{ user }}"
+        shell=/bin/bash
+        groups="{{ user }}"
+        append=yes
+    - name: "Synchronize the source"
+      synchronize:
+        dest: "/home/{{ user }}/<project name>/"
+        src: "{{ item }}"
+        rsync_opts:
+          - "--exclude=*.pyc"
+      become_user: "{{ user }}"
+      with_items:
+        - ../<source>
+        - ../requirements.txt
+      tags:
+        - reload
+    - name: "Install requirements"
+      pip:
+        requirements: "/home/{{ user }}/<project name>/requirements.txt"
+        virtualenv: "/home/{{ user }}/.venv"
+      become_user: "{{ user }}"
 ```
 
 ## Best practices

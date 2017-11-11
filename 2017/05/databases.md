@@ -1,5 +1,5 @@
 labels: Draft
-		Databases
+        Databases
 created: 2017-05-10T12:38
 modified: 2017-11-04T16:56
 place: Phuket, Thailand
@@ -60,11 +60,27 @@ The column-oriented storage layour relies on each column file containing the row
 
 Appeared in 1980s, 1990s.
 
+## Document oriented model
+
+Back to hierarchical model: storing nested records (one-to-many relations).
+Schema flexibility, better performance due to locality (data is not splitted across multiple tables).
+For highly interconnected data, the document model is awkward.
+
+Target use cases where data comes in self-contained documents and relationships between one document and another are rare.
+
 ## XML model
 
 2000s.
 
 ## Relational model
+
+## Graph model
+
+For highly interconnected data is the most natural model, target use cases where anything is potentially related to everything.
+
+A graph consists of two kinds of objects: vertices (entities) and edges (relationships of arcs).
+
+Languages: Cypher, SPARQL (a query language for triple-stores), Datalog, Gremlin.
 
 ## Databases
 
@@ -179,6 +195,15 @@ Kassandra and Reak use gossip protocol (there is no external coordination servic
 ### NoSQL
 
 A catchy Twitter tag, retroactively reinterpreted as Not Only SQL.
+
+### Query optimizer
+
+In a relational database, the query optimizer automatically decides which parts of the query to execute in which order, and which indexes to use.
+
+### Schemaless
+
+`schema-on-read` - the structure of the data is implicit, and only interpreted when the data is read.
+`schema-on-write` - the schema is explicit and the database ensures all written data conforms to it.
 
 ## Databases index
 
