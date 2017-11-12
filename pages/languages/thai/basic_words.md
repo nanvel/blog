@@ -1,6 +1,6 @@
 labels: Thai
 created: 2017-10-13T12:21
-modified: 2017-11-08T20:10
+modified: 2017-11-12T12:15
 
 # Basic words
 
@@ -24,8 +24,10 @@ modified: 2017-11-08T20:10
 
 ผม - me
 คุณ - you
-เขา - he
+เขา - he (she)
+เธอ - she/her
 เรา - we
+พวกเขา - they
 กัน - together
 มัน - it
 ทุกคน - everyone (ทุก - every)
@@ -34,7 +36,6 @@ modified: 2017-11-08T20:10
 ผู้ชาย - boy, man
 เอง - myself (รียนเอง - learn myself)
 ด้วยกัน - together
-เธอ - she/her
 
 ## Is
 
@@ -125,6 +126,7 @@ you กำลัง do - adds continuous (doing)
 เย็น - evening
 รึยัง - yet, already
 ชั่วโมง - one hour (duration)
+ผมเคยมี ... - I used to have ...
 
 ## Actions
 
@@ -152,6 +154,12 @@ you กำลัง do - adds continuous (doing)
 ซ่อม - to fix
 ลืม - to forget
 ให้ - to give
+เขียน - to write
+กิน - to eat
+ถาม - to ask
+อ่าน - to read
+บอก - to tell
+เดิน - to walk
 
 ## Directions
 
@@ -179,6 +187,10 @@ you กำลัง do - adds continuous (doing)
 ถูก - cheap
 น้อย - few
 หลาย - many (a lot)
+สั้น - short
+ยาว - long
+น่ารัก - cute
+ง่าย - easy
 
 ## Locations
 
@@ -190,6 +202,8 @@ you กำลัง do - adds continuous (doing)
 ถัดไป - next
 ตรงนี้ - here
 ที่นี่ - here
+นั่น - there
+ที่โน่น (ที่นู่น) - over there
 ขวา - right
 ซ้าย - left
 จากที่นี่ - from here
@@ -236,3 +250,7 @@ Tip: if don't remember or not sure, use the same word.
 คุณไปไหนมา - where you been
 ฝันดี - good night! (good dreams)
 แล้วคุณล่ะ - and what (how) about you?
+ผมอยากให้คุณ ... - I wan't you (do ...)
+ไม่มีอะไร - it's nothing (an answer to อะไร)
+ผมแน่ใจ - I am sure.
+ผมมีความสุข - I am happy.
