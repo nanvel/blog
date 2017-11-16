@@ -109,10 +109,10 @@ modified: 2017-08-19T16:04
 - [+] Designing Data-Intensive Applications by Martin Kleppmann
 - Numsense! Data Science for the Layman: No Math Added by Annalyn Ng and Kenneth Soo
 - Investing in Ethereum: Understanding Cryptocurrencies for the Smart Investor by Michael K. Nungesser
+- Top 10 Trading Setups: How to Find them, When to Trade them, How to Make Money with them by Ivaylo Ivanov
 
 ## In progress
 
-- Top 10 Trading Setups: How to Find them, When to Trade them, How to Make Money with them by Ivaylo Ivanov
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli

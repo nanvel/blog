@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-09-21T10:59
+modified: 2017-11-16T12:08
 place: Phuket, Thailand
 comments: true
 
@@ -808,6 +808,12 @@ UR2IM:
 Headers may contain Last Modified or even ETag, so this must be enough to understand if a file was changed since last time, no need to download the file, only get headers.
 
 If you persist raw responses or extracted data on s3, you may not need a database to store meta information, use s3 object meta only.
+
+### Scraping data grouped in lists
+
+See [Automatic Wrapper Adaptation by Tree Edit Distance Matching](https://arxiv.org/pdf/1103.1252.pdf).
+
+[MDR library](https://github.com/scrapinghub/mdr) on GitHub.
 
 ## Links
 
