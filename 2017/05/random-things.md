@@ -80,3 +80,9 @@ ssh -L 9201:localhost:9200 <server user>@<server ip>
 ```
 
 Port 9200 from my server will be available locally as port 9201.
+
+## Vocabulary
+
+### Air-Gapped
+
+Air-Gapped – Completely disconnected from any network.

@@ -1,6 +1,7 @@
 labels: Draft
         Blockchain
         Finance
+        Crypto
 created: 2017-11-05T14:19
 modified: 2017-11-11T14:43
 place: Phuket, Thailand
@@ -33,7 +34,7 @@ One up on wall street by Peter Lynch
 ## Currencies
 
 - Bitcoin
-- [Ethereum](https://github.com/ethereum/wiki/wiki/White-Paper)
+- [Ethereum](https://github.com/ethereum/wiki/wiki/White-Paper) [Beginners guide](https://drive.google.com/file/d/0B6sy2s1F_MwheTBPd2dLS013TjA/view) [Blog](https://blog.ethereum.org/)
 - Bitcoin Cash (https://www.youtube.com/watch?v=MQbYToRKgpM)
 
 ## Events
@@ -54,8 +55,20 @@ The image is taken from [hackernoon.com](https://hackernoon.com/the-cryptocurren
 
 Bittrex and Poloniex for alts.
 Quadriga for BTC.
+GDAX, Kraken, Binance, Gemini.
+Bitbay, Bitfinex, Bitmarket, Bitstamp, BL3P,
+Bleutrade, BTCChina, BTCUp,
+Cexio, Coincheck, EXMO,
+GDAX, HITBTC, ITBIT,
+Mercado Bitcoin, Quoine, TheRock, Vaultoro, Wex.
+
+## Withdrawal
+
+TenX, Monaco, Wirex.
 
 ## Arbitrage
+
+Arbitrage – The act of purchasing coins on one exchange and selling them on another.
 
 [Cryptocurrency Arbitrage - What do I need to know?](https://bitcoin.stackexchange.com/questions/49819/cryptocurrency-arbitrage-what-do-i-need-to-know)
 
@@ -67,6 +80,12 @@ Suddenly, we have a way to make the world better and our lives safer, with a glo
 
 [Earn.com](https://earn.com/)
 
+## Hardware wallets
+
+- Trzzor
+- [Ledger nano](https://www.ledgerwallet.com)
+- KeepKey
+
 ## People
 
 [The Wolf](https://twitter.com/WolfOfPoloniex)
@@ -75,25 +94,36 @@ Vitalik Buterin [blog](http://vitalik.ca/), [wiki](https://en.wikipedia.org/wiki
 
 ## Vocabulary
 
-### Fiat money
+### Casper
 
-Fiat money is a currency without intrinsic value established as money by government regulation or law.
+Casper - The Proof of Stake algorithm that Ethereum will implement with the release of the Serenity update.
 
-### Bull vs Bear market
+### Cold Storage
 
-A bull market is a financial market of a group of securities in which prices are rising or are expected to rise.
+Cold Storage – Storing crypto away from the internet. Meaning on a paper wallet, in a hardware wallet, or on an air-gapped machine.
 
-A bear market is characterized by falling prices and typically shrouded in pessimism.
+### ICO
 
-### Correction
+ICO - Initial Coin/Token Offering. When a new coin is being sold at a base price before the launch of the service it is associated with.
 
-A correction is a reverse movement, usually negative, of at least 10% in a stock, bond, commodity or index to adjust for an overvaluation. Corrections are generally temporary price declines interrupting an uptrend in the market or an asset.
+### Proof of Work vs Proof of Stake
+
+Proof of Work (PoW) - A system for blockchain currencies in which the rewards given out for the creation of new blocks is given proportional to the computational resources contributed to the creation process. Called “mining”. Explained in more detail below.
+
+Proof of Stake (PoS) - A system for blockchain currencies in which the rewards given out for the creation of new blocks is given proportional to people’s stake, or volume of currency. Explained in more detail below.
+
+### Airdrops
+
+Airdrop means a coin/token is distributed to the community for free or for small tasks.
+
+Airdrop is a way for some projects to introduce their tokens, and for the crypto community to get to know about their tokens and their developing project. This is one very effective way because airdrops are always characterized with very high anticipation among crypto fans. These airdrops are mostly free.
 
 ## Links
 
 - [15 Best Blogs about Cryptocurrencies of 2017](http://coinnoob.com/best-blogs-cryptocurrencies)
 - https://hacked.com/
 - [The Cryptocurrency Trading Bible](https://hackernoon.com/the-cryptocurrency-trading-bible-43d0c57e3fe6)
+- [Bitcoin Stack Exchange](https://bitcoin.stackexchange.com/)
 
 ### Repositories
 
