@@ -11,14 +11,18 @@ Index:
 
 - **[BTC](./btc)** (Bitcoin)
 - **[ETH](./eth)** (Ethereum)
-- **BCH**
+- **BCH** (Bitcoin Cash)
 - **[LTC](./ltc)** (Litecoin)
-- **XRP** (Ripple)
+- **[XRP](./xrp)** (Ripple)
 - **[LSK](./lsk)** (Lisk)
 - **NXT**
 - **[NEO](./neo)**
 - **BAT**
 - **DOGE** (Dogecoin)
+- **[POWR](./powr)** (Power Ledger)
+- **[DASH](./dash)** (Digital Cash)
+- **OMG**
+- **GRS**
 - AVT
 - BCC
 - BCH
@@ -81,7 +85,6 @@ Index:
 - CRW
 - CURE
 - CVC
-- **DASH**
 - DCR
 - DCT
 - DGB

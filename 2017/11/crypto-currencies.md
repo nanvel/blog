@@ -53,14 +53,25 @@ The image is taken from [hackernoon.com](https://hackernoon.com/the-cryptocurren
 
 [Open source traiding platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
 
+[Binance](https://www.binance.com): looks good, easy.
+
 Bittrex and Poloniex for alts.
 Quadriga for BTC.
-GDAX, Kraken, Binance, Gemini.
+GDAX, Kraken, Gemini.
 Bitbay, Bitfinex, Bitmarket, Bitstamp, BL3P,
 Bleutrade, BTCChina, BTCUp,
 Cexio, Coincheck, EXMO,
 GDAX, HITBTC, ITBIT,
 Mercado Bitcoin, Quoine, TheRock, Vaultoro, Wex.
+Bitso, Bitstamp, Coinone, GateHub, Coincheck.
+
+## Data sources
+
+https://www.cryptocompare.com/
+CryptoCompare is an interactive platform where you can discuss the latest Crypto trends and monitor all markets streaming in real time.
+API: https://www.cryptocompare.com/api/
+Has web socket api: https://www.cryptocompare.com/api/#-api-web-socket-
+wss://streamer.cryptocompare.com
 
 ## Withdrawal
 
