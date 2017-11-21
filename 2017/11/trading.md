@@ -21,11 +21,29 @@ How to withdaw fiat money?
 
 ## Using bots
 
-Finding patterns.
+Finding patterns (chart formations).
 Finding a better pair/a chain of pairs.
 Placing forward.
 Relying on signals.
 Notifying of changes.
+
+Bot traiding strategies:
+
+- Scalping strategy
+- MACD strategy
+- Stick it on rise
+
+Bot examples:
+
+- https://github.com/gazbert/bxbot
+- Gunbot
+
+> Let’s say I bought 10 bitcoins, and I want to sell them if the price reaches $1200. This can be done at exchanges already, of course. But using the bot, I can set it up to sell at $1200, buy back at $1000 and sell it all again at $1100. So I am building up a sequence of ordering events that must take place, and I define the exact target prices on it.
+
+Sources:
+
+- [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
+- https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
 ## Vocabulary
 
@@ -112,3 +130,7 @@ Automated Trading – trading done by a script with little to no human interacti
 ### Pump And Dump
 
 Pump and dump is a scheme that attempts to boost the price of a stock through recommendations based on false, misleading or greatly exaggerated statements.
+
+### Market order vs limit order
+
+The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.

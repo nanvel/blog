@@ -23,6 +23,18 @@ Index:
 - **[DASH](./dash)** (Digital Cash)
 - **OMG**
 - **GRS**
+- **PAY** (TenX)
+
+FIDO U2F
+DOGECOIN
+ZCASH
+STRATIS
+HELLO
+KOMODO
+ETHEREUM CLASSIC
+POSW
+ARK
+
 - AVT
 - BCC
 - BCH

@@ -27,7 +27,7 @@ Introduced Lattice cryptography-based signing and encryption technique to avoid 
 
 2017 Q3 Rebranding: 
 
-- Anthares --> NEO
+- Antshares --> NEO
 - Antcoins --> GAS
 
 ## Vocabulary

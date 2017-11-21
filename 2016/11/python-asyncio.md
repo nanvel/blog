@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2017-08-24T12:47
+modified: 2017-11-22T00:03
 place: Phuket, Thailand
 comments: true
 
@@ -400,6 +400,46 @@ if __name__ == '__main__':
         if channel:
             loop.run_until_complete(channel.close())
             logger.warning("Connection closed in a clean way.")
+```
+
+### socket.io
+
+```python
+import asyncio
+import json
+import re
+
+import aiohttp
+
+
+async def ping(ws, interval):
+    while True:
+        await asyncio.sleep(interval)
+        await ws.send_str('2')
+
+
+async def listen():
+    """
+    https://www.cryptocompare.com/api/#-api-web-socket-
+    # https://github.com/socketio/engine.io-protocol/blob/master/README.md
+    """
+    async with aiohttp.ClientSession() as session:
+        async with session.ws_connect('https://streamer.cryptocompare.com/socket.io/?EIO=3&transport=websocket') as ws:
+            response = await ws.receive()
+            # 0{"sid":"BBl06TntyFLKVKIzALkv","upgrades":[],"pingInterval":25000,"pingTimeout":60000}
+            data = json.loads(re.search(r'(\{.+\})', response.data).groups()[0])
+            await ws.send_str('42["SubAdd",{"subs":["5~CCCAGG~BTC~USD","5~CCCAGG~ETH~USD"]}]')
+            asyncio.ensure_future(ping(ws=ws, interval=data['pingInterval']/1000))
+            async for msg in ws:
+                if msg.type == aiohttp.WSMsgType.TEXT:
+                    if msg.data.startswith('2'):
+                        await ws.send_str('3')
+                print(msg.type, msg.data)
+
+
+if __name__ == '__main__':
+    ioloop = asyncio.get_event_loop()
+    ioloop.run_until_complete(listen())
 ```
 
 ## Links

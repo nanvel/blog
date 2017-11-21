@@ -54,8 +54,9 @@ The image is taken from [hackernoon.com](https://hackernoon.com/the-cryptocurren
 [Open source traiding platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
 
 [Binance](https://www.binance.com): looks good, easy.
+[Bittrex](https://bittrex.com): more altcoins, worse interface than binance has.
 
-Bittrex and Poloniex for alts.
+Poloniex for alts.
 Quadriga for BTC.
 GDAX, Kraken, Gemini.
 Bitbay, Bitfinex, Bitmarket, Bitstamp, BL3P,
@@ -64,6 +65,14 @@ Cexio, Coincheck, EXMO,
 GDAX, HITBTC, ITBIT,
 Mercado Bitcoin, Quoine, TheRock, Vaultoro, Wex.
 Bitso, Bitstamp, Coinone, GateHub, Coincheck.
+Cex.io
+Coinfloor
+BitFlyer
+LakeBTC
+BTCC
+Cryptopia
+EtherDelta
+Gate.io
 
 ## Data sources
 
