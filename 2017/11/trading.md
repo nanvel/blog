@@ -2,7 +2,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2017-11-17T11:46
+modified: 2017-11-24T09:24
 place: Phuket, Thailand
 comments: true
 
@@ -26,6 +26,8 @@ Finding a better pair/a chain of pairs.
 Placing forward.
 Relying on signals.
 Notifying of changes.
+Using higher hights and higher lows to find primary trend.
+If thend brokes, probably, something changed and we need to correct the strategy.
 
 Bot traiding strategies:
 
@@ -37,6 +39,8 @@ Bot examples:
 
 - https://github.com/gazbert/bxbot
 - Gunbot
+- Leonardo (simpler than Gunbot)
+- DA POWERPLAY
 
 > Let’s say I bought 10 bitcoins, and I want to sell them if the price reaches $1200. This can be done at exchanges already, of course. But using the bot, I can set it up to sell at $1200, buy back at $1000 and sell it all again at $1100. So I am building up a sequence of ordering events that must take place, and I define the exact target prices on it.
 
@@ -44,6 +48,29 @@ Sources:
 
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
+
+## Technical Analysis
+
+> The carts don't lie.
+>
+> Charts really are the "foot-print of money". What some talking head on a financial news network might say becomes immaterial when you can look at a chart and see what the "money" is saying.
+>
+> Charting and Technical Analysis by Fred McAllen
+
+Charts allow to see:
+
+- past performance
+- highs
+- lows
+- trends
+- moving averages
+- trading volume
+- and more
+
+Chart types:
+
+- single line chart
+- bar chart
 
 ## Vocabulary
 
@@ -134,3 +161,13 @@ Pump and dump is a scheme that attempts to boost the price of a stock through re
 ### Market order vs limit order
 
 The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.
+
+### Trends
+
+Primary, secondary and minor.
+
+The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
+
+## Links
+
+[Charting and Technical Analysis](https://www.amazon.com/Charting-Technical-Analysis-Fred-Mcallen/dp/1456468693) by Fred McAllen

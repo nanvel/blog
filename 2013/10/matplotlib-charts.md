@@ -1,6 +1,7 @@
 labels: Blog
         SignalProcessing
 created: 2013-10-05T00:00
+modified: 2017-11-25T12:08
 place: Starobilsk, Ukraine
 comments: true
 
@@ -119,3 +120,7 @@ if __name__ == '__main__':
 Links:
 
 - [http://matplotlib.org/users/pyplot_tutorial.html](http://matplotlib.org/users/pyplot_tutorial.html)
+
+**UPD 2017-11-25**
+
+An alternative: [Bokeh](http://bokeh.pydata.org/en/latest/).

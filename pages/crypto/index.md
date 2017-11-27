@@ -24,6 +24,8 @@ Index:
 - **OMG**
 - **GRS**
 - **PAY** (TenX)
+- **BTS**
+- **EMC2**
 
 FIDO U2F
 DOGECOIN

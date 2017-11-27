@@ -167,3 +167,4 @@ Project - any outcome requiring more than one step that you're committed to achi
 [Getting Things Done: The Art of Stress-free Productivity](https://www.amazon.com/Getting-Things-Done-Stress-free-Productivity-ebook/dp/B00SHL3V8M) by David Allen
 [The End of Jobs](https://www.amazon.com/End-Jobs-Meaning-9-5-ebook/dp/B010L8SYRG) by Taylor Pearson
 [The Monk Who Sold His Ferrari](https://www.amazon.com/Monk-Who-Sold-His-Ferrari/dp/0062515675) by Robin Sharma
+[GyShiDo - the art of getting your shit done](https://gyshido.com/)

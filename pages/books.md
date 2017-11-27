@@ -113,6 +113,7 @@ modified: 2017-08-19T16:04
 
 ## In progress
 
+- Charting and Technical Analysis by Fred McAllen
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli

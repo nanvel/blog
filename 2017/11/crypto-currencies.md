@@ -3,7 +3,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-05T14:19
-modified: 2017-11-11T14:43
+modified: 2017-11-27T14:58
 place: Phuket, Thailand
 comments: true
 
@@ -39,6 +39,8 @@ One up on wall street by Peter Lynch
 
 ## Events
 
+[Coins clendar – Crypto currency events](http://www.coinscalendar.com/)
+
 - Bitcoin SegWit2x
 - CME and CBOE to launch bitcoin futures exchanges by the end of 2017
 
@@ -53,26 +55,95 @@ The image is taken from [hackernoon.com](https://hackernoon.com/the-cryptocurren
 
 [Open source traiding platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
 
-[Binance](https://www.binance.com): looks good, easy.
-[Bittrex](https://bittrex.com): more altcoins, worse interface than binance has.
+- Abucoins
+- ANXBTC
+- [Binance](https://www.binance.com): looks good, easy
+- Bit2C
+- BitBay
+- Bitfinex
+- BitFlyer
+- bitFlyerFX
+- Bithumb
+- BitMarket
+- Bitso
+- BitSquare
+- Bitstamp
+- [BitTrex](https://bittrex.com): more altcoins, worse interface than binance has, commission: 0.25% per trade
+- BL3P
+- Bleutrade
+- BTC38
+- BTCC
+- BTCChina
+- BTCE
+- BTCMarkets
+- BTCUp
+- btcXchange
+- BTCXIndia
+- BTER
+- BXinth
+- CCEDK
+- CCEX
+- Cexio (Cex.io)
+- CHBTC
+- Coinbase
+- Coincheck
+- Coinfloor
+- CobinHood (in Beta)
+- Coinone
+- Coinroom
+- Coinse
+- Coinsetter
+- Cryptopia
+- CryptoX
+- Cryptsy
+- EtherDelta
+- EthexIndia
+- EXMO
+- Gate.io (Gateio)
+- Gatecoin
+- GateHub
+- GDAX
+- Gemini
+- HITBTC (HitBTC)
+- Huobi
+- HuobiPro
+- ITBIT (itBit)
+- Jubi
+- Korbit
+- Kraken
+- LakeBTC
+- LiveCoin
+- Liqui
+- LocalBitcoins
+- Lykke
+- Luno
+- MercadoBitcoin
+- MonetaGo
+- MtGox
+- Novaexchange
+- OKCoin
+- OKEX
+- Paymium
+- Poloniex: good for lats
+- Quadriga: good for BTC
+- QuadrigaCX
+- Quoine
+- Remitano
+- TheRock
+- TheRockTrading
+- Tidex
+- TuxExchange
+- Unocoin
+- Vaultoro
+- ViaBTC
+- WavesDEX
+- Wex
+- Yacuna
+- Yobit
+- Yunbi
+- Zaif
 
-Poloniex for alts.
-Quadriga for BTC.
-GDAX, Kraken, Gemini.
-Bitbay, Bitfinex, Bitmarket, Bitstamp, BL3P,
-Bleutrade, BTCChina, BTCUp,
-Cexio, Coincheck, EXMO,
-GDAX, HITBTC, ITBIT,
-Mercado Bitcoin, Quoine, TheRock, Vaultoro, Wex.
-Bitso, Bitstamp, Coinone, GateHub, Coincheck.
-Cex.io
-Coinfloor
-BitFlyer
-LakeBTC
-BTCC
-Cryptopia
-EtherDelta
-Gate.io
+Taiwan exchange: https://www.cobinhood.com/
 
 ## Data sources
 

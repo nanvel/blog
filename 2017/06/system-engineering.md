@@ -2,7 +2,7 @@ labels: Draft
         AWS
         HighScalability
 created: 2017-06-08T16:38
-modified: 2017-08-19T12:30
+modified: 2017-11-27T14:36
 place: Phuket, Thailand
 comments: true
 
@@ -156,6 +156,21 @@ Watch file changes:
 ```bash
 tail -f <file path>
 ```
+
+## SSL
+
+These files are required (`/etc/nginx/ssl/`):
+
+- `dhparam4096.pem`
+- `ssl.conf`
+- `public_wild.pem`
+- `private_wild.key`
+
+Generating `dhparam`:
+```bash
+sudo openssl dhparam -out /etc/nginx/ssl/dhparam4096.pem 4096
+```
+
 
 ## Best practices
 
