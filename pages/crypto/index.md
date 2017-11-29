@@ -1,11 +1,9 @@
 labels: Crypto
 created: 2017-11-17T22:10
-modified: 2017-11-17T22:10
+modified: 2017-11-28T11:18
 comments: true
 
 # Crypto currencies index
-
-[TOC]
 
 Index:
 

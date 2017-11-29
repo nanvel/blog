@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2017-08-19T16:04
+modified: 2017-11-29T09:59
 
 # Books
 
@@ -110,10 +110,11 @@ modified: 2017-08-19T16:04
 - Numsense! Data Science for the Layman: No Math Added by Annalyn Ng and Kenneth Soo
 - Investing in Ethereum: Understanding Cryptocurrencies for the Smart Investor by Michael K. Nungesser
 - Top 10 Trading Setups: How to Find them, When to Trade them, How to Make Money with them by Ivaylo Ivanov
+- Charting and Technical Analysis by Fred McAllen
 
 ## In progress
 
-- Charting and Technical Analysis by Fred McAllen
+- The Internet of Money Volume Two by Andress M. Antonopoulus
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli

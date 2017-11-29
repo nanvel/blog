@@ -19,6 +19,98 @@ Check out APIs.
 Analize each currency available for trade.
 How to withdaw fiat money?
 
+## Traiding platforms
+
+Platforms:
+
+- Abucoins
+- ANXBTC
+- [Binance](https://www.binance.com): looks good, easy
+- Bit2C
+- BitBay
+- Bitfinex
+- BitFlyer
+- bitFlyerFX
+- Bithumb
+- BitMarket
+- Bitso
+- BitSquare
+- Bitstamp
+- [BitTrex](https://bittrex.com): more altcoins, worse interface than binance has, commission: 0.25% per trade
+- BL3P
+- Bleutrade
+- BTC38
+- BTCC
+- BTCChina
+- BTCE
+- BTCMarkets
+- BTCUp
+- btcXchange
+- BTCXIndia
+- BTER
+- BXinth
+- CCEDK
+- CCEX
+- Cexio (Cex.io)
+- CHBTC
+- Coinbase
+- Coincheck
+- Coinfloor
+- [CobinHood](https://www.cobinhood.com/) (in Beta, Taiwan, few altcoins so far)
+- Coinone
+- Coinroom
+- Coinse
+- Coinsetter
+- Cryptopia
+- CryptoX
+- Cryptsy
+- EtherDelta
+- EthexIndia
+- EXMO
+- Gate.io (Gateio)
+- Gatecoin
+- GateHub
+- GDAX
+- Gemini
+- HITBTC (HitBTC)
+- Huobi
+- HuobiPro
+- ITBIT (itBit)
+- Jubi
+- Korbit
+- Kraken
+- LakeBTC
+- LiveCoin
+- Liqui
+- LocalBitcoins
+- Lykke
+- Luno
+- MercadoBitcoin
+- MonetaGo
+- MtGox
+- Novaexchange
+- OKCoin
+- OKEX
+- Paymium
+- Poloniex: good for lats
+- Quadriga: good for BTC
+- QuadrigaCX
+- Quoine
+- Remitano
+- TheRock
+- TheRockTrading
+- Tidex
+- TuxExchange
+- Unocoin
+- Vaultoro
+- ViaBTC
+- WavesDEX
+- Wex
+- Yacuna
+- Yobit
+- Yunbi
+- Zaif
+
 ## Using bots
 
 Finding patterns (chart formations).
@@ -43,6 +135,8 @@ Bot examples:
 - DA POWERPLAY
 
 > Let’s say I bought 10 bitcoins, and I want to sell them if the price reaches $1200. This can be done at exchanges already, of course. But using the bot, I can set it up to sell at $1200, buy back at $1000 and sell it all again at $1100. So I am building up a sequence of ordering events that must take place, and I define the exact target prices on it.
+
+[Open source traiding platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
 
 Sources:
 
@@ -167,6 +261,10 @@ The primary advantage of a limit order over a market order is that the limit ord
 Primary, secondary and minor.
 
 The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
+
+### Stop Losses
+
+If the price drops more than 6% to 8% then there is a valid reason for that much decline.
 
 ## Links
 

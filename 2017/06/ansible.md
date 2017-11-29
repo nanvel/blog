@@ -2,7 +2,7 @@ labels: Blog
         Tools
         Server
 created: 2017-06-12T18:44
-modified: 2017-11-08T20:18
+modified: 2017-11-28T11:06
 place: Phuket, Thailand
 comments: true
 
@@ -301,6 +301,18 @@ Works faster with:
 ```bash
 pip install cryptography
 ```
+
+String encryption:
+```bash
+ansible-vault --vault-password-file <password file> encrypt_string <some string>
+```
+This command will output a string ready to be included in a YAML file. 
+
+File encryption:
+```bash
+ansible-vault --vault-password-file <password file> encrypt <file path>
+```
+Replace the file.
 
 ### Roles
 

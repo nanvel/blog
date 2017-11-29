@@ -13,6 +13,8 @@ comments: true
 
 It’s just the economic miracle of mathematics, cryptography and computer science.
 
+[Crypto currencies index](/pages/crypto/index)
+
 ## To consider
 
 Traiding agains bots ([How Bots Trick You Into Paying Higher Coin Prices](https://blog.coinfi.com/how-bots-trick-you-into-paying-higher-coin-prices/)).
@@ -51,100 +53,6 @@ The greatest traders make their money on 20% of their trades. The rest of our tr
 ![Crypto trader cheat sheet](./trader_cheat_sheet.jpg)
 The image is taken from [hackernoon.com](https://hackernoon.com/the-cryptocurrency-trading-bible-43d0c57e3fe6).
 
-### Traiding platforms
-
-[Open source traiding platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
-
-- Abucoins
-- ANXBTC
-- [Binance](https://www.binance.com): looks good, easy
-- Bit2C
-- BitBay
-- Bitfinex
-- BitFlyer
-- bitFlyerFX
-- Bithumb
-- BitMarket
-- Bitso
-- BitSquare
-- Bitstamp
-- [BitTrex](https://bittrex.com): more altcoins, worse interface than binance has, commission: 0.25% per trade
-- BL3P
-- Bleutrade
-- BTC38
-- BTCC
-- BTCChina
-- BTCE
-- BTCMarkets
-- BTCUp
-- btcXchange
-- BTCXIndia
-- BTER
-- BXinth
-- CCEDK
-- CCEX
-- Cexio (Cex.io)
-- CHBTC
-- Coinbase
-- Coincheck
-- Coinfloor
-- CobinHood (in Beta)
-- Coinone
-- Coinroom
-- Coinse
-- Coinsetter
-- Cryptopia
-- CryptoX
-- Cryptsy
-- EtherDelta
-- EthexIndia
-- EXMO
-- Gate.io (Gateio)
-- Gatecoin
-- GateHub
-- GDAX
-- Gemini
-- HITBTC (HitBTC)
-- Huobi
-- HuobiPro
-- ITBIT (itBit)
-- Jubi
-- Korbit
-- Kraken
-- LakeBTC
-- LiveCoin
-- Liqui
-- LocalBitcoins
-- Lykke
-- Luno
-- MercadoBitcoin
-- MonetaGo
-- MtGox
-- Novaexchange
-- OKCoin
-- OKEX
-- Paymium
-- Poloniex: good for lats
-- Quadriga: good for BTC
-- QuadrigaCX
-- Quoine
-- Remitano
-- TheRock
-- TheRockTrading
-- Tidex
-- TuxExchange
-- Unocoin
-- Vaultoro
-- ViaBTC
-- WavesDEX
-- Wex
-- Yacuna
-- Yobit
-- Yunbi
-- Zaif
-
-Taiwan exchange: https://www.cobinhood.com/
-
 ## Data sources
 
 https://www.cryptocompare.com/
@@ -155,7 +63,7 @@ wss://streamer.cryptocompare.com
 
 ## Withdrawal
 
-TenX, Monaco, Wirex.
+TenX, Monaco, Wirex, Revolt.
 
 ## Arbitrage
 
@@ -173,7 +81,7 @@ Suddenly, we have a way to make the world better and our lives safer, with a glo
 
 ## Hardware wallets
 
-- Trzzor
+- [Trezor](https://trezor.io/)
 - [Ledger nano](https://www.ledgerwallet.com)
 - KeepKey
 
@@ -217,6 +125,10 @@ Airdrop is a way for some projects to introduce their tokens, and for the crypto
 - [Bitcoin Stack Exchange](https://bitcoin.stackexchange.com/)
 
 ### Repositories
+
+### News
+
+[Cryptoniam](https://www.cryptoniam.com/)
 
 ### Stats
 

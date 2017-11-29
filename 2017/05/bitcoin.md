@@ -1,9 +1,9 @@
 labels: Draft
-		Bitcoin
-		Distributed
-		P2P
+        Bitcoin
+        Distributed
+        P2P
 created: 2017-05-21T12:01
-modified: 2017-05-21T12:01
+modified: 2017-11-28T18:09
 place: Phuket, Thailand
 comments: true
 
@@ -12,6 +12,10 @@ comments: true
 [TOC]
 
 Whether Bitcoin represents money is subject to debate, but that it is a currency, a medium of exchange, is indisputable.
+
+> Bitcoin isn't money; it isn't a system of currency. It's not a company, it's not a product, it's not a service you sign up for. It's not a currency; currency is just the first application. It is the concept of decentralization applied to the human communication of value. It is a platform of trust.
+>
+> The Internet of Money Volume Two by Andreas M. Antonopoulus
 
 ## Timeline
 
@@ -49,3 +53,4 @@ Satoshi went dark.
 [Gavin Andersen](http://gavinandresen.ninja/) - Lead Core Developer of the Bitcoin project
 [The book of Satoshi](https://www.amazon.com/Book-Satoshi-Collected-Writings-Nakamoto-ebook/dp/B00M6KGJ2K/) by Phil Champagne
 [Bitcoin Forum](https://bitcointalk.org)
+The Internet of Money Volume Two by Andreas M. Antonopoulus
