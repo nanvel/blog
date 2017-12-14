@@ -10,6 +10,8 @@ comments: true
 
 [TOC]
 
+EBTA 162
+
 ## Open questions
 
 Where to watch stats/get historical data?
@@ -111,6 +113,21 @@ Platforms:
 - Yunbi
 - Zaif
 
+## TA categories
+
+TA categories:
+
+- Objective
+- Subjective
+
+Subjective:
+
+- classical chart pattern analysis
+- hand-drawn trend lines
+- Elliott Wave principle
+- Gann patterns
+- Magic T's
+
 ## Using bots
 
 Finding patterns (chart formations).
@@ -143,6 +160,14 @@ Sources:
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
+## Testing
+
+Backtest - test on historical data.
+
+> Historical success is a necessary but not a sufficient condition for concluding that a method has predictive power and, therefore, is likely to be profitable in the future.
+>
+> Evidence-Based Technical Analysis by David Aronson
+
 ## Technical Analysis
 
 > The carts don't lie.
@@ -167,6 +192,13 @@ Chart types:
 - bar chart
 
 ## Vocabulary
+
+To check:
+
+- Moving averages
+- Momentum indicators
+- Market's net trend (average daily price change)
+- Break out signal
 
 ### Day traders vs position traders vs buy-and-hold traders
 

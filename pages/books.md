@@ -111,10 +111,11 @@ modified: 2017-11-29T09:59
 - Investing in Ethereum: Understanding Cryptocurrencies for the Smart Investor by Michael K. Nungesser
 - Top 10 Trading Setups: How to Find them, When to Trade them, How to Make Money with them by Ivaylo Ivanov
 - Charting and Technical Analysis by Fred McAllen
+- [+] The Internet of Money Volume Two by Andress M. Antonopoulus
 
 ## In progress
 
-- The Internet of Money Volume Two by Andress M. Antonopoulus
+- Evidence-Based Technical Analysis by David Aronson
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli

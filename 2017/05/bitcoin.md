@@ -3,7 +3,7 @@ labels: Draft
         Distributed
         P2P
 created: 2017-05-21T12:01
-modified: 2017-11-28T18:09
+modified: 2017-11-30T11:21
 place: Phuket, Thailand
 comments: true
 
@@ -16,6 +16,14 @@ Whether Bitcoin represents money is subject to debate, but that it is a currency
 > Bitcoin isn't money; it isn't a system of currency. It's not a company, it's not a product, it's not a service you sign up for. It's not a currency; currency is just the first application. It is the concept of decentralization applied to the human communication of value. It is a platform of trust.
 >
 > The Internet of Money Volume Two by Andreas M. Antonopoulus
+
+---
+
+> The essence of bitcoin is the ability to operate in a decentralized way without having to trust anyone.
+>
+> The Internet of Money Volume Two by Andreas M. Antonopoulus
+
+Bitcoin revolutionizes trust.
 
 ## Timeline
 
@@ -47,6 +55,14 @@ Satoshi went dark.
 [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof).
 
 [Namecoin](https://namecoin.org/), alternative dns.
+
+## Vocabulary
+
+### Blockchain
+
+> Blockchain is one of the four foundational technologies (Blockchain, Proof-of-Work, P2P Network, and Cryptography) behind bitcoin, and it can't stand alone.
+>
+> The Internet of Money Volume Two by Andreas M. Antonopoulos
 
 ## Links
 

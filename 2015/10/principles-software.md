@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2017-08-05T10:24
+modified: 2017-12-13T23:57
 place: Kyiv, Ukraine
 comments: true
 
@@ -136,6 +136,10 @@ Be conservative in what you do, be liberal in what you accept from others.
 Links:
 
 - [Purpose Driven Development - PDD](http://jacekratzinger.blogspot.com/2012/01/purpose-driven-development-pdd.html)
+
+## Principle of simplicity
+
+Simpler is better.
 
 ## Rubber duck debugging
 
