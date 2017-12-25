@@ -10,8 +10,6 @@ comments: true
 
 [TOC]
 
-EBTA 162
-
 ## Open questions
 
 Where to watch stats/get historical data?
@@ -160,6 +158,11 @@ Sources:
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
+### Projects on GitHub
+
+- https://github.com/deependersingla/deep_trader - uses ml
+- https://github.com/pirate/bitcoin-trader - nice idea about small buys
+
 ## Testing
 
 Backtest - test on historical data.
@@ -300,4 +303,5 @@ If the price drops more than 6% to 8% then there is a valid reason for that much
 
 ## Links
 
+[Evidence-Based Technical Analysis](https://www.amazon.com/Evidence-Based-Technical-Analysis-Scientific-Statistical/dp/0470008741) by David Aronson
 [Charting and Technical Analysis](https://www.amazon.com/Charting-Technical-Analysis-Fred-Mcallen/dp/1456468693) by Fred McAllen

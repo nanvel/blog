@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2017-11-29T09:59
+modified: 2017-12-19T13:35
 
 # Books
 
@@ -112,10 +112,12 @@ modified: 2017-11-29T09:59
 - Top 10 Trading Setups: How to Find them, When to Trade them, How to Make Money with them by Ivaylo Ivanov
 - Charting and Technical Analysis by Fred McAllen
 - [+] The Internet of Money Volume Two by Andress M. Antonopoulus
+- Evidence-Based Technical Analysis by David Aronson
 
 ## In progress
 
-- Evidence-Based Technical Analysis by David Aronson
+- Data Science for Business by Foster Provost and Tom Fawcett
+- Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
