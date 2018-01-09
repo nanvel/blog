@@ -114,8 +114,11 @@ modified: 2017-12-19T13:35
 - [+] The Internet of Money Volume Two by Andress M. Antonopoulus
 - Evidence-Based Technical Analysis by David Aronson
 
+## 2018
+
 ## In progress
 
+- A Complete Guide to Volume Price Analysis by Anna Coulling
 - Data Science for Business by Foster Provost and Tom Fawcett
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - watchOS 2 App Development Essentials by Neil Smyth

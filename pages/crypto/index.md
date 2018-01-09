@@ -5,8 +5,42 @@ comments: true
 
 # Crypto currencies index
 
+To check:
+
+- APPC + 1
+- Enigma
+- Hedge (HDG) + 1
+- Vivo
+- REQ + 1
+- QSP
+- VEN + 2
+- HST
+- OMG
+- NEO
+- VERI
+- RCN
+- DCR
+- TRX
+- NEBLIO
+- ELF
+- ARN
+- Modum
+- adToken
+- Power ledger
+- ZRX
+- XRB
+- Salt
+- Vechain + 1
+- QSP
+- RDN
+- Elixir
+- Qash
+- Ethos + 1
+- RISE
+
 Index:
 
+- **[ADA](./ada)** (Cardano)
 - **[BTC](./btc)** (Bitcoin)
 - **[ETH](./eth)** (Ethereum)
 - **BCH** (Bitcoin Cash)
@@ -24,6 +58,7 @@ Index:
 - **PAY** (TenX)
 - **BTS**
 - **EMC2**
+- **[ICX](./icx)** (ICON)
 
 FIDO U2F
 DOGECOIN

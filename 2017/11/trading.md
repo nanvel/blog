@@ -2,7 +2,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2017-11-24T09:24
+modified: 2018-01-07T15:48
 place: Phuket, Thailand
 comments: true
 
@@ -24,6 +24,7 @@ How to withdaw fiat money?
 Platforms:
 
 - Abucoins
+- [AEX](aex.com)
 - ANXBTC
 - [Binance](https://www.binance.com): looks good, easy
 - Bit2C
@@ -72,13 +73,14 @@ Platforms:
 - GateHub
 - GDAX
 - Gemini
-- HITBTC (HitBTC)
+- HITBTC (HitBTC) - be careful, bad feedback, expensive and long withdraw
 - Huobi
 - HuobiPro
 - ITBIT (itBit)
 - Jubi
 - Korbit
 - Kraken
+- [KuCoin](https://www.kucoin.com) - looks good
 - LakeBTC
 - LiveCoin
 - Liqui
@@ -100,6 +102,7 @@ Platforms:
 - TheRock
 - TheRockTrading
 - Tidex
+- [TradeSatoshi](https://tradesatoshi.com/) - has SAFEX
 - TuxExchange
 - Unocoin
 - Vaultoro
