@@ -7,13 +7,14 @@ comments: true
 
 To check:
 
+- ECC
+- VEN + 3
 - APPC + 1
 - Enigma
 - Hedge (HDG) + 1
 - Vivo
 - REQ + 1
 - QSP
-- VEN + 2
 - HST
 - OMG
 - NEO

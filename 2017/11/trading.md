@@ -56,6 +56,7 @@ Platforms:
 - CHBTC
 - Coinbase
 - Coincheck
+- [CoinExchange](coinexchange.io) - has ECC
 - Coinfloor
 - [CobinHood](https://www.cobinhood.com/) (in Beta, Taiwan, few altcoins so far)
 - Coinone
