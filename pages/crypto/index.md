@@ -1,17 +1,40 @@
 labels: Crypto
 created: 2017-11-17T22:10
-modified: 2017-11-28T11:18
+modified: 2018-01-13T18:31
 comments: true
 
 # Crypto currencies index
 
+Index:
+
+- [+] **[ADA](./ada)** (Cardano)
+- [-] **[APPC](./appc)** (AppCoins)
+- **BAT**
+- [+] **[BTC](./btc)** (Bitcoin)
+- **BCH** (Bitcoin Cash)
+- **BTS**
+- [+] **[DASH](./dash)** (Digital Cash)
+- [+] **[DOGE](./doge)** (Dogecoin)
+- [-] **[ECC](./ecc)**
+- **EMC2**
+- [+] **[ETH](./eth)** (Ethereum)
+- **GRS**
+- [-] **[HDG](./hdg)** (Hedge)
+- [+] **[KCS](./kcs)** (KuCoin Shares)
+- **[LTC](./ltc)** (Litecoin)
+- **[LSK](./lsk)** (Lisk)
+- **[NEO](./neo)**
+- **NXT**
+- **OMG**
+- **PAY** (TenX)
+- [+] **[POWR](./powr)** (Power Ledger)
+- **[ICX](./icx)** (ICON)
+- [!] **[VEN](./ven)** (VeChain)
+- [+] **[XRP](./xrp)** (Ripple)
+
 To check:
 
-- ECC
-- VEN + 3
-- APPC + 1
 - Enigma
-- Hedge (HDG) + 1
 - Vivo
 - REQ + 1
 - QSP
@@ -31,35 +54,12 @@ To check:
 - ZRX
 - XRB
 - Salt
-- Vechain + 1
 - QSP
 - RDN
 - Elixir
 - Qash
 - Ethos + 1
 - RISE
-
-Index:
-
-- **[ADA](./ada)** (Cardano)
-- **[BTC](./btc)** (Bitcoin)
-- **[ETH](./eth)** (Ethereum)
-- **BCH** (Bitcoin Cash)
-- **[LTC](./ltc)** (Litecoin)
-- **[XRP](./xrp)** (Ripple)
-- **[LSK](./lsk)** (Lisk)
-- **NXT**
-- **[NEO](./neo)**
-- **BAT**
-- **DOGE** (Dogecoin)
-- **[POWR](./powr)** (Power Ledger)
-- **[DASH](./dash)** (Digital Cash)
-- **OMG**
-- **GRS**
-- **PAY** (TenX)
-- **BTS**
-- **EMC2**
-- **[ICX](./icx)** (ICON)
 
 FIDO U2F
 DOGECOIN
@@ -73,7 +73,6 @@ ARK
 
 - AVT
 - BCC
-- BCH
 - BCU
 - BT1
 - BT2

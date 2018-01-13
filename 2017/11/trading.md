@@ -2,7 +2,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2018-01-07T15:48
+modified: 2018-01-13T18:30
 place: Phuket, Thailand
 comments: true
 
@@ -81,7 +81,7 @@ Platforms:
 - Jubi
 - Korbit
 - Kraken
-- [KuCoin](https://www.kucoin.com) - looks good
+- [+] [KuCoin](https://www.kucoin.com) - looks good
 - LakeBTC
 - LiveCoin
 - Liqui
