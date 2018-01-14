@@ -9,7 +9,8 @@ Index:
 
 - [+] **[ADA](./ada)** (Cardano)
 - [-] **[APPC](./appc)** (AppCoins)
-- **BAT**
+- [+] **[BAT](./bat)** (Basic Attention Token)
+- [-] **[BCD](./bcd)** (Bitcoin Diamond)
 - [+] **[BTC](./btc)** (Bitcoin)
 - **BCH** (Bitcoin Cash)
 - **BTS**
@@ -28,12 +29,20 @@ Index:
 - **OMG**
 - **PAY** (TenX)
 - [+] **[POWR](./powr)** (Power Ledger)
+- [!] **[TRX](./trx)** (Tron)
 - **[ICX](./icx)** (ICON)
 - [!] **[VEN](./ven)** (VeChain)
 - [+] **[XRP](./xrp)** (Ripple)
 
+Scams:
+
+- https://davor.io/
+- https://usitech-int.com/
+
 To check:
 
+- Komodo, dico
+- EOS
 - Enigma
 - Vivo
 - REQ + 1

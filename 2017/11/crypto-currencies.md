@@ -3,7 +3,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-05T14:19
-modified: 2017-11-27T14:58
+modified: 2018-01-14T22:43
 place: Phuket, Thailand
 comments: true
 
@@ -116,6 +116,10 @@ Proof of Stake (PoS) - A system for blockchain currencies in which the rewards g
 Airdrop means a coin/token is distributed to the community for free or for small tasks.
 
 Airdrop is a way for some projects to introduce their tokens, and for the crypto community to get to know about their tokens and their developing project. This is one very effective way because airdrops are always characterized with very high anticipation among crypto fans. These airdrops are mostly free.
+
+### ERC-20
+
+Tokens are essentially smart contracts that make use of the Ethereum blockchain. One of the most significant token standards of all for Ethereum is called ERC-20.
 
 ## Links
 
