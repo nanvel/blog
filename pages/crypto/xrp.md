@@ -20,3 +20,7 @@ For banks.
 ## Timeline
 
 2017-12-12 to 2018-01-04 - grow > x10.
+
+## Competitors
+
+[XLM](./xml)

@@ -39,7 +39,13 @@ Study in Siam Driving school in Thalang.
 Work for GP.
 
 Worked a lot on web scraping, system engineering.
+Mostly scrapy, asyncio stack, aws.
+Some ansible, terraform.
 
 ![Hatch coworking](hatch.jpg)
 
 ### Into crypto
+
+## Next year
+
+Crypto, study, health.

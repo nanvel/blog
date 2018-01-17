@@ -13,6 +13,7 @@ Index:
 - [-] **[BCD](./bcd)** (Bitcoin Diamond)
 - [+] **[BTC](./btc)** (Bitcoin)
 - **BCH** (Bitcoin Cash)
+- [!] **[BNB](./bnb)** (Binance Coin)
 - **BTS**
 - [+] **[DASH](./dash)** (Digital Cash)
 - [+] **[DOGE](./doge)** (Dogecoin)
@@ -22,7 +23,7 @@ Index:
 - **GRS**
 - [-] **[HDG](./hdg)** (Hedge)
 - [+] **[KCS](./kcs)** (KuCoin Shares)
-- **[LTC](./ltc)** (Litecoin)
+- [+] **[LTC](./ltc)** (Litecoin)
 - **[LSK](./lsk)** (Lisk)
 - **[NEO](./neo)**
 - **NXT**
@@ -32,6 +33,8 @@ Index:
 - [!] **[TRX](./trx)** (Tron)
 - **[ICX](./icx)** (ICON)
 - [!] **[VEN](./ven)** (VeChain)
+- [+] **[XLM](./xlm)** (Lumen, Stellar)
+- [+] **[XMR](./xmr)** (Monero)
 - [+] **[XRP](./xrp)** (Ripple)
 
 Scams:
@@ -41,11 +44,15 @@ Scams:
 
 To check:
 
+- BIX
+- REQ
+- BCH
+- BTS
+- EMC2
 - Komodo, dico
 - EOS
 - Enigma
 - Vivo
-- REQ + 1
 - QSP
 - HST
 - OMG
