@@ -12,9 +12,9 @@ Index:
 - [+] **[BAT](./bat)** (Basic Attention Token)
 - [-] **[BCD](./bcd)** (Bitcoin Diamond)
 - [+] **[BTC](./btc)** (Bitcoin)
-- **BCH** (Bitcoin Cash)
+- [+] **[BCH](./bch)** (Bitcoin Cash)
 - [!] **[BNB](./bnb)** (Binance Coin)
-- **BTS**
+- [+] **[BTS](./bts)** (BitShares)
 - [+] **[DASH](./dash)** (Digital Cash)
 - [+] **[DOGE](./doge)** (Dogecoin)
 - [-] **[ECC](./ecc)**
@@ -44,6 +44,10 @@ Scams:
 
 To check:
 
+https://www.carvertical.com/
+https://steemit.com/
+
+- Steem
 - BIX
 - REQ
 - BCH

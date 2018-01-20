@@ -2,7 +2,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2018-01-13T18:30
+modified: 2018-01-20T11:43
 place: Phuket, Thailand
 comments: true
 
@@ -305,7 +305,26 @@ The primary trend is the most important of the three tends. It is the granddaddy
 
 If the price drops more than 6% to 8% then there is a valid reason for that much decline.
 
+### Futures
+
+Futures are financial contracts obligating the buyer to purchase an asset or the seller to sell an asset, such as a physical commodity or a financial instrument, at a predetermined future date and price.
+
+### Support and Resistance
+
+These terms are used by traders to refer to price levels on charts that tend to act as barriers from preventing the price of an asset from getting pushed in a certain direction.
+
+### Bear trap, bull trap
+
+A bear trap is a false signal that the rising trend of a stock or index has reversed when it has not.
+
+A bull trap is a false signal indicating that a declining trend in a stock or index has reversed and is heading upwards when, in fact, the security will continue to decline.
+
+### DEX
+
+Decentralized exchange, example: [Bitshares](http://docs.bitshares.org/integration/traders/index.html).
+
 ## Links
 
 [Evidence-Based Technical Analysis](https://www.amazon.com/Evidence-Based-Technical-Analysis-Scientific-Statistical/dp/0470008741) by David Aronson
 [Charting and Technical Analysis](https://www.amazon.com/Charting-Technical-Analysis-Fred-Mcallen/dp/1456468693) by Fred McAllen
+[Investopedia](https://www.investopedia.com)

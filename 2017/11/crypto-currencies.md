@@ -3,7 +3,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-05T14:19
-modified: 2018-01-14T22:43
+modified: 2018-01-20T11:43
 place: Phuket, Thailand
 comments: true
 
@@ -121,10 +121,17 @@ Airdrop is a way for some projects to introduce their tokens, and for the crypto
 
 Tokens are essentially smart contracts that make use of the Ethereum blockchain. One of the most significant token standards of all for Ethereum is called ERC-20.
 
+### Token vs Coin
+
+A crypto coin is just that: a coin, or means of payment, whilst a token has wider functionality.
+Tokens are generally hosted on another blockchain.
+
+[Token vs Coin — what’s the difference?](https://blog.chronobank.io/token-vs-coin-whats-the-difference-5ef7580d1199)
+
 ## Links
 
 - [15 Best Blogs about Cryptocurrencies of 2017](http://coinnoob.com/best-blogs-cryptocurrencies)
-- https://hacked.com/
+- [https://hacked.com](https://hacked.com/)
 - [The Cryptocurrency Trading Bible](https://hackernoon.com/the-cryptocurrency-trading-bible-43d0c57e3fe6)
 - [Bitcoin Stack Exchange](https://bitcoin.stackexchange.com/)
 
