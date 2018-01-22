@@ -15,7 +15,9 @@ Index:
 - [+] **[BCH](./bch)** (Bitcoin Cash)
 - [!] **[BNB](./bnb)** (Binance Coin)
 - [+] **[BTS](./bts)** (BitShares)
+- [!] **[CND](./cnd)** (CIndicator)
 - [+] **[DASH](./dash)** (Digital Cash)
+- [!] **[DENT](./dent)**
 - [+] **[DOGE](./doge)** (Dogecoin)
 - [-] **[ECC](./ecc)**
 - **EMC2**
@@ -47,12 +49,12 @@ To check:
 https://www.carvertical.com/
 https://steemit.com/
 
+- ZCL
 - Steem
 - BIX
 - REQ
-- BCH
-- BTS
 - EMC2
+- Ethereum classic
 - Komodo, dico
 - EOS
 - Enigma
@@ -116,7 +118,6 @@ ARK
 - 1ST
 - 2GIVE
 - ABY
-- ADA
 - ADT
 - ADX
 - AEON
@@ -158,7 +159,6 @@ ARK
 - DGD
 - DMD
 - DNT
-- DOGE
 - DOPE
 - DTB
 - DYN

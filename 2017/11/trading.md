@@ -323,6 +323,10 @@ A bull trap is a false signal indicating that a declining trend in a stock or in
 
 Decentralized exchange, example: [Bitshares](http://docs.bitshares.org/integration/traders/index.html).
 
+### Volume
+
+Volume is the total amount of anything swapped around in a certain period of time. An exchange usually shows it’s own volume for each crypto, that is the amount traded on that particular exchange, normally in the last 24hr unless it says otherwise.
+
 ## Links
 
 [Evidence-Based Technical Analysis](https://www.amazon.com/Evidence-Based-Technical-Analysis-Scientific-Statistical/dp/0470008741) by David Aronson
