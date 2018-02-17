@@ -32,25 +32,35 @@ Index:
 - **OMG**
 - **PAY** (TenX)
 - [+] **[POWR](./powr)** (Power Ledger)
+- [+] **[STEEM](./steem)**
 - [!] **[TRX](./trx)** (Tron)
 - **[ICX](./icx)** (ICON)
 - [!] **[VEN](./ven)** (VeChain)
 - [+] **[XLM](./xlm)** (Lumen, Stellar)
 - [+] **[XMR](./xmr)** (Monero)
 - [+] **[XRP](./xrp)** (Ripple)
+- [!] **[ZCL](./zcl)** (ZClassic)
 
 Scams:
 
-- https://davor.io/
+- https://davor.io/ (DAV)
 - https://usitech-int.com/
 
 To check:
 
+http://icodrops.com/
 https://www.carvertical.com/
 https://steemit.com/
+https://sale.coinfi.com
+https://cindicator.com
+https://santiment.net
+https://enigma.co
+https://coindash.com
+https://www.youtube.com/channel/UCu1-oBOM-DzJ89o02Bx3XYw
+robinhood crypto
 
-- ZCL
-- Steem
+- nebl
+
 - BIX
 - REQ
 - EMC2
