@@ -6,7 +6,7 @@ modified: 2018-02-25T14:03
 place: Phuket, Thailand
 comments: true
 
-# Traiding
+# Trading
 
 [TOC]
 
