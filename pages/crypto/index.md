@@ -1,29 +1,97 @@
 labels: Crypto
 created: 2017-11-17T22:10
-modified: 2017-11-28T11:18
+modified: 2018-01-13T18:31
 comments: true
 
 # Crypto currencies index
 
 Index:
 
-- **[BTC](./btc)** (Bitcoin)
-- **[ETH](./eth)** (Ethereum)
-- **BCH** (Bitcoin Cash)
-- **[LTC](./ltc)** (Litecoin)
-- **[XRP](./xrp)** (Ripple)
-- **[LSK](./lsk)** (Lisk)
-- **NXT**
-- **[NEO](./neo)**
-- **BAT**
-- **DOGE** (Dogecoin)
-- **[POWR](./powr)** (Power Ledger)
-- **[DASH](./dash)** (Digital Cash)
-- **OMG**
-- **GRS**
-- **PAY** (TenX)
-- **BTS**
+- [+] **[ADA](./ada)** (Cardano)
+- [-] **[APPC](./appc)** (AppCoins)
+- [+] **[BAT](./bat)** (Basic Attention Token)
+- [-] **[BCD](./bcd)** (Bitcoin Diamond)
+- [+] **[BTC](./btc)** (Bitcoin)
+- [+] **[BCH](./bch)** (Bitcoin Cash)
+- [!] **[BNB](./bnb)** (Binance Coin)
+- [+] **[BTS](./bts)** (BitShares)
+- [!] **[CND](./cnd)** (CIndicator)
+- [+] **[DASH](./dash)** (Digital Cash)
+- [!] **[DENT](./dent)**
+- [+] **[DOGE](./doge)** (Dogecoin)
+- [-] **[ECC](./ecc)**
 - **EMC2**
+- [+] **[ETH](./eth)** (Ethereum)
+- **GRS**
+- [-] **[HDG](./hdg)** (Hedge)
+- [+] **[KCS](./kcs)** (KuCoin Shares)
+- [+] **[LTC](./ltc)** (Litecoin)
+- **[LSK](./lsk)** (Lisk)
+- **[NEO](./neo)**
+- **NXT**
+- **OMG**
+- **PAY** (TenX)
+- [+] **[POWR](./powr)** (Power Ledger)
+- [+] **[STEEM](./steem)**
+- [!] **[TRX](./trx)** (Tron)
+- **[ICX](./icx)** (ICON)
+- [!] **[VEN](./ven)** (VeChain)
+- [+] **[XLM](./xlm)** (Lumen, Stellar)
+- [+] **[XMR](./xmr)** (Monero)
+- [+] **[XRP](./xrp)** (Ripple)
+- [!] **[ZCL](./zcl)** (ZClassic)
+
+Scams:
+
+- https://davor.io/ (DAV)
+- https://usitech-int.com/
+
+To check:
+
+http://icodrops.com/
+https://www.carvertical.com/
+https://steemit.com/
+https://sale.coinfi.com
+https://cindicator.com
+https://santiment.net
+https://enigma.co
+https://coindash.com
+https://www.youtube.com/channel/UCu1-oBOM-DzJ89o02Bx3XYw
+robinhood crypto
+
+- nebl
+
+- BIX
+- REQ
+- EMC2
+- Ethereum classic
+- Komodo, dico
+- EOS
+- Enigma
+- Vivo
+- QSP
+- HST
+- OMG
+- NEO
+- VERI
+- RCN
+- DCR
+- TRX
+- NEBLIO
+- ELF
+- ARN
+- Modum
+- adToken
+- Power ledger
+- ZRX
+- XRB
+- Salt
+- QSP
+- RDN
+- Elixir
+- Qash
+- Ethos + 1
+- RISE
 
 FIDO U2F
 DOGECOIN
@@ -37,7 +105,6 @@ ARK
 
 - AVT
 - BCC
-- BCH
 - BCU
 - BT1
 - BT2
@@ -61,7 +128,6 @@ ARK
 - 1ST
 - 2GIVE
 - ABY
-- ADA
 - ADT
 - ADX
 - AEON
@@ -103,7 +169,6 @@ ARK
 - DGD
 - DMD
 - DNT
-- DOGE
 - DOPE
 - DTB
 - DYN

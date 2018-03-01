@@ -1,7 +1,7 @@
 labels: Blog
         Scrapers
 created: 2016-12-16T21:04
-modified: 2017-11-16T12:08
+modified: 2018-01-05T18:44
 place: Phuket, Thailand
 comments: true
 
@@ -782,6 +782,12 @@ Easy to grow horizontally, just add more spiders, more machines.
 But, in order to be able to crawl faster, we may need to scale vertically (more CPU, more bandwidth) or build a cluster with each spider effort coordinated (distribute requests to the same domain across many machines).
 
 See [scrapy cluste](rhttp://scrapy-cluster.readthedocs.io/).
+
+### Scraping js generated content
+
+Use lightweight browsers without GUI.
+
+See [Splash](http://www.scrapingauthority.com/scrapy-javascript).
 
 ## Vocabulary
 

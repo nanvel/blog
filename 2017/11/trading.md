@@ -2,15 +2,13 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2017-11-24T09:24
+modified: 2018-02-25T14:03
 place: Phuket, Thailand
 comments: true
 
-# Traiding
+# Trading
 
 [TOC]
-
-EBTA 162
 
 ## Open questions
 
@@ -26,6 +24,7 @@ How to withdaw fiat money?
 Platforms:
 
 - Abucoins
+- [AEX](aex.com)
 - ANXBTC
 - [Binance](https://www.binance.com): looks good, easy
 - Bit2C
@@ -57,6 +56,7 @@ Platforms:
 - CHBTC
 - Coinbase
 - Coincheck
+- [CoinExchange](coinexchange.io) - has ECC
 - Coinfloor
 - [CobinHood](https://www.cobinhood.com/) (in Beta, Taiwan, few altcoins so far)
 - Coinone
@@ -74,13 +74,14 @@ Platforms:
 - GateHub
 - GDAX
 - Gemini
-- HITBTC (HitBTC)
+- HITBTC (HitBTC) - be careful, bad feedback, expensive and long withdraw
 - Huobi
 - HuobiPro
 - ITBIT (itBit)
 - Jubi
 - Korbit
 - Kraken
+- [+] [KuCoin](https://www.kucoin.com) - looks good
 - LakeBTC
 - LiveCoin
 - Liqui
@@ -102,6 +103,7 @@ Platforms:
 - TheRock
 - TheRockTrading
 - Tidex
+- [TradeSatoshi](https://tradesatoshi.com/) - has SAFEX
 - TuxExchange
 - Unocoin
 - Vaultoro
@@ -160,6 +162,11 @@ Sources:
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
+### Projects on GitHub
+
+- https://github.com/deependersingla/deep_trader - uses ml
+- https://github.com/pirate/bitcoin-trader - nice idea about small buys
+
 ## Testing
 
 Backtest - test on historical data.
@@ -191,14 +198,50 @@ Chart types:
 - single line chart
 - bar chart
 
+### Candles
+
+Shooting star candle - potential weakness. If see a few close - increasing bearish sentiment.
+
+A long legged doji candle should always be validated by average, preferably high or ultra high volume.
+
+If many people believe shooting star is bullish candle, it will be.
+
 ## Vocabulary
 
-To check:
+### All time high
 
-- Moving averages
-- Momentum indicators
-- Market's net trend (average daily price change)
-- Break out signal
+ATH - the highest the price has ever been.
+
+### Automated Trading
+
+Automated Trading – trading done by a script with little to no human interaction.
+
+### Bear trap, bull trap
+
+A bear trap is a false signal that the rising trend of a stock or index has reversed when it has not.
+
+A bull trap is a false signal indicating that a declining trend in a stock or index has reversed and is heading upwards when, in fact, the security will continue to decline.
+
+### Bull vs Bear market
+
+A bull market is a financial market of a group of securities in which prices are rising or are expected to rise.
+
+A bear market is characterized by falling prices and typically shrouded in pessimism.
+
+### Climax
+
+Selling and buying climax: fireworks (more volatile) in prices, high or extremely high volumes. Could be any time frame.
+
+### Congestion area
+
+Congestion areas - densely populated areas, with traders locked in a variety of weak positions,
+and therefore any break away from these areas requires high volume.
+
+Congestion areas: low -> lower -> higher, or high -> higher -> lower.
+
+### Correction
+
+A correction is a reverse movement, usually negative, of at least 10% in a stock, bond, commodity or index to adjust for an overvaluation. Corrections are generally temporary price declines interrupting an uptrend in the market or an asset.
 
 ### Day traders vs position traders vs buy-and-hold traders
 
@@ -206,6 +249,46 @@ Day traders - those people who are in and out of a trade during a single day.
 Day traders is also known as an active traders.
 
 Position traders - those who hold the trade longer than a day but not forever.
+
+### DEX
+
+Decentralized exchange, example: [Bitshares](http://docs.bitshares.org/integration/traders/index.html).
+
+### Fiat money
+
+Fiat money is a currency without intrinsic value established as money by government regulation or law.
+
+### FOMO - Fear of Missing Out
+
+This is a term used to describe the act of purchasing a commodity while it is on a bull run. It often carries a negative connotation, in that FOMO may cause the price to be artificially high and indicate that a correction is coming.
+
+### FUD - Fear, Uncertainty and Doubt
+
+This term is used to describe the malicious spread of negativity. This is often done with the goal of causing inexperienced members to sell, or possibly cause a temporary dip in price.
+
+### Futures
+
+Futures are financial contracts obligating the buyer to purchase an asset or the seller to sell an asset, such as a physical commodity or a financial instrument, at a predetermined future date and price.
+
+### Hodl
+
+The act of buying and holding. A play on the world hold
+
+### Insiders
+
+Insiders are simply playing on the emotions of the markets which are driven by fear and greed.
+
+### Long Position
+
+Making a purchase with the hope that the item will increase in value so it can be sold for a profit. This is what most investors do.
+
+### Margin Short (Shorting)
+
+This is the act of selling something that you’ve borrowed with the hope of being able to buy it back later at a lower price.
+
+### Market order vs limit order
+
+The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.
 
 ### Order book, bid and ask
 
@@ -222,33 +305,13 @@ Order types:
 - market order (buy or sell immediately for the best available price)
 - limit order (buy or sell a set number of bitcoins at a specified price or better)
 
-### FOMO - Fear of Missing Out
+### Pump And Dump
 
-This is a term used to describe the act of purchasing a commodity while it is on a bull run. It often carries a negative connotation, in that FOMO may cause the price to be artificially high and indicate that a correction is coming.
+Pump and dump is a scheme that attempts to boost the price of a stock through recommendations based on false, misleading or greatly exaggerated statements.
 
-### FUD - Fear, Uncertainty and Doubt
+### Price
 
-This term is used to describe the malicious spread of negativity. This is often done with the goal of causing inexperienced members to sell, or possibly cause a temporary dip in price.
-
-### Hodl
-
-The act of buying and holding. A play on the world hold
-
-### Long Position
-
-Making a purchase with the hope that the item will increase in value so it can be sold for a profit. This is what most investors do.
-
-### Margin Short (Shorting)
-
-This is the act of selling something that you’ve borrowed with the hope of being able to buy it back later at a lower price.
-
-### Technical Analysis
-
-Financial analysis that uses patterns in market data to identify trends and make predictions.
-
-### Whales
-
-Traders with massive amounts of the currency being traded. They are able to sell and buy in quantities large enough to manipulate the market price in the short term.
+When demand is greater than supply, then prices will rise to meet this demand, and conversely, when supply is greater then demand, then prices will fall.
 
 ### Sell wall
 
@@ -258,46 +321,69 @@ Sell walls create an impression of a strong supply. This makes some people, unwi
 
 See [What is the strategy behind a sell wall?](https://bitcoin.stackexchange.com/questions/16918/what-%20is-the-%20strategy-behind-%20a-sell-%20wall).
 
-### Fiat money
-
-Fiat money is a currency without intrinsic value established as money by government regulation or law.
-
-### Bull vs Bear market
-
-A bull market is a financial market of a group of securities in which prices are rising or are expected to rise.
-
-A bear market is characterized by falling prices and typically shrouded in pessimism.
-
-### Correction
-
-A correction is a reverse movement, usually negative, of at least 10% in a stock, bond, commodity or index to adjust for an overvaluation. Corrections are generally temporary price declines interrupting an uptrend in the market or an asset.
-
-### All time high
-
-ATH - the highest the price has ever been.
-
-### Automated Trading
-
-Automated Trading – trading done by a script with little to no human interaction.
-
-### Pump And Dump
-
-Pump and dump is a scheme that attempts to boost the price of a stock through recommendations based on false, misleading or greatly exaggerated statements.
-
-### Market order vs limit order
-
-The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.
-
-### Trends
-
-Primary, secondary and minor.
-
-The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
-
 ### Stop Losses
 
 If the price drops more than 6% to 8% then there is a valid reason for that much decline.
 
+### Support and Resistance
+
+These terms are used by traders to refer to price levels on charts that tend to act as barriers from preventing the price of an asset from getting pushed in a certain direction.
+
+Price levels simply represent the "extreme" psychological levels of fear and greed.
+Price consolidation creates invisible barriers which are then densely populated with both weak and strong groups of traders,
+and which then become platforms either of support or resistance during future market activity.
+
+### Technical Analysis
+
+Financial analysis that uses patterns in market data to identify trends and make predictions.
+
+### Testing markets
+
+Testing: the worst thing that can be happen to insiders is they begin to move the market higher but hit by waves of selling, which would drive the market lower undoing all the hard work of shaking the sellers.
+
+### Trends
+
+By time period: primary, secondary and minor.
+
+The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
+
+Stages of a trend:
+
+- accumulation
+- public participation
+- distribution
+
+### Volume
+
+Volume is the total amount of anything swapped around in a certain period of time. An exchange usually shows it’s own volume for each crypto, that is the amount traded on that particular exchange, normally in the last 24hr unless it says otherwise.
+
+Volume reveals whether the price action is valid or false:
+
+- if a price was moving on low volume, then there could be many different reasons
+- if a price move is associated with high or rising volume - a valid move
+- if the price continue moving in one direction, with associated supporting volume - signal of the start of a trend
+
+In a manipulated market, volume reveals the truth behind the price action.
+In a pure market, volume reveals the truth behind market sentiment and order flow.
+
+If the volume is low, then, clearly, the insiders are not buying at this level.
+Break on low volume is a trap move.
+
+### VPA
+
+Volume-price analysis.
+
+If the cause if large, then the effect will be large as well.
+
+See also [Volume](#volume).
+
+### Whales
+
+Traders with massive amounts of the currency being traded. They are able to sell and buy in quantities large enough to manipulate the market price in the short term.
+
 ## Links
 
+[Evidence-Based Technical Analysis](https://www.amazon.com/Evidence-Based-Technical-Analysis-Scientific-Statistical/dp/0470008741) by David Aronson
 [Charting and Technical Analysis](https://www.amazon.com/Charting-Technical-Analysis-Fred-Mcallen/dp/1456468693) by Fred McAllen
+[Investopedia](https://www.investopedia.com)
+[Trading the Trends](https://www.amazon.com/Trading-Trends-Fred-McAllen/dp/1466323868) by Fred McAllen
