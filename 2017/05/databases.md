@@ -1,7 +1,7 @@
 labels: Draft
         Databases
 created: 2017-05-10T12:38
-modified: 2017-11-04T16:56
+modified: 2018-03-01T15:20
 place: Phuket, Thailand
 comments: true
 
@@ -18,6 +18,8 @@ If short:
 3. It depends
 
 See [PyCon Ukraine 2016, lighting talks](https://www.youtube.com/watch?v=mgPBtKaDQww).
+
+There is no quick and easy rule for determining which type of storage engine is better for the use case, it worth testing empirically.
 
 ## DB types
 

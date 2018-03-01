@@ -2,7 +2,7 @@ labels: Draft
         HighScalability
         SoftwareDevelopment
 created: 2017-05-07T20:54
-modified: 2017-11-06T15:01
+modified: 2018-03-01T15:20
 place: Phuket, Thailand
 comments: true
 
@@ -10,7 +10,7 @@ comments: true
 
 [TOC]
 
-Loc 2089
+Loc 2695
 
 Obsticles:
 
@@ -76,6 +76,11 @@ Numbers:
 
 Limiting factors are the amount of data, the complexity of data, the speed at which it is changing.
 
+### Data warehouse
+
+Late 1980s and early 1990s there was a trend to use a separate database for analytics.
+Safe ti run queries those often harm performance of concurrently executing transactions in the main database if running there.
+
 ### Compute-intensive application
 
 Where CPU cycles are the bottleneck.
@@ -87,6 +92,10 @@ Send a message to another process, to be handled asynchronously.
 ### Batch processing
 
 Periodically crunch a large amount of accumulated data.
+
+### ETL
+
+Extract-Transform-Load - a process of getting data into a data warehouse.
 
 ### Reliability
 
