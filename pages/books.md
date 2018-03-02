@@ -120,6 +120,7 @@ modified: 2017-12-19T13:35
 
 ## In progress
 
+- Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos 
 - Trading the Trends by Fred McAllen
 - Data Science for Business by Foster Provost and Tom Fawcett
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson

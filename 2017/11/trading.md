@@ -8,6 +8,11 @@ comments: true
 
 # Trading
 
+> The market does not run on chance or luck.
+> Like the battlefield, it runs on probabilities and odds.
+>
+> David Dreman
+
 [TOC]
 
 ## Open questions
