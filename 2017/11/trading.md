@@ -2,7 +2,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2018-02-25T14:03
+modified: 2018-03-04T12:37
 place: Phuket, Thailand
 comments: true
 
@@ -211,6 +211,11 @@ A long legged doji candle should always be validated by average, preferably high
 
 If many people believe shooting star is bullish candle, it will be.
 
+### Market rotation
+
+More risky stocks are sold and the money is moved into safer stocks.
+Is is not because the safer stocks have room to advance, but because they are likely to hold their value better in an economic down-turn. 
+
 ### Market weakness signs
 
 Early signs:
@@ -321,6 +326,19 @@ This is the act of selling something that you’ve borrowed with the hope of bei
 
 The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.
 
+### Market phases
+
+Market phases or stages of a trend:
+
+- accumulation
+- public participation
+- distribution
+
+Accumulation: insiders actively buying.
+Public participation: technically oriented investors begin buying.
+Distribution: uninformed investors and novices believe the market will continue going up.
+The smart money and the dumb money swapping hands.
+
 ### Options
 
 There are two basic types of options:
@@ -395,13 +413,9 @@ By time period: primary, secondary and minor.
 
 The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
 
-Stages of a trend:
-
-- accumulation
-- public participation
-- distribution
-
 Volume confirms primary trend.
+
+Significant lows or highs must be used to to draw a trend line.
 
 ### Volume
 

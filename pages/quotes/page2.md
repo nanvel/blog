@@ -46,3 +46,12 @@ modified: 2018-03-04T10:15
 >
 > Kenneth Chang
 ---
+> Investors must keep in mind that there's a difference between a good company and a good stock.
+> After all, you can buy a good car but pay too much for it.
+>
+> Richard Thaler
+---
+> We simply attempt to be fearful when others are greedy and to be greedy only when others re fearful.
+>
+> Warren Buffett
+---
