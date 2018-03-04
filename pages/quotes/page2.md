@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2018-02-25T14:14
+modified: 2018-03-04T10:15
 
 # Quotes page 2
 
@@ -31,4 +31,18 @@ modified: 2018-02-25T14:14
 > Like the battlefield, it runs on probabilities and odds.
 >
 > David Dreman
+---
+> If an individual learns the trade -
+> then they don't need the tricks.
+>
+> Fred McAllen
+---
+> The greatest investors, traders, and speculators of all time have one thing in common.
+> They understand the market does not always go up, they recognize the market moves in trends and cycles, and they capitalize on that knowledge.
+>
+> Fred McAllen
+---
+> A market is the combined behavior of thousands of people responding to information, misinformation and whim.
+>
+> Kenneth Chang
 ---
