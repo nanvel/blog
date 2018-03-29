@@ -2,11 +2,16 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-16T14:08
-modified: 2018-02-25T14:03
+modified: 2018-03-04T12:37
 place: Phuket, Thailand
 comments: true
 
 # Trading
+
+> The market does not run on chance or luck.
+> Like the battlefield, it runs on probabilities and odds.
+>
+> David Dreman
 
 [TOC]
 
@@ -206,6 +211,27 @@ A long legged doji candle should always be validated by average, preferably high
 
 If many people believe shooting star is bullish candle, it will be.
 
+### Market rotation
+
+More risky stocks are sold and the money is moved into safer stocks.
+Is is not because the safer stocks have room to advance, but because they are likely to hold their value better in an economic down-turn. 
+
+### Market weakness signs
+
+Early signs:
+
+- Lower volume on advances
+- Higher volume on declines
+- Inability to make higher highs
+- Primary trend line broken
+- DMA broken
+
+Trend change signs:
+
+- Lower highs, lower lows
+- Higher volume on declines
+- Low volume on advances
+
 ## Vocabulary
 
 ### All time high
@@ -274,6 +300,10 @@ Futures are financial contracts obligating the buyer to purchase an asset or the
 
 The act of buying and holding. A play on the world hold
 
+### Indicators
+
+Helps to se the large story the market is telling.
+
 ### Insiders
 
 Insiders are simply playing on the emotions of the markets which are driven by fear and greed.
@@ -286,9 +316,35 @@ Making a purchase with the hope that the item will increase in value so it can b
 
 This is the act of selling something that you’ve borrowed with the hope of being able to buy it back later at a lower price.
 
+### Market
+
+> A market is the combined behavior of thousands of people responding to information, misinformation and whim.
+>
+> Kenneth Chang
+
 ### Market order vs limit order
 
 The primary advantage of a limit order over a market order is that the limit order guarantees market entry at the trader's specified, desired price.
+
+### Market phases
+
+Market phases or stages of a trend:
+
+- accumulation
+- public participation
+- distribution
+
+Accumulation: insiders actively buying.
+Public participation: technically oriented investors begin buying.
+Distribution: uninformed investors and novices believe the market will continue going up.
+The smart money and the dumb money swapping hands.
+
+### Options
+
+There are two basic types of options:
+
+- Calls
+- Puts 
 
 ### Order book, bid and ask
 
@@ -321,6 +377,16 @@ Sell walls create an impression of a strong supply. This makes some people, unwi
 
 See [What is the strategy behind a sell wall?](https://bitcoin.stackexchange.com/questions/16918/what-%20is-the-%20strategy-behind-%20a-sell-%20wall).
 
+### Short selling the trend
+
+Is one of the strategies to make money in a declining market.
+
+Selling at the highs, buying back at the lows.
+
+Margin account is required.
+
+Land n shares -> return the same number later. But the price of them will be less.
+
 ### Stop Losses
 
 If the price drops more than 6% to 8% then there is a valid reason for that much decline.
@@ -347,11 +413,9 @@ By time period: primary, secondary and minor.
 
 The primary trend is the most important of the three tends. It is the granddaddy of the three trends, and will dictate whether you make money or not.
 
-Stages of a trend:
+Volume confirms primary trend.
 
-- accumulation
-- public participation
-- distribution
+Significant lows or highs must be used to to draw a trend line.
 
 ### Volume
 

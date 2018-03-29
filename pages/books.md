@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2017-12-19T13:35
+modified: 2018-03-02T09:54
 
 # Books
 
@@ -117,10 +117,11 @@ modified: 2017-12-19T13:35
 ## 2018
 
 - [+] A Complete Guide to Volume Price Analysis by Anna Coulling
+- [+] Trading the Trends by Fred McAllen
 
 ## In progress
 
-- Trading the Trends by Fred McAllen
+- Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos 
 - Data Science for Business by Foster Provost and Tom Fawcett
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - watchOS 2 App Development Essentials by Neil Smyth

@@ -32,6 +32,29 @@ modified: 2018-03-29T09:21
 >
 > David Dreman
 ---
+> If an individual learns the trade -
+> then they don't need the tricks.
+>
+> Fred McAllen
+---
+> The greatest investors, traders, and speculators of all time have one thing in common.
+> They understand the market does not always go up, they recognize the market moves in trends and cycles, and they capitalize on that knowledge.
+>
+> Fred McAllen
+---
+> A market is the combined behavior of thousands of people responding to information, misinformation and whim.
+>
+> Kenneth Chang
+---
+> Investors must keep in mind that there's a difference between a good company and a good stock.
+> After all, you can buy a good car but pay too much for it.
+>
+> Richard Thaler
+---
+> We simply attempt to be fearful when others are greedy and to be greedy only when others re fearful.
+>
+> Warren Buffett
+---
 > If something is important enough
 > you should try even if the probable
 > outcome is failure.
