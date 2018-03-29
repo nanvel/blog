@@ -15,14 +15,25 @@ comments: true
 
 [TOC]
 
-## Open questions
+## Ideas
 
-Where to watch stats/get historical data?
-Check out exchanges, try to exchange.
-Reliable signal sources.
-Check out APIs.
-Analize each currency available for trade.
-How to withdaw fiat money?
+Doesn't work:
+
+- Buy when while price moves down and sell when moves up (
+  some times doesn't move up, takes long time,
+  requires a lot of base currency that will be locked most of time,
+  small profit ast trade small pieces)
+
+To try:
+
+- Buy on surges
+- Bollinger Band (deviation from moving averages)
+- Volume-price charts
+
+Works:
+
+- Trailing sell (trailing stop)
+- Price/volume analysis
 
 ## Traiding platforms
 
@@ -171,6 +182,7 @@ Sources:
 
 - https://github.com/deependersingla/deep_trader - uses ml
 - https://github.com/pirate/bitcoin-trader - nice idea about small buys
+- https://github.com/CryptoSignal/crypto-signal
 
 ## Testing
 
@@ -361,6 +373,10 @@ Order types:
 - market order (buy or sell immediately for the best available price)
 - limit order (buy or sell a set number of bitcoins at a specified price or better)
 
+### Order book depth
+
+Order book depth (total quantity of orders) can be used as a way to quantify the market’s intentions to buy and sell.
+
 ### Pump And Dump
 
 Pump and dump is a scheme that attempts to boost the price of a stock through recommendations based on false, misleading or greatly exaggerated statements.
@@ -376,6 +392,9 @@ A large investor might be trying to move the market.
 Sell walls create an impression of a strong supply. This makes some people, unwilling to wait for the wall to break down, pitch their sales offers below the wall. By moving the wall closer to the current bid again, a large investor might be able to move the market to a small extent and then buy at a lower price. The investor's goal is to move the market, not to actually sell his supply at that price, so when the price gets too close, such walls often disappear or move to a higher price. Especially, if you see the same amount popping up at different prices, there is probably someone trying to move the market without actually fulfilling orders or bids.
 
 See [What is the strategy behind a sell wall?](https://bitcoin.stackexchange.com/questions/16918/what-%20is-the-%20strategy-behind-%20a-sell-%20wall).
+
+If a trader wants to place orders at pre-determined price points, he can do so automatically without showing his orders on the books by using simple trading software. That said, there are some advantages that would lead a trader to reveal his intentions by placing large, public limit orders.
+Large limit orders are often placed to advertise intention and to affect the distribution of orders around the wall. Traders will often move orders ahead of the wall to get executed first.
 
 ### Short selling the trend
 
@@ -451,3 +470,4 @@ Traders with massive amounts of the currency being traded. They are able to sell
 [Charting and Technical Analysis](https://www.amazon.com/Charting-Technical-Analysis-Fred-Mcallen/dp/1456468693) by Fred McAllen
 [Investopedia](https://www.investopedia.com)
 [Trading the Trends](https://www.amazon.com/Trading-Trends-Fred-McAllen/dp/1466323868) by Fred McAllen
+[tradingview.com](https://www.tradingview.com/) - Network where active traders echange ideas to maximize profit

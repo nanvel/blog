@@ -34,6 +34,7 @@ Index:
 - [+] **[POWR](./powr)** (Power Ledger)
 - [+] **[STEEM](./steem)**
 - [!] **[TRX](./trx)** (Tron)
+- [TUSD](https://www.trusttoken.com/)
 - **[ICX](./icx)** (ICON)
 - [!] **[VEN](./ven)** (VeChain)
 - [+] **[XLM](./xlm)** (Lumen, Stellar)
