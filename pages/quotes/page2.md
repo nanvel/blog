@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2018-03-04T10:15
+modified: 2018-03-29T09:21
 
 # Quotes page 2
 
@@ -54,4 +54,10 @@ modified: 2018-03-04T10:15
 > We simply attempt to be fearful when others are greedy and to be greedy only when others re fearful.
 >
 > Warren Buffett
+---
+> If something is important enough
+> you should try even if the probable
+> outcome is failure.
+>
+> Elon Musk
 ---
