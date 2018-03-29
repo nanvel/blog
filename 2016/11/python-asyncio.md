@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2017-11-22T00:03
+modified: 2018-03-13T13:37
 place: Phuket, Thailand
 comments: true
 
@@ -280,6 +280,39 @@ exec .env/bin/gunicorn -b 0.0.0.0:9001 -k aiohttp.worker.GunicornWebWorker -w 2 
 Links:
 
 [How to Deploy Python WSGI Apps Using Gunicorn HTTP Server Behind Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-python-wsgi-apps-using-gunicorn-http-server-behind-nginx)
+
+#### Graceful shutdown
+
+```
+async def init_pg(app):
+    conf = app['config']['postgres']
+    engine = await aiopg.sa.create_engine(
+        database=conf['database'],
+        user=conf['user'],
+        password=conf['password'],
+        host=conf['host'],
+        port=conf['port'],
+        minsize=conf['minsize'],
+        maxsize=conf['maxsize'],
+        loop=app.loop)
+    app['db'] = engine
+
+...
+
+app.on_startup.append(init_pg)
+
+...
+
+async def close_pg(app):
+    app['db'].close()
+    await app['db'].wait_closed()
+
+...
+
+app.on_cleanup.append(close_pg)
+```
+
+https://docs.aiohttp.org/en/stable/tutorial.html#graceful-shutdown
 
 ### asyncio.Semaphore
 

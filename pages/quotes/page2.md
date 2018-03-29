@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2018-02-25T14:14
+modified: 2018-03-29T09:21
 
 # Quotes page 2
 
@@ -31,4 +31,10 @@ modified: 2018-02-25T14:14
 > Like the battlefield, it runs on probabilities and odds.
 >
 > David Dreman
+---
+> If something is important enough
+> you should try even if the probable
+> outcome is failure.
+>
+> Elon Musk
 ---
