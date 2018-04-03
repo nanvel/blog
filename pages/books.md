@@ -118,9 +118,12 @@ modified: 2018-03-02T09:54
 
 - [+] A Complete Guide to Volume Price Analysis by Anna Coulling
 - [+] Trading the Trends by Fred McAllen
+- Investing and Trading in Crypto currencies using volume price analysis by Anna Coulling
+- Ethereum DApps for Web developers by Asif Mallik
 
 ## In progress
 
+- Building Blockchain Projects with Ethereum and Solidity by Narayan Prusty
 - Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos 
 - Data Science for Business by Foster Provost and Tom Fawcett
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
@@ -144,3 +147,4 @@ modified: 2018-03-02T09:54
 - Mastering Bitcoin: Unlocking Digital Cryptocurrencies by Andreas M. Antonopoulos
 - Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
 - Reach by Andy Molinsky (13%)
+- Distributed Ledger Technology by Roger Wattenhofer

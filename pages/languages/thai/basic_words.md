@@ -100,6 +100,7 @@ modified: 2017-11-12T12:15
 วัน - day
 วันนี้ - today (this day)
 พรุ่งนี้ - tomorrow
+เมื่อวานซืน - day before yesterday
 สัปดาห์ - week
 สัปดาห์นี้ - this week
 เดือน - month
@@ -132,6 +133,7 @@ you กำลัง do - adds continuous (doing)
 
 ไป - to go
 เดิน (เดินไป) - to walk
+วิ่งไป - to run
 ทำ - to do
 กลับมา - come back
 ลืน - to forget

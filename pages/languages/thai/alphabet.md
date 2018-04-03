@@ -170,6 +170,16 @@ Sounds with a consonant:
 ใก - gai
 กฤ - gru
 
+## Tones
+
+Tone numbers:
+
+1. middle
+2. low
+3. falling
+4. high
+5. rising
+
 ## Fonts
 
 ![Thai fonts](fonts.png)
