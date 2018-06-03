@@ -24,3 +24,4 @@ Harder - หนักขึ้น
 ## Other
 
 One moment - สักครู่
+Expensive - แพง

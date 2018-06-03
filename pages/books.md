@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2018-04-03T16:49
+modified: 2018-06-03T10:18
 
 # Books
 
@@ -124,6 +124,7 @@ modified: 2018-04-03T16:49
 
 ## In progress
 
+- Data Science from Scratch: First Principles with Python by Joel Grus
 - Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos 
 - Data Science for Business by Foster Provost and Tom Fawcett
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
