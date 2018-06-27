@@ -21,7 +21,12 @@ Harder - หนักขึ้น
 
 ## Colors
 
+## Particles
+
+น่ะ - friendly particle
+
 ## Other
 
 One moment - สักครู่
 Expensive - แพง
+Pain - เจ็บ

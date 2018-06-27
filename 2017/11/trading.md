@@ -1,8 +1,9 @@
 labels: Draft
         Finance
         Crypto
+        Trading
 created: 2017-11-16T14:08
-modified: 2018-03-04T12:37
+modified: 2018-06-14T13:34
 place: Phuket, Thailand
 comments: true
 
@@ -19,10 +20,10 @@ comments: true
 
 Doesn't work:
 
-- Buy when while price moves down and sell when moves up (
+- Buy while price moves down and sell when moves up (
   some times doesn't move up, takes long time,
   requires a lot of base currency that will be locked most of time,
-  small profit ast trade small pieces)
+  small profit as trade small pieces)
 
 To try:
 
@@ -194,7 +195,7 @@ Backtest - test on historical data.
 
 ## Technical Analysis
 
-> The carts don't lie.
+> The charts don't lie.
 >
 > Charts really are the "foot-print of money". What some talking head on a financial news network might say becomes immaterial when you can look at a chart and see what the "money" is saying.
 >
