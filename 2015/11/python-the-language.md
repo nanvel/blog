@@ -1,7 +1,7 @@
 labels: Blog
         Python
 created: 2015-11-22T21:33
-modified: 2017-08-21T12:54
+modified: 2018-06-29T12:13
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -255,6 +255,9 @@ UnboundLocalError: local variable 'id' referenced before assignment
 ```
 
 When Python compiles the body of the ```b``` function, it decides that ```id``` is a local variable because it is assigned within the function.
+
+!!! tip "Variable name length"
+    Lean toward short local variables with small scopes. The larger the scope of a name, the longer and more meaningful it should be.
 
 #### Mutable types as parameter defaults
 

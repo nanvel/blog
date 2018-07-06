@@ -3,7 +3,7 @@ labels: Draft
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2018-06-14T13:34
+modified: 2018-07-06T12:12
 place: Phuket, Thailand
 comments: true
 
@@ -43,7 +43,7 @@ Platforms:
 - Abucoins
 - [AEX](aex.com)
 - ANXBTC
-- [Binance](https://www.binance.com): looks good, easy
+- [+][Binance](https://www.binance.com): relatively new, number 1 by volume
 - Bit2C
 - BitBay
 - Bitfinex
@@ -51,10 +51,11 @@ Platforms:
 - bitFlyerFX
 - Bithumb
 - BitMarket
+- [BitMEX](https://www.bitmex.com) - offering margin trading
 - Bitso
 - BitSquare
 - Bitstamp
-- [BitTrex](https://bittrex.com): more altcoins, worse interface than binance has, commission: 0.25% per trade
+- [+][BitTrex](https://bittrex.com): many altcoins, reliable, top ten, commission: 0.25% per trade
 - BL3P
 - Bleutrade
 - BTC38
@@ -73,14 +74,14 @@ Platforms:
 - CHBTC
 - Coinbase
 - Coincheck
-- [CoinExchange](coinexchange.io) - has ECC
+- [CoinExchange](https://www.coinexchange.io) - new coins are listed here before larger exchanges, early accumulation opportunities
 - Coinfloor
 - [CobinHood](https://www.cobinhood.com/) (in Beta, Taiwan, few altcoins so far)
 - Coinone
 - Coinroom
 - Coinse
 - Coinsetter
-- Cryptopia
+- [+][Cryptopia](https://www.cryptopia.co.nz) - hundreds of small coins in addition to established already
 - CryptoX
 - Cryptsy
 - EtherDelta
@@ -112,7 +113,7 @@ Platforms:
 - OKCoin
 - OKEX
 - Paymium
-- Poloniex: good for lats
+- [+][Poloniex](https://poloniex.com): good for alts
 - Quadriga: good for BTC
 - QuadrigaCX
 - Quoine
@@ -131,6 +132,15 @@ Platforms:
 - Yobit
 - Yunbi
 - Zaif
+
+## Statistics sources
+
+[Coinmarketcap](https://coinmarketcap.com)
+[CoinGecko](https://www.coingecko.com/en)
+[BitScreener](https://bitscreener.com) - further chart analysis, recent related news.
+[AtomSignal](https://atomsignal.com) - excanges monitiring, tracking buy and sell walls.
+[WenMoon](http://wenmoon.com) - useful for research.
+[BitcoinTalk](https://bitcointalk.org) - new altcoin announcements, fundamental analysis.
 
 ## TA categories
 
@@ -329,6 +339,10 @@ Making a purchase with the hope that the item will increase in value so it can b
 
 This is the act of selling something that you’ve borrowed with the hope of being able to buy it back later at a lower price.
 
+### Margin trading
+
+Margin trading refers to the practice of using borrowed funds from a broker to trade a financial asset. Since such use of financial leverage can potentially magnify gains but could also saddle the trader with devastating losses.
+
 ### Market
 
 > A market is the combined behavior of thousands of people responding to information, misinformation and whim.
@@ -472,3 +486,4 @@ Traders with massive amounts of the currency being traded. They are able to sell
 [Investopedia](https://www.investopedia.com)
 [Trading the Trends](https://www.amazon.com/Trading-Trends-Fred-McAllen/dp/1466323868) by Fred McAllen
 [tradingview.com](https://www.tradingview.com/) - Network where active traders echange ideas to maximize profit
+[An Altcoin Trader's Handbook](https://www.amazon.com/Altcoin-Traders-Handbook-Nik-Patel/dp/198617011X) by Nik Patel
