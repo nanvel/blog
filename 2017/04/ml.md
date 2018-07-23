@@ -1,7 +1,7 @@
 labels: Draft
         ML
 created: 2017-04-02T23:32
-modified: 2018-06-03T11:11
+modified: 2018-07-23T15:39
 place: Phuket, Thailand
 comments: true
 
@@ -124,7 +124,20 @@ When set to True, reuse the solution of the previous call to fit and add more es
 
 Default: None (balanced_subsample)
 
+## Reinforcement learning
+
+Goal: Building systems that can adapt to their environments and learn from their experience.
+
+Reinforcement learning is learning how to map situations to actions so that maximize reward signal.
+
+Is not supervised learning, learns only by it's own interraction.
+
+Has to both exploit and explore. Exploit - use what it knows in order to obtain reward. Explore - find and use better actions in future.
+
+Subelements of a reinforcement learning system: a policy, a reward function, a value function, a model of the environment (optionally).
+
 ## Links
 
 [Machine Learning With Random Forests and Decision Trees](https://www.amazon.com/Machine-Learning-Random-Forests-Decision-ebook/dp/B01JBL8YVK) by Scott Hartshorn
 [In Depth: Parameter tuning for Random Forest](https://medium.com/@mohtedibf/in-depth-parameter-tuning-for-random-forest-d67bb7e920d)
+Reinforcement Learning by Richard S. Sutton and Andrew G. Barto

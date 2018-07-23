@@ -138,7 +138,7 @@ Platforms:
 [Coinmarketcap](https://coinmarketcap.com)
 [CoinGecko](https://www.coingecko.com/en)
 [BitScreener](https://bitscreener.com) - further chart analysis, recent related news.
-[AtomSignal](https://atomsignal.com) - excanges monitiring, tracking buy and sell walls.
+[AtomSignal](https://www.atomsignal.com) - excanges monitiring, tracking buy and sell walls.
 [WenMoon](http://wenmoon.com) - useful for research.
 [BitcoinTalk](https://bitcointalk.org) - new altcoin announcements, fundamental analysis.
 

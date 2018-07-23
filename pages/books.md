@@ -122,6 +122,7 @@ modified: 2018-06-27T21:02
 - Ethereum DApps for Web developers by Asif Mallik
 - Building Blockchain Projects with Ethereum and Solidity by Narayan Prusty
 - [+] Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos
+- Reinforcement learning by Richard S. Sutton and Andrew G. Barto
 
 ## In progress
 
