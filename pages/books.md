@@ -123,10 +123,10 @@ modified: 2018-06-27T21:02
 - Building Blockchain Projects with Ethereum and Solidity by Narayan Prusty
 - [+] Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos
 - Reinforcement learning by Richard S. Sutton and Andrew G. Barto
+- [+] An Altcoin Trader's Handbook by Nik Patel
 
 ## In progress
 
-- An Altcoin Trader's Handbook by Nik Patel
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
