@@ -124,13 +124,15 @@ modified: 2018-06-27T21:02
 - [+] Mastering Bitcoin: Programming the Open Blockchain by Andreas M. Antonopoulos
 - Reinforcement learning by Richard S. Sutton and Andrew G. Barto
 - [+] An Altcoin Trader's Handbook by Nik Patel
+- [+] The Roard to learn React by Robin Wieruch
 
 ## In progress
 
+- How to Win Friends & Influence People by Dale Carnegie
+- Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
-- Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - watchOS 2 App Development Essentials by Neil Smyth
 - ZeroMQ: Messaging for Many Applications by Pieter Hintjens
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
@@ -138,6 +140,7 @@ modified: 2018-06-27T21:02
 
 ## Archive
 
+- Managing for Results by Peter F. Drucker (19%)
 - The Happiness Project by Gretchen Rubin (55%)
 - The Backpacker by John Harris (13%)
 - Be Bad First: Get Good at Things Fast to Stay Ready for the Future by Erika Andersen (23%)

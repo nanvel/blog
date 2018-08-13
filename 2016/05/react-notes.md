@@ -2,7 +2,7 @@ labels: Draft
         JS
         React
 created: 2016-05-24T19:49
-modified: 2016-09-05T22:01
+modified: 2018-08-13T11:05
 place: Kyiv, Ukraine
 comments: true
 
@@ -13,6 +13,15 @@ comments: true
 > Learn once, write anywhere.
 >
 > [Facebook Engineering blog](https://facebook.github.io/react/blog/2015/03/26/introducing-react-native.html)
+
+## Create a project
+
+Use `create-react-app`.
+
+```bash
+npm install -g create-react-app
+create-react-app <app name>
+```
 
 ## Basics
 
@@ -38,6 +47,8 @@ export class MyComponent extends React.Component {
     this.state = {
       somekey: 'somevalue'
     }
+
+    this.onSomething.bind(this)
   }
 
   onSomething() {
@@ -48,12 +59,126 @@ export class MyComponent extends React.Component {
   render() {
     return <div
       something={this.state.something}
-      onClick={this.onSomething.bind(this)}
+      onClick={this.onSomething}
     >{this.props.text}</div>
   }
-
 }
 ```
+
+Setting the state:
+```js
+this.setState({ foo: bar });
+
+this.setState((prevState, props) => { ... })
+```
+
+### Bindings
+
+The best place for methods bindings is class constructor:
+```js
+class User {
+  constructor(fname, lname) {
+    this.fname = fname;
+    this.lname = lname;
+    this.getName.bind(this);
+  }
+  getName() {
+    return this.fname + ' ' + this.lname;
+  }
+}
+```
+
+Or use arrow function:
+```js
+class User {
+  constructor(fname, lname) {
+    this.fname = fname;
+    this.lname = lname;
+    this.getName.bind(this);
+  }
+  getName = () => {
+    return this.fname + ' ' + this.lname;
+  }
+}
+```
+
+## JSX
+
+```text
+<div className="App">
+  {this.state.list.map(
+    item =>
+    <p>
+      {item.title}
+    </p>
+  )}
+</div>
+```
+
+### Lifecycle methods
+
+Mountilg:
+
+- `constructor`
+- `componentWillMount`
+- `render`
+- `componentDidMount`
+
+`constructor` - is called when an instance of the component is created and inserted in the DOM (component mounting).
+
+`render` - is called during the mount process and when the component updates (when state or props changes).
+
+`componentWillMount` - is called before the render method.
+
+`componentDidMount` - is called after the render method, perfect for asynchronous requests.
+
+Update (when the state changes):
+
+- `componentWillReceiveProps`
+- `shouldComponentUpdate`
+- `componentWillUpdate`
+- `render`
+- `componentDidUpdate`
+
+Unmount:
+
+- `componentWillUnmount`
+
+### Communication with a server
+
+Use fetch:
+```js
+fetch("http://example.com").then(
+  response => response.json()
+).then(
+  result => this.parse(result)
+)catch(
+  error => error
+)
+```
+
+Or axious.
+
+## Project structure
+
+```text
+src/
+  index.js
+  index.css
+  components/
+    App/
+      index.js
+      test.js
+      index.css
+    Button/
+      index.js
+      test.js
+      index.css
+```
+
+## Testing
+
+For unittests use Enzyme.
 
 ## Redux
 
@@ -207,4 +332,6 @@ app.listen(8000, function () {
 
 ## Links
 
+[React.js Essentials](https://www.amazon.com/React-js-Essentials-Artemij-Fedosejev-ebook/dp/B00YSILZRW) by Artemij Fedosejev
+[The Road to learn React](https://www.amazon.com/Road-learn-React-pragmatic-React-js-ebook/dp/B077HJFCQX) by Robin Wieruch
 http://redux.js.org/

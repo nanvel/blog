@@ -13,6 +13,15 @@ comments: true
 Top 10 by volume:
 
 - Binance
+- OKEx
+- Huobi
+- Bithumb
+- HitBTC
+- zb.com
+- LBank
+- Bitfinex
+- Bibox
+- Upbit
 - BitTrex
 - Poloniex
 - KuCoin
@@ -26,12 +35,15 @@ Exchanges
 - Abucoins
 - [AEX](aex.com)
 - ANXBTC
+- BCEX
+- Bibox
 - [+][Binance](https://www.binance.com): relatively new, number 1 by volume
 - Bit2C
 - BitBay
 - Bitfinex
 - BitFlyer
 - bitFlyerFX
+- BitForex
 - Bithumb
 - BitMarket
 - [BitMEX](https://www.bitmex.com) - offering margin trading
@@ -39,6 +51,7 @@ Exchanges
 - BitSquare
 - Bitstamp
 - [+][BitTrex](https://bittrex.com): many altcoins, reliable, top ten, commission: 0.25% per trade
+- Bit-Z
 - BL3P
 - Bleutrade
 - BTC38
@@ -57,6 +70,7 @@ Exchanges
 - CHBTC
 - Coinbase
 - Coincheck
+- CoinEx
 - [CoinExchange](https://www.coinexchange.io) - new coins are listed here before larger exchanges, early accumulation opportunities
 - Coinfloor
 - [CobinHood](https://www.cobinhood.com/) (in Beta, Taiwan, few altcoins so far)
@@ -68,6 +82,7 @@ Exchanges
 - CryptoBridge (can find the most new coins)
 - CryptoX
 - Cryptsy
+- DOBI trade
 - EtherDelta
 - EthexIndia
 - EXMO
@@ -85,6 +100,7 @@ Exchanges
 - Kraken
 - [+][KuCoin](https://www.kucoin.com) - looks good
 - LakeBTC
+- LBank
 - LiveCoin
 - Liqui
 - LocalBitcoins
@@ -94,20 +110,25 @@ Exchanges
 - MonetaGo
 - MtGox
 - Novaexchange
+- OEX
 - OKCoin
-- OKEX
+- [OKEX](https://www.okex.com)
 - Paymium
 - [+][Poloniex](https://poloniex.com): good for alts
 - Quadriga: good for BTC
 - QuadrigaCX
 - Quoine
 - Remitano
+- RightBTC
+- Simex
 - TheRock
 - TheRockTrading
 - Tidex
+- TOPBTC
 - [TradeSatoshi](https://tradesatoshi.com/) - has SAFEX
 - TuxExchange
 - Unocoin
+- Upbit
 - Vaultoro
 - ViaBTC
 - WavesDEX
@@ -116,3 +137,4 @@ Exchanges
 - Yobit
 - Yunbi
 - Zaif
+- zb.com
