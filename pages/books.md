@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2018-06-27T21:02
+modified: 2018-08-28T22:39
 
 # Books
 
@@ -125,10 +125,10 @@ modified: 2018-06-27T21:02
 - Reinforcement learning by Richard S. Sutton and Andrew G. Barto
 - [+] An Altcoin Trader's Handbook by Nik Patel
 - [+] The Roard to learn React by Robin Wieruch
+- [+] How to Win Friends & Influence People by Dale Carnegie
 
 ## In progress
 
-- How to Win Friends & Influence People by Dale Carnegie
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus

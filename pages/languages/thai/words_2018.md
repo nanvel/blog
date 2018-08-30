@@ -19,6 +19,10 @@ Ice - นำ้แข็ง
 Turn - กรุณาเปิด
 Harder - หนักขึ้น
 
+## Questions
+
+How - อย่างไร
+
 ## Colors
 
 ## Particles
@@ -30,3 +34,6 @@ Harder - หนักขึ้น
 One moment - สักครู่
 Expensive - แพง
 Pain - เจ็บ
+Let's bang! - เล่นผีผ้าห่มกันมั้ย
+Good night - ราตรีสวัสดิ์ครับ
+Consonants - พยัญชนะ

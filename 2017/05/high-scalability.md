@@ -2,7 +2,7 @@ labels: Draft
         HighScalability
         SoftwareDevelopment
 created: 2017-05-07T20:54
-modified: 2018-03-01T15:20
+modified: 2018-08-27T11:20
 place: Phuket, Thailand
 comments: true
 
@@ -80,6 +80,8 @@ Limiting factors are the amount of data, the complexity of data, the speed at wh
 
 Late 1980s and early 1990s there was a trend to use a separate database for analytics.
 Safe ti run queries those often harm performance of concurrently executing transactions in the main database if running there.
+
+There is also [Data Lake](https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/).
 
 ### Compute-intensive application
 
