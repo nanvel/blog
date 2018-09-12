@@ -1,7 +1,7 @@
 labels: Blog
         JS
 created: 2016-05-02T11:12
-modified: 2016-12-14T09:40
+modified: 2018-08-10T19:53
 place: Kyiv, Ukraine
 comments: true
 
@@ -27,10 +27,10 @@ function f2(i) {
   }
   return v
 }
-console.log(f1(0)); // undefined
-console.log(f1(1)); // 10
-console.log(f2(0)); // undefined
-console.log(f2(1)); // 10
+console.log(f1(0));  // undefined
+console.log(f1(1));  // 10
+console.log(f2(0));  // undefined
+console.log(f2(1));  // 10
 ```
 
 Using ```let```:
@@ -41,25 +41,25 @@ function f1(i) {
   }
   return v
 }
-console.log(f1(0)); // v is not defined
+console.log(f1(0));  // v is not defined
 ```
 
 Using ```let``` in loops:
 ```js
 var i = 100;
 for(var i=0; i<10; i++) {};
-console.log(i); // 10
+console.log(i);  // 10
 var i = 100;
 for(let i=0; i<10; i++) {};
-console.log(i); // 100
+console.log(i);  // 100
 ```
 
 Global scope:
 ```js
 var i = 100;
-console.log(i); // 100
+console.log(i);  // 100
 let j = 100;
-console.log(window.j); // undefined
+console.log(window.j);  // undefined
 ```
 
 ### Redeclaration
@@ -67,19 +67,19 @@ console.log(window.j); // undefined
 ```js
 var i = 10;
 var i = 20;
-let i = 30; // Identifier 'i' has already been declared
+let i = 30;  // Identifier 'i' has already been declared
 ```
 
 ```js
 let i = 10;
-var i = 20; // Identifier 'i' has already been declared
+var i = 20;  // Identifier 'i' has already been declared
 ```
 
 ## Constants
 
 ```js
 const i = 10;
-i = 20; // TypeError: Assignment to constant variable.
+i = 20;  // TypeError: Assignment to constant variable.
 ```
 
 ### Constant objects could be modified
@@ -89,7 +89,7 @@ const i = {
   key: 1
 };
 i.key = 2;
-console.log(i); // {key: 2}
+console.log(i);  // {key: 2}
 ```
 
 ## Strings
@@ -99,14 +99,21 @@ Multiline string:
 const s = `First line
 Second line.`
 console.log(s);
-/*First line
-Second line.*/
+/* First line
+Second line. */
 ```
 
 String interpolation:
 ```js
 const value = 10;
-console.log(`Value = ${value * 5}`); // Value = 50
+console.log(`Value = ${value * 5}`);  // Value = 50
+```
+
+String includes:
+```js
+string.includes(pattern)  // ES6
+
+string.indexOf(pattern) !== -1  // ES5
 ```
 
 ## Functions
@@ -117,8 +124,8 @@ console.log(`Value = ${value * 5}`); // Value = 50
 function f(a, b=1) {
   console.log(a, b);
 }
-f(10); // 10 1
-f(10, 100); // 10 100
+f(10);  // 10 1
+f(10, 100);  // 10 100
 ```
 
 ### Rest parameters
@@ -127,15 +134,15 @@ f(10, 100); // 10 100
 function f(a, ...b) {
   console.log(a, b, arguments);
 }
-f(1); // 1 [] Object([1])
-f(1, 2, 3); // 1 [2, 3] Object([1, 2, 3])
+f(1);  // 1 [] Object([1])
+f(1, 2, 3);  // 1 [2, 3] Object([1, 2, 3])
 ```
 
 ```js
 function f(...args) {
   console.log(args);
 }
-f(); // []
+f();  // []
 f(1, 2, 3); [1, 2, 3]
 ```
 
@@ -143,17 +150,17 @@ f(1, 2, 3); [1, 2, 3]
 
 ```js
 const values = [1, 2, 3, 4];
-console.log(Math.max(...values)); // 4
-console.log(Math.max(...values, 1)); // 4
-console.log(Math.max(...values, 1, 10)); // 10
+console.log(Math.max(...values));  // 4
+console.log(Math.max(...values, 1));  // 4
+console.log(Math.max(...values, 1, 10));  // 10
 ```
 
 ### The Function constructor
 
 ```js
 const say = Function("what = `hi!`", "console.log(`Say ${what}`);");
-say(); // Say hi!
-say(`Hello!`) // Say Hello!
+say();  // Say hi!
+say(`Hello!`)  // Say Hello!
 ```
 
 Also accepts ```...args```.
@@ -164,7 +171,7 @@ Also accepts ```...args```.
 function someFunction(a) {
   console.log(a)
 }
-console.log(someFunction.name); // someFunction
+console.log(someFunction.name);  // someFunction
 ```
 
 ### Block-level functions
@@ -174,20 +181,31 @@ if(true) {
   function a() {
     console.log('Call a.')
   }
-  console.log(a); // function a
+  console.log(a);  // function a
 }
-console.log(a); // Uncaught ReferenceError: a is not defined
+console.log(a);  // Uncaught ReferenceError: a is not defined
 ```
 
 ### Arrow functions
+
+A function expressin always defines its own this object (but you can use bind).
+Arrow function still have the this object of the enclosing context.
 
 ```js
 const sum1 = (a, b) => a + b;
 const sum2 = (a, b) => {
   return a + b;
 }
-console.log(sum1(1, 2)); // 3
-console.log(sum2(1, 2)); // 3
+console.log(sum1(1, 2));  // 3
+console.log(sum2(1, 2));  // 3
+```
+
+Parentheses are not mandatory:
+```text
+item => { ... }
+(item) => { ... }
+item, key => { ... }
+(item, key) => { ... }
 ```
 
 ## Objects
@@ -201,7 +219,7 @@ function createSomething(a, b) {
     b
   }
 }
-console.log(createSomething(1, 2)); // Object {a: 1, b: 2}
+console.log(createSomething(1, 2));  // Object {a: 1, b: 2}
 ```
 
 ### Methods
@@ -213,7 +231,7 @@ const obj = {
     return this.a;
   }
 };
-console.log(obj.getA()); // 1
+console.log(obj.getA());  // 1
 ```
 
 ### Computed property names
@@ -223,26 +241,26 @@ const obj = {
   ["ab" + "cd"]: 1,
   ["ef"]: 2
 }
-console.log(obj); // Object {abcd: 1, ef: 2}
+console.log(obj);  // Object {abcd: 1, ef: 2}
 ```
 
 ### Object.is()
 
 ```js
-console.log(+0 == -0); // true
-console.log(+0 === -0); // true
-console.log(Object.is(+0, -0)); // false
+console.log(+0 == -0);  // true
+console.log(+0 === -0);  // true
+console.log(Object.is(+0, -0));  // false
 
-console.log(NaN == NaN); // false
-console.log(NaN === NaN); // false
-console.log(Object.is(NaN, NaN)); // true
+console.log(NaN == NaN);  // false
+console.log(NaN === NaN);  // false
+console.log(Object.is(NaN, NaN));  // true
 
-console.log(5 == 5); // true
-console.log(5 == "5"); // true
-console.log(5 === 5); // true
-console.log(5 === "5"); // false
-console.log(Object.is(5, 5)); // true
-console.log(Object.is(5, "5")); // false
+console.log(5 == 5);  // true
+console.log(5 == "5");  // true
+console.log(5 === 5);  // true
+console.log(5 === "5");  // false
+console.log(Object.is(5, 5));  // true
+console.log(Object.is(5, "5"));  // false
 ```
 
 ### Mixins
@@ -260,7 +278,7 @@ const obj = {
 
 const o = Object.assign(obj, mixin);
 
-o.saySomething(o.a); // Hi!
+o.saySomething(o.a);  // Hi!
 ```
 
 ### Duplicate object literals
@@ -270,7 +288,7 @@ const a = {
   b: 1,
   b: 2
 };
-console.log(a); // Object {b: 2}
+console.log(a);  // Object {b: 2}
 ```
 
 ### Object keys (ordered)
@@ -280,7 +298,7 @@ const a = {
   b: 1,
   c: 2
 };
-console.log(Object.getOwnPropertyNames(a)); // ["b"]
+console.log(Object.getOwnPropertyNames(a));  // ["b"]
 ```
 
 ### Object prototype
@@ -294,8 +312,8 @@ const proto = {
 }
 const obj = Object.create(proto);
 obj.b = 2;
-obj.f(); // 2
-proto.f(); // 1
+obj.f();  // 2
+proto.f();  // 1
 ```
 
 New in ES6: ```Object.setPrototypeOf()```.
@@ -316,7 +334,7 @@ const obj = {
   }
 }
 Object.setPrototypeOf(obj, proto);
-obj.f(); // 1\nAdd some text.
+obj.f();  // 1\nAdd some text.
 ```
 
 ### Object destructing
@@ -327,7 +345,7 @@ const obj = {
   attr2: 2
 };
 const {attr1, attr2} = obj;
-console.log(attr1, attr2); // 1 2
+console.log(attr1, attr2);  // 1 2
 ```
 
 With default values:
@@ -337,7 +355,7 @@ const obj = {
   attr2: 2
 };
 const {attr1=0, attr2=0, attr3=0, attr4} = obj;
-console.log(attr1, attr2, attr3, attr4); // 1 2 0 undefined
+console.log(attr1, attr2, attr3, attr4);  // 1 2 0 undefined
 ```
 
 Custom local variable name:
@@ -347,7 +365,7 @@ const obj = {
   attr2: 2
 };
 const {attr1: localAttrName1=0, attr2=0} = obj;
-console.log(localAttrName1); // 1
+console.log(localAttrName1);  // 1
 ```
 
 Nested destructuring:
@@ -359,7 +377,7 @@ const obj = {
   }
 };
 const {attr1: localAttrName1=0, attr2: {attr3}} = obj;
-console.log(attr3); // 2
+console.log(attr3);  // 2
 ```
 
 ### Private attributes
@@ -382,6 +400,16 @@ Is equal to:
 return { ...state, didInvalidate: true }
 ```
 
+### Shorthand property syntax
+
+```js
+const name = "name"
+
+const user = {
+  name,
+}
+```
+
 ## Arrays
 
 ### Array destructuring
@@ -389,7 +417,7 @@ return { ...state, didInvalidate: true }
 ```js
 const a = ["one", "two", "three"];
 const [a1, ,a3, a4] = a;
-console.log(a1, a3, a4); // one three undefined
+console.log(a1, a3, a4);  // one three undefined
 ```
 
 Supports defaults and nested destructuring.
@@ -399,23 +427,23 @@ Supports defaults and nested destructuring.
 ```js
 const a = ["one", "two", "three"];
 const [a1, ...aRest] = a;
-console.log(a1, aRest); // one ["two", "three"]
+console.log(a1, aRest);  // one ["two", "three"]
 ```
 
 Clone list:
 ```js
 const a = ["one", "two", "three"];
 const [...aClone] = a
-console.log(aClone, a === aClone); // ["one", "two", "three"] false
+console.log(aClone, a === aClone);  // ["one", "two", "three"] false
 ```
 
 ### Array.of and Array.from
 
 ```js
 let a = Array.of(1);
-console.log(a); // [1]
+console.log(a);  // [1]
 a = Array.of(1, 2);
-console.log(a); // [1, 2]
+console.log(a);  // [1, 2]
 ```
 
 Converting an Array-like object (or iterable) into the Array:
@@ -424,14 +452,14 @@ function f() {
   let a = Array.from(arguments);
   console.log(a);
 }
-f(1, 2, 3); // [1, 2 ,3]
+f(1, 2, 3);  // [1, 2 ,3]
 ```
 
 ### find and findIndex methods
 
 ```js
 const a = [1, 2, 3, 4, 5]
-console.log(a.find(i => i > 3), a.findIndex(i => i > 3)); // 4 3
+console.log(a.find(i => i > 3), a.findIndex(i => i > 3));  // 4 3
 ```
 
 ### fill method
@@ -441,7 +469,7 @@ Changes all values to specified one.
 ```js
 const a = [1, 2, 3];
 a.fill(10);
-console.log(a); // [10, 10, 10]
+console.log(a);  // [10, 10, 10]
 ```
 
 The method accepts start and end indexes.
@@ -464,13 +492,13 @@ const mySet = new Set();
 mySet.add(1);
 mySet.add(2);
 mySet.add(1);
-console.log(mySet); // Set {1, 2}
-console.log(mySet.size); // 2
-console.log(mySet.has(1)); // true
+console.log(mySet);  // Set {1, 2}
+console.log(mySet.size);  // 2
+console.log(mySet.has(1));  // true
 mySet.delete(1);
-console.log(mySet); // Set {2}
+console.log(mySet);  // Set {2}
 mySet.clear();
-console.log(mySet); // Set {}
+console.log(mySet);  // Set {}
 ```
 
 ### Weak sets
@@ -480,7 +508,7 @@ let myWeakSet = new WeakSet();
 let obj = {};
 myWeakSet.add(obj);
 obj = null;
-console.log(myWeakSet); // WeakSet {Object {}}
+console.log(myWeakSet);  // WeakSet {Object {}}
 // obj can be garbage collected
 ```
 
@@ -492,7 +520,7 @@ An ordered list of key-value pairs. Key and the value can have any type.
 const myMap = new Map();
 myMap.set("key1", "value1");
 myMap.set("key2", "value2");
-console.log(myMap, myMap.get("key1")); // Map {"key1" => "value1", "key2" => "value2"} "value1"
+console.log(myMap, myMap.get("key1"));  // Map {"key1" => "value1", "key2" => "value2"} "value1"
 ```
 
 Methods:
@@ -515,14 +543,14 @@ function *createIterator(items) {
   }
 }
 let iterator = createIterator(items);
-console.log(iterator.next()); // Object {value: 1, done: false}
-console.log(iterator.next()); // Object {value: 2, done: false}
-console.log(iterator.next()); // Object {value: 3, done: false}
-console.log(iterator.next()); // Object {value: undefined, done: true}
+console.log(iterator.next());  // Object {value: 1, done: false}
+console.log(iterator.next());  // Object {value: 2, done: false}
+console.log(iterator.next());  // Object {value: 3, done: false}
+console.log(iterator.next());  // Object {value: undefined, done: true}
 
 iterator = createIterator(items);
 for (let i of iterator) {
-  console.log(i); // 1\n2\n3
+  console.log(i);  // 1\n2\n3
 }
 ```
 
@@ -545,16 +573,16 @@ const myIterable = {
   }
 }
 for (let i of myIterable) {
-  console.log(i); // 0\n1\n2
+  console.log(i);  // 0\n1\n2
 }
 ```
 
 Methods of an iterable:
 ```js
 const map = new Map([['key1', 'value1'], ['key2', 'value2']]);
-console.log(map.entries()); // MapIterator {["key1", "value1"], ["key2", "value2"]}
-console.log(map.values()); // MapIterator {"value1", "value2"}
-console.log(map.keys()); // MapIterator {"key1", "key2"}
+console.log(map.entries());  // MapIterator {["key1", "value1"], ["key2", "value2"]}
+console.log(map.values());  // MapIterator {"value1", "value2"}
+console.log(map.keys());  // MapIterator {"key1", "key2"}
 ```
 
 ### Coroutines
@@ -565,9 +593,9 @@ function *myIterator() {
   yield i;
 }
 let iterator = myIterator();
-console.log(iterator.next(10)); // Object {value: 1, done: false}
-console.log(iterator.next(20)); // Object {value: 20, done: false}
-console.log(iterator.next(30)); // Object {value: undefined, done: true}
+console.log(iterator.next(10));  // Object {value: 1, done: false}
+console.log(iterator.next(20));  // Object {value: 20, done: false}
+console.log(iterator.next(30));  // Object {value: undefined, done: true}
 ```
 
 ### Throwing an error inside iterator
@@ -583,9 +611,9 @@ function *myIterator() {
   }
 }
 let iterator = myIterator();
-console.log(iterator.next()); // Object {value: 1, done: false}
-console.log(iterator.throw(new Error("Some error."))); // Object {value: 100, done: false}
-console.log(iterator.next()); // Object {value: undefined, done: true}
+console.log(iterator.next());  // Object {value: 1, done: false}
+console.log(iterator.throw(new Error("Some error.")));  // Object {value: 100, done: false}
+console.log(iterator.next());  // Object {value: undefined, done: true}
 ```
 
 ### Return statement inside a generator
@@ -598,9 +626,9 @@ function *myIterator() {
   yield 3;
 }
 let iterator = myIterator();
-console.log(iterator.next()); // Object {value: 1, done: false}
-console.log(iterator.next()); // Object {value: 100, done: true}
-console.log(iterator.next()); // Object {value: undefined, done: true}
+console.log(iterator.next());  // Object {value: 1, done: false}
+console.log(iterator.next());  // Object {value: 100, done: true}
+console.log(iterator.next());  // Object {value: undefined, done: true}
 ```
 
 ### Delegating (yield from)
@@ -611,9 +639,9 @@ function *myIterator() {
   yield 3;
 }
 let iterator = myIterator();
-console.log(iterator.next()); // Object {value: 1, done: false}
-console.log(iterator.next()); // Object {value: 2, done: false}
-console.log(iterator.next()); // Object {value: 3, done: false}
+console.log(iterator.next());  // Object {value: 1, done: false}
+console.log(iterator.next());  // Object {value: 2, done: false}
+console.log(iterator.next());  // Object {value: 3, done: false}
 ```
 
 ## Classes
@@ -629,7 +657,7 @@ class MyClass {
   }
 }
 const obj = new MyClass(10);
-obj.printValue(); // 10
+obj.printValue();  // 10
 ```
 
 Classes are first-class objects.
@@ -655,9 +683,9 @@ class MyClass {
   }
 }
 const obj = new MyClass(10);
-obj.printValue(); // 10
+obj.printValue();  // 10
 obj.value = 20;
-obj.printValue(); // 20
+obj.printValue();  // 20
 ```
 
 Computed member names may be handy here to keep setter and getter names the same.
@@ -670,9 +698,9 @@ class MyClass {
     console.log(something);
   }
 }
-MyClass.printSomething('Hi!'); // Hi!
+MyClass.printSomething('Hi!');  // Hi!
 const obj = new MyClass();
-obj.printSomething('Hi!'); // Uncaught TypeError: obj.printSomething is not a function
+obj.printSomething('Hi!');  // Uncaught TypeError: obj.printSomething is not a function
 ```
 
 Static members are not accessible from instances.
@@ -692,7 +720,7 @@ class MyClass {
 }
 
 const obj = new MyClass("Something.");
-obj.printSomething(); // Something.
+obj.printSomething();  // Something.
 ```
 
 ### Inheritance
@@ -709,7 +737,7 @@ class SayPlus extends Say {
   }
 }
 const obj = new SayPlus();
-obj.printSomething("Something"); // Something Plus.
+obj.printSomething("Something");  // Something Plus.
 ```
 
 ### ABC
@@ -733,8 +761,8 @@ class MyClass extends MyABC {
 }
 
 const obj = new MyClass();
-obj.saySomething(); // Something.
-const abc_obj = new MyABC(); // Uncaught Error: ABC can't be instantiated directly.
+obj.saySomething();  // Something.
+const abc_obj = new MyABC();  // Uncaught Error: ABC can't be instantiated directly.
 ```
 
 ## Promise
@@ -766,7 +794,7 @@ const promise = new Promise(function(resolve, reject) {
   )
 });
 promise.then(function(result) {
-  console.log(result); // Done! (in 0.5s)
+  console.log(result);  // Done! (in 0.5s)
 });
 ```
 
@@ -916,6 +944,10 @@ webpack -p --progress
 ### Pure function
 
 Returns a value depends only on passed arguments and has no side effects.
+
+### Bindings
+
+Class methods don't automatically bind this to the class instance.
 
 ## Links
 

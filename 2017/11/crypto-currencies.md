@@ -3,7 +3,7 @@ labels: Draft
         Finance
         Crypto
 created: 2017-11-05T14:19
-modified: 2018-01-20T11:43
+modified: 2018-07-28T11:16
 place: Phuket, Thailand
 comments: true
 
@@ -17,7 +17,7 @@ It’s just the economic miracle of mathematics, cryptography and computer scien
 
 ## To consider
 
-Traiding agains bots ([How Bots Trick You Into Paying Higher Coin Prices](https://blog.coinfi.com/how-bots-trick-you-into-paying-higher-coin-prices/)).
+Trading agains bots ([How Bots Trick You Into Paying Higher Coin Prices](https://blog.coinfi.com/how-bots-trick-you-into-paying-higher-coin-prices/)).
 
 The markets are really nothing but the shared hallucination of our collective unconscious, the projection of our our hopes, dreams and fears.
 
@@ -46,7 +46,7 @@ One up on wall street by Peter Lynch
 - Bitcoin SegWit2x
 - CME and CBOE to launch bitcoin futures exchanges by the end of 2017
 
-## Traiding
+## Trading
 
 The greatest traders make their money on 20% of their trades. The rest of our trades make only modest gains or loses.
 

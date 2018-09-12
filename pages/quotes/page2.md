@@ -21,7 +21,8 @@ modified: 2018-03-29T09:21
 >
 > Warren Buffett
 ---
-> No price is too low for a bear or too high for a bull.
+> No price is too low for a bear
+> or too high for a bull.
 ---
 > Mistakes are the best teachers. One does not learn from success.
 >

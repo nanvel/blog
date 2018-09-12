@@ -3,7 +3,7 @@ labels: Draft
         Distributed
         P2P
 created: 2017-05-21T12:01
-modified: 2017-11-30T11:21
+modified: 2018-06-27T21:02
 place: Phuket, Thailand
 comments: true
 
@@ -64,9 +64,26 @@ Satoshi went dark.
 >
 > The Internet of Money Volume Two by Andreas M. Antonopoulos
 
+### BIP
+
+Bitcoin Improvement Proposal. A set of proposals that members of the bitcoin community have submitted to improve bitcoin. Proof of the earliest date this block was created.
+
+### The genesis block
+
+The genesis block contains a hidden message within coinbase transaction input: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks."
+
+### Colored coins
+
+Uses bitcoin transactions to record the creation date, ownership.
+
+### BOLT
+
+Basics of Lightning Technology.
+
 ## Links
 
 [Gavin Andersen](http://gavinandresen.ninja/) - Lead Core Developer of the Bitcoin project
 [The book of Satoshi](https://www.amazon.com/Book-Satoshi-Collected-Writings-Nakamoto-ebook/dp/B00M6KGJ2K/) by Phil Champagne
 [Bitcoin Forum](https://bitcointalk.org)
 The Internet of Money Volume Two by Andreas M. Antonopoulus
+[Mastering Bitcoin](https://www.amazon.com/Mastering-Bitcoin-Programming-Open-Blockchain-ebook/dp/B071K7FCD4) by Andreas M. Antonopoulos

@@ -85,6 +85,8 @@ The Importance Vs Urgency Matrix (attributed to President Eisenhower and popular
 
 **Important/Not urgent** is the place where magic happens. Executing actions from this category you moving your most exciting projects forward.
 
+About procrastination: [Inside the mind of a master procrastinator | Tim Urban](https://www.youtube.com/watch?v=arj7oStGLkU).
+
 [Goldratt's framework](https://en.wikipedia.org/wiki/Theory_of_constraints) (What is your primary limit in completing the project?):
 
 - What's the system?
