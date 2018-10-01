@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-11-01T00:00
-modified: 2016-11-03T21:26
+modified: 2018-10-01T13:21
 
 # Oleksandr Polieno aka nanvel
 
@@ -17,7 +17,7 @@ Why do I need a blog:
 - I share experience
 - I delve deeper into issue while writing about it
 
-```Nanvel``` is name of an engineer from ```Bern Up! Excess``` anime. She creates incredible things that amaze others.
+`Nanvel` is an engineer name from `Bern Up! Excess` anime, who creates incredible things those amaze others.
 
 I am on:
 
