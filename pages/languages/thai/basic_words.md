@@ -128,6 +128,7 @@ you กำลัง do - adds continuous (doing)
 รึยัง - yet, already
 ชั่วโมง - one hour (duration)
 ผมเคยมี ... - I used to have ...
+นาน - long time ...
 
 ## Actions
 
