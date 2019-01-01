@@ -257,3 +257,4 @@ Tip: if don't remember or not sure, use the same word.
 ไม่มีอะไร - it's nothing (an answer to อะไร)
 ผมแน่ใจ - I am sure.
 ผมมีความสุข - I am happy.
+หมายถึงอะไร - what does it mean?

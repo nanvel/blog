@@ -50,7 +50,7 @@ Consonants - พยัญชนะ
 ### ขา้ว group
 
 ขาว - white
-ขา่ว - mews
+ข่าว - mews
 กา้ว - rice
 เขา - mount,he
 เข่า - knee

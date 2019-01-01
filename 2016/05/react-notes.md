@@ -72,6 +72,13 @@ this.setState({ foo: bar });
 this.setState((prevState, props) => { ... })
 ```
 
+```js
+onChange(e) {
+  e.preventDefault();
+  this.setState({[e.target.name]: e.target.value});
+}
+```
+
 ### Bindings
 
 The best place for methods bindings is class constructor:
@@ -152,12 +159,21 @@ fetch("http://example.com").then(
   response => response.json()
 ).then(
   result => this.parse(result)
-)catch(
+).atch(
   error => error
 )
 ```
 
 Or axious.
+
+### ENV variables
+
+Add variables to `.env`:
+```text
+REACT_APP_SOKE_KEY=somevalue
+```
+
+Access in js with `${process.env.REACT_APP_SOME_KEY}`.
 
 ## Project structure
 
