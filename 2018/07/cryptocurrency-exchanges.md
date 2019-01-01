@@ -1,5 +1,5 @@
 labels: Draft
-		Crypto
+        Crypto
         Trading
 created: 2018-07-28T12:10
 modified: 2018-07-28T12:10

@@ -22,6 +22,8 @@ Harder - หนักขึ้น
 ## Questions
 
 How - อย่างไร
+Question - คำถาม
+Answer - คำตอบ
 
 ## Colors
 

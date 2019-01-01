@@ -16,6 +16,8 @@ place: Phuket, Thailand
 
 Image credit: [odd-e](https://www.odd-e.com/).
 
+Read about [Scrum Meetings](https://www.mountaingoatsoftware.com/agile/scrum/meetings).
+
 ## Operations
 
 Operations team responsibilities:
