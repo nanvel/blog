@@ -62,3 +62,8 @@ modified: 2018-03-29T09:21
 >
 > Elon Musk
 ---
+> You can never understand everything.
+> But, you should push yourself to understand the system.
+>
+> Ryan Dahl (creator of Node.js)
+---

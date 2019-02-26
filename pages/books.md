@@ -127,9 +127,15 @@ modified: 2018-08-28T22:39
 - [+] The Roard to learn React by Robin Wieruch
 - [+] How to Win Friends & Influence People by Dale Carnegie
 
-## In progress
+## 2019
 
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
+- Millionaire Road Maps (Volume 3) by Matthew R. Kratter
+
+## In progress
+
+- Deep Reinforcement Learning Hands-On by Maxim Lapan
+- 15 Secrets Successful People Know About Time Management by Kevin Kruse
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
