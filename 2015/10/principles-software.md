@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2017-12-13T23:57
+modified: 2019-03-06T08:52
 place: Kyiv, Ukraine
 comments: true
 
@@ -122,6 +122,9 @@ Inheritance is when an object or class is based on another object (prototypal in
 ## Pareto principle
 
 For many events, roughly 80% of the effects come from 20% of the causes.
+
+80 percent of results will come from just 20 percent of the action.
+Vilfredo Federico Damaso Pareto one day noticed that 20 percent of the pea plants in his garden generated 80 percent of the healthy peapods. Then he discovered that 80 percent of the land in Italy was owned by just 20 percent of the population, 80 percent of production typically came from just 20 percent of the companies.
 
 ## Pastel's law
 

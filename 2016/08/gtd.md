@@ -4,7 +4,7 @@ image: /2016/08/urgency.png
 description: I put here some notes I made after reading Getting Things Done book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted
 keywords: getting things done,gtd,external brain,project management
 created: 2016-08-29T21:23
-modified: 2016-12-21T16:53
+modified: 2019-03-11T21:43
 place: Phuket, Thailand
 comments: true
 
@@ -170,3 +170,4 @@ Project - any outcome requiring more than one step that you're committed to achi
 [The End of Jobs](https://www.amazon.com/End-Jobs-Meaning-9-5-ebook/dp/B010L8SYRG) by Taylor Pearson
 [The Monk Who Sold His Ferrari](https://www.amazon.com/Monk-Who-Sold-His-Ferrari/dp/0062515675) by Robin Sharma
 [GyShiDo - the art of getting your shit done](https://gyshido.com/)
+[15 Secrets Successful People Know About Time Management](https://www.amazon.com/Secrets-Successful-People-Management-Straight-ebook/dp/B016FPTIZ6) by Kevin Kruse

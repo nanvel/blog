@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2018-03-29T09:21
+modified: 2019-03-11T21:39
 
 # Quotes page 2
 
@@ -61,4 +61,20 @@ modified: 2018-03-29T09:21
 > outcome is failure.
 >
 > Elon Musk
+---
+> A day wasted on others is not wasted on one's self.
+>
+> Charles Dickens
+---
+> A man who dares to waste one hour of life has not discovered the values of life.
+>
+> Charles Darwin
+---
+> All the flowers of all the tomorrows are in the seeds of today.
+>
+> Chinese proverb
+---
+> All the forces in the world are not so powerful as an idea whose time has come.
+>
+> Victor Hugo
 ---
