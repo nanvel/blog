@@ -130,6 +130,7 @@ modified: 2019-03-11T21:48
 ## 2019
 
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
+- Millionaire Road Maps (Volume 3) by Matthew R. Kratter
 - 15 Secrets Successful People Know About Time Management by Kevin Kruse
 
 ## In progress

@@ -62,6 +62,11 @@ modified: 2019-03-11T21:39
 >
 > Elon Musk
 ---
+> You can never understand everything.
+> But, you should push yourself to understand the system.
+>
+> Ryan Dahl (creator of Node.js)
+---
 > A day wasted on others is not wasted on one's self.
 >
 > Charles Dickens
