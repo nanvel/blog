@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2019-03-06T08:52
+modified: 2019-04-15T00:55
 place: Kyiv, Ukraine
 comments: true
 
@@ -190,6 +190,10 @@ ISP splits interfaces which are very large into smaller and more specific ones s
 
 A. High-level modules should not depend on low-level modules. Both should depend on abstractions.
 B. Abstractions should not depend on details. Details should depend on abstractions.
+
+## Shiny Object Syndrome
+
+or SOS - [Eclectic Thoughts on Shiny Distractions](https://myshinyobjectsyndrome.com/what-is-shiny-object-syndrome/).
 
 ## TDD
 
