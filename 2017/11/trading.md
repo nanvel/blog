@@ -3,7 +3,7 @@ labels: Draft
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2018-07-28T11:18
+modified: 2019-04-21T14:28
 place: Phuket, Thailand
 comments: true
 
@@ -103,6 +103,16 @@ Sources:
 
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
+
+### Why bot trading doesn't work well
+
+Short - because of exchange fees.
+
+If trade fast - there are small margins.
+So if we sell with 0.6% profit, and pay 2 * 0.25% (for Bittrex), we have only 0.1% left.
+That is the case when the trade was profitable.
+In case of negative result: 2 * 0.25% + 0.6% - 1.1% lost.
+So roughly for each fail we should have 11 wins at least to be profitable.
 
 ### Projects on GitHub
 

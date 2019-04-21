@@ -5,7 +5,7 @@ modified: 2018-07-28T12:00
 place: Ukraine, Starobil's'k
 comments: true
 
-# Trading vocabulary
+# Crypto trader vocabulary
 
 [TOC]
 

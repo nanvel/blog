@@ -1,7 +1,8 @@
 labels: Draft
         Business
+        SEO
 created: 2016-09-02T21:42
-modified: 2016-12-16T12:13
+modified: 2019-04-21T14:15
 place: Phuket, Thailand
 comments: true
 
@@ -76,6 +77,7 @@ Check list:
 - readability, use simple language (see [Readability score](https://readability-score.com/))
 - social networks share
 - use [schema.org](http://schema.org/), [ogp](http://ogp.me/) and [app links](http://applinks.org/documentation/) meta
+- sitemap is available and submitted to Google
 
 If you have a duplicate page, use this tag:
 ```html
@@ -104,6 +106,8 @@ Strategies:
 - google+, facebook, twitter and other social profiles
 - backlink other sites (they may backlink you)
 - link exchange services
+- analyze competitor backlinks: google `link: competitor-domain.com`
+- create valuable content and contact influencers (bloggers) to spread your link (see [link building strategies](https://www.earningguys.com/seo/link-building-strategies/))
 
 Startup listings:
 
@@ -168,3 +172,4 @@ Anchor text is the text contained in a link.
 
 [SEO 2016](https://www.amazon.com/SEO-2016-optimization-marketing-strategies-ebook/dp/B00NH0XZR0) by Adam Clarke
 [Moz blog](https://moz.com/blog)
+[Links building in 2019](https://www.earningguys.com/seo/link-building-strategies/)
