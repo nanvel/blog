@@ -1,0 +1,51 @@
+---
+- hosts:
+  - server
+  vars_files:
+  - variables.yml
+  tasks:
+  - name: "apt requirements"
+    become: yes
+    apt:
+      name:
+        - git
+        - virtualenv
+        - supervisor
+      state: latest
+  - name: "directories"
+    become: yes
+    file:
+      path: "{{ item }}"
+      state: directory
+      owner: "{{ project_user }}"
+      mode: "u+rwx,g+rx,g-w,o-rwx"
+      group: "{{ project_group }}"
+    with_items:
+    - "{{ project_dir }}"
+  - name: "repository pull"
+    git:
+      dest: "{{ project_dir }}"
+      repo: git@github.com:nanvel/blog.git
+      accept_hostkey: true
+      version: master
+      force: true
+    become: yes
+    become_user: "{{ project_user }}"
+    notify: supervisor restart
+  - name: "pip requirements"
+    pip:
+      requirements: "{{ project_dir }}/engine/requirements.txt"
+      virtualenv: "{{ project_venv }}"
+      virtualenv_python: python3
+    become: yes
+    become_user: "{{ project_user }}"
+    notify: supervisor restart
+  - name: "supervisor"
+    template:
+      src: templates/supervisor.j2
+      dest: "/etc/supervisor/conf.d/{{ project_name }}.conf"
+  handlers:
+  - name: supervisor restart
+    supervisorctl:
+      name: "{{ project_name }}"
+      state: restarted

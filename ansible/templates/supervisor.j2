@@ -1,0 +1,9 @@
+[program:{{ project_name }}]
+process_name={{ project_name }}
+directory={{ project_dir }}
+command={{ project_venv }}/bin/python engine/app.py --PORT={{ server_port }} --GITHUB_VALIDATE_IP=true --GITHUB_SECRET={{ github_secret }} --DEBUG=false --UPDATE_TIMEOUT=0
+user={{ project_user }}
+stdout_logfile=/var/log/{{ project_name }}/api-out.log
+stderr_logfile=/var/log/{{ project_name }}/api-err.log
+autostart=true
+autorestart=true
