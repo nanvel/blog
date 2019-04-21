@@ -6,7 +6,7 @@ place: Phuket, Thailand
 
 # Crypto/blockchain projects intelligence
 
-[https://onecryptofeed.com](https://onecryptofeed.com) [Projects API](https://onecryptofeed.com/blog/2019/04/projects-api)
+[https://onecryptofeed.com](https://onecryptofeed.com) | [Projects API](https://onecryptofeed.com/blog/2019/04/projects-api)
 
 Collect:
 
