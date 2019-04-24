@@ -25,8 +25,7 @@
   - name: "repository pull"
     git:
       dest: "{{ project_dir }}"
-      repo: git@github.com:nanvel/blog.git
-      accept_hostkey: true
+      repo: https://github.com/nanvel/blog.git
       version: master
       force: true
     become: yes
