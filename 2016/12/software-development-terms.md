@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2017-09-14T10:12
+modified: 2019-05-17T09:18
 place: Phuket, Thailand
 comments: true
 
@@ -93,6 +93,12 @@ A lazy implementation postpones producing values to the last possible moment. Th
 > This is the science of programming: make building blocks that people can understand and use easily, and people will work together to solve the very largest problems.
 >
 > zguide
+
+## Technical debt
+
+> Technical debt is the gap between your software system's current design and the disign you need it to have so you can continue to deliver value.
+>
+> Design It! by Michael Keeling
 
 ## Thread safety
 

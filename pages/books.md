@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2019-03-11T21:48
+modified: 2019-05-05T20:29
 
 # Books
 
@@ -132,9 +132,12 @@ modified: 2019-03-11T21:48
 - Dark Pools: The rise of A.I. trading machines and the looming threat to Wall Street by Scott Patterson
 - Millionaire Road Maps (Volume 3) by Matthew R. Kratter
 - 15 Secrets Successful People Know About Time Management by Kevin Kruse
+- Hands-On Machine Learning for Algorithmic Trading by Stefan Jansen
 
 ## In progress
 
+- Spy the Lie by Philip Houston, Michael Floyd, Susan Carnicero, Don Tennant
+- Design It! by Michael Keeling
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus
