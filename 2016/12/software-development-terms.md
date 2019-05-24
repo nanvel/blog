@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2019-05-17T09:18
+modified: 2019-05-24T10:33
 place: Phuket, Thailand
 comments: true
 
@@ -16,6 +16,21 @@ See also [Principles from software development](/2015/10/principles-software) an
 Complexity is accidental if it is not inherent in the problem that the software solves (as seen by the users) but arises only from the implementation.
 
 "Out of the Tar Pit" by Ben Moseley and Peter Marks
+
+## Architecture
+
+Architecture is "... the important stuff. Whatever that is." ([Who needs an Architect?](http://files.catwell.info/misc/mirror/2003-martin-fowler-who-needs-an-architect.pdf)).
+
+The important stuff - what we think will be difficult to change without significantly increasing complexity.
+
+"... significant design decisions (where significant is measured by the cost of change)" (Grady Booch).
+
+Turns a big problem into smaller, more manageable.
+Shows developers how to work together.
+Provides a vocabulary for talking about complex ideas.
+Enables agility: software is like water, able to take any shape, and architecture is a container that holds it.
+
+[Design It!: From Programmer to Software Architect](https://www.amazon.com/Design-Programmer-Architect-Pragmatic-Programmers/dp/1680502093)
 
 ## Async frameworks
 
