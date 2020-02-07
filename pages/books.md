@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2019-05-05T20:29
+modified: 2020-01-22T13:55
 
 # Books
 
@@ -133,10 +133,18 @@ modified: 2019-05-05T20:29
 - Millionaire Road Maps (Volume 3) by Matthew R. Kratter
 - 15 Secrets Successful People Know About Time Management by Kevin Kruse
 - Hands-On Machine Learning for Algorithmic Trading by Stefan Jansen
+- Spy the Lie by Philip Houston, Michael Floyd, Susan Carnicero, Don Tennant
+- The Da Vinci Code by Dan Brown
+
+## 2020
+
+- Beginning Apache Spark 2 by Hien Luu
+- [+] Successful Traders Size Their Positions - Why and How? by Tom Basso
 
 ## In progress
 
-- Spy the Lie by Philip Houston, Michael Floyd, Susan Carnicero, Don Tennant
+- Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
+- Domain-Driven Design by Eric Evans
 - Design It! by Michael Keeling
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan

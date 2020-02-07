@@ -21,6 +21,8 @@ See [PyCon Ukraine 2016, lighting talks](https://www.youtube.com/watch?v=mgPBtKa
 
 There is no quick and easy rule for determining which type of storage engine is better for the use case, it worth testing empirically.
 
+As with everything else in architecture, the proper answer is "it depends".
+
 ## DB types
 
 - [relational databases](/2016/02/sql)

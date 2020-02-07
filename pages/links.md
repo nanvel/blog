@@ -63,6 +63,10 @@ modified: 2017-05-14T14:42
 - [The Definitive Guide to Django: Web Development Done Right (Expert's Voice in Web Development)](http://www.amazon.com/gp/product/B004VJ46OM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004VJ46OM&linkCode=as2&tag=httpnanvelnam-20) by Adrian Holovaty
 - [Two Scoops of Django: Best Practices for Django 1.5](http://www.amazon.com/gp/product/B00CCK619K/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00CCK619K&linkCode=as2&tag=httpnanvelnam-20) by Daniel Greenfeld
 
+### Scraping
+
+- [Newspaper3k: Article scraping & curationhttps](//newspaper.readthedocs.io/en/latest/)
+
 ### Instruments
 
 - [Sublime Text 2](http://www.sublimetext.com/) - crossplatform code editor

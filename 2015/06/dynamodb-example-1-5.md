@@ -4,7 +4,7 @@ labels: Blog
         Cassandra
         Distributed
 created: 2015-06-28T18:48
-modified: 2015-12-27T21:59
+modified: 2019-05-27T18:13
 place: Kyiv, Ukraine
 comments: true
 
@@ -130,6 +130,10 @@ May be useful to store sparse data.
 
 Low cardinality field (relational database terminology) has many rows that contain fewer unique values.
 The secondary index is best on a low cardinality field (for Cassandra).
+
+## OLTP
+
+An online transaction processing (OLTP) application is focused primarily on single row transactions, inserts, and updates.
 
 ## Range key
 
