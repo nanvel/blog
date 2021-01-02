@@ -140,9 +140,13 @@ modified: 2020-01-22T13:55
 
 - Beginning Apache Spark 2 by Hien Luu
 - [+] Successful Traders Size Their Positions - Why and How? by Tom Basso
+- Volume Profile by Trader Dale
 
 ## In progress
 
+- Machine Learning for Algorithmic Trading by Stefan Jansen
+- The Options Playbook by Brian Overby
+- UX Strategy by Jaime Levy
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
 - Design It! by Michael Keeling
