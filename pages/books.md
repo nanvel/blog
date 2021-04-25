@@ -142,10 +142,16 @@ modified: 2020-01-22T13:55
 - [+] Successful Traders Size Their Positions - Why and How? by Tom Basso
 - Volume Profile by Trader Dale
 
+## 2021
+
+- Docker Deep Dive by Nigel Poulton
+- Mastering Trading Psychology by Andrew Aziz, Mike Baehr
+
 ## In progress
 
-- Machine Learning for Algorithmic Trading by Stefan Jansen
+- Trade the Trader by Tatro Quint
 - The Options Playbook by Brian Overby
+- Machine Learning for Algorithmic Trading by Stefan Jansen
 - UX Strategy by Jaime Levy
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
