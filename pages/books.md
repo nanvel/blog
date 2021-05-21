@@ -146,10 +146,14 @@ modified: 2020-01-22T13:55
 
 - Docker Deep Dive by Nigel Poulton
 - Mastering Trading Psychology by Andrew Aziz, Mike Baehr
+- Trade the Trader by Tatro Quint
+- How to see a Breakout, before it really happens by Sudhir Dixit
+- [+] Trading for a Living by Alexander Elder
 
 ## In progress
 
-- Trade the Trader by Tatro Quint
+- Price Action Trading Secrets by Rayner Teo
+- Order Flow by Trader Dale
 - The Options Playbook by Brian Overby
 - Machine Learning for Algorithmic Trading by Stefan Jansen
 - UX Strategy by Jaime Levy
