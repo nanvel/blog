@@ -140,9 +140,23 @@ modified: 2020-09-01T03:21
 
 - Beginning Apache Spark 2 by Hien Luu
 - [+] Successful Traders Size Their Positions - Why and How? by Tom Basso
+- Volume Profile by Trader Dale
+
+## 2021
+
+- Docker Deep Dive by Nigel Poulton
+- Mastering Trading Psychology by Andrew Aziz, Mike Baehr
+- Trade the Trader by Tatro Quint
+- How to see a Breakout, before it really happens by Sudhir Dixit
+- [+] Trading for a Living by Alexander Elder
 
 ## In progress
 
+- Price Action Trading Secrets by Rayner Teo
+- Order Flow by Trader Dale
+- The Options Playbook by Brian Overby
+- Machine Learning for Algorithmic Trading by Stefan Jansen
+- UX Strategy by Jaime Levy
 - Effective Testing with RSpec 3: Build Ruby Apps with Confidence by Myron Marston, Ian Dees
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
