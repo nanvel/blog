@@ -149,10 +149,16 @@ modified: 2020-01-22T13:55
 - Trade the Trader by Tatro Quint
 - How to see a Breakout, before it really happens by Sudhir Dixit
 - [+] Trading for a Living by Alexander Elder
+- Price Action Trading Secrets by Rayner Teo
+- Secrets on fibonacci trading by Frank Miller
+- Elliott Waves Made Simple by Steve Sinclair
+- Electron Projects by Denys Vuika
+- [-] Learn Algorithmic Trading by Sebastien Donadio and Sourav Ghosh
 
 ## In progress
 
-- Price Action Trading Secrets by Rayner Teo
+- RSI trading by Glenn Wilson
+- The Master Swing Trader by Alan Farley
 - Order Flow by Trader Dale
 - The Options Playbook by Brian Overby
 - Machine Learning for Algorithmic Trading by Stefan Jansen
