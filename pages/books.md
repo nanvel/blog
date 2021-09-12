@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2020-01-22T13:55
+modified: 2020-09-01T03:21
 
 # Books
 
@@ -163,6 +163,7 @@ modified: 2020-01-22T13:55
 - The Options Playbook by Brian Overby
 - Machine Learning for Algorithmic Trading by Stefan Jansen
 - UX Strategy by Jaime Levy
+- Effective Testing with RSpec 3: Build Ruby Apps with Confidence by Myron Marston, Ian Dees
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
 - Design It! by Michael Keeling
