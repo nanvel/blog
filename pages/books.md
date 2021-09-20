@@ -154,10 +154,14 @@ modified: 2020-09-01T03:21
 - Elliott Waves Made Simple by Steve Sinclair
 - Electron Projects by Denys Vuika
 - [-] Learn Algorithmic Trading by Sebastien Donadio and Sourav Ghosh
+- [+] Pandas for Everyone by Chen Naniel Y.
+- Jupyter Notebook 101 by Michael Driscoll
 
 ## In progress
 
-- RSI trading by Glenn Wilson
+- Chart Logic by R.S. Varnes J.D.
+- Python 3 Standard Library by Example by Doug Hellmann
+- RSI Trading by Glenn Wilson
 - The Master Swing Trader by Alan Farley
 - Order Flow by Trader Dale
 - The Options Playbook by Brian Overby
@@ -176,6 +180,49 @@ modified: 2020-09-01T03:21
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
 
+## To read
+
+- The Achievement Habit by Bernard Roth
+- Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
+- Architects of Intelligence by Matin Ford
+- The Art and Science of Trading by Adam Grimes
+- Candelsticks by John Martin
+- Chiang Mai 55 Secrets Bcket List by Antonio Araujo and Natcha Pongsuriyakarn
+- Cryptocurrency Passive Income by Steve Logan
+- Culture & Empire: Digital Revolution by Pieter Hintjens
+- Data Science for Executives by Nir Kaldero
+- Designing Bots by Amir Shevat
+- Developing Brilliant Writing Skills by Roy Horn
+- Elements if Style by William Strunk Jr.
+- Forex for Beginners by James Stuart
+- Forex Made Simple by Alpha Balde
+- Forex: Trading Successfully for Beginners by F.R. Commerce
+- Getting Real by Jason Fried, Hanson Heinemeier, Matthew Linderman
+- Gump & Co. by Winston Groom
+- How to Day Trade for a Living by Andrew Aziz
+- Instant PostgreSQL Starter by Daniel K. Lyons
+- Instant Thai by Stuart Robson and Prateep Changchit
+- Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Stein Clifford
+- Jesse Livermore's Methods of Trading in Stocks by Richard Wyckoff
+- Landing Page Optimization by Tim Ash
+- Learn D3.js by Helder Da Rocha
+- Learn to Trade Momentum Stocks by Matthew R. Kratter
+- Machine Learning for Absolute Beginners by Oliver Theobald
+- Make Your Own Neural Network by Tariq Rashid
+- Making Games with Python & Pygame by Al Sweigart
+- The Manager's Path by Camille Fournier
+- Managing for Results by Peter F. Drucker
+- The Mathematical Corporation by Josh Sullivan and Angela Zutavern
+- Beautiful Fighting Girl by Sait Tamaki
+- New Concepts in Technical Trading Systems by J. Welles Wilder
+- Non-Obvious by Rohit Bhargava
+- Online Startup by Ryan Stevens
+- Python for Data Analysis by Wes Mckinney
+- The Self-Taught Programmer by Cory Althoff
+- Statistics for Absolute Beginners by O. Theobald
+- Trading Evolved by Andreas Clenow
+- Trading with the Trendlines by David Carli
+
 ## Archive
 
 - Managing for Results by Peter F. Drucker (19%)
@@ -193,3 +240,9 @@ modified: 2020-09-01T03:21
 - Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
 - Reach by Andy Molinsky (13%)
 - Distributed Ledger Technology by Roger Wattenhofer
+- AngularJS Services by Jim Lavin
+- The Boy from Reactor 4 by Orest Stelmach
+- ClojureScript by Stuart Sierra and Luke Vanderhart
+
+
+

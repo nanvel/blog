@@ -83,3 +83,12 @@ modified: 2019-03-11T21:39
 >
 > Victor Hugo
 ---
+> A goal without a plan is just a wish.
+>
+> Unknown
+---
+> When motivation fails you,
+> discipline backs you up.
+>
+> Unknown
+---
