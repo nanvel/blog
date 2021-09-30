@@ -1,0 +1,100 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: A blog instance
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: nanvel.name
+  VPCArn:
+    Type: String
+  SubnetArn:
+    Type: String
+  Region:
+    Type: String
+    Default: ap-southeast-1
+  HostedZoneId:
+    Type: String
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the ECS instances.
+
+Resources:
+  BlogServiceEC2SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: BlogServiceEC2 Security Group
+      VpcId: !Ref VPCArn
+  BlogServiceEC2SecurityGroupSSHInbound:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !Ref BlogServiceEC2SecurityGroup
+      IpProtocol: tcp
+      FromPort: 22
+      ToPort: 22
+      CidrIp: 0.0.0.0/0
+  BlogServiceEC2SecurityGroupHTTPInbound:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !Ref BlogServiceEC2SecurityGroup
+      IpProtocol: tcp
+      FromPort: 80
+      ToPort: 80
+      CidrIp: 0.0.0.0/0
+  BlogServiceEC2SecurityGroupHTTPSInbound:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !Ref BlogServiceEC2SecurityGroup
+      IpProtocol: tcp
+      FromPort: 443
+      ToPort: 443
+      CidrIp: 0.0.0.0/0
+  BlogECSSecurityGroupOutbound:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      GroupId: !Ref BlogServiceEC2SecurityGroup
+      CidrIp: 0.0.0.0/0
+      IpProtocol: '-1'
+  BlogServiceVolume:
+    Type: AWS::EC2::Volume
+    Properties:
+      Size: 32
+      AvailabilityZone:
+        Fn::Select:
+          - '0'
+          - Fn::GetAZs: {Ref: 'AWS::Region'}
+  BlogServiceEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone:
+        Fn::Select:
+          - '0'
+          - Fn::GetAZs: {Ref: 'AWS::Region'}
+      # ubuntu 20-04
+      ImageId: ami-09a6a7e49bd29554b
+      InstanceType: t2.nano
+      KeyName: !Ref KeyName
+      Volumes:
+        - Device: /dev/sdh
+          VolumeId: !Ref BlogServiceVolume
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeleteOnTermination: true
+          SubnetId: !Ref SubnetArn
+          DeviceIndex: 0
+          GroupSet:
+            - !Ref BlogServiceEC2SecurityGroup
+  BlogDNS:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      RecordSets:
+        - Name: !Ref DomainName
+          Type: A
+          TTL: 300
+          ResourceRecords:
+            - !GetAtt 'BlogServiceEC2.PublicIp'
+
+Outputs:
+  PublicIP:
+    Value: !GetAtt 'BlogServiceEC2.PublicIp'
