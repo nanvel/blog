@@ -2,7 +2,7 @@ User-agent: Yandex
 Disallow: /label
 Host: nanvel.name
 
-User-agent: Goolebot
+User-agent: Googlebot
 Disallow: /label
 
 User-agent: *

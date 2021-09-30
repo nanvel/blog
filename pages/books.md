@@ -156,33 +156,31 @@ modified: 2020-09-01T03:21
 - [-] Learn Algorithmic Trading by Sebastien Donadio and Sourav Ghosh
 - [+] Pandas for Everyone by Chen Naniel Y.
 - Jupyter Notebook 101 by Michael Driscoll
+- Chart Logic by R.S. Varnes J.D.
+- Hands-On Financial Trading with Python by Jiri Pik, Sourav Ghosh
+- [-] Trading Within the Box by T. Livingston
 
 ## In progress
 
-- Chart Logic by R.S. Varnes J.D.
 - Python 3 Standard Library by Example by Doug Hellmann
+- The Achievement Habit by Bernard Roth
 - RSI Trading by Glenn Wilson
+- Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - The Master Swing Trader by Alan Farley
 - Order Flow by Trader Dale
-- The Options Playbook by Brian Overby
 - Machine Learning for Algorithmic Trading by Stefan Jansen
+- The Options Playbook by Brian Overby
 - UX Strategy by Jaime Levy
 - Effective Testing with RSpec 3: Build Ruby Apps with Confidence by Myron Marston, Ian Dees
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
 - Design It! by Michael Keeling
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
-- The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
-- watchOS 2 App Development Essentials by Neil Smyth
-- ZeroMQ: Messaging for Many Applications by Pieter Hintjens
-- Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
-- [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
 
 ## To read
 
-- The Achievement Habit by Bernard Roth
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
 - Architects of Intelligence by Matin Ford
 - The Art and Science of Trading by Adam Grimes
@@ -243,6 +241,7 @@ modified: 2020-09-01T03:21
 - AngularJS Services by Jim Lavin
 - The Boy from Reactor 4 by Orest Stelmach
 - ClojureScript by Stuart Sierra and Luke Vanderhart
-
-
-
+- ZeroMQ: Messaging for Many Applications by Pieter Hintjens
+- watchOS 2 App Development Essentials by Neil Smyth
+- [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
+- The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
