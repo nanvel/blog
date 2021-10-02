@@ -1,4 +1,4 @@
-labels: Blog
+labels: Draft
         Trading
 created: 2018-07-28T12:00
 modified: 2018-07-28T12:00

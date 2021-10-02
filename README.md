@@ -20,6 +20,3 @@ ansible-playbook ansible/setup_user.yml -i ansible/production -u ubuntu \
 --vault-password-file <password file> \
 --private-key <private key>
 ```
-
-TODO:
-- update ssl certificate
