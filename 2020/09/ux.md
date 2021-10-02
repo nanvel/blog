@@ -1,4 +1,4 @@
-labels: Life
+labels: Draft
 created: 2020-09-28T20:00
 modified: 2019-09-28T20:00
 place: Phuket, Thailand
