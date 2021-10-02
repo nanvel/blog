@@ -40,6 +40,7 @@
     become_user: "{{ project_user }}"
     notify: supervisor restart
   - name: "supervisor"
+    become: yes
     template:
       src: templates/supervisor.j2
       dest: "/etc/supervisor/conf.d/{{ project_name }}.conf"
