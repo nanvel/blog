@@ -40,5 +40,3 @@ comments: true
 Монтаж:
 
 ![The amplifier, assembling](amp8.jpg)
-
-<iframe width="480" height="270" src="https://www.youtube.com/embed/cgD34ellU1I" frameborder="0" allowfullscreen></iframe>
