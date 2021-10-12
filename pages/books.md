@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2020-09-01T03:21
+modified: 2021-10-10T11:55
 
 # Books
 
@@ -162,8 +162,9 @@ modified: 2020-09-01T03:21
 
 ## In progress
 
-- Python 3 Standard Library by Example by Doug Hellmann
 - The Achievement Habit by Bernard Roth
+- The Electronic Day Trader by Mark Friedfertig and George West
+- Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - The Master Swing Trader by Alan Farley

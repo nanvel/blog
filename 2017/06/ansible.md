@@ -304,13 +304,13 @@ pip install cryptography
 
 String encryption:
 ```bash
-ansible-vault --vault-password-file <password file> encrypt_string <some string>
+ansible-vault encrypt_string <some string> --vault-password-file <password file>
 ```
 This command will output a string ready to be included in a YAML file. 
 
 File encryption:
 ```bash
-ansible-vault --vault-password-file <password file> encrypt <file path>
+ansible-vault encrypt <file path> --vault-password-file <password file>
 ```
 Replace the file.
 

@@ -3,11 +3,11 @@ labels: Blog
         Life
         GTD
 created: 2014-01-19T00:00
-modified: 2017-08-05T10:32
+modified: 2021-10-12T21:38
 place: Phuket, Thailand
 comments: true
 
-# Workspace for a software developer
+# Workspaces
 
 ![Workspace](workspace.png)
 
@@ -87,3 +87,17 @@ Thailand 2017.
 Hatch coworking, Phuket.
 
 ![Hatch](hatch.jpg)
+
+**UPD: 2021-10-12**
+
+WFH (Covid 2019)
+
+![Home](home_2020.jpg)
+
+[KoHub](https://kohub.org/)
+
+![KoHub](kohub.jpg)
+
+Bayaco
+
+![Bayaco](bayaco.jpg)

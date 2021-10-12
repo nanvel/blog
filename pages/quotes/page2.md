@@ -92,3 +92,22 @@ modified: 2019-03-11T21:39
 >
 > Unknown
 ---
+> Buy when there's blood in the streets,
+> even if the blood is your own.
+>
+> Barron Rothschild
+---
+> Reoccurring patterns occur over and over
+> because stocks are driven by humans and human nature never changes.
+>
+> Jesse Livermore
+---
+> You can't develop discipline until your patience coming first.
+>
+> The Inner Circle Trader
+---
+> We determined the best thing for us to do
+> was basically take the human being out of the quation.
+>
+> Bernard Madoff
+---
