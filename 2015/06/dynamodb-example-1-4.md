@@ -1,5 +1,4 @@
-labels: Blog
-        Databases
+labels: Databases
         DynamoDB
 created: 2015-06-06T22:09
 place: Dream Story, Kyiv, Ukraine

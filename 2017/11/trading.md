@@ -60,6 +60,7 @@ After a major decline, the risk of further decline diminishes while the opportun
 - know orders priority - FIFO or by size?
 - always keep orders to catch spike
 - monitor liquidations
+- Look for institutional activities
 
 Works:
 
@@ -167,6 +168,11 @@ So roughly for each fail we should have 11 wins at least to be profitable.
 - https://github.com/pirate/bitcoin-trader - nice idea about small buys
 - https://github.com/CryptoSignal/crypto-signal
 
+## Market mechanics
+
+What truly moves the price is AGGRESSION.
+If the price goes up, then the buyers are more aggressive (they use market orders).
+
 ## Testing
 
 Backtest - test on historical data.
@@ -271,6 +277,13 @@ Fibonacci retracement is a tool used to predict the pull-back of price after a p
 
 Fibonacci extension is a tool used to find targets for growth after a pull-back. Commonly used 161.8, 200.
 
+Institutional activities signs:
+- Sideways price action area
+- Aggressive initiation activity
+- Strong rejection
+
+Institutions have large amount of capital to trade.
+
 ## Order book
 
 Large volume at price:
@@ -282,6 +295,13 @@ Large volume at price:
 - large volumes can be removed or moved a bit (if the intension was just price manipulation without intent to buy/sell)
 - large volumes can be executed with market order after removed from order book
 
+## Volume profile
+
+D - market is balanced. A sign of institutions accumulating volumes.
+P - aggressive buyers. Ususally seen when market is in uptrend, at the possible end of downtrend.
+b - aggressive sellers. Downtrend of end of uptrend.
+thin - strong uptrend or downtrend.
+
 ## Risk management
 
 Keep account at risk `~3-5%` per trade.
@@ -289,6 +309,14 @@ Account at risk = `((entry_price - stop_price) / stop_price) * quantity + fee`.
 Sell asset gradually to reduce risk.
 Let winners to run and cut losers.
 Move stop (towards entry only) to reduce or remove risks later (ladder stop, trailing stop).
+
+Improperly sized positions affects ability to be disciplined.
+
+Sizing too large = more excited, frustrated, emotional, exhausted.
+
+Sizing too small = disinterest, boredom, sloppiness, lack of returns.
+
+Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 
 ## Links
 
@@ -299,3 +327,4 @@ Move stop (towards entry only) to reduce or remove risks later (ladder stop, tra
 [tradingview.com](https://www.tradingview.com/) - Network where active traders echange ideas to maximize profit
 [An Altcoin Trader's Handbook](https://www.amazon.com/Altcoin-Traders-Handbook-Nik-Patel/dp/198617011X) by Nik Patel
 [A Complete Guide to Volume Price Analysis by Anna Coulling](https://www.amazon.com/Complete-Guide-Price-Analysis-ebook/dp/B00DGA8LZC/)
+[Volume Profile by Trader Dale](https://www.amazon.com/PROFILE-insiders-guide-trading/dp/1718067577)

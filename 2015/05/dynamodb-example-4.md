@@ -1,5 +1,4 @@
-labels: Blog
-        Databases
+labels: Databases
         DynamoDB
 created: 2015-05-17T16:40
 place: Rim Ping, Lamphun, Thailand

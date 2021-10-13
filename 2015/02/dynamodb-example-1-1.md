@@ -1,5 +1,4 @@
-labels: Blog
-        Databases
+labels: Databases
         DynamoDB
 created: 2015-02-22T21:45
 place: Phuket, Thailand

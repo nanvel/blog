@@ -1,5 +1,4 @@
-labels: Blog
-        Databases
+labels: Databases
         DynamoDB
         Cassandra
 created: 2015-07-05T17:32

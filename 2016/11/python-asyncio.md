@@ -22,6 +22,8 @@ comments: true
 **March 2014**: Python 3.4 with asyncio in the standard library
 **September 2015**: Python 3.5 with async/await statements ([PEP 492](https://www.python.org/dev/peps/pep-0492/))
 
+[Presentation on concurrency in Python](concurrency_in_python.pdf).
+
 ## New syntax for generators/coroutines
 
 There is a great [talk by David Beazley on PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4) that shows how to use generators to simplify asynchronous code.

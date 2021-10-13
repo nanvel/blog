@@ -1,5 +1,4 @@
-labels: Blog
-        DynamoDB
+labels: DynamoDB
         Tornado
         Asynchronous
 created: 2015-03-01T15:23

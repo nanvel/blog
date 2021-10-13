@@ -1,5 +1,4 @@
-labels: Blog
-        Databases
+labels: Databases
         DynamoDB
 created: 2015-05-10T23:08
 place: Chiang Mai, Thailand

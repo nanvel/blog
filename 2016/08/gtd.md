@@ -4,7 +4,7 @@ image: /2016/08/urgency.png
 description: I put here some notes I made after reading Getting Things Done book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted
 keywords: getting things done,gtd,external brain,project management
 created: 2016-08-29T21:23
-modified: 2019-03-11T21:43
+modified: 2021-10-14T00:05
 place: Phuket, Thailand
 comments: true
 
@@ -27,6 +27,8 @@ Redefine your goals periodically.
 > We need to constantly define (and redefine) what we're trying to accomplish on many different levels, and consistently relocate resources toward getting these tasks complete as effectively and efficiently as possible.
 >
 > Getting Things Done by David Allen
+
+![ask yourself](ask.jpg)
 
 ## Horizontal planning
 

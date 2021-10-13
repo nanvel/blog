@@ -1,5 +1,4 @@
-labels: Blog
-        DynamoDB
+labels: DynamoDB
         Testing
         Databases
 created: 2015-03-08T13:30

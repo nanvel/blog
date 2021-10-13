@@ -1,5 +1,4 @@
-labels: Blog
-        DynamoDB
+labels: DynamoDB
         Databases
 created: 2015-03-14T21:04
 modified: 2016-10-11T07:52

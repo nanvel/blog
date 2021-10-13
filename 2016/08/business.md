@@ -1,7 +1,7 @@
 labels: Draft
         Business
 created: 2016-08-30T10:20
-modified: 2016-10-08T10:32
+modified: 2021-10-12T21:51
 place: Phuket, Thailand
 comments: true
 
@@ -32,6 +32,12 @@ Business success components:
 - Ability to get customers
 - Timing
 - Luck
+
+### Communication
+
+Use `and` instead of `but`, stop using `but`!
+
+Use `I want` instead of `I should`!
 
 ## Roadmap
 
@@ -120,6 +126,7 @@ Check out [moz.com](https://moz.com/) blog.
 [The End of Jobs](https://taylorpearson.me/eojbook) by Taylor Pearson
 [The Lean Startup](http://theleanstartup.com) by Eric Ries
 [Traction: How Any Startup Can Achieve Explosive Customer Growth](https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer-ebook/dp/B00TY3ZOMS) by Gabriel Weinberg and Justin Mares
+[The Achievement Habit by Bernard Roth](https://www.amazon.com/Achievement-Habit-Wishing-Start-Command/dp/0062356100)
 
 ## Resources
 
