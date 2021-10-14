@@ -9,6 +9,12 @@ comments: true
 
 # Trading
 
+!!! warning "Disclaimer"
+    The information provided on this page is just personal notes,
+    and it does not constitute investment advice, financial advice, trading advice,
+    or any other sort of advice and you should not treat any of the provided content as such.
+    You understand that you are using any and all information available here at your own risk.
+
 > The market does not run on chance or luck.
 > Like the battlefield, it runs on probabilities and odds.
 >
@@ -17,7 +23,6 @@ comments: true
 [TOC]
 
 [Trading vocabulary](/2018/07/trading-vocabulary)
-[Cryptocurrency exchanges](/2018/07/cryptocurrency-exchanges)
 
 ## Ideas
 
@@ -77,6 +82,18 @@ After a major decline, the risk of further decline diminishes while the opportun
 - exit on stop and buy deeper
 - collect and combine signals from different sources
 - wait for candlestick to close
+- spot accumulation and distribution
+- spot price is close to large volume clusters in order book those been there for long time
+- spot price, volume and orders momentum increase
+- analize executed orders
+- buy in small amounts once price in range
+- when price goes up and many sale orders coming - there is resistance
+- look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
+- break out from penant
+- candles getting shorter and shorter
+- conside time and dow
+- create zones, when enter - buy, exit - sell, enter next one - buy ...
+- channel break out
 
 Works:
 
@@ -174,6 +191,12 @@ Signals:
 - [100-eyes](https://www.100-eyes.com/)
 - [Crypto Currency Alerting](https://cryptocurrencyalerting.com/)
 - [CScalp Trader signals](https://t.me/daytrader_signals)
+- [Mining Humster](https://www.mininghamster.com/)
+- [Signals Blue](https://signals.blue/) (230 pounds/month)
+- [Crypto Alarm](https://cryptoalarm.net/) (270$/month)
+- [Crypto Base Scanner](https://www.cryptobasescanner.com/)
+- [Dazzlewave](http://dazzlewave.trade/)
+- [BlockChair Sparrows signals](https://www.blockchainsparrows.com/)
 
 ICOs:
 
@@ -194,6 +217,7 @@ Open source:
 - [TALib](https://mrjbq7.github.io/ta-lib/)
 - [Tulipy](https://github.com/cirla/tulipy)
 - [CCXT](https://github.com/ccxt/ccxt)
+- [Crypto-Signal](https://github.com/CryptoSignal/crypto-signal)
 
 ### Study
 
