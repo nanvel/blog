@@ -6,11 +6,6 @@ modified: 2021-10-02T14:32
 
 [TOC]
 
-## Tools
-
-- [Toggle track - time tracking](https://toggl.com/track/)
-- [Notion - documentation](https://www.notion.so/product)
-
 ## Software engineering
 
 ### Core
@@ -72,7 +67,7 @@ modified: 2021-10-02T14:32
 
 - [Newspaper3k: Article scraping & curationhttps](//newspaper.readthedocs.io/en/latest/)
 
-### Instruments
+### Tools
 
 - [Sublime Text 2](http://www.sublimetext.com/) - crossplatform code editor
 - [Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/) (frontend performance analysis)
@@ -91,6 +86,9 @@ modified: 2021-10-02T14:32
 - [Gitter IM](https://gitter.im) for team communitction
 - CI: [CircleCI](https://circleci.com/)
 - APM (Application Performance Monitoring): [DataDog](http://docs.datadoghq.com/)
+- [Docsify](https://docsify.js.org) - documentation website in md
+- [Toggle track](https://toggl.com/track/) - time tracking
+- [Notion](https://www.notion.so/product) - documentation
 
 ### Blogs
 

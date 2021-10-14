@@ -1,7 +1,7 @@
 labels: Draft
         Trading
 created: 2018-07-28T12:00
-modified: 2018-07-28T12:00
+modified: 2021-10-14T14:42
 place: Ukraine, Starobil's'k
 comments: true
 
@@ -54,6 +54,12 @@ Maximum supply - the maximum amount of a coin that can ever come into existence.
 ## Climax
 
 Selling and buying climax: fireworks (more volatile) in prices, high or extremely high volumes. Could be any time frame.
+
+## Coin and Token
+
+Coin - a crypto with it's own native blockchain.
+
+Token - issued on a blockchain but is not a native coin of that blockchain.
 
 ## Coin cap
 

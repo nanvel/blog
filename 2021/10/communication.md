@@ -8,3 +8,9 @@ comments: true
 # Communication
 
 [TOC]
+
+## Notes
+
+Use `and` instead of `but`, stop using `but`!
+
+Use `I want` instead of `I should`!

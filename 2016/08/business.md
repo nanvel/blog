@@ -33,12 +33,6 @@ Business success components:
 - Timing
 - Luck
 
-### Communication
-
-Use `and` instead of `but`, stop using `but`!
-
-Use `I want` instead of `I should`!
-
 ## Roadmap
 
 ### 1. The idea

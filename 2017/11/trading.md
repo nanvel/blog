@@ -21,6 +21,14 @@ comments: true
 
 ## Ideas
 
+Strategies:
+- trend following strategies
+- mean reversion trading strategies
+- statistical arbitrage and pairs trading
+- arbitrage ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
+- market making
+- index fund balancing
+
 Doesn't work:
 
 - Buy while price moves down and sell when moves up (
@@ -61,6 +69,14 @@ After a major decline, the risk of further decline diminishes while the opportun
 - always keep orders to catch spike
 - monitor liquidations
 - Look for institutional activities
+- advantages from market inefficiencies (not enough liquidity, price is not adjusting fast enough)
+- use ichimoku cloud
+- ride pumps
+- trade break outs
+- trade pull backs (rejections)
+- exit on stop and buy deeper
+- collect and combine signals from different sources
+- wait for candlestick to close
 
 Works:
 
@@ -94,16 +110,124 @@ Works:
 - [TradingView](https://uk.tradingview.com/)
 - [BitcoinWisdom](https://bitcoinwisdom.com/) - clear and user-friendly
 - [TrendSpider](https://trendspider.com/)
+- [StockCharts](https://stockcharts.com/)
+- [GoCharting](https://gocharting.com/) - order flow charting
+- [Finviz](https://finviz.com/)
+- [BookMap](https://bookmap.com/) - dom visualization
+- [MultiCharts](https://www.multicharts.com/)
+- [Cosaic](https://cosaic.io/) (ChartIQ)
+- [Atas](https://atas.net/atas-crypto/)
+- [TensorCharts](https://tensorcharts.com/)
+- [Cryptowatch](https://cryptowat.ch/)
+- [SierraChart](https://www.sierrachart.com/)
 
-### Scalping
+### Screeners
+
+- [BitScreener](https://bitscreener.com/)
+- [Coin360](https://coin360.com/)
+- [TradingView Crypto screener](https://www.tradingview.com/crypto-screener/)
+- [Intotheblock](https://app.intotheblock.com/)
+
+### Platforms
+
+- [3Commas](https://3commas.io/)
+- [SuperOrder](https://superorder.io/)
+- [CoinRule](https://coinrule.io/)
+- [Zignaly](https://zignaly.com/)
+- [HaasOnline](https://www.haasonline.com/)
+- [Cornix](https://cornix.io/)
+- [TradeStation](https://www.tradestation.com)
+- [Fyers](https://fyers.in/fyers-web/)
+- [Altrady](https://altrady.com/)
+- [All in one crypto](https://allinonecrypto.app/)
+- [HodlBot](https://www.hodlbot.io/)
+- [Quadency](https://quadency.com/)
+- [TradeSanta](https://tradesanta.com/)
+- [Shrimpy](https://www.shrimpy.io/)
+- [Kattana](https://kattana.trade/)
+- [Crypto terminal](https://cryptoterminal.io/)
+- [Mudrex](https://mudrex.com/)
+- [Bitsgap](https://bitsgap.com/)
+- [Kryll](https://kryll.io/)
+- [Trality](https://www.trality.com/) - trading bots
+- [Tokensets](https://www.tokensets.com/)
+- [TradeMate](https://trade-mate.io/)
+
+Scalping:
 
 - [CScalp](https://fsr-develop.com/)
 - [BookMap](https://bookmap.com/)
+- [TigerTrade](https://tigertradesoft.com/)
+
+Journals:
+
+- [Trademetria](https://www.trademetria.com/)
+- [EdgeWonk](https://edgewonk.com/)
+- [Trader's Diary](https://fsr-develop.com/)
+
+Training:
+
+- [CryptoParrot](https://cryptoparrot.com/)
+
+Signals:
+
+- [100-eyes](https://www.100-eyes.com/)
+- [Crypto Currency Alerting](https://cryptocurrencyalerting.com/)
+- [CScalp Trader signals](https://t.me/daytrader_signals)
+
+ICOs:
+
+- [ICO Drops](https://icodrops.com/)
+
+Data providers:
+
+- [Alpha Vantage](https://www.alphavantage.co/)
+- [Marketstack](https://marketstack.com/)
+- [Whale alert](https://whale-alert.io/) ([twitter](https://twitter.com/whale_alert?lang=en))
+- [Quandl](https://www.quandl.com/)
+- [Shrimpy API](https://developers.shrimpy.io/)
+- [CryptoCompare](https://min-api.cryptocompare.com/)
+
+Open source:
+
+- [Geckko](https://gekko.wizb.it/docs/introduction/about_gekko.html)
+- [TALib](https://mrjbq7.github.io/ta-lib/)
+- [Tulipy](https://github.com/cirla/tulipy)
+- [CCXT](https://github.com/ccxt/ccxt)
 
 ### Study
 
 - [The Inner Circle Trader](https://www.youtube.com/user/InnerCircleTrader)
 - [Babypips](https://www.babypips.com/)
+
+YouTube:
+
+- [Into to Basic Market Mechanics](https://www.youtube.com/watch?v=3m_Stn4hxCQ)
+- [Auction Theory, Volume Profile, and Microstructure](https://www.youtube.com/watch?v=ixo_DoBGYko)
+- [Practical Applications - Order Flow and Structure](https://www.youtube.com/watch?v=Au20OwdAG5s)
+- [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)
+
+Articles:
+
+- [Cryptocurrency Trading Bible Three: Winning in Sideways and Bear Markets](https://hackernoon.com/cryptocurrency-trading-bible-four-winning-in-sideways-and-bear-markets-f3f365ffca76)
+- [5 Stop Loss Mistakes To Avoid](https://medium.com/@cryptocreddy/5-stop-loss-mistakes-to-avoid-bea274857371)
+
+## Asset classes
+
+- Equities (stocks) - invest directly in companis
+- Fixed income (bonds) - a load
+- Real estate investment trusts
+- Commodities (metals, agriculture products)
+- Exchange traded funds (ETFs) - exchange listed security that tracks a collection of other securities (indexes)
+- Foreign exchange (Forex)
+- Financial derivatives - options and futures
+- Crypto
+
+### Derivatives
+
+Futures - financial contracts to buy or sell an asset at a predetermined future date and price.
+
+Options - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
 
 ## TA categories
 
@@ -152,6 +276,20 @@ Sources:
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
+Client algorithmic trading infrastructure:
+
+- communication with exchange (pulling market data and order entry)
+- pulling historical market data
+- risk management layer (handle errors, runaway trading)
+- strategy implementation (quantitive part)
+- visualization, analytics
+- signal research framework
+
+Trading signal also referred to as features, calculators, indicators, predictors, alpha.
+Signals almost always originate from some intuitive idea and observation of certain market conditions.
+
+ARIMA - Auto-Regressive Integrated Moving Average (find trend, seasonality, noise, and project future price).
+
 ### Why bot trading doesn't work well
 
 Short - because of exchange fees.
@@ -170,8 +308,18 @@ So roughly for each fail we should have 11 wins at least to be profitable.
 
 ## Market mechanics
 
+Large market rallies generate investor confidence, causing more participants to buy more, recursively causing larger rallies.
+
+Large drops in market price scare off parcipants invested in the trading instrument, causing them to sell their holdings and exacerbate the drop.
+
 What truly moves the price is AGGRESSION.
 If the price goes up, then the buyers are more aggressive (they use market orders).
+
+Many traders quit trades on break even.
+
+There are bots in the market: arbitrage, mean reverse, etc.
+
+The more visible setup (more clear, more time since formed), the more participants to expect.
 
 ## Testing
 
@@ -277,12 +425,29 @@ Fibonacci retracement is a tool used to predict the pull-back of price after a p
 
 Fibonacci extension is a tool used to find targets for growth after a pull-back. Commonly used 161.8, 200.
 
+Images for retracement, extension, expansion!
+
+Combine fibonacci with trendlines and moving averages.
+
 Institutional activities signs:
 - Sideways price action area
 - Aggressive initiation activity
 - Strong rejection
 
 Institutions have large amount of capital to trade.
+
+Following a consistent set of actions leads to consistent results.
+
+Success parts:
+- consistency
+- risk management
+- edge in the market
+
+> The most important rule of trading is to play great defense, not great offence.
+>
+> Paul Tudor Jones
+
+Trading is about probabilities, never certainties.
 
 ## Order book
 
@@ -318,6 +483,10 @@ Sizing too small = disinterest, boredom, sloppiness, lack of returns.
 
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 
+Booking partial gains as the asset is becoming profitable and raising stops to ensure profits do not become losses.
+
+After a losing trade - take a break to reduce emotional decisions.
+
 ## Links
 
 [Evidence-Based Technical Analysis](https://www.amazon.com/Evidence-Based-Technical-Analysis-Scientific-Statistical/dp/0470008741) by David Aronson
@@ -326,5 +495,7 @@ Stop price can be calculated based on volatility (Average True Range can be used
 [Trading the Trends](https://www.amazon.com/Trading-Trends-Fred-McAllen/dp/1466323868) by Fred McAllen
 [tradingview.com](https://www.tradingview.com/) - Network where active traders echange ideas to maximize profit
 [An Altcoin Trader's Handbook](https://www.amazon.com/Altcoin-Traders-Handbook-Nik-Patel/dp/198617011X) by Nik Patel
-[A Complete Guide to Volume Price Analysis by Anna Coulling](https://www.amazon.com/Complete-Guide-Price-Analysis-ebook/dp/B00DGA8LZC/)
-[Volume Profile by Trader Dale](https://www.amazon.com/PROFILE-insiders-guide-trading/dp/1718067577)
+[A Complete Guide to Volume Price Analysis](https://www.amazon.com/Complete-Guide-Price-Analysis-ebook/dp/B00DGA8LZC/) by Anna Coulling
+[Volume Profile](https://www.amazon.com/PROFILE-insiders-guide-trading/dp/1718067577) by Trader Dale
+[Price Action Trading Secrets](https://www.amazon.com/Price-Action-Trading-Secrets-Consistently/dp/9811464944) by Rayner Teo
+[Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh

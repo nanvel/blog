@@ -111,3 +111,11 @@ modified: 2019-03-11T21:39
 >
 > Bernard Madoff
 ---
+> All you need is one pattern to make a living. (trading)
+>
+> Linda Raschke
+---
+> The most important rule of trading is to play great defense, not great offence.
+>
+> Paul Tudor Jones
+---
