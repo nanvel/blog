@@ -1,4 +1,4 @@
-labels: Draft
+labels: Blog
         Finance
         Crypto
         Trading
@@ -41,6 +41,15 @@ Futures - financial contracts to buy or sell an asset at a predetermined future 
 
 Options - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
 
+## Trader classification
+
+By timeframe:
+
+- Investors
+- Swing traders
+- Day traders
+- Scalpers
+
 ## Market mechanics
 
 What truly moves the price is AGGRESSION.
@@ -79,7 +88,7 @@ Study candlestick patters, price actions.
 
 Retail traders are scared of large volume clusters in orderbook, projecting on their trading abount they miscalculate amount of effort required to break through a limit order wall (and often the wall is a fake one).
 
-Put stop loss orders right after support and they are easily hunted by larger players.
+Put stop loss orders right after support and they are easily hunted by larger players (stops are not given enough space to breath).
 
 ### Large volume traders
 
@@ -119,13 +128,32 @@ Institutional activities signs:
 
 ### Bots impact
 
+Bot classification:
+
+- helper bots (human makes decisions, bot manages orders, risks, provides signals)
+- fully automated (bot makes decisions)
+
+> Bots are like startups: obviously some succeed; also obviously, most don't.
+>
+> Jacob Eliosoff
+
 There are bots in the market: arbitrage, mean reverse, etc.
 
-Some bots are designed to get profit from market inafficiency (not enough liquidity to process orders efficiently, for example).
+Some bots are designed to get profit from market inafficiency (not enough liquidity to process orders efficiently, not enough time for incoming liquidity to keep up).
+
+Algorithmic market making - a strategy that smooths out large orders on a single exchange (provides liquidity at worse price).
+
+Arbitrage (one exchange or cross exchange) is also just reduces inefficiencies (allign prices between markets).
 
 They are basically not impacting price much, they are waiting for other to move price, jump in and make profit.
 
 Also popular strategy is grid trading, it does not move price, only adds liquidity.
+
+> “The flashcrash bot is one of our best bots,” he said.
+> “A flashcrash is when prices on an exchange change very rapidly, and the bot exploits this by buying up cheap coins and selling when the price returns to normal levels.
+> This bot can do between 5 and 15 percent a day, on average. Exchanges love this bot, too: It makes their order books more liquid.”
+>
+> Stephan de Haas
 
 ## TA
 
@@ -230,8 +258,6 @@ Fibonacci retracement is a tool used to predict the pull-back of price after a p
 
 Fibonacci extension is a tool used to find targets for growth after a pull-back. Commonly used 161.8, 200.
 
-Images for retracement, extension, expansion!
-
 Combine fibonacci with trendlines and moving averages.
 
 ## Trade plan and risk management
@@ -296,113 +322,103 @@ Client algorithmic trading infrastructure:
 ## Strategies
 
 Strategies:
+
 - trend following strategies
 - mean reversion trading strategies
 - statistical arbitrage and pairs trading
-- arbitrage ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
+- arbitrage (one exchange or cross exchange) ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
 - market making
 - index fund balancing
+- ta-based strategies
+- momentum based strategies
 
-Doesn't work:
+Market making:
 
-- Buy while price moves down and sell when moves up (
-  some times doesn't move up, takes long time,
-  requires a lot of base currency that will be locked most of time,
-  small profit as trade small pieces)
-
-To try:
-
-- Buy on surges
-- Bollinger Band (deviation from moving averages)
-- Volume-price charts
-- watchers on rich list
-- buy before the pay day (people accumulating from salaries)
-- large volumes in ob attracts price (because large amounts can be bought/sold without impacting price)
-- identify suply testing
-- pullbacks on low volume - pull back if not supported
-- two assets correlated, and then not - create short + long positions
-- trend trading
-- buy and hold
-- trade on news
+- keep orders in ob at worse price for others and wait for large market order (or multiple stops) to cause an impulse, close at a better price
+- in order to minimize quote assets required for multiple markets - submit order either after the fact of price drop/liquidations or when price is close to make an impilse (breaking through a large volume cluster or a level)
 - When the price drops where low and stays there for some time - buy (chances to drop lower are lower then go much higher)
+- After a major decline, the risk of further decline diminishes while the opportunity for maximum profit increases.
+- Grid trading (when market is is sideways)
+- monitor liquidations
+
+Arbitrage:
+
+- Arbitrage between exchanges
+- triangular arbirage
+
+Momentun:
+
+- ride pumps
+- spot price, volume and orders momentum increase
+- look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
+
+TA-based:
+
+- Bollinger Band (deviation from moving averages)
+- Build levels based on Volume-price charts
+- trend trading
+- If an asset fails to make a higher high - sign of weakness
+- use ichimoku cloud
+- aotomatically identify supports/resistance/trend lines
+- trade break outs
+- trade pull backs (rejections)
+- spot accumulation and distribution
+- break out from penant
+- candles getting shorter and shorter (not enough traders willing to sell/buy at the price)
+- channel break out
+- if price is approaching slow - move it, if fast - executed, sell higher on rebounce (break out)
+- round numbers are significant
+- wait for narrowing and put entries at both sides
+- for areas without support/resistance - use fib
+
+OB based:
+
+- large volumes in ob attracts price (because large amounts can be bought/sold without impacting price)
+- find sentiment by looking at orderbook - more buy orders/volums = bull (count only long time standing orders)
+- identify iceberg / real orders in order books by how they behave when price hit them
+- dynamic stops and take profit points based on ob
+
+Volume clusters:
+
+- when price goes up and many sale orders coming - there is resistance
+
+Pair trading:
+
+- two assets correlated, and then not - create short + long positions
+
+Investment:
+
+- buy and hold
+- buy new tokens not yet listed on major exchanges
+- use rich lists to understand accumulation/distribution by large accounts
+- Look for institutional activities
+- buy in small amounts once price in range
+- buy something that had large volumes before and now - low price and volume.
+
 > Buy when there's blood in the streets,
 > even if the blood is your own.
 >
 > Barron Rothschild
-After a major decline, the risk of further decline diminishes while the opportunity for maximum profit increases.
-- If an asset fails to make a higher high - sign of weakness
-- Arbitrage between exchanges
-- buy new tokens not yet listed on major exchanges
-- use rich lists to understand accumulation/distribution by large accounts
-- find sentiment by looking at orderbook - more buy orders/volums = bull (count only long time standing orders)
-- identify iceberg / real orders in order books by how they behave when price hit them
-- only buy when many other traders are buying (hiding in the crowd)
+
+Other:
+
+- watchers on rich list
+- buy before the pay day (people accumulating from salaries)
+- identify suply testing
+- pullbacks on low volume - pull back if not supported
+- trade on news
 - if price moves too quickly - stop entering the market
 - if the broader market falls quickly - stop buying
 - know orders priority - FIFO or by size?
-- always keep orders to catch spike
-- monitor liquidations
-- Look for institutional activities
-- advantages from market inefficiencies (not enough liquidity, price is not adjusting fast enough)
-- use ichimoku cloud
-- ride pumps
-- trade break outs
-- trade pull backs (rejections)
 - exit on stop and buy deeper
-- collect and combine signals from different sources
 - wait for candlestick to close
-- spot accumulation and distribution
-- spot price is close to large volume clusters in order book those been there for long time
-- spot price, volume and orders momentum increase
 - analize executed orders
-- buy in small amounts once price in range
-- when price goes up and many sale orders coming - there is resistance
-- look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
-- break out from penant
-- candles getting shorter and shorter
-- conside time and dow
-- create zones, when enter - buy, exit - sell, enter next one - buy ...
-- channel break out
-- if price is approaching slow - move it, if fast - executed, sell higher on rebounce
-- buy limits to pair with sell stops (put limit orders under where stops should be)
-- stops are there to protect, but if not give enough to breath ...
-- round numbers are significant
-- wait for narrowing and put entries at both sides
-- looks for setups where small movement will invalidate the setup
-- for areas without support/resistance - use fib
+- use trailing or ladder stops
+- consider time and dow
+- create zones, when enter - buy, exit - sell, enter next one - buy ... (better exit and enter lower than keep losing position open)
+- look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
 - estimate stops by cluster info
 - when btc drop - other drop even more? Arbitrage?
-- buy something that had large volumes before and now - low price and volume.
-
-Works:
-
-- Trailing sell (trailing stop)
-- Price/volume analysis
-
-Finding patterns (chart formations).
-Finding a better pair/a chain of pairs.
-Placing forward.
-Relying on signals.
-Notifying of changes.
-Using higher hights and higher lows to find primary trend.
-If thend brokes, probably, something changed and we need to correct the strategy.
-
-Bot trading strategies:
-
-- Scalping strategy
-- MACD strategy
-- Stick it on rise
-
-Sources:
-
-- [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
-- https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
-
-
-Trading signal also referred to as features, calculators, indicators, predictors, alpha.
-Signals almost always originate from some intuitive idea and observation of certain market conditions.
-
-ARIMA - Auto-Regressive Integrated Moving Average (find trend, seasonality, noise, and project future price).
 
 ## Links
 
@@ -539,6 +555,7 @@ Articles:
 
 - [Cryptocurrency Trading Bible Three: Winning in Sideways and Bear Markets](https://hackernoon.com/cryptocurrency-trading-bible-four-winning-in-sideways-and-bear-markets-f3f365ffca76)
 - [5 Stop Loss Mistakes To Avoid](https://medium.com/@cryptocreddy/5-stop-loss-mistakes-to-avoid-bea274857371)
+- [The bots that make money (or lose it) for you while you sleep](https://bitcoinmagazine.com/markets/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808)
 
 Training:
 
