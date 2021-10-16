@@ -70,7 +70,7 @@ Once a trade PnL moves to negative - traders try to exit the trade at break-even
 If they didn't exit at a small loss/profit and moved to a large loss - they try to keep assets (don't sell at loss).
 Once price rallies again and get's close to break-even - they exit.
 
-**Traders a looking at volumes** (loocking at top assets = top volume assets)
+**Traders are looking at volumes** (loocking at top assets = top volume assets)
 
 The more volume - the more traders are looking at the asset, and so more are ready to jump in/out.
 
@@ -99,7 +99,7 @@ They need time and other traders willing to sell at lower prices.
 Sideways market is a great place for them for buying in.
 Low volatility and relatively small volumes make many retail traders move money to other assets, selling to the large traders who are accumulating.
 
-The large traders are monitoring supply in the range, once there is no more retail traders are willing to sell - the price can be pushed lower and find if there are more retail traders will be found who will be selling (testing).
+The large traders are monitoring supply in the range, once there is no more retail traders are willing to sell - the price can be pushed lower looking for more selling (testing).
 
 Large drops in market price scare off participants invested in the trading instrument, causing them to sell their holdings and exacerbate the drop.
 
