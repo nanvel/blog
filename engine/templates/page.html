@@ -46,4 +46,21 @@
     	Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="creative-commons">CC BY-SA 3.0</a>
     </div>
   </article>
+
+  {% if c.page.meta.comments %}
+    <div id="disqus_thread" style="margin-top: 20px;"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://nanvel.name/{{ c.page.uri }}';
+        this.page.identifier = '{{ c.page.uri }}';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//nanvelname.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  {% end %}
 {% end %}

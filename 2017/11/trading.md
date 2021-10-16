@@ -98,6 +98,8 @@ The large traders is monitoring supply in the range, once there is no more retai
 
 Large drops in market price scare off parcipants invested in the trading instrument, causing them to sell their holdings and exacerbate the drop.
 
+Large traders may block large price advances by adding large fake sell limit orders. So they can make sure price will not rally intil they will have enough asset accumulated.
+
 Once asset has low liquidity and the large player accumulated enough asset, he can easily create a small pump, that can be picked up by the retail traders. There can be a positiove news to give a reason for the price increase.
 
 Large market rallies generate investor confidence, causing more participants to buy more, recursively causing larger rallies.
@@ -122,6 +124,8 @@ There are bots in the market: arbitrage, mean reverse, etc.
 Some bots are designed to get profit from market inafficiency (not enough liquidity to process orders efficiently, for example).
 
 They are basically not impacting price much, they are waiting for other to move price, jump in and make profit.
+
+Also popular strategy is grid trading, it does not move price, only adds liquidity.
 
 ## TA
 
@@ -278,6 +282,16 @@ After a losing trade - take a break to reduce emotional decisions.
 
 Attenstion to profit - sign of imature, attention to loses - sign or experience.
 
+## Automated trading
+
+Client algorithmic trading infrastructure:
+
+- communication with exchange (pulling market data and order entry)
+- pulling historical market data
+- risk management layer (handle errors, runaway trading)
+- strategy implementation (quantitive part)
+- visualization, analytics
+- signal research framework
 
 ## Strategies
 
@@ -358,6 +372,7 @@ After a major decline, the risk of further decline diminishes while the opportun
 - for areas without support/resistance - use fib
 - estimate stops by cluster info
 - when btc drop - other drop even more? Arbitrage?
+- buy something that had large volumes before and now - low price and volume.
 
 Works:
 
@@ -378,45 +393,16 @@ Bot trading strategies:
 - MACD strategy
 - Stick it on rise
 
-Bot examples:
-
-- https://github.com/gazbert/bxbot
-- Gunbot
-- Leonardo (simpler than Gunbot)
-- DA POWERPLAY
-
-> Let’s say I bought 10 bitcoins, and I want to sell them if the price reaches $1200. This can be done at exchanges already, of course. But using the bot, I can set it up to sell at $1200, buy back at $1000 and sell it all again at $1100. So I am building up a sequence of ordering events that must take place, and I define the exact target prices on it.
-
-[Open source trading platforms](http://www.traderslaboratory.com/forums/tools-trade/11086-open-source-trading-platforms-master-list.html).
-
 Sources:
 
 - [The Bots That Make Money (Or Lose It) for You While You Sleep](https://bitcoinmagazine.com/articles/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808/)
 - https://medium.com/@joeldg/an-advanced-tutorial-a-new-crypto-currency-trading-bot-boilerplate-framework-e777733607ae
 
-Client algorithmic trading infrastructure:
-
-- communication with exchange (pulling market data and order entry)
-- pulling historical market data
-- risk management layer (handle errors, runaway trading)
-- strategy implementation (quantitive part)
-- visualization, analytics
-- signal research framework
 
 Trading signal also referred to as features, calculators, indicators, predictors, alpha.
 Signals almost always originate from some intuitive idea and observation of certain market conditions.
 
 ARIMA - Auto-Regressive Integrated Moving Average (find trend, seasonality, noise, and project future price).
-
-### Why bot trading doesn't work well
-
-Short - because of exchange fees.
-
-If trade fast - there are small margins.
-So if we sell with 0.6% profit, and pay 2 * 0.25% (for Bittrex), we have only 0.1% left.
-That is the case when the trade was profitable.
-In case of negative result: 2 * 0.25% + 0.6% - 1.1% lost.
-So roughly for each fail we should have 11 wins at least to be profitable.
 
 ## Links
 
@@ -473,6 +459,9 @@ Treminals:
 - [Trality](https://www.trality.com/) - trading bots
 - [Tokensets](https://www.tokensets.com/)
 - [TradeMate](https://trade-mate.io/)
+- [Gunbot](https://www.gunbot.com/) - desktop trading bot
+- [Margin.de](https://margin.de/)
+- [DDP Platform](https://dapowerplay.com/) - trading bot with visual strategy builder
 
 Scalping:
 
@@ -497,6 +486,7 @@ Open source:
 - [Deep trader](https://github.com/deependersingla/deep_trader) - uses ml
 - [Bitcoin trader](https://github.com/pirate/bitcoin-trader) - nice idea about small buys
 - [Crypto Signal](https://github.com/CryptoSignal/crypto-signal)
+- [BX-bot](https://github.com/gazbert/bxbot)
 
 ### Data
 
