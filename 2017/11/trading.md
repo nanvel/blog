@@ -3,16 +3,14 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-10-09T16:53
+modified: 2021-10-16T15:39
 place: Phuket, Thailand
 comments: true
 
 # Trading
 
 !!! warning "Disclaimer"
-    The information provided on this page is just personal notes,
-    and it does not constitute investment advice, financial advice, trading advice,
-    or any other sort of advice and you should not treat any of the provided content as such.
+    The information provided on this page does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the provided content as such.
     You understand that you are using any and all information available here at your own risk.
 
 > The market does not run on chance or luck.
@@ -22,11 +20,11 @@ comments: true
 
 [TOC]
 
-[Trading vocabulary](/2018/07/trading-vocabulary)
+## Classification
 
-## Asset classes
+Asset classes:
 
-- Equities (stocks) - invest directly in companis
+- Equities (stocks) - invest directly in companies
 - Fixed income (bonds) - loans
 - Real estate investment trusts
 - Commodities (metals, agriculture products)
@@ -35,15 +33,12 @@ comments: true
 - Financial derivatives - options and futures
 - Crypto
 
-### Derivatives
+Derivatives:
 
-Futures - financial contracts to buy or sell an asset at a predetermined future date and price.
+- Futures - financial contracts to buy or sell an asset at a predetermined future date and price.
+- Options - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
 
-Options - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
-
-## Trader classification
-
-By timeframe:
+Traders by time frame:
 
 - Investors
 - Swing traders
@@ -57,68 +52,69 @@ If the price goes up, then the buyers are more aggressive (they use market order
 
 Traders become aggressive because of fear of either missing out or losing.
 
-Market rotation:
-More risky assets are sold and the money is moved into safer assets.
-Is is not because the safer asets have room to advance, but because they are likely to hold their value better in an economic down-turn.
+More risky assets are sold and the money is moved into safer assets (market rotation).
+It is not because the safer assets have room to advance, but because they are likely to hold their value better in an economic downturn.
 
 ### What traders are looking at
 
-Traders are looking at price.
+**Traders are looking at price**
+
 Once price increases - they experince fear of missing out and buying in (jumping into the train).
 Once price of asset drops - they experience fear of losing.
-Once price is close to a significant level (1$ for example), there is more excitement than if price gets to 0.95$.
-Price is close to support/resistance, ath, atl, moving average, etc.
+Once price is close to a significant price level (1$ for example), there is more excitement than if price gets to 0.95$. Also support/resistance, ath, atl, moving average works similar.
+If price is not volotile enough and do not produces opportunities in the chosen timeframe - traders move money to more promising instruments.
 
-Traders are looking at PnL.
-Once PnL moves to negative - traders try to exit trade at break even or a small loss.
-If the didn't exit at small loss/profit and moved to a large loss - they try to keep asset (don't sell at loss).
-Once price rallies again and get's even close to the break even - they exit.
+**Traders are looking at PnL**
 
-Traders are looking at candles.
-Once candle closed red - makes think that price is dropping down.
+Once a trade PnL moves to negative - traders try to exit the trade at break-even or a small loss.
+If they didn't exit at a small loss/profit and moved to a large loss - they try to keep assets (don't sell at loss).
+Once price rallies again and get's close to break-even - they exit.
 
-Traders a looking at volumes (or top assets = top volume).
-The more volume - the more traders are looking after the asset, and so more are ready to jump in/out.
+**Traders a looking at volumes** (loocking at top assets = top volume assets)
+
+The more volume - the more traders are looking at the asset, and so more are ready to jump in/out.
 
 ### Retail traders
 
 The more visible setup (more clear, more time since formed), the more participants to expect.
 
-Study candlestick patters, price actions.
+Study candlestick patterns, price action.
 
-Retail traders are scared of large volume clusters in orderbook, projecting on their trading abount they miscalculate amount of effort required to break through a limit order wall (and often the wall is a fake one).
+Retail traders are scared of large volume clusters in order book, by projecting their own trading volume they miscalculate the amount of effort required to break through a limit order wall (and often the wall is a fake one).
 
-Put stop loss orders right after support and they are easily hunted by larger players (stops are not given enough space to breath).
+Put stop loss orders right after support where they are easily hunted by larger players (stops are not given enough space to breath).
+
+Emotional, averaging down, taking losses personally and fighting back an asset, jumping in on a signal/news without proper analysis and plan.
 
 ### Large volume traders
 
 There are institutions, whales, coordinated groups of traders, insiders.
 
-The large amount of an asset under management causes trouble for them because they can not buy or sell at specific price and fast.
+A large amount of an asset under management causes trouble for them because they can not buy or sell at a specific price and fast.
 Large limit order in order book will show their intent and they don't want this.
-A large market order would move price significantly and the final price will be much worce then initial.
+A large market order would move price significantly and the final price will be much worse than initial.
 
 They need time and other traders willing to sell at lower prices.
 
-Market in sideways is a great place for buying in.
-Low volatility and  relatively small volumes make many retail traders to move money to other assets, selling to the large traders who are accumulating.
+Sideways market is a great place for them for buying in.
+Low volatility and relatively small volumes make many retail traders move money to other assets, selling to the large traders who are accumulating.
 
-The large traders is monitoring supply in the range, once there is no more retail traders are villing to sell - price can be moved lower and find if at lower price have traders willing to sell.
+The large traders are monitoring supply in the range, once there is no more retail traders are willing to sell - the price can be pushed lower and find if there are more retail traders will be found who will be selling (testing).
 
-Large drops in market price scare off parcipants invested in the trading instrument, causing them to sell their holdings and exacerbate the drop.
+Large drops in market price scare off participants invested in the trading instrument, causing them to sell their holdings and exacerbate the drop.
 
-Large traders may block large price advances by adding large fake sell limit orders. So they can make sure price will not rally intil they will have enough asset accumulated.
+Large traders may block large price advances by adding large fake sell limit orders. So they can make sure the price will not start a rally until they will have enough asset accumulated.
 
-Once asset has low liquidity and the large player accumulated enough asset, he can easily create a small pump, that can be picked up by the retail traders. There can be a positiove news to give a reason for the price increase.
+Once the asset has low liquidity and the large player accumulated enough of it, he can easily create a small pump, that can be picked up by the retail traders. There can be a positive news to give a reason for the price increase.
 
 Large market rallies generate investor confidence, causing more participants to buy more, recursively causing larger rallies.
 
-Then the large trader sells accumulated asset to the retail traders.
+Then the large trader sells the accumulated asset to the retail traders.
 
 Large traders like liquidity:
 
-- they are happy to consume large volume walls in order book becasue it does not move price
-- they know where stop loses are and hunt them
+- They are happy to consume large volume walls in order book because it does not move price
+- They know where stop loss orders are and hunt them
 
 Institutional activities signs:
 
@@ -130,30 +126,28 @@ Institutional activities signs:
 
 Bot classification:
 
-- helper bots (human makes decisions, bot manages orders, risks, provides signals)
-- fully automated (bot makes decisions)
+- Helper bots (human makes decisions, bot manages orders, risks, provides signals)
+- Fully automated (bot makes decisions)
 
 > Bots are like startups: obviously some succeed; also obviously, most don't.
 >
 > Jacob Eliosoff
 
-There are bots in the market: arbitrage, mean reverse, etc.
+Some bots are designed to get profit from market inefficiency (not enough liquidity to process orders efficiently, not enough time for incoming liquidity to keep up).
+Algorithmic market making is an example - a strategy that smooths out large orders on a single exchange (provides liquidity at a worse price).
+Another market making strategy implemented by many bots is grid trading.
 
-Some bots are designed to get profit from market inafficiency (not enough liquidity to process orders efficiently, not enough time for incoming liquidity to keep up).
+Arbitrage (one exchange or cross-exchange) also just reduces inefficiencies (balances prices between markets).
 
-Algorithmic market making - a strategy that smooths out large orders on a single exchange (provides liquidity at worse price).
+They are basically not impacting price much, they are waiting for others to move price, jump in and make a profit.
 
-Arbitrage (one exchange or cross exchange) is also just reduces inefficiencies (allign prices between markets).
-
-They are basically not impacting price much, they are waiting for other to move price, jump in and make profit.
-
-Also popular strategy is grid trading, it does not move price, only adds liquidity.
-
-> “The flashcrash bot is one of our best bots,” he said.
-> “A flashcrash is when prices on an exchange change very rapidly, and the bot exploits this by buying up cheap coins and selling when the price returns to normal levels.
-> This bot can do between 5 and 15 percent a day, on average. Exchanges love this bot, too: It makes their order books more liquid.”
+> The flashcrash bot is one of our best bots.
+> A flashcrash is when prices on an exchange change very rapidly, and the bot exploits this by buying up cheap coins and selling when the price returns to normal levels.
+> This bot can do between 5 and 15 percent a day, on average. Exchanges love this bot, too: It makes their order books more liquid.
 >
 > Stephan de Haas
+
+Other bots could trade based on TA indicators, news, etc. They are just adding to the retail traders crowd.
 
 ## TA
 
@@ -161,9 +155,9 @@ Also popular strategy is grid trading, it does not move price, only adds liquidi
 
 Phases (Charles Dow):
 
-- accumulation
-- public participation
-- distribution
+- Accumulation
+- Public participation
+- Distribution
 
 Smart money taking profits and selling to an increasingly eager public.
 
@@ -173,18 +167,18 @@ When only price (candles) is taken into consideration.
 
 > The charts don't lie.
 >
-> Charts really are the "foot-print of money". What some talking head on a financial news network might say becomes immaterial when you can look at a chart and see what the "money" is saying.
+> Charts really are the "footprint of money". What some talking head on a financial news network might say becomes immaterial when you can look at a chart and see what the "money" is saying.
 >
 > Charting and Technical Analysis by Fred McAllen
 
 Charts allow to see:
 
-- past performance
-- highs
-- lows
-- trends
-- moving averages
-- trading volume
+- Past performance
+- Highs
+- Lows
+- Trends
+- Moving averages
+- Trading volume
 - and more
 
 SMA(50, 200) can become a support/resistance.
@@ -195,9 +189,9 @@ Volume reveals whether the price action is valid or false.
 
 Wyckoff laws:
 
-- The law of supply and demand (when demand is greater than supply, then prices will rise to meet this demand, and conversely when supply is greater than demand then prices will fall, with the over supply being absorbed as a result)
+- The law of supply and demand (when demand is greater than supply, then prices will rise to meet this demand, and conversely when supply is greater than demand then prices will fall, with the oversupply being absorbed as a result)
 - The law of cause and effect (a small amount of volume activity will only result in a small amount of price action)
-- The law of effort vs result (the price action on chart should reflect volume action)
+- The law of effort vs result (the price action on the chart should reflect volume action)
 
 Market weakness early signs:
 
@@ -213,7 +207,7 @@ Trend change signs:
 - Higher volume on declines
 - Low volume on advances
 
-Volume Price Analisys concepts:
+Volume Price Analysis concepts:
 
 - Accumulation
 - Distribution
@@ -237,20 +231,20 @@ Divergence between volume and price: the volume of trading stops expanding and s
 
 Volume profile:
 
-- D - market is balanced. A sign of institutions accumulating volumes.
-- P - aggressive buyers. Ususally seen when market is in uptrend, at the possible end of downtrend.
-- b - aggressive sellers. Downtrend of end of uptrend.
+- D - market is balanced. A sign of institutions accumulating volumes
+- P - aggressive buyers. Usually seen when market is in uptrend, at the possible end of downtrend
+- b - aggressive sellers. Downtrend of end of uptrend
 - thin - strong uptrend or downtrend
 
 Order book, large volume at price:
 
-- often can be found on significant levels (round prices, support/resistance)
-- large numbers of stop orders can be found behind large volumes (that can cause a price spike after the price is broken)
-- makes send to put orders before large volumes, so there will be more chances for them to be executed
-- makes sense to put stops behind large volumes, so there will be less chances for them to be executed
-- price can be moved tovards large volumes by large players, and then they can consume large liquidity at good price and don't cause large price change
-- large volumes can be removed or moved a bit (if the intension was just price manipulation without intent to buy/sell)
-- large volumes can be executed with market order shortly after removed from order book
+- Often can be found on significant levels (round prices, support/resistance)
+- Large numbers of stop orders can be found behind large volumes (that can cause a price spike after the price is broken)
+- Makes send to put orders before large volumes, so there will be more chances for them to be executed
+- Makes sense to put stops behind large volumes, so there will be fewer chances for them to be executed
+- Price can be moved towards large volumes by large players, and then they can consume large liquidity at a good price and don't cause large price change
+- Large volumes can be removed or moved a bit (if the intention was just price manipulation without the order to be executed)
+- Large volumes can be executed with market order shortly after being removed from the order book
 
 ### Fibonacci
 
@@ -274,126 +268,121 @@ Following a consistent set of actions leads to consistent results.
 
 ### Risk management
 
-> The most important rule of trading is to play great defense, not great offence.
+> The most important rule of trading is to play great defense, not great offense.
 >
 > Paul Tudor Jones
 
+Attention to profit - a sign of immature, attention to losses - sign or experience.
+
 Managing risks:
 
-- keep 1-5% of account expesed to risk (use stop orders)
-- backtest
-- test new ides with paper trading first
-- bots should have fuses to stop run away trades and handle errors
+- Keep 1-5% of account exposed to risk (use stop orders) per trade
+- Backtest
+- Test new ideas with paper trading first
+- Bots should have fuses to stop runaway trades and handle errors
 
-Improperly sized positions affects ability to be disciplined.
-Sizing too large = more excited, frustrated, emotional, exhausted.
-Sizing too small = disinterest, boredom, sloppiness, lack of returns.
+Improperly sized positions affect the ability to be disciplined:
 
-Backtest - test on historical data.
+- Sizing too large = more excited, frustrated, emotional, exhausted
+- Sizing too small = disinterest, boredom, sloppiness, lack of returns
 
 > Historical success is a necessary but not a sufficient condition for concluding that a method has predictive power and, therefore, is likely to be profitable in the future.
 >
 > Evidence-Based Technical Analysis by David Aronson
 
-Take profit gradually to reduce risk. Let winners run and cut losers.
-
-Move stop (towards entry only) to reduce or remove risks later (ladder stop, trailing stop).
-
-
-Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
-
 Booking partial gains as the asset is becoming profitable and raising stops to ensure profits do not become losses.
 
-After a losing trade - take a break to reduce emotional decisions.
+Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
+Give some breath for stop price.
 
-Attenstion to profit - sign of imature, attention to loses - sign or experience.
+After a losing trade - take a break to reduce emotional decision-making.
 
 ## Automated trading
 
 Client algorithmic trading infrastructure:
 
-- communication with exchange (pulling market data and order entry)
-- pulling historical market data
-- risk management layer (handle errors, runaway trading)
-- strategy implementation (quantitive part)
-- visualization, analytics
-- signal research framework
+- Communication with exchange (pulling market data and order entry)
+- Pulling historical market data
+- Risk management layer (handle errors, runaway trading)
+- Strategy implementation (quantitive part)
+- Visualization, analytics
+- Signal research framework
 
 ## Strategies
 
 Strategies:
 
-- trend following strategies
-- mean reversion trading strategies
-- statistical arbitrage and pairs trading
-- arbitrage (one exchange or cross exchange) ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
-- market making
-- index fund balancing
-- ta-based strategies
-- momentum based strategies
+- Trend following strategies
+- Mean reversion trading strategies
+- Statistical arbitrage and pairs trading
+- Arbitrage (one exchange or cross-exchange) ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
+- Market making
+- Index fund balancing
+- TA-based strategies
+- Momentum based strategies
 
 Market making:
 
-- keep orders in ob at worse price for others and wait for large market order (or multiple stops) to cause an impulse, close at a better price
-- in order to minimize quote assets required for multiple markets - submit order either after the fact of price drop/liquidations or when price is close to make an impilse (breaking through a large volume cluster or a level)
+- Keep orders in ob at a worse price for others and wait for large market order (or multiple stops) to cause an impulse, close at a better price
+- In order to minimize quote assets required for multiple markets - submit order either after the fact of price drop/liquidations or when price is close to make an impulse (breaking through a large volume cluster or a level)
 - When the price drops where low and stays there for some time - buy (chances to drop lower are lower then go much higher)
-- After a major decline, the risk of further decline diminishes while the opportunity for maximum profit increases.
-- Grid trading (when market is is sideways)
-- monitor liquidations
+- After a major decline, the risk of further decline diminishes while the opportunity for maximum profit increases
+- Grid trading (when market is in sideways)
+- Monitor liquidations
 
 Arbitrage:
 
-- Arbitrage between exchanges
-- triangular arbirage
+- Cross-exchanges arbitrage
+- Triangular arbitrage
 
-Momentun:
+Momentum:
 
-- ride pumps
-- spot price, volume and orders momentum increase
-- look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
+- Ride pumps
+- Spot price, volume, and orders momentum increase
+- Look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
 
 TA-based:
 
 - Bollinger Band (deviation from moving averages)
 - Build levels based on Volume-price charts
-- trend trading
+- Trend trading
 - If an asset fails to make a higher high - sign of weakness
-- use ichimoku cloud
-- aotomatically identify supports/resistance/trend lines
-- trade break outs
-- trade pull backs (rejections)
-- spot accumulation and distribution
-- break out from penant
-- candles getting shorter and shorter (not enough traders willing to sell/buy at the price)
-- channel break out
-- if price is approaching slow - move it, if fast - executed, sell higher on rebounce (break out)
-- round numbers are significant
-- wait for narrowing and put entries at both sides
-- for areas without support/resistance - use fib
+- Use ichimoku cloud
+- Automatically identify supports/resistance/trend lines
+- Trade break outs
+- Trade pull backs (rejections)
+- Spot accumulation and distribution
+- Break out from pennant
+- Candles getting shorter and shorter (not enough traders willing to sell/buy at the price)
+- Channel break out
+- If the price is approaching slow - move it, if fast - executed, sell higher on rebounce (break out)
+- Round numbers are significant
+- Wait for narrowing and put entries at both sides
+- For areas without support/resistance - use fib
 
 OB based:
 
-- large volumes in ob attracts price (because large amounts can be bought/sold without impacting price)
-- find sentiment by looking at orderbook - more buy orders/volums = bull (count only long time standing orders)
-- identify iceberg / real orders in order books by how they behave when price hit them
-- dynamic stops and take profit points based on ob
+- Large volumes in ob attract price (because large amounts can be bought/sold without impacting price)
+- Find sentiment by looking at orderbook - more buy orders/volumes = bull (count only long time standing orders)
+- Identify iceberg / real orders in order books by how they behave when price hit them
+- Dynamic stops and take profit points based on ob
 
 Volume clusters:
 
-- when price goes up and many sale orders coming - there is resistance
+- When price goes up and many sale orders coming - there is resistance
 
 Pair trading:
 
-- two assets correlated, and then not - create short + long positions
+- Two assets correlated, and then not - create short + long positions
 
 Investment:
 
-- buy and hold
-- buy new tokens not yet listed on major exchanges
-- use rich lists to understand accumulation/distribution by large accounts
+- Buy and hold
+- Buy new tokens not yet listed on major exchanges
+- Use rich lists to understand accumulation/distribution by large accounts
 - Look for institutional activities
-- buy in small amounts once price in range
-- buy something that had large volumes before and now - low price and volume.
+- Buy in small amounts once price is in the range
+- Buy something that had large volumes before and now - low price and volume
 
 > Buy when there's blood in the streets,
 > even if the blood is your own.
@@ -404,7 +393,7 @@ Other:
 
 - watchers on rich list
 - buy before the pay day (people accumulating from salaries)
-- identify suply testing
+- identify supply testing
 - pullbacks on low volume - pull back if not supported
 - trade on news
 - if price moves too quickly - stop entering the market
@@ -412,7 +401,7 @@ Other:
 - know orders priority - FIFO or by size?
 - exit on stop and buy deeper
 - wait for candlestick to close
-- analize executed orders
+- analyze executed orders
 - use trailing or ladder stops
 - consider time and dow
 - create zones, when enter - buy, exit - sell, enter next one - buy ... (better exit and enter lower than keep losing position open)
@@ -519,10 +508,10 @@ Analytics:
 
 - [Coinmarketcap](https://coinmarketcap.com)
 - [CoinGecko](https://www.coingecko.com/en)
-- [BitScreener](https://bitscreener.com) - further chart analysis, recent related news.
-- [AtomSignal](https://www.atomsignal.com) - excanges monitiring, tracking buy and sell walls.
-- [WenMoon](http://wenmoon.com) - useful for research.
-- [BitcoinTalk](https://bitcointalk.org) - new altcoin announcements, fundamental analysis.
+- [BitScreener](https://bitscreener.com) - further chart analysis, recent related news
+- [AtomSignal](https://www.atomsignal.com) - excanges monitiring, tracking buy and sell walls
+- [WenMoon](http://wenmoon.com) - useful for research
+- [BitcoinTalk](https://bitcointalk.org) - new altcoin announcements, fundamental analysis
 - [Babypips](https://www.babypips.com/)
 - [ICO Drops](https://icodrops.com/)
 - [Coin360](https://coin360.com/)
@@ -556,6 +545,7 @@ Articles:
 - [Cryptocurrency Trading Bible Three: Winning in Sideways and Bear Markets](https://hackernoon.com/cryptocurrency-trading-bible-four-winning-in-sideways-and-bear-markets-f3f365ffca76)
 - [5 Stop Loss Mistakes To Avoid](https://medium.com/@cryptocreddy/5-stop-loss-mistakes-to-avoid-bea274857371)
 - [The bots that make money (or lose it) for you while you sleep](https://bitcoinmagazine.com/markets/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808)
+- [Trading vocabulary](/2018/07/trading-vocabulary)
 
 Training:
 
