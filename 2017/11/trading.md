@@ -113,7 +113,7 @@ Then the large trader sells the accumulated asset to the retail traders.
 
 Large traders like liquidity:
 
-- They are happy to consume large volume walls in order book because it does not move price
+- They are happy to consume large limit orders in order book because it does not move price
 - They know where stop loss orders are and hunt them
 
 Institutional activities signs:
@@ -240,7 +240,7 @@ Order book, large volume at price:
 
 - Often can be found on significant levels (round prices, support/resistance)
 - Large numbers of stop orders can be found behind large volumes (that can cause a price spike after the price is broken)
-- Makes send to put orders before large volumes, so there will be more chances for them to be executed
+- Makes sense to put orders before large volumes, so there will be more chances for them to be executed
 - Makes sense to put stops behind large volumes, so there will be fewer chances for them to be executed
 - Price can be moved towards large volumes by large players, and then they can consume large liquidity at a good price and don't cause large price change
 - Large volumes can be removed or moved a bit (if the intention was just price manipulation without the order to be executed)
