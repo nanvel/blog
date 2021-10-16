@@ -391,23 +391,23 @@ Investment:
 
 Other:
 
-- watchers on rich list
-- buy before the pay day (people accumulating from salaries)
-- identify supply testing
-- pullbacks on low volume - pull back if not supported
-- trade on news
-- if price moves too quickly - stop entering the market
-- if the broader market falls quickly - stop buying
-- know orders priority - FIFO or by size?
-- exit on stop and buy deeper
-- wait for candlestick to close
-- analyze executed orders
-- use trailing or ladder stops
-- consider time and dow
-- create zones, when enter - buy, exit - sell, enter next one - buy ... (better exit and enter lower than keep losing position open)
-- look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
-- estimate stops by cluster info
-- when btc drop - other drop even more? Arbitrage?
+- Watchers on rich list
+- Buy before the pay day (people accumulating from salaries)
+- Identify supply testing
+- Pullbacks on low volume - pull back if not supported
+- Trade on news
+- If price moves too quickly - stop entering the market
+- If the broader market falls quickly - stop buying
+- Know orders priority - FIFO or by size?
+- Exit on stop and buy deeper
+- Wait for candlestick to close
+- Analyze executed orders
+- Use trailing or ladder stops
+- Consider time and dow
+- Create zones, when enter - buy, exit - sell, enter next one - buy ... (better exit and enter lower than keep losing position open)
+- Look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
+- Estimate stops by cluster info
+- When btc drop - other drop even more? Arbitrage?
 
 ## Links
 
