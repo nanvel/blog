@@ -328,7 +328,6 @@ Market making:
 - When the price drops where low and stays there for some time - buy (chances to drop lower are lower then go much higher)
 - After a major decline, the risk of further decline diminishes while the opportunity for maximum profit increases
 - Grid trading (when market is in sideways)
-- Monitor liquidations
 
 Arbitrage:
 
@@ -534,7 +533,7 @@ Signals:
 
 YouTube:
 
-- [Into to Basic Market Mechanics](https://www.youtube.com/watch?v=3m_Stn4hxCQ)
+- [Intro to Basic Market Mechanics](https://www.youtube.com/watch?v=3m_Stn4hxCQ)
 - [Auction Theory, Volume Profile, and Microstructure](https://www.youtube.com/watch?v=ixo_DoBGYko)
 - [Practical Applications - Order Flow and Structure](https://www.youtube.com/watch?v=Au20OwdAG5s)
 - [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)

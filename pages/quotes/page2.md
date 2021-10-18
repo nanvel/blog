@@ -119,3 +119,19 @@ modified: 2019-03-11T21:39
 >
 > Paul Tudor Jones
 ---
+> I will speak ill of no man, and speak all the good I know of everybody.
+>
+> Benjamin Franklin
+---
+> There is nothing either good or bad, but thinking makes it so.
+>
+> Shakespeare
+---
+> By fighting you never get enough, but by yielding you get more than you expected.
+>
+> Proverb
+---
+> He who treads softly goes far.
+> 
+> Chinese proverb
+---
