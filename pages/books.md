@@ -159,10 +159,12 @@ modified: 2021-10-10T11:55
 - Chart Logic by R.S. Varnes J.D.
 - Hands-On Financial Trading with Python by Jiri Pik, Sourav Ghosh
 - [-] Trading Within the Box by T. Livingston
+- The Achievement Habit by Bernard Roth
+- Crypto Investor Mindset by Wolfgang Fallmann
+- The Tao of Trading by Simon Ree
 
 ## In progress
 
-- The Achievement Habit by Bernard Roth
 - The Electronic Day Trader by Mark Friedfertig and George West
 - Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson

@@ -135,3 +135,83 @@ modified: 2019-03-11T21:39
 > 
 > Chinese proverb
 ---
+> Never accept ultimatums, conventional wisdom, or absolutes.
+>
+> Christopher Reeve
+---
+> When you're used to being prepared to reject conventional wisdom, it leaves you open to learn more.
+>
+> Mayim Bialik
+---
+> Men occasionally stumble over the truth,
+> but most of them pick themselves up and hurry off as if nothing had happened.
+>
+> Winston Churchill
+---
+> It aitn't what you don't know that gets you into trouble.
+> It's what you know for sure that just ain't so.
+> 
+> Mark Twain
+---
+> Complexity is the enemy of execution.
+>
+> Anthony Robbins
+---
+> Skipping lattes won't make you wealthy.
+>
+> T. Harv Eker
+---
+> The goal of a successful trader is to make the best trades. Money is secondary.
+>
+> Alexander Elder
+---
+> Mistakes are always forgivable, if one has the courage to admit them.
+>
+> Bruce Lee
+---
+> What is defeat? Nothing but education; nothing but the first step to something better.
+>
+> Wendell Phillips
+---
+> The key to trading success is emotional discipline.
+> If intelligence were the key, there would be a lot more people making money trading.
+> 
+> Victor Sperandeo
+---
+> What you do every day matters more than what you do once in a while.
+>
+> Grethen Rubin
+---
+> Without commitment, you'll never start... without consistency, you'll never finish.
+>
+> Denzel Washington
+---
+> Do not anticipate trouble, or worry about what may never happen. Keep in the sunlight.
+>
+> Benjamin Franklin
+---
+> Always focus on what you want, rather than the absence of what you want.
+---
+> The ego loves nothing more than to get "busy".
+---
+> Where you want to be is always in control, never wishing, always trading,
+> and always, first and foremost, protecting your butt.
+> 
+> Paul Tudor Jones
+---
+> The only impossible journey is the one you never begin.
+>
+> Anthony Robbins
+---
+> What you can do, or dream you can, begin it. Boldness has a genius, power and magic in it.
+> 
+> Johann Wolfgang Von Goethe
+---
+> Simplicity is the ultimate sophistication.
+>
+> Leonardo Da Vinci
+---
+> A memory without emotional charge is called wisdom.
+> 
+> Dr. Joe Dispenza
+---

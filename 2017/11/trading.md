@@ -36,7 +36,7 @@ Asset classes:
 Derivatives:
 
 - Futures - financial contracts to buy or sell an asset at a predetermined future date and price.
-- Options - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
+- [Options](https://3commas.io/blog/options) - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
 
 Traders by time frame:
 
@@ -45,12 +45,23 @@ Traders by time frame:
 - Day traders
 - Scalpers
 
+Investors with sole intention to make profits are actually traders.
+People who understand the value and the business and invest their money with intention to support the business are investors.
+
+### Options
+
+Think about options as way of renting assets for a set period without significant cost associated with a purchase.
+
+With options, potential loses and profits are not symmetrical. Loses are limited and profits are unlimited.
+
 ## Market mechanics
 
 What truly moves the price is AGGRESSION.
 If the price goes up, then the buyers are more aggressive (they use market orders).
 
 Traders become aggressive because of fear of either missing out or losing.
+
+Even if a trade entry had a resoning logic, after the entry, trader often sucumb to the emotions of fear and regret and end up selling winners and hanging onto losers.
 
 More risky assets are sold and the money is moved into safer assets (market rotation).
 It is not because the safer assets have room to advance, but because they are likely to hold their value better in an economic downturn.
@@ -122,6 +133,10 @@ Institutional activities signs:
 - Aggressive initiation activity
 - Strong rejection
 
+### Wall street
+
+Selling scalable products (10% annually is considered a very good result) to wealthy clients. Charging fee for looking after their money.
+
 ### Bots impact
 
 Bot classification:
@@ -150,6 +165,11 @@ They are basically not impacting price much, they are waiting for others to move
 Other bots could trade based on TA indicators, news, etc. They are just adding to the retail traders crowd.
 
 ## TA
+
+> A technician is someone who cuts right to the chase and studies actual prices and behavior
+> instead of puzzling over the causes of prices and behavior like everyone else.
+>
+> John Brown
 
 ### Phases
 
@@ -181,7 +201,19 @@ Charts allow to see:
 - Trading volume
 - and more
 
-SMA(50, 200) can become a support/resistance.
+Support/resistance: price has memory. This is because humans (who make up the market) are susceptible to "anchoring bias".
+
+Support/resistance can be:
+
+- horizontal line
+- trend lines
+- SMA(50, 200), EMA
+- fib lines
+- round numbers
+
+The more times price touches support/resistance, the weaker it becomes.
+
+> There is no such thing as a quadruple bottom/top.
 
 ### Volume
 
@@ -266,6 +298,12 @@ Trading is about probabilities, never certainties.
 
 Following a consistent set of actions leads to consistent results.
 
+Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
+
+> You can lose your opinion, or you can lose your money.
+>
+> Adam Grimes
+
 ### Risk management
 
 > The most important rule of trading is to play great defense, not great offense.
@@ -277,6 +315,7 @@ Attention to profit - a sign of immature, attention to losses - sign or experien
 Managing risks:
 
 - Keep 1-5% of account exposed to risk (use stop orders) per trade
+- Can be increased to 10% for small accounts
 - Backtest
 - Test new ideas with paper trading first
 - Bots should have fuses to stop runaway trades and handle errors
@@ -292,10 +331,30 @@ Improperly sized positions affect the ability to be disciplined:
 
 Booking partial gains as the asset is becoming profitable and raising stops to ensure profits do not become losses.
 
+Taking action to prevent a small loss from becoming a big loss should be considered a victory.
+
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
 
 After a losing trade - take a break to reduce emotional decision-making.
+
+### Psychology
+
+> Trading becomes easy once a trader learns to ignore her own personal opinions, stops trying to be right, stops focusing on making money, and instead focuses on the process of trading.
+>
+> The Tao of Trading by Simon Ree
+
+Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
+
+To grow: objectivity, impartiality, discipline, focus.
+
+This is not a trader's job:
+
+- be right
+- predict the future
+- pick tops and bottoms
+- try to make money
+- listen to media
 
 ## Automated trading
 
@@ -307,6 +366,10 @@ Client algorithmic trading infrastructure:
 - Strategy implementation (quantitive part)
 - Visualization, analytics
 - Signal research framework
+
+## Definitions
+
+Gambling - when odds are unknown and wishing for luck.
 
 ## Strategies
 
@@ -382,6 +445,8 @@ Investment:
 - Look for institutional activities
 - Buy in small amounts once price is in the range
 - Buy something that had large volumes before and now - low price and volume
+- Buy tokens have real usage (exchange tokens, game tokens, defi, coins host other tokens on their chains, etc.)
+- Correlation between 2 assets, move from one to another if more potential
 
 > Buy when there's blood in the streets,
 > even if the blood is your own.
@@ -416,6 +481,7 @@ Exchanges:
 
 - [Local Bitcoins](https://localbitcoins.com/)
 - [Binance](https://www.binance.com/)
+- [Gate.io](https://www.gate.io/) - more lower cap altcoins
 - [Pancake Swap](https://pancakeswap.finance/)
 
 Brockers:
@@ -545,6 +611,7 @@ Articles:
 - [5 Stop Loss Mistakes To Avoid](https://medium.com/@cryptocreddy/5-stop-loss-mistakes-to-avoid-bea274857371)
 - [The bots that make money (or lose it) for you while you sleep](https://bitcoinmagazine.com/markets/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808)
 - [Trading vocabulary](/2018/07/trading-vocabulary)
+- [Crypto Cred](https://docs.google.com/document/d/15c3rN15rkXldY8Te3GDG4NG7noaaoikydOoZQlElwXw/preview)
 
 Training:
 
@@ -561,3 +628,4 @@ Training:
 - [Volume Profile](https://www.amazon.com/PROFILE-insiders-guide-trading/dp/1718067577) by Trader Dale
 - [Price Action Trading Secrets](https://www.amazon.com/Price-Action-Trading-Secrets-Consistently/dp/9811464944) by Rayner Teo
 - [Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh
+- [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
