@@ -50,7 +50,7 @@ People who understand the value and the business and invest their money with int
 
 ### Options
 
-Think about options as way of renting assets for a set period without significant cost associated with a purchase.
+Think about options as a way of renting assets for a set period without significant cost associated with a purchase.
 
 With options, potential loses and profits are not symmetrical. Loses are limited and profits are unlimited.
 
@@ -286,6 +286,13 @@ Fibonacci extension is a tool used to find targets for growth after a pull-back.
 
 Combine fibonacci with trendlines and moving averages.
 
+### Indicators
+
+Some indicators:
+
+- Blue waves (VuManChu Cipher B)
+- Central Pivot Range
+
 ## Trade plan and risk management
 
 Success parts:
@@ -483,6 +490,7 @@ Exchanges:
 - [Binance](https://www.binance.com/)
 - [Gate.io](https://www.gate.io/) - more lower cap altcoins
 - [Pancake Swap](https://pancakeswap.finance/)
+- [Deribit](https://www.deribit.com/) - has options
 
 Brockers:
 
@@ -557,6 +565,7 @@ Open source:
 - [Bitcoin trader](https://github.com/pirate/bitcoin-trader) - nice idea about small buys
 - [Crypto Signal](https://github.com/CryptoSignal/crypto-signal)
 - [BX-bot](https://github.com/gazbert/bxbot)
+- [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
 
 ### Data
 
@@ -582,6 +591,7 @@ Analytics:
 - [Coin360](https://coin360.com/)
 - [TradingView Crypto screener](https://www.tradingview.com/crypto-screener/)
 - [Intotheblock](https://app.intotheblock.com/)
+- [Crypto Bubbles](https://cryptobubbles.net/)
 
 Signals:
 
@@ -603,7 +613,7 @@ YouTube:
 - [Auction Theory, Volume Profile, and Microstructure](https://www.youtube.com/watch?v=ixo_DoBGYko)
 - [Practical Applications - Order Flow and Structure](https://www.youtube.com/watch?v=Au20OwdAG5s)
 - [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)
-- [The Inner Circle Trader](https://www.youtube.com/user/InnerCircleTrader)
+- [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing trategies
 
 Articles:
 
