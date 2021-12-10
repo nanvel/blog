@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-12-09T20:00
+modified: 2021-12-10T21:55
 place: Phuket, Thailand
 comments: true
 
@@ -321,6 +321,8 @@ Success parts:
 
 Trading is about probabilities, never certainties.
 
+An entry should not be based on an opinion, prediction, or emotions; it should be based on a statistical edge.
+
 Following a consistent set of actions leads to consistent results.
 
 Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
@@ -360,10 +362,12 @@ Booking partial gains as the asset is becoming profitable and raising stops to e
 
 Taking action to prevent a small loss from becoming a big loss should be considered a victory.
 
+The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
+
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
 
-After a losing trade - take a break to reduce emotional decision-making.
+Money is not made on entries; profits are only generated on the exit or a trade.
 
 ### Psychology
 
@@ -372,6 +376,8 @@ After a losing trade - take a break to reduce emotional decision-making.
 > The Tao of Trading by Simon Ree
 
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
+
+After a losing trade - take a break to reduce emotional decision-making.
 
 To grow: objectivity, impartiality, discipline, focus.
 
