@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-10-16T15:39
+modified: 2021-12-09T20:00
 place: Phuket, Thailand
 comments: true
 
@@ -172,15 +172,15 @@ Other bots could trade based on TA indicators, news, etc. They are just adding t
 
 ### Environments
 
-| Bull               | Bear               | Sideways           | Volatile              |
-|--------------------|--------------------|--------------------|-----------------------|
-| Trend up           | Trend down         | Range bound        | No boundaries         |
-| Slow               | Fast               | Very slow          | Very fast             |
-| Buy the deep       | Sell the rallies   | Buy support        | Lock in profits       |
-| Long positions     | Short positions    | Cycle positions    | Quick trades          |
-| Easiest            | Difficult          | Simple             | Lower time frame      |
-| Trend traders like | Short sellers like | Swing traders like | Day traders like      |
-| Accumulation       | Distribution       | Ranges             | Emotional uncertainty |
+| Bull                  | Bear                  | Sideways              | Volatile                  |
+|--------------------   |--------------------   |--------------------   |-----------------------    |
+| Trend up              | Trend down            | Range bound           | No boundaries             |
+| Slow                  | Fast                  | Very slow             | Very fast                 |
+| Buy the deep          | Sell the rallies      | Buy support           | Lock in profits           |
+| Long positions        | Short positions       | Cycle positions       | Quick trades              |
+| Easiest               | Difficult             | Simple                | Lower time frame          |
+| Trend traders like    | Short sellers like    | Swing traders like    | Day traders like          |
+| Accumulation          | Distribution          | Ranges                | Emotional uncertainty     |
 
 ## TA
 
