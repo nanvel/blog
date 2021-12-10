@@ -162,9 +162,11 @@ modified: 2021-10-10T11:55
 - The Achievement Habit by Bernard Roth
 - Crypto Investor Mindset by Wolfgang Fallmann
 - The Tao of Trading by Simon Ree
+- The Ultimate Guide to Swing Trading by Steve and Holly Burns
 
 ## In progress
 
+- The Quiet Trader by Atanas Matov
 - The Electronic Day Trader by Mark Friedfertig and George West
 - Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson

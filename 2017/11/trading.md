@@ -38,15 +38,21 @@ Derivatives:
 - Futures - financial contracts to buy or sell an asset at a predetermined future date and price.
 - [Options](https://3commas.io/blog/options) - financial contracts giving their owner the right, but not the obligation, to buy or sell an underlying asset at a stated price (strike price) prior to or on a specified date.
 
-Traders by time frame:
+Trade styles:
 
-- Investors
-- Swing traders
+- Position traders
+- Trend traders
+- Swing traders (interested in capturing a move and isn't interested in holding assets that go sideways)
 - Day traders
 - Scalpers
 
-Investors with sole intention to make profits are actually traders.
-People who understand the value and the business and invest their money with intention to support the business are investors.
+Key differences:
+
+- trade time
+- win amount
+- time required
+
+Investors - giving money without sole intention of making money in nearest future. Supporting business, values it brings.
 
 ### Options
 
@@ -163,6 +169,18 @@ They are basically not impacting price much, they are waiting for others to move
 > Stephan de Haas
 
 Other bots could trade based on TA indicators, news, etc. They are just adding to the retail traders crowd.
+
+### Environments
+
+| Bull               | Bear               | Sideways           | Volatile              |
+|--------------------|--------------------|--------------------|-----------------------|
+| Trend up           | Trend down         | Range bound        | No boundaries         |
+| Slow               | Fast               | Very slow          | Very fast             |
+| Buy the deep       | Sell the rallies   | Buy support        | Lock in profits       |
+| Long positions     | Short positions    | Cycle positions    | Quick trades          |
+| Easiest            | Difficult          | Simple             | Lower time frame      |
+| Trend traders like | Short sellers like | Swing traders like | Day traders like      |
+| Accumulation       | Distribution       | Ranges             | Emotional uncertainty |
 
 ## TA
 
@@ -335,6 +353,8 @@ Improperly sized positions affect the ability to be disciplined:
 > Historical success is a necessary but not a sufficient condition for concluding that a method has predictive power and, therefore, is likely to be profitable in the future.
 >
 > Evidence-Based Technical Analysis by David Aronson
+
+After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
 
 Booking partial gains as the asset is becoming profitable and raising stops to ensure profits do not become losses.
 
@@ -566,6 +586,7 @@ Open source:
 - [Crypto Signal](https://github.com/CryptoSignal/crypto-signal)
 - [BX-bot](https://github.com/gazbert/bxbot)
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
+- [Backtrader](https://www.backtrader.com/)
 
 ### Data
 
@@ -613,7 +634,8 @@ YouTube:
 - [Auction Theory, Volume Profile, and Microstructure](https://www.youtube.com/watch?v=ixo_DoBGYko)
 - [Practical Applications - Order Flow and Structure](https://www.youtube.com/watch?v=Au20OwdAG5s)
 - [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)
-- [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing trategies
+- [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing strategies
+- [ProScalping](https://www.youtube.com/channel/UCWtDrix6jukydQAQ9JDVvVA)
 
 Articles:
 
@@ -639,3 +661,4 @@ Training:
 - [Price Action Trading Secrets](https://www.amazon.com/Price-Action-Trading-Secrets-Consistently/dp/9811464944) by Rayner Teo
 - [Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh
 - [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
+- [The Ultimate Guide to Swing Trading](https://www.amazon.com/Ultimate-Guide-Swing-Trading-ebook/dp/B09DWDYCJL) by Steve and Holly Burns
