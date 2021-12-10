@@ -339,6 +339,31 @@ div.tip {
     background-color: #d9edf7;
     border-color: #bce8f1;
 }
+/* -- table -- */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
 div.admonition {
     margin-top: 10px;
     margin-bottom: 10px;
