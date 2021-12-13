@@ -20,6 +20,10 @@ Evalutes to false: nil, false
 
 TRUE, FALSE, NIL constants, but lowercase is preferred.
 
+### Arrays
+
+`<<` - append operator.
+
 ### Strings
 
 ```ruby
@@ -47,6 +51,9 @@ This would contain specially formatted text.
 
 That might span many lines
 HEREDOC
+
+# Python 2 style
+"%d %s" % [3, 'rubies']
 ```
 
 Regular excpressions:
@@ -163,11 +170,32 @@ $global_var = 1
 local_variable = 1
 ```
 
+Parallel assignment:
+
+```ruby
+x, y = 1, 2
+```
+
 ### Methods
+
+Methods are defined with the `def` keyword. The return value of a method is the value of the last expression evaluated in its body.
 
 ```ruby
 def say
   # method body goes here
+end
+```
+
+When a methods is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
+
+Methods can be defined on individual objects (singleton methods):
+```ruby
+def Math.square(x)
+  x * x
+end
+
+def sefl.my_class_method(x)
+  # ...
 end
 ```
 
@@ -188,6 +216,24 @@ talk = Proc.new do
   puts "I am talking."
 end
 ```
+
+Assignment methods:
+```ruby
+def a=(x):
+  x + 1
+end
+
+# my_object.a = 10  # => 11
+```
+
+Qustion mark suffix:
+```ruby
+def can_call?
+  true
+end
+```
+
+A question mark if used to mark predicates - methods that return a Boolean value.
 
 ### Flow control
 
@@ -264,6 +310,8 @@ end
 ```
 
 ### Classes
+
+Classes and modules are "open", and can be modified and extended at runtime.
 
 ```ruby
 class Customer
@@ -344,3 +392,4 @@ Expect:
 
 [Ruby at LaunchSchool](https://launchschool.com/books/ruby/read/introduction)
 Learn Ruby the Hard Way by Zed Shaw (to read)
+[The Ruby Programming Language](https://www.amazon.com/Ruby-Programming-Language-Everything-Need/dp/0596516177) by David Flanagan, Yukihiro Matsumoto
