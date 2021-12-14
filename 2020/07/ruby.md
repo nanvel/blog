@@ -26,6 +26,9 @@ TRUE, FALSE, NIL constants, but lowercase is preferred.
 
 ### Strings
 
+Strings are mutable.
+Use freeze to prevent future modification.
+
 ```ruby
 "Some text"
 "Some text with \""
@@ -90,6 +93,9 @@ Symbols - immutable interned strings. Can be compared by identity rather than by
 (1..2)  # includes ending values
 (1...2)  # excludes ending values
 ```
+
+`==` test equally.
+`===` for matching and membership.
 
 ### Procs (procedures)
 
@@ -235,7 +241,19 @@ end
 
 A question mark if used to mark predicates - methods that return a Boolean value.
 
+Exclamation mark suffix: is used to indicate that caution is required with the use of the method.
+
+```ruby
+def delete!
+end
+```
+
+Often exlamation marks is used in mutator method that alters the objects in place.
+Example: `#sort` vs `#sort!`.
+
 ### Flow control
+
+The value of `nil` is treated the same as `false` and any other value is the same as `true`!
 
 `x = if x < y then x else y end`  - this is an expression.
 
@@ -311,6 +329,8 @@ end
 
 ### Classes
 
+A class is a collection of related methods that operate on the state of an object.
+
 Classes and modules are "open", and can be modified and extended at runtime.
 
 ```ruby
@@ -324,6 +344,24 @@ class Customer
 end
 ```
 
+Extending a class:
+
+```ruby
+class Sequence
+  include Enumerable
+end
+```
+
+Overriding methods:
+
+```ruby
+def [](index)
+end
+
+def *(factor)
+end
+```
+
 ### Memoization
 
 ```ruby
@@ -332,7 +370,20 @@ def something
 end
 ```
 
+### Output
+
+```ruby
+puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
+print 'Hello!'  # prints the string (without appending a newline)
+p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
+```
+
 ## Debugging
+
+Run inline:
+```bash
+ruby -e 'puts "Hello world!"'
+```
 
 ```bash
 irb
