@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-12-10T21:55
+modified: 2021-12-24T17:45
 place: Phuket, Thailand
 comments: true
 
@@ -311,25 +311,20 @@ Some indicators:
 - Blue waves (VuManChu Cipher B)
 - Central Pivot Range
 
-## Trade plan and risk management
+## Consistent profitability
 
-Success parts:
+Ingredients:
 
-- Consistency
-- Risk management
 - Edge in the market (statistical advantage)
+- Risk management
+- Consistency (for manual trading)
+- Psychology (for manual trading)
+
+### Edge in the market
 
 Trading is about probabilities, never certainties.
 
 An entry should not be based on an opinion, prediction, or emotions; it should be based on a statistical edge.
-
-Following a consistent set of actions leads to consistent results.
-
-Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
-
-> You can lose your opinion, or you can lose your money.
->
-> Adam Grimes
 
 ### Risk management
 
@@ -339,22 +334,26 @@ Do not set expectations on a trade, it will ruin the trade (robs ability to appr
 
 Attention to profit - a sign of immature, attention to losses - sign or experience.
 
-Managing risks:
+Parts of risk management:
 
-- Keep 1-5% of account exposed to risk (use stop orders) per trade
-- Can be increased to 10% for small accounts
-- Backtest
-- Test new ideas with paper trading first
-- Bots should have fuses to stop runaway trades and handle errors
+- Backtest and papertrade new strategies first
+- Cut loses short and maximize gains
+- Position sizing
+- Fuses
 
-Improperly sized positions affect the ability to be disciplined:
+### Backtest and papertrade new strategies first
 
-- Sizing too large = more excited, frustrated, emotional, exhausted
-- Sizing too small = disinterest, boredom, sloppiness, lack of returns
+Backtest. Test new ideas with paper trading first.
 
 > Historical success is a necessary but not a sufficient condition for concluding that a method has predictive power and, therefore, is likely to be profitable in the future.
 >
 > Evidence-Based Technical Analysis by David Aronson
+
+### Cut loses short and maximize gains
+
+Money is not made on entries; profits are only generated on the exit or a trade.
+
+The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
 
 After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
 
@@ -362,12 +361,33 @@ Booking partial gains as the asset is becoming profitable and raising stops to e
 
 Taking action to prevent a small loss from becoming a big loss should be considered a victory.
 
-The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
-
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
 
-Money is not made on entries; profits are only generated on the exit or a trade.
+### Position sizing
+
+Keep 1-5% of account exposed to risk (use stop orders) per trade.
+Can be increased to 10% for small accounts.
+
+Improperly sized positions affect the ability to be disciplined:
+
+- Sizing too large = more excited, frustrated, emotional, exhausted
+- Sizing too small = disinterest, boredom, sloppiness, lack of returns
+
+### Fuses
+
+After a losing trade - take a break to reduce emotional decision-making.
+
+Bots should have fuses to stop when:
+- unusually high trading activity (runaway trades)
+- unexpected high daily volume
+- overlimits for a single trade volume
+
+Bots should be handling errors (closing positions, sending alerts, etc.).
+
+### Consistency
+
+Following a consistent set of actions leads to consistent results.
 
 ### Psychology
 
@@ -377,7 +397,11 @@ Money is not made on entries; profits are only generated on the exit or a trade.
 
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
 
-After a losing trade - take a break to reduce emotional decision-making.
+Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
+
+> You can lose your opinion, or you can lose your money.
+>
+> Adam Grimes
 
 To grow: objectivity, impartiality, discipline, focus.
 
