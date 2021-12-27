@@ -342,7 +342,7 @@ Parts of risk management:
 - Position sizing
 - Fuses
 
-### Backtest and papertrade new strategies first
+#### Backtest and papertrade new strategies first
 
 Backtest. Test new ideas with paper trading first.
 
@@ -350,7 +350,7 @@ Backtest. Test new ideas with paper trading first.
 >
 > Evidence-Based Technical Analysis by David Aronson
 
-### Cut loses short and maximize gains
+#### Cut loses short and maximize gains
 
 Money is not made on entries; profits are only generated on the exit or a trade.
 
@@ -365,7 +365,7 @@ Taking action to prevent a small loss from becoming a big loss should be conside
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
 
-### Position sizing
+#### Position sizing
 
 Keep 1-5% of account exposed to risk (use stop orders) per trade.
 Can be increased to 10% for small accounts.
@@ -375,7 +375,7 @@ Improperly sized positions affect the ability to be disciplined:
 - Sizing too large = more excited, frustrated, emotional, exhausted
 - Sizing too small = disinterest, boredom, sloppiness, lack of returns
 
-### Fuses
+#### Fuses
 
 After a losing trade - take a break to reduce emotional decision-making.
 
