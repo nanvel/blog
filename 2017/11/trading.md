@@ -319,6 +319,7 @@ Ingredients:
 - Risk management
 - Consistency (for manual trading)
 - Psychology (for manual trading)
+- Journaling (for manual trading) or logging and monitoring/statistics
 
 ### Edge in the market
 
