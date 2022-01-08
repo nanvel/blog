@@ -164,9 +164,13 @@ modified: 2021-10-10T11:55
 - The Tao of Trading by Simon Ree
 - The Ultimate Guide to Swing Trading by Steve and Holly Burns
 
+## 2022
+
 ## In progress
 
+- The Man Who Solved the Market by Gregory Zuckerman
 - The Quiet Trader by Atanas Matov
+- The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 - The Electronic Day Trader by Mark Friedfertig and George West
 - Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson

@@ -311,6 +311,8 @@ Some indicators:
 - Blue waves (VuManChu Cipher B)
 - Central Pivot Range
 
+VWAP - Large institutional buyers and mutual funds use the VWAP ratio to help move into or out of stocks with as small of a market impact as possible. Therefore, when possible, institutions will try to buy below the VWAP, or sell above it. This way their actions push the price back toward the average, instead of away from it.
+
 ## Consistent profitability
 
 Ingredients:
@@ -364,6 +366,8 @@ Taking action to prevent a small loss from becoming a big loss should be conside
 
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
+
+Lower RR and higher win rate is more favorable than higher RR and lower win rate (if risk and reward are many times larger than commission) because easier to handle emotionally.
 
 #### Position sizing
 
@@ -618,6 +622,7 @@ Open source:
 - [BX-bot](https://github.com/gazbert/bxbot)
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
 - [Backtrader](https://www.backtrader.com/)
+- [Quant-trading](https://github.com/je-suis-tm/quant-trading)
 
 ### Data
 
