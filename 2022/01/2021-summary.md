@@ -15,13 +15,13 @@ Phuket town condo -> townhouse.
 
 ![townhouse](house.jpeg)
 
-One road trip to Bangkok with 2 weeks stay.
+One road trip to Bangkok with 2 weeks airbnb.
 
 ![bangkok](bangkok.jpeg)
 
 ## Exercise
 
-No much running, got knee pait.
+Little running, got knee pain.
 
 Bicycle in Bang Wad.
 
