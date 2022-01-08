@@ -40,6 +40,7 @@ P2A. At Bayaco.
 Opened and closed a company.
 
 Built some trading tools:
+
 - ees bot
 - backtester
 - jobs manager
