@@ -169,6 +169,7 @@ modified: 2021-10-10T11:55
 ## In progress
 
 - The Man Who Solved the Market by Gregory Zuckerman
+- Principles for Dealing with the Changing World Order by Ray Dalio
 - The Quiet Trader by Atanas Matov
 - The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 - The Electronic Day Trader by Mark Friedfertig and George West

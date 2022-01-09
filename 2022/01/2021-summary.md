@@ -45,7 +45,8 @@ Built some trading tools:
 - backtester
 - jobs manager
 - scanner/visualizer
-- oreder book scanner
+- oreder book scalp helper
+- portfolio tracking app
 
 Read many books trading related.
 

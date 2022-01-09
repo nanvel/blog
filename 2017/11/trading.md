@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-12-24T17:45
+modified: 2022-01-09T13:59
 place: Phuket, Thailand
 comments: true
 
@@ -483,6 +483,7 @@ TA-based:
 - Round numbers are significant
 - Wait for narrowing and put entries at both sides
 - For areas without support/resistance - use fib
+- Disbalance in candles grow with volume grow
 
 OB based:
 
@@ -621,8 +622,12 @@ Open source:
 - [Crypto Signal](https://github.com/CryptoSignal/crypto-signal)
 - [BX-bot](https://github.com/gazbert/bxbot)
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
-- [Backtrader](https://www.backtrader.com/)
 - [Quant-trading](https://github.com/je-suis-tm/quant-trading)
+
+Backtesting:
+
+- [Backtrader](https://www.backtrader.com/)
+- [VectorBT](https://vectorbt.dev/)
 
 ### Data
 
