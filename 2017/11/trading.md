@@ -536,6 +536,10 @@ Other:
 - Estimate stops by cluster info
 - When btc drop - other drop even more? Arbitrage?
 
+## Vocabulary
+
+Sharpe Ratio - helps investors to understand the return of an investment compared to its risk.
+
 ## Links
 
 ### Platforms
@@ -628,6 +632,8 @@ Backtesting:
 
 - [Backtrader](https://www.backtrader.com/)
 - [VectorBT](https://vectorbt.dev/)
+- [PyAlgoTrade](https://gbeced.github.io/pyalgotrade/)
+- [Jesse](https://github.com/jesse-ai/jesse)
 
 ### Data
 
