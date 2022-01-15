@@ -420,6 +420,10 @@ This is not a trader's job:
 
 ## Automated trading
 
+> MBAs once scoffed at the thought of relying on a scientific and systematic approach to investing, confident they could hire coders if they were ever needed. Today, coders say the same about MBAs, if they think about them at all.
+>
+> The Man Who Solved the Market by Gregory Zuckerman
+
 Client algorithmic trading infrastructure:
 
 - Communication with exchange (pulling market data and order entry)
@@ -428,6 +432,12 @@ Client algorithmic trading infrastructure:
 - Strategy implementation (quantitive part)
 - Visualization, analytics
 - Signal research framework
+
+Statistically significant signals (Medallion):
+
+- Identify anomalous patterns in historic pricing data
+- Make sure the anomalies were statistically significant, consistent over time, nonrandom
+- Identified pricing behavior could be explained in a reasonable way
 
 ## Definitions
 
@@ -709,3 +719,4 @@ Training:
 - [Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh
 - [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
 - [The Ultimate Guide to Swing Trading](https://www.amazon.com/Ultimate-Guide-Swing-Trading-ebook/dp/B09DWDYCJL) by Steve and Holly Burns
+- [The Man Who Solved the Market by Gregory Zuckerman](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X)

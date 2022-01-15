@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2019-03-11T21:39
+modified: 2022-01-15T14:06
 
 # Quotes page 2
 
@@ -214,4 +214,37 @@ modified: 2019-03-11T21:39
 > A memory without emotional charge is called wisdom.
 > 
 > Dr. Joe Dispenza
+---
+> Do what you like in life, not what you feel you "should" do.
+>
+> Jim Simons
+---
+> Bad ideas is good, good ideas is terrific, no ideas is terrible.
+>
+> Lenny Baum at IDA
+---
+> Getting fired can be a good thing.
+> You just don't want to make a habit of it.
+>
+> Jim Simons
+---
+> Truth ... is much too complicated to allow for anything but approximations.
+>
+> John von Neumann
+---
+> The name of the game is not to always be right, but to be right often enough.
+>
+> Rene Carmona
+---
+> I strongly believe, for all babies and a significant number of grownups, curiosity is a bigger motivator than money.
+>
+> Elwyn Berlekamp
+---
+> We're in the insurance business. (talking about automated trading)
+>
+> Elwyn Berlekamp
+---
+> Never send a human to do a machine's job.
+>
+> Agent Smith in the film The Matrix
 ---
