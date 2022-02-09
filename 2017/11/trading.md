@@ -147,7 +147,7 @@ Selling scalable products (10% annually is considered a very good result) to wea
 
 Bot classification:
 
-- Helper bots (human makes decisions, bot manages orders, risks, provides signals)
+- Algorithmic expert advisors (EA) (human makes decisions, bot manages orders, risks, provides signals)
 - Fully automated (bot makes decisions)
 
 > Bots are like startups: obviously some succeed; also obviously, most don't.
@@ -400,7 +400,7 @@ Following a consistent set of actions leads to consistent results.
 
 If smart people would be able to be consistently profitable in trading, we would have many rich people.
 
-*Loss aversion* is the observation that human beings experience losses asymmetrically more severely than equivalent gains.
+**Loss aversion** is the observation that human beings experience losses asymmetrically more severely than equivalent gains.
 Each next win gives less sattisfaction. Each loss adds to pain of previous loses.
 Negative emotions have a stronger impact than positive ones.
 According to one study, the pain of losing $100 still outweighs the happiness of gaining $240.
@@ -436,8 +436,6 @@ This is not a trader's job:
 - listen to media
 
 ## Automated trading
-
-There are fully automated traders and algorithmic expert advisors (EA).
 
 > MBAs once scoffed at the thought of relying on a scientific and systematic approach to investing, confident they could hire coders if they were ever needed. Today, coders say the same about MBAs, if they think about them at all.
 >
