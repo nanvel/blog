@@ -693,6 +693,9 @@ Analytics:
 - [Intotheblock](https://app.intotheblock.com/)
 - [Crypto Bubbles](https://cryptobubbles.net/)
 - [Trade ideas scanner](https://www.trade-ideas.com/)
+- [Crypto Quant](https://cryptoquant.com/)
+- [Glassnode](https://glassnode.com/)
+- [Dune analytics](https://dune.xyz/)
 
 Signals:
 
