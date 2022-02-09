@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2022-01-09T13:59
+modified: 2022-02-09T14:40
 place: Phuket, Thailand
 comments: true
 
@@ -356,6 +356,8 @@ Backtest. Test new ideas with paper trading first.
 
 Money is not made on entries; profits are only generated on the exit or a trade.
 
+Should try to maximize profits when right and minimize losses when wrong.
+
 The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
 
 After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
@@ -396,9 +398,24 @@ Following a consistent set of actions leads to consistent results.
 
 ### Psychology
 
+If smart people would be able to be consistently profitable in trading, we would have many rich people.
+
+*Loss aversion* is the observation that human beings experience losses asymmetrically more severely than equivalent gains.
+Each next win gives less sattisfaction. Each loss adds to pain of previous loses.
+Negative emotions have a stronger impact than positive ones.
+According to one study, the pain of losing $100 still outweighs the happiness of gaining $240.
+
+It is difficult to accept own mistakes and change.
+
 > Trading becomes easy once a trader learns to ignore her own personal opinions, stops trying to be right, stops focusing on making money, and instead focuses on the process of trading.
 >
 > The Tao of Trading by Simon Ree
+
+Trading requires large time investments in experiments.
+
+> Repetition can be boring or tedious - which is why so few people ever master anything.
+>
+> Hal Elrod
 
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
 
@@ -419,6 +436,8 @@ This is not a trader's job:
 - listen to media
 
 ## Automated trading
+
+There are fully automated traders and algorithmic expert advisors (EA).
 
 > MBAs once scoffed at the thought of relying on a scientific and systematic approach to investing, confident they could hire coders if they were ever needed. Today, coders say the same about MBAs, if they think about them at all.
 >
@@ -444,6 +463,10 @@ Statistically significant signals (Medallion):
 Gambling - when odds are unknown and wishing for luck.
 
 ## Strategies
+
+> Profitable trading does not have a secret recipe for success. There are as many different ways to be profitable as there are traders who know how to utilise the good trading systems out there.
+> 
+> The Quiet Trader by Atanas Matov
 
 Strategies:
 
@@ -610,6 +633,7 @@ Treminals:
 - [Gunbot](https://www.gunbot.com/) - desktop trading bot
 - [Margin.de](https://margin.de/)
 - [DDP Platform](https://dapowerplay.com/) - trading bot with visual strategy builder
+- [DAS](https://dastrader.com/)
 
 Scalping:
 
@@ -670,6 +694,7 @@ Analytics:
 - [TradingView Crypto screener](https://www.tradingview.com/crypto-screener/)
 - [Intotheblock](https://app.intotheblock.com/)
 - [Crypto Bubbles](https://cryptobubbles.net/)
+- [Trade ideas scanner](https://www.trade-ideas.com/)
 
 Signals:
 
@@ -720,3 +745,4 @@ Training:
 - [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
 - [The Ultimate Guide to Swing Trading](https://www.amazon.com/Ultimate-Guide-Swing-Trading-ebook/dp/B09DWDYCJL) by Steve and Holly Burns
 - [The Man Who Solved the Market by Gregory Zuckerman](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X)
+- [The Quiet Trader by Atanas Matov](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT)
