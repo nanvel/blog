@@ -85,7 +85,7 @@ Use freeze to prevent future modification.
 
 # using %, %q, %Q
 # %i - array of symbols
-# %q - string
+# %q (%Q or % for double quoted rules) - string follows single quoted rules
 # %r - regular expression
 # %s - symbol
 # %w - array of strings
@@ -97,6 +97,9 @@ This would contain specially formatted text.
 
 That might span many lines
 HEREDOC
+
+# heredoc starts with << or <<-, the text begins in the next line
+# ends when text of the delimiter appears on the line by itself
 
 # Python 2 style
 "%d %s" % [3, 'rubies']
