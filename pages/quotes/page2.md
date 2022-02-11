@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2017-09-14T10:20
-modified: 2019-03-11T21:39
+modified: 2022-01-15T14:06
 
 # Quotes page 2
 
@@ -214,4 +214,140 @@ modified: 2019-03-11T21:39
 > A memory without emotional charge is called wisdom.
 > 
 > Dr. Joe Dispenza
+---
+> Do what you like in life, not what you feel you "should" do.
+>
+> Jim Simons
+---
+> Bad ideas is good, good ideas is terrific, no ideas is terrible.
+>
+> Lenny Baum at IDA
+---
+> Getting fired can be a good thing.
+> You just don't want to make a habit of it.
+>
+> Jim Simons
+---
+> Truth ... is much too complicated to allow for anything but approximations.
+>
+> John von Neumann
+---
+> The name of the game is not to always be right, but to be right often enough.
+>
+> Rene Carmona
+---
+> I strongly believe, for all babies and a significant number of grownups, curiosity is a bigger motivator than money.
+>
+> Elwyn Berlekamp
+---
+> We're in the insurance business. (talking about automated trading)
+>
+> Elwyn Berlekamp
+---
+> Never send a human to do a machine's job.
+>
+> Agent Smith in the film The Matrix
+---
+> Do not save what is left after spending; instead, spend what is left after saving.
+>
+> Warren Buffet
+---
+> Knowledge is an adventure of ideas.
+>
+> Popper
+---
+> I find more and more that it is well to be on the side of the minority, since it is always the more intelligent.
+>
+> Goethe
+---
+> Those who have knowledge don't predict. Those who predict don't have knowledge.
+>
+> Lao Tzu
+---
+> One become great through expecting the possible, another by expecting the eternal; but he who expected the impossible become greater than all.
+>
+> Soren Kiekegaard
+---
+> Any kind of action is imperfect in so far as it is willed of conscious.
+>
+> Friedrich Nietzshe
+---
+> You don't need to be great to start, but you do have to start to be great.
+>
+> Zig Ziglar
+---
+> Complaining is never of any use: it comes from weakness.
+>
+> Friedrich Nietzshe
+---
+> Suffering produces perseverance; perseverance, character; and character, hope.
+>
+> Dostoyevsky
+---
+> There is an inexplicable sense of being proven wrong, which perhaps can only be realized by either a scientist or a philosopher.
+>
+> Naskar
+---
+> For it is not what happens to me that makes me great, but what I do, and there is surely no one who thinks that anyone became great by winning the big lottery prize.
+>
+> Soren Kierkegaard
+---
+> Absence of hardship is the real hardship.
+>
+> Friedrich Nietzsche
+---
+> Good people will do what they find honorable to do, even if it requires hard work; they'll do it if it causes them injury; they will do it even if it will bring danger. They will not do what they find base, even if it brings wealth, pleasure, or power.
+> Nothing will deter them from what is honorable, and nothing will lure them into what is base.
+>
+> Seneca
+---
+> The men who can manage men manage the men who can manage only things, and the men who can manage money manage all.
+>
+> Voltaire
+---
+> Failures are divided into two classes - those who thought and never did, and those who did and never thought.
+>
+> John Salak
+---
+> They are great because they work hard on the things that come easy to them.
+---
+> So, who really is the free man? In my eyes, the ultimately free man is not really a warrior, but an explorer, one that tries new paths and finds what he/she is best at doing. This person works hard to achieve their goals and when work meets passion, freedom is born.
+>
+> Atanas Matov
+---
+> Life is a search for the truth: there is no truth.
+>
+> Chinese proverb
+---
+> Trading wisdom goes to those traders who are not giving up in asking one more question, day after day.
+>
+> Atanas Matov
+---
+> The masses have never "thirsted" after truth. Whoever can supply them with illusions is easily their master; whoever attempts to destroy their illusions is always their victim.
+>
+> Gustave Le Bon
+---
+> Pleasure in the job puts perfection in the work.
+>
+> Aristotle
+---
+> What can be predicted easily does not carry much value; it is the unexpected that brings all the wealth.
+>
+> Atanas Matov
+---
+> The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.
+>
+> Alvin Toffler
+---
+> A man who willingly acknowledges his own weakness is strong in his own way.
+>
+> Ken Liu
+---
+> Repetition can be boring or tedious - which is why so few people ever master anything.
+>
+> Hal Elrod
+---
+> I would rather have questions that can't be answered, than answers that can't be questioned.
+>
+> Richard Feynman
 ---

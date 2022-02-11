@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2021-12-10T21:55
+modified: 2022-02-09T14:40
 place: Phuket, Thailand
 comments: true
 
@@ -147,7 +147,7 @@ Selling scalable products (10% annually is considered a very good result) to wea
 
 Bot classification:
 
-- Helper bots (human makes decisions, bot manages orders, risks, provides signals)
+- Algorithmic expert advisors (EA) (human makes decisions, bot manages orders, risks, provides signals)
 - Fully automated (bot makes decisions)
 
 > Bots are like startups: obviously some succeed; also obviously, most don't.
@@ -311,25 +311,23 @@ Some indicators:
 - Blue waves (VuManChu Cipher B)
 - Central Pivot Range
 
-## Trade plan and risk management
+VWAP - Large institutional buyers and mutual funds use the VWAP ratio to help move into or out of stocks with as small of a market impact as possible. Therefore, when possible, institutions will try to buy below the VWAP, or sell above it. This way their actions push the price back toward the average, instead of away from it.
 
-Success parts:
+## Consistent profitability
 
-- Consistency
-- Risk management
+Ingredients:
+
 - Edge in the market (statistical advantage)
+- Risk management
+- Consistency (for manual trading)
+- Psychology (for manual trading)
+- Journaling (for manual trading) or logging and monitoring/statistics
+
+### Edge in the market
 
 Trading is about probabilities, never certainties.
 
 An entry should not be based on an opinion, prediction, or emotions; it should be based on a statistical edge.
-
-Following a consistent set of actions leads to consistent results.
-
-Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
-
-> You can lose your opinion, or you can lose your money.
->
-> Adam Grimes
 
 ### Risk management
 
@@ -339,22 +337,28 @@ Do not set expectations on a trade, it will ruin the trade (robs ability to appr
 
 Attention to profit - a sign of immature, attention to losses - sign or experience.
 
-Managing risks:
+Parts of risk management:
 
-- Keep 1-5% of account exposed to risk (use stop orders) per trade
-- Can be increased to 10% for small accounts
-- Backtest
-- Test new ideas with paper trading first
-- Bots should have fuses to stop runaway trades and handle errors
+- Backtest and papertrade new strategies first
+- Cut loses short and maximize gains
+- Position sizing
+- Fuses
 
-Improperly sized positions affect the ability to be disciplined:
+#### Backtest and papertrade new strategies first
 
-- Sizing too large = more excited, frustrated, emotional, exhausted
-- Sizing too small = disinterest, boredom, sloppiness, lack of returns
+Backtest. Test new ideas with paper trading first.
 
 > Historical success is a necessary but not a sufficient condition for concluding that a method has predictive power and, therefore, is likely to be profitable in the future.
 >
 > Evidence-Based Technical Analysis by David Aronson
+
+#### Cut loses short and maximize gains
+
+Money is not made on entries; profits are only generated on the exit or a trade.
+
+Should try to maximize profits when right and minimize losses when wrong.
+
+The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
 
 After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
 
@@ -362,22 +366,64 @@ Booking partial gains as the asset is becoming profitable and raising stops to e
 
 Taking action to prevent a small loss from becoming a big loss should be considered a victory.
 
-The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
-
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
 
-Money is not made on entries; profits are only generated on the exit or a trade.
+Lower RR and higher win rate is more favorable than higher RR and lower win rate (if risk and reward are many times larger than commission) because easier to handle emotionally.
+
+#### Position sizing
+
+Keep 1-5% of account exposed to risk (use stop orders) per trade.
+Can be increased to 10% for small accounts.
+
+Improperly sized positions affect the ability to be disciplined:
+
+- Sizing too large = more excited, frustrated, emotional, exhausted
+- Sizing too small = disinterest, boredom, sloppiness, lack of returns
+
+#### Fuses
+
+After a losing trade - take a break to reduce emotional decision-making.
+
+Bots should have fuses to stop when:
+- unusually high trading activity (runaway trades)
+- unexpected high daily volume
+- overlimits for a single trade volume
+
+Bots should be handling errors (closing positions, sending alerts, etc.).
+
+### Consistency
+
+Following a consistent set of actions leads to consistent results.
 
 ### Psychology
+
+If smart people would be able to be consistently profitable in trading, we would have many rich people.
+
+**Loss aversion** is the observation that human beings experience losses asymmetrically more severely than equivalent gains.
+Each next win gives less sattisfaction. Each loss adds to pain of previous loses.
+Negative emotions have a stronger impact than positive ones.
+According to one study, the pain of losing $100 still outweighs the happiness of gaining $240.
+
+It is difficult to accept own mistakes and change.
 
 > Trading becomes easy once a trader learns to ignore her own personal opinions, stops trying to be right, stops focusing on making money, and instead focuses on the process of trading.
 >
 > The Tao of Trading by Simon Ree
 
+Trading requires large time investments in experiments.
+
+> Repetition can be boring or tedious - which is why so few people ever master anything.
+>
+> Hal Elrod
+
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
 
-After a losing trade - take a break to reduce emotional decision-making.
+Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
+
+> You can lose your opinion, or you can lose your money.
+>
+> Adam Grimes
 
 To grow: objectivity, impartiality, discipline, focus.
 
@@ -391,6 +437,10 @@ This is not a trader's job:
 
 ## Automated trading
 
+> MBAs once scoffed at the thought of relying on a scientific and systematic approach to investing, confident they could hire coders if they were ever needed. Today, coders say the same about MBAs, if they think about them at all.
+>
+> The Man Who Solved the Market by Gregory Zuckerman
+
 Client algorithmic trading infrastructure:
 
 - Communication with exchange (pulling market data and order entry)
@@ -400,11 +450,21 @@ Client algorithmic trading infrastructure:
 - Visualization, analytics
 - Signal research framework
 
+Statistically significant signals (Medallion):
+
+- Identify anomalous patterns in historic pricing data
+- Make sure the anomalies were statistically significant, consistent over time, nonrandom
+- Identified pricing behavior could be explained in a reasonable way
+
 ## Definitions
 
 Gambling - when odds are unknown and wishing for luck.
 
 ## Strategies
+
+> Profitable trading does not have a secret recipe for success. There are as many different ways to be profitable as there are traders who know how to utilise the good trading systems out there.
+> 
+> The Quiet Trader by Atanas Matov
 
 Strategies:
 
@@ -454,6 +514,7 @@ TA-based:
 - Round numbers are significant
 - Wait for narrowing and put entries at both sides
 - For areas without support/resistance - use fib
+- Disbalance in candles grow with volume grow
 
 OB based:
 
@@ -505,6 +566,10 @@ Other:
 - Look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
 - Estimate stops by cluster info
 - When btc drop - other drop even more? Arbitrage?
+
+## Vocabulary
+
+Sharpe Ratio - helps investors to understand the return of an investment compared to its risk.
 
 ## Links
 
@@ -566,6 +631,7 @@ Treminals:
 - [Gunbot](https://www.gunbot.com/) - desktop trading bot
 - [Margin.de](https://margin.de/)
 - [DDP Platform](https://dapowerplay.com/) - trading bot with visual strategy builder
+- [DAS](https://dastrader.com/)
 
 Scalping:
 
@@ -592,7 +658,14 @@ Open source:
 - [Crypto Signal](https://github.com/CryptoSignal/crypto-signal)
 - [BX-bot](https://github.com/gazbert/bxbot)
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
+- [Quant-trading](https://github.com/je-suis-tm/quant-trading)
+
+Backtesting:
+
 - [Backtrader](https://www.backtrader.com/)
+- [VectorBT](https://vectorbt.dev/)
+- [PyAlgoTrade](https://gbeced.github.io/pyalgotrade/)
+- [Jesse](https://github.com/jesse-ai/jesse)
 
 ### Data
 
@@ -619,6 +692,10 @@ Analytics:
 - [TradingView Crypto screener](https://www.tradingview.com/crypto-screener/)
 - [Intotheblock](https://app.intotheblock.com/)
 - [Crypto Bubbles](https://cryptobubbles.net/)
+- [Trade ideas scanner](https://www.trade-ideas.com/)
+- [Crypto Quant](https://cryptoquant.com/)
+- [Glassnode](https://glassnode.com/)
+- [Dune analytics](https://dune.xyz/)
 
 Signals:
 
@@ -668,3 +745,5 @@ Training:
 - [Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh
 - [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
 - [The Ultimate Guide to Swing Trading](https://www.amazon.com/Ultimate-Guide-Swing-Trading-ebook/dp/B09DWDYCJL) by Steve and Holly Burns
+- [The Man Who Solved the Market by Gregory Zuckerman](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X)
+- [The Quiet Trader by Atanas Matov](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT)
