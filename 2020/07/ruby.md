@@ -1,7 +1,7 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2021-12-13T13:57
+modified: 2022-02-11T14:22
 place: Phuket, Thailand
 
 # Ruby notes
@@ -14,11 +14,52 @@ Expression oriented.
 
 `rvm` - ruby version manager.
 
+`gem install rails` - package manager.
+
+## Program structure
+
+```ruby
+#!/usr/bin/ruby -w  # shebang
+# -*- coding: utf-8 -*-
+# or like this (the above one can be understood by editors):
+# coding: utf-8
+
+require 'socket'
+...  # code
+
+__END__
+
+...  # data
+```
+
+## Syntax
+
+Break to new line:
+
+```ruby
+a = 1 +
+2 # works because the first line contains not a complete expression
+
+Module1::
+  Submodule # same thing
+
+a = Array.new
+  .push('example') # works because the first characted is period
+```
+
 ## Types
 
 Evalutes to false: nil, false
 
 TRUE, FALSE, NIL constants, but lowercase is preferred.
+
+### Literals
+
+Literals = appear directly in source code:
+
+- numbers
+- strings
+- regular expressions
 
 ### Arrays
 
@@ -37,6 +78,8 @@ Use freeze to prevent future modification.
 
 # interpolation
 "Some text #{1 + 1}"
+"Some test #$global_variable_name"
+# also can be used sprintf("pi is about %.4f", Math::PI)
 
 %|Some text|
 
@@ -59,6 +102,33 @@ HEREDOC
 "%d %s" % [3, 'rubies']
 ```
 
+Embedded documents as multiline comments:
+```ruby
+=begin Multiline comment ...
+Another line ...
+=end
+```
+
+Multiline:
+```ruby
+with_newline = 'line 1 \
+line2'
+
+without_newline = 'line 1 '\
+'line 2'
+
+a = "This string literal
+has two lines \
+but is written on three."
+```
+
+Double quoted `"` string literals support `\t`, `\n`, `\r`, `\"`.
+
+Unicode:
+```ruby
+"\u{A5}"  # same as \u00A5
+```
+
 Regular excpressions:
 ```ruby
 /\d+/
@@ -71,6 +141,29 @@ Conversion:
 "1".to_i
 "1.1".to_f
 ```
+
+### Numbers
+
+Numeric:
+
+- Integer (Fixnum (31 bits), Bignum)
+- Float
+- Complex
+- BigDecimal
+- Rational
+
+Examples:
+
+- `1_000`
+- `0.1`
+- `6.02e5` (6.02 * 10^5)
+- `0377` (octal)
+- `0b1101`
+- `0xff`
+
+`1 / 0` -> ZeroDivisionError
+`1. / 0` -> Infinity
+`0.0 / 0.0` -> NaN
 
 ### Symbols
 
@@ -386,7 +479,8 @@ ruby -e 'puts "Hello world!"'
 ```
 
 ```bash
-irb
+irb  # interactive ruby
+irb --simple-prompt
 pry
 ```
 
@@ -395,6 +489,11 @@ pry
 ```ruby
 require 'pry'
 binding.pry
+```
+
+Documentation:
+```bash
+ri Math::sqrt
 ```
 
 ## RSpec
