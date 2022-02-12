@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2022-02-09T14:40
+modified: 2022-02-12T19:03
 place: Phuket, Thailand
 comments: true
 
@@ -71,6 +71,14 @@ Even if a trade entry had a resoning logic, after the entry, trader often sucumb
 
 More risky assets are sold and the money is moved into safer assets (market rotation).
 It is not because the safer assets have room to advance, but because they are likely to hold their value better in an economic downturn.
+
+### Randomness and efficiency
+
+There is a theory that claims that market moves are a random walk and the future price can not be predicted.
+Although we can not predict price precisely, there are patterns in the market that occurs with probability high enough to use them in trading.
+
+Markets are efficient, unless we know if the market is trending or ranging.
+If the market is trending - we can benefit from it by following the trend; if ranging - by lower and sell higher.
 
 ### What traders are looking at
 
@@ -145,6 +153,8 @@ Selling scalable products (10% annually is considered a very good result) to wea
 
 ### Bots impact
 
+Algorithmic trading now accounts for over 80% of the equity trading volume (2019).
+
 Bot classification:
 
 - Algorithmic expert advisors (EA) (human makes decisions, bot manages orders, risks, provides signals)
@@ -170,7 +180,9 @@ They are basically not impacting price much, they are waiting for others to move
 
 Other bots could trade based on TA indicators, news, etc. They are just adding to the retail traders crowd.
 
-### Environments
+### Regime change
+
+Regime shift is caused by market structure or macroeconomic changes.
 
 | Bull                  | Bear                  | Sideways              | Volatile                  |
 |--------------------   |--------------------   |--------------------   |-----------------------    |
@@ -329,6 +341,29 @@ Trading is about probabilities, never certainties.
 
 An entry should not be based on an opinion, prediction, or emotions; it should be based on a statistical edge.
 
+Strategies can be found:
+
+- youtube
+- academic papers
+- forums
+- books
+- trading view
+- github
+
+> What truly make a strategy proprietary and its secrets worth protecting are the tricks and variations that you have come up with, not the plain-vanilla version.
+> 
+> Quantitative Trading by Ernest P. Chan
+
+The goal is to have a strategy with high Sharpe ratio (low drowdown), so we can use higher leverage in order to achieve maximum long term growth.
+
+Strategy characteristics:
+
+- Sharpe ration - consistency
+- Drawdown - (global maximum - current equety) / global maximum
+- Maximum drawdown - (global maximum (high watermark) - global minimum (global minimum should accur after global maximum)) / global maximum
+- High watermark - global equety maximum
+- Maximum drawdown duration - maximum time to recover loses
+
 ### Risk management
 
 > The most important rule of trading is to play great defense, not great offense.
@@ -381,6 +416,8 @@ Improperly sized positions affect the ability to be disciplined:
 - Sizing too large = more excited, frustrated, emotional, exhausted
 - Sizing too small = disinterest, boredom, sloppiness, lack of returns
 
+Leverage can be used to maximize strategy output. Should be chosen to withstand strategy maximum drawdown.
+
 #### Fuses
 
 After a losing trade - take a break to reduce emotional decision-making.
@@ -405,6 +442,8 @@ Each next win gives less sattisfaction. Each loss adds to pain of previous loses
 Negative emotions have a stronger impact than positive ones.
 According to one study, the pain of losing $100 still outweighs the happiness of gaining $240.
 
+There is a rational part in loss aversion, losses can lead to capital wiped out, even if size of wins is higher than of losses and chances for each outcome is 50/50 because any capital is limited.
+
 It is difficult to accept own mistakes and change.
 
 > Trading becomes easy once a trader learns to ignore her own personal opinions, stops trying to be right, stops focusing on making money, and instead focuses on the process of trading.
@@ -416,6 +455,8 @@ Trading requires large time investments in experiments.
 > Repetition can be boring or tedious - which is why so few people ever master anything.
 >
 > Hal Elrod
+
+Boredom associated with slow progress.
 
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
 
@@ -437,6 +478,10 @@ This is not a trader's job:
 
 ## Automated trading
 
+> A lot of us are in the business of quantitative trading because it is exiting, intellectually stimulating, financially rewarding, or perhaps it is the only thing we are good at doing.
+>
+> Quantitative Trading by Ernest P. Chan
+
 > MBAs once scoffed at the thought of relying on a scientific and systematic approach to investing, confident they could hire coders if they were ever needed. Today, coders say the same about MBAs, if they think about them at all.
 >
 > The Man Who Solved the Market by Gregory Zuckerman
@@ -456,6 +501,15 @@ Statistically significant signals (Medallion):
 - Make sure the anomalies were statistically significant, consistent over time, nonrandom
 - Identified pricing behavior could be explained in a reasonable way
 
+### Machine learning
+
+Machine learning struggles to predict future price moves.
+It can be used for adjusting strategies based on market conditions (predicting our strategy performance).
+
+### Data
+
+Recent data can be not enough for testing, older data can be absolete.
+
 ## Definitions
 
 Gambling - when odds are unknown and wishing for luck.
@@ -468,14 +522,16 @@ Gambling - when odds are unknown and wishing for luck.
 
 Strategies:
 
-- Trend following strategies
-- Mean reversion trading strategies
-- Statistical arbitrage and pairs trading
+- Statistical arbitrage
 - Arbitrage (one exchange or cross-exchange) ([triangular arbitrage](https://forum.gekko.wizb.it/thread-56746.html))
 - Market making
 - Index fund balancing
-- TA-based strategies
-- Momentum based strategies
+
+Statistical arbitrage:
+
+- Trend following (momentum) strategies
+- Mean reversion strategies
+- Pairs trading
 
 Market making:
 
@@ -566,10 +622,20 @@ Other:
 - Look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
 - Estimate stops by cluster info
 - When btc drop - other drop even more? Arbitrage?
+- lower capital when start losing
+
+## Business
+
+Difference between trading and other small businesses: no marketing if you manage only your own money, otherwise your perfomance is the best marketing.
 
 ## Vocabulary
 
-Sharpe Ratio - helps investors to understand the return of an investment compared to its risk.
+Sharpe Ratio - consistency of returns. Helps investors to understand the return of an investment compared to its risk.
+When < 1 - not suitable for a stand-alone strategy. Profitable almost every month - > 2, profitable almost every day - > 3.
+
+Black swan (fat tail) events - unexpected events (black swan was discovered in Australia in XVII century).
+
+Alpha decay - decreasing of strategy performance. Happens when many are trading the same strategy. Alpha shows how much the strategy outperforms the market on a risk-adjusted basis.
 
 ## Links
 
@@ -745,5 +811,6 @@ Training:
 - [Hands-On Financial Trading with Python](https://www.amazon.com/Hands-Financial-Trading-Python-backtesting/dp/1838982884) by Jiri Pik, Sourav Ghosh
 - [The Tao of Trading](https://www.amazon.com/Tao-Trading-Abundant-Wealth-Condition/dp/1544508166) by Simon Ree
 - [The Ultimate Guide to Swing Trading](https://www.amazon.com/Ultimate-Guide-Swing-Trading-ebook/dp/B09DWDYCJL) by Steve and Holly Burns
-- [The Man Who Solved the Market by Gregory Zuckerman](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X)
-- [The Quiet Trader by Atanas Matov](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT)
+- [The Man Who Solved the Market](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X) by Gregory Zuckerman
+- [The Quiet Trader](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT) by Atanas Matov
+- [Quantitative Trading](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business-ebook/dp/B097QGPVND) by Ernest P. Chan

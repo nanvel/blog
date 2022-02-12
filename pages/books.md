@@ -168,10 +168,10 @@ modified: 2021-10-10T11:55
 
 - [+] The Man Who Solved the Market by Gregory Zuckerman
 - The Quiet Trader by Atanas Matov
+- [+] Quantitative Trading by Ernest P. Chan
 
 ## In progress
 
-- Quantitative Trading by Ernest P. Chan
 - Principles for Dealing with the Changing World Order by Ray Dalio
 - The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 - The Electronic Day Trader by Mark Friedfertig and George West
