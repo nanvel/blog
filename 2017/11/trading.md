@@ -184,6 +184,12 @@ Other bots could trade based on TA indicators, news, etc. They are just adding t
 
 Regime shift is caused by market structure or macroeconomic changes.
 
+Regimes are periods of mean-revertion and trending behaviors, high and low volatility. Each regime requires different strategies or or strategy parameters.
+Another regime is no clear regime, when price is random walking.
+Regimes can be different for different time horizons.
+
+Markets spend more time in mean-reversion regime than in trending.
+
 | Bull                  | Bear                  | Sideways              | Volatile                  |
 |--------------------   |--------------------   |--------------------   |-----------------------    |
 | Trend up              | Trend down            | Range bound           | No boundaries             |
@@ -387,9 +393,25 @@ Backtest. Test new ideas with paper trading first.
 >
 > Evidence-Based Technical Analysis by David Aronson
 
+Transaction costs should be take into account.
+Transaction costs:
+
+- Commission
+- Liquidity cost
+- Opportunity cost
+- Market impact
+- Slippage
+
 #### Cut loses short and maximize gains
 
 Money is not made on entries; profits are only generated on the exit or a trade.
+
+Exit strategies:
+
+- Fixed holding period
+- Target proce or profit
+- Exit signal
+- Stop price
 
 Should try to maximize profits when right and minimize losses when wrong.
 
@@ -403,6 +425,9 @@ Taking action to prevent a small loss from becoming a big loss should be conside
 
 Stop price can be calculated based on volatility (Average True Range can be used as a volatility indicator).
 Give some breath for stop price.
+
+Stop should be applied if price is in momentum, otherwise - it could reverse fast.
+Stop is beneficial in momentum regime and harmful in mean-revertion.
 
 Lower RR and higher win rate is more favorable than higher RR and lower win rate (if risk and reward are many times larger than commission) because easier to handle emotionally.
 
@@ -423,11 +448,18 @@ Leverage can be used to maximize strategy output. Should be chosen to withstand 
 After a losing trade - take a break to reduce emotional decision-making.
 
 Bots should have fuses to stop when:
+
 - unusually high trading activity (runaway trades)
 - unexpected high daily volume
 - overlimits for a single trade volume
 
 Bots should be handling errors (closing positions, sending alerts, etc.).
+
+Risks:
+
+- Model risk
+- Software risk
+- Natural disaster
 
 ### Consistency
 
@@ -435,14 +467,23 @@ Following a consistent set of actions leads to consistent results.
 
 ### Psychology
 
+Behavioral finance studies irrational financial decision-making.
+
 If smart people would be able to be consistently profitable in trading, we would have many rich people.
 
 **Loss aversion** is the observation that human beings experience losses asymmetrically more severely than equivalent gains.
 Each next win gives less sattisfaction. Each loss adds to pain of previous loses.
 Negative emotions have a stronger impact than positive ones.
 According to one study, the pain of losing $100 still outweighs the happiness of gaining $240.
+Causes some traders to exit their profitable position too soon because pain from possibly losing some of the current profits outweights the pleasure from gaining higher profits.
 
 There is a rational part in loss aversion, losses can lead to capital wiped out, even if size of wins is higher than of losses and chances for each outcome is 50/50 because any capital is limited.
+
+**Endowment effect** causes traders to hold on to a losing position for too long. Demand much more to give up the asset than they would pay to aquire it.
+
+**Status quo bias** causes traders to hold on to a losing position for too long. A preference for the current state of affairs.
+
+**Representativeness bias** - put too much weight on ecent experience and underweight long-term average.
 
 It is difficult to accept own mistakes and change.
 
@@ -530,8 +571,9 @@ Strategies:
 Statistical arbitrage:
 
 - Trend following (momentum) strategies
-- Mean reversion strategies
-- Pairs trading
+- Mean reversion strategies (time-series mean reversion)
+- Pairs trading (cross-sectiona mean reversion)
+- Seasonal trading (based on dates of year)
 
 Market making:
 
@@ -628,14 +670,24 @@ Other:
 
 Difference between trading and other small businesses: no marketing if you manage only your own money, otherwise your perfomance is the best marketing.
 
+High Sharpe ration is much easier to achieve with smaller account.
+
 ## Vocabulary
 
-Sharpe Ratio - consistency of returns. Helps investors to understand the return of an investment compared to its risk.
+[Sharpe Ratio](http://web.stanford.edu/~wfsharpe/art/sr/sr.htm) - consistency of returns. Helps investors to understand the return of an investment compared to its risk.
 When < 1 - not suitable for a stand-alone strategy. Profitable almost every month - > 2, profitable almost every day - > 3.
 
 Black swan (fat tail) events - unexpected events (black swan was discovered in Australia in XVII century).
 
 Alpha decay - decreasing of strategy performance. Happens when many are trading the same strategy. Alpha shows how much the strategy outperforms the market on a risk-adjusted basis.
+
+Data snooping bias - when strategy has many parameters and oveoptimized to perform on historical dataset and may perform purely on new data.
+
+Look ahead bias - using data that should not be available at the moment in backtest.
+
+Strategy capacity - how much a strategy can absorb without negative impacting its returns.
+
+High frequency trading - automated trading where trades are closed in the same day.
 
 ## Links
 
@@ -698,6 +750,7 @@ Treminals:
 - [Margin.de](https://margin.de/)
 - [DDP Platform](https://dapowerplay.com/) - trading bot with visual strategy builder
 - [DAS](https://dastrader.com/)
+- [QuantConnect](https://www.quantconnect.com/) - algorithmic trading platform
 
 Scalping:
 
