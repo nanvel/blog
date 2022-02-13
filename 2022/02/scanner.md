@@ -12,4 +12,4 @@ Can add scanners and visualizers, there is a record for each hit (a case) with n
 
 Live view for 2 latest cases.
 
-![scanner live](scanner_live.jpeg)
+![scanner live](mori_live.jpeg)
