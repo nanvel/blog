@@ -78,7 +78,7 @@ There is a theory that claims that market moves are a random walk and the future
 Although we can not predict price precisely, there are patterns in the market that occurs with probability high enough to use them in trading.
 
 Markets are efficient, unless we know if the market is trending or ranging.
-If the market is trending - we can benefit from it by following the trend; if ranging - by lower and sell higher.
+If the market is trending - we can benefit from it by following the trend; if ranging - buy lower and sell higher.
 
 ### What traders are looking at
 
