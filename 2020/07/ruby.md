@@ -89,7 +89,7 @@ Use freeze to prevent future modification.
 # %r - regular expression
 # %s - symbol
 # %w - array of strings
-# %x - backtick
+# %x - backtick (can use instead backtick) - it will be executed, for example `ls`
 
 # multiline
 result = <<HEREDOC
@@ -143,6 +143,11 @@ Conversion:
 ```ruby
 "1".to_i
 "1.1".to_f
+```
+
+Character literals:
+```
+?A # equal to char('A')
 ```
 
 ### Numbers

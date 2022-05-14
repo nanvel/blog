@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2021-10-10T11:55
+modified: 2022-05-14T14:01
 
 # Books
 
@@ -169,11 +169,12 @@ modified: 2021-10-10T11:55
 - [+] The Man Who Solved the Market by Gregory Zuckerman
 - The Quiet Trader by Atanas Matov
 - [+] Quantitative Trading by Ernest P. Chan
+- The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 
 ## In progress
 
+- Effective TypeScript by Dan Vanderkam
 - Principles for Dealing with the Changing World Order by Ray Dalio
-- The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 - The Electronic Day Trader by Mark Friedfertig and George West
 - Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson
