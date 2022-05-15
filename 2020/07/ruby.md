@@ -641,6 +641,32 @@ Expect:
 - be_empty
 - eq
 
+## Zen
+
+[The Zens of Python and Ruby](https://www.automation-excellence.com/blog/zens-python-and-ruby)
+
+| The Zen of Python by Tim Peters                                       | The Zen of Ruby by Eric Pierce                                           |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Beautiful is better than ugly.                                        | Beauty is in the eye of the beholder.                                    |
+| Explicit is better than implicit.                                     | Implicit is preferable to explicit.                                      |
+| Simple is better than complex.                                        | Simple is boring.                                                        |
+| Complex is better than complicated.                                   | Complex is interesting.                                                  |
+| Flat is better than nested.                                           | Delegate the details to someone else.                                    |
+| Sparse is better than dense.                                          | If possible, make it a one-liner.                                        |
+| Readability counts.                                                   | Readability is sometimes nice.                                           |
+| Special cases aren't special enough to break the rules.               | Special cases are everywhere; the rules can't cover them all.            |
+| Although practicality beats purity.                                   | When in doubt, monkeypatch.                                              |
+| Errors should never pass silently.                                    | Errors should be suppressed.                                             |
+| Unless explicitly silenced.                                           | Unless whiny nils is turned on.                                          |
+| In the face of ambiguity, refuse the temptation to guess.             | When in doubt, make assumptions about what the user wanted.              |
+| There should be one-- and preferably only one --obvious way to do it. | There should be many-- preferably dozens --of non-obvious ways to do it. |
+| Although that way may not be obvious at first unless you're Dutch.    | What's obvious to you may be completely unintuitive to someone else.     |
+| Now is better than never.                                             | Now is better than later.                                                |
+| Although never is often better than *right* now.                      | And later is better than never.                                          |
+| If the implementation is hard to explain, it's a bad idea.            | If the design is flawed, explain why in the implementation docs.         |
+| If the implementation is easy to explain, it may be a good idea.      | If the design is good, don't bother with implementation docs.            |
+| Namespaces are one honking great idea -- let's do more of those!      | Namespaces are completely unnecessary -- let's make everything global!   |
+
 ## Links
 
 [Ruby at LaunchSchool](https://launchschool.com/books/ruby/read/introduction)
