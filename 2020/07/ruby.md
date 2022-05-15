@@ -1,10 +1,12 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-02-11T14:22
+modified: 2022-05-15T20:24
 place: Phuket, Thailand
 
 # Ruby notes
+
+loc: 113
 
 [TOC]
 
@@ -49,8 +51,6 @@ a = Array.new
 
 ## Types
 
-Evalutes to false: nil, false
-
 TRUE, FALSE, NIL constants, but lowercase is preferred.
 
 ### Literals
@@ -61,9 +61,47 @@ Literals = appear directly in source code:
 - strings
 - regular expressions
 
+### Boolean
+
+Evalutes to false: nil, false. Other - true.
+
 ### Arrays
 
+Ruby's arrays are untyped and mutable.
+
 `<<` - append operator.
+
+Last element:
+```ruby
+s[s.length - 1]
+```
+
+`%w` and `%W` - array literals.
+
+Creation:
+```ruby
+Array.new(3) # [nil, nil, nil]
+
+Array.new(2, 0) # [0, 0]
+
+Array.new(3) {|i| i + 1} # [1, 2, 3]
+```
+
+Ranges:
+```ruby
+a[-2..-1] # last 2 elements
+
+a[-2,2] = nil # delete last 2 elements
+```
+
+Operations:
+```ruby
+a | b
+a & b
+
+# clear, compact!, delete_if, each_index, empty?, fill, flatten!, include?, 
+# index, join, pop, push, reverse,reverse_each, rindex, sort, sort!, uniq!, unshift.
+```
 
 ### Strings
 
@@ -132,11 +170,39 @@ Unicode:
 "\u{A5}"  # same as \u00A5
 ```
 
+Edit string:
+```ruby
+s[-1] = 'x'
+
+s[5,0] = 'y' # insert without deleting
+
+s[5,2] = '' # delete 2 positions 
+```
+
+Ranges:
+```ruby
+s[0,2]  # first 2 letters (psition, length)
+
+s[2..3] # positions 2 and 3
+s[2...3] # position 2 only
+```
+
+Contains:
+```ruby
+s['x'] # contails L
+
+while(s['x'])
+  s['x'] = 'y'
+end
+```
+
 Regular excpressions:
 ```ruby
 /\d+/
 
 "powerball" =~ /b/
+
+s[/[aeiou]/] = '*' # replace
 ```
 
 Conversion:
@@ -148,6 +214,17 @@ Conversion:
 Character literals:
 ```
 ?A # equal to char('A')
+```
+
+Succ method:
+```ruby
+'a'.succ # 'b'
+'b'.succ # 'c'
+```
+
+Encodings:
+```ruby
+Encoding.list
 ```
 
 ### Numbers
@@ -176,17 +253,33 @@ Examples:
 ### Symbols
 
 Symbols - immutable interned strings. Can be compared by identity rather than by textual content.
+Immutable and not garbage-collected strings.
 
 ```ruby
 :my_symbol
+
+:'my_symbol'
+
+name = 'my_symbol'
+:"#{name}"
+
+%s[""] # :'"'
 ```
 
 ### Hashes
 
 ```ruby
 { "a" => 1 }
-{ a: 1 }
+{ a: 1 } # same as { :a => 1 }, just colon moves to the end of the hash key and replaces the arrow.
 ```
+
+Hash keys must be hashable (should have method `hash`, returns fixnum hashcode).
+
+#### Strings as keys
+
+Because strings are mutable but commonly used as hash keys, Ruby treats them as a special case and makes private copies of all strings used as keys.
+
+Consider making a private copy or calling the freeze method. If you must use mutable hash keys, call the rehash method of the Hash every you mutate a key.
 
 ### Ranges
 
@@ -462,6 +555,8 @@ end
 def *(factor)
 end
 ```
+
+`new` method - allocates memory to hold the new object, initializes the state of that newly allocated "empty" object by invoking `initialize` method with `new` arguments.
 
 ### Memoization
 
