@@ -6,7 +6,7 @@ place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 113
+loc: 163
 
 [TOC]
 
@@ -50,6 +50,8 @@ a = Array.new
 ```
 
 ## Types
+
+Type of an object - set of behaviours that characterize the object (the set of methods it responds to).
 
 TRUE, FALSE, NIL constants, but lowercase is preferred.
 
@@ -250,6 +252,14 @@ Examples:
 `1. / 0` -> Infinity
 `0.0 / 0.0` -> NaN
 
+#### Conversion
+
+```ruby
+a = 1
+Float(a)
+a.to_f
+```
+
 ### Symbols
 
 Symbols - immutable interned strings. Can be compared by identity rather than by textual content.
@@ -330,6 +340,17 @@ dave = Customer.new("Dave", "123 Main")
 Encoding::Converter  # namespace
 ```
 
+### `*` - splat operator
+
+```ruby
+z, y = *[1, 2]
+x, y, z = 1, 2 # z = nil
+x, y = 1, 2, 3 # 3 is not assigned
+x, y, z = 1, *[2, 3]
+x, *y = 1, 2, 3 # x = 1, y = [2, 3]
+*x, y = 1, 2, 3 # x = [1, 2], y = 3
+```
+
 ### Loops
 
 ```ruby
@@ -375,6 +396,10 @@ Parallel assignment:
 ```ruby
 x, y = 1, 2
 ```
+
+### Global functions
+
+Global functions are defined as private methods of the Object class.
 
 ### Methods
 
@@ -483,6 +508,25 @@ else
 end
 ```
 
+#### `===` - case equality
+
+For some classes `===` is a membership or matching operator.
+
+```ruby
+(1..10) === 5
+/\d+/ === '123'
+String === 's'
+:s === 's'
+```
+
+#### `<=>` operator
+
+```ruby
+1 <=> 5 # -1
+5 <=> 5 # 0
+9 <=> 5 # 1
+```
+
 ### Iterators
 
 ```ruby
@@ -525,6 +569,10 @@ end
 
 A class is a collection of related methods that operate on the state of an object.
 
+Class instances may encapsulate any number of internal instances, but they expose only methods to the outside world.
+
+Assignment to an attribute of array elemt is actually Ruby shorthand for method invocation.
+
 Classes and modules are "open", and can be modified and extended at runtime.
 
 ```ruby
@@ -566,12 +614,41 @@ def something
 end
 ```
 
+### Copy
+
+Shallow copy:
+```ruby
+obj.clone
+obj.dup
+```
+
+If an object defines `initialize_copy` - if will be used to create a copy.
+
+Clone: copies both frozen and tainted objects.
+Dup: copies tainted state, copying a frozen object - returns an unfrozen copy.
+Clone: copies any singleton methods.
+Dup: does not copy singleton methods of an object.
+
+Deep copy:
+```ruby
+Marshal.load(Marshal.dump(o))
+```
+
 ### Output
 
 ```ruby
 puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
 print 'Hello!'  # prints the string (without appending a newline)
 p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
+```
+
+## Metaprogramming
+
+```ruby
+o.class
+o.class.superclass
+o.instance_if? String # o.class == String
+o.is_a? String # instance of any subclass os String, String === o
 ```
 
 ## Debugging
@@ -666,6 +743,14 @@ Expect:
 | If the implementation is hard to explain, it's a bad idea.            | If the design is flawed, explain why in the implementation docs.         |
 | If the implementation is easy to explain, it may be a good idea.      | If the design is good, don't bother with implementation docs.            |
 | Namespaces are one honking great idea - let's do more of those!       | Namespaces are completely unnecessary - let's make everything global!    |
+
+## Vocabulary
+
+The `arity` of an operator - the number of operands it operates on.
+
+## Libs
+
+[Dry-rb](https://dry-rb.org/)
 
 ## Links
 
