@@ -6,7 +6,7 @@ place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 201
+loc: 216
 
 [TOC]
 
@@ -326,6 +326,8 @@ Consider making a private copy or calling the freeze method. If you must use mut
 
 Define variable scope.
 
+Block parameters are always local to their block, never assigns values to existing variables (Ruby 1.9).
+
 Use `{ }` or `do/end`.
 
 ```ruby
@@ -338,6 +340,11 @@ Check if block gived:
 
 ```ruby
 yield y if block_given? # iterator?
+```
+
+Block local variables:
+```ruby
+1.upto(4) { |x; y, z| p x } # y and z - are block local variables
 ```
 
 ### Struct
@@ -593,6 +600,30 @@ Rhyming methods:
 - `reject`
 - `inject`
 
+Turn array into enumerable when passign for processing:
+```ruby
+process(data.to_enum)
+```
+
+Usage:
+```ruby
+for line, number in text.each_line.with_index
+  p "#{number + 1}: #{line}"
+end
+```
+
+Turning externally iterable into an Enumerable:
+
+```ruby
+module Iterable
+  include Enumerable
+
+  def each
+    loop { yield self.next }
+  end
+end
+```
+
 ### Iterators
 
 In Ruby, the iterator method is in control and "pushes" values to the block that wants them. The most of other languages do the opposite: the client code that uses the iterator is in control and "pulls" values from the iterator when it needs them.
@@ -601,6 +632,8 @@ In Ruby, the iterator method is in control and "pushes" values to the block that
 numbers = [1, 2, 3]
 numbers.each { |n| puts n }
 ```
+
+Use `next` instead of return if want to return specific value(s) from the block.
 
 ### Exceptions
 
@@ -822,6 +855,10 @@ Expect:
 The `arity` of an operator - the number of operands it operates on.
 
 Iterator - any method that uses the `yield` statement.
+
+External iterator - when the client controls the iteration (we call next when we need the next element, raises `StopIteration` when no more elements).
+
+Internal iterator - when the iterator controls the iteration.
 
 ## Libs
 
