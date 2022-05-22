@@ -6,7 +6,7 @@ place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 163
+loc: 201
 
 [TOC]
 
@@ -67,6 +67,15 @@ Literals = appear directly in source code:
 
 Evalutes to false: nil, false. Other - true.
 
+`and`, `or` and `not` are low-precence versions of `&&`, `||`, `!`.
+
+Bool operators precence:
+
+- `&&`
+- `||`
+- `and`
+- `or`
+
 ### Arrays
 
 Ruby's arrays are untyped and mutable.
@@ -90,6 +99,11 @@ Array.new(3) {|i| i + 1} # [1, 2, 3]
 ```
 
 Ranges:
+```ruby
+x..y # Range.new(x, y)
+x...y # Range.new(x, y, true)
+```
+
 ```ruby
 a[-2..-1] # last 2 elements
 
@@ -320,6 +334,12 @@ do |var|
 end
 ```
 
+Check if block gived:
+
+```ruby
+yield y if block_given? # iterator?
+```
+
 ### Struct
 
 [Struct](https://ruby-doc.org/core-2.5.0/Struct.html)
@@ -353,8 +373,20 @@ x, *y = 1, 2, 3 # x = 1, y = [2, 3]
 
 ### Loops
 
+Statements: while, until, and for. Also custom looping using iterators.
+
+The loop variables of a for loop are not local to the loop, they remain defined even after the loop exits!
+
 ```ruby
 for i in arr do
+  puts i
+end
+```
+
+The only difference between the for version of the loop and the each version is that the block of code that follows an iterator does define a new variable scope.
+
+```ruby
+1..10.each do |i|
   puts i
 end
 ```
@@ -379,6 +411,12 @@ until x < 0:
 	puts x
 	x -= 1
 end
+```
+
+Inline:
+```ruby
+x = 0
+puts x = x + 1 while x < 10
 ```
 
 ### Variables
@@ -497,6 +535,16 @@ end
  true ? "True" : "Not True"
  ```
 
+Statement (or expression) modifier:
+```ruby
+code if expression
+code unless expression
+```
+
+#### Case
+
+The comparison is done using `===`!
+
 ```ruby
 case a
 when 1
@@ -505,6 +553,15 @@ when 2
 	puts 2
 else
 	puts 3
+end
+```
+
+```ruby
+case
+  when x == 1, y == 0 then
+    'one and y is zero'
+  when x == 2 then
+    'two'
 end
 ```
 
@@ -527,7 +584,18 @@ String === 's'
 9 <=> 5 # 1
 ```
 
+### Enumerable
+
+Rhyming methods:
+
+- `collect`
+- `select`
+- `reject`
+- `inject`
+
 ### Iterators
+
+In Ruby, the iterator method is in control and "pushes" values to the block that wants them. The most of other languages do the opposite: the client code that uses the iterator is in control and "pulls" values from the iterator when it needs them.
 
 ```ruby
 numbers = [1, 2, 3]
@@ -634,12 +702,17 @@ Deep copy:
 Marshal.load(Marshal.dump(o))
 ```
 
-### Output
+### Input/Output
 
 ```ruby
 puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
 print 'Hello!'  # prints the string (without appending a newline)
 p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
+```
+
+Program args:
+```ruby
+x = ARGV[0]
 ```
 
 ## Metaprogramming
@@ -747,6 +820,8 @@ Expect:
 ## Vocabulary
 
 The `arity` of an operator - the number of operands it operates on.
+
+Iterator - any method that uses the `yield` statement.
 
 ## Libs
 
