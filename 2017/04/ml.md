@@ -136,8 +136,32 @@ Has to both exploit and explore. Exploit - use what it knows in order to obtain 
 
 Subelements of a reinforcement learning system: a policy, a reward function, a value function, a model of the environment (optionally).
 
+### Definitions
+
+Works with late gratification.
+
+Mouse in a maze:
+
+- Agent - mouse
+- Environment - maze
+- State - current position (observations -> state)
+- Action - left/right (changes state)
+- Reward - cheese
+
+Techniques:
+
+- Deep Q learning
+
+#### Q Learning
+
+`Q(State[t], Action) = Reward[t] + DiscountFactor * Q(State[t + 1], OptimalAction)`
+
 ## Links
 
 [Machine Learning With Random Forests and Decision Trees](https://www.amazon.com/Machine-Learning-Random-Forests-Decision-ebook/dp/B01JBL8YVK) by Scott Hartshorn
 [In Depth: Parameter tuning for Random Forest](https://medium.com/@mohtedibf/in-depth-parameter-tuning-for-random-forest-d67bb7e920d)
 Reinforcement Learning by Richard S. Sutton and Andrew G. Barto
+
+### Courses
+
+- [Machine Learning: Beginner Reinforcement Learning in Python](https://www.udemy.com/course/machine-learning-beginner-reinforcement-learning-in-python/)

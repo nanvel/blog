@@ -173,6 +173,8 @@ modified: 2022-05-14T14:01
 
 ## In progress
 
+- Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
+- Deep Reinforcement Learning Hands-On by Maxim Lapan
 - Effective TypeScript by Dan Vanderkam
 - Principles for Dealing with the Changing World Order by Ray Dalio
 - The Electronic Day Trader by Mark Friedfertig and George West
@@ -188,7 +190,6 @@ modified: 2022-05-14T14:01
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Domain-Driven Design by Eric Evans
 - Design It! by Michael Keeling
-- Deep Reinforcement Learning Hands-On by Maxim Lapan
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
 
