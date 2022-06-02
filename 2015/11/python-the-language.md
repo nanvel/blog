@@ -292,6 +292,10 @@ When we pass mutable object as argument to function where it would be modified. 
 
 A closure is a function with an extended scope that encompasses nonglobal variables referenced in the body of the function but not defined there (can access nonglobal variables that are defined outside of its body).
 
+Another explanation: closures retain access to the local variables that were in scope when they were defined, even if they are invoked from a different scope.
+
+One more: closure is an object that is both an invocable function and a variable binding for that function.
+
 An example from the Fluent Python book:
 ```bash
 >>> def make_averager():

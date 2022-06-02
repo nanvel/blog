@@ -6,7 +6,7 @@ place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 248
+loc: 300
 
 [TOC]
 
@@ -333,7 +333,36 @@ Consider making a private copy or calling the freeze method. If you must use mut
 ->(a) { a + 1 }
 ```
 
+#### Procs vs Lambdas
+
+Blocks are syntactic structures in Ruby, can not be manipulated as objects.
+
+Depending on how the block is created, it is called a proc or lambda.
+
+Procs have block-like behavior and lambdas - method-like behavior.
+
+```ruby
+p = Proc.new { |x, y| x + y }
+l = lambda { |x, y| x + y }
+l = ->(x, y) { x + y }
+l = ->(x, y; z=1, c) { x + y } # z and c - local variables
+l.call(1, 2)
+p[1, 2]
+p.(1, 2)
+
+lambda?(p) # false
+lambda?(l) # true
+```
+
+`proc` method in `lambda` in 1.8 and `Proc.new` in 1.9.
+
+A Proc is like a block, if you call return - it will return from the method that encloses the block.
+
+Proc and lambda are closures. Methods are not closures.
+
 ### Blocks
+
+Unlike methods, blocks do not have names, and they can only be invoked indirectly through an iterator method.
 
 Define variable scope.
 
@@ -365,6 +394,12 @@ Block local variables:
 ```ruby
 1.upto(4) { |x; y, z| p x } # y and z - are block local variables
 ```
+
+#### Proc object
+
+A proc object represent a block.
+
+Both procs and lambdas are functions rather than methods invoken on an object.
 
 ### Struct
 
@@ -483,7 +518,13 @@ Global functions are defined as private methods of the Object class.
 
 ### Methods
 
+A method is a named block of parameterized code associated with one or more objects.
+
+Ruby methods are not objects.
+
 Methods are defined with the `def` keyword. The return value of a method is the value of the last expression evaluated in its body.
+
+Methods are always invoked on an object (the receiver, and methods are called messages, messages are sent to receiver).
 
 ```ruby
 def say
@@ -549,6 +590,46 @@ end
 
 Often exlamation marks is used in mutator method that alters the objects in place.
 Example: `#sort` vs `#sort!`.
+
+Singleton methods are available on a single object:
+
+```ruby
+o = 'message'
+def o.printme
+  puts self
+end
+```
+
+Undefine method:
+
+```ruby
+undef my_method
+```
+
+Alias method:
+```ruby
+def my_method
+end
+
+alias my_method_new_name my_method
+```
+
+Params:
+
+```ruby
+def a_method(s, len=10) end
+def a_method(s, *a) end
+def a_method(s:, len: 10) end
+```
+
+Methods can be represented as an instances of the Method class:
+
+```ruby
+m = 0.method(:succ)
+p = m.to_proc
+```
+
+Methods are not closures. The only binding is self - the object on which the method is to be invoked.
 
 ### Flow control
 
@@ -780,6 +861,8 @@ class Customer
 end
 ```
 
+Class can be reopened (take existing class and open it).
+
 Extending a class:
 
 ```ruby
@@ -839,6 +922,22 @@ p 'Hello!'  # same a puts + converts objects to string (more programmer friendly
 Program args:
 ```ruby
 x = ARGV[0]
+```
+
+## Threads
+
+```ruby
+Thread.new { File.read(f) }
+```
+
+## Fibers
+
+Ruby's fibers are coroutines (semicoroutines), they are no lightweight threads.
+
+```ruby
+f = Fiber.new do |message|
+  message = Fiber.yield('Hello!')
+end
 ```
 
 ## Metaprogramming
@@ -952,6 +1051,8 @@ Iterator - any method that uses the `yield` statement.
 External iterator - when the client controls the iteration (we call next when we need the next element, raises `StopIteration` when no more elements).
 
 Internal iterator - when the iterator controls the iteration.
+
+Lambda - a function that can be manipulated as objects.
 
 ## Libs
 
