@@ -1,12 +1,12 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-05-15T20:24
+modified: 2022-06-02T15:22
 place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 216
+loc: 248
 
 [TOC]
 
@@ -32,6 +32,17 @@ require 'socket'
 __END__
 
 ...  # data
+```
+
+Execute code in the very beginning/end of the program:
+```ruby
+BEGIN {
+  ... # global init
+}
+
+END {
+  ... # global shutdown
+}
 ```
 
 ## Syntax
@@ -691,8 +702,47 @@ begin
     answer = number / divisor
 rescue ZeroDivisionError => e
   	puts e.message
+else
+  # when none of the rescue clauses are needed
+  # exceptions here will not be handler
+ensure
+  # code that always runs
 end
 ```
+
+!!! tip "return in ensure"
+    If an `ensure` clause includes a `return` statement, then exception propagation stops, and the containing method returns. `break` and `next` have similar effects.
+
+    If the body of a begin statement includes a return statement, the code in the ensure clause will be run before the method can actually return to its caller. Futhermore, if an ensure clause contains a return statement of its own, it will change the return value of the method.
+
+"Normal" errors, that typical Ruby programs try to handle, are subclasses of `StandardError`.
+If called with Exception object as a single argument - it raises that exception.
+If with string - created `StandardError` with messages = given text and raises it.
+Excption class can be given as argument because it has `exception` method, also string can be passes as the second argument and will be used as message.
+The third argument is backtrace (array if strings).
+
+```ruby
+raise ValueError
+raise ValueError, 'value error'
+```
+
+`$!` refers to the Exception object that is being handled.
+
+`rescue` does not define a new variable scope.
+
+```ruby
+rescue ValueError, TypeError => e
+rescue Exception # catch all
+rescue StandardError # retry
+  retry
+end
+```
+
+The code in the ensure clause is guaranteed to run, but it does not affect the value of the begin statement.
+
+#### Raise
+
+If raise is called without arguments - it creates a new RuntimeError without message and raises it.
 
 ### Modules
 
