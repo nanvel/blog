@@ -156,11 +156,24 @@ Techniques:
 
 `Q(State[t], Action) = Reward[t] + DiscountFactor * Q(State[t + 1], OptimalAction)`
 
+## Vocabulary
+
+Artificial Intelligence (AI) - the effort to automate intellectual tasks normally performed by humans.
+
+TensorFlow is an infrastructure layer for differentiable programming, a framework for manipulating N-dimensional arrays (tensors).
+
+Tensor - n-dimentional array.
+
+Machine Learning (ML) - a part of AI. Figures out rules for us by looking at input and output data.
+
+Neural Networks - a form of ML. Uses a layered representation of data.
+
 ## Links
 
 [Machine Learning With Random Forests and Decision Trees](https://www.amazon.com/Machine-Learning-Random-Forests-Decision-ebook/dp/B01JBL8YVK) by Scott Hartshorn
 [In Depth: Parameter tuning for Random Forest](https://medium.com/@mohtedibf/in-depth-parameter-tuning-for-random-forest-d67bb7e920d)
 Reinforcement Learning by Richard S. Sutton and Andrew G. Barto
+[TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial](https://www.youtube.com/watch?v=tPYj3fFJGjk)
 
 ### Courses
 
