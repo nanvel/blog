@@ -336,6 +336,14 @@ do |var|
 end
 ```
 
+Accept block:
+
+```ruby
+def print_message(&b)
+  puts(b.call)
+end
+```
+
 Check if block gived:
 
 ```ruby
@@ -425,6 +433,22 @@ Inline:
 x = 0
 puts x = x + 1 while x < 10
 ```
+
+Break out from nested loops:
+```ruby
+for a in aa do
+  catch :my_error do
+    for b in bb do
+      for c in cc do
+        throw :my_error
+      end
+    end
+  end
+end
+```
+
+!!! tip "Throw and return value"
+    If `throw` is called, then the return value of the corresponding `catch` is, by default, nil. You can, however, specify an arbitrary return value for catch by passing a second argument to `throw`.
 
 ### Variables
 
@@ -547,6 +571,25 @@ Statement (or expression) modifier:
 code if expression
 code unless expression
 ```
+
+#### Altering control flow
+
+`return` - method exit and return a value to its caller.
+
+!!! tip "Nested within blocks"
+    Return is remarkably consistent, it always causes the enclosing method to return, regardless of how deeply nested within blocks it is.
+
+`break` - exit loop (or iterator).
+
+`next` - skip the rest of the current iteration and move to the next iteration.
+
+`redo` - restart loop (or iterator) from the beginning.
+
+`retry` - restart an iterator, reevaluate the entire expression (can be also used in exception handling).
+
+`throw/catch` - exception propagation and handling.
+
+Ruby's `catch` method defines a labeled block of code, and Ruby's `throw` method causes that block to exit.
 
 #### Case
 
