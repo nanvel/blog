@@ -627,6 +627,9 @@ Methods can be represented as an instances of the Method class:
 ```ruby
 m = 0.method(:succ)
 p = m.to_proc
+
+unbound_m = Fixnum.instance_method('+')
+unbound_m.bind(2).call
 ```
 
 Methods are not closures. The only binding is self - the object on which the method is to be invoked.
