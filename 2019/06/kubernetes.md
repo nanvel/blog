@@ -1,6 +1,6 @@
 labels: Draft
 created: 2019-06-13T11:06
-modified: 2021-10-02T14:45
+modified: 2022-06-16T10:08
 place: Phuket, Thailand
 
 # Kubernetes
@@ -28,4 +28,16 @@ kubectl get cronjob -n <ns>
 Show cron job logs:
 ```bash
 kubectl logs <cron pod name> -n <ns>
+```
+
+## Secrets
+
+Show secret content:
+```bash
+kubectl get secret <secret name> -n <ns> -o jsonpath='{.data.*}' | base64 -d
+```
+
+List secrets:
+```bash
+kubectl get secrets -n <ns>
 ```
