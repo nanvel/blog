@@ -1,12 +1,12 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-06-02T15:22
+modified: 2022-08-13T17:32
 place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 352
+loc: 407
 
 [TOC]
 
@@ -34,6 +34,10 @@ __END__
 ...  # data
 ```
 
+`load` and `require` serve similar purposes, though require is much more commonly used.
+`require_relative` was introduced in Ruby 1.9.
+`load` can also load binary extensions. `load` expects complete filename. `load` can load the same file multiple times.
+
 Execute code in the very beginning/end of the program:
 ```ruby
 BEGIN {
@@ -43,6 +47,13 @@ BEGIN {
 END {
   ... # global shutdown
 }
+```
+
+Load path: `$LOAD_PATH` or `$:`.
+
+Autoloading, register name of the undefined constant and library to load:
+```ruby
+autoload :TCPSocket, 'socket'
 ```
 
 ## Syntax
@@ -640,6 +651,8 @@ Undefine method:
 undef my_method
 ```
 
+When method name resolution algorithm fails to find a method, it looks up a method named method_missing instead.
+
 Alias method:
 ```ruby
 def my_method
@@ -884,7 +897,41 @@ If raise is called without arguments - it creates a new RuntimeError without mes
 
 ### Modules
 
-Similar to class but can not be instantiated.
+Similar to class but can not be instantiated and can not be subclassed.
+
+Modules are used as namespaces and as mixins.
+If a module defines instance methods instead of the class methods, those instance methods can be mixed in to other classes.
+
+```ruby
+class MyCls
+  include Enumerable
+end
+
+# or
+
+MyCls.new.extend(Enumerable)
+```
+
+It is legal to include one module into another.
+
+Modules can contain constants.
+
+Class is a subclass of Module, so classes can be used as namespace, but can not be used as mixins.
+
+Methods inside module:
+```ruby
+module Base64
+  MY_CONST = 1
+
+  def self.encode
+  end
+end
+
+Base64.encode(data)
+Base64::MY_CONST
+```
+
+Creating modules like Math or Kernel: define your methods as instance methods of the module. Then use module_function to convert those methods to "modulefunctions" (module_function is similar to private, protected).
 
 ### Self
 
@@ -994,6 +1041,28 @@ end
 
 If a subclass assigns a value to a class variable already in use by a superclass, it does not create its own private copy of the class variable, but instead alters the value seen by the superclass.
 
+If a constant is averrided in a subclass - a new constant will be created instead, so the class and its parent will have different constants.
+
+#### Singleton
+
+```ruby
+require 'singleton'
+
+class ExampleState
+  include Singleton
+
+  def initialize
+    @a = 1
+  end
+
+  def inc
+    @a += 1
+  end
+end
+
+ExampleState.instance.inc
+```
+
 ### Memoization
 
 ```ruby
@@ -1050,6 +1119,30 @@ f = Fiber.new do |message|
   message = Fiber.yield('Hello!')
 end
 ```
+
+## Instrospection (reflection)
+
+Set instance variable:
+```ruby
+obj.instance_variable_set(:@a, 0)
+Math.const_set(:EPI, Math::E * Math::PI)
+```
+
+```ruby
+o.public_methods
+String.private_method_defined? :initialize
+
+def add_method(c, m, &b)
+  c.class_eval {
+    define_method(m, &b)
+  }
+end
+```
+
+Module, Class and Object implement several callback methods, or hooks. These methods are not defined by default.
+Using hooks we can extend Ruby's behavior when classes are subclassed, when modules are included, or when methods are defined.
+
+For tracing: `__FILE__`, `__LINE__`.
 
 ## Metaprogramming
 
@@ -1172,6 +1265,10 @@ External iterator - when the client controls the iteration (we call next when we
 Internal iterator - when the iterator controls the iteration.
 
 Lambda - a function that can be manipulated as objects.
+
+A singleton - a class that has only a single instance. Singletons can be used to store global program state within an object-oriented framework and can be useful alternatives to class methods and class variables.
+
+Metaprogramming - writing programs that help you write programs. Is a set of techniqies for extending Ruby's syntax in ways that make programming esier.
 
 ## Libs
 
