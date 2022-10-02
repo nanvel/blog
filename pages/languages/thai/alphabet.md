@@ -88,6 +88,14 @@ Thor group
 ถ - Thor Thoong (rising tone)
 ธ - Thor Thong (low tone)
 
+### Groups
+
+Middle: ก จ ฎ ฏ ด ต บ ป อ
+
+High: ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห
+
+Low: ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ
+
 ## Vowels (สระ)
 
 `-ะ` (`-ั`) - a
