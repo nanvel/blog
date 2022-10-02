@@ -13,80 +13,81 @@ https://www.youtube.com/watch?v=t_REY-8sVJs
 
 Gor Gai group
 
-ก - Gor Gai (middle tone)
+ก - Gor Gai (middle tone) - chicken
 ถ - Thor Thoong (rising tone)
-ฌ - Chor Cher (low tone)
-ญ - Yor Ying (low tone)
-ณ - Nor Nen (low tone)
-ภ - Phor Sam Phao (low tone)
-ฎ - Dor Cha Daa (middle tone)
-ฏ - Tor Pa Tag (middle tone)
+ฌ - Chor Cher (low tone) - tree
+ญ - Yor Ying (low tone) - woman
+ณ - Nor Nen (low tone) - novice monk
+ภ - Phor Sam Phao (low tone) - sailboat
+ฎ - Dor Cha Daa (middle tone) - headdress
+ฏ - Tor Pa Tag (middle tone) - spear
 
 Khor Khai group
 
-ข - Khor Khai (rising tone)
-[ฃ - Khor Khuad (rising tone)]
-ช - Chor Chaang (low tone)
-ซ - Sor So (low tone)
-บ - Bor Bai Mai (middle tone)
-ป - Por Plaa (middle tone)
-ย - Yor Yag (low tone)
-ษ - Sor Reu See (rising tone)
+ข - Khor Khai (rising tone) - egg
+[ฃ - Khor Khuad (rising tone)] - bottle
+ช - Chor Chaang (low tone) - elephant
+ซ - Sor So (low tone) - chain
+บ - Bor Bai Mai (middle tone) - leaf
+ป - Por Plaa (middle tone) - fish
+ย - Yor Yag (low tone) - giant
+ษ - Sor Reu See (rising tone) - hermit
 
 Kor Kwaai group
 
-ค - Kor Kwaai (low tone)
-[ฅ - Kor Kon (low tone)]
-ฒ - Thor Phoo Thao (low tone)
-ด - Dor Deg (middle tone)
-ต - Tor Tao (middle)
-ศ - Sor Saa Laa (rising tone)
+ค - Kor Kwaai (low tone) - water buffalo
+[ฅ - Kor Kon (low tone)] - person
+ฒ - Thor Phoo Thao (low tone) - elder
+ด - Dor Deg (middle tone) - chield
+ต - Tor Tao (middle) - turtle
+ศ - Sor Saa Laa (rising tone) - pavilion
 
 Jor Jaan group
 
-จ - Jor Jaan (middle tone)
-ฉ - Chor Ching (rising tone)
-ล - Lor Ling (low tone)
-ส - Sor Sua (rising tone)
-อ - Or Aang (middle tone)
-ฮ - Hor Nog Hoog (low tone)
+จ - Jor Jaan (middle tone) - plate
+ฉ - Chor Ching (rising tone) - cymbals
+ล - Lor Ling (low tone) - monkey
+ส - Sor Sua (rising tone) - tiger
+อ - Or Aang (middle tone) - basin
+ฮ - Hor Nog Hoog (low tone) - owl
 
 Phor Pheung group
 
-ผ - Phor Pheung (rising tone)
-ฝ - Fhor Fhaa (rising tone)
-พ - Phor Phaan (low tone)
-ฟ - For Fan (low tone)
-ฬ - Lor Joo Laa (low tone)
+ผ - Phor Pheung (rising tone) - bee
+ฝ - Fhor Fhaa (rising tone) - lid
+พ - Phor Phaan (low tone) - tray
+ฟ - For Fan (low tone) - teeth
+ฬ - Lor Joo Laa (low tone) - kite
 
 Thor Thong group
 
-ธ - Thor Thong (low tone)
-ฐ - Thor Thaan (rising tone)
-ร - Ror Rua (low tone)
+ธ - Thor Thong (low tone) - flag
+ฐ - Thor Thaan (rising tone) - base
+ร - Ror Rua (low tone) - boat
 
 Thor Mon Tho group
 
-ฑ - Thor Mon Tho (low tone)
-ท - Tor Ta Haan (low tone)
-ห - Hor Heeb (rising tone)
+ฑ - Thor Mon Tho (low tone) - Montho
+ท - Tor Ta Haan (low tone) - soldier
+ห - Hor Heeb (rising tone) - chest (box)
 
 Nor Noo group
 
-น - Nor Noo (low tone)
-ม - Mor Maa (low tone)
+น - Nor Noo (low tone) - mouse
+ม - Mor Maa (low tone) - horse
+ฆ - Kno Ra Khang (low tone) - bell
 
 Ngor Ngoo group
 
-ง - Ngor Ngoo (low tone)
+ง - Ngor Ngoo (low tone) - snake
 
 Thor group
 
-ฐ - Thor Thaan (rising tone)
-ฑ - Thor Mon Tho (low tone)
-ฒ - Thor Phoo Thao (low tone)
-ถ - Thor Thoong (rising tone)
-ธ - Thor Thong (low tone)
+ฐ - Thor Thaan (rising tone) - base
+ฑ - Thor Mon Tho (low tone) - Montho
+ฒ - Thor Phoo Thao (low tone) - elder
+ถ - Thor Thoong (rising tone) - sack, bag
+ธ - Thor Thong (low tone) - flag
 
 ### Groups
 
