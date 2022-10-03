@@ -136,6 +136,14 @@ Has to both exploit and explore. Exploit - use what it knows in order to obtain 
 
 Subelements of a reinforcement learning system: a policy, a reward function, a value function, a model of the environment (optionally).
 
+## Neural network
+
+Activation functions:
+
+- linear/identity (for output layer)
+- rectifier/ReLU (for inner/hidden layers, speeds up the learning process)
+- sigmoid (for output layer, converts into range 0 to 1)
+
 ### Definitions
 
 Works with late gratification.
@@ -167,6 +175,10 @@ Tensor - n-dimentional array.
 Machine Learning (ML) - a part of AI. Figures out rules for us by looking at input and output data.
 
 Neural Networks - a form of ML. Uses a layered representation of data.
+
+Markov decision process - the process has no memory (next step does not depend on the previou steps).
+
+Stochastic vs deterministic: "0.3 probability of a, 0.7 probability of b" vs "is a".
 
 ## Links
 

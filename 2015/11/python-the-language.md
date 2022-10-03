@@ -1008,6 +1008,10 @@ Deep copy is a copy of an object in which all the objects that are attributes of
 
 Descriptor is a class implementing one or more of the ```__get__```, ```__set__``` or ```__delete__``` special methods and one of its instances is used as class attribute of another class, the managed class. Descriptors manage the access and deletion of a managed attributes in the managed class, often storing data in the managed instances.
 
+### Duck typing
+
+If it walks like a duck and quacks like a duck, it must be a duck.
+
 ### Dunder-method
 
 Methods like ```__eq__```, ```__getitem__```.

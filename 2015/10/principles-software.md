@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2019-04-15T00:55
+modified: 2022-09-22T11:15
 place: Kyiv, Ukraine
 comments: true
 
@@ -41,6 +41,16 @@ To apply this tool ask yourself:
 
 Adding manpower to a late software project makes it later.
 
+## Dependency Injection (DI)
+
+A form of inversion of control, dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
+
+### Dependency vs Composition vs Agregation
+
+If the contained object cannot exist without the existence of container object, then it is called composition (engine and a car).
+
+Aggregation: the child object can exist outside the parent object (driver and a car).
+
 ## DRY
 
 **D**on’t **R**epeat **Y**ourself.
@@ -76,6 +86,14 @@ Stands for "**K**eep **I**t **S**imple, **S**tupid."
 Simplest solution is often the best.
 
 This calls for seeking the simplest possible solution, with the fewest moving parts. The phrase was coined by Kelly Johnson, a highly accomplished aerospace engineer who worked in the real Area 51 designing some of the most advanced aircraft of the 20th centure.
+
+## Live and die by documentation
+
+> Live and die by documentation.
+>
+> Matthew Ginnard
+
+Software design, decisions, plans have to be documented.
 
 ## Minimum viable product
 
@@ -143,6 +161,10 @@ Links:
 ## Principle of simplicity
 
 Simpler is better.
+
+## Reinventing the wheel
+
+Do something again, from the beginning, especially in a needless or inefficient effort.
 
 ## Rubber duck debugging
 
@@ -236,6 +258,10 @@ Although never is often better than **right** now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea - let's do more of those!
+
+## Using common sense
+
+Your common sense is your natural ability to make good judgments and to behave in a practical and sensible way.
 
 ## YAGNI
 

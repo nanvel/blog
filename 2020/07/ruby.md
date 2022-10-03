@@ -1,12 +1,12 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-06-02T15:22
+modified: 2022-08-13T17:32
 place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 300
+loc: 407
 
 [TOC]
 
@@ -34,6 +34,10 @@ __END__
 ...  # data
 ```
 
+`load` and `require` serve similar purposes, though require is much more commonly used.
+`require_relative` was introduced in Ruby 1.9.
+`load` can also load binary extensions. `load` expects complete filename. `load` can load the same file multiple times.
+
 Execute code in the very beginning/end of the program:
 ```ruby
 BEGIN {
@@ -43,6 +47,13 @@ BEGIN {
 END {
   ... # global shutdown
 }
+```
+
+Load path: `$LOAD_PATH` or `$:`.
+
+Autoloading, register name of the undefined constant and library to load:
+```ruby
+autoload :TCPSocket, 'socket'
 ```
 
 ## Syntax
@@ -403,6 +414,8 @@ Both procs and lambdas are functions rather than methods invoken on an object.
 
 ### Struct
 
+Similar to namedtuple in Python.
+
 [Struct](https://ruby-doc.org/core-2.5.0/Struct.html)
 
 ```ruby
@@ -413,6 +426,25 @@ Customer = Struct.new(:name, :address) do
 end
 
 dave = Customer.new("Dave", "123 Main")
+```
+
+Making immutable:
+```ruby
+Point = Struct.new('Point', :x, :y)
+class Point
+  undef x=, y=, []=
+end
+```
+
+Open and add a method:
+```ruby
+class << Point
+  def sum(*points)
+    x = y = 0
+    points.each {|p| x += p.x; y += p.y}
+    Point.new(x, y)
+  end
+end
 ```
 
 ### `::`
@@ -512,6 +544,19 @@ Parallel assignment:
 x, y = 1, 2
 ```
 
+Constans can be defined outside class:
+```ruby
+MyClass::MY_CONST = 1
+```
+
+Instance and class variables are encapsulated and effectively private, and constants are effectively public.
+
+### Functions
+
+#### Partial
+
+Use `lambda`.
+
 ### Global functions
 
 Global functions are defined as private methods of the Object class.
@@ -606,6 +651,8 @@ Undefine method:
 undef my_method
 ```
 
+When method name resolution algorithm fails to find a method, it looks up a method named method_missing instead.
+
 Alias method:
 ```ruby
 def my_method
@@ -633,6 +680,26 @@ unbound_m.bind(2).call
 ```
 
 Methods are not closures. The only binding is self - the object on which the method is to be invoked.
+
+A private method is internal to the implementation of a class, and it can only be called by other instance methods of the class (or, its subclasses).
+
+A protected method is like a private method in that it can only be invoked from within the implementation of a class or its subclasses.
+
+Eval private methods from outside:
+```ruby
+obj.send(:abc)
+obj.public_send(:abc)
+obj.instance_eval { ... }
+```
+
+Chaining (overriding methods with original call):
+```ruby
+def my_method(a, b)
+  super(a, b + 1)
+end
+```
+
+If you use super without arguments (bare keywords) - then all the arguments that were passed to the current method are passed to the superclass method.
 
 ### Flow control
 
@@ -830,7 +897,41 @@ If raise is called without arguments - it creates a new RuntimeError without mes
 
 ### Modules
 
-Similar to class but can not be instantiated.
+Similar to class but can not be instantiated and can not be subclassed.
+
+Modules are used as namespaces and as mixins.
+If a module defines instance methods instead of the class methods, those instance methods can be mixed in to other classes.
+
+```ruby
+class MyCls
+  include Enumerable
+end
+
+# or
+
+MyCls.new.extend(Enumerable)
+```
+
+It is legal to include one module into another.
+
+Modules can contain constants.
+
+Class is a subclass of Module, so classes can be used as namespace, but can not be used as mixins.
+
+Methods inside module:
+```ruby
+module Base64
+  MY_CONST = 1
+
+  def self.encode
+  end
+end
+
+Base64.encode(data)
+Base64::MY_CONST
+```
+
+Creating modules like Math or Kernel: define your methods as instance methods of the module. Then use module_function to convert those methods to "modulefunctions" (module_function is similar to private, protected).
 
 ### Self
 
@@ -852,6 +953,16 @@ Class instances may encapsulate any number of internal instances, but they expos
 Assignment to an attribute of array elemt is actually Ruby shorthand for method invocation.
 
 Classes and modules are "open", and can be modified and extended at runtime.
+
+Classes can include or inherit methods from modules.
+
+It is possible to define getters and setters for accessign state directly. These pairs of accessor methods are known as attributes and distinct from instance variables.
+
+Any ruby program can add methods to existing classes, and it is even possible to add "singleton methods" to individual objects.
+
+`self` - withint the body of the class, but outside of any instance methods defined by the class, refers to the class being defined.
+
+Class variables are visible to, and shared by, the class methods and the instance methods of a class, and also by the class definition itself.
 
 ```ruby
 class Customer
@@ -885,6 +996,72 @@ end
 ```
 
 `new` method - allocates memory to hold the new object, initializes the state of that newly allocated "empty" object by invoking `initialize` method with `new` arguments.
+
+Getter/setter:
+```ruby
+class Value
+  def initialize(x)
+    @x = x
+  end
+
+  def x # getter
+    @x
+  end
+
+  def x=(value) # setter
+    @x = value
+  end
+end
+```
+
+Using setter within class:
+```ruby
+self.x=1
+```
+
+attr_reader/attr_accessor can be used:
+```ruby
+class Value
+  attr_accessor :x
+
+  def initialize(x)
+    @x = x
+  end
+end
+```
+
+Class attr_reader/attr_accessor:
+```ruby
+class Value
+  class << self
+    attr_reader :a, :b
+  end
+end
+```
+
+If a subclass assigns a value to a class variable already in use by a superclass, it does not create its own private copy of the class variable, but instead alters the value seen by the superclass.
+
+If a constant is averrided in a subclass - a new constant will be created instead, so the class and its parent will have different constants.
+
+#### Singleton
+
+```ruby
+require 'singleton'
+
+class ExampleState
+  include Singleton
+
+  def initialize
+    @a = 1
+  end
+
+  def inc
+    @a += 1
+  end
+end
+
+ExampleState.instance.inc
+```
 
 ### Memoization
 
@@ -943,6 +1120,30 @@ f = Fiber.new do |message|
 end
 ```
 
+## Instrospection (reflection)
+
+Set instance variable:
+```ruby
+obj.instance_variable_set(:@a, 0)
+Math.const_set(:EPI, Math::E * Math::PI)
+```
+
+```ruby
+o.public_methods
+String.private_method_defined? :initialize
+
+def add_method(c, m, &b)
+  c.class_eval {
+    define_method(m, &b)
+  }
+end
+```
+
+Module, Class and Object implement several callback methods, or hooks. These methods are not defined by default.
+Using hooks we can extend Ruby's behavior when classes are subclassed, when modules are included, or when methods are defined.
+
+For tracing: `__FILE__`, `__LINE__`.
+
 ## Metaprogramming
 
 ```ruby
@@ -951,6 +1152,8 @@ o.class.superclass
 o.instance_if? String # o.class == String
 o.is_a? String # instance of any subclass os String, String === o
 ```
+
+Example of metaprogramming in ruby: attr_readers/attr_accessor.
 
 ## Debugging
 
@@ -1019,6 +1222,12 @@ Expect:
 - be_empty
 - eq
 
+## Best practices
+
+### Subclassing
+
+In Ruby, you should only subclass when you are familiar with the implementation of the superclass. If you only want to depend on the public API of a class and not on its implementation, then you should extend the functionality of the class by encapsulating and delegating to it, not by inheriting from it.
+
 ## Zen
 
 [The Zens of Python and Ruby](https://www.automation-excellence.com/blog/zens-python-and-ruby)
@@ -1056,6 +1265,10 @@ External iterator - when the client controls the iteration (we call next when we
 Internal iterator - when the iterator controls the iteration.
 
 Lambda - a function that can be manipulated as objects.
+
+A singleton - a class that has only a single instance. Singletons can be used to store global program state within an object-oriented framework and can be useful alternatives to class methods and class variables.
+
+Metaprogramming - writing programs that help you write programs. Is a set of techniqies for extending Ruby's syntax in ways that make programming esier.
 
 ## Libs
 
