@@ -170,15 +170,18 @@ modified: 2022-05-14T14:01
 - The Quiet Trader by Atanas Matov
 - [+] Quantitative Trading by Ernest P. Chan
 - The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
+- Python 3 Standard Library by Example by Doug Hellmann
 
 ## In progress
 
+- Domain-Driven Design by Eric Evans
+- Design It! by Michael Keeling
+- Grocking Simplicity by Eric Normand
 - Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
 - Effective TypeScript by Dan Vanderkam
 - Principles for Dealing with the Changing World Order by Ray Dalio
 - The Electronic Day Trader by Mark Friedfertig and George West
-- Python 3 Standard Library by Example by Doug Hellmann
 - RSI Trading by Glenn Wilson
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
 - The Master Swing Trader by Alan Farley
@@ -188,8 +191,6 @@ modified: 2022-05-14T14:01
 - UX Strategy by Jaime Levy
 - Effective Testing with RSpec 3: Build Ruby Apps with Confidence by Myron Marston, Ian Dees
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
-- Domain-Driven Design by Eric Evans
-- Design It! by Michael Keeling
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
 
