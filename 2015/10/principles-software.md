@@ -263,6 +263,22 @@ Namespaces are one honking great idea - let's do more of those!
 
 Your common sense is your natural ability to make good judgments and to behave in a practical and sensible way.
 
+## [Extreme programming](https://en.wikipedia.org/wiki/Extreme_programming) (XP)
+
+A software development methodology intended to improve software quality and responsiveness to changing customer requirements.
+
+Consistes of:
+
+- extensive code review
+- unit testing of all code
+- not programming features until they are actually needed
+- a flat management structure
+- code simplicity and clarity
+- expecting changes in the customer's requirements as time passes and the problem is better understood
+- frequent communication with the customer and among programmers
+
+[Extreme Programming Explained](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change-ebook-dp-B00N1ZN6C0/dp/B00N1ZN6C0/) (1999) by Kent Beck.
+
 ## YAGNI
 
 Stands for "**Y**ou **A**in't **G**onna **N**eed **I**t."

@@ -235,6 +235,7 @@ modified: 2022-05-14T14:01
 - Statistics for Absolute Beginners by O. Theobald
 - Trading Evolved by Andreas Clenow
 - Trading with the Trendlines by David Carli
+- Extreme Programming Explained by Kent Beck
 
 ## Archive
 
