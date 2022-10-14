@@ -23,11 +23,13 @@ There are multiple plans: for a day, a project, a ticket, a specific issue, etc.
 For every problem there has to be a plan, if there is no idea what the plan should look like, we can start with this example:
 
 - figure out that to do
+
   - study the issue
   - check the documentation
   - check the code
   - look for possible solutions
   - write down questions
+
 - update the plan
 
 ### Plan is subject to continuous adjustments
@@ -81,6 +83,7 @@ If got a brilliant idea - it is, probably, implemented, search for libs/services
 ### Do what tools can do for you
 
 Invest in tools:
+
 - code formatting (prettier, black)
 - code editor functionality
 - ipython/jupyter for scripting
@@ -98,6 +101,7 @@ Outsource.
 ### Slow
 
 Speed up:
+
 - speed up videos
 - skip not important texts
 - use threads, vector math, to speed up data loading and processing
