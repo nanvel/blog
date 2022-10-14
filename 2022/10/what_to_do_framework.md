@@ -23,13 +23,11 @@ There are multiple plans: for a day, a project, a ticket, a specific issue, etc.
 For every problem there has to be a plan, if there is no idea what the plan should look like, we can start with this example:
 
 - figure out that to do
-
-  - study the issue
-  - check the documentation
-  - check the code
-  - look for possible solutions
-  - write down questions
-
+	* study the issue
+	* check the documentation
+	* check the code
+	* look for possible solutions
+	* write down questions
 - update the plan
 
 ### Plan is subject to continuous adjustments
