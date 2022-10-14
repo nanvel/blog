@@ -1,12 +1,12 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-08-13T17:32
+modified: 2022-10-14T16:25
 place: Phuket, Thailand
 
 # Ruby notes
 
-loc: 407
+loc: 459
 
 [TOC]
 
@@ -241,6 +241,41 @@ Regular excpressions:
 "powerball" =~ /b/
 
 s[/[aeiou]/] = '*' # replace
+```
+
+Regular expression modifier characters:
+
+- `i`: Ignore case
+- `m`: Matched against multiline text, treat newline as an ordinary character
+- `x`: Extended syntax (allow space and comments)
+- `o`: Perform `#{}` interpolation only once
+- `u`, `e`, `s`, `n`: Interpret as Unicode (UTF-8), EUC, SJIS, ASCII
+
+Regular rxpression syntax:
+```text
+. - Any single character except newline.
+\w - Word characters.
+\W - Non word characters.
+\s - Whitespaces (\t,\n,\r,\f).
+\S - Non whitespace.
+\d - Digits.
+\D - Non digits.
+a | b - Expression a or b.
+() - Group into syntactic groups and captures text.
+(?:) - Groups without capturing text.
+(?<name> re) - Groups, captures text, labels.
+\k<name> - Matches the same text that matched the named captured group name.
+re* - Matches zero or more occurences.
+re+ - Matches one or more occurences.
+re? - Matches zero or one occurences.
+re{n} - Matches exactly n occurences.
+re{n,} - Matches n or more occurences.
+re{n,m} - Matches n to m occurences.
+^ - Beginning of line anchor.
+$ - End of line.
+\A - Beginning of string.
+\z or \Z (bfore newline) - End of string.
+\G - Last match finished.
 ```
 
 Conversion:
@@ -1155,6 +1190,16 @@ o.is_a? String # instance of any subclass os String, String === o
 
 Example of metaprogramming in ruby: attr_readers/attr_accessor.
 
+Attributes (creates methods to access `@x`, `@y`):
+```ruby
+class Point
+  # attributes :x => 0, :y => 0
+  attributes x:0, y:0  # Ruby 1.9
+end
+```
+
+The goal of metaprogramming in Ruby is often the creation of domain-specific languages, or DSLs.
+
 ## Debugging
 
 Run inline:
@@ -1269,6 +1314,8 @@ Lambda - a function that can be manipulated as objects.
 A singleton - a class that has only a single instance. Singletons can be used to store global program state within an object-oriented framework and can be useful alternatives to class methods and class variables.
 
 Metaprogramming - writing programs that help you write programs. Is a set of techniqies for extending Ruby's syntax in ways that make programming esier.
+
+Weak reference - onject which holds a reference to a value without preventing the value from being garbage collected if they become otherwise unreachable.
 
 ## Libs
 
