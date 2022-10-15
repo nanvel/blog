@@ -49,6 +49,8 @@ If a problem took 1hr of time and there is no progress - ask for help:
 - code snippets
 - instructions on how to reproduce
 
+In many cases, this could work as rubber duck debugging, and the issues will be resolved without sending the message.
+
 ### Distractions
 
 After each distraction we need time to recollect what we have been doing and what has to be done next, plan helps to speed up this.
@@ -85,6 +87,7 @@ Invest in tools:
 - code formatting (prettier, black)
 - code editor functionality
 - ipython/jupyter for scripting
+- testing/debugging/profiling tools
 - etc.
 
 ### What makes you “busy” (email box, instant messages)

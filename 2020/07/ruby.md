@@ -1,12 +1,10 @@
 labels: Ruby
         Draft
 created: 2020-07-08T12:25
-modified: 2022-10-14T16:25
+modified: 2022-10-15T14:55
 place: Phuket, Thailand
 
 # Ruby notes
-
-loc: 459
 
 [TOC]
 
@@ -141,6 +139,18 @@ a & b
 # index, join, pop, push, reverse,reverse_each, rindex, sort, sort!, uniq!, unshift.
 ```
 
+### Set
+
+```ruby
+require 'set'
+
+(1..5).to_set
+Set.new(1..5)
+Set.new(1. 2, 3)
+
+s.subset? t
+```
+
 ### Strings
 
 Strings are mutable.
@@ -241,6 +251,11 @@ Regular excpressions:
 "powerball" =~ /b/
 
 s[/[aeiou]/] = '*' # replace
+```
+
+`sub` (substitute - replace the first occurance), `gsug` (global substitute - replace all), `sub!`, `gsub!` for replace:
+```ruby
+phone.sub!(/#.*$/, '')
 ```
 
 Regular expression modifier characters:
@@ -356,7 +371,23 @@ name = 'my_symbol'
 
 Hash keys must be hashable (should have method `hash`, returns fixnum hashcode).
 
+Methods:
+```ruby
+h = Hash.new(-1) # -1 is default value
+h.default = -2 # h['two'] == -2
+h.delete(:b)
+h.select {|k, v| v % 2 == 0}
+h.values_at(:a, :b)
+h.delete_if {|k, v| k.to_s < 'b'}
+h.invert # swap keys and values
+h.clear
+h.each_key
+h.each_value
+```
+
 #### Strings as keys
+
+In order for an object to be used as a hash key, it must have a hash method that returns an integer "hashcode" for the object.
 
 Because strings are mutable but commonly used as hash keys, Ruby treats them as a special case and makes private copies of all strings used as keys.
 
@@ -1145,6 +1176,8 @@ x = ARGV[0]
 Thread.new { File.read(f) }
 ```
 
+The key features of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
+
 ## Fibers
 
 Ruby's fibers are coroutines (semicoroutines), they are no lightweight threads.
@@ -1317,9 +1350,49 @@ Metaprogramming - writing programs that help you write programs. Is a set of tec
 
 Weak reference - onject which holds a reference to a value without preventing the value from being garbage collected if they become otherwise unreachable.
 
+Deadlock - is the condition that occurs when al lthreads are waiting to acquire a resource help by another thread.
+
 ## Libs
 
+### Standard
+
+#### Time
+
+```ruby
+Time.now # (same as Time.new)
+Time.local(2007, 7, 8)
+Time.utc(2007, 7, 7, 9, 10)
+```
+
+#### Files
+
+```ruby
+File.unlink('fname') # remove file
+```
+
+#### Threads
+
+Long-running compute-bound threads should periodically call Thread.pass to ask the scheduler to yield the CPU to another thread.
+
+Thread states:
+
+- run (runnable)
+- sleep (sleeping)
+- aborting (aborting)
+- false (terminated normally)
+- nil (terminated with exception)
+
+### External
+
 [Dry-rb](https://dry-rb.org/)
+
+## Compare to Python
+
+Objects in ruby does not expose attributes, only methods.
+
+The fact that top-level methods are private means that they must be invoked like functions, without an explicit receiver. In this way, Ruby mimics a procedural programming paradigm within its strictly object-oriented framework.
+
+Blocks in Ruby is powerful and popular. Similar, less functional thing in Python is lambda.
 
 ## Links
 
