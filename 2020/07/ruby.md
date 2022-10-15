@@ -412,6 +412,107 @@ String === 's'
 9 <=> 5 # 1
 ```
 
+### Input/Output
+
+```ruby
+puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
+print 'Hello!'  # prints the string (without appending a newline)
+p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
+```
+
+Program args:
+```ruby
+x = ARGV[0]
+```
+
+### Threads
+
+```ruby
+Thread.new { File.read(f) }
+```
+
+The key features of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
+
+### Fibers
+
+Ruby's fibers are coroutines (semicoroutines), they are no lightweight threads.
+
+```ruby
+f = Fiber.new do |message|
+  message = Fiber.yield('Hello!')
+end
+```
+
+### Instrospection (reflection)
+
+Set instance variable:
+```ruby
+obj.instance_variable_set(:@a, 0)
+Math.const_set(:EPI, Math::E * Math::PI)
+```
+
+```ruby
+o.public_methods
+String.private_method_defined? :initialize
+
+def add_method(c, m, &b)
+  c.class_eval {
+    define_method(m, &b)
+  }
+end
+```
+
+Module, Class and Object implement several callback methods, or hooks. These methods are not defined by default.
+Using hooks we can extend Ruby's behavior when classes are subclassed, when modules are included, or when methods are defined.
+
+For tracing: `__FILE__`, `__LINE__`.
+
+### Metaprogramming
+
+```ruby
+o.class
+o.class.superclass
+o.instance_if? String # o.class == String
+o.is_a? String # instance of any subclass os String, String === o
+```
+
+Example of metaprogramming in ruby: attr_readers/attr_accessor.
+
+Attributes (creates methods to access `@x`, `@y`):
+```ruby
+class Point
+  # attributes :x => 0, :y => 0
+  attributes x:0, y:0  # Ruby 1.9
+end
+```
+
+The goal of metaprogramming in Ruby is often the creation of domain-specific languages, or DSLs.
+
+### Debugging
+
+Run inline:
+```bash
+ruby -e 'puts "Hello world!"'
+```
+
+```bash
+irb  # interactive ruby
+irb --simple-prompt
+pry
+```
+
+[pry](https://github.com/pry/pry)
+
+```ruby
+require 'pry'
+binding.pry
+```
+
+Documentation:
+```bash
+ri Math::sqrt
+```
+
 ## Types
 
 Type of an object - set of behaviours that characterize the object (the set of methods it responds to).
@@ -993,17 +1094,6 @@ Base64::MY_CONST
 
 Creating modules like Math or Kernel: define your methods as instance methods of the module. Then use module_function to convert those methods to "modulefunctions" (module_function is similar to private, protected).
 
-### Self
-
-In singleton methods - refers to the class:
-```ruby
-class Dog
-  def self.about
-    self  # Dog
-  end
-end
-```
-
 ### Classes
 
 A class is a collection of related methods that operate on the state of an object.
@@ -1103,6 +1193,17 @@ If a subclass assigns a value to a class variable already in use by a superclass
 
 If a constant is averrided in a subclass - a new constant will be created instead, so the class and its parent will have different constants.
 
+#### Self
+
+In singleton methods - refers to the class:
+```ruby
+class Dog
+  def self.about
+    self  # Dog
+  end
+end
+```
+
 #### Singleton
 
 ```ruby
@@ -1123,7 +1224,7 @@ end
 ExampleState.instance.inc
 ```
 
-### Memoization
+#### Memoization
 
 ```ruby
 def something
@@ -1131,7 +1232,7 @@ def something
 end
 ```
 
-### Copy
+#### Copy
 
 Shallow copy:
 ```ruby
@@ -1150,149 +1251,6 @@ Deep copy:
 ```ruby
 Marshal.load(Marshal.dump(o))
 ```
-
-### Input/Output
-
-```ruby
-puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
-print 'Hello!'  # prints the string (without appending a newline)
-p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
-```
-
-Program args:
-```ruby
-x = ARGV[0]
-```
-
-## Threads
-
-```ruby
-Thread.new { File.read(f) }
-```
-
-The key features of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
-
-## Fibers
-
-Ruby's fibers are coroutines (semicoroutines), they are no lightweight threads.
-
-```ruby
-f = Fiber.new do |message|
-  message = Fiber.yield('Hello!')
-end
-```
-
-## Instrospection (reflection)
-
-Set instance variable:
-```ruby
-obj.instance_variable_set(:@a, 0)
-Math.const_set(:EPI, Math::E * Math::PI)
-```
-
-```ruby
-o.public_methods
-String.private_method_defined? :initialize
-
-def add_method(c, m, &b)
-  c.class_eval {
-    define_method(m, &b)
-  }
-end
-```
-
-Module, Class and Object implement several callback methods, or hooks. These methods are not defined by default.
-Using hooks we can extend Ruby's behavior when classes are subclassed, when modules are included, or when methods are defined.
-
-For tracing: `__FILE__`, `__LINE__`.
-
-## Metaprogramming
-
-```ruby
-o.class
-o.class.superclass
-o.instance_if? String # o.class == String
-o.is_a? String # instance of any subclass os String, String === o
-```
-
-Example of metaprogramming in ruby: attr_readers/attr_accessor.
-
-Attributes (creates methods to access `@x`, `@y`):
-```ruby
-class Point
-  # attributes :x => 0, :y => 0
-  attributes x:0, y:0  # Ruby 1.9
-end
-```
-
-The goal of metaprogramming in Ruby is often the creation of domain-specific languages, or DSLs.
-
-## Debugging
-
-Run inline:
-```bash
-ruby -e 'puts "Hello world!"'
-```
-
-```bash
-irb  # interactive ruby
-irb --simple-prompt
-pry
-```
-
-[pry](https://github.com/pry/pry)
-
-```ruby
-require 'pry'
-binding.pry
-```
-
-Documentation:
-```bash
-ri Math::sqrt
-```
-
-## RSpec
-
-### Run
-
-```bash
-rspec spec/folder
-rspec spec/folter/test_spec.rb
-rspec spec/folder/test_spec.rb --example(-e) name
-rspec spec/folder/test_spec.rb:25 (code line)
-rspec --only-failures (requires config)
-```
-
-### Pending
-
-```ruby
-if 'does something' do
-  pending 'Not implemented yet ...'
-  expect().to be()
-end
-```
-
-### Testing
-
-Expect:
-- `.to`
-- `.not_to`
-
-Arrays:
-```ruby
-expect().to match_array
-```
-
-`deascribe` and `it` - organization.
-`expect` - verification.
-`let` - initializes data on deman.
-`context` (lias to `describe`) - grouping for setup and examples.
-`before` hook - run before each example (can be inside context).
-
-Expect:
-- be_empty
-- eq
 
 ## Best practices
 
@@ -1380,6 +1338,46 @@ Thread states:
 
 [Dry-rb](https://dry-rb.org/)
 
+#### RSpec
+
+Run:
+```bash
+rspec spec/folder
+rspec spec/folter/test_spec.rb
+rspec spec/folder/test_spec.rb --example(-e) name
+rspec spec/folder/test_spec.rb:25 (code line)
+rspec --only-failures (requires config)
+```
+
+Pending:
+```ruby
+if 'does something' do
+  pending 'Not implemented yet ...'
+  expect().to be()
+end
+```
+
+##### Testing
+
+Expect:
+- `.to`
+- `.not_to`
+
+Arrays:
+```ruby
+expect().to match_array
+```
+
+`deascribe` and `it` - organization.
+`expect` - verification.
+`let` - initializes data on deman.
+`context` (lias to `describe`) - grouping for setup and examples.
+`before` hook - run before each example (can be inside context).
+
+Expect:
+- be_empty
+- eq
+
 ### Tools
 
 `rvm` - ruby version manager.
@@ -1393,6 +1391,16 @@ Objects in ruby does not expose attributes, only methods.
 The fact that top-level methods are private means that they must be invoked like functions, without an explicit receiver. In this way, Ruby mimics a procedural programming paradigm within its strictly object-oriented framework.
 
 Blocks in Ruby is powerful and popular. Similar, less functional thing in Python is lambda.
+
+Braces in method calls are optional.
+
+Ruby does not use space to define code blocks.
+
+Ruby iterators = Python generators.
+
+Ruby sequences = Python iterators.
+
+Python namedtuple = Ruby Struct.new.
 
 ## Links
 
