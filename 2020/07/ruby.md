@@ -1,5 +1,5 @@
 labels: Ruby
-        Draft
+        Blog
 created: 2020-07-08T12:25
 modified: 2022-10-15T14:55
 place: Phuket, Thailand
@@ -28,9 +28,9 @@ __END__
 
 `load` and `require` serve similar purposes, though require is much more commonly used.
 `require_relative` was introduced in Ruby 1.9.
-`load` can also load binary extensions. `load` expects complete filename. `load` can load the same file multiple times.
+`load` can also load binary extensions. `load` expects a complete filename. `load` can load the same file multiple times.
 
-Execute code in the very beginning/end of the program:
+Execute code at the very beginning/end of the program:
 ```ruby
 BEGIN {
   ... # global init
@@ -193,7 +193,7 @@ def say
 end
 ```
 
-When a methods is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
+When a method is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
 
 Methods can be defined on individual objects (singleton methods):
 ```ruby
@@ -240,7 +240,7 @@ def can_call?
 end
 ```
 
-A question mark if used to mark predicates - methods that return a Boolean value.
+A question mark is used to mark predicates - methods that return a Boolean value.
 
 Exclamation mark suffix: is used to indicate that caution is required with the use of the method.
 
@@ -249,7 +249,7 @@ def delete!
 end
 ```
 
-Often exlamation marks is used in mutator method that alters the objects in place.
+Often exclamation mark is used in mutator method that alters the objects in place.
 Example: `#sort` vs `#sort!`.
 
 Singleton methods are available on a single object:
@@ -285,7 +285,7 @@ def a_method(s, *a) end
 def a_method(s:, len: 10) end
 ```
 
-Methods can be represented as an instances of the Method class:
+Methods can be represented as instances of the Method class:
 
 ```ruby
 m = 0.method(:succ)
@@ -363,7 +363,7 @@ code unless expression
 
 `redo` - restart loop (or iterator) from the beginning.
 
-`retry` - restart an iterator, reevaluate the entire expression (can be also used in exception handling).
+`retry` - restart an iterator, reevaluate the entire expression (can also be used in exception handling).
 
 `throw/catch` - exception propagation and handling.
 
@@ -395,7 +395,7 @@ end
 
 #### `===` - case equality
 
-For some classes `===` is a membership or matching operator.
+For some classes, `===` is a membership or matching operator.
 
 ```ruby
 (1..10) === 5
@@ -431,7 +431,7 @@ x = ARGV[0]
 Thread.new { File.read(f) }
 ```
 
-The key features of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
+The key feature of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
 
 ### Fibers
 
@@ -443,7 +443,7 @@ f = Fiber.new do |message|
 end
 ```
 
-### Instrospection (reflection)
+### Introspection (reflection)
 
 Set instance variable:
 ```ruby
@@ -515,7 +515,7 @@ ri Math::sqrt
 
 ## Types
 
-Type of an object - set of behaviours that characterize the object (the set of methods it responds to).
+Type of an object - set of behaviors that characterize the object (the set of methods it responds to).
 
 TRUE, FALSE, NIL constants, but lowercase is preferred.
 
@@ -529,11 +529,11 @@ Literals = appear directly in source code:
 
 ### Boolean
 
-Evalutes to false: nil, false. Other - true.
+Evaluates to false: nil, false. Other - true.
 
-`and`, `or` and `not` are low-precence versions of `&&`, `||`, `!`.
+`and`, `or` and `not` are low-precedence versions of `&&`, `||`, `!`.
 
-Bool operators precence:
+Bool operators precedence:
 
 - `&&`
 - `||`
@@ -688,7 +688,7 @@ while(s['x'])
 end
 ```
 
-Regular excpressions:
+Regular expressions:
 ```ruby
 /\d+/
 
@@ -697,7 +697,7 @@ Regular excpressions:
 s[/[aeiou]/] = '*' # replace
 ```
 
-`sub` (substitute - replace the first occurance), `gsug` (global substitute - replace all), `sub!`, `gsub!` for replace:
+`sub` (substitute - replace the first occurrence), `gsug` (global substitute - replace all), `sub!`, `gsub!` for replace:
 ```ruby
 phone.sub!(/#.*$/, '')
 ```
@@ -724,16 +724,16 @@ a | b - Expression a or b.
 (?:) - Groups without capturing text.
 (?<name> re) - Groups, captures text, labels.
 \k<name> - Matches the same text that matched the named captured group name.
-re* - Matches zero or more occurences.
-re+ - Matches one or more occurences.
-re? - Matches zero or one occurences.
-re{n} - Matches exactly n occurences.
-re{n,} - Matches n or more occurences.
-re{n,m} - Matches n to m occurences.
+re* - Matches zero or more occurrences.
+re+ - Matches one or more occurrences.
+re? - Matches zero or one occurrences.
+re{n} - Matches exactly n occurrences.
+re{n,} - Matches n or more occurrences.
+re{n,m} - Matches n to m occurrences.
 ^ - Beginning of line anchor.
 $ - End of line.
 \A - Beginning of string.
-\z or \Z (bfore newline) - End of string.
+\z or \Z (before newline) - End of string.
 \G - Last match finished.
 ```
 
@@ -905,7 +905,7 @@ def print_message(&b)
 end
 ```
 
-Check if block gived:
+Check if block given:
 
 ```ruby
 yield y if block_given? # iterator?
@@ -918,9 +918,9 @@ Block local variables:
 
 #### Proc object
 
-A proc object represent a block.
+A proc object represents a block.
 
-Both procs and lambdas are functions rather than methods invoken on an object.
+Both procs and lambdas are functions rather than methods invoked on an object.
 
 ### Struct
 
@@ -966,7 +966,7 @@ Rhyming methods:
 - `reject`
 - `inject`
 
-Turn array into enumerable when passign for processing:
+Turn array into enumerable when passing for processing:
 ```ruby
 process(data.to_enum)
 ```
@@ -1025,12 +1025,12 @@ end
 !!! tip "return in ensure"
     If an `ensure` clause includes a `return` statement, then exception propagation stops, and the containing method returns. `break` and `next` have similar effects.
 
-    If the body of a begin statement includes a return statement, the code in the ensure clause will be run before the method can actually return to its caller. Futhermore, if an ensure clause contains a return statement of its own, it will change the return value of the method.
+    If the body of a begin statement includes a return statement, the code in the ensure clause will be run before the method can actually return to its caller. Furthermore, if an ensure clause contains a return statement of its own, it will change the return value of the method.
 
-"Normal" errors, that typical Ruby programs try to handle, are subclasses of `StandardError`.
+"Normal" errors, which typical Ruby programs try to handle, are subclasses of `StandardError`.
 If called with Exception object as a single argument - it raises that exception.
 If with string - created `StandardError` with messages = given text and raises it.
-Excption class can be given as argument because it has `exception` method, also string can be passes as the second argument and will be used as message.
+Excption class can be given as argument because it has `exception` method, also string can be passed as the second argument and will be used as message.
 The third argument is backtrace (array if strings).
 
 ```ruby
@@ -1061,7 +1061,7 @@ If raise is called without arguments - it creates a new RuntimeError without mes
 Similar to class but can not be instantiated and can not be subclassed.
 
 Modules are used as namespaces and as mixins.
-If a module defines instance methods instead of the class methods, those instance methods can be mixed in to other classes.
+If a module defines instance methods instead of the class methods, those instance methods can be mixed into other classes.
 
 ```ruby
 class MyCls
@@ -1100,17 +1100,17 @@ A class is a collection of related methods that operate on the state of an objec
 
 Class instances may encapsulate any number of internal instances, but they expose only methods to the outside world.
 
-Assignment to an attribute of array elemt is actually Ruby shorthand for method invocation.
+Assignment to an attribute of array element is actually Ruby shorthand for method invocation.
 
 Classes and modules are "open", and can be modified and extended at runtime.
 
 Classes can include or inherit methods from modules.
 
-It is possible to define getters and setters for accessign state directly. These pairs of accessor methods are known as attributes and distinct from instance variables.
+It is possible to define getters and setters for accessing state directly. These pairs of accessor methods are known as attributes and distinct from instance variables.
 
 Any ruby program can add methods to existing classes, and it is even possible to add "singleton methods" to individual objects.
 
-`self` - withint the body of the class, but outside of any instance methods defined by the class, refers to the class being defined.
+`self` - within the body of the class, but outside of any instance methods defined by the class, refers to the class being defined.
 
 Class variables are visible to, and shared by, the class methods and the instance methods of a class, and also by the class definition itself.
 
@@ -1240,7 +1240,7 @@ obj.clone
 obj.dup
 ```
 
-If an object defines `initialize_copy` - if will be used to create a copy.
+If an object defines `initialize_copy` - it will be used to create a copy.
 
 Clone: copies both frozen and tainted objects.
 Dup: copies tainted state, copying a frozen object - returns an unfrozen copy.
@@ -1252,9 +1252,7 @@ Deep copy:
 Marshal.load(Marshal.dump(o))
 ```
 
-## Best practices
-
-### Subclassing
+#### Subclassing
 
 In Ruby, you should only subclass when you are familiar with the implementation of the superclass. If you only want to depend on the public API of a class and not on its implementation, then you should extend the functionality of the class by encapsulating and delegating to it, not by inheriting from it.
 
@@ -1298,11 +1296,11 @@ Lambda - a function that can be manipulated as objects.
 
 A singleton - a class that has only a single instance. Singletons can be used to store global program state within an object-oriented framework and can be useful alternatives to class methods and class variables.
 
-Metaprogramming - writing programs that help you write programs. Is a set of techniqies for extending Ruby's syntax in ways that make programming esier.
+Metaprogramming - writing programs that help you write programs. Is a set of techniques for extending Ruby's syntax in ways that make programming easier.
 
-Weak reference - onject which holds a reference to a value without preventing the value from being garbage collected if they become otherwise unreachable.
+Weak reference - object which holds a reference to a value without preventing the value from being garbage collected if they become otherwise unreachable.
 
-Deadlock - is the condition that occurs when al lthreads are waiting to acquire a resource help by another thread.
+Deadlock - is the condition that occurs when all threads are waiting to acquire a resource held by another thread.
 
 ## Libs
 
@@ -1368,9 +1366,9 @@ Arrays:
 expect().to match_array
 ```
 
-`deascribe` and `it` - organization.
+`describe` and `it` - organization.
 `expect` - verification.
-`let` - initializes data on deman.
+`let` - initializes data on demand.
 `context` (lias to `describe`) - grouping for setup and examples.
 `before` hook - run before each example (can be inside context).
 
@@ -1386,11 +1384,11 @@ Expect:
 
 ## Compare to Python
 
-Objects in ruby does not expose attributes, only methods.
+Objects in ruby do not expose attributes, only methods.
 
 The fact that top-level methods are private means that they must be invoked like functions, without an explicit receiver. In this way, Ruby mimics a procedural programming paradigm within its strictly object-oriented framework.
 
-Blocks in Ruby is powerful and popular. Similar, less functional thing in Python is lambda.
+Blocks in Ruby is a powerful and popular. A similar, less functional thing in Python is lambda.
 
 Braces in method calls are optional.
 
@@ -1401,6 +1399,10 @@ Ruby iterators = Python generators.
 Ruby sequences = Python iterators.
 
 Python namedtuple = Ruby Struct.new.
+
+Python coroutines = Ruby fibers.
+
+String are mutable in Ruby.
 
 ## Links
 
