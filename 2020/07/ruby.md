@@ -10,12 +10,6 @@ place: Phuket, Thailand
 
 Expression oriented.
 
-## Tools
-
-`rvm` - ruby version manager.
-
-`gem install rails` - package manager.
-
 ## Program structure
 
 ```ruby
@@ -67,6 +61,355 @@ Module1::
 
 a = Array.new
   .push('example') # works because the first characted is period
+```
+
+### `::`
+
+```ruby
+Encoding::Converter  # namespace
+```
+
+### `*` - splat operator
+
+```ruby
+z, y = *[1, 2]
+x, y, z = 1, 2 # z = nil
+x, y = 1, 2, 3 # 3 is not assigned
+x, y, z = 1, *[2, 3]
+x, *y = 1, 2, 3 # x = 1, y = [2, 3]
+*x, y = 1, 2, 3 # x = [1, 2], y = 3
+```
+
+### Loops
+
+Statements: while, until, and for. Also custom looping using iterators.
+
+The loop variables of a for loop are not local to the loop, they remain defined even after the loop exits!
+
+```ruby
+for i in arr do
+  puts i
+end
+```
+
+The only difference between the for version of the loop and the each version is that the block of code that follows an iterator does define a new variable scope.
+
+```ruby
+1..10.each do |i|
+  puts i
+end
+```
+
+```ruby
+loop do
+  puts 1
+  # next
+  break
+end
+```
+
+```ruby
+while x > 0:
+  puts x
+  x = x - 1
+end
+```
+
+```ruby
+until x < 0:
+  puts x
+  x -= 1
+end
+```
+
+Inline:
+```ruby
+x = 0
+puts x = x + 1 while x < 10
+```
+
+Break out from nested loops:
+```ruby
+for a in aa do
+  catch :my_error do
+    for b in bb do
+      for c in cc do
+        throw :my_error
+      end
+    end
+  end
+end
+```
+
+!!! tip "Throw and return value"
+    If `throw` is called, then the return value of the corresponding `catch` is, by default, nil. You can, however, specify an arbitrary return value for catch by passing a second argument to `throw`.
+
+### Variables
+
+```ruby
+CONSTANT = 1
+$global_var = 1
+@@class_variable = 1
+@instance_variable = 1
+local_variable = 1
+```
+
+Parallel assignment:
+
+```ruby
+x, y = 1, 2
+```
+
+Constans can be defined outside class:
+```ruby
+MyClass::MY_CONST = 1
+```
+
+Instance and class variables are encapsulated and effectively private, and constants are effectively public.
+
+### Functions
+
+#### Partial
+
+Use `lambda`.
+
+### Global functions
+
+Global functions are defined as private methods of the Object class.
+
+### Methods
+
+A method is a named block of parameterized code associated with one or more objects.
+
+Ruby methods are not objects.
+
+Methods are defined with the `def` keyword. The return value of a method is the value of the last expression evaluated in its body.
+
+Methods are always invoked on an object (the receiver, and methods are called messages, messages are sent to receiver).
+
+```ruby
+def say
+  # method body goes here
+end
+```
+
+When a methods is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
+
+Methods can be defined on individual objects (singleton methods):
+```ruby
+def Math.square(x)
+  x * x
+end
+
+def sefl.my_class_method(x)
+  # ...
+end
+```
+
+Blocks can be passed to methods:
+```ruby
+def take_block(&block)
+  block.call
+end
+
+take_block do
+  puts "Block call"
+end
+```
+
+Procs are stored blocks:
+```ruby
+talk = Proc.new do
+  puts "I am talking."
+end
+```
+
+Assignment methods:
+```ruby
+def a=(x):
+  x + 1
+end
+
+# my_object.a = 10  # => 11
+```
+
+Qustion mark suffix:
+```ruby
+def can_call?
+  true
+end
+```
+
+A question mark if used to mark predicates - methods that return a Boolean value.
+
+Exclamation mark suffix: is used to indicate that caution is required with the use of the method.
+
+```ruby
+def delete!
+end
+```
+
+Often exlamation marks is used in mutator method that alters the objects in place.
+Example: `#sort` vs `#sort!`.
+
+Singleton methods are available on a single object:
+
+```ruby
+o = 'message'
+def o.printme
+  puts self
+end
+```
+
+Undefine method:
+
+```ruby
+undef my_method
+```
+
+When method name resolution algorithm fails to find a method, it looks up a method named method_missing instead.
+
+Alias method:
+```ruby
+def my_method
+end
+
+alias my_method_new_name my_method
+```
+
+Params:
+
+```ruby
+def a_method(s, len=10) end
+def a_method(s, *a) end
+def a_method(s:, len: 10) end
+```
+
+Methods can be represented as an instances of the Method class:
+
+```ruby
+m = 0.method(:succ)
+p = m.to_proc
+
+unbound_m = Fixnum.instance_method('+')
+unbound_m.bind(2).call
+```
+
+Methods are not closures. The only binding is self - the object on which the method is to be invoked.
+
+A private method is internal to the implementation of a class, and it can only be called by other instance methods of the class (or, its subclasses).
+
+A protected method is like a private method in that it can only be invoked from within the implementation of a class or its subclasses.
+
+Eval private methods from outside:
+```ruby
+obj.send(:abc)
+obj.public_send(:abc)
+obj.instance_eval { ... }
+```
+
+Chaining (overriding methods with original call):
+```ruby
+def my_method(a, b)
+  super(a, b + 1)
+end
+```
+
+If you use super without arguments (bare keywords) - then all the arguments that were passed to the current method are passed to the superclass method.
+
+### Flow control
+
+The value of `nil` is treated the same as `false` and any other value is the same as `true`!
+
+`x = if x < y then x else y end`  - this is an expression.
+
+```ruby
+if a == 1
+  puts 1
+elsif a == 2
+  puts 2
+else
+  puts 'another'
+end
+```
+
+```text
+&& -> and
+|| -> or
+! - not
+```
+
+ Ternary operator:
+ ```ruby
+ true ? "True" : "Not True"
+ ```
+
+Statement (or expression) modifier:
+```ruby
+code if expression
+code unless expression
+```
+
+#### Altering control flow
+
+`return` - method exit and return a value to its caller.
+
+!!! tip "Nested within blocks"
+    Return is remarkably consistent, it always causes the enclosing method to return, regardless of how deeply nested within blocks it is.
+
+`break` - exit loop (or iterator).
+
+`next` - skip the rest of the current iteration and move to the next iteration.
+
+`redo` - restart loop (or iterator) from the beginning.
+
+`retry` - restart an iterator, reevaluate the entire expression (can be also used in exception handling).
+
+`throw/catch` - exception propagation and handling.
+
+Ruby's `catch` method defines a labeled block of code, and Ruby's `throw` method causes that block to exit.
+
+#### Case
+
+The comparison is done using `===`!
+
+```ruby
+case a
+when 1
+  puts 1
+when 2
+  puts 2
+else
+  puts 3
+end
+```
+
+```ruby
+case
+  when x == 1, y == 0 then
+    'one and y is zero'
+  when x == 2 then
+    'two'
+end
+```
+
+#### `===` - case equality
+
+For some classes `===` is a membership or matching operator.
+
+```ruby
+(1..10) === 5
+/\d+/ === '123'
+String === 's'
+:s === 's'
+```
+
+#### `<=>` operator
+
+```ruby
+1 <=> 5 # -1
+5 <=> 5 # 0
+9 <=> 5 # 1
 ```
 
 ## Types
@@ -511,355 +854,6 @@ class << Point
     Point.new(x, y)
   end
 end
-```
-
-### `::`
-
-```ruby
-Encoding::Converter  # namespace
-```
-
-### `*` - splat operator
-
-```ruby
-z, y = *[1, 2]
-x, y, z = 1, 2 # z = nil
-x, y = 1, 2, 3 # 3 is not assigned
-x, y, z = 1, *[2, 3]
-x, *y = 1, 2, 3 # x = 1, y = [2, 3]
-*x, y = 1, 2, 3 # x = [1, 2], y = 3
-```
-
-### Loops
-
-Statements: while, until, and for. Also custom looping using iterators.
-
-The loop variables of a for loop are not local to the loop, they remain defined even after the loop exits!
-
-```ruby
-for i in arr do
-  puts i
-end
-```
-
-The only difference between the for version of the loop and the each version is that the block of code that follows an iterator does define a new variable scope.
-
-```ruby
-1..10.each do |i|
-  puts i
-end
-```
-
-```ruby
-loop do
-	puts 1
-	# next
-	break
-end
-```
-
-```ruby
-while x > 0:
-	puts x
-	x = x - 1
-end
-```
-
-```ruby
-until x < 0:
-	puts x
-	x -= 1
-end
-```
-
-Inline:
-```ruby
-x = 0
-puts x = x + 1 while x < 10
-```
-
-Break out from nested loops:
-```ruby
-for a in aa do
-  catch :my_error do
-    for b in bb do
-      for c in cc do
-        throw :my_error
-      end
-    end
-  end
-end
-```
-
-!!! tip "Throw and return value"
-    If `throw` is called, then the return value of the corresponding `catch` is, by default, nil. You can, however, specify an arbitrary return value for catch by passing a second argument to `throw`.
-
-### Variables
-
-```ruby
-CONSTANT = 1
-$global_var = 1
-@@class_variable = 1
-@instance_variable = 1
-local_variable = 1
-```
-
-Parallel assignment:
-
-```ruby
-x, y = 1, 2
-```
-
-Constans can be defined outside class:
-```ruby
-MyClass::MY_CONST = 1
-```
-
-Instance and class variables are encapsulated and effectively private, and constants are effectively public.
-
-### Functions
-
-#### Partial
-
-Use `lambda`.
-
-### Global functions
-
-Global functions are defined as private methods of the Object class.
-
-### Methods
-
-A method is a named block of parameterized code associated with one or more objects.
-
-Ruby methods are not objects.
-
-Methods are defined with the `def` keyword. The return value of a method is the value of the last expression evaluated in its body.
-
-Methods are always invoked on an object (the receiver, and methods are called messages, messages are sent to receiver).
-
-```ruby
-def say
-  # method body goes here
-end
-```
-
-When a methods is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
-
-Methods can be defined on individual objects (singleton methods):
-```ruby
-def Math.square(x)
-  x * x
-end
-
-def sefl.my_class_method(x)
-  # ...
-end
-```
-
-Blocks can be passed to methods:
-```ruby
-def take_block(&block)
-  block.call
-end
-
-take_block do
-  puts "Block call"
-end
-```
-
-Procs are stored blocks:
-```ruby
-talk = Proc.new do
-  puts "I am talking."
-end
-```
-
-Assignment methods:
-```ruby
-def a=(x):
-  x + 1
-end
-
-# my_object.a = 10  # => 11
-```
-
-Qustion mark suffix:
-```ruby
-def can_call?
-  true
-end
-```
-
-A question mark if used to mark predicates - methods that return a Boolean value.
-
-Exclamation mark suffix: is used to indicate that caution is required with the use of the method.
-
-```ruby
-def delete!
-end
-```
-
-Often exlamation marks is used in mutator method that alters the objects in place.
-Example: `#sort` vs `#sort!`.
-
-Singleton methods are available on a single object:
-
-```ruby
-o = 'message'
-def o.printme
-  puts self
-end
-```
-
-Undefine method:
-
-```ruby
-undef my_method
-```
-
-When method name resolution algorithm fails to find a method, it looks up a method named method_missing instead.
-
-Alias method:
-```ruby
-def my_method
-end
-
-alias my_method_new_name my_method
-```
-
-Params:
-
-```ruby
-def a_method(s, len=10) end
-def a_method(s, *a) end
-def a_method(s:, len: 10) end
-```
-
-Methods can be represented as an instances of the Method class:
-
-```ruby
-m = 0.method(:succ)
-p = m.to_proc
-
-unbound_m = Fixnum.instance_method('+')
-unbound_m.bind(2).call
-```
-
-Methods are not closures. The only binding is self - the object on which the method is to be invoked.
-
-A private method is internal to the implementation of a class, and it can only be called by other instance methods of the class (or, its subclasses).
-
-A protected method is like a private method in that it can only be invoked from within the implementation of a class or its subclasses.
-
-Eval private methods from outside:
-```ruby
-obj.send(:abc)
-obj.public_send(:abc)
-obj.instance_eval { ... }
-```
-
-Chaining (overriding methods with original call):
-```ruby
-def my_method(a, b)
-  super(a, b + 1)
-end
-```
-
-If you use super without arguments (bare keywords) - then all the arguments that were passed to the current method are passed to the superclass method.
-
-### Flow control
-
-The value of `nil` is treated the same as `false` and any other value is the same as `true`!
-
-`x = if x < y then x else y end`  - this is an expression.
-
-```ruby
-if a == 1
-	puts 1
-elsif a == 2
-	puts 2
-else
-	puts 'another'
-end
-```
-
-```text
-&& -> and
-|| -> or
-! - not
-```
-
- Ternary operator:
- ```ruby
- true ? "True" : "Not True"
- ```
-
-Statement (or expression) modifier:
-```ruby
-code if expression
-code unless expression
-```
-
-#### Altering control flow
-
-`return` - method exit and return a value to its caller.
-
-!!! tip "Nested within blocks"
-    Return is remarkably consistent, it always causes the enclosing method to return, regardless of how deeply nested within blocks it is.
-
-`break` - exit loop (or iterator).
-
-`next` - skip the rest of the current iteration and move to the next iteration.
-
-`redo` - restart loop (or iterator) from the beginning.
-
-`retry` - restart an iterator, reevaluate the entire expression (can be also used in exception handling).
-
-`throw/catch` - exception propagation and handling.
-
-Ruby's `catch` method defines a labeled block of code, and Ruby's `throw` method causes that block to exit.
-
-#### Case
-
-The comparison is done using `===`!
-
-```ruby
-case a
-when 1
-	puts 1
-when 2
-	puts 2
-else
-	puts 3
-end
-```
-
-```ruby
-case
-  when x == 1, y == 0 then
-    'one and y is zero'
-  when x == 2 then
-    'two'
-end
-```
-
-#### `===` - case equality
-
-For some classes `===` is a membership or matching operator.
-
-```ruby
-(1..10) === 5
-/\d+/ === '123'
-String === 's'
-:s === 's'
-```
-
-#### `<=>` operator
-
-```ruby
-1 <=> 5 # -1
-5 <=> 5 # 0
-9 <=> 5 # 1
 ```
 
 ### Enumerable
@@ -1385,6 +1379,12 @@ Thread states:
 ### External
 
 [Dry-rb](https://dry-rb.org/)
+
+### Tools
+
+`rvm` - ruby version manager.
+
+`gem install rails` - package manager.
 
 ## Compare to Python
 
