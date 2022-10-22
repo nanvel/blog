@@ -737,6 +737,9 @@ $ - End of line.
 \G - Last match finished.
 ```
 
+Exclude characters:
+`[^-. ]` - all substrings that don't contain `-`, `.`, or a space.
+
 Conversion:
 ```ruby
 "1".to_i

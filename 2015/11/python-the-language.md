@@ -1,7 +1,7 @@
 labels: Blog
         Python
 created: 2015-11-22T21:33
-modified: 2018-06-29T12:13
+modified: 2022-10-22T16:41
 place: Kyiv, Ukraine
 visible: true
 comments: true
@@ -1152,3 +1152,4 @@ if __name__ == '__main__':
 ## Links
 
 [Fluent Python](http://www.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/) by Luciano Ramalho
+[Python 3 Standard Library by Example](https://www.amazon.com/Python-Standard-Library-Example-Developers-ebook/dp/B072QZZDV7/) by Doug Hellmann
