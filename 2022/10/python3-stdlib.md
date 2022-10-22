@@ -1,4 +1,4 @@
-labels: Blog
+labels: Draft
         Python
 created: 2022-10-22T16:45
 modified: 2022-10-22T16:45
