@@ -175,6 +175,7 @@ modified: 2022-05-14T14:01
 ## In progress
 
 - Domain-Driven Design by Eric Evans
+- Staff Engineer by Will Larson
 - Design It! by Michael Keeling
 - Grocking Simplicity by Eric Normand
 - Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
