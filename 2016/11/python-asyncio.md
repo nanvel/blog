@@ -2,7 +2,7 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2018-03-13T13:37
+modified: 2022-11-13T22:51
 place: Phuket, Thailand
 comments: true
 
@@ -23,6 +23,8 @@ comments: true
 **September 2015**: Python 3.5 with async/await statements ([PEP 492](https://www.python.org/dev/peps/pep-0492/))
 
 [Presentation on concurrency in Python](concurrency_in_python.pdf).
+
+[A Brief History of Async](https://nanvel.name/2022/11/talk-async) talk on ThaiPy. 
 
 ## New syntax for generators/coroutines
 
