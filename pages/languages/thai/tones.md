@@ -10,3 +10,11 @@ created: 2022-11-13T23:22
 	<tr><td>Middle</td><td style="background-color: #d8e2dc;">Middle</td><td style="background-color: #d8e2dc;">Middle</td><td style="background-color: #fec89a;">Low</td><td style="background-color: #d8e2dc;">Middle</td><td colspan="2" style="background-color: #fec89a;">Low</td></tr>
 	<tr><td>Low</td><td style="background-color: #d8e2dc;">Middle</td><td style="background-color: #d8e2dc;">Middle</td><td style="background-color: #fec89a;">High</td><td style="background-color: #d8e2dc;">Middle</td><td style="background-color: #fcd5ce;">Failing</td><td style="background-color: #fec89a;">High</td></tr>
 </table>
+
+Consonant classes:
+
+- Middle: ก จ ฎ ฏ ด ต บ ป อ
+- High: ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห
+- Low: ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ
+
+Tone marks: TODO.
