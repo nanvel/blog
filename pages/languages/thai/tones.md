@@ -53,13 +53,13 @@ created: 2022-11-13T23:22
 
 <table>
 	<tr style="background-color: #ABEB8A;">
-		<td>Middle</td><td style="font-size: 120%;">ก จ ฎ ฏ ด ต บ ป อ</td>
+		<td>Middle</td><td style="font-size: 120%; width: 100%;">ก จ ฎ ฏ ด ต บ ป อ</td>
 	</tr>
 	<tr style="background-color: #8AABEB;">
-		<td>High</td><td style="font-size: 120%;">ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</td>
+		<td>High</td><td style="font-size: 120%; width: 100%;">ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</td>
 	</tr>
 	<tr style="background-color: #EB8AAB;">
-		<td>Low</td><td style="font-size: 120%;">ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</td>
+		<td>Low</td><td style="font-size: 120%; width: 100%;">ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</td>
 	</tr>
 </table>
 
