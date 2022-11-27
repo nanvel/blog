@@ -16,15 +16,35 @@ created: 2022-11-13T23:22
 <table>
 	<tr>
 		<td></td><td>Middle</td><td>Low</td><td>Falling</td><td>High</td><td>Raising</td>
+	</tr>
+	<tr>
 		<td></td><td></td><td>เอก</td><td>โท</td><td>ตรี</td><td>จัตวา</td>
+	</tr>
+	<tr>
 		<td>**Middle**</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>Long</td><td>กา</td><td>ก่า</td><td>ก้า</td><td>ก๊า</td><td>ก๋า</td>
+	</tr>
+	<tr>
 		<td>Short</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>**High**</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>Long</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>Short</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>**Low**</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>Long</td><td></td><td></td><td></td><td></td><td></td>
+	</tr>
+	<tr>
 		<td>Short</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
 </table>
