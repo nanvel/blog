@@ -23,28 +23,28 @@ created: 2022-11-13T23:22
 	<tr>
 		<td>Middle</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #9FE879;">
+	<tr style="background-color: #ABEB8A;">
 		<td>Long</td><td>กา</td><td>ก่า</td><td>ก้า</td><td>ก๊า</td><td>ก๋า</td>
 	</tr>
-	<tr style="background-color: #9FE879;">
+	<tr style="background-color: #ABEB8A;">
 		<td>Short</td><td>-</td><td>กะ</td><td>ก้ะ</td><td>ก๊ะ</td><td>ก๋ะ</td>
 	</tr>
 	<tr>
 		<td>High</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #799FE8;">
+	<tr style="background-color: #8AABEB;">
 		<td>Long</td><td>-</td><td>ข่า</td><td>ข้า</td><td>-</td><td>ขา</td>
 	</tr>
-	<tr style="background-color: #799FE8;">
+	<tr style="background-color: #8AABEB;">
 		<td>Short</td><td>-</td><td>ขะ</td><td>ข้ะ</td><td>-</td><td>-</td>
 	</tr>
 	<tr>
 		<td>Low</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #E8799F;">
+	<tr style="background-color: #EB8AAB;">
 		<td>Long</td><td>คา</td><td>-</td><td>ค่า</td><td>ค้า</td><td>-</td>
 	</tr>
-	<tr style="background-color: #E8799F;">
+	<tr style="background-color: #EB8AAB;">
 		<td>Short</td><td>-</td><td>-</td><td>ค่ะ</td><td>คะ</td><td>-</td>
 	</tr>
 </table>
