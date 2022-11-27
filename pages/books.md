@@ -176,6 +176,7 @@ modified: 2022-05-14T14:01
 
 - Domain-Driven Design by Eric Evans
 - Staff Engineer by Will Larson
+- The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 - Design It! by Michael Keeling
 - Grocking Simplicity by Eric Normand
 - Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
