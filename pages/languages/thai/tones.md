@@ -51,8 +51,16 @@ created: 2022-11-13T23:22
 
 ## Consonant classes
 
-- Middle: ก จ ฎ ฏ ด ต บ ป อ
-- High: ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห
-- Low: ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ
+<table>
+	<tr style="background-color: #ABEB8A;">
+		<td>Middle</td><td style="font-size: 120%;">ก จ ฎ ฏ ด ต บ ป อ</td>
+	</tr>
+	<tr style="background-color: #8AABEB;">
+		<td>High</td><td>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</td>
+	</tr>
+	<tr style="background-color: #EB8AAB;">
+		<td>Low</td><td>ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</td>
+	</tr>
+</table>
 
 Tone marks: TODO.
