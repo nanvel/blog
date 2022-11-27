@@ -23,7 +23,7 @@ created: 2022-11-13T23:22
 	<tr>
 		<td>Middle</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #DFFF99;">
+	<tr style="background-color: #8DE45F;">
 		<td>Long</td><td>กา</td><td>ก่า</td><td>ก้า</td><td>ก๊า</td><td>ก๋า</td>
 	</tr>
 	<tr>
@@ -32,7 +32,7 @@ created: 2022-11-13T23:22
 	<tr>
 		<td>High</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #99FFEC;">
+	<tr style="background-color: #5F8DE4;">
 		<td>Long</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
 	<tr>
@@ -41,7 +41,7 @@ created: 2022-11-13T23:22
 	<tr>
 		<td>Low</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
-	<tr style="background-color: #FF99AC;">
+	<tr style="background-color: #E45F8D;">
 		<td>Long</td><td></td><td></td><td></td><td></td><td></td>
 	</tr>
 	<tr>
