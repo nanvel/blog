@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2014-11-30T14:10
-modified: 2017-07-21T12:23
+modified: 2022-12-03T11:16
 place: Kyiv, Ukraine
 comments: true
 
@@ -866,3 +866,4 @@ We need smart models, thin controllers and dumb views.
 - [A collection of design patterns/idioms in Python](https://github.com/faif/python-patterns)
 - [Design Patterns](https://sourcemaking.com/design_patterns) on sourcemaking.com
 - [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

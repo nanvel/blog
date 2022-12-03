@@ -1,6 +1,7 @@
 labels: Talk
         Ruby
         SoftwareDevelopment
+        SoftwareDesign
 created: 2022-12-03T11:10
 modified: 2022-12-03T11:10
 place: Bangkok, Thailand
@@ -10,7 +11,7 @@ comments: false
 
 [Github](https://github.com/nanvel/slides-di)
 
-<object data="talk-async-slides.pdf" type="application/pdf" width="800px" height="600px">
+<object data="slides-di.pdf" type="application/pdf" width="800px" height="600px">
     <embed src="slides-di.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="slides-di.pdf">Download PDF</a>.</p>
     </embed>
