@@ -171,11 +171,12 @@ modified: 2022-05-14T14:01
 - [+] Quantitative Trading by Ernest P. Chan
 - The Ruby Programming Language by David Flanagan and Yukihiro Matsumoto
 - Python 3 Standard Library by Example by Doug Hellmann
+- [+] Domain-Driven Design by Eric Evans
 
 ## In progress
 
-- Domain-Driven Design by Eric Evans
 - Staff Engineer by Will Larson
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 - Design It! by Michael Keeling
 - Grocking Simplicity by Eric Normand
@@ -198,6 +199,7 @@ modified: 2022-05-14T14:01
 
 ## To read
 
+- https://dou.ua/lenta/articles/top-books-2022/
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
 - Architects of Intelligence by Matin Ford
 - The Art and Science of Trading by Adam Grimes
