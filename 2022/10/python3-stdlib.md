@@ -7,7 +7,7 @@ comments: true
 
 # Python 3 standard library notes
 
-loc: 4359
+loc: 394
 
 ## Syntax
 
@@ -46,6 +46,100 @@ Regular expression flags:
 - `VERBOSE`: verbose
 - `LOCALE`: locale dependent
 - `DEBUG`: display debug information
+
+## `functools.singledispatch`
+
+```python
+from functools import singledispatch
+
+
+@singledispatch
+def myfunc(arg):
+    print("Default")
+
+
+@myfunc.register(int)
+def myfunc_int(arg):
+    print("Int")
+
+
+@myfunc.register(list)
+def myfunc_list(arg):
+    print("List")
+
+
+myfunc('s')
+myfunc(1)
+myfunc([1])
+```
+
+## `itertools.chain`
+
+```python
+from itertools import chain
+
+
+for i in chain([1, 2, 3], [4, 5, 6]):
+    print(i)
+```
+
+## `itertools.islice`
+
+```python
+islice(range(100), 5)  # first 5
+islice(range(100), 5, 10)  # 5 to 10
+islice(range(100), 0, 100, 10)  # 0, 10, 20, ...
+```
+
+## `itertools.dropwhile`, `itertools.takewhile`
+
+dropwhile: after the condition is False for the first time - all remaining are returned.
+
+```python
+from itertools import dropwhile
+
+
+dropwhile(lambda x: x < 10, [-1, 1, 10, 100])
+```
+
+## `itertools.compress`
+
+```python
+from itertools import cycle, compress
+
+
+every_third = cycle([False, False, True])
+data = range(10)
+
+compress(data, every_third)  # [2, 5, 8]
+```
+
+## `itertools.groupby`
+
+```python
+import operator
+from itertools import groupby
+
+
+for k, g in groupby(data, operator.attgetter('x')):
+    print(k, g)
+```
+
+## `itertools.accumulate`
+
+```python
+from itertools import accumulate
+
+
+accumulate(range(5))  # 0, 1, 3, 6, 10
+```
+
+## `itertools.product`
+
+```python
+list(product(['a', 'b'], ['0', '1']))
+# [('a', '0'), ('a', '1'), ('b', '0'), ('b', '1')]
+```
 
 ## Tools
 
