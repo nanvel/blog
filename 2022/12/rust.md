@@ -174,6 +174,32 @@ impl Rectangle {
 let sq = Rectangle::square(3);
 ```
 
+#### Enum
+
+```rust
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn call(&self) {
+
+    }
+}
+
+let m = Message::Write(String::from("Test"));
+m.call()
+```
+
+`Option` enum:
+```python
+let some_number = Some('a') // Option<char>
+let absent_number: Option<i32> = None;
+```
+
 ### Expressions
 
 Statement:
@@ -197,6 +223,16 @@ Expressions do not end with `;`.
 def five() -> i32 {
     5
 }
+```
+
+### Modules
+
+A package can have only one lib or/and one or more binaries.
+
+```text
+src/main.rs  // binary with the package name
+src/lib.rs  // lib with the package name
+src/bin/*.rs  // other binaries
 ```
 
 ## rustup
