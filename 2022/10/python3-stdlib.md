@@ -7,8 +7,6 @@ comments: true
 
 # Python 3 standard library notes
 
-loc: 1194
-
 ## Syntax
 
 `...` is equal to `pass` for an empty class.
@@ -25,6 +23,10 @@ loc: 1194
 - [bisect](https://docs.python.org/3/library/bisect.html) - maintains list sorted
 - [ChainMap](https://docs.python.org/3/library/collections.html#collections.ChainMap) - combines dicts
 - [Counter](https://docs.python.org/3/library/collections.html#collections.Counter) - counting hashable objects
+
+## `enum`
+
+Defines enumeration type.
 
 ## Regexp
 
@@ -484,7 +486,18 @@ Exposes the Unix signal mechanism for sending events to other processes.
 
 ## `concurrent.futures`
 
+Manage pools of concurrent tasks.
 Implementation of thread and process-based executors for managing resources pools for running concurrent tasks.
+
+Executors are used for managing pools of workers, and futures are used for managing results computed by the workers.
+
+```python
+with futures.ThreadPoolExecutor(max_workers=2) as ex:
+    f = ex.submit(task, 5)
+    result = f.result()
+```
+
+## `subprocess`
 
 `run()` function was added in Python 3.5.
 
@@ -507,6 +520,12 @@ cat = subprocess.Popen(
 print(cat.stdout)
 ```
 
+Exit codes:
+
+- `== 0`: no error
+- `> 0`: the process had an error and exited
+- `< 0`: the process was killed with a signal
+
 ## `threading`
 
 To wait for a daemon thread has completed its work, use the `join()` method.
@@ -526,17 +545,194 @@ Lock object - guard against simulteneous access to an object.
 
 Barriers - another thread synchronization mechanism.
 
-## `multiprocessing`
-
-Exit codes:
-
-- `== 0`: no error
-- `> 0`: the process had an error and exited
-- `< 0`: the process was killed with a signal
 
 ## `asyncio`
 
 Asynchronous I/O, Event Loop, and Concurrency Tools.
+
+Single-thread, single-process approach in which parts of an application cooperate to switch tasks explicitly at optimal times.
+
+[A Brief History of Python Async](https://nanvel.name/2022/11/talk-async)
+
+## `selectors`
+
+Provides a high-level interface for watching multiple sockets simultaneously.
+
+## `socket`
+
+Network communication.
+
+UDP - user datagram protocol. Provides unreliable delivery of individual messages. Is commonly used where order is less important and multicasting.
+
+TCP - transmission control protocol. Provides byte stream between the client and the server, ensuring message delivery of failure notification through timeout management, retransmission, and other features.
+
+## `socketserver`
+
+Creating network servers.
+
+## `urllib`
+
+`parse` - manipulates URL strings.
+
+`request` - API for retrieving content remotely.
+
+`http.server` - create a web server.
+
+`http.cookies` - parse cookies.
+
+`urllib.parse.urldefrag` - parse, break url into components.
+
+## `base64`
+
+Encode binary data with ASCII.
+
+## `uuid`
+
+Universal Unique Identifiers as described in RFC-4122.
+
+Does not require a central registar and can guarantee uniqueness across space ans time.
+
+`uuid1()` - uses host MAC.
+
+`uuid3()` and `uuid5()` - name based values.
+
+`uuid4()` - random values.
+
+## `json`
+
+Compact:
+```python
+json.dumps(data, separators=(',', ':'))
+```
+
+`json.tool` - command-line program for reformatting JSON data to be easier to read:
+```bash
+python3 -m json.tool example.json
+```
+
+## `smtplib`
+
+Comunicates with an email server to deliver a message.
+
+`smtpd` - create a custom mail server.
+
+`imaplib` - uses IMAP protocol to manipulate messages.
+
+`mailbox` - store and modify local messages archive.
+
+## Command-line application
+
+`argparse` - Interface for parsing and validating command-line arguments.
+
+`getopt` - low-level arguments processing.
+
+`getpass` - securely prompt the user for a password or other secret value.
+
+`cmd` - framework for interactive, command-driven shell-style programs.
+
+`shlex` - a parser for shell-style syntax.
+
+`configparser` - manage application configuration files.
+
+`fileinput` - read from files, command-line filter framework.
+
+`atexit` - shedule function to call on program shutting down.
+
+`sched` - scheduler for triggering events and specific times in future.
+
+## `readline`
+
+Interface for the GNU readline library (useful for command line completion)
+
+## Internationalization and localization
+
+`gettext` - create message catalogs.
+
+`locale` - cultural localization API. Changes the way numbers, currency, dates, and times are formatted.
+
+Environment:
+```bash
+LANG_en_US LC_CTYPE=en_US LC_ALL=en_US python3 ...
+```
+
+## Developer tools
+
+`trace` - monitors the way Python executes a program.
+
+`profile`, `timeit` - meature the speed of a program.
+
+`tabnanny` - scanner that reports ambiguous use of indentation.
+
+## `unittest`
+
+Based on XUnit framework design by Kent Beck and Erich Gamma.
+
+Test classes and methods can be decorated with `skip()` to always skip the tests.
+`skipIf()` and `skipUnless()` - skip with conditions.
+
+The test can raise SkipTest directly to cause the test to be skipped.
+
+`subTest`:
+```python
+def test_with_subtest(self):
+    for pat in ['a', 'B', 'c', 'D']:
+        with self.subTest(pattern=pat):
+            self.assertRegex('abc', pat)
+```
+
+`expectFailure`:
+```python
+@unittest.expectedFailure
+def test_never_passes(self):
+    self.assertTrue(False)
+```
+
+## `trace`
+
+```python
+import trace
+
+
+tracer = trace.Trace(count=False, trace=True)
+tracer.run('example(1)')
+```
+
+Or using the tool:
+```console
+python3 -m trace example.py
+```
+
+## `pdb`
+
+Interactive debugger.
+
+`inspect` - inspect live objects.
+
+## `pyclbr`
+
+Class browser: scan Python source files to find both classes and stand-alone functions.
+
+## System
+
+`sys` - focused on interpreter settings.
+
+`os` - provides access to operating system.
+
+`platform` - system version information.
+
+`sysconfig` - interpreter compile-time configuration.
+
+```python
+sys.stdin.read()
+```
+
+## Importlib
+
+Exposes the underlying implementation of the import mechanism used by the interpreter, can be used to import modules dynamically.
+
+## Memory management and limits
+
+CPython uses reference counting and garbage collection to perform automatic memory management.
 
 ## Tools
 
@@ -544,6 +740,11 @@ venv:
 ```console
 python3 -m venv .venv                             
 source .venv/bin/activate
+```
+
+docs:
+```console
+pydoc -p 5000
 ```
 
 ## Links
