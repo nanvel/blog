@@ -1,13 +1,13 @@
 labels: Draft
         Python
 created: 2022-10-22T16:45
-modified: 2022-12-18T12:54
+modified: 2022-12-23T15:35
 place: Bangkok, Thailand
 comments: true
 
 # Python 3 standard library notes
 
-loc: 818
+loc: 1194
 
 ## Syntax
 
@@ -371,6 +371,172 @@ with shelve.open('test_shelf.db') as s:
         's': 'string',
     }
 ```
+
+## `dbm`
+
+Unix key-value databases.
+
+## `sqlite3`
+
+Embedded relational database. Implements a Python DB-API 2.0.
+
+SQLite is designed to be embedded in applications, instead of using a separate database server program.
+
+```python
+import sqlite3
+import sys
+
+
+db_filename = 'todo.db'
+project_name = sys.argv[1]
+
+
+with sqlite3.connect(db_filename) as conn:
+    cursor = conn.cursor()
+
+    query = """
+        SELECT id, priority, details, status, deadline
+        FROM task
+        WHERE project = ?  # WHERE project = :project_name
+    """
+
+    cursor.execute(query, (project_name,))
+    # cursor.execute(query, {'project_name': project_name})
+
+    for row in cursor.fetchall():
+        pass
+```
+
+Locking modes (isolation levels):
+
+- Deferred (default) - locks once, when change is begun
+- Immediate - locks as soon as a change starts and prevents other cursors from making changes until the transaction is committed
+- Exclusive - Locks the database to all readers
+- None - auto-commit mode
+
+In-memory:
+```python
+with sqlite3.connect(':memory:') as conn:
+    ...
+```
+
+Python functions in SQL:
+```python
+def decrypt(s):
+    return codecs.encode('s', 'rot-13')
+
+
+with qlite3.connect(db_filename) as conn:
+    conn.create_function('decrypt', 1, decrypt)
+    cursor = conn.cursor()
+    query = "SELECT id, decrypt(details) FROM task;"
+```
+
+Regexp:
+```python
+query = "SELECT * FROM table WHERE column REGEXP'.*pattern.*';"
+```
+
+## `csv`
+
+Comma-separated value files.
+
+Quote:
+
+- QUOTE_ALL (quote all regardless of type)
+- QUOTE_MINIMAL (quote fields with special charaters) 
+
+Dialects: `csv.list_dialects()`: `excel`, `excel-tabs`, `unix`, can register new.
+
+DictReader and DictWriter.
+
+## `zlib`
+
+GNU zlib compression.
+
+```python
+compressed = zlib.compress(data, level)  # levels 0-9 
+```
+
+Checksums:
+```python
+checksum = zlib.adler32(data)  # adler32, crc32
+```
+
+## `tarfile`
+
+Tar archive access.
+
+## `zipfile`
+
+ZIP archive access.
+
+## `hashlib`
+
+Generating signatures of message content using standard algorithms such as MD5 and SHA.
+
+`hmac` - for verifying that a message has not been altered.
+
+## `signal`
+
+Asynchronous system events.
+Exposes the Unix signal mechanism for sending events to other processes.
+
+## `concurrent.futures`
+
+Implementation of thread and process-based executors for managing resources pools for running concurrent tasks.
+
+`run()` function was added in Python 3.5.
+
+```python
+import subprocess
+
+
+completed = subproces.run(['ls', '-l'])
+print(completed.returncode)
+```
+
+Pass PIPE for the stdout and stderr arguments to capture the output.
+
+```python
+cat = subprocess.Popen(
+    ['cat', 'index.rst'],
+    stdout=subprocess.PIPE
+)
+
+print(cat.stdout)
+```
+
+## `threading`
+
+To wait for a daemon thread has completed its work, use the `join()` method.
+
+`enumerate()` returns a list of active Thread instances:
+```python
+main_thread = threading.main_thread()
+for t in main_thread.enumerate():
+    if t is main_thread:
+        continue
+    ...
+```
+
+Event objects are a simple way to communicate between threads safely.
+
+Lock object - guard against simulteneous access to an object.
+
+Barriers - another thread synchronization mechanism.
+
+## `multiprocessing`
+
+Exit codes:
+
+- `== 0`: no error
+- `> 0`: the process had an error and exited
+- `< 0`: the process was killed with a signal
+
+## `asyncio`
+
+Asynchronous I/O, Event Loop, and Concurrency Tools.
 
 ## Tools
 
