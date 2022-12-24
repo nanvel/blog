@@ -1,7 +1,6 @@
-labels: Draft
-        Python
+labels: Python
 created: 2022-10-22T16:45
-modified: 2022-12-23T15:35
+modified: 2022-12-24T12:52
 place: Bangkok, Thailand
 comments: true
 
@@ -230,7 +229,7 @@ Randomly access files by line number.
 
 ## shutil
 
-High level file operations such as file and directory copy, creating and extracting archives.
+High-level file operations, such as file and directory copy, creating and extracting archives.
 
 ## filecmp
 
@@ -413,7 +412,7 @@ with sqlite3.connect(db_filename) as conn:
 
 Locking modes (isolation levels):
 
-- Deferred (default) - locks once, when change is begun
+- Deferred (default) - locks once when change is begun
 - Immediate - locks as soon as a change starts and prevents other cursors from making changes until the transaction is committed
 - Exclusive - Locks the database to all readers
 - None - auto-commit mode
@@ -448,7 +447,7 @@ Comma-separated value files.
 Quote:
 
 - QUOTE_ALL (quote all regardless of type)
-- QUOTE_MINIMAL (quote fields with special charaters) 
+- QUOTE_MINIMAL (quote fields with special characters)
 
 Dialects: `csv.list_dialects()`: `excel`, `excel-tabs`, `unix`, can register new.
 
@@ -489,7 +488,7 @@ Exposes the Unix signal mechanism for sending events to other processes.
 ## concurrent.futures
 
 Manage pools of concurrent tasks.
-Implementation of thread and process-based executors for managing resources pools for running concurrent tasks.
+Implementation of thread and process-based executors for managing resource pools for running concurrent tasks.
 
 Executors are used for managing pools of workers, and futures are used for managing results computed by the workers.
 
@@ -543,7 +542,7 @@ for t in main_thread.enumerate():
 
 Event objects are a simple way to communicate between threads safely.
 
-Lock object - guard against simulteneous access to an object.
+Lock object - guard against simultaneous access to an object.
 
 Barriers - another thread synchronization mechanism.
 
@@ -564,7 +563,7 @@ Provides a high-level interface for watching multiple sockets simultaneously.
 
 Network communication.
 
-UDP - user datagram protocol. Provides unreliable delivery of individual messages. Is commonly used where order is less important and multicasting.
+UDP - user datagram protocol. Provides unreliable delivery of individual messages. Is commonly used where the order is less important and multicasting.
 
 TCP - transmission control protocol. Provides byte stream between the client and the server, ensuring message delivery of failure notification through timeout management, retransmission, and other features.
 
@@ -592,7 +591,7 @@ Encode binary data with ASCII.
 
 Universal Unique Identifiers as described in RFC-4122.
 
-Does not require a central registar and can guarantee uniqueness across space ans time.
+Does not require a central registar and can guarantee uniqueness across space and time.
 
 `uuid1()` - uses host MAC.
 
@@ -630,7 +629,7 @@ Comunicates with an email server to deliver a message.
 
 `getpass` - securely prompt the user for a password or other secret value.
 
-`cmd` - framework for interactive, command-driven shell-style programs.
+`cmd` - a framework for interactive, command-driven shell-style programs.
 
 `shlex` - a parser for shell-style syntax.
 
@@ -638,13 +637,13 @@ Comunicates with an email server to deliver a message.
 
 `fileinput` - read from files, command-line filter framework.
 
-`atexit` - shedule function to call on program shutting down.
+`atexit` - schedule function to call on program shutting down.
 
-`sched` - scheduler for triggering events and specific times in future.
+`sched` - scheduler for triggering events and specific times in the future.
 
 ## readline
 
-Interface for the GNU readline library (useful for command line completion)
+Interface for the GNU readline library (useful for command line completion).
 
 ## Internationalization and localization
 
@@ -661,7 +660,7 @@ LANG_en_US LC_CTYPE=en_US LC_ALL=en_US python3 ...
 
 `trace` - monitors the way Python executes a program.
 
-`profile`, `timeit` - meature the speed of a program.
+`profile`, `timeit` - measure the speed of a program.
 
 `tabnanny` - scanner that reports ambiguous use of indentation.
 
@@ -718,7 +717,7 @@ Class browser: scan Python source files to find both classes and stand-alone fun
 
 `sys` - focused on interpreter settings.
 
-`os` - provides access to operating system.
+`os` - provides access to the operating system.
 
 `platform` - system version information.
 
