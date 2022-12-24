@@ -7,9 +7,11 @@ comments: true
 
 # Python 3 standard library notes
 
+[TOC]
+
 ## Syntax
 
-`...` is equal to `pass` for an empty class.
+`...` is equal to `pass` for an empty body.
 
 ## Modules
 
@@ -24,7 +26,7 @@ comments: true
 - [ChainMap](https://docs.python.org/3/library/collections.html#collections.ChainMap) - combines dicts
 - [Counter](https://docs.python.org/3/library/collections.html#collections.Counter) - counting hashable objects
 
-## `enum`
+## enum
 
 Defines enumeration type.
 
@@ -49,7 +51,7 @@ Regular expression flags:
 - `LOCALE`: locale dependent
 - `DEBUG`: display debug information
 
-## `functools.singledispatch`
+## functools.singledispatch
 
 ```python
 from functools import singledispatch
@@ -75,7 +77,7 @@ myfunc(1)
 myfunc([1])
 ```
 
-## `itertools.chain`
+## itertools.chain
 
 ```python
 from itertools import chain
@@ -85,7 +87,7 @@ for i in chain([1, 2, 3], [4, 5, 6]):
     print(i)
 ```
 
-## `itertools.islice`
+## itertools.islice
 
 ```python
 islice(range(100), 5)  # first 5
@@ -93,7 +95,7 @@ islice(range(100), 5, 10)  # 5 to 10
 islice(range(100), 0, 100, 10)  # 0, 10, 20, ...
 ```
 
-## `itertools.dropwhile`, `itertools.takewhile`
+## itertools.dropwhile, itertools.takewhile
 
 dropwhile: after the condition is False for the first time - all remaining are returned.
 
@@ -104,7 +106,7 @@ from itertools import dropwhile
 dropwhile(lambda x: x < 10, [-1, 1, 10, 100])
 ```
 
-## `itertools.compress`
+## itertools.compress
 
 ```python
 from itertools import cycle, compress
@@ -116,7 +118,7 @@ data = range(10)
 compress(data, every_third)  # [2, 5, 8]
 ```
 
-## `itertools.groupby`
+## itertools.groupby
 
 ```python
 import operator
@@ -127,7 +129,7 @@ for k, g in groupby(data, operator.attgetter('x')):
     print(k, g)
 ```
 
-## `itertools.accumulate`
+## itertools.accumulate
 
 ```python
 from itertools import accumulate
@@ -136,14 +138,14 @@ from itertools import accumulate
 accumulate(range(5))  # 0, 1, 3, 6, 10
 ```
 
-## `itertools.product`
+## itertools.product
 
 ```python
 list(product(['a', 'b'], ['0', '1']))
 # [('a', '0'), ('a', '1'), ('b', '0'), ('b', '1')]
 ```
 
-## `itertools.permutations`, `itertools.combinations`
+## itertools.permutations, itertools.combinations
 
 Items from the given input, combined in possible permutations of the given length.
 
@@ -160,7 +162,7 @@ list(combinations([1, 2, 3], 2))
 
 `combinations` - unique combinations.
 
-## `operator`
+## operator
 
 ```python
 lt(a, b)
@@ -180,7 +182,7 @@ attrgetter('arg')
 itemgetter(0)
 ```
 
-## `time`
+## time
 
 ```python
 time()  # system "wall clock"
@@ -194,7 +196,7 @@ time.get_clock_info('monotonic')
 # namespace(implementation='mach_absolute_time()', monotonic=True, adjustable=False, resolution=4.166666666666667e-08)
 ```
 
-## `statistics`
+## statistics
 
 ```python
 from statistics import mean
@@ -222,15 +224,15 @@ stdev([10, 5, 4, 2, 7, 9])
 # 3.0605010483034745
 ```
 
-## `linecache`
+## linecache
 
 Randomly access files by line number.
 
-## `shutil`
+## shutil
 
 High level file operations such as file and directory copy, creating and extracting archives.
 
-## `filecmp`
+## filecmp
 
 Compare files and directories.
 
@@ -243,7 +245,7 @@ dc = filecmp.dircmp('example/dir1', 'example/dir2')
 dc.report()
 ```
 
-## `os.path`
+## os.path
 
 ```python
 os.path.commonprefix(['/one/two/three', '/one/two'])
@@ -261,7 +263,7 @@ os.path.getctime(path)  # creation time
 os.path.getsize(path)  # size in bytes
 ```
 
-## `pathlib`
+## pathlib
 
 System path as objects.
 
@@ -281,7 +283,7 @@ with f.open('r', encoding='utf-8') as handle:
 
 Deleting files: for files, symbolic links, and most other path types, use `unlink()`.
 
-## `glob`
+## glob
 
 Filename pattern matching.
 
@@ -295,11 +297,11 @@ for name in sorted(glob.glob('dir/*')):
 
 `fnmatch` - unix-style glob pattern matching.
 
-## `linecache`
+## linecache
 
 Read text files efficiently.
 
-## `tempfile`
+## tempfile
 
 Creating temporary files with unique names securely, so they cannot be guessed by someone wanting to break the application or steal the data.
 
@@ -314,12 +316,12 @@ with tempfile.SpooledTemporaryFile(max_size=100, mode='w+t', encoding='utf-8') a
     ...
 ```
 
-## `mmap`
+## mmap
 
 Memory-map files.
 
 
-## `codecs`
+## codecs
 
 `codecs` provide classes that manage the data encoding and decoding, so applications do not have to do that work.
 
@@ -355,11 +357,11 @@ print(buffer.getvalue())
 
 `IncrementalEncoder`, `IncrementalDecoder`: for large data sets, encodings operate better incrementally, working on one small chunk of data at a time.
 
-## `pickle`
+## pickle
 
 Objects that have non-pickable attributes can define `__getstate__()` and `__setstate__()` to return a subset of the state of the instance to be pickled.
 
-## `shelve`
+## shelve
 
 Persistent storage of objects.
 
@@ -374,11 +376,11 @@ with shelve.open('test_shelf.db') as s:
     }
 ```
 
-## `dbm`
+## dbm
 
 Unix key-value databases.
 
-## `sqlite3`
+## sqlite3
 
 Embedded relational database. Implements a Python DB-API 2.0.
 
@@ -439,7 +441,7 @@ Regexp:
 query = "SELECT * FROM table WHERE column REGEXP'.*pattern.*';"
 ```
 
-## `csv`
+## csv
 
 Comma-separated value files.
 
@@ -452,7 +454,7 @@ Dialects: `csv.list_dialects()`: `excel`, `excel-tabs`, `unix`, can register new
 
 DictReader and DictWriter.
 
-## `zlib`
+## zlib
 
 GNU zlib compression.
 
@@ -465,26 +467,26 @@ Checksums:
 checksum = zlib.adler32(data)  # adler32, crc32
 ```
 
-## `tarfile`
+## tarfile
 
 Tar archive access.
 
-## `zipfile`
+## zipfile
 
 ZIP archive access.
 
-## `hashlib`
+## hashlib
 
 Generating signatures of message content using standard algorithms such as MD5 and SHA.
 
 `hmac` - for verifying that a message has not been altered.
 
-## `signal`
+## signal
 
 Asynchronous system events.
 Exposes the Unix signal mechanism for sending events to other processes.
 
-## `concurrent.futures`
+## concurrent.futures
 
 Manage pools of concurrent tasks.
 Implementation of thread and process-based executors for managing resources pools for running concurrent tasks.
@@ -497,7 +499,7 @@ with futures.ThreadPoolExecutor(max_workers=2) as ex:
     result = f.result()
 ```
 
-## `subprocess`
+## subprocess
 
 `run()` function was added in Python 3.5.
 
@@ -526,7 +528,7 @@ Exit codes:
 - `> 0`: the process had an error and exited
 - `< 0`: the process was killed with a signal
 
-## `threading`
+## threading
 
 To wait for a daemon thread has completed its work, use the `join()` method.
 
@@ -546,7 +548,7 @@ Lock object - guard against simulteneous access to an object.
 Barriers - another thread synchronization mechanism.
 
 
-## `asyncio`
+## asyncio
 
 Asynchronous I/O, Event Loop, and Concurrency Tools.
 
@@ -554,11 +556,11 @@ Single-thread, single-process approach in which parts of an application cooperat
 
 [A Brief History of Python Async](https://nanvel.name/2022/11/talk-async)
 
-## `selectors`
+## selectors
 
 Provides a high-level interface for watching multiple sockets simultaneously.
 
-## `socket`
+## socket
 
 Network communication.
 
@@ -566,11 +568,11 @@ UDP - user datagram protocol. Provides unreliable delivery of individual message
 
 TCP - transmission control protocol. Provides byte stream between the client and the server, ensuring message delivery of failure notification through timeout management, retransmission, and other features.
 
-## `socketserver`
+## socketserver
 
 Creating network servers.
 
-## `urllib`
+## urllib
 
 `parse` - manipulates URL strings.
 
@@ -582,11 +584,11 @@ Creating network servers.
 
 `urllib.parse.urldefrag` - parse, break url into components.
 
-## `base64`
+## base64
 
 Encode binary data with ASCII.
 
-## `uuid`
+## uuid
 
 Universal Unique Identifiers as described in RFC-4122.
 
@@ -598,7 +600,7 @@ Does not require a central registar and can guarantee uniqueness across space an
 
 `uuid4()` - random values.
 
-## `json`
+## json
 
 Compact:
 ```python
@@ -610,7 +612,7 @@ json.dumps(data, separators=(',', ':'))
 python3 -m json.tool example.json
 ```
 
-## `smtplib`
+## smtplib
 
 Comunicates with an email server to deliver a message.
 
@@ -640,7 +642,7 @@ Comunicates with an email server to deliver a message.
 
 `sched` - scheduler for triggering events and specific times in future.
 
-## `readline`
+## readline
 
 Interface for the GNU readline library (useful for command line completion)
 
@@ -663,7 +665,7 @@ LANG_en_US LC_CTYPE=en_US LC_ALL=en_US python3 ...
 
 `tabnanny` - scanner that reports ambiguous use of indentation.
 
-## `unittest`
+## unittest
 
 Based on XUnit framework design by Kent Beck and Erich Gamma.
 
@@ -687,7 +689,7 @@ def test_never_passes(self):
     self.assertTrue(False)
 ```
 
-## `trace`
+## trace
 
 ```python
 import trace
@@ -702,13 +704,13 @@ Or using the tool:
 python3 -m trace example.py
 ```
 
-## `pdb`
+## pdb
 
 Interactive debugger.
 
 `inspect` - inspect live objects.
 
-## `pyclbr`
+## pyclbr
 
 Class browser: scan Python source files to find both classes and stand-alone functions.
 
