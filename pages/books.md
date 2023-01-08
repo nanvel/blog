@@ -177,6 +177,7 @@ modified: 2022-05-14T14:01
 
 - Staff Engineer by Will Larson
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 - Design It! by Michael Keeling
 - Grocking Simplicity by Eric Normand
@@ -265,3 +266,7 @@ modified: 2022-05-14T14:01
 - watchOS 2 App Development Essentials by Neil Smyth
 - [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
+
+## Links
+
+[DOU top books 2022](https://dou.ua/lenta/articles/top-books-2022/)

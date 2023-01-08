@@ -778,6 +778,7 @@ Open source:
 - [BX-bot](https://github.com/gazbert/bxbot)
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
 - [Quant-trading](https://github.com/je-suis-tm/quant-trading)
+- [bta-lib](https://github.com/mementum/bta-lib) - a pandas based Technical Analysis Library
 
 Backtesting:
 
@@ -785,6 +786,8 @@ Backtesting:
 - [VectorBT](https://vectorbt.dev/)
 - [PyAlgoTrade](https://gbeced.github.io/pyalgotrade/)
 - [Jesse](https://github.com/jesse-ai/jesse)
+- [Freqtrade](https://www.freqtrade.io/en/stable/)
+- [Hummingbot](https://hummingbot.org/) - Open Source Market Making
 
 ### Data
 
@@ -796,6 +799,8 @@ Data providers:
 - [Quandl](https://www.quandl.com/)
 - [Shrimpy API](https://developers.shrimpy.io/)
 - [CryptoCompare](https://min-api.cryptocompare.com/)
+- [Polygon](https://polygon.io/)
+- [Oanda](https://oanda-api-v20.readthedocs.io/en/latest/installation.html)
 
 Analytics:
 

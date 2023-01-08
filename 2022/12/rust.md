@@ -241,6 +241,14 @@ src/bin/*.rs  // other binaries
 `rustup update` - update to new version.
 `rustup doc`
 
+## Libs
+
+[Egui](https://github.com/emilk/egui) - an easy-to-use GUI in pure Rust
+
+[Web frameworks](https://www.arewewebyet.org/topics/frameworks/) - backend and frontend
+
+[Awesome rust](https://github.com/rust-unofficial/awesome-rust) - a curated list of Rust code and resources
+
 ## Links
 
 [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
