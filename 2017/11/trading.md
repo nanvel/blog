@@ -788,6 +788,8 @@ Backtesting:
 - [Jesse](https://github.com/jesse-ai/jesse)
 - [Freqtrade](https://www.freqtrade.io/en/stable/)
 - [Hummingbot](https://hummingbot.org/) - Open Source Market Making
+- [backtesting.py](https://github.com/kernc/backtesting.py)
+- [Cipher](https://github.com/nanvel/cipher-bt)
 
 ### Data
 
