@@ -1,6 +1,6 @@
 labels: Pages
 created: 2015-10-04T00:00
-modified: 2022-05-14T14:01
+modified: 2023-01-14T19:09
 
 # Books
 
@@ -173,9 +173,12 @@ modified: 2022-05-14T14:01
 - Python 3 Standard Library by Example by Doug Hellmann
 - [+] Domain-Driven Design by Eric Evans
 
-## In progress
+## 2023
 
 - Staff Engineer by Will Larson
+
+## In progress
+
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
