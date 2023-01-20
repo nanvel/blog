@@ -161,6 +161,15 @@ list(combinations([1, 2, 3], 2))
 
 `combinations` - unique combinations.
 
+## contextlib.ExitStack
+
+Make it easy to programmatically combine other context managers and cleanup functions.
+
+```python
+with ExitStack() as stack:
+    files = [stack.enter_context(open(fname)) for fname in filenames]
+```
+
 ## operator
 
 ```python
@@ -554,6 +563,11 @@ Asynchronous I/O, Event Loop, and Concurrency Tools.
 Single-thread, single-process approach in which parts of an application cooperate to switch tasks explicitly at optimal times.
 
 [A Brief History of Python Async](https://nanvel.name/2022/11/talk-async)
+
+## asyncio.Queue
+
+Not thread-safe, they are designed to be used specifically in async/await code.
+Size is always known, can use qsize method.
 
 ## selectors
 

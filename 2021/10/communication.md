@@ -15,6 +15,8 @@ Use `and` instead of `but`, stop using `but`!
 
 Use `I want` instead of `I should`!
 
+Every sentence should add value.
+
 ## Courtesies
 
 I'm sorry to trouble you, ...

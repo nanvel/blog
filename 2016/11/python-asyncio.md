@@ -2,13 +2,15 @@ labels: Blog
         Python
         Asynchronous
 created: 2016-11-27T17:12
-modified: 2022-11-13T22:51
+modified: 2023-01-20T22:30
 place: Phuket, Thailand
 comments: true
 
 # Python AsyncIO
 
 [TOC]
+
+Implements cooperative multitasking. Unlike preemptive multitasking, cooperative is vulnerable to bad actors.
 
 ## Timeline
 
@@ -478,6 +480,10 @@ if __name__ == '__main__':
     ioloop = asyncio.get_event_loop()
     ioloop.run_until_complete(listen())
 ```
+
+## To investigate
+
+Native vs green threading.
 
 ## Links
 
