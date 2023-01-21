@@ -13,9 +13,9 @@ comments: false
 
 [ThaiPy #87](https://www.meetup.com/thaipy-bangkok-python-meetup/events/jsxkbtyfccbqb/)
 
-<object data="slides-di-python.pdf" type="application/pdf" width="800px" height="600px">
-    <embed src="slides-di-python.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="slides-di-python.pdf">Download PDF</a>.</p>
+<object data="slides-di-py.pdf" type="application/pdf" width="800px" height="600px">
+    <embed src="slides-di-py.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="slides-di-py.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
