@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2022-02-12T19:03
+modified: 2023-02-05T15:55
 place: Phuket, Thailand
 comments: true
 
@@ -790,6 +790,13 @@ Backtesting:
 - [Hummingbot](https://hummingbot.org/) - Open Source Market Making
 - [backtesting.py](https://github.com/kernc/backtesting.py)
 - [Cipher](https://github.com/nanvel/cipher-bt)
+- [BT](https://github.com/pmorissette/bt)
+- [finmarketpy](https://github.com/cuemacro/finmarketpy)
+- [pysystemtrade](https://github.com/robcarver17/pysystemtrade)
+- [qstrader](https://github.com/mhallsmoore/qstrader)
+- [optopsy](https://github.com/michaelchu/optopsy) - for options
+- [qf-lib](https://github.com/quarkfin/qf-lib)
+- [auquantoolbox](https://github.com/Auquan/auquantoolbox)
 
 ### Data
 

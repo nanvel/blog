@@ -180,6 +180,7 @@ modified: 2023-01-14T19:09
 ## In progress
 
 - Clean Code by Robert C. Martin
+- Clean Architecture by Robert Martin
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
@@ -204,6 +205,7 @@ modified: 2023-01-14T19:09
 
 ## To read
 
+- https://developers.google.com/tech-writing
 - https://dou.ua/lenta/articles/top-books-2022/
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
 - Architects of Intelligence by Matin Ford
