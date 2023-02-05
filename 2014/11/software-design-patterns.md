@@ -674,6 +674,8 @@ It lets you change the behavior of a class when the state changes.
 
 ### Strategy
 
+Aka policy.
+
 Strategy pattern allows you to switch the algorithm or strategy based upon the situation.
 
 !!! tip "Real world example"

@@ -208,6 +208,8 @@ modified: 2023-01-14T19:09
 - https://developers.google.com/tech-writing
 - https://dou.ua/lenta/articles/top-books-2022/
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
+- Extreme programming explained by Beck
+- Surviving Object Oriented Projects by Cockburn
 - Architects of Intelligence by Matin Ford
 - The Art and Science of Trading by Adam Grimes
 - Candelsticks by John Martin
