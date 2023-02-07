@@ -108,7 +108,20 @@ Well, now, look. I thought otherwise, but I may be wrong. I frequently am. And i
 
 > Be sincere. Do not promise anything that you cannot deliver. Forget about the benefits to yourself and concentrate on the benefits to the other person.
 
+## Technical writing
+
+To focus on:
+
+- Focus each paragraph on a single topic
+- State key points at the start of each document
+- Identify your target audience
+- Determine what your target audience already knows and what your target audience needs to learn
+- State your document's scope (goals) and audience
+- Break long topics into appropriate sections
+- The vast majority of sentences in technical writing should be in active voice
+
 ## Links
 
 [The Achievement Habit](https://www.amazon.com/Achievement-Habit-Wishing-Start-Command/dp/0062356100) by Bernard Roth
 [How to Win Friends & Influence People](https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034) by Dale Carnegie
+[Technical Writing, Google course](https://developers.google.com/tech-writing)

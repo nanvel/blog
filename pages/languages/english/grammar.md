@@ -283,3 +283,7 @@ Victims - violence.
 ## Had had
 
 A salesman who had had to change companies.
+
+## Links
+
+[Grammar for technical writing](https://developers.google.com/tech-writing/one/just-enough-grammar)
