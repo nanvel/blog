@@ -166,9 +166,12 @@ Bot classification:
 
 Some bots are designed to get profit from market inefficiency (not enough liquidity to process orders efficiently, not enough time for incoming liquidity to keep up).
 Algorithmic market making is an example - a strategy that smooths out large orders on a single exchange (provides liquidity at a worse price).
+Market making - get inside the bid-ask spread and buy low, sell high.
 Another market making strategy implemented by many bots is grid trading.
 
 Arbitrage (one exchange or cross-exchange) also just reduces inefficiencies (balances prices between markets).
+Arbitrage - take advantage of things trading at different prices on different exchanges or through different
+derivatives.
 
 They are basically not impacting price much, they are waiting for others to move price, jump in and make a profit.
 
@@ -570,8 +573,8 @@ Strategies:
 
 Statistical arbitrage:
 
-- Trend following (momentum) strategies
-- Mean reversion strategies (time-series mean reversion)
+- Trend following (momentum) strategies (if it’s going up, it’s going to go up more)
+- Mean reversion strategies (time-series mean reversion) (if it’s going up, it’s going to go down)
 - Pairs trading (cross-sectiona mean reversion)
 - Seasonal trading (based on dates of year)
 
@@ -679,6 +682,8 @@ When < 1 - not suitable for a stand-alone strategy. Profitable almost every mont
 
 Black swan (fat tail) events - unexpected events (black swan was discovered in Australia in XVII century).
 
+Alpha is the ability to predict the future (additional return over a naive forecast).
+
 Alpha decay - decreasing of strategy performance. Happens when many are trading the same strategy. Alpha shows how much the strategy outperforms the market on a risk-adjusted basis.
 
 Data snooping bias - when strategy has many parameters and oveoptimized to perform on historical dataset and may perform purely on new data.
@@ -721,6 +726,7 @@ Charting:
 - [TensorCharts](https://tensorcharts.com/)
 - [Cryptowatch](https://cryptowat.ch/)
 - [SierraChart](https://www.sierrachart.com/)
+- [chart.aggr](https://charts.aggr.trade/)
 
 Treminals:
 
@@ -779,6 +785,7 @@ Open source:
 - [Indicators wiout TA-lib](https://gist.github.com/imtaehyun/8a6223142e07eaf1ef2215de10ca7a5d)
 - [Quant-trading](https://github.com/je-suis-tm/quant-trading)
 - [bta-lib](https://github.com/mementum/bta-lib) - a pandas based Technical Analysis Library
+- [Optuna](https://github.com/optuna/optuna) - a hyperparameter optimization framework
 
 Backtesting:
 
@@ -852,6 +859,8 @@ YouTube:
 - [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)
 - [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing strategies
 - [ProScalping](https://www.youtube.com/channel/UCWtDrix6jukydQAQ9JDVvVA)
+- [Build Algorithmic Trading Strategies by Combining Oscillators and Trend Following Indicators](https://www.youtube.com/watch?v=cfuHNpPAXUo)
+- [Lagging vs Leading Indicators & How To Use Them](https://www.youtube.com/watch?v=hBdFuQKAMXE)
 
 Articles:
 
@@ -860,6 +869,7 @@ Articles:
 - [The bots that make money (or lose it) for you while you sleep](https://bitcoinmagazine.com/markets/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808)
 - [Trading vocabulary](/2018/07/trading-vocabulary)
 - [Crypto Cred](https://docs.google.com/document/d/15c3rN15rkXldY8Te3GDG4NG7noaaoikydOoZQlElwXw/preview)
+- [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 
 Training:
 

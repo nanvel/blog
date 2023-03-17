@@ -177,6 +177,8 @@ modified: 2023-01-14T19:09
 
 - Staff Engineer by Will Larson
 - [+] Clean Code by Robert C. Martin
+- Job Stacking by J. Rolf Haltza
+- The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 
 ## In progress
 
@@ -184,7 +186,6 @@ modified: 2023-01-14T19:09
 - https://developers.google.com/tech-writing/one/clear-sentences
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
-- The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 - Grocking Simplicity by Eric Normand
 - Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
@@ -205,6 +206,7 @@ modified: 2023-01-14T19:09
 
 ## To read
 
+- https://fxgears.com/index.php?threads/recommended-books-for-algo-trading-in-2020.1243/
 - Clean Architecture by Robert Martin
 - https://dou.ua/lenta/articles/top-books-2022/
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
