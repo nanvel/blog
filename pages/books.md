@@ -179,6 +179,8 @@ modified: 2023-01-14T19:09
 - [+] Clean Code by Robert C. Martin
 - Job Stacking by J. Rolf Haltza
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
+- Trading with the Trendlines by David Carli
+- Working with the Thais by Henry Holmes, Suchada Tangtongtavy, Roy Tomizawa
 
 ## In progress
 
@@ -249,7 +251,6 @@ modified: 2023-01-14T19:09
 - The Self-Taught Programmer by Cory Althoff
 - Statistics for Absolute Beginners by O. Theobald
 - Trading Evolved by Andreas Clenow
-- Trading with the Trendlines by David Carli
 - Extreme Programming Explained by Kent Beck
 
 ## Archive

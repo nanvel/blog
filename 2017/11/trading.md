@@ -668,6 +668,7 @@ Other:
 - Estimate stops by cluster info
 - When btc drop - other drop even more? Arbitrage?
 - lower capital when start losing
+- [Harmonic Trading Patterns](https://forextraininggroup.com/a-guide-to-harmonic-trading-patterns-in-the-currency-market/)
 
 ## Business
 
