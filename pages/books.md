@@ -184,6 +184,9 @@ modified: 2023-01-14T19:09
 
 ## In progress
 
+- The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
+- Clean Architecture by Robert C. Martin
+- Wool by Hugh Howey
 - Design It! by Michael Keeling
 - https://developers.google.com/tech-writing/one/clear-sentences
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
