@@ -1,7 +1,7 @@
 labels: Blog
         SoftwareDevelopment
 created: 2016-12-22T22:25
-modified: 2019-05-24T10:33
+modified: 2023-09-05T15:36
 place: Phuket, Thailand
 comments: true
 
@@ -31,6 +31,10 @@ Provides a vocabulary for talking about complex ideas.
 Enables agility: software is like water, able to take any shape, and architecture is a container that holds it.
 
 [Design It!: From Programmer to Software Architect](https://www.amazon.com/Design-Programmer-Architect-Pragmatic-Programmers/dp/1680502093)
+
+The primary purpose of architecture is to support the life of the system. Good architecture makes the system easy to understand, easy to develop, easy to maintain, and easy to deploy. The ultimate goal is to minimize the lifetime cost of the system and to maximize programmer productivity.
+
+[Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure-ebook/dp/B075LRM681/) by Robert C. Martin
 
 ## Async frameworks
 

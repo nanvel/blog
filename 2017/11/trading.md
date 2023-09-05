@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2023-02-05T15:55
+modified: 2023-08-17T00:01
 place: Phuket, Thailand
 comments: true
 
@@ -858,7 +858,7 @@ YouTube:
 - [Auction Theory, Volume Profile, and Microstructure](https://www.youtube.com/watch?v=ixo_DoBGYko)
 - [Practical Applications - Order Flow and Structure](https://www.youtube.com/watch?v=Au20OwdAG5s)
 - [Crypto Cred](https://www.youtube.com/c/CryptoCred/videos)
-- [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing strategies
+- [Trade Pro](https://www.youtube.com/channel/UCrXjzUN6EtlyhaaAerbPfkQ/videos) - testing strategies ([ranks](https://docs.google.com/spreadsheets/d/1LQ7lwnvcB5eacK4PxLXnV1mMEIzSxHzD8IZpP2N1oA8/edit))
 - [ProScalping](https://www.youtube.com/channel/UCWtDrix6jukydQAQ9JDVvVA)
 - [Build Algorithmic Trading Strategies by Combining Oscillators and Trend Following Indicators](https://www.youtube.com/watch?v=cfuHNpPAXUo)
 - [Lagging vs Leading Indicators & How To Use Them](https://www.youtube.com/watch?v=hBdFuQKAMXE)
