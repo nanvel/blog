@@ -27,6 +27,8 @@ Thank You.
 
 Well, now, look. I thought otherwise, but I may be wrong. I frequently am. And if I am wrong, I want to be put right. Le's examine the facts.
 
+This is my honor to be here.
+
 ## How to Win Friends & Influence People notes
 
 **Handling people:**

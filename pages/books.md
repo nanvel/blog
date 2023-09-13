@@ -184,6 +184,7 @@ modified: 2023-01-14T19:09
 
 ## In progress
 
+- Architecture Patterns with Python by Harry Percival, Bob Gregory
 - The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
 - Clean Architecture by Robert C. Martin
 - Wool by Hugh Howey

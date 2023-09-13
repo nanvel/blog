@@ -778,7 +778,26 @@ Inner
 Exit
 ```
 
+### Flow control
+
+#### [match statement](https://docs.python.org/3/tutorial/controlflow.html#match-statements)
+
+```python
+def http_error(status):
+    match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 418 | 420:
+            return "I'm a teapot"
+        case _:
+            return "Something's wrong with the internet"
+```
+
 ## Standard library
+
+More notes about Python 3 standard library is [here](https://nanvel.name/2022/10/python3-stdlib).
 
 ### asyncio
 

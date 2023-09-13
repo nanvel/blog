@@ -1,6 +1,6 @@
 labels: Python
 created: 2022-10-22T16:45
-modified: 2022-12-24T12:52
+modified: 2023-09-11T23:32
 place: Bangkok, Thailand
 comments: true
 
@@ -748,6 +748,32 @@ Exposes the underlying implementation of the import mechanism used by the interp
 ## Memory management and limits
 
 CPython uses reference counting and garbage collection to perform automatic memory management.
+
+## Typing
+
+### Protocol
+
+Since Python 3.8.
+
+```python
+from decimal import Decimal
+from typing import Protocol
+
+
+class ExchangeProtocol(Protocol):
+    def get_price(self, asset: str) -> Decimal:
+        ...
+
+
+def SomeExchange:
+    def get_price(self, asset: str) -> Decimal:
+        return Decimal(123)
+
+
+exchange: ExchangeProtocol = SomeExchange()
+```
+
+Types can be then checked with `mypy`.
 
 ## Tools
 
