@@ -181,17 +181,17 @@ modified: 2023-01-14T19:09
 - The Peter Principle: Why Things Always Go Wrong by Laurance J. Peter, Raymond Hull
 - Trading with the Trendlines by David Carli
 - Working with the Thais by Henry Holmes, Suchada Tangtongtavy, Roy Tomizawa
+- Clean Architecture by Robert C. Martin
 
 ## In progress
 
 - Architecture Patterns with Python by Harry Percival, Bob Gregory
 - The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
-- Clean Architecture by Robert C. Martin
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - Wool by Hugh Howey
 - Design It! by Michael Keeling
 - https://developers.google.com/tech-writing/one/clear-sentences
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
-- Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - Grocking Simplicity by Eric Normand
 - Reinforcement Learning, second edition by Andrew G. Barto, Richard S. Sutton
 - Deep Reinforcement Learning Hands-On by Maxim Lapan
