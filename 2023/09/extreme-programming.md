@@ -6,6 +6,8 @@ comments: false
 
 # eXtreme Programming
 
+[TOC]
+
 [eXtreme Programming](http://www.extremeprogramming.org/) (XP) is a type of agile software development.
 
 Beneficial elements of traditional software engineering practices are taken to "extreme" levels.
