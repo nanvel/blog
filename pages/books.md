@@ -182,10 +182,12 @@ modified: 2023-01-14T19:09
 - Trading with the Trendlines by David Carli
 - Working with the Thais by Henry Holmes, Suchada Tangtongtavy, Roy Tomizawa
 - Clean Architecture by Robert C. Martin
+- [+] Extreme Programming Exaplained by Kent Back, Cynthia Andres
 
 ## In progress
 
 - Architecture Patterns with Python by Harry Percival, Bob Gregory
+- Implementing Domain-Driven Design by Vernon Vaughn
 - The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
@@ -255,7 +257,6 @@ modified: 2023-01-14T19:09
 - The Self-Taught Programmer by Cory Althoff
 - Statistics for Absolute Beginners by O. Theobald
 - Trading Evolved by Andreas Clenow
-- Extreme Programming Explained by Kent Beck
 
 ## Archive
 
