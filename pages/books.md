@@ -183,14 +183,15 @@ modified: 2023-01-14T19:09
 - Working with the Thais by Henry Holmes, Suchada Tangtongtavy, Roy Tomizawa
 - Clean Architecture by Robert C. Martin
 - [+] Extreme Programming Exaplained by Kent Back, Cynthia Andres
+- The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
+- [+]Learning Domain-Driven Design by Vlad Khononov
 
 ## In progress
 
 - Architecture Patterns with Python by Harry Percival, Bob Gregory
 - Implementing Domain-Driven Design by Vernon Vaughn
-- The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Wool by Hugh Howey
 - Design It! by Michael Keeling
 - https://developers.google.com/tech-writing/one/clear-sentences
