@@ -191,6 +191,7 @@ modified: 2023-01-14T19:09
 
 - Architecture Patterns with Python by Harry Percival, Bob Gregory
 - Implementing Domain-Driven Design by Vernon Vaughn
+- The Staff Engineer's Path by Tanya Reilly
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Wool by Hugh Howey
 - Design It! by Michael Keeling
