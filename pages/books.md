@@ -184,12 +184,12 @@ modified: 2023-01-14T19:09
 - Clean Architecture by Robert C. Martin
 - [+] Extreme Programming Exaplained by Kent Back, Cynthia Andres
 - The Parts Of Us That Still Remain by Atsuyuki Katsuyama, Iain White
-- [+]Learning Domain-Driven Design by Vlad Khononov
+- [+] Learning Domain-Driven Design by Vlad Khononov
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
+- [+] Architecture Patterns with Python by Harry Percival, Bob Gregory
 
 ## In progress
 
-- Architecture Patterns with Python by Harry Percival, Bob Gregory
 - Implementing Domain-Driven Design by Vernon Vaughn
 - The Staff Engineer's Path by Tanya Reilly
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
