@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2023-08-17T00:01
+modified: 2023-11-25T19:23
 place: Phuket, Thailand
 comments: true
 
@@ -352,14 +352,14 @@ An entry should not be based on an opinion, prediction, or emotions; it should b
 
 Strategies can be found:
 
-- youtube
-- academic papers
-- forums
-- books
-- trading view
-- github
+- YouTube
+- Academic papers
+- Forums
+- Books
+- TradingView
+- GitHub
 
-> What truly make a strategy proprietary and its secrets worth protecting are the tricks and variations that you have come up with, not the plain-vanilla version.
+> What truly makes a strategy proprietary and its secrets worth protecting are the tricks and variations that you have come up with, not the plain-vanilla version.
 > 
 > Quantitative Trading by Ernest P. Chan
 
@@ -368,10 +368,10 @@ The goal is to have a strategy with high Sharpe ratio (low drowdown), so we can 
 Strategy characteristics:
 
 - Sharpe ration - consistency
-- Drawdown - (global maximum - current equety) / global maximum
-- Maximum drawdown - (global maximum (high watermark) - global minimum (global minimum should accur after global maximum)) / global maximum
-- High watermark - global equety maximum
-- Maximum drawdown duration - maximum time to recover loses
+- Drawdown - (global maximum - current equity) / global maximum
+- Maximum drawdown - (global maximum (high watermark) - global minimum (global minimum should occur after global maximum)) / global maximum
+- High watermark - global equity maximum
+- Maximum drawdown duration - maximum time to recover losses
 
 ### Risk management
 
@@ -806,6 +806,9 @@ Backtesting:
 - [qf-lib](https://github.com/quarkfin/qf-lib)
 - [auquantoolbox](https://github.com/Auquan/auquantoolbox)
 
+Other:
+- [Awesome Systematic Trading](https://github.com/wangzhe3224/awesome-systematic-trading)
+
 ### Data
 
 Data providers:
@@ -862,6 +865,7 @@ YouTube:
 - [ProScalping](https://www.youtube.com/channel/UCWtDrix6jukydQAQ9JDVvVA)
 - [Build Algorithmic Trading Strategies by Combining Oscillators and Trend Following Indicators](https://www.youtube.com/watch?v=cfuHNpPAXUo)
 - [Lagging vs Leading Indicators & How To Use Them](https://www.youtube.com/watch?v=hBdFuQKAMXE)
+- [TRUTH about Trading Bot Algorithm ft. Quant Trading CEO](https://www.youtube.com/watch?v=lx2zPCdH_1Y)
 
 Articles:
 
