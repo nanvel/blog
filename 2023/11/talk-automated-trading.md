@@ -7,7 +7,7 @@ comments: false
 
 # The Theory of Automated Trading
 
-[Barcamp Bangkhen 11](https://www.facebook.com/Barcampbangkhen).
+[Barcamp Bangkhen 11](https://www.facebook.com/Barcampbangkhen) 2023-11-25.
 
 <object data="automated_trading.pdf" type="application/pdf" width="800px" height="600px">
     <embed src="automated_trading.pdf">
