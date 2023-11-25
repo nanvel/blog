@@ -190,9 +190,13 @@ modified: 2023-01-14T19:09
 
 ## In progress
 
-- Implementing Domain-Driven Design by Vernon Vaughn
 - The Staff Engineer's Path by Tanya Reilly
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
+- Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
+- Advances in Financial Machine Learning by Marcos Lopez de Prado
+- Advanced Algorithmic Trading by Michael Halls-Moore
+- Implementing Domain-Driven Design by Vernon Vaughn
 - Wool by Hugh Howey
 - Design It! by Michael Keeling
 - https://developers.google.com/tech-writing/one/clear-sentences
