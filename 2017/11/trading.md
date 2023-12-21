@@ -575,7 +575,7 @@ Statistical arbitrage:
 
 - Trend following (momentum) strategies (if it’s going up, it’s going to go up more)
 - Mean reversion strategies (time-series mean reversion) (if it’s going up, it’s going to go down)
-- Pairs trading (cross-sectiona mean reversion)
+- [Pairs trading](https://alpaca.markets/learn/pairs-trading/) (cross-sectiona mean reversion) (check [the LTCM story](https://www.investopedia.com/terms/l/longtermcapital.asp))
 - Seasonal trading (based on dates of year)
 
 Market making:
@@ -710,6 +710,7 @@ Exchanges:
 Brockers:
 
 - [InteractiveBrokers](https://www.interactivebrokers.com/) - multiple asset classes
+- [Alpaca](https://alpaca.markets/) - api for automated trading
 
 Charting:
 

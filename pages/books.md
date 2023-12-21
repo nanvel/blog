@@ -187,6 +187,7 @@ modified: 2023-01-14T19:09
 - [+] Learning Domain-Driven Design by Vlad Khononov
 - Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - [+] Architecture Patterns with Python by Harry Percival, Bob Gregory
+- Advances in Financial Machine Learning by Marcos Lopez de Prado
 
 ## In progress
 
@@ -194,7 +195,6 @@ modified: 2023-01-14T19:09
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
-- Advances in Financial Machine Learning by Marcos Lopez de Prado
 - Advanced Algorithmic Trading by Michael Halls-Moore
 - Implementing Domain-Driven Design by Vernon Vaughn
 - Wool by Hugh Howey

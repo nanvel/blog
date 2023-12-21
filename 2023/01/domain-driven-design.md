@@ -1,12 +1,12 @@
 labels: Draft
         SoftwareDesign
 created: 2023-01-21T13:29
-modified: 2023-01-21T13:29
+modified: 2023-12-20T19:51
 place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 530 / 81
+loc: 110
 
 [TOC]
 
@@ -61,6 +61,57 @@ Services
 Utilities
 Repository
 Factory
+
+## Tactical
+
+Model elements:
+- Entities (something with continuity and identity, tracked through different states and implementations)
+- Value objects
+- Services (more clearly expressed as actions or operations)
+
+### Entity
+
+aka reference objects.
+
+An object defined primarily by its identity is called an entity.
+Identities must be defined so that they can be effectively tracked.
+
+Distinguished by its identity, rather than its attributes.
+
+Example: a person, a city, a car, a lottery ticket, a bank transaction.
+
+### Value objects
+
+Describe some characteristics of a thing.
+
+An object that represents a descriptive aspect of the domain with conceptual identity is called a value object.
+For objects that we care about only what they are, not who or which they are.
+
+Making choices about copying, sharing, and immutability.
+
+Share one instance and point to it many times (flyweight).
+
+### Services
+
+Sometimes, it is just isn't a thing.
+
+There are important domain operations that can't find a natural home in an entity or value object.
+
+Use "Manager" suffix?
+
+Defined purely in terms of what it can do for a client.
+
+A good service characteristics:
+- not a natural part of an etity or value object
+- the interface is defined in terms of other elements of the domain model
+- the operation is stateless
+
+## Layered structure
+
+Services into layers:
+- application
+- domain
+- infrastructure
 
 ## Links
 

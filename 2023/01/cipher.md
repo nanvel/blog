@@ -6,6 +6,8 @@ place: Bangkok, Thailand
 
 # Cipher - a backtesting framework
 
+![cipher bt](cipher_wide.jpeg)
+
 [GitHub](https://github.com/nanvel/cipher-bt)
 
 [Documentation](https://cipher.nanvel.com/)
