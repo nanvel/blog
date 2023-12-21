@@ -14,6 +14,8 @@ Low coupling and high cohesion are general design principles.
 
 There is a limit to how many things a person can think about at once (low coupling).
 
+Projects have to make pragmatic trade-offs.
+
 ## Links
 
 - [Domain-Driven Design](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG/) by Eric Evans
