@@ -1,12 +1,25 @@
 labels: Draft
         SoftwareDevelopment
 created: 2016-08-24T22:56
-modified: 2017-05-28T13:25
+modified: 2023-12-11T11:35
 place: Phuket, Thailand
 
 # Software development process
 
 [TOC]
+
+Also see:
+
+- [eXtreme Programming](https://nanvel.name/2023/09/extreme-programming)
+
+## Agile
+
+[Manifesto for Agile Software Development](https://agilemanifesto.org/):
+
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
 
 ## Scrum
 

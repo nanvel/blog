@@ -1,6 +1,6 @@
 labels: Quotes
 created: 2023-01-20T20:22
-modified: 2023-01-20T20:22
+modified: 2023-12-22T11:41
 
 # Quotes page 3
 
@@ -23,4 +23,20 @@ modified: 2023-01-20T20:22
 > If past history was all there was to the game, the richest people would be librarians.
 >
 > Warren Buffett
+---
+> There is no sense in talking about the solution before we agree on the problem, and no sense talking about the implementation steps before we agree on the solution.
+>
+> Efrat Goldratt-Ashlag
+---
+> Software development is a learning process; working code is a side effect.
+>
+> Alberto Brandolini
+---
+> Common sense is not so common.
+>
+> Voltaire
+---
+> Scientists generally agree that no theory is 100 percent correct. Thus, the real test of knowledge is not the truth, but utility.
+>
+> Yuval Noah Harari
 ---

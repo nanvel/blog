@@ -6,7 +6,7 @@ place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 270
+loc: 134
 
 [TOC]
 
@@ -25,6 +25,11 @@ Presentation:
 > Really powerful domain models evolve over time, and even the most experienced modelers find that they gain their best ideas after the initial releases of the system.
 >
 > Martin Fowler
+
+Can be divided into two parts:
+
+- strategic design
+- tactiacal design
 
 When complexity gets out o hand, developers can no longer understand the software well enough to change or extend it easily and safely.
 
@@ -95,6 +100,48 @@ An adapter is a wrapper that allows a client to use a different protocol than th
 Creating distinctive software comes tback to a stable team acculating specialized knowledge and crunching it into a rich model.
 
 With the tools and technology we already have, we can build systems much more valuable than most projects do today. We can write software that is a pleasure to use and a pleasure to work on, software that doesn't box us in as it grows but creates new opportunities and continues to add value for its owners.
+
+## Tactical
+
+Tactical patterns (domain model buildig blocks): value objects, aggregates, domain services...
+
+## Uniqutous language
+
+No technical jargon!
+
+The language should be continuously reinforced throughout the project: code, documentation, tests, etc.
+
+Don't use prefixes, rely on the context.
+
+Bounded context: divide the ubiquitous language into multiple smaller languages.
+
+Ubiquitous language is ubiquitous only in the boundaries of the bounded context.
+
+Subdomains are discovered and bounded contexts are designed.
+
+> Architectural design is system design. System design is contextual design - it is inherently aout boundaries (what's in, what's out, what spans, what moves between), and about trade-offs. It reshapes what is outside, just as it shapes what is inside.
+>
+> Ruth Malan
+
+Integrating different bounded contexts:
+
+- Partnership
+- Shared kernel
+- Conformist
+- Anticorruption layer
+- Open-host service
+- Separate ways
+
+## Model
+
+> A model is a simplified representation of a thing or phenomenon that intentionally emphasizes certain aspects while ignoring others.
+> Abstraction with a specific use in mind.
+>
+> Rebecca Wirfs-Brock 
+
+> All models are wrong, but some are useful.
+>
+> George Box
 
 ## Components
 
@@ -203,9 +250,29 @@ Should not try to reduce domain modelling to a cookbook or a toolkit. Mideling a
 
 A deep model makes possible an expressive design. At the same time, a design can actually feed insight into the model discovery process.
 
+Types of subdomains:
+
+- core
+- generic - business activities that all companies performing in the same way
+- supporting - support the company's business, do not provide any competitive advantage
+
+![subdomains](subdomains.png)
+
+If software is is not useful for the business, it's nothing but an expensive technology demo.
+
 ## Specification
 
 Can test any object to see if it satisfies the specified criteria.
+
+## Customer-supplier
+
+Patterns:
+
+- conformist
+- anticorruption layer
+- open-host service
+
+Open-host service pattern is reversal of the anticorruption layer: instead of the consumer, the supplier implements the translation of its internal model.
 
 ## Vocabulary
 

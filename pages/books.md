@@ -263,6 +263,7 @@ modified: 2023-01-14T19:09
 - The Self-Taught Programmer by Cory Althoff
 - Statistics for Absolute Beginners by O. Theobald
 - Trading Evolved by Andreas Clenow
+- Patterns of Enterprise Application Architecture by Martin Fowler
 
 ## Archive
 
