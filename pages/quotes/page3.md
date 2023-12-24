@@ -52,3 +52,7 @@ modified: 2023-12-22T11:41
 >
 > Efrat Goldratt-Ashlag
 ---
+> You know they say economists know the price of everything and the value of nothing? Well, programmers know the benefits of everything and the trade-offs of nothing.
+>
+> Rich Hickey
+---

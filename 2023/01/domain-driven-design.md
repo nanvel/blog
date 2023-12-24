@@ -6,7 +6,7 @@ place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 4
+loc: 81
 
 [TOC]
 
@@ -16,7 +16,7 @@ Presentation:
 - why do we need it?
 - strategic design
 - tactical design
-- rlation to TDD
+- rlation to TDD (easier to test)
 - alternatives to DDD
 - microservices
 
@@ -107,6 +107,13 @@ Domain-driven design is not about aggregates or value objects. Domain-driven des
 
 Effective modules are deep: a simple public interface encapsulates complex logic.
 
+Repository pattern - an abstraction over the idea of persistent storage.
+Service layer pattern - clearly define where our use cases begin and end.
+Unit of work pattern - provide atomic operations.
+Aggregate pattern - enforce integrity of data.
+
+Exceptions can be used to express domain concepts too.
+
 ## Tactical
 
 Tactical patterns (domain model buildig blocks): value objects, aggregates, domain services...
@@ -157,6 +164,8 @@ All microservices are bounded contexts, but not all bounded contexts are necessa
 >
 > George Box
 
+Abstractions - simplified interfaces that encapsulate behavior.
+
 ## Components
 
 Value and Identity objects
@@ -184,6 +193,10 @@ Distinguished by its identity, rather than its attributes.
 
 Example: a person, a city, a car, a lottery ticket, a bank transaction.
 
+Entity is a domain object that has long-lived identity.
+
+Entities have identity equality.
+
 ### Value objects
 
 Describe some characteristics of a thing.
@@ -199,7 +212,32 @@ Since value objects are immutable, the value objects' behavior is free of side e
 
 Use for the domain's elements that describe properties of other objects.
 
+A value object is any domain object that is uniquely identified by the data it holds; we usually make them immutable.
+
+Value object: any object that is identified only by its data and doesn't have long-lived identity.
+
+```python
+from dataclasses import dataclass
+from typing import NewType
+
+Quantity = NewType("Quantity", int)
+Sku = NewType("Sku", str)
+
+
+@dataclass(frozen=True)
+class Order:
+    order_id: int
+    sku: Sku
+    quantity: Quantity
+```
+
 ### Domain Services
+
+> Sometimes, it just isn't a thing.
+>
+> Eric Evans, Domain-Driven Design
+
+A domain service function.
 
 Sometimes, it is just isn't a thing.
 
@@ -219,6 +257,8 @@ Business logic that doesn't belong to any aggregate or value object, or relevant
 A domain service is a stateless object that implements the business logic.
 
 A stateless object used to host business logic.
+
+Not the same as services from service layer. A domain service represents a business concept or process, whereas a service-layer service represents a use case for the application.
 
 ## Layered structure
 
@@ -298,6 +338,8 @@ Generic - things all companies do in the same way.
 ![subdomains](subdomains.png)
 
 If software is is not useful for the business, it's nothing but an expensive technology demo.
+
+A fancy way of saying the problem you're trying to solve.
 
 ## Specification
 

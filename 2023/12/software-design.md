@@ -197,6 +197,12 @@ Data lake - instead of being transformed right away into an analytical model, th
 
 Data mesh - domain-driven design for analytical data. Principles: decompose data around domains, data is aproduct, enable autonomy, build an ecosystem. Analytical data should be treated the same as any public API.
 
+## Functional Core and Imperative Shell
+
+## Responsibility-driven design
+
+Think about code in terms of behavior, rather than in terms of data or algorithms.
+
 ## Vocabulary
 
 Automation policy - scnario in which an event triggers the execution of a command.
