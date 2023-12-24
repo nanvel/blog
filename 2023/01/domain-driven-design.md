@@ -6,7 +6,7 @@ place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 212
+loc: 4
 
 [TOC]
 
@@ -18,6 +18,7 @@ Presentation:
 - tactical design
 - rlation to TDD
 - alternatives to DDD
+- microservices
 
 > It is not about drawing pictures of a domain; it is about how you think of it, the language you use to talk about it, and how you organize your software to reflect your improving understanding of it.
 >
@@ -102,6 +103,10 @@ Creating distinctive software comes tback to a stable team acculating specialize
 
 With the tools and technology we already have, we can build systems much more valuable than most projects do today. We can write software that is a pleasure to use and a pleasure to work on, software that doesn't box us in as it grows but creates new opportunities and continues to add value for its owners.
 
+Domain-driven design is not about aggregates or value objects. Domain-driven design is about letting your business domain drive software design decisions.
+
+Effective modules are deep: a simple public interface encapsulates complex logic.
+
 ## Tactical
 
 Tactical patterns (domain model buildig blocks): value objects, aggregates, domain services...
@@ -134,6 +139,12 @@ Integrating different bounded contexts:
 - Separate ways
 
 Relying exclusively on the language's standard library's primitive data types - such as strings, integers, or dictionaries - to represent concepts of the business domain is known as the primitive obsession code smell.
+
+### Boundaries
+
+When designing bounded contexts, start with wider boundaries. If required, decompose the wide boundaries into smaller ones as you gain domain knowledge.
+
+All microservices are bounded contexts, but not all bounded contexts are necessarily microservices.
 
 ## Model
 
@@ -280,6 +291,10 @@ Types of subdomains:
 - generic - business activities that all companies performing in the same way
 - supporting - support the company's business, do not provide any competitive advantage
 
+Core - activities the company is doing differently from its competitors, but that do not provide a competitive edge.
+Supporting - things the company is doing differently from its competitors, but that do not provide a competitive edge.
+Generic - things all companies do in the same way.
+
 ![subdomains](subdomains.png)
 
 If software is is not useful for the business, it's nothing but an expensive technology demo.
@@ -297,6 +312,10 @@ Patterns:
 - open-host service
 
 Open-host service pattern is reversal of the anticorruption layer: instead of the consumer, the supplier implements the translation of its internal model.
+
+## Event storming process
+
+[Event storming](https://en.wikipedia.org/wiki/Event_storming) on Wikipedia
 
 ## Vocabulary
 

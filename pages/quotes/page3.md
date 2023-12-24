@@ -40,3 +40,15 @@ modified: 2023-12-22T11:41
 >
 > Yuval Noah Harari
 ---
+> The only constant in life is change.
+>
+> Heraclitus
+---
+> Only the paranoid survive.
+>
+> Andrew Grove
+---
+> There is no sense in talking about the solution before we agree on the problem, and no sense talking about the implementation steps before we agree on the solution.
+>
+> Efrat Goldratt-Ashlag
+---
