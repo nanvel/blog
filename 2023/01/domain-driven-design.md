@@ -6,7 +6,7 @@ place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 134
+loc: 212
 
 [TOC]
 
@@ -17,6 +17,7 @@ Presentation:
 - strategic design
 - tactical design
 - rlation to TDD
+- alternatives to DDD
 
 > It is not about drawing pictures of a domain; it is about how you think of it, the language you use to talk about it, and how you organize your software to reflect your improving understanding of it.
 >
@@ -132,6 +133,8 @@ Integrating different bounded contexts:
 - Open-host service
 - Separate ways
 
+Relying exclusively on the language's standard library's primitive data types - such as strings, integers, or dictionaries - to represent concepts of the business domain is known as the primitive obsession code smell.
+
 ## Model
 
 > A model is a simplified representation of a thing or phenomenon that intentionally emphasizes certain aspects while ignoring others.
@@ -181,7 +184,11 @@ Making choices about copying, sharing, and immutability.
 
 Share one instance and point to it many times (flyweight).
 
-### Services
+Since value objects are immutable, the value objects' behavior is free of side effects and is thread safe.
+
+Use for the domain's elements that describe properties of other objects.
+
+### Domain Services
 
 Sometimes, it is just isn't a thing.
 
@@ -195,6 +202,12 @@ A good service characteristics:
 - not a natural part of an etity or value object
 - the interface is defined in terms of other elements of the domain model
 - the operation is stateless
+
+Business logic that doesn't belong to any aggregate or value object, or relevant to multiple aggregates (calculation logic that requires reading data from multiple aggregates).
+
+A domain service is a stateless object that implements the business logic.
+
+A stateless object used to host business logic.
 
 ## Layered structure
 
@@ -214,6 +227,17 @@ Tighten up the model itself by defining clear ownership and boundaries, avoiding
 Example: car (root entity), the aggregate includes wheels, tires, etc.
 
 Factories and repositories operate on aggregates, encapsulating the complexity of specific life cycle transitions.
+
+An aggregate is a consistency enforcement boundary.
+
+Consistency is enforced by allowing only the aggregate's business logic to modify its state.
+The state-modifying methods expesed as an aggregate's public interface are often referred to as commands.
+
+It aggregates business entities and value objects that belong to the same transaction boundary.
+
+Aggregates and value objects do: encapsulate invariants and thus reduce complexity.
+
+An aggregate can communicate with external entities by publishing domain events.
 
 ## Factories
 
@@ -294,11 +318,14 @@ Model-driven design - a design in which some subset of software elements corresp
 
 Repository - a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects.
 
-Service - an operation oferred as an interface that stands alone in the model, with no encapsulated state.
+Domain Service - an operation oferred as an interface that stands alone in the model, with no encapsulated state.
+A stateless object that hosts business logic that naturally doesn't belong to any of the domain models aggregates or value objects.
 
 Ubiquitous language - a language structured around the domain model and used by all team members to connect all the activities of the team with the software.
 
 Value object - an object that describes some characteristic or attribute but carries no concept of identity.
+
+Aggregate - a hierarchy of entities sharing a transactional boundary. All of the data included in an aggregate's boundary has to be strongly consistent to implement its business logic.
 
 ## Links
 
