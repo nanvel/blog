@@ -1,6 +1,6 @@
 labels: Draft
 created: 2017-06-06T22:57
-modified: 2017-06-06T22:57
+modified: 2023-12-26T20:53
 place: Phuket, Thailand
 comments: true
 
@@ -37,6 +37,9 @@ CMD ["python", "app.py"]
 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) and
 [Dockerfile best practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 on docker docs.
+
+!!! tip "install order"
+    Install things in the order of how frequently they are likely to change.
 
 ## Build
 
@@ -170,6 +173,40 @@ networks:
   webnet:
 ```
 
+```yaml
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_PASSWORD=abc123
+      - API_HOST=app
+      - PYTHONDONTWRITEBYTECODE=1
+    volumes:
+      - ./src:/src
+      - ./tests:/tests
+    posrts:
+      - "5005:80"
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=allocation
+      - POSTGRES_PASSWORD=abc123
+    ports:
+      - "54321:5432"
+```
+
+`PYTHONDONTWRITEBYTECODE` - instructs not to write `.pyc` files.
+
 ### Swarm
 
 A [swarm](https://docs.docker.com/get-started/part4/#understanding-swarm-clusters) is a group of machines that are running Docker and have been joined into a cluster.
+
+## Dagger
+
+[Dagger](https://docs.dagger.io/sdk/python/) is an integrated platform to orchestrate the delivery of applications to the cloud from start to finish. The Dagger Platform includes the Dagger Engine, Dagger Cloud, and the Dagger SDKs.

@@ -20,7 +20,7 @@ Projects have to make pragmatic trade-offs.
 
 - Data access layer (infrastructure layer) - also includes integration with the various external information providers
 - Business logic layer (domain layer, model layer, core layer)
-- Service layer (application layer, use case layer) - defines an application's boundary with a layer of services that establishes a set of available operations and coordinates the application's response in each operation
+- Service layer (application layer, use case layer, orchestration layer) - defines an application's boundary with a layer of services that establishes a set of available operations and coordinates the application's response in each operation
 - Presentation layer (user interface)
 
 ## Ports and adapters architecture
@@ -38,6 +38,10 @@ Known as:
 - infrastructure layer: database, ui framework, external provider, message bus
 
 Abstract ports are resolved into concrete adapters in the infrastructure layer either through dependency injection or by bootstrapping.
+
+Port is the interface between our application and whatever it is we wish to abstract away, and the adapter is the implementation behind that interface or abstraction.
+
+If you're using an abstract base class, that's the port.
 
 ## Transaction script
 
@@ -66,6 +70,14 @@ Outbox pattern for publishing messages after committing changes to another datab
 The outbox pattern is a reliable way to publish aggregates' domain events. It ensures that domain events are always going to be published, even in the face of different process failure.
 
 ## Command-query responsibility segregation (CQRS)
+
+|              | Read side        | Write side                         |
+|--------------|------------------|------------------------------------|
+| Behavior     | Simple read      | Complex business logic             |
+| Cacheability | Highly cacheable | Uncacheable                        |
+| Consistency  | Can be stale     | Must be transactionally consistent |
+
+Follow one simple rule: functions should either modify state or answer questions, but never both.
 
 ## Event sourcing (event sourced domain model)
 
@@ -108,6 +120,58 @@ Consider these:
 - servers will fail at the most inconvenient moment
 - events will arrive out of order
 - events will be duplicated
+
+Domain events - trigger workflows that cross consistency boundaries.
+
+Message bus - provides a unified way of invoking use cases from any endpoint.
+
+CQRS - Separating reads and writes avoids awkward compromises in an event-driven architecture and enables performance and scalability improvements.
+
+```python
+class Event:
+    pass
+
+
+@dataclass
+class MyEvent(Event):
+    value: str
+```
+
+Events can help with the single responsibility principle.
+
+A message bus routes messages to handlers.
+
+Options:
+- Service layer raises events and passes them to message bus.
+- Domain model raises events, service later passes them to message bus.
+- UoW collects events from aggregates and passes them to message bus
+
+Move from imperative to event-based flow control changes what used to be orchestration into choreography.
+>
+> Ed Jung
+
+Commands are sent by one actor to another specific actor with the expectation that a particular thing will happen as a result.
+
+Name commands with imperative mood verb phrases like "allocate stock" or "delay shipment".
+
+Commands capture intent.
+
+Events are broadcast by an actor to all interested listeners.
+
+Name events with past-tense verb phrases.
+
+Use events to spread the knowledge about successful commands.
+Senders should not care about whether the receiver succeeded or failed.
+
+Events vs commands:
+
+|                | Event              | Command         |
+|----------------|--------------------|-----------------|
+| Named          | Past tense         | Imperative mood |
+| Error handling | Fail independently | Fail noisily    |
+| Sent to        | All listeners      | One recipient   |
+
+Treating commands and events differently helps us understand which things have to succeed and which things we can tidy up later.
 
 ## Consistency
 
@@ -152,7 +216,7 @@ The saga pattern can be used to implement simple cross-component business proces
 
 ## Tests
 
-Transaction script -> reversed testing pyramid.
+Transaction script -> reversed testing pyramid (ice-creame cone).
 Active record -> testing diamond.
 Domain model -> testing pyramid.
 Event-sourced domain model -> testing pyramid.
@@ -203,6 +267,22 @@ Data mesh - domain-driven design for analytical data. Principles: decompose data
 
 Think about code in terms of behavior, rather than in terms of data or algorithms.
 
+## Dependency injection frameworks
+
+[Dependency Injector](https://python-dependency-injector.ets-labs.org/)
+
+[Punq](https://punq.readthedocs.io/en/latest/)
+
+[Dependencies](https://proofit404.github.io/dependencies/)
+
+## API
+
+Pastel's law or robustness principle: be liberal in what you accept, and conservative in what you emit.
+
+Validate as little as possible. Read only the fields you need, and don't overspecify their contents.
+
+[Tolerant Reader](https://martinfowler.com/bliki/TolerantReader.html) by Martin Fowler.
+
 ## Vocabulary
 
 Automation policy - scnario in which an event triggers the execution of a command.
@@ -214,3 +294,4 @@ Brownfield projects - already proved their business viability and need a shake u
 - [Domain-Driven Design](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG/) by Eric Evans
 - [Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) at Azure Architecture Center
 - [Learning Domain-Driven Design](https://www.amazon.com/Learning-Domain-Driven-Design-Vlad-Khononov-ebook/dp/B09J2CMJZY/) by Vlad Khononov
+- [Architecture Patterns with Python](https://www.amazon.com/Architecture-Patterns-Python-Domain-Driven-Microservices-ebook/dp/B085KB31X3/) by Harry Percival, Bob Gregory

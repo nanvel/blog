@@ -6,8 +6,6 @@ place: Bangkok, Thailand
 
 # Domain Driven Design
 
-loc: 81
-
 [TOC]
 
 Presentation:
@@ -18,7 +16,7 @@ Presentation:
 - tactical design
 - rlation to TDD (easier to test)
 - alternatives to DDD
-- microservices
+- microservices (distributed big ball of mud)
 
 > It is not about drawing pictures of a domain; it is about how you think of it, the language you use to talk about it, and how you organize your software to reflect your improving understanding of it.
 >
@@ -113,6 +111,68 @@ Unit of work pattern - provide atomic operations.
 Aggregate pattern - enforce integrity of data.
 
 Exceptions can be used to express domain concepts too.
+
+Putting too much logic into the service layer can lead to the Anemic Domain antipattern. It's better to introduce the layer after you spot orchestration logic creeping into your controllers.
+
+The objective with these architecture patterns is to try to have the complexity of our application grow more slowly than its size.
+
+Aggregates, domain events, and dependency inversion are ways to control complexity in large systems.
+
+Service layer (defines the jobs the system should perform and orchestrates different components):
+
+- Handler: receives a command or an event and performs what needs to happen.
+- Unit of work: abstraction around data integrity. Each unit of work represents an atomic update. Makes repositories available. Tracks new events on retrieved aggregates.
+- Message bus (internal): handles commands and events by routing them to the appropriate handler.
+
+### Unit of work pattern
+
+Ties together repository and service layer.
+
+Abstraction over the idea of atomic operations.
+Abstraction around data integrity.
+
+Think about UoW as being part of the service layer.
+
+```python
+class AbstractUnitOfWork(abc.ABC):
+    my_entities: MyEntitiesRepository
+
+    def __exit__(self, *args):
+        self.rollback()
+
+    @abc.abstractmethod
+    def commit(self):
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def rollback(self):
+        raise NotImplementedError
+
+
+class SqlAlchemyUnitOfWork(AbstractUnitOfWork):
+    def __init__(self, session_factory):
+        self._session_factory = session_factory
+
+    def __enter__(self):
+        self._session = self._session_factory()
+        self.my_entities = MyEntitiesRepository(self._session)
+        return super().__enter__()
+
+    def __exit__(self, *args):
+        super().__exit__(*args)
+        self._session.close()
+
+    def commit(self):
+        self._session.commit()
+
+    def rollback(self):
+        self._session.rollback()
+
+
+with uow:
+    uow.my_entities.add(MyModel)
+    uow.commit()
+```
 
 ## Tactical
 
@@ -258,7 +318,9 @@ A domain service is a stateless object that implements the business logic.
 
 A stateless object used to host business logic.
 
-Not the same as services from service layer. A domain service represents a business concept or process, whereas a service-layer service represents a use case for the application.
+Not the same as services from service layer (application service). A domain service represents a business concept or process, whereas a service-layer service represents a use case for the application.
+
+Piece of logic that belongs in the domain model but doesn't sit naturally inside a stateful entity or value object.
 
 ## Layered structure
 
@@ -290,6 +352,22 @@ Aggregates and value objects do: encapsulate invariants and thus reduce complexi
 
 An aggregate can communicate with external entities by publishing domain events.
 
+A constraint is a rule that restricts the possible states our model can get into.
+
+The only way to modify the objects inside the aggregate is to load the whole thing, and to call methods on the aggregate itself.
+
+> An aggregate is a cluster of associated objects that we treat as a unit for the purpose of data changes.
+>
+> Eric Evans, Domain-Driven Design
+
+Attributes needed in one context are irrelevant in another.
+
+Aggregates are entrypoints into the domain model.
+
+Aggregates are in charge of a consistency boundary.
+
+Aggregates and concurrency issues go together.
+
 ## Factories
 
 A program element whose responsbility is the creation of other objects is called a factory.
@@ -319,6 +397,27 @@ Benefits:
 
 The factory makes new objects; the repository finds old objects.
 
+Pros:
+- a simple interface between persistent storage and the domain model
+- easy to make a fake version of the repository, or swap different storage solutions
+- creating domain model before thinking about persistence
+- complete control over how we map our objects to tables
+
+Cons:
+- ORM already allows swapping to another database solution
+- maintainign mapping requires extra work
+- adds a "WTF factor" for programmers who are not familiar with repository pattern
+
+For simple cases, decoupled domain model is harder work than a simple active record pattern.
+
+If the app is just a simple CRUD wrapper around a database, then you don't need a domain model or a repository.
+
+The more complex the domain, the more an investment if freeing yourself from infrastructure concerns will pay off in terms of the ease of making changes.
+
+![repository vs active record](repository.png)
+
+Repositories should only return aggregates.
+
 ## Domain
 
 Should not try to reduce domain modelling to a cookbook or a toolkit. Mideling and design call for creativity.
@@ -341,6 +440,14 @@ If software is is not useful for the business, it's nothing but an expensive tec
 
 A fancy way of saying the problem you're trying to solve.
 
+Domain (defines the business logic):
+
+- Entity: a domain object whose attributes may change but that has a recognizible identity over time.
+- Value object - an immutable domain object whose attributes entirely define it. It is fungible with other identical objects.
+- Aggregate - cluster of associated objects that we treat as a unit for the purpose of data changes. Defines and enforces a consistency boundary.
+- Event - Represents something that happened.
+- Command - Represents a job that system should perform.
+
 ## Specification
 
 Can test any object to see if it satisfies the specified criteria.
@@ -358,6 +465,59 @@ Open-host service pattern is reversal of the anticorruption layer: instead of th
 ## Event storming process
 
 [Event storming](https://en.wikipedia.org/wiki/Event_storming) on Wikipedia
+
+## Sustem
+
+System, composition root, bootstrap script.
+
+## Testing
+
+Mocking frameworks, particularly monkey-patching, are a code smell.
+Tests that use mocks tend to be more coupled to the implementation details of the codebase.
+
+Overuse of mocks leads to complicated test suites that fail to explain the code.
+
+Designing for testability really means designing for extensibility. We trade off a little more complexity for a cleaner design that admits novel use cases.
+
+Mocks vs fakes:
+- mocks (spies) are used to verify how something gets used
+- fakes (stubs) are working implementations of the things they are replacing
+
+`unittest.mock.MagicMock` is a mock, but often used also as a stubs or dummies.
+
+TDD as design practice first and a testing practice second.
+
+Keep all domain dependencies in fixture functions.
+
+Don't mock what you don't own.
+
+Feel free to throw away tests if you think they are not going to add value longer term.
+
+## Structure
+
+```text
+settings.py
+domain
+  model.py  # entities, value objects, aggregates
+  exceptions.py
+adapters
+  orm.py
+  repository.py
+entrypoints  # use_cases, cli
+  main.py
+tests
+  conftest.py
+  unit
+  integration
+```
+
+Adapters (concrete implementations of an interface that goes from our system to the outside world):
+- Repository: abstraction around persistent storage.
+- Event publisher: Pushes event onto the external message bus.
+
+Entrypoints:
+- Web: receives web requests, trnasforms into commands, sends to the internal message bus.
+- Event consumer: reads events from the external messages bus and transforms them into commands and passes them to the internal message bus.
 
 ## Vocabulary
 

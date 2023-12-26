@@ -220,9 +220,11 @@ modified: 2023-01-14T19:09
 
 ## To read
 
+- Clean Architecture in Python by Leonardo Giordani
 - https://fxgears.com/index.php?threads/recommended-books-for-algo-trading-in-2020.1243/
 - Clean Architecture by Robert Martin
 - https://dou.ua/lenta/articles/top-books-2022/
+- Working Effectively with Legacy Code by Michael C. Feathers
 - Algorithms Illuminated: Part 1: The Basics by Tim Roughgarden
 - Extreme programming explained by Beck
 - Surviving Object Oriented Projects by Cockburn

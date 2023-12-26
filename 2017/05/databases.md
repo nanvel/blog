@@ -1,7 +1,7 @@
 labels: Draft
         Databases
 created: 2017-05-10T12:38
-modified: 2018-03-01T15:20
+modified: 2023-12-26T19:34
 place: Phuket, Thailand
 comments: true
 
@@ -120,6 +120,35 @@ Apache Hive, Spark SQL, Cloudera Impala, Facebook Presto, Apache Tajo, Apache Dr
 ### Parquet
 
 A columnar storage format that supports a document data model, based on Google's Dremel.
+
+### Isolation levels
+
+```python
+# sqlalchemy
+session_factory = sessionmaker(
+    bind=create_engine(
+        postgres_uri,
+        isolation_level="REPEATABLE",
+    )
+)
+```
+
+[PostgreSQL isolation levels](https://www.postgresql.org/docs/current/transaction-iso.html).
+
+| Isolation Level  | Dirty Read             | Nonrepeatable Read | Phantom Read           | Serialization Anomaly |
+|------------------|------------------------|--------------------|------------------------|-----------------------|
+| Read uncommitted | Allowed, but not in PG | Possible           | Possible               | Possible              |
+| Read committed   | Not possible           | Possible           | Possible               | Possible              |
+| Repeatable read  | Not possible           | Not possible       | Allowed, but not in PG | Possible              |
+| Serializable     | Not possible           | Not possible       | Not possible           | Not possible.         |
+
+Dirty read: a transaction reads data written by a concurrent uncommitted transaction.
+
+Nonrepeatable read: a transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read).
+
+Phantom read: a transaction re-executes a query returning a set of rows that satisfy a search condition and finds that the set of rows satisfying the condition has changed due to another recently-committed transaction.
+
+Serialization anomaly: the result of successfully committing a group of transactions is inconsistent with all possible orderings of running those transactions one at a time.
 
 ## Vocabulary
 
