@@ -9,6 +9,6 @@ place: Bangkok, Thailand
 
 ## Plans
 
-A project in Rust.
+Learn Rust, a project in Rust.
 
 Run [Mt. Fuji marathon](https://mtfujimarathon.com/english/)

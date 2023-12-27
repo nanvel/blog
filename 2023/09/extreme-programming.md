@@ -22,6 +22,8 @@ XP paradigm: stay aware, adapt, change.
 Everything in software changes: requirements, design, business, technology, team, team members.
 The problem doesn't change, because change is going to happen; the problem, rather, is our inability to cope with change.
 
+Extreme Programming recognizes the importance of design decisions, but it strongly resists upfront design. Instead, it puts and admirable effort into communication and improving the project's ability to change course rapidly.
+
 ## Values -> (principles) -> practices
 
 Concentrate on practices and stop thinkings, this is why values and principles.
