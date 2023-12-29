@@ -1,13 +1,19 @@
 labels: Draft
         Rust
 created: 2022-12-09T23:37
-modified: 2022-12-09T23:37
+modified: 2023-12-29T18:19
 place: Bangkok, Thailand
 comments: false
 
 # Rust notes
 
 [TOC]
+
+## Study
+
+- (done) Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
+- (done) https://github.com/rust-lang/rustlings
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/) (in progress)
 
 ## Cargo
 
@@ -252,3 +258,7 @@ src/bin/*.rs  // other binaries
 ## Links
 
 [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+
+### To read
+
+- https://pragprog.com/titles/khrust/programming-webassembly-with-rust/
