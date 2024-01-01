@@ -7,6 +7,10 @@ place: Bangkok, Thailand
 
 [TOC]
 
+## Trading bot
+
+Built a trading bot that makes money.
+
 ## Plans
 
 Learn Rust, a project in Rust.

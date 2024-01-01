@@ -3,7 +3,7 @@ labels: Blog
         Life
         GTD
 created: 2014-01-19T00:00
-modified: 2021-10-12T21:38
+modified: 2024-01-01T20:05
 place: Phuket, Thailand
 comments: true
 
@@ -101,3 +101,13 @@ WFH (Covid 2019)
 Bayaco
 
 ![Bayaco](bayaco.jpg)
+
+**UPD: 2023**
+
+Iglu office
+
+![Iglu Nana](iglu_nana.jpg)
+
+BKK Condo
+
+![The Line](the_line.jpg)

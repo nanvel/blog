@@ -7,15 +7,25 @@ comments: false
 
 # Rust notes
 
+loc: 60
+
 [TOC]
 
 ## Study
 
 - (done) Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
+- Review Programming Rust
 - (done) https://github.com/rust-lang/rustlings
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/) (in progress)
+- [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
 
 ## Cargo
+
+Cargo is Rust's:
+
+- compilation manager
+- package manager
+- general-purpose tool
 
 [Cargo book](https://doc.rust-lang.org/cargo/index.html)
 
@@ -41,7 +51,7 @@ Default imports from stdlib: https://doc.rust-lang.org/std/prelude/index.html
 ```bash
 rustc --version
 
-rustc main.ru
+rustc main.rs
 ./main
 ```
 
@@ -223,13 +233,28 @@ let y = {
 
 Expressions do not end with `;`.
 
+### Match
+
+```rust
+match (T:from_str(&s[..index]), T::from_str(&s[index + 1..])) {
+    (Ok(l), Ok(r)) => Some((l, r)),
+    _ => None,
+}
+```
+
 ### Functions
+
+All Rust functions are thread-safe.
 
 ```rust
 def five() -> i32 {
     5
 }
 ```
+
+### Closures
+
+Can be called as if it were a function.
 
 ### Modules
 
@@ -241,11 +266,36 @@ src/lib.rs  // lib with the package name
 src/bin/*.rs  // other binaries
 ```
 
-## rustup
+### Traits
+
+A trait as a collection of methods that types can implement.
+
+For any type T that implements the FromStr trait.
+```rust
+<T: FromStr>
+```
+
+### Macros
+
+The `!` character marks a macro invocation.
+
+Examples:
+```rust
+assert!
+debug_assert!
+format!("Example {}", arg)
+```
+
+### Memory management
+
+`move` - indicates that closure takes ownership of the variables it uses.
+
+## [rustup](https://rustup.rs/)
 
 `rustup` - a command line tool for managing Rust versions and associated tools.
 `rustup update` - update to new version.
 `rustup doc`
+`rustup doc --std`
 
 ## Libs
 
@@ -255,9 +305,15 @@ src/bin/*.rs  // other binaries
 
 [Awesome rust](https://github.com/rust-unofficial/awesome-rust) - a curated list of Rust code and resources
 
+[Leptos](https://www.youtube.com/watch?v=eipr8zYP2T0) - build both frontend and backend
+
 ## Links
 
 [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+[Programming Rust (2nd edition)](https://www.amazon.com/Programming-Rust-Fast-Systems-Development-ebook/dp/B0979PWD4Z/) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
+[Let's Get Rusty](https://www.youtube.com/@letsgetrusty) on YouTube
+[Rust Language Cheat Sheet](https://cheats.rs/)
+[Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
 
 ### To read
 
