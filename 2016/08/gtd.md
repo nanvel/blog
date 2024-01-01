@@ -4,7 +4,7 @@ image: /2016/08/urgency.png
 description: I put here some notes I made after reading Getting Things Done book and a few other books. So some things are absent in GTD technique and a lot of things from the original technique is omitted
 keywords: getting things done,gtd,external brain,project management
 created: 2016-08-29T21:23
-modified: 2021-10-14T00:05
+modified: 2024-01-01T20:14
 place: Phuket, Thailand
 comments: true
 
@@ -29,6 +29,10 @@ Redefine your goals periodically.
 > Getting Things Done by David Allen
 
 ![ask yourself](ask.jpg)
+
+### Your Reason for Being
+
+![inigai](ikigai.jpg)
 
 ## Horizontal planning
 
@@ -165,6 +169,10 @@ Next action - the next physical, visible activity that progress something toward
 ### Project
 
 Project - any outcome requiring more than one step that you're committed to achieve within a year.
+
+## CheatSheet
+
+[Get your time back](get_your_time_back.jpg)
 
 ## Links
 

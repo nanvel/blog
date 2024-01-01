@@ -1,7 +1,8 @@
 labels: Draft
         Business
+        Communication
 created: 2021-10-14T00:12
-modified: 2021-10-14T00:12
+modified: 2024-01-01T20:20
 place: Phuket, Thailand
 comments: true
 
@@ -121,6 +122,10 @@ To focus on:
 - State your document's scope (goals) and audience
 - Break long topics into appropriate sections
 - The vast majority of sentences in technical writing should be in active voice
+
+## How to read any room
+
+![read any room](read_any_room.jpg)
 
 ## Links
 
