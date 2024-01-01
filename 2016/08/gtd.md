@@ -172,7 +172,7 @@ Project - any outcome requiring more than one step that you're committed to achi
 
 ## CheatSheet
 
-[Get your time back](get_your_time_back.jpg)
+![Get your time back](get_your_time_back.jpg)
 
 ## Links
 
