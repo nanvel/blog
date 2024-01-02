@@ -35,4 +35,10 @@ Learn Rust, a project in Rust.
 
 Continue working on bots or start another business.
 
+Wake up at 7am.
+
+Introduce myself to more people, be visible.
+
+Excercise more, fix posture.
+
 Run [Mt. Fuji marathon](https://mtfujimarathon.com/english/)

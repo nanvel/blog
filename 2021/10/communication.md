@@ -127,6 +127,17 @@ To focus on:
 
 ![read any room](read_any_room.jpg)
 
+## Dating
+
+If they ignore you, just quietly move on, don't need to send long messages, just take your dignity and go.
+How you meet is irrelevant, stop romanticizing it, important - you meet your person, not how you meet them.
+Don't assume is a handful of good qualities are good then everything else is great, don't have the full picture.
+If not clear about the type of person you want to attract - wasting a lot of time with unsuitable people.
+The right person doesn't put you in a position where you stand. Right people give clarity, not confusion.
+Date people who share similar values. Mialign in values causes conflicts.
+Have to be visible. Presentation is important.
+...
+
 ## Links
 
 [The Achievement Habit](https://www.amazon.com/Achievement-Habit-Wishing-Start-Command/dp/0062356100) by Bernard Roth

@@ -136,6 +136,9 @@ let user1 = User {
 };
 ```
 
+!!! note "Private and public fields"
+    A struct's fields, even private fields, are accessible throughout the module where the struct is declared, and its submodules. Outside the module, only public fields are accessible.
+
 Shorthand:
 ```rust
 fn build_user(email: String, username: String) -> User {
@@ -265,6 +268,33 @@ src/main.rs  // binary with the package name
 src/lib.rs  // lib with the package name
 src/bin/*.rs  // other binaries
 ```
+
+Import:
+```rust
+use std::fs::{self, File};
+use std::io::prelude::*;
+use std::io::Result as IOResult;
+use super::AminoAcid;
+use crate::proteins::AminoAcid;
+use ::image::Puxels;  // image crate
+use self::image::Sampler;  // image module
+pub use self::image::Sampler;
+```
+
+Naming a module a `prelude` is just a convention that tells users it's ment to be imported using `*`.
+
+#### Statics and constants
+
+Modules can also define statics and constants.
+
+```rust
+pub const ROOM_TEMPERATURE: f64 = 20.0;
+pub static ROOM_TEMPERATURE: f64 = 20.0;
+```
+
+Constant - similar to `c++ #define` (compiled into code in every place it is used).
+
+Static - a variable that is being set before program start (use for larger amounts of data).
 
 ### Traits
 
