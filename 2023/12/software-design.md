@@ -16,6 +16,11 @@ There is a limit to how many things a person can think about at once (low coupli
 
 Projects have to make pragmatic trade-offs.
 
+> The design is the code, and the code is the design. The design is how it works.
+> Knowing the best code design comes through quick experimental models using an agile discovery process.
+>
+> Implementing Domain-Driven Design by Vernon Vaughn
+
 ## Layered achitecture
 
 - Data access layer (infrastructure layer) - also includes integration with the various external information providers
@@ -32,6 +37,8 @@ Known as:
 - clean architecture
 
 ![ports and adapters](ports_and_adapters.png)
+
+There are adapters for each of the outside types. The outside reaches the inside through the application API.
 
 - business logic layer: entities, rules, processes
 - application layer: actions
@@ -79,6 +86,8 @@ The outbox pattern is a reliable way to publish aggregates' domain events. It en
 
 Follow one simple rule: functions should either modify state or answer questions, but never both.
 
+Query (read) and Command (write) model.
+
 ## Event sourcing (event sourced domain model)
 
 https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing
@@ -92,6 +101,8 @@ Difference between event-driven achitecture and event sourcing
 - event-drive architecture refers to the communication between services, event sourcing happens inside a service
 
 ## Event-driven architecture
+
+Pipes and filters, Sagas (long running processes).
 
 Events, commands, and messages.
 
@@ -288,6 +299,8 @@ Validate as little as possible. Read only the fields you need, and don't overspe
 Automation policy - scnario in which an event triggers the execution of a command.
 
 Brownfield projects - already proved their business viability and need a shake up to fight accumulated technical debt and design entropy.
+
+REST - Representational State Transfer (Roy T. Fielding coined the term). Is a means of exchanging and modifying resources that are uniquely identified using a distinct URI.
 
 ## Links
 

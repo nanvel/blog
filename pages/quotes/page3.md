@@ -56,3 +56,27 @@ modified: 2023-12-22T11:41
 >
 > Rich Hickey
 ---
+> Design is not just what it looks like and feels like. Design is how it works.
+>
+> Steve Jobs
+---
+> Personally I'm always ready to learn, although I do not always like being taught.
+>
+> Sir Winston Churchill
+---
+> Whatever course you decide upon, there is always someone to tell you that you are wrong. There are always difficulties arising which tempt you to believe that your critics are right. To map out a course of action and follow it to an end requires courage.
+>
+> Ralph Waldo Emerson
+---
+> Architecture should speak of its time and place, but yearn for timelessness.
+>
+> Frank Gehry
+---
+> History is the version of past events that people have decided to agree upon.
+>
+> Napoleon Bonaparte
+---
+> Any program is only as good as it is useful.
+>
+> Linus Torvalds
+---

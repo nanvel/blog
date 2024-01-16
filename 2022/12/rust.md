@@ -7,7 +7,7 @@ comments: false
 
 # Rust notes
 
-loc: 60
+loc: 66
 
 [TOC]
 
@@ -18,6 +18,7 @@ loc: 60
 - (done) https://github.com/rust-lang/rustlings
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/) (in progress)
 - [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
+- check rust std modules https://doc.rust-lang.org/std/#modules
 
 ## Cargo
 
@@ -101,6 +102,10 @@ let tup: (i32, f64, u8) = (600, 6.4, 1);
 let five_hundred = tup.0
 ```
 
+Zero-tuple, or unit type: `()`.
+
+Rust uses unit type where there is no meaningful value to carry.
+
 #### Array
 
 ```rust
@@ -116,6 +121,21 @@ let a = [1, 2, 3, 4, 5];
 let slice = &a[1..3];
 
 assert_eq!(slice, &[2, 3]);
+```
+
+Methods like filtering, sorting, etc. are provided as methods on slices. Rust implicitly converts a reference to an array to a slice.
+
+#### Pointer types
+
+- references
+- boxes
+- unsafe pointers
+
+Box (allocates memory on the heap):
+```rust
+let t = (12, "eggs")
+let b = Box::new(t)  // Box<(i32, &str)>
+// when b goes out of scope - memory freed on heep
 ```
 
 #### Struct
@@ -219,6 +239,14 @@ let some_number = Some('a') // Option<char>
 let absent_number: Option<i32> = None;
 ```
 
+#### Vectors
+
+`Vec<T>` is a resizable array of elements of type T, allocated on the heap.
+
+```rust
+let mut primes = vec![2, 3, 5];
+```
+
 ### Expressions
 
 Statement:
@@ -258,6 +286,21 @@ def five() -> i32 {
 ### Closures
 
 Can be called as if it were a function.
+
+### Iterators
+
+`.iter()` - [doc](https://doc.rust-lang.org/std/iter/index.html)
+
+`.collect()` - iterator back to collection.
+
+### Library
+
+Turn a program into a library:
+
+- `src/main.rs -> src/lib.rs`
+- add `pub` to `lib.rs` for public features
+- `src/bin/program_name.rs` - move `main` here
+- `cargo run --bin program_name`
 
 ### Modules
 
@@ -320,6 +363,15 @@ format!("Example {}", arg)
 
 `move` - indicates that closure takes ownership of the variables it uses.
 
+Rust enforces a "single writer or multiple readers" rule: either can read and write the value, or it can be shared by any number of readers, but never both at the same time.
+
+[Stack vs heap](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/the-stack-and-the-heap.html):
+
+- stack objects are copied
+- heap objects are moved (pointer of a moved objects is being invalidated)
+- stack is faster and used for known fixed-size memory allocation
+- heap is slower and used when the memory allocation size is unknown
+
 ## [rustup](https://rustup.rs/)
 
 `rustup` - a command line tool for managing Rust versions and associated tools.
@@ -337,6 +389,27 @@ format!("Example {}", arg)
 
 [Leptos](https://www.youtube.com/watch?v=eipr8zYP2T0) - build both frontend and backend
 
+## App with multiple targets
+
+Structure:
+
+- backend
+- common
+- frontend
+- Cargo.toml
+
+### Workspaces
+
+A workspace is a set of packages that share the same Cargo.lock and output directory.
+
+Using [cargo-workspaces](https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html):
+```shell
+cargo new --lib common
+cargo new backend
+cargo new frontend
+cargo workspaces init
+```
+
 ## Links
 
 [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
@@ -348,3 +421,4 @@ format!("Example {}", arg)
 ### To read
 
 - https://pragprog.com/titles/khrust/programming-webassembly-with-rust/
+- [Yew.rs and Actix Web](https://codevoweb.com/build-full-stack-app-with-rust-yew-and-actix-web/)

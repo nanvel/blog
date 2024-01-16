@@ -189,14 +189,18 @@ modified: 2023-01-14T19:09
 - [+] Architecture Patterns with Python by Harry Percival, Bob Gregory
 - Advances in Financial Machine Learning by Marcos Lopez de Prado
 
+## 2024
+
+- Implementing Domain-Driven Design by Vernon Vaughn
+
 ## In progress
 
+- The Clean Coder by Robert C. Martin
 - The Staff Engineer's Path by Tanya Reilly
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
 - Advanced Algorithmic Trading by Michael Halls-Moore
-- Implementing Domain-Driven Design by Vernon Vaughn
 - Wool by Hugh Howey
 - Design It! by Michael Keeling
 - https://developers.google.com/tech-writing/one/clear-sentences
@@ -217,6 +221,9 @@ modified: 2023-01-14T19:09
 - Entry and Exit Confessions of a Champion Trader by Kevin J. Davey
 - Data Science from Scratch: First Principles with Python by Joel Grus
 - Data Science for Business by Foster Provost and Tom Fawcett
+- The art of clean code: https://www.amazon.com/Art-Clean-Code-Practices-Complexity/dp/1718502184
+- 99 bottle of oop: https://sandimetz.com/99bottles
+- software architecture the hard parts: https://www.amazon.com/Software-Architecture-Trade-Off-Distributed-Architectures/dp/1492086894
 
 ## To read
 
