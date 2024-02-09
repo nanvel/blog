@@ -192,13 +192,14 @@ modified: 2023-01-14T19:09
 ## 2024
 
 - Implementing Domain-Driven Design by Vernon Vaughn
+- [+] The Clean Coder by Robert C. Martin
+- Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
 
 ## In progress
 
-- The Clean Coder by Robert C. Martin
-- The Staff Engineer's Path by Tanya Reilly
+- [Refactoring UI](https://www.refactoringui.com/) by Adam Wathan, Steve Schoger
+- Software Architecture: The Hard Parts by  Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
-- Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
 - Advanced Algorithmic Trading by Michael Halls-Moore
 - Wool by Hugh Howey
@@ -224,6 +225,7 @@ modified: 2023-01-14T19:09
 - The art of clean code: https://www.amazon.com/Art-Clean-Code-Practices-Complexity/dp/1718502184
 - 99 bottle of oop: https://sandimetz.com/99bottles
 - software architecture the hard parts: https://www.amazon.com/Software-Architecture-Trade-Off-Distributed-Architectures/dp/1492086894
+- Trade Like a Casino by Richard L. Weissman
 
 ## To read
 
@@ -274,8 +276,9 @@ modified: 2023-01-14T19:09
 - Trading Evolved by Andreas Clenow
 - Patterns of Enterprise Application Architecture by Martin Fowler
 
-## Archive
+## Abandoned
 
+- The Staff Engineer's Path by Tanya Reilly (42%)
 - Managing for Results by Peter F. Drucker (19%)
 - The Happiness Project by Gretchen Rubin (55%)
 - The Backpacker by John Harris (13%)

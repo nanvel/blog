@@ -877,6 +877,7 @@ Articles:
 - [Trading vocabulary](/2018/07/trading-vocabulary)
 - [Crypto Cred](https://docs.google.com/document/d/15c3rN15rkXldY8Te3GDG4NG7noaaoikydOoZQlElwXw/preview)
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
+- [Smart Money Concept: Be Ahead Of The Market Move](https://blog.fundednext.com/smart-money-concept/)
 
 Training:
 
