@@ -85,8 +85,8 @@ If the market is trending - we can benefit from it by following the trend; if ra
 **Traders are looking at price**
 
 Once price increases - they experince fear of missing out and buying in (jumping into the train).
-Once price of asset drops - they experience fear of losing.
-Once price is close to a significant price level (1$ for example), there is more excitement than if price gets to 0.95$. Also support/resistance, ath, atl, moving average works similar.
+Once price of an asset drops - they experience fear of losing.
+Once price is close to a significant price level (1$ for example), there is more excitement than if price gets to 0.95$. Also, support/resistance, ath, atl, and moving averages work in a similar way.
 If price is not volotile enough and do not produces opportunities in the chosen timeframe - traders move money to more promising instruments.
 
 **Traders are looking at PnL**
@@ -113,7 +113,7 @@ Emotional, averaging down, taking losses personally and fighting back an asset, 
 
 ### Large volume traders
 
-There are institutions, whales, coordinated groups of traders, insiders.
+They are institutions, whales, coordinated groups of traders, insiders.
 
 A large amount of an asset under management causes trouble for them because they can not buy or sell at a specific price and fast.
 Large limit order in order book will show their intent and they don't want this.
@@ -130,7 +130,7 @@ Large drops in market price scare off participants invested in the trading instr
 
 Large traders may block large price advances by adding large fake sell limit orders. So they can make sure the price will not start a rally until they will have enough asset accumulated.
 
-Once the asset has low liquidity and the large player accumulated enough of it, he can easily create a small pump, that can be picked up by the retail traders. There can be a positive news to give a reason for the price increase.
+Once the asset has low liquidity and the large player accumulated enough of it, they can create an initialiation activity, that can be picked up by the retail traders. There can be a positive news to give a reason for the price increase.
 
 Large market rallies generate investor confidence, causing more participants to buy more, recursively causing larger rallies.
 
@@ -141,7 +141,7 @@ Large traders like liquidity:
 - They are happy to consume large limit orders in order book because it does not move price
 - They know where stop loss orders are and hunt them
 
-Institutional activities signs:
+Institutional activity signs:
 
 - Sideways price action area
 - Aggressive initiation activity
@@ -170,8 +170,7 @@ Market making - get inside the bid-ask spread and buy low, sell high.
 Another market making strategy implemented by many bots is grid trading.
 
 Arbitrage (one exchange or cross-exchange) also just reduces inefficiencies (balances prices between markets).
-Arbitrage - take advantage of things trading at different prices on different exchanges or through different
-derivatives.
+Arbitrage - take advantage of things trading at different prices on different exchanges or through different derivatives.
 
 They are basically not impacting price much, they are waiting for others to move price, jump in and make a profit.
 
@@ -205,8 +204,7 @@ Markets spend more time in mean-reversion regime than in trending.
 
 ## TA
 
-> A technician is someone who cuts right to the chase and studies actual prices and behavior
-> instead of puzzling over the causes of prices and behavior like everyone else.
+> A technician is someone who cuts right to the chase and studies actual prices and behavior instead of puzzling over the causes of prices and behavior like everyone else.
 >
 > John Brown
 
@@ -286,8 +284,7 @@ Volume Price Analysis concepts:
 - Selling Climax
 - Buying Climax
 
-Buying climax - when the market has moved sharply lower in a price waterfall and bearish trend,
-supported by masses of volume. Wholesalers are buying and retail traders are panic selling.
+Buying climax - when the market has moved sharply lower in a price waterfall and bearish trend, supported by masses of volume. Wholesalers are buying and retail traders are panic selling.
 
 Selling climax - at the top of a bull trend, where we see sustained high volumes.
 Wholesalers are selling to retail traders and investors.
@@ -379,7 +376,7 @@ Strategy characteristics:
 >
 > Paul Tudor Jones
 
-Attention to profit - a sign of immature, attention to losses - sign or experience.
+Attention to profit is a sign of immature, attention to losses - sign or experience.
 
 Parts of risk management:
 
@@ -396,7 +393,7 @@ Backtest. Test new ideas with paper trading first.
 >
 > Evidence-Based Technical Analysis by David Aronson
 
-Transaction costs should be take into account.
+Transaction costs should be taken into account.
 Transaction costs:
 
 - Commission
@@ -409,18 +406,18 @@ The appropriate benchmark of a long-only strategy is the return of a buy-and-hol
 
 #### Cut loses short and maximize gains
 
-Money is not made on entries; profits are only generated on the exit or a trade.
+Money is not made on entries; profits are only generated on the exit of a trade.
 
 Exit strategies:
 
 - Fixed holding period
-- Target proce or profit
+- Target percent of profit
 - Exit signal
 - Stop price
 
-Should try to maximize profits when right and minimize losses when wrong.
+Have to try to maximize profits when right and minimize losses when wrong.
 
-The primary tool to cut loses short is stop loss, and the primary tool for maximizing gains is a trailing stop.
+The primary tool of cutting loses short is stop loss, and the primary tool for maximizing gains is trailing stop.
 
 After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
 
@@ -558,10 +555,6 @@ It can be used for adjusting strategies based on market conditions (predicting o
 
 Recent data can be not enough for testing, older data can be absolete.
 
-## Definitions
-
-Gambling - when odds are unknown and wishing for luck.
-
 ## Strategies
 
 > Profitable trading does not have a secret recipe for success. There are as many different ways to be profitable as there are traders who know how to utilise the good trading systems out there.
@@ -597,7 +590,7 @@ Arbitrage:
 
 Momentum:
 
-- Ride pumps
+- Ride pumps and dumps
 - Spot price, volume, and orders momentum increase
 - Look for loss of momentum (failed to make lower low or higher high, double top/double bottom)
 
@@ -671,11 +664,11 @@ Other:
 - Look for setups where small movement will invalidate the setup (so profit/loss ratio is higher)
 - Estimate stops by cluster info
 - When btc drop - other drop even more? Arbitrage?
-- lower capital when start losing
+- Lower capital when start losing
 - [Harmonic Trading Patterns](https://forextraininggroup.com/a-guide-to-harmonic-trading-patterns-in-the-currency-market/)
 - Cross-section mean reversion means that the cumulative returns of the instruments in a basket will revert to the cumulative return of the basket
-- breached support/resistence - research in the currencies markets indicated that once support/resistence are breached, prices will go further down/up for a while
-- stop hunting is a high-frequency trading that relies on triggering stop orders that typically populate round numbers near the current market price
+- Breached support/resistence - research in the currencies markets indicated that once support/resistence are breached, prices will go further down/up for a while
+- Stop hunting is a high-frequency trading that relies on triggering stop orders that typically populate round numbers near the current market price
 
 ## Business
 
@@ -684,6 +677,8 @@ Difference between trading and other small businesses: no marketing if you manag
 High Sharpe ration is much easier to achieve with smaller account.
 
 ## Vocabulary
+
+Gambling - when odds are unknown and wishing for luck.
 
 [Sharpe Ratio](http://web.stanford.edu/~wfsharpe/art/sr/sr.htm) - consistency of returns. Helps investors to understand the return of an investment compared to its risk.
 When < 1 - not suitable for a stand-alone strategy. Profitable almost every month - > 2, profitable almost every day - > 3.
