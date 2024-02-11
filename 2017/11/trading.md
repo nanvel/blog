@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2023-11-25T19:23
+modified: 2024-02-11T17:44
 place: Phuket, Thailand
 comments: true
 
@@ -405,6 +405,8 @@ Transaction costs:
 - Market impact
 - Slippage
 
+The appropriate benchmark of a long-only strategy is the return of a buy-and-hold position - the information ratio rather than the Sharpe ratio.
+
 #### Cut loses short and maximize gains
 
 Money is not made on entries; profits are only generated on the exit or a trade.
@@ -433,6 +435,8 @@ Stop should be applied if price is in momentum, otherwise - it could reverse fas
 Stop is beneficial in momentum regime and harmful in mean-revertion.
 
 Lower RR and higher win rate is more favorable than higher RR and lower win rate (if risk and reward are many times larger than commission) because easier to handle emotionally.
+
+It would be much more advantageous if we could proactively avoid those periods of time when the strategy is likely to incure loss.
 
 #### Position sizing
 
@@ -605,7 +609,7 @@ TA-based:
 - If an asset fails to make a higher high - sign of weakness
 - Use ichimoku cloud
 - Automatically identify supports/resistance/trend lines
-- Trade break outs
+- Trade break outs (triggering of stops)
 - Trade pull backs (rejections)
 - Spot accumulation and distribution
 - Break out from pennant
@@ -654,7 +658,7 @@ Other:
 - Buy before the pay day (people accumulating from salaries)
 - Identify supply testing
 - Pullbacks on low volume - pull back if not supported
-- Trade on news
+- Trade on news (momentum is driven by slow diffusion of news)
 - If price moves too quickly - stop entering the market
 - If the broader market falls quickly - stop buying
 - Know orders priority - FIFO or by size?
@@ -669,6 +673,9 @@ Other:
 - When btc drop - other drop even more? Arbitrage?
 - lower capital when start losing
 - [Harmonic Trading Patterns](https://forextraininggroup.com/a-guide-to-harmonic-trading-patterns-in-the-currency-market/)
+- Cross-section mean reversion means that the cumulative returns of the instruments in a basket will revert to the cumulative return of the basket
+- breached support/resistence - research in the currencies markets indicated that once support/resistence are breached, prices will go further down/up for a while
+- stop hunting is a high-frequency trading that relies on triggering stop orders that typically populate round numbers near the current market price
 
 ## Business
 
@@ -694,6 +701,8 @@ Look ahead bias - using data that should not be available at the moment in backt
 Strategy capacity - how much a strategy can absorb without negative impacting its returns.
 
 High frequency trading - automated trading where trades are closed in the same day.
+
+Kelly formula - a formula that determines the optimal leverage and capital allocation while balancing returns versus risks.
 
 ## Links
 
@@ -806,6 +815,7 @@ Backtesting:
 - [optopsy](https://github.com/michaelchu/optopsy) - for options
 - [qf-lib](https://github.com/quarkfin/qf-lib)
 - [auquantoolbox](https://github.com/Auquan/auquantoolbox)
+- [Progress Apama](https://fst.net.au/wp-content/uploads/file/whitepaper/fst_ds-apama-algotrading-platform_ds.pdf)
 
 Other:
 
@@ -899,3 +909,4 @@ Training:
 - [The Man Who Solved the Market](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X) by Gregory Zuckerman
 - [The Quiet Trader](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT) by Atanas Matov
 - [Quantitative Trading](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business-ebook/dp/B097QGPVND) by Ernest P. Chan
+- [Algorithmic Trading](https://www.amazon.com/Algorithmic-Trading-Winning-Strategies-Rationale/dp/1118460146) by Ernie Chan
