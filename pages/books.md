@@ -194,10 +194,10 @@ modified: 2023-01-14T19:09
 - Implementing Domain-Driven Design by Vernon Vaughn
 - [+] The Clean Coder by Robert C. Martin
 - Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
+- [Refactoring UI](https://www.refactoringui.com/) by Adam Wathan, Steve Schoger
 
 ## In progress
 
-- [Refactoring UI](https://www.refactoringui.com/) by Adam Wathan, Steve Schoger
 - Software Architecture: The Hard Parts by  Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan

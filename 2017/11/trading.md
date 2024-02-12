@@ -699,6 +699,8 @@ High frequency trading - automated trading where trades are closed in the same d
 
 Kelly formula - a formula that determines the optimal leverage and capital allocation while balancing returns versus risks.
 
+DoM - Depth of Market.
+
 ## Links
 
 ### Platforms
