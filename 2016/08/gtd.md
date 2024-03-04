@@ -170,6 +170,12 @@ Next action - the next physical, visible activity that progress something toward
 
 Project - any outcome requiring more than one step that you're committed to achieve within a year.
 
+### Discipline
+
+Discipline is when you are tired, you want to turn off the alarm and sleep in, but you get up and do what needs to be done.
+Discipline is when you do what you do not want to do now, so you can get what you do want in your life later.
+Stop chasing for motivation and get discipline.
+
 ## CheatSheet
 
 ![Get your time back](get_your_time_back.jpg)

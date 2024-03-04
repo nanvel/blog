@@ -195,10 +195,13 @@ modified: 2023-01-14T19:09
 - [+] The Clean Coder by Robert C. Martin
 - Algorithmic Trading: Winning Strategies and Their Rationale by Ernie Chan
 - [Refactoring UI](https://www.refactoringui.com/) by Adam Wathan, Steve Schoger
+- How to Make Money With Breakout Trading by Indrazith Shantharaj
+- Order Flow by Trader Dale
 
 ## In progress
 
 - Software Architecture: The Hard Parts by  Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+- The Master Swing Trader by Alan Farley
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
 - Advanced Algorithmic Trading by Michael Halls-Moore
@@ -213,8 +216,6 @@ modified: 2023-01-14T19:09
 - The Electronic Day Trader by Mark Friedfertig and George West
 - RSI Trading by Glenn Wilson
 - Persuadable: How Great Leaders Change Their Minds to Change the World by Al Pittampalli
-- The Master Swing Trader by Alan Farley
-- Order Flow by Trader Dale
 - Machine Learning for Algorithmic Trading by Stefan Jansen
 - The Options Playbook by Brian Overby
 - UX Strategy by Jaime Levy

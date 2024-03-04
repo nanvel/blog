@@ -80,3 +80,11 @@ modified: 2023-12-22T11:41
 >
 > Linus Torvalds
 ---
+> You are the average of the five people you spend the most time with.
+>
+> Jim Rohn
+---
+> The stock market is a device for transfering money from the impatient to the patient.
+>
+> Warren Buffett
+---

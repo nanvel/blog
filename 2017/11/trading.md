@@ -242,15 +242,22 @@ Support/resistance: price has memory. This is because humans (who make up the ma
 
 Support/resistance can be:
 
-- horizontal line
-- trend lines
+- Horizontal line
+- Trend lines
 - SMA(50, 200), EMA
-- fib lines
-- round numbers
+- Fib lines
+- Round numbers
 
 The more times price touches support/resistance, the weaker it becomes.
 
 > There is no such thing as a quadruple bottom/top.
+
+Separate real breakouts and fake breakouts:
+
+- A large move
+- Short time
+- Absense of the opposite party response
+- High volume
 
 ### Volume
 
@@ -469,6 +476,15 @@ Risks:
 
 Following a consistent set of actions leads to consistent results.
 
+Trade plan:
+
+- Where is the entry
+- Where and when is the stop loss
+- Where are the exits
+- What amout can be under risk
+
+Should be rigid about rules and flexible about expectations from the market.
+
 ### Psychology
 
 Behavioral finance studies irrational financial decision-making.
@@ -574,6 +590,7 @@ Statistical arbitrage:
 - Mean reversion strategies (time-series mean reversion) (if it’s going up, it’s going to go down)
 - [Pairs trading](https://alpaca.markets/learn/pairs-trading/) (cross-sectiona mean reversion) (check [the LTCM story](https://www.investopedia.com/terms/l/longtermcapital.asp))
 - Seasonal trading (based on dates of year)
+- Bollinger Band Squeeze
 
 Market making:
 
@@ -700,6 +717,8 @@ High frequency trading - automated trading where trades are closed in the same d
 Kelly formula - a formula that determines the optimal leverage and capital allocation while balancing returns versus risks.
 
 DoM - Depth of Market.
+
+Brakout - an asset price moving outside a defined support or resistance level with increased volume.
 
 ## Links
 
@@ -907,3 +926,4 @@ Training:
 - [The Quiet Trader](https://www.amazon.com/Quiet-Trader-Philosophical-Profitable-Meditations-ebook/dp/B094ZY38BT) by Atanas Matov
 - [Quantitative Trading](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business-ebook/dp/B097QGPVND) by Ernest P. Chan
 - [Algorithmic Trading](https://www.amazon.com/Algorithmic-Trading-Winning-Strategies-Rationale/dp/1118460146) by Ernie Chan
+- [How to Make Money With Breakout Trading](https://www.amazon.com/How-Make-Money-Breakout-Trading-ebook/dp/B08F1T9H9T) by Indrazith Shantharaj
