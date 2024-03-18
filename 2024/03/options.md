@@ -2,8 +2,8 @@ labels: Draft
         Finance
         Crypto
         Trading
-created: 2014-03-18T19:39
-modified: 2014-03-18T19:39
+created: 2024-03-18T19:39
+modified: 2024-03-18T19:39
 place: Bangkok, Thailand
 comments: true
 
