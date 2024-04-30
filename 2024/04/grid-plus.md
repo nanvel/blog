@@ -18,7 +18,7 @@ Realised and unrealised PNL:
 ![realised and unrealised pnl](realised_and_unrealised_pnl.png)
 
 PNL vs buy and hold:
-![pnl vs hold][pnl_vs_hold.png]
+![pnl vs hold](pnl_vs_hold.png)
 
 PNL vs buy and hold divided by average exposure:
 ![pnl vs exposure](pnl_vs_esposure.png)
