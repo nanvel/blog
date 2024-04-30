@@ -197,6 +197,7 @@ modified: 2023-01-14T19:09
 - [Refactoring UI](https://www.refactoringui.com/) by Adam Wathan, Steve Schoger
 - How to Make Money With Breakout Trading by Indrazith Shantharaj
 - Order Flow by Trader Dale
+- [+] Pit Bull by Paul Flint
 
 ## In progress
 
