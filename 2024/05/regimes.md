@@ -102,3 +102,6 @@ Records can be retrieved using api, for the one above:
   "is_template": false
 }
 ```
+
+Trend lines can be selected from suggestions or drawn:
+![trend lines](trend_lines.png)
