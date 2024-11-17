@@ -198,9 +198,13 @@ modified: 2023-01-14T19:09
 - How to Make Money With Breakout Trading by Indrazith Shantharaj
 - Order Flow by Trader Dale
 - [+] Pit Bull by Paul Flint
+- Lost and Founder by Rand Fishkin
+- [+] Unknown Market Wizards by Jack D. Schwager
+- [+] The New Trading for a Living by Alexander Elder
 
 ## In progress
 
+- Mastering the Trade by John Carter
 - Software Architecture: The Hard Parts by  Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
@@ -303,6 +307,7 @@ modified: 2023-01-14T19:09
 - watchOS 2 App Development Essentials by Neil Smyth
 - [Natural Language Processing with Python](http://www.nltk.org/book/) by Steven Bird, Ewan Klein, and Edward Loper
 - The Go Programming Language by Alan A. A. Donovan, Brian W. Kernighan
+- Game Theory by Ken Binmore
 
 ## Links
 

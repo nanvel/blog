@@ -371,7 +371,10 @@ The goal is to have a strategy with high Sharpe ratio (low drowdown), so we can 
 
 Strategy characteristics:
 
-- Sharpe ration - consistency
+- ratios - consistency
+  - Sharpe
+  - Sortino
+  - Gain-To-Pain
 - Drawdown - (global maximum - current equity) / global maximum
 - Maximum drawdown - (global maximum (high watermark) - global minimum (global minimum should occur after global maximum)) / global maximum
 - High watermark - global equity maximum
@@ -424,7 +427,7 @@ Exit strategies:
 
 Have to try to maximize profits when right and minimize losses when wrong.
 
-The primary tool of cutting loses short is stop loss, and the primary tool for maximizing gains is trailing stop.
+The primary tool of cutting loses short is stop loss, and the primary tool for maximizing gains is trailing stop (parabolic).
 
 After a trade is entered, the risk/reward ratio is always shifting, and a trader must act based on how the trade plays out.
 
@@ -522,6 +525,8 @@ Boredom associated with slow progress.
 Focus on enjoying (and getting good at) the process, without having any specific objectives in mind, the outcomes will be all-the-more rewarding.
 
 Do not set expectations on a trade, it will ruin the trade (robs ability to appreaciate current reality).
+
+Do not waste time on regrets and wishfull thinking.
 
 > You can lose your opinion, or you can lose your money.
 >
@@ -849,6 +854,7 @@ Data providers:
 - [CryptoCompare](https://min-api.cryptocompare.com/)
 - [Polygon](https://polygon.io/)
 - [Oanda](https://oanda-api-v20.readthedocs.io/en/latest/installation.html)
+- [SentimenTrader](https://sentimentrader.com/) 
 
 Analytics:
 
@@ -868,6 +874,8 @@ Analytics:
 - [Crypto Quant](https://cryptoquant.com/)
 - [Glassnode](https://glassnode.com/)
 - [Dune analytics](https://dune.xyz/)
+- [DEX screener](https://dexscreener.com/)
+- [DEX tools](https://developer.dextools.io/)
 
 Signals:
 
