@@ -7,7 +7,7 @@ modified: 2024-11-24T14:46
 place: Bangkok, Thailand
 comments: false
 
-# Tactical Deomain-Driven Desing in Python
+# Tactical Domain-Driven Desing in Python
 
 ThaiPy #108 2024-11-21.
 
