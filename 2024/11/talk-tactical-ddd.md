@@ -13,4 +13,4 @@ ThaiPy #108 2024-11-21.
 
 ![ThaiPy 108](thaipy_108.jpg)
 
-Slides: https://github.com/nanvel/slides-ddd
+Slides: [https://github.com/nanvel/slides-ddd](https://github.com/nanvel/slides-ddd)
