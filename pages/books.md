@@ -201,11 +201,11 @@ modified: 2023-01-14T19:09
 - Lost and Founder by Rand Fishkin
 - [+] Unknown Market Wizards by Jack D. Schwager
 - [+] The New Trading for a Living by Alexander Elder
+- Mastering the Trade by John Carter
 
 ## In progress
 
-- Mastering the Trade by John Carter
-- Software Architecture: The Hard Parts by  Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+- Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
