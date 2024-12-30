@@ -14,16 +14,16 @@ loc: 66
 ## Study
 
 - (done) Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
-- Review Programming Rust
 - (done) https://github.com/rust-lang/rustlings
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/) (in progress)
-- cleanup notes
+- (done)[The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- Review Programming Rust
+- Cleanup notes
+- A web server using actix-web
 - [Rust docs](https://doc.rust-lang.org/reference/attributes/derive.html)
 - [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
-- check rust std modules https://doc.rust-lang.org/std/#modules
+- Check rust std modules https://doc.rust-lang.org/std/#modules
 - [api guidelines](https://rust-lang.github.io/api-guidelines/about.html)
 - [nomicon](https://doc.rust-lang.org/nomicon/vec/vec.html)
-- a website using actix-web
 - [bechmark tests](https://doc.rust-lang.org/unstable-book/library-features/test.html)
 - [std lib](https://doc.rust-lang.org/std/index.html)
 

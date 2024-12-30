@@ -202,10 +202,10 @@ modified: 2023-01-14T19:09
 - [+] Unknown Market Wizards by Jack D. Schwager
 - [+] The New Trading for a Living by Alexander Elder
 - Mastering the Trade by John Carter
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 
 ## In progress
 
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
