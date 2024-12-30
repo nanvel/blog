@@ -3,7 +3,7 @@ labels: Blog
         Crypto
         Trading
 created: 2017-11-16T14:08
-modified: 2024-02-11T17:44
+modified: 2024-12-30T13:42
 place: Phuket, Thailand
 comments: true
 
@@ -60,6 +60,11 @@ Think about options as a way of renting assets for a set period without signific
 
 With options, potential loses and profits are not symmetrical. Loses are limited and profits are unlimited.
 
+Option buyers, as a group, lose money over time, despite occasional lucky trades.
+Option writers, as a group, make steady money despite occasional loses.
+
+There are two main types of option writers. Covered writers buy a stock and write options against it. Naked writers write calls and puts on stocks they don't own.
+
 ## Market mechanics
 
 What truly moves the price is AGGRESSION.
@@ -71,6 +76,8 @@ Even if a trade entry had a resoning logic, after the entry, trader often sucumb
 
 More risky assets are sold and the money is moved into safer assets (market rotation).
 It is not because the safer assets have room to advance, but because they are likely to hold their value better in an economic downturn.
+
+Selling of a stock can happen for many reasons: diversification, buying a huse, sending a kid to college. Buying has a single reason - expectation of the stock price going up.
 
 ### Randomness and efficiency
 
@@ -331,12 +338,22 @@ Combine fibonacci with trendlines and moving averages.
 
 ### Indicators
 
+Groups:
+
+- Trend-following (MACD; profitable when markets are moving, lead to whipesaws in trading ranges)
+- Oscillators (Stochastic; profitable in trading ranges, lead to premature and dangerous signals when begin to trend)
+- Miscellaneous
+
 Some indicators:
 
 - Blue waves (VuManChu Cipher B)
 - Central Pivot Range
 
 VWAP - Large institutional buyers and mutual funds use the VWAP ratio to help move into or out of stocks with as small of a market impact as possible. Therefore, when possible, institutions will try to buy below the VWAP, or sell above it. This way their actions push the price back toward the average, instead of away from it.
+
+#### Open Interest
+
+If open interest rises when prices are in a trading range - it is a bearish sign.
 
 ## Consistent profitability
 
@@ -347,6 +364,10 @@ Ingredients:
 - Consistency (for manual trading)
 - Psychology (for manual trading)
 - Journaling (for manual trading) or logging and monitoring/statistics
+
+> The hallmark of a successful trader is the ability to accumulate equity.
+>
+> Alexander Elder
 
 ### Edge in the market
 
@@ -395,6 +416,13 @@ Parts of risk management:
 - Position sizing
 - Fuses
 
+> Specific risk management tactics are different for trends and trading ranges.
+> When trend trading, it pays to put on smaller positions with wider stops.
+> You'll be less likely to get shaken out by any counter-trend moves, while still controlling risk.
+> You may put on bigger positions in trading ranges but with tighter stops.
+>
+> Alexander Elder
+
 #### Backtest and papertrade new strategies first
 
 Backtest. Test new ideas with paper trading first.
@@ -410,7 +438,7 @@ Transaction costs:
 - Liquidity cost
 - Opportunity cost
 - Market impact
-- Slippage
+- Slippage (an average trader spends three times more on slippage than on commission)
 
 The appropriate benchmark of a long-only strategy is the return of a buy-and-hold position - the information ratio rather than the Sharpe ratio.
 
@@ -532,15 +560,20 @@ Do not waste time on regrets and wishfull thinking.
 >
 > Adam Grimes
 
+> To live a healthy life, you have to live with your eyes open.
+> To be a good trader, you need to trade with your eyes open, recognize real trends and turns, and not waste time or energy on fantasies, regrets, and wishful thinking.
+>
+> Alexander Elder
+
 To grow: objectivity, impartiality, discipline, focus.
 
 This is not a trader's job:
 
-- be right
-- predict the future
-- pick tops and bottoms
-- try to make money
-- listen to media
+- Be right
+- Predict the future
+- Pick tops and bottoms
+- Try to make money
+- Listen to media
 
 ## Automated trading
 
@@ -567,6 +600,12 @@ Statistically significant signals (Medallion):
 - Make sure the anomalies were statistically significant, consistent over time, nonrandom
 - Identified pricing behavior could be explained in a reasonable way
 
+> Markets are always changing and defeating automatic trading systems.
+> Yesterday's rigid rules will work less well today and will probably stop working tomorrow. A competent trader can adjust his methods when he detects trouble.
+> An automatic system is less adaptable and self-destructs.
+>
+> Alexander Elder
+
 ### Machine learning
 
 Machine learning struggles to predict future price moves.
@@ -578,7 +617,7 @@ Recent data can be not enough for testing, older data can be absolete.
 
 ## Strategies
 
-> Profitable trading does not have a secret recipe for success. There are as many different ways to be profitable as there are traders who know how to utilise the good trading systems out there.
+> Profitable trading does not have a secret recipe for success. There are as many different ways to be profitable as there are traders who know how to utilize the good trading systems out there.
 > 
 > The Quiet Trader by Atanas Matov
 
@@ -724,6 +763,8 @@ Kelly formula - a formula that determines the optimal leverage and capital alloc
 DoM - Depth of Market.
 
 Brakout - an asset price moving outside a defined support or resistance level with increased volume.
+
+Mechanical vs Discretionary systems - some people use strictly defined systems that leave very little room for personal judgement - we call them mechanical traders. Others use system that leave plenty of room for personal decisions - discretionary traders. Mechanical delivers more steady results, the most successful traders are discretionary. 
 
 ## Links
 
@@ -903,6 +944,10 @@ YouTube:
 - [Lagging vs Leading Indicators & How To Use Them](https://www.youtube.com/watch?v=hBdFuQKAMXE)
 - [TRUTH about Trading Bot Algorithm ft. Quant Trading CEO](https://www.youtube.com/watch?v=lx2zPCdH_1Y)
 
+Podcast:
+
+- [Chat with Traders](https://chatwithtraders.com/)
+
 Articles:
 
 - [Cryptocurrency Trading Bible Three: Winning in Sideways and Bear Markets](https://hackernoon.com/cryptocurrency-trading-bible-four-winning-in-sideways-and-bear-markets-f3f365ffca76)
@@ -935,3 +980,4 @@ Training:
 - [Quantitative Trading](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business-ebook/dp/B097QGPVND) by Ernest P. Chan
 - [Algorithmic Trading](https://www.amazon.com/Algorithmic-Trading-Winning-Strategies-Rationale/dp/1118460146) by Ernie Chan
 - [How to Make Money With Breakout Trading](https://www.amazon.com/How-Make-Money-Breakout-Trading-ebook/dp/B08F1T9H9T) by Indrazith Shantharaj
+- [The New Trading for a Living](https://www.amazon.com/New-Trading-Living-Psychology-Discipline/dp/1118443926) by Alexander Elder

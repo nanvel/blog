@@ -92,4 +92,7 @@ modified: 2023-12-22T11:41
 >
 > Brian Foote and Joseph Yoder
 ---
-
+> Trading is a fascinating game: chess, poker, and a video game rolled into one.
+>
+> Alexander Elder
+---
