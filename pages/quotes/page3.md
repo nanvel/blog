@@ -88,3 +88,8 @@ modified: 2023-12-22T11:41
 >
 > Warren Buffett
 ---
+> If you think good architecture is expensive, try bad architecture.
+>
+> Brian Foote and Joseph Yoder
+---
+

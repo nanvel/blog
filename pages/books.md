@@ -205,9 +205,9 @@ modified: 2023-01-14T19:09
 
 ## In progress
 
+- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
 - Advanced Algorithmic Trading by Michael Halls-Moore
 - Wool by Hugh Howey

@@ -1,7 +1,7 @@
 labels: Draft
         Rust
 created: 2022-12-09T23:37
-modified: 2023-12-29T18:19
+modified: 2024-12-25T16:17
 place: Bangkok, Thailand
 comments: false
 
@@ -17,8 +17,15 @@ loc: 66
 - Review Programming Rust
 - (done) https://github.com/rust-lang/rustlings
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/) (in progress)
+- cleanup notes
+- [Rust docs](https://doc.rust-lang.org/reference/attributes/derive.html)
 - [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
 - check rust std modules https://doc.rust-lang.org/std/#modules
+- [api guidelines](https://rust-lang.github.io/api-guidelines/about.html)
+- [nomicon](https://doc.rust-lang.org/nomicon/vec/vec.html)
+- a website using actix-web
+- [bechmark tests](https://doc.rust-lang.org/unstable-book/library-features/test.html)
+- [std lib](https://doc.rust-lang.org/std/index.html)
 
 ## Cargo
 
@@ -65,6 +72,7 @@ rustup docs --book
 
 ```rust
 println!("Output ...")
+eprintln!("Error ...")
 ```
 
 ### Input
@@ -92,6 +100,45 @@ let apples = 5;
 
 ```text
 i8, i32 (default), u32, i64, u64
+```
+
+Handling overflow:
+- `wrapping_*`
+- `checked_*` - Return the None value if there is overflow
+- `overflowing_*` - return the value and a boolean indicating whether there was overflow
+- `saturating_*`
+
+#### String
+
+Both String and str slices are utf-8 encoded.
+
+String literals are string slices stored in the program binary.
+
+```rust
+let s = String::new();
+let s = String::from("initial contents");
+let s = "initial contents".to_string();
+```
+
+Concat:
+
+```rust
+let s1 = String::from("Hello, ");
+let s2 = String::from("world!");
+let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
+
+let s1 = String::from("tic");
+let s2 = String::from("tac");
+let s3 = String::from("toe");
+
+let s = format!("{s1}-{s2}-{s3}");
+```
+
+Iterate:
+
+```rust
+for c in "Word".chars() {}
+for b in "Word".bytes() {}
 ```
 
 #### Tuple
@@ -138,6 +185,12 @@ let b = Box::new(t)  // Box<(i32, &str)>
 // when b goes out of scope - memory freed on heep
 ```
 
+#### Smart pointers
+
+Smart pointers, on the other hand, are data structures that act like a pointer but also have additional metadata and capabilities.
+
+In many cases, smart pointers own the data they point to.
+
 #### Struct
 
 ```rust
@@ -158,6 +211,8 @@ let user1 = User {
 
 !!! note "Private and public fields"
     A struct's fields, even private fields, are accessible throughout the module where the struct is declared, and its submodules. Outside the module, only public fields are accessible.
+
+    Enum fields are public if enum has pub.
 
 Shorthand:
 ```rust
@@ -244,7 +299,96 @@ let absent_number: Option<i32> = None;
 `Vec<T>` is a resizable array of elements of type T, allocated on the heap.
 
 ```rust
+// let v: Vec<i32> = Vec::new();
+// v.push(2)
 let mut primes = vec![2, 3, 5];
+
+primes.push(6)
+let does_not_exist = &primes[100];
+let does_not_exist = primes.get(100);
+
+for i in &primes {
+    println!("{i}");
+}
+```
+
+Vectors can store enumes.
+
+#### Hash Map
+
+```rust
+use std::collections::HashMap;
+
+let mut scores = HashMap::new();
+
+scores.insert(String::from("Blue"), 10);
+scores.insert(String::from("Yellow"), 50);
+
+let team_name = String::from("Blue");
+let score = scores.get(&team_name).copied().unwrap_or(0);
+
+for (key, value) in &scores {
+    println!("{key}: {value}");
+}
+```
+
+`scores.insert` - overrides.
+`scores.entry` - inserts if not present.
+
+Update values:
+```rust
+for word in text.split_whitespace() {
+    let count = map.entry(word).or_insert(0);
+    *count += 1;
+}
+```
+
+#### Custom types
+
+```rust
+type Kilometers = i32;
+type Thunk = Box<dyn Fn() + Send + 'static>;
+```
+
+#### Never type
+
+`!`
+
+Never returns:
+```rust
+fn bar() -> ! {
+    // --snip--
+}
+```
+
+#### Function type
+
+- `Fn` - closure trait
+- `fn` - function type
+
+```rust
+fn add_one(x: i32) -> i32 {
+    x + 1
+}
+
+fn do_twice(f: fn(i32) -> i32, arg: i32) -> i32 {
+    f(arg) + f(arg)
+}
+
+fn main() {
+    let answer = do_twice(add_one, 5);
+
+    println!("The answer is: {answer}");
+}
+```
+
+Unlike closures, `fn` is a type rather than a trait.
+
+Closure can be returned:
+```rust
+fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
+    Box::new(|x| x + 1)
+}
 ```
 
 ### Expressions
@@ -287,11 +431,53 @@ def five() -> i32 {
 
 Can be called as if it were a function.
 
+Anonymous functions that capture their environment.
+
+Can create the closure in one place and then call the closure elsewhere to evaluate it in a different context.
+
+```rust
+fn  add_one_v1   (x: u32) -> u32 { x + 1 }
+let add_one_v2 = |x: u32| -> u32 { x + 1 };
+let add_one_v3 = |x|             { x + 1 };
+let add_one_v4 = |x|               x + 1  ;
+```
+
+Closures can capture values from their environment in three ways, which directly map to the three ways a function can take a parameter: borrowing immutably, borrowing mutably, and taking ownership. The closure will decide which of these to use based on what the body of the function does with the captured values.
+
+Traits:
+
+- `FnOnce`
+- `FnMut`
+- `Fn`
+
 ### Iterators
 
 `.iter()` - [doc](https://doc.rust-lang.org/std/iter/index.html)
 
 `.collect()` - iterator back to collection.
+
+```rust
+let v1 = vec![1, 2, 3];
+
+let mut v1_iter = v1.iter();
+
+assert_eq!(v1_iter.next(), Some(&1));
+assert_eq!(v1_iter.next(), Some(&2));
+assert_eq!(v1_iter.next(), Some(&3));
+assert_eq!(v1_iter.next(), None);
+```
+
+- `iter` method produces an iterator over immutable references
+- `into_iter` iterator that takes ownership and returns owned values
+- `iter_mut` iterate over mutable references
+
+```rust
+let v1: Vec<i32> = vec![1, 2, 3];
+let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
+assert_eq!(v2, vec![2, 3, 4]);
+
+shoes.into_iter().filter(|s| s.size == shoe_size).collect()
+```
 
 ### Library
 
@@ -305,12 +491,23 @@ Turn a program into a library:
 ### Modules
 
 A package can have only one lib or/and one or more binaries.
+A package can have multiple binary crates by placing files in the src/bin directory.
 
 ```text
 src/main.rs  // binary with the package name
 src/lib.rs  // lib with the package name
 src/bin/*.rs  // other binaries
 ```
+
+#### Declare a module
+
+`mod garden`:
+
+- Inline, within curly brackets that replace the semicolon following mod garden
+- In the file src/garden.rs
+- In the file src/garden/mod.rs (`mod.rs` is deprecated, old style)
+
+#### Use
 
 Import:
 ```rust
@@ -339,18 +536,213 @@ Constant - similar to `c++ #define` (compiled into code in every place it is use
 
 Static - a variable that is being set before program start (use for larger amounts of data).
 
+A subtle difference between constants and immutable static variables is that values in a static variable have a fixed address in memory. Using the value will always access the same data. Constants, on the other hand, are allowed to duplicate their data whenever they’re used. Another difference is that static variables can be mutable. Accessing and modifying mutable static variables is unsafe.
+
+### Errors
+
+Errors:
+
+- recoverable
+- unrecoverable
+
+Panic in examples, prototype code, and tests, or when have more information than the compiler.
+
+Option vs Result:
+
+```rust
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+
+enum Option<T> {
+    Some(T),
+    None,
+}
+```
+
+Do not unwind stack on panic:
+
+```toml
+[profile.release]
+panic = 'abort'
+```
+
+Error propagation with `?`:
+```rust
+use std::fs::File;
+use std::io::{self, Read};
+
+fn read_username_from_file() -> Result<String, io::Error> {
+    let mut username = String::new();
+
+    File::open("hello.txt")?.read_to_string(&mut username)?;
+
+    Ok(username)
+}
+```
+
+`?` can also be used on Option.
+
 ### Traits
 
+Traits - defining shared behavior.
+
 A trait as a collection of methods that types can implement.
+
+Traits are similar to a feature often called interfaces in other languages, although with some differences.
 
 For any type T that implements the FromStr trait.
 ```rust
 <T: FromStr>
 ```
 
+```rust
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
+
+impl Summary for NewsArticle {
+    fn summarize(&self) -> String {
+        format!("{}, by {} ({})", self.headline, self.author, self.location)
+    }
+}
+```
+
+With associated types, we don’t need to annotate types because we can’t implement a trait on a type multiple times:
+```rust
+impl Iterator for Counter {
+    type Item = u32;
+
+    fn next(&mut self) -> Option<Self::Item> {}
+}
+```
+
+### Lifetimes
+
+lifetimes: a variety of generics that give the compiler information about how references relate to each other.
+Lifetimes allow us to give the compiler enough information about borrowed values so that it can ensure references will be valid in more situations than it could without our help.
+
+The main aim of lifetimes is to prevent dangling references, which cause a program to reference data other than the data it’s intended to reference.
+
+The lifetime of the reference returned by the longest function is the same as the smaller of the lifetimes of the values referred to by the function arguments:
+```rust
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+```
+
+The function signature now tells Rust that for some lifetime `'a`, the function takes two parameters, both of which are string slices that live at least as long as lifetime `'a`.
+
+The function signature also tells Rust that the string slice returned from the function will live at least as long as lifetime `'a`.
+
+An instance of ImportantExcerpt can’t outlive the reference it holds in its part field:
+```rust
+struct ImportantExcerpt<'a> {
+    part: &'a str,
+}
+```
+
+All string literals have the 'static lifetime, which we can annotate as follows:
+```rust
+let s: &'static str = "I have a static lifetime.";
+```
+
+Lifetime and generic:
+```rust
+use std::fmt::Display;
+
+fn longest_with_an_announcement<'a, T>(
+    x: &'a str,
+    y: &'a str,
+    ann: T,
+) -> &'a str
+where
+    T: Display,
+{
+    println!("Announcement! {ann}");
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+```
+
+### Generics
+
+```rust
+struct Point<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
+impl Point<f32> {
+    fn distance_from_origin(&self) -> f32 {
+        (self.x.powi(2) + self.y.powi(2)).sqrt()
+    }
+}
+```
+
+The type `Point<f32>` will have a distance_from_origin method; other instances of `Point<T>` where T is not of type f32 will not have this method defined.
+
+We can use trait bounds to specify that a generic type can be any type that has certain behavior.
+
+```rust
+pub fn notify(item: &impl Summary) {
+    println!("Breaking news! {}", item.summarize());
+}
+
+pub fn notify<T: Summary>(item: &T) {
+    println!("Breaking news! {}", item.summarize());
+}
+
+pub fn notify(item1: &impl Summary, item2: &impl Summary) {}
+
+pub fn notify<T: Summary>(item1: &T, item2: &T) {}
+
+pub fn notify(item: &(impl Summary + Display)) {}
+pub fn notify<T: Summary + Display>(item: &T) {}
+
+fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) -> i32 {}
+fn some_function<T, U>(t: &T, u: &U) -> i32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{}
+
+fn returns_summarizable() -> impl Summary {} // doesn't work for multiple types returned
+```
+
+#### Turbofish
+
+`::<>`. This helps the inference algorithm understand specifically which collection you're trying to collect into.
+
+```rust
+let a = [1, 2, 3];
+
+let doubled = a.iter().map(|x| x * 2).collect::<Vec<i32>>();
+```
+
+### Attributes
+
+Attributes are metadata about pieces of Rust code.
+
 ### Macros
 
-The `!` character marks a macro invocation.
+Fundamentally, macros are a way of writing code that writes other code, which is known as metaprogramming.
+
+The `!` character marks a macro invocation (declarative macro).
 
 Examples:
 ```rust
@@ -358,6 +750,12 @@ assert!
 debug_assert!
 format!("Example {}", arg)
 ```
+
+Types:
+
+- Custom `#[derive]` macros that specify code added with the derive attribute used on structs and enums
+- Attribute-like macros that define custom attributes usable on any item
+- Function-like macros that look like function calls but operate on the tokens specified as their argument
 
 ### Memory management
 
@@ -371,6 +769,65 @@ Rust enforces a "single writer or multiple readers" rule: either can read and wr
 - heap objects are moved (pointer of a moved objects is being invalidated)
 - stack is faster and used for known fixed-size memory allocation
 - heap is slower and used when the memory allocation size is unknown
+
+## Testing
+
+Change a function into a test function, add `#[test]` on the line before `fn`.
+
+```rust
+pub fn add(left: usize, right: usize) -> usize {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
+}
+```
+
+```shell
+cargo test
+```
+
+Macros:
+
+- `assert!(bool)`
+- `assert_eq!()`
+- `assert_ne!()`
+
+
+```rust
+#[test]
+fn it_works() -> Result<(), String> {
+    let result = add(2, 2);
+
+    if result == 4 {
+        Ok(())
+    } else {
+        Err(String::from("two plus two does not equal four"))
+    }
+}
+```
+
+Running a single test:
+```shell
+cargo test example_test
+```
+
+We can run all the tests in a module by filtering on the module’s name.
+
+Tests:
+
+- unit (same files as the code with `#[cfg(test)]`)
+- integration (external to the library: `tests/integration_test.rs`)
+
+Rust’s privacy rules do allow you to test private functions.
 
 ## [rustup](https://rustup.rs/)
 
@@ -417,6 +874,7 @@ cargo workspaces init
 [Let's Get Rusty](https://www.youtube.com/@letsgetrusty) on YouTube
 [Rust Language Cheat Sheet](https://cheats.rs/)
 [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
+[blessed.rs - recommended crates](https://blessed.rs/crates)
 
 ### To read
 
