@@ -7,7 +7,7 @@ comments: false
 
 # Rust notes
 
-loc: 66
+page: 123
 
 [TOC]
 
@@ -15,10 +15,11 @@ loc: 66
 
 - (done) Programming Rust (2nd edition) by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall
 - (done) https://github.com/rust-lang/rustlings
-- (done)[The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
-- Review Programming Rust
-- Cleanup notes
+- (done) [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- (done) Review Programming Rust
 - A web server using actix-web
+- Cleanup notes
+- [Tokio docs](https://docs.rs/tokio/latest/tokio/)
 - [Rust docs](https://doc.rust-lang.org/reference/attributes/derive.html)
 - [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
 - Check rust std modules https://doc.rust-lang.org/std/#modules
@@ -118,6 +119,7 @@ String literals are string slices stored in the program binary.
 let s = String::new();
 let s = String::from("initial contents");
 let s = "initial contents".to_string();
+let s = r"c:\..."  // raw string
 ```
 
 Concat:
@@ -140,6 +142,13 @@ Iterate:
 for c in "Word".chars() {}
 for b in "Word".bytes() {}
 ```
+
+String slice (stir):
+```
+&str
+```
+
+String literals are slices.
 
 #### Tuple
 
@@ -190,6 +199,13 @@ let b = Box::new(t)  // Box<(i32, &str)>
 Smart pointers, on the other hand, are data structures that act like a pointer but also have additional metadata and capabilities.
 
 In many cases, smart pointers own the data they point to.
+
+- Arc - atomic reference count
+- Rc - non thread-safe
+
+A value owned by Rc is immutable.
+
+References should never outlive their referents.
 
 #### Struct
 
@@ -294,6 +310,20 @@ let some_number = Some('a') // Option<char>
 let absent_number: Option<i32> = None;
 ```
 
+#### Collections
+
+Python -> Rust:
+```text
+list -> Vec<T>
+collection.deque -> VecDeque<T>
+- -> LinkedList<T>
+heapq -> BinaryHeap<T> where T: Ord
+dict -> HashMap<K, V> where K: Eq + Hash
+- -> BTreeMap<K, V> where K: Ord
+set -> HashSet<T> where T: Eq, Hash
+- -> BTreeSet<T> where T: Ord
+```
+
 #### Vectors
 
 `Vec<T>` is a resizable array of elements of type T, allocated on the heap.
@@ -313,6 +343,11 @@ for i in &primes {
 ```
 
 Vectors can store enumes.
+
+Buffer large enough to hold the items:
+```rust
+Vec::with_capacity(1000)
+```
 
 #### Hash Map
 
@@ -354,7 +389,7 @@ type Thunk = Box<dyn Fn() + Send + 'static>;
 
 `!`
 
-Never returns:
+Never returns, divergent function:
 ```rust
 fn bar() -> ! {
     // --snip--
@@ -416,6 +451,10 @@ match (T:from_str(&s[..index]), T::from_str(&s[index + 1..])) {
     _ => None,
 }
 ```
+
+### Loops
+
+Loops are expressions, they return `()` by default, by can return something useful using break.
 
 ### Functions
 
@@ -523,6 +562,16 @@ pub use self::image::Sampler;
 
 Naming a module a `prelude` is just a convention that tells users it's ment to be imported using `*`.
 
+#### Pub
+
+`pub` - make it public.
+
+Without pub - can be used in the same module or in children modules.
+
+`pub(crate) fn ...` - available anywhere inside crate.
+
+`pub(super)` - visible to the parent module.
+
 #### Statics and constants
 
 Modules can also define statics and constants.
@@ -583,6 +632,8 @@ fn read_username_from_file() -> Result<String, io::Error> {
 ```
 
 `?` can also be used on Option.
+
+`panic!` is per thread.
 
 ### Traits
 
