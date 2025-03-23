@@ -859,6 +859,7 @@ Open source:
 - [Quant-trading](https://github.com/je-suis-tm/quant-trading)
 - [bta-lib](https://github.com/mementum/bta-lib) - a pandas based Technical Analysis Library
 - [Optuna](https://github.com/optuna/optuna) - a hyperparameter optimization framework
+- [Charting Library](https://github.com/klinecharts/KLineChart)
 
 Backtesting:
 
@@ -917,6 +918,7 @@ Analytics:
 - [Dune analytics](https://dune.xyz/)
 - [DEX screener](https://dexscreener.com/)
 - [DEX tools](https://developer.dextools.io/)
+- [Importend turning points](https://www.barchart.com/crypto/quotes/%5EBTCUSD/cheat-sheet)
 
 Signals:
 
@@ -943,6 +945,7 @@ YouTube:
 - [Build Algorithmic Trading Strategies by Combining Oscillators and Trend Following Indicators](https://www.youtube.com/watch?v=cfuHNpPAXUo)
 - [Lagging vs Leading Indicators & How To Use Them](https://www.youtube.com/watch?v=hBdFuQKAMXE)
 - [TRUTH about Trading Bot Algorithm ft. Quant Trading CEO](https://www.youtube.com/watch?v=lx2zPCdH_1Y)
+- [neurotrader - videos about trading with a data-driven approach](https://www.youtube.com/@neurotrader888)
 
 Podcast:
 

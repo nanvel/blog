@@ -7,8 +7,6 @@ comments: false
 
 # Rust notes
 
-page: 123
-
 [TOC]
 
 ## Study
@@ -17,7 +15,7 @@ page: 123
 - (done) https://github.com/rust-lang/rustlings
 - (done) [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - (done) Review Programming Rust
-- A web server using actix-web
+- (done) actix-web docs
 - Cleanup notes
 - [Tokio docs](https://docs.rs/tokio/latest/tokio/)
 - [Rust docs](https://doc.rust-lang.org/reference/attributes/derive.html)

@@ -1,7 +1,7 @@
 labels: Projects
         Draft
 created: 2024-12-30T10:53
-modified: 2024-12-30T10:53
+modified: 2025-03-23T10:41
 place: Bangkok, Thailand
 
 # Price-Action trader
@@ -29,3 +29,9 @@ Trades:
 
 Strategy stats:
 ![strategy stats](strategy_stats.png)
+
+[Price action API](https://paapi.io):
+![PA API](paapi.png)
+
+Changelog:
+![PA API Changelog](paapi_changelog.png)

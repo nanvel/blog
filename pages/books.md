@@ -204,8 +204,13 @@ modified: 2023-01-14T19:09
 - Mastering the Trade by John Carter
 - [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 
+## 2025
+
+- [+] A Man for All Markets by Edward Thorp
+
 ## In progress
 
+- Build a Large Language Model (From Scratch) by Sebastian Raschka
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
 - Machine Trading: Deploying Computer Algorithms to Conquer the Markets by Ernie Chan
