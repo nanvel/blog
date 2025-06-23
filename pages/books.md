@@ -210,6 +210,7 @@ modified: 2023-01-14T19:09
 
 ## In progress
 
+- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurelien Geron
 - Build a Large Language Model (From Scratch) by Sebastian Raschka
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley
