@@ -207,10 +207,12 @@ modified: 2023-01-14T19:09
 ## 2025
 
 - [+] A Man for All Markets by Edward Thorp
+- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurelien Geron
 
 ## In progress
 
-- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurelien Geron
+- Agentic Artificial Intelligence by Pascal Bornet
+- AI Engineering by Chip Huyen
 - Build a Large Language Model (From Scratch) by Sebastian Raschka
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
 - The Master Swing Trader by Alan Farley

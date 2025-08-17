@@ -1,7 +1,7 @@
 labels: Blog
 		SoftwareDevelopment
 created: 2015-10-24T14:41
-modified: 2022-09-22T11:15
+modified: 2025-08-17T16:04
 place: Kyiv, Ukraine
 comments: true
 
@@ -75,6 +75,10 @@ except KeyError:
 ## Fail fast
 
 A system design approach recommending that errors should be reported as early as possible.
+
+## Garbage in, garbage out (GIGO)
+
+Quality of output is determined by the quality of input.
 
 ## Imperative vs Declarative style of programming
 
