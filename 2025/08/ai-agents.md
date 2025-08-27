@@ -11,6 +11,7 @@ An AI agent is a software system that can perceive its environment,
 make decisions, and take actions to achieve specific goals with some degree of autonomy.
 
 Key characteristics of AI agents include:
+
 - Autonomy
 - Goal-oriented behavior
 - Environmental awareness
@@ -18,6 +19,7 @@ Key characteristics of AI agents include:
 - Learning and adaptation
 
 Human vs agent:
+
 - true cretivity
 - common sense
 - intuition
@@ -28,18 +30,21 @@ Human vs agent:
 ## Design Patterns
 
 AI Agent components:
+
 - LLM
 - Prompt
 - Memory
 - Tools
 
 AI Agent Design Patterns:
+
 - Reflection (self-evaluation)
 - Tool Use (tool integration)
 - Planning
 - Multi-Agent (agent collaboration)
 
 Benefits of multi-agent:
+
 - simpler context management
 - shorter prompts
 - freedom to choose a provider for each agent individually
