@@ -20,12 +20,12 @@ Key characteristics of AI agents include:
 
 Human vs agent:
 
-- true cretivity
-- common sense
-- intuition
-- emotional intelligence
-- leadership
-- ethical oversight
+- True cretivity
+- Common sense
+- Intuition
+- Emotional intelligence
+- Leadership
+- Ethical oversight
 
 ## Design Patterns
 
@@ -45,12 +45,12 @@ AI Agent Design Patterns:
 
 Benefits of multi-agent:
 
-- simpler context management
-- shorter prompts
-- freedom to choose a provider for each agent individually
-- fewer tools -> less confusion
-- parallel execution -> less latency (chained -> higher latency)
-- easier to test
+- Simpler context management
+- Shorter prompts
+- Freedom to choose a provider for each agent individually
+- Fewer tools -> less confusion
+- Parallel execution -> less latency (chained -> higher latency)
+- Easier to test
 
 ## Vocabulary
 
