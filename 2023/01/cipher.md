@@ -18,7 +18,7 @@ It shapes domain models to be more suitable for backtesting. Instead of creating
 
 ## Backtest.sh
 
-Generate cipher backtests for text prompts: [https://github.com/nanvel/backtestsh](https://github.com/nanvel/backtestsh)
+Generate cipher backtests from text prompts: [https://github.com/nanvel/backtestsh](https://github.com/nanvel/backtestsh)
 
 ![Demo](https://github.com/nanvel/backtestsh/releases/download/0.1.0/backtestsh.gif)
 
