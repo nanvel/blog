@@ -7,7 +7,7 @@ place: Bangkok, Thailand
 
 # Scalper-rs: a desktop app for scalping (trading) written in Rust
 
-Repository: https://github.com/nanvel/scalper-rs
+Repository: [https://github.com/nanvel/scalper-rs](https://github.com/nanvel/scalper-rs)
 
 ![scalper-rs ui](scalper-rs.png)
 
