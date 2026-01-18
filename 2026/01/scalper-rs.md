@@ -5,7 +5,7 @@ created: 2026-01-18T14:26
 modified: 2026-01-18T14:26
 place: Bangkok, Thailand
 
-# Cipher-rs: a desktop app for scalping (trading) written in Rust
+# Scalper-rs: a desktop app for scalping (trading) written in Rust
 
 Repository: https://github.com/nanvel/scalper-rs
 
