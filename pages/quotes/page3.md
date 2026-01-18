@@ -96,3 +96,7 @@ modified: 2023-12-22T11:41
 >
 > Alexander Elder
 ---
+> The opposite of random is random!
+>
+> Unknown
+---

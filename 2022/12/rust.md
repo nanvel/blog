@@ -16,15 +16,16 @@ comments: false
 - (done) [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
 - (done) Review Programming Rust
 - (done) actix-web docs
+- (done) [Tokio docs](https://docs.rs/tokio/latest/tokio/)
 - Cleanup notes
-- [Tokio docs](https://docs.rs/tokio/latest/tokio/)
 - [Rust docs](https://doc.rust-lang.org/reference/attributes/derive.html)
-- [Geme of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
+- [Game of life tutorial](https://rustwasm.github.io/wasm-bindgen/introduction.html)
 - Check rust std modules https://doc.rust-lang.org/std/#modules
 - [api guidelines](https://rust-lang.github.io/api-guidelines/about.html)
 - [nomicon](https://doc.rust-lang.org/nomicon/vec/vec.html)
 - [bechmark tests](https://doc.rust-lang.org/unstable-book/library-features/test.html)
 - [std lib](https://doc.rust-lang.org/std/index.html)
+- [serde](https://serde.rs/)
 
 ## Cargo
 
@@ -895,6 +896,8 @@ Rust’s privacy rules do allow you to test private functions.
 
 [Leptos](https://www.youtube.com/watch?v=eipr8zYP2T0) - build both frontend and backend
 
+minifb + raqote for graphical desktop app.
+
 ## App with multiple targets
 
 Structure:
@@ -915,6 +918,10 @@ cargo new backend
 cargo new frontend
 cargo workspaces init
 ```
+
+## Vocabulary
+
+System programming: resource-constrained programming.
 
 ## Links
 
