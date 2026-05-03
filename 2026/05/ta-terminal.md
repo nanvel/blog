@@ -7,6 +7,7 @@ place: Bangkok, Thailand
 # TA Trading Terminal
 
 Futures trading terminal with:
+
 - Simple trade creating from chart
 - TA scanners
 - Daily divergences digest
