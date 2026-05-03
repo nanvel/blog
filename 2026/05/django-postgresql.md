@@ -14,3 +14,5 @@ place: Bangkok, Thailand
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="django_postgres_performance.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+![ThaiPy 123](thaipy_123.jpg)
