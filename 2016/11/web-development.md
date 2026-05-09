@@ -1,13 +1,10 @@
 ---
-tags: [draft]
----
-
-		SoftwareDevelopment
-		WebDevelopment
+tags: [draft, software-development, web-development]
 created: 2016-11-29T11:56
 modified: 2017-05-21T13:07
 place: Phuket, Thailand
 comments: true
+---
 
 # Web development
 

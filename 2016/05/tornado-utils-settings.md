@@ -1,11 +1,9 @@
 ---
-tags: [blog]
----
-
-		Tornado
+tags: [blog, tornado]
 created: 2016-05-01T10:24
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Tornado utils. Settings
 
@@ -279,4 +277,3 @@ class TornadoSettingsTestCase(TestCase):
         if self.ENV_SETTING_NAME in os.environ:
             del os.environ[self.ENV_SETTING_NAME]
         sys.argv = list(self._sys_argv)
-
