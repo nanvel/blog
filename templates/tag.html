@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
-{% block title %}Index{% endblock %}
+{% block title %}{{ current_tag | replace('-', ' ') }} - tags{% endblock %}
 
 {% block sidebar %}
 <div class="sidebar-block">
   <span class="block-title">Tags</span>
   <ul class="tags">
     {% for tag in all_tags %}
-      <li><a href="/tags/{{ tag }}/">{{ tag | replace('-', ' ') }}</a></li>
+      {% if tag != current_tag %}
+        <li><a href="/tags/{{ tag }}/">{{ tag | replace('-', ' ') }}</a></li>
+      {% else %}
+        <li class="selected"><a href="#">{{ tag | replace('-', ' ') }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

@@ -1,66 +1,49 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ c.page.title }}{% end %}
+{% block title %}{{ page.title }}{% endblock %}
 
 {% block meta %}
-<meta property="og:title" content="{{ c.page.title }}">
-{% if c.page.meta.description %}
-<meta name="description" content="{{ c.page.meta.description }}"/>
-<meta property="og:description" content="{{ c.page.meta.description }}"/>
-{% end %}
-{% if c.page.meta.keywords %}<meta name="keywords" content="{{ c.page.meta.keywords }}"/>{% end %}
-{% if c.page.meta.image %}
-<meta property="og:image" content="{{ c.page.meta.image }}"/>
-{% end %}
-{% end %}
+<meta property="og:title" content="{{ page.title }}">
+{% if page.description %}
+<meta name="description" content="{{ page.description }}"/>
+<meta property="og:description" content="{{ page.description }}"/>
+{% endif %}
+{% if page.image %}
+<meta property="og:image" content="{{ page.image }}"/>
+{% endif %}
+{% endblock %}
 
 {% block sidebar %}
-	<div class="sidebar-block">
-		<span class="block-title">Labels</span>
-		<ul class="tags">
-  		{% for label in c.page.labels %}
-      	<li><a href="{{ reverse_url('label', label.slug) }}">{{ label.title }}</a></li>
-  		{% end %}
-  	</ul>
-  </div>
-  <div class="sidebar-block">
-  	<span class="block-title">Created</span>
-  	<time datetime="{{ c.page.created.strftime('%Y-%m-%d') }}" pubdate>{{ c.page.created.strftime('%B %d, %Y') }}</time>
-  </div>
-  {% if c.page.created != c.page.modified %}
-  	<div class="sidebar-block">
-  		<span class="block-title">Modified</span>
-  		<time datetime="{{ c.page.modified.strftime('%Y-%m-%d') }}">{{ c.page.modified.strftime('%B %d, %Y') }}</time>
-  	</div>
-  {% end %}
-  <div class="sidebar-block">
-  	<span class="block-title">Edit</span>
-  	<a href="https://github.com/nanvel/blog/blob/master/{{ c.page.uri }}.md" target="_blank">&#x270D;&nbsp; edit on GitHub</a>
-  </div>
-{% end %}
+<div class="sidebar-block">
+  <span class="block-title">Tags</span>
+  <ul class="tags">
+    {% for tag in page.tags %}
+      <li><a href="/tags/{{ tag }}/">{{ tag | replace('-', ' ') }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="sidebar-block">
+  <span class="block-title">Created</span>
+  <time datetime="{{ page.created.strftime('%Y-%m-%d') }}" pubdate>{{ page.created.strftime('%B %d, %Y') }}</time>
+</div>
+{% if page.modified and page.modified != page.created %}
+<div class="sidebar-block">
+  <span class="block-title">Modified</span>
+  <time datetime="{{ page.modified.strftime('%Y-%m-%d') }}">{{ page.modified.strftime('%B %d, %Y') }}</time>
+</div>
+{% endif %}
+<div class="sidebar-block">
+  <span class="block-title">Edit</span>
+  <a href="https://github.com/nanvel/blog/blob/master/{{ page.uri }}.md" target="_blank">&#x270D;&nbsp; edit on GitHub</a>
+</div>
+{% endblock %}
+
 {% block content %}
   <article>
-    {% raw c.page.html %}
-    <time datetime="{{ c.page.created.strftime('%Y-%m-%d') }}" pubdate></time>
+    {{ page.html | safe }}
+    <time datetime="{{ page.created.strftime('%Y-%m-%d') }}" pubdate></time>
     <div class="license">
-    	Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="creative-commons">CC BY-SA 3.0</a>
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="creative-commons">CC BY-SA 3.0</a>
     </div>
   </article>
-
-  {% if c.page.meta.comments %}
-    <div id="disqus_thread" style="margin-top: 20px;"></div>
-    <script>
-      var disqus_config = function () {
-        this.page.url = 'https://nanvel.name/{{ c.page.uri }}';
-        this.page.identifier = '{{ c.page.uri }}';
-      };
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = '//nanvelname.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  {% end %}
-{% end %}
+{% endblock %}

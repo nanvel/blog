@@ -3,3 +3,5 @@
 .venv
 *.retry
 .obsidian
+_site/
+uv.lock
