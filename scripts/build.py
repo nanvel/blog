@@ -15,11 +15,9 @@ import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-BLOG_ROOT = Path(__file__).parent
+BLOG_ROOT = Path(__file__).parent.parent
 OUT = BLOG_ROOT / "_site"
 TEMPLATES_DIR = BLOG_ROOT / "templates"
-DOMAIN = "blog.nanvel.com"
-
 SKIP_DIRS = {".git", "templates", "_site", ".github", ".idea", "__pycache__"}
 SKIP_SUFFIXES = {".py", ".toml", ".txt", ".cfg", ".ini"}
 # Asset extensions copied alongside pages
@@ -251,9 +249,6 @@ def build() -> None:
         '<body><h1>404 Not Found</h1><p><a href="/">Home</a></p></body></html>',
         encoding="utf-8",
     )
-
-    # --- CNAME for custom domain -----------------------------------------
-    (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
 
     print(f"Built {len(all_pages)} pages · {len(all_tags)} tags → _site/")
 

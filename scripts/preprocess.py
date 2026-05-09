@@ -13,7 +13,7 @@ import re
 import sys
 from pathlib import Path
 
-BLOG_ROOT = Path(__file__).parent
+BLOG_ROOT = Path(__file__).parent.parent
 NANVEL_RE = re.compile(r"^https?://nanvel\.name")
 
 # Keys preserved in output order; everything else appended after

@@ -25,7 +25,7 @@ jobs:
       - uses: astral-sh/setup-uv@v5
 
       - name: Build site
-        run: uv run python build.py
+        run: uv run python scripts/build.py
 
       - uses: actions/upload-pages-artifact@v3
         with:
