@@ -104,14 +104,26 @@
 
 .article-content blockquote cite::before { content: '\2014\00A0'; }
 
-/* ── Images ─────────────────────────────────────────────────── */
-.article-content img {
+/* ── Images & embeds ────────────────────────────────────────── */
+.article-content img,
+.article-content object,
+.article-content embed,
+.article-content iframe {
   max-width: 100%;
+  display: block;
+  margin: 1.5em 0;
+}
+
+.article-content img {
   height: auto;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  display: block;
-  margin: 1.5em 0;
+}
+
+.article-content object,
+.article-content iframe {
+  width: 100%;
+  border: none;
 }
 
 /* ── Tables ─────────────────────────────────────────────────── */
