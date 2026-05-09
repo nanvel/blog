@@ -1,9 +1,9 @@
-labels: DynamoDB
-        Testing
-        Databases
+---
+tags: [dynamo-db, testing, databases]
 created: 2015-03-08T13:30
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 1.3: DynamoDB local and testing
 
@@ -19,7 +19,7 @@ I use Makefile to run DynamoDB locally:
 ```makefile
 dynamodb:
 	java -Djava.library.path=./bin/DynamoDBLocal_lib -jar ./bin/DynamoDBLocal.jar -port 8010 -inMemory # -dbPath ./bin/db.bin
-```
+
 
 And usually I run it with ```inMemory``` key, that allows to have a clean database after restart.
 
@@ -31,12 +31,12 @@ I place binaries in ./bin folder of the project:
         - DynamoDBLocal.jar
         - DynamoDBLocal_lib
     - Makefile
-```
+
 
 To use DynamoDB local instead of amazon service, we need to set endpoint url to our DynamoDB local server url:
 ```
 http://localhost:8010
-```
+
 
 Let's write a functional test for our previous example to see how it works:
 ```python
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     # Ran 1 test in 0.323s
     #
     # OK
-```
+
 
 You also may use decorator like this instead ```@mock.patch```:
 ```python
@@ -92,4 +92,4 @@ def with_ddb_local(method):
             new=lambda x: DDB_LOCAL_URL)(
                 method)(self, *args, **kwargs)
     return wrapper
-```
+

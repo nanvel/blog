@@ -1,9 +1,10 @@
-labels: Draft
-        iOS
+---
+tags: [draft, ios]
 created: 2016-10-18T19:15
 modified: 2016-10-18T19:15
 place: Phuket, Thailand
 comments: true
+---
 
 # iOS development notes
 
@@ -14,7 +15,7 @@ comments: true
 VisualFormat:
 ```text
 V:|-20-[myButton1(>=70@500)]-[MyButton2(==myButton1)]-30-[myButton3]-|
-```
+
 `V:` - vertical, default: `H:`
 `@500` - priority: 0..1000
 `>=70` - height
@@ -63,7 +64,7 @@ font: -apple-system-short-subheadline
 font: -apple-system-short-caption1
 font: -apple-system-short-footnote
 font: -apple-system-tall-body
-```
+
 
 `UIFont.systemFont(ofSize: 14)`
 

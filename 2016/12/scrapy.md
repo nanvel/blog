@@ -1,9 +1,10 @@
-labels: Blog
-        Scrapers
+---
+tags: [blog, scrapers]
 created: 2016-12-16T21:04
 modified: 2018-01-05T18:44
 place: Phuket, Thailand
 comments: true
+---
 
 # Scrapy
 
@@ -29,7 +30,7 @@ Methods:
 def parse(self.response):
     next_page = response.urljoin('/page/2/')
     yield scrapy.Request(next_page, callback=self.parse)
-```
+
 
 #### Form request
 
@@ -42,7 +43,7 @@ def parse(self, response):
         formdata={'username': 'john', 'password': 'secret'},
         callback=self.after_login
     )
-```
+
 
 Also see [`from_response` method](https://doc.scrapy.org/en/latest/topics/request-response.html#scrapy.http.FormRequest) - returns a new `FormRequest` object with its form field values pre-populated with those found in the HTML `form` element contained in the given response.
 
@@ -57,7 +58,7 @@ Selectors are a higher level interface on top of lxml. It handles broken HTML an
 ['Quotes']
 >>> response.css('title::text').re(r'(\w+) to (\w+)')
 ['Quotes', 'Scrape']
-```
+
 
 #### XPath
 
@@ -80,7 +81,7 @@ Selectors are a higher level interface on top of lxml. It handles broken HTML an
 
 >>> response.selector.xpath('//span/text()').extract_first()
 u'good'
-```
+
 
 Conditions separated by `/` are known as steps.
 Condition inside `[]` is known as predicate.
@@ -100,7 +101,7 @@ name(.)  # get current tag name
 ./*[self::p or self::a]  # select `p` and `a` tags
 ./td/parent::tr/parent::table  # select parent element
 ./../../a  # a few levels upper (similar to `parent:*`)
-```
+
 
 XPath functions:
 
@@ -201,7 +202,7 @@ class MySpider(Spider):
                 'handle_httpstatus_list': [200, 403]
             }
         )
-```
+
 
 [My answer on stackoverflow](http://stackoverflow.com/questions/9752539/scrapy-async-database-request-in-spider-middleware/43722144#43722144).
 
@@ -227,12 +228,12 @@ item = response.meta['item']
 loader = ItemLoader(item)
 loader.add_value('myfield', 1)
 yield loader.load_item()
-```
+
 `load_item` (and input/output processors) was called twice.
 6. I can't copy `response.xpath()` or `response.xpath().re_first()` from scrapy console (where I do debug) 1:1 into my code (must rewrite into `add_xpath(fieldname, xpath, re)`). Copying xpath and re doesn't make me sure that it will work the same way as there are input/output processors
 7. `add_value(None, {})` looks weird
 
-Solution: use [builders](/2014/11/software-design-patterns#builder) instead. And schema validation.
+Solution: use [[2014/11/software-design-patterns#builder|builders]] instead. And schema validation.
 
 ```python
 class Builder(object):
@@ -272,7 +273,7 @@ class Builder(object):
             'field1': self.field1,
             'field2': self._field2
         }
-```
+
 
 ## Item pipelines
 
@@ -314,7 +315,7 @@ Shuts down the spider when it exceeds a memory limit.
 ```bash
 scrapy startproject myproject [project_dir]
 scrapy genspider mydomain mydomain.com
-```
+
 
 Global commands:
 
@@ -343,7 +344,7 @@ Using proxy:
 ```bash
 export http_proxy=<ip/host>:<port>
 scrapy crawl <spidername>
-```
+
 
 ## Settings
 
@@ -352,7 +353,7 @@ See [https://doc.scrapy.org/en/1.2/topics/settings.html#built-in-settings-refere
 Command line:
 ```
 scrapy shell -s SOME_SETTING=VALUE
-```
+
 
 ## Twisted
 
@@ -370,7 +371,7 @@ deferred.addCallback(handler2)
 deferred.callback('result')
 reactor.callLater(60, reactor.stop)
 reactor.run()
-```
+
 
 The reactor is the event loop mechanism for Twisted. It takes care of executing all of the various timed actions and the execution of the callback/errback stack. Timed actions can be deferreds, etc. Deferreds are simply objects executed by the Reactor.
 
@@ -399,7 +400,7 @@ class MyExtension(object):
         )
         json_response = yield response.json()
         assert json_response['ok']
-```
+
 
 ### Async DB clients
 
@@ -428,7 +429,7 @@ class MongoDBPipeline(object):
         yield collection.save(dict(item))
 
         defer.returnValue(item)
-```
+
 
 [txredisapi](https://github.com/fiorix/txredisapi)
 
@@ -457,7 +458,7 @@ Use telnet console:
 ```bash
 telnet localhost 6023
 est()  # get execution engine status
-```
+
 
 See [Learning Scrapy by Dimitrius Kouzis-Loukas](https://www.amazon.com/Learning-Scrapy-Dimitris-Kouzis-Loukas-ebook/dp/B0166Y6Z70/), "Performance" chapter.
 
@@ -486,18 +487,18 @@ open_in_browser(response)
 
 from scrapy.shell import inspect_response
 inspect_response(response, self)
-```
+
 
 It is possible to debug xpaths in Google Chrome browser console:
 ```js
 $x('//h1/a/text()')
-```
+
 
 ### Scrapy shell
 
 ```bash
 scrapy shell 'http://quotes.toscrape.com/page/1/'
-```
+
 
 ```
 2017-02-12 13:50:08 [scrapy] INFO: Spider opened
@@ -512,7 +513,7 @@ scrapy shell 'http://quotes.toscrape.com/page/1/'
 [s]   shelp()           Shell help (print this help)
 [s]   fetch(req_or_url) Fetch request (or URL) and update local objects
 [s]   view(response)    View response in a browser
-```
+
 
 `view` and `fetch` functions are very useful.
 
@@ -534,7 +535,7 @@ class MySpider(scrapy.Spider):
         self.log("Log something ...")
         # or
         self.log("Log something ...", level=logging.INFO)
-```
+
 
 Logging levels:
 
@@ -574,13 +575,13 @@ Modify `scrapy.cfg`:
 [deploy]
 url = http://localhost:6800
 project = myproject
-```
+
 
 ```bash
 pip install scrapyd-client
 scrapyd-deploy
 curl http://localhost:6800/schedule.json -d project=myproject -d spider=myspider
-```
+
 
 Multiple servers:
 ```
@@ -588,11 +589,11 @@ Multiple servers:
 url = http://server1:6800
 [deploy:server2]
 url = http://server2:6800
-```
+
 
 ```bash
 scrapyd-deploy server1
-```
+
 
 #### Priority
 
@@ -600,7 +601,7 @@ Default task priority is 0.
 To set another priority use `priority` setting:
 ```
 curl http://localhost:6800/schedule.json -d project=myproject -d spider=myspider -d priority=1
-```
+
 
 ### Scrapycloud
 
@@ -635,7 +636,7 @@ RUN ln -s /app/scripts/start-crawl /usr/sbin/start-crawl
 RUN ln -s /app/scripts/list-spiders /usr/sbin/list-spiders
 RUN chmod +x /app/scripts/start-crawl /app/scripts/list-spiders
 ENV PYTHONPATH "$PYTHONPATH:/app"
-```
+
 
 ##### `.dockerignore`
 
@@ -650,7 +651,7 @@ ENV PYTHONPATH "$PYTHONPATH:/app"
 .idea
 .DS_Store
 .releases
-```
+
 
 ##### Logging; saving scraped items, requests
 
@@ -664,7 +665,7 @@ projects:
 
 images:
   default: myuser/myrepository
-```
+
 
 ##### Scripts
 
@@ -672,7 +673,7 @@ images:
 scripts
 - list-spiders
 - start-crawl
-```
+
 
 `list-spider`:
 ```python
@@ -688,7 +689,7 @@ def list_spiders():
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
     sys.exit(list_spiders())
-```
+
 
 `start-crawl`:
 ```python
@@ -702,7 +703,7 @@ from myproject.app import main
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
     sys.exit(main())
-```
+
 
 ##### Settings
 
@@ -713,7 +714,7 @@ import os
 
 SHUB_SETTINGS = json.loads(os.getenv('SHUB_SETTINGS', '{}'))
 project_settings = SHUB_SETTINGS.get('project_settings', {})
-```
+
 
 See [other available settings](https://github.com/scrapinghub/shub/blob/master/docs/custom-images-contract.rst#shub_settings).
 
@@ -725,19 +726,19 @@ Use [shub](https://shub.readthedocs.io/en/stable/) command line tool.
 shub image build
 shub image push --username=<docker hub username> --password <docker hub password> --email <docker hub email>
 shub image deploy <scrapycloud project name> --username=<docker hub username> --password <docker hub password> --email <docker hub email>
-```
+
 
 ##### Troubleshooting
 
 Run `build` with `--debug` key:
 ```
 shub image build --debug
-```
+
 
 `sh` into the image:
 ```bash
 docker run -it <container id> bash
-```
+
 
 On OSX I have an error when I run `shub image build` for first time:
 `Detected error connecting to Docker daemon's host.`
@@ -746,7 +747,7 @@ Try this to solve it:
 ```bash
 docker-machine restart default
 eval $(docker-machine env default)
-```
+
 
 ## Best practices
 

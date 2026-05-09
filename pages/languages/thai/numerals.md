@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2015-10-24T22:47
 modified: 2016-12-14T09:40
+---
 
 # Thai numerals
 

@@ -1,8 +1,9 @@
-labels: Projects
-        Draft
+---
+tags: [projects, draft]
 created: 2024-05-02T17:41
 modified: 2024-05-02T17:41
 place: Bangkok, Thailand
+---
 
 # Regimes tool
 
@@ -101,7 +102,7 @@ Records can be retrieved using api, for the one above:
   "updated_at": "2024-05-02T10:37:00",
   "is_template": false
 }
-```
+
 
 Trend lines can be selected from suggestions or drawn:
 ![trend lines](trend_lines.png)

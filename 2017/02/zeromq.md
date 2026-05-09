@@ -1,9 +1,10 @@
-labels: Draft
-        Distributed
+---
+tags: [draft, distributed]
 created: 2017-02-26T22:42
 modified: 2017-02-26T22:42
 place: Phuket, Thailand
 comments: true
+---
 
 # ZeroMQ notes
 

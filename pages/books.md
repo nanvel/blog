@@ -1,6 +1,8 @@
-labels: Pages
+---
+tags: [pages]
 created: 2015-10-04T00:00
 modified: 2023-01-14T19:09
+---
 
 # Books
 

@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2022-01-08T12:44
 modified: 2022-01-08T12:44
 place: Phuket, Thailand
+---
 
 # 2021 Summary
 

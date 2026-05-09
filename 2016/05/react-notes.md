@@ -1,10 +1,10 @@
-labels: Draft
-        JS
-        React
+---
+tags: [draft, js, react]
 created: 2016-05-24T19:49
 modified: 2018-08-13T11:05
 place: Kyiv, Ukraine
 comments: true
+---
 
 # React notes
 
@@ -21,7 +21,7 @@ Use `create-react-app`.
 ```bash
 npm install -g create-react-app
 create-react-app <app name>
-```
+
 
 ## Basics
 
@@ -63,21 +63,21 @@ export class MyComponent extends React.Component {
     >{this.props.text}</div>
   }
 }
-```
+
 
 Setting the state:
 ```js
 this.setState({ foo: bar });
 
 this.setState((prevState, props) => { ... })
-```
+
 
 ```js
 onChange(e) {
   e.preventDefault();
   this.setState({[e.target.name]: e.target.value});
 }
-```
+
 
 ### Bindings
 
@@ -93,7 +93,7 @@ class User {
     return this.fname + ' ' + this.lname;
   }
 }
-```
+
 
 Or use arrow function:
 ```js
@@ -107,7 +107,7 @@ class User {
     return this.fname + ' ' + this.lname;
   }
 }
-```
+
 
 ## JSX
 
@@ -120,7 +120,7 @@ class User {
     </p>
   )}
 </div>
-```
+
 
 ### Lifecycle methods
 
@@ -162,7 +162,7 @@ fetch("http://example.com").then(
 ).atch(
   error => error
 )
-```
+
 
 Or axious.
 
@@ -171,7 +171,7 @@ Or axious.
 Add variables to `.env`:
 ```text
 REACT_APP_SOKE_KEY=somevalue
-```
+
 
 Access in js with `${process.env.REACT_APP_SOME_KEY}`.
 
@@ -190,7 +190,7 @@ src/
       index.js
       test.js
       index.css
-```
+
 
 ## Testing
 
@@ -236,7 +236,7 @@ co(function* () {
 }, function (err) {
   console.error(err)
 })
-```
+
 
 Where `someFunc` returns a promise.
 
@@ -306,19 +306,19 @@ function fbLoginAction() {
     }
   }
 }
-```
+
 
 ## Instruments
 
 ### babel, webpack
 
-See [ES6 notes / ES6(ES7) -> ES5](/2016/05/es6-notes#es6-es5).
+See [[2016/05/es6-notes#es6-es5|ES6 notes / ES6(ES7) -> ES5]].
 
 ### Development server using node/express
 
 ```bash
 npm install --save-dev express
-```
+
 
 `server.js`:
 ```js
@@ -338,7 +338,7 @@ app.use(express.static(staticFolder, {index: 'index.html'}))
 app.listen(8000, function () {
   console.log('Listening on port 8000!')
 })
-```
+
 
 ## Vocabulary
 

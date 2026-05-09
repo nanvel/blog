@@ -1,8 +1,9 @@
-labels: Blog
-        Server
+---
+tags: [blog, server]
 created: 2013-09-07T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Fabric helps to escape repeatable and annoying work
 
@@ -19,12 +20,12 @@ python manage.py collectstatic
 sudo /etc/init.d/project_fastcgi restart
 pass
 exit
-```
+
 
 with fabric I just do:
 ```bash
 fab deploy
-```
+
 
 Fabric is such sort of things that hard to understand, but when You become familiar with it, many things become much easier to do.
 
@@ -33,7 +34,7 @@ Fabric should be installed only on development machine, so I add ```Fabric``` to
 Next step, after Fabric installation, is creating ```fabfile.py``` (I place it in a project root).
 
 ```fabfile.py``` for example:
-```python
+python
 from os import environ
 
 from django.core.exceptions import ImproperlyConfigured
@@ -61,22 +62,22 @@ def deploy():
         sudo('/etc/init.d/project_fastcgi restart')
 ```
 
-```run``` function runs a shell command on a remote host.
+run``` function runs a shell command on a remote host.
 ```sudo``` function runs a shell command on a remote host, with superuser privileges.
-```cd``` adds prefix to paths on a remote server.
+cd``` adds prefix to paths on a remote server.
 ```env.hosts``` - global host list used when composing per-task host lists.
-```env.user``` - username used when making SSH connections (default - local username).
+env.user``` - username used when making SSH connections (default - local username).
 ```env.password``` - used to explicitly set your default connection or sudo password if desired.
 
 Password should be specified in MY_SEVER_PASS environment variable:
-```bash
+bash
 export MY_SEVER_PASS=mypass
 ```
 
 Fabric will prompt you to enter a password if password isn’t set or doesn’t appear to be valid. 
 
 Fabric can run commands on local machine as well:
-```python
+python
 from fabric.api import local
 
 
@@ -85,12 +86,12 @@ def commit_and_push():
     local('git push origin master')
 ```
 
-```local``` - run a shell command on local machine.
+local``` - run a shell command on local machine.
 
 ```cd``` works only for path on remote server, for path on local machine ```lcd``` context manager should be used instead.
 
 Next example - create backups on remote server and copy them to local machine:
-```python
+python
 import datetime
 
 from os import environ, path
@@ -135,7 +136,7 @@ def get_media_dump():
     run('rm %s' % zip_file)
 ```
 
-```get``` - download one or more files from a remote host.
+get``` - download one or more files from a remote host.
 Remote path can be file or directory.
 
 Opposite to ```get``` exists ```put``` command:

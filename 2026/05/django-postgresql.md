@@ -1,9 +1,9 @@
-labels: Talk
-        Django
-        Databases
+---
+tags: [talk, django, databases]
 created: 2026-05-03T11:48
 modified: 2026-05-03T11:48
 place: Bangkok, Thailand
+---
 
 # Django × PostgreSQL: Making your ORM behave in production
 

@@ -1,10 +1,10 @@
-labels: Draft
-        JS
-        TypeScript
+---
+tags: [draft, js, typescript]
 created: 2024-12-31T16:37
 modified: 2024-12-31T16:37
 place: Bangkok, Thailand
 comments: false
+---
 
 # TypeScript notes
 

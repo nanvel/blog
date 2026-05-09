@@ -1,8 +1,9 @@
-labels: AI
-        Draft
+---
+tags: [ai, draft]
 created: 2026-03-15T18:21
 modified: 2026-03-15T18:21
 place: Bangkok, Thailand
+---
 
 # Large Language Models
 

@@ -1,8 +1,9 @@
-labels: Projects
-        Draft
+---
+tags: [projects, draft]
 created: 2024-12-30T10:53
 modified: 2025-03-23T10:41
 place: Bangkok, Thailand
+---
 
 # Price-Action trader
 

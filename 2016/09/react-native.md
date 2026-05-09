@@ -1,10 +1,10 @@
-labels: Draft
-        Mobile
-        React
+---
+tags: [draft, mobile, react]
 created: 2016-09-06T19:24
 modified: 2016-09-06T19:24
 place: Phuket, Thailand
 comments: true
+---
 
 # React native notes
 
@@ -18,7 +18,7 @@ brew install watchman
 brew install flow  # for type checking
 sudo npm install -g react-native-cli
 react-native init NewProjectName
-```
+
 
 Output:
 ```text
@@ -32,7 +32,7 @@ To run your app on Android:
    Have an Android emulator running (quickest way to get started), or a device connected
    cd /Users/nanvel/projects/kana/Kana
    react-native run-android
-```
+
 
 ## Xcode project configuration
 

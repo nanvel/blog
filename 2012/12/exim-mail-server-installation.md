@@ -1,9 +1,9 @@
-labels: Blog
-        Django
-        Server
+---
+tags: [blog, django, server]
 created: 2012-12-12T00:00
 place: Alchevs'k, Ukraine
 comments: true
+---
 
 # Exim mail server installation
 
@@ -25,12 +25,12 @@ Machines to relay mail for: [blank]
 Keep number of DNS-queries ...: No
 Delivery mail for local mail: Maildir format in home directory
 Split configuration into small files?: No
-```
+
 
 Test send email:
 ```bash
 echo "This is a test." | mail -s Testing someone@somedomain.com
-```
+
 
 Send email in django code:
 ```python
@@ -51,7 +51,7 @@ def send_mail(template, context, emails, from_email=None):
     msg.send()
 
     # send_mail('some_template', context, ['mail@mail.com'])
-```
+
 
 You need to add 3 templates:
 

@@ -1,8 +1,9 @@
-labels: Blog
-        API
+---
+tags: [blog, api]
 created: 2013-05-28T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Python script retrieves my vk news feed
 
@@ -98,7 +99,7 @@ if __name__ == '__main__':
         args=urllib.urlencode({'access_token': access_token}))
     print urllib2.urlopen(url).read()
     # {"response":{"items":[{"type":"wall_photo","source_id" ...
-```
+
 
 Links:
 

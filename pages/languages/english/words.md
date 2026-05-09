@@ -1,6 +1,8 @@
-labels: English
+---
+tags: [english]
 created: 2015-10-24T22:20
 modified: 2016-09-29T19:10
+---
 
 # Words to learn
 

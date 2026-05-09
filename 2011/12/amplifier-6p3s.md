@@ -1,9 +1,9 @@
-labels: Blog
-        Projects
-        Electronics
+---
+tags: [blog, projects, electronics]
 created: 2011-12-22T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Низькочастотний підсилювач на 6П3С
 

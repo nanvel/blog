@@ -1,5 +1,7 @@
-labels: Thai
+---
+tags: [thai]
 created: 2016-09-20T22:11
+---
 
 # Phrases
 

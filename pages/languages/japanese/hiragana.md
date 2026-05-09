@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-06-25T21:18
+---
 
 # Hiragana
 

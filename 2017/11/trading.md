@@ -1,11 +1,10 @@
-labels: Blog
-        Finance
-        Crypto
-        Trading
+---
+tags: [blog, finance, crypto, trading]
 created: 2017-11-16T14:08
 modified: 2024-12-30T13:42
 place: Phuket, Thailand
 comments: true
+---
 
 # Trading
 
@@ -956,7 +955,7 @@ Articles:
 - [Cryptocurrency Trading Bible Three: Winning in Sideways and Bear Markets](https://hackernoon.com/cryptocurrency-trading-bible-four-winning-in-sideways-and-bear-markets-f3f365ffca76)
 - [5 Stop Loss Mistakes To Avoid](https://medium.com/@cryptocreddy/5-stop-loss-mistakes-to-avoid-bea274857371)
 - [The bots that make money (or lose it) for you while you sleep](https://bitcoinmagazine.com/markets/the-bots-that-make-money-or-lose-it-for-you-while-you-sleep-1483555808)
-- [Trading vocabulary](/2018/07/trading-vocabulary)
+- [[2018/07/trading-vocabulary|Trading vocabulary]]
 - [Crypto Cred](https://docs.google.com/document/d/15c3rN15rkXldY8Te3GDG4NG7noaaoikydOoZQlElwXw/preview)
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 - [Smart Money Concept: Be Ahead Of The Market Move](https://blog.fundednext.com/smart-money-concept/)

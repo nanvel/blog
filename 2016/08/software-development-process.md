@@ -1,8 +1,9 @@
-labels: Draft
-        SoftwareDevelopment
+---
+tags: [draft, software-development]
 created: 2016-08-24T22:56
 modified: 2023-12-11T11:35
 place: Phuket, Thailand
+---
 
 # Software development process
 
@@ -10,7 +11,7 @@ place: Phuket, Thailand
 
 Also see:
 
-- [eXtreme Programming](https://nanvel.name/2023/09/extreme-programming)
+- [[2023/09/extreme-programming|eXtreme Programming]]
 
 ## Agile
 

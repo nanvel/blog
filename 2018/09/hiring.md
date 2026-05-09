@@ -1,8 +1,10 @@
-labels: Draft
+---
+tags: [draft]
 created: 2018-09-02T23:07
 modified: 2018-09-02T23:07
 place: Thailand, Phuket
 comments: true
+---
 
 # Hiring
 

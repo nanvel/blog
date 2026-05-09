@@ -1,9 +1,9 @@
-labels: Blog
-        Django
-        Testing
+---
+tags: [blog, django, testing]
 created: 2013-04-27T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # [Django] Session. Control and testing
 
@@ -11,7 +11,7 @@ Before use ```request.session.session_key``` in view, check that it exists first
 ```python
 if request.session.session_key is None:
     request.session.save()
-```
+
 
 Session saves by middleware, if ```session.modified == True```, before response will be sent. If ```settings.SESSION_SAVE_EVERY_REQUEST == True```, session will be saved to the database on every request, and ```session.modified``` doesn't matter.
 
@@ -24,7 +24,7 @@ def my_view(request):
     request.session.modified = False
     return response
     # the first changes will be saved and the second - no
-```
+
 
 As for testing, ```TestCase.client``` doesn't has session, but we can add it:
 ```python
@@ -47,7 +47,7 @@ class WithSessionTestCase(TestCase):
     def test_something(self):
         self.create_session()
         # now self.client.session is available
-```
+
 
 Links:
 

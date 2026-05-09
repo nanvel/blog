@@ -1,9 +1,9 @@
-labels: Blog
-        Django
-        Databases
+---
+tags: [blog, django, databases]
 created: 2013-10-02T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # [Django] Database transactions
 
@@ -23,7 +23,7 @@ def my_view(request):
     for i in range(100):
         m = MyModel(number=i)
         m.save()
-```
+
 
 ```python
 # this code produces only 1 request to database
@@ -36,7 +36,7 @@ def my_view(request):
     for i in range(100):
         m = MyModel(number=i)
         m.save()
-```
+
 
 ```python
 # this will add only one record to database
@@ -47,7 +47,7 @@ def my_view(request):
         m = MyModel(number=i)
         m.save()
         raise Exception('Some error')
-```
+
 
 ```python
 # this will add no records to database
@@ -61,7 +61,7 @@ def my_view(request):
         m = MyModel(number=i)
         m.save()
         raise Exception('Some error')
-```
+
 
 See more examples in [the documentation](https://docs.djangoproject.com/en/1.5/topics/db/transactions/).
 
@@ -79,7 +79,7 @@ DATABASES = {
         },
     }
 }
-```
+
 
 Links:
 

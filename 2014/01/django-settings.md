@@ -1,8 +1,9 @@
-labels: Blog
-        Django
+---
+tags: [blog, django]
 created: 2014-01-12T00:00
 place: Phuket, Thailand
 comments: true
+---
 
 # Django settings
 
@@ -22,10 +23,10 @@ Files tree:
         - media.py
         - apps.py
         - local.py.default
-```
+
 
 ```__init__.py```:
-```python
+python
 from .admins import *
 from .default import *
 from .db import *
@@ -38,17 +39,17 @@ except ImportError:
     pass
 ```
 
-```utils.py```:
+utils.py```:
 ```python
 import os.path
 
 
 SETTINGS_ROOT = os.path.dirname(os.path.realpath(__file__))
 rel = lambda p: os.path.join(SETTINGS_ROOT, '../..', p)
-```
+
 
 ```admins.py```:
-```python
+python
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -56,7 +57,7 @@ ADMINS = (
 MANAGERS = ADMINS
 ```
 
-```default.py```:
+default.py```:
 ```python
 from .utils import rel
 
@@ -138,10 +139,10 @@ LOGGING = {
         },
     }
 }
-```
+
 
 ```db.py```:
-```python
+python
 from .utils import rel
 
 
@@ -158,7 +159,7 @@ DATABASES = {
 }
 ```
 
-```media.py```:
+media.py```:
 ```python
 from .utils import rel
 
@@ -197,15 +198,15 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-```
+
 
 ```MEDIA_URL``` - url where media files will be available (on production should be in sync with web server config).
 
-```MEDIA_ROOT``` - path to directory where media files will be stored,
+MEDIA_ROOT``` - path to directory where media files will be stored,
 
 ```STATIC_URL``` - url where static files will be available (on production should be in sync with web server config).
 
-```STATIC_ROOT``` - path to directory static files will be copied to (on collectstatic management command call, not required while ```DEBUG == True```).
+STATIC_ROOT``` - path to directory static files will be copied to (on collectstatic management command call, not required while ```DEBUG == True```).
 
 To serve media files without real web server (while development), add next lines to project urls:
 
@@ -218,10 +219,10 @@ if settings.DEBUG:
     urlpatterns += static(
             settings.MEDIA_URL,
             document_root=settings.MEDIA_ROOT)
-```
+
 
 ```apps.py```:
-```python
+python
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -253,7 +254,7 @@ INSTALLED_APPS = (
 )
 ```
 
-```local.py.default```:
+local.py.default```:
 ```python
 from .utils import rel
 
@@ -282,6 +283,6 @@ SECRET_KEY = '-u&g%3b$3g=-(#iDD=e7i5q7!0mv71!-enbq6uu8_bf*dz+&YY'
 
 # MEDIA_ROOT = ''
 # STATIC_ROOT = ''
-```
+
 
 ```local.py``` should be added to ```.gitignore```.

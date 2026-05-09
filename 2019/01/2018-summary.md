@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2019-01-01T14:43
 modified: 2019-01-01T14:43
 place: Phuket, Thailand
+---
 
 # 2018 Summary
 
@@ -20,7 +22,7 @@ Got a work permit and 1 year visa.
 
 ## Books 2018
 
-[2018 books](/pages/books#2018)
+[[pages/books#2018|2018 books]]
 
 ## Visited Ukraine
 

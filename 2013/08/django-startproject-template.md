@@ -1,8 +1,9 @@
-labels: Blog
-        Django
+---
+tags: [blog, django]
 created: 2013-08-28T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Django startproject template
 
@@ -46,7 +47,7 @@ Django project template I use:
 ├── Makefile
 ├── manage.py
 └── requirements.txt
-```
+
 
 It's tiring to change standard django project structure everytime when start new project, so I created my own project template:
 
@@ -55,7 +56,7 @@ It's tiring to change standard django project structure everytime when start new
 Apply it:
 ```bash
 django-admin.py startproject --template https://github.com/nanvel/django-project-template/archive/master.zip myproject
-```
+
 
 Differences from the original project template:
 

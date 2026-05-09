@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-07-18T20:58
+---
 
 # Polite
 

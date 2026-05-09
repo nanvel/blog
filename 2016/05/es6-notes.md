@@ -1,9 +1,10 @@
-labels: Blog
-        JS
+---
+tags: [blog, js]
 created: 2016-05-02T11:12
 modified: 2018-08-10T19:53
 place: Kyiv, Ukraine
 comments: true
+---
 
 # ES6 notes
 
@@ -31,7 +32,7 @@ console.log(f1(0));  // undefined
 console.log(f1(1));  // 10
 console.log(f2(0));  // undefined
 console.log(f2(1));  // 10
-```
+
 
 Using ```let```:
 ```js
@@ -42,7 +43,7 @@ function f1(i) {
   return v
 }
 console.log(f1(0));  // v is not defined
-```
+
 
 Using ```let``` in loops:
 ```js
@@ -52,7 +53,7 @@ console.log(i);  // 10
 var i = 100;
 for(let i=0; i<10; i++) {};
 console.log(i);  // 100
-```
+
 
 Global scope:
 ```js
@@ -60,7 +61,7 @@ var i = 100;
 console.log(i);  // 100
 let j = 100;
 console.log(window.j);  // undefined
-```
+
 
 ### Redeclaration
 
@@ -68,19 +69,19 @@ console.log(window.j);  // undefined
 var i = 10;
 var i = 20;
 let i = 30;  // Identifier 'i' has already been declared
-```
+
 
 ```js
 let i = 10;
 var i = 20;  // Identifier 'i' has already been declared
-```
+
 
 ## Constants
 
 ```js
 const i = 10;
 i = 20;  // TypeError: Assignment to constant variable.
-```
+
 
 ### Constant objects could be modified
 
@@ -90,7 +91,7 @@ const i = {
 };
 i.key = 2;
 console.log(i);  // {key: 2}
-```
+
 
 ## Strings
 
@@ -101,20 +102,20 @@ Second line.`
 console.log(s);
 /* First line
 Second line. */
-```
+
 
 String interpolation:
 ```js
 const value = 10;
 console.log(`Value = ${value * 5}`);  // Value = 50
-```
+
 
 String includes:
 ```js
 string.includes(pattern)  // ES6
 
 string.indexOf(pattern) !== -1  // ES5
-```
+
 
 ## Functions
 
@@ -126,7 +127,7 @@ function f(a, b=1) {
 }
 f(10);  // 10 1
 f(10, 100);  // 10 100
-```
+
 
 ### Rest parameters
 
@@ -136,7 +137,7 @@ function f(a, ...b) {
 }
 f(1);  // 1 [] Object([1])
 f(1, 2, 3);  // 1 [2, 3] Object([1, 2, 3])
-```
+
 
 ```js
 function f(...args) {
@@ -144,7 +145,7 @@ function f(...args) {
 }
 f();  // []
 f(1, 2, 3); [1, 2, 3]
-```
+
 
 ### The Spread operator
 
@@ -153,7 +154,7 @@ const values = [1, 2, 3, 4];
 console.log(Math.max(...values));  // 4
 console.log(Math.max(...values, 1));  // 4
 console.log(Math.max(...values, 1, 10));  // 10
-```
+
 
 ### The Function constructor
 
@@ -161,7 +162,7 @@ console.log(Math.max(...values, 1, 10));  // 10
 const say = Function("what = `hi!`", "console.log(`Say ${what}`);");
 say();  // Say hi!
 say(`Hello!`)  // Say Hello!
-```
+
 
 Also accepts ```...args```.
 
@@ -172,7 +173,7 @@ function someFunction(a) {
   console.log(a)
 }
 console.log(someFunction.name);  // someFunction
-```
+
 
 ### Block-level functions
 
@@ -184,7 +185,7 @@ if(true) {
   console.log(a);  // function a
 }
 console.log(a);  // Uncaught ReferenceError: a is not defined
-```
+
 
 ### Arrow functions
 
@@ -198,7 +199,7 @@ const sum2 = (a, b) => {
 }
 console.log(sum1(1, 2));  // 3
 console.log(sum2(1, 2));  // 3
-```
+
 
 Parentheses are not mandatory:
 ```text
@@ -206,7 +207,7 @@ item => { ... }
 (item) => { ... }
 item, key => { ... }
 (item, key) => { ... }
-```
+
 
 ## Objects
 
@@ -220,7 +221,7 @@ function createSomething(a, b) {
   }
 }
 console.log(createSomething(1, 2));  // Object {a: 1, b: 2}
-```
+
 
 ### Methods
 
@@ -232,7 +233,7 @@ const obj = {
   }
 };
 console.log(obj.getA());  // 1
-```
+
 
 ### Computed property names
 
@@ -242,7 +243,7 @@ const obj = {
   ["ef"]: 2
 }
 console.log(obj);  // Object {abcd: 1, ef: 2}
-```
+
 
 ### Object.is()
 
@@ -261,7 +262,7 @@ console.log(5 === 5);  // true
 console.log(5 === "5");  // false
 console.log(Object.is(5, 5));  // true
 console.log(Object.is(5, "5"));  // false
-```
+
 
 ### Mixins
 
@@ -279,7 +280,7 @@ const obj = {
 const o = Object.assign(obj, mixin);
 
 o.saySomething(o.a);  // Hi!
-```
+
 
 ### Duplicate object literals
 
@@ -289,7 +290,7 @@ const a = {
   b: 2
 };
 console.log(a);  // Object {b: 2}
-```
+
 
 ### Object keys (ordered)
 
@@ -299,7 +300,7 @@ const a = {
   c: 2
 };
 console.log(Object.getOwnPropertyNames(a));  // ["b"]
-```
+
 
 ### Object prototype
 
@@ -314,7 +315,7 @@ const obj = Object.create(proto);
 obj.b = 2;
 obj.f();  // 2
 proto.f();  // 1
-```
+
 
 New in ES6: ```Object.setPrototypeOf()```.
 
@@ -335,7 +336,7 @@ const obj = {
 }
 Object.setPrototypeOf(obj, proto);
 obj.f();  // 1\nAdd some text.
-```
+
 
 ### Object destructing
 
@@ -346,7 +347,7 @@ const obj = {
 };
 const {attr1, attr2} = obj;
 console.log(attr1, attr2);  // 1 2
-```
+
 
 With default values:
 ```js
@@ -356,7 +357,7 @@ const obj = {
 };
 const {attr1=0, attr2=0, attr3=0, attr4} = obj;
 console.log(attr1, attr2, attr3, attr4);  // 1 2 0 undefined
-```
+
 
 Custom local variable name:
 ```js
@@ -366,7 +367,7 @@ const obj = {
 };
 const {attr1: localAttrName1=0, attr2=0} = obj;
 console.log(localAttrName1);  // 1
-```
+
 
 Nested destructuring:
 ```js
@@ -378,7 +379,7 @@ const obj = {
 };
 const {attr1: localAttrName1=0, attr2: {attr3}} = obj;
 console.log(attr3);  // 2
-```
+
 
 ### Private attributes
 
@@ -393,12 +394,12 @@ All object properties are public in ES6.
 return Object.assign({}, state, {
   didInvalidate: true
 })
-```
+
 
 Is equal to:
 ```js
 return { ...state, didInvalidate: true }
-```
+
 
 ### Shorthand property syntax
 
@@ -408,7 +409,7 @@ const name = "name"
 const user = {
   name,
 }
-```
+
 
 ## Arrays
 
@@ -418,7 +419,7 @@ const user = {
 const a = ["one", "two", "three"];
 const [a1, ,a3, a4] = a;
 console.log(a1, a3, a4);  // one three undefined
-```
+
 
 Supports defaults and nested destructuring.
 
@@ -428,14 +429,14 @@ Supports defaults and nested destructuring.
 const a = ["one", "two", "three"];
 const [a1, ...aRest] = a;
 console.log(a1, aRest);  // one ["two", "three"]
-```
+
 
 Clone list:
 ```js
 const a = ["one", "two", "three"];
 const [...aClone] = a
 console.log(aClone, a === aClone);  // ["one", "two", "three"] false
-```
+
 
 ### Array.of and Array.from
 
@@ -444,7 +445,7 @@ let a = Array.of(1);
 console.log(a);  // [1]
 a = Array.of(1, 2);
 console.log(a);  // [1, 2]
-```
+
 
 Converting an Array-like object (or iterable) into the Array:
 ```js
@@ -453,14 +454,14 @@ function f() {
   console.log(a);
 }
 f(1, 2, 3);  // [1, 2 ,3]
-```
+
 
 ### find and findIndex methods
 
 ```js
 const a = [1, 2, 3, 4, 5]
 console.log(a.find(i => i > 3), a.findIndex(i => i > 3));  // 4 3
-```
+
 
 ### fill method
 
@@ -470,7 +471,7 @@ Changes all values to specified one.
 const a = [1, 2, 3];
 a.fill(10);
 console.log(a);  // [10, 10, 10]
-```
+
 
 The method accepts start and end indexes.
 
@@ -483,7 +484,7 @@ undefined
 undefined
 > pages
 [ 1, 2 ]
-```
+
 
 ## Sets
 
@@ -499,7 +500,7 @@ mySet.delete(1);
 console.log(mySet);  // Set {2}
 mySet.clear();
 console.log(mySet);  // Set {}
-```
+
 
 ### Weak sets
 
@@ -510,7 +511,7 @@ myWeakSet.add(obj);
 obj = null;
 console.log(myWeakSet);  // WeakSet {Object {}}
 // obj can be garbage collected
-```
+
 
 ### Maps
 
@@ -521,7 +522,7 @@ const myMap = new Map();
 myMap.set("key1", "value1");
 myMap.set("key2", "value2");
 console.log(myMap, myMap.get("key1"));  // Map {"key1" => "value1", "key2" => "value2"} "value1"
-```
+
 
 Methods:
 
@@ -552,7 +553,7 @@ iterator = createIterator(items);
 for (let i of iterator) {
   console.log(i);  // 1\n2\n3
 }
-```
+
 
 ### Iterables
 
@@ -575,7 +576,7 @@ const myIterable = {
 for (let i of myIterable) {
   console.log(i);  // 0\n1\n2
 }
-```
+
 
 Methods of an iterable:
 ```js
@@ -583,7 +584,7 @@ const map = new Map([['key1', 'value1'], ['key2', 'value2']]);
 console.log(map.entries());  // MapIterator {["key1", "value1"], ["key2", "value2"]}
 console.log(map.values());  // MapIterator {"value1", "value2"}
 console.log(map.keys());  // MapIterator {"key1", "key2"}
-```
+
 
 ### Coroutines
 
@@ -596,7 +597,7 @@ let iterator = myIterator();
 console.log(iterator.next(10));  // Object {value: 1, done: false}
 console.log(iterator.next(20));  // Object {value: 20, done: false}
 console.log(iterator.next(30));  // Object {value: undefined, done: true}
-```
+
 
 ### Throwing an error inside iterator
 
@@ -614,7 +615,7 @@ let iterator = myIterator();
 console.log(iterator.next());  // Object {value: 1, done: false}
 console.log(iterator.throw(new Error("Some error.")));  // Object {value: 100, done: false}
 console.log(iterator.next());  // Object {value: undefined, done: true}
-```
+
 
 ### Return statement inside a generator
 
@@ -629,7 +630,7 @@ let iterator = myIterator();
 console.log(iterator.next());  // Object {value: 1, done: false}
 console.log(iterator.next());  // Object {value: 100, done: true}
 console.log(iterator.next());  // Object {value: undefined, done: true}
-```
+
 
 ### Delegating (yield from)
 
@@ -642,7 +643,7 @@ let iterator = myIterator();
 console.log(iterator.next());  // Object {value: 1, done: false}
 console.log(iterator.next());  // Object {value: 2, done: false}
 console.log(iterator.next());  // Object {value: 3, done: false}
-```
+
 
 ## Classes
 
@@ -658,7 +659,7 @@ class MyClass {
 }
 const obj = new MyClass(10);
 obj.printValue();  // 10
-```
+
 
 Classes are first-class objects.
 
@@ -686,7 +687,7 @@ const obj = new MyClass(10);
 obj.printValue();  // 10
 obj.value = 20;
 obj.printValue();  // 20
-```
+
 
 Computed member names may be handy here to keep setter and getter names the same.
 
@@ -701,7 +702,7 @@ class MyClass {
 MyClass.printSomething('Hi!');  // Hi!
 const obj = new MyClass();
 obj.printSomething('Hi!');  // Uncaught TypeError: obj.printSomething is not a function
-```
+
 
 Static members are not accessible from instances.
 
@@ -721,7 +722,7 @@ class MyClass {
 
 const obj = new MyClass("Something.");
 obj.printSomething();  // Something.
-```
+
 
 ### Inheritance
 
@@ -738,7 +739,7 @@ class SayPlus extends Say {
 }
 const obj = new SayPlus();
 obj.printSomething("Something");  // Something Plus.
-```
+
 
 ### ABC
 
@@ -763,7 +764,7 @@ class MyClass extends MyABC {
 const obj = new MyClass();
 obj.saySomething();  // Something.
 const abc_obj = new MyABC();  // Uncaught Error: ABC can't be instantiated directly.
-```
+
 
 ## Promise
 
@@ -796,7 +797,7 @@ const promise = new Promise(function(resolve, reject) {
 promise.then(function(result) {
   console.log(result);  // Done! (in 0.5s)
 });
-```
+
 
 ## Symbols
 
@@ -810,11 +811,11 @@ A js primitive value. Harder to accidentally change or override than strings or 
 import React from './react'
 /* is equal to */
 var React = require('./react');
-```
+
 
 ```js
 import {foo, bar} from 'someModule'
-```
+
 
 ### export keyword
 
@@ -829,14 +830,14 @@ function f1() {
 	return 1;
 }
 export f;
-```
+
 
 ### export as / import as
 
 ```js
 export {a as b};
 import {a as b} from "file.js";
-```
+
 
 ### Export default
 
@@ -844,7 +845,7 @@ import {a as b} from "file.js";
 export default function() {
     return 1;
 }
-```
+
 
 The default keyword indicates that this is a default export and the function doesn’t require a name because the module itself represents the function.
 
@@ -868,19 +869,19 @@ ECMAScript 6 coders nowadays can get rid of nearly all semicolons and remove clu
 ```bash
 npm install --save-dev babel-cli
 npm install --save-dev babel-preset-es2015 babel-preset-stage-0
-```
+
 
 `.babelrc`:
 ```json
 {
   "presets": ["es2015", "stage-0"]
 }
-```
+
 
 Build:
 ```bash
 babel -w source/ -d build -s"
-```
+
 
 Key `-w` - watch changes.
 Key `-s` - generate sourcemaps.
@@ -888,13 +889,13 @@ Key `-s` - generate sourcemaps.
 For single file:
 ```bash
 babel static/app.js -o static/app.min.js -s --presets=es2015,stage-0 --no-babelrc
-```
+
 
 ### Webpack
 
 ```bash
 sudo npm install webpack -g
-```
+
 
 `webpack.config.js` (with react plugins):
 ```js
@@ -927,17 +928,17 @@ module.exports = {
   },
   devtool: 'source-map'
 }
-```
+
 
 Watch changes:
 ```
 webpack --watch
-```
+
 
 Optimized for production:
 ```
 webpack -p --progress
-```
+
 
 ## Vocabulary
 

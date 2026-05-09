@@ -1,8 +1,9 @@
-labels: Projects
-        Blog
+---
+tags: [projects, blog]
 created: 2021-10-02T01:58
 modified: 2021-10-02T01:58
 place: Phuket, Thailand
+---
 
 # Trading terminal
 

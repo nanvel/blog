@@ -1,9 +1,10 @@
-labels: Databases
-        Blog
+---
+tags: [databases, blog]
 created: 2016-02-07T19:01
 modified: 2016-02-28T18:04
 place: New York, USA
 comments: true
+---
 
 # SQL
 
@@ -21,7 +22,7 @@ template1=# CREATE DATABASE test;
 template1=# GRANT ALL PRIVILEGES ON DATABASE test TO test;
 template1=# \q
 psql -d test
-```
+
 
 ## Practice
 
@@ -53,13 +54,13 @@ CREATE TABLE DaysOfWeek (
 );
 INSERT INTO DaysOfWeek(name) VALUES ('Sunday');
 INSERT INTO DaysOfWeek(name) VALUES ('Another');
-```
+
 
 ```
 INSERT 0 1
 ERROR:  new row for relation "daysofweek" violates check constraint "daysofweek_name_check"
 DETAIL:  Failing row contains (Another             ).
-```
+
 
 Use it only if You are 100% sure that the list of allowed options will be constant, otherwise - use ```FOREIGN KEY```:
 ```sql
@@ -75,13 +76,13 @@ CREATE TABLE users (
 );
 INSERT INTO users(name, gender) VALUES ('user1', 'male');
 INSERT INTO users(name, gender) VALUES ('user2', 'other');
-```
+
 
 ```
 INSERT 0 1
 ERROR:  insert or update on table "users" violates foreign key constraint "users_gender_fkey"
 DETAIL:  Key (gender)=(other) is not present in table "genderchoices".
-```
+
 
 There are other ways to solve the problem: ```ENUM``` field and restriction on the client side.
 
@@ -133,13 +134,13 @@ INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
 INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
 INSERT INTO numbers (value_float, value_decimal) VALUES (1./3, 1./3);
 SELECT SUM(value_float) * 1000 as sum_float, SUM(value_decimal) * 1000 as sum_decimal from numbers;
-```
+
 
 ```
  sum_float | sum_decimal
 -----------+-------------
       1000 |      990.00
-```
+
 
 [IEEE-754 (IEEE Standard for Floating-Point Arithmetic)](https://en.wikipedia.org/wiki/IEEE_floating_point)
 
@@ -149,7 +150,7 @@ One advantage of IEEE-754 is that by using the exponent, it can represent fracti
 
 ### FOREIGN KEY
 
-```FOREIGN KEY``` if a "key" to consistency.
+FOREIGN KEY``` if a "key" to consistency.
 
 How to declare:
 ```sql
@@ -174,7 +175,7 @@ CREATE TABLE artwork (
 )
 
 ALTER TABLE artwork ADD CONSTRAINT artwork_author_id_fk FOREIGN KEY (author_id) REFERENCES author (author_id);
-```
+
 
 ### Full-text search
 
@@ -190,7 +191,7 @@ CREATE TABLE artwork (
     author_id INTEGER,
     FOREIGN KEY (author_id) REFERENCES author ON UPDATE CASCADE ON DELETE SET DEFAULT
 )
-```
+
 
 #### CSV/JSON/etc. or FOREIGN KEY?
 
@@ -236,12 +237,12 @@ INSERT INTO genre (genre_key, title) VALUES ('comedy', 'Comedy');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'action');
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('kill-la-kill', 'comedy');
 SELECT genre.title FROM anime_genre LEFT JOIN genre USING (genre_key) WHERE anime_genre.anime_key = 'kill-la-kill';
-```
+
 
 ```anime_genre``` is an intersection table.
 
 Invalid data example:
-```bash
+bash
 INSERT INTO anime_genre (anime_key, genre_key) VALUES ('unknown-anime', 'comedy');
 ERROR:  insert or update on table "anime_genre" violates foreign key constraint "anime_genre_anime_key_fkey"
 DETAIL:  Key (anime_key)=(unknown-anime) is not present in table "anime".
@@ -249,11 +250,11 @@ DETAIL:  Key (anime_key)=(unknown-anime) is not present in table "anime".
 
 ### GROUP BY and aggregate
 
-```sql
+sql
 SELECT anime.title, COUNT(anime_genre.*) as genre_count FROM anime LEFT JOIN anime_genre USING (anime_key) GROUP BY anime.anime_key;
 ```
 
-```
+
 anime        | genre_count
 Kill La Kill | 2
 ```
@@ -266,7 +267,7 @@ Kill La Kill | 2
 
 Sometimes I hear that the third state is bad, only True and False must be allowed. I don't agree with it, an unknown is a natural third state. Sometimes we not sure about something, and there is no right answer except "I don't know".
 
-```NULL``` in SQL is the best implementation of unknown I ever had seen:
+NULL``` in SQL is the best implementation of unknown I ever had seen:
 ```sql
 DO language plpgsql $$
 BEGIN
@@ -281,7 +282,7 @@ BEGIN
     RAISE NOTICE 'NULL != NULL = %', NULL != NULL;
 END
 $$;
-```
+
 
 ```
 NOTICE:  NULL OR TRUE = t
@@ -293,7 +294,7 @@ NOTICE:  NULL || 'abc' = <NULL>
 NOTICE:  NOT NULL = <NULL>
 NOTICE:  NULL == NULL = <NULL>
 NOTICE:  NULL != NULL = <NULL>
-```
+
 
 In SQL ```NONE``` plays important role:
 
@@ -305,14 +306,14 @@ Searching for ```NULL``` values:
 ```sql
 SELECT title FROM artwork WHERE autor_id IS NULL;
 SELECT title FROM artwork WHERE autor_id IS NOT NULL;
-```
+
 
 Using ```IS DISTINCT FROM```:
 ```sql
 SELECT title FROM artwork WHERE author_id IS DISTINCT FROM 123;
 /* is equal to */
 SELECT title FROM artwork WHERE author_id IS NULL OR author_id != 123;
-```
+
 
 #### COALESCE
 
@@ -322,13 +323,13 @@ The function returns its first not-null argument.
 
 ```sql
 SELECT artwork_id FROM artwork ORDER BY RANDOM() LIMIT 1;
-```
+
 It is expensive and unreliable.
 
 An alternative:
 ```sql
 SELECT artwork_id FROM artwork LIMIT 1 OFFSET FLOOR(RANDOM() * (SELECT COUNT(*) FROM artwork));
-```
+
 
 ### PRIMARY KEY
 
@@ -358,7 +359,7 @@ CREATE TABLE artwork (
     artwork_id INTEGER
 );
 ALTER TABLE artwork ADD PRIMARY KEY (artwork_id);
-```
+
 
 Result is the same:
 ```bash
@@ -369,14 +370,14 @@ test=# \d+ artwork
  artwork_id | integer | not null  | plain   |              |
 Indexes:
     "artwork_pkey" PRIMARY KEY, btree (artwork_id)
-```
+
 
 #### PRIMARY KEY name
 
 A good practice is to use next pattern:
 ```
 {table name}_id
-```
+
 
 Fields references the table must have the same name, it allows to use ```JOIN USING``` syntax:
 ```sql
@@ -385,7 +386,7 @@ SELECT artwork.title, author.name FROM artwork JOIN author USING (author_id);
 /* instead */
 
 SELECT artwork.title, author.name FROM artwork JOIN author ON author.author_id = artwork.author_id;
-```
+
 
 ```artwork.artwork_id``` vs ```artwork.id```: ```artwork_id``` is more clear.
 
@@ -403,7 +404,7 @@ Autoincrement and guid fields are known as pseudo keys or surrogate keys.
 Most databases provide a mechanism to generate unique integer values serially, outside the scope of transaction isolation.
 
 Autoincrement field example (PG):
-```sql
+sql
 CREATE TABLE items (
     item_id SERIAL PRIMARY KEY,
     title VARCHAR(255)
@@ -413,7 +414,7 @@ INSERT INTO items (title) VALUES ('item2');
 SELECT * FROM items;
 ```
 
-```
+
  item_id | title
 ---------+-------
        1 | item1
@@ -442,7 +443,7 @@ If You need to know how many children has the leave, how many descendants has th
 But the simple parent_key solution fails if you need to select all descendants (for instance: get full replies tree).
 
 Exception is two level tree:
-```sql
+sql
 SELECT FROM nodes as n1 LEFT OUTER JOIN nodes as n2 ON n2.parent_id = n1.node_id;
 ```
 
@@ -496,7 +497,7 @@ The function transforms its input string into a new string, called the hash, tha
 Another characteristic of a hash is that it's not reversible. You can't recover the input string from its hash because the hashing algorithm is designed to "lose" some information about the input.
 
 Example using [bcrypt](http://bcrypt.sourceforge.net/) (adaptive hashing function):
-```python
+python
 import bcrypt
 
 

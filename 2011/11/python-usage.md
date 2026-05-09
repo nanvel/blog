@@ -1,8 +1,9 @@
-labels: Blog
-        Python
+---
+tags: [blog, python]
 created: 2011-11-05T00:00
 place: Alchevs'k, Ukraine
 comments: true
+---
 
 # Популярність Python
 

@@ -1,7 +1,9 @@
-labels: Pages
+---
+tags: [pages]
 created: 2022-05-29T13:18
 modified: 2022-05-29T13:18
 place: Phuket, Thailand
+---
 
 # Certificates
 

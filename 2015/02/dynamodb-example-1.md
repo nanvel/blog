@@ -1,8 +1,9 @@
-labels: Databases
-        DynamoDB
+---
+tags: [databases, dynamo-db]
 created: 2015-02-22T00:50
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 1: User wallet table
 
@@ -18,7 +19,7 @@ To run examples code locally, You need to install botocore and place your amazon
 [Credentials]
 aws_access_key_id=AK...
 aws_secret_access_key=6t...
-```
+
 
 In the first example I use amazon dynamodb api service, but later I'll show how to use local dynamodb instead. It may be useful for local development, tests.
 
@@ -27,7 +28,7 @@ Setup virtual environment and install [botocore](https://github.com/boto/botocor
 virtualenv .env --no-site-packages -p /usr/local/bin/python3.3
 source .env/bin/activate
 pip install botocore
-```
+
 
 Don't forget to remove tables after finish experiments with them, Amazon may charge You unexpectedly after few months service usage (even if You did not use them, we pay for throughput and storage, not usage).
 
@@ -148,7 +149,7 @@ if __name__ == '__main__':
            }
         }
         """
-```
+
 
 If You wonder how I know what arguments to pass to ```call``` method, check out [API reference](http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Operations.html).
 

@@ -1,5 +1,7 @@
-labels: English
+---
+tags: [english]
 created: 2015-11-16T20:16
+---
 
 # Times
 

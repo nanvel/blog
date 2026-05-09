@@ -1,9 +1,10 @@
-labels: Draft
-        SoftwareDevelopment
+---
+tags: [draft, software-development]
 created: 2024-12-30T10:50
 modified: 2024-12-30T10:50
 place: Bangkok, Thailand
 comments: false
+---
 
 # Software craftsmanship
 

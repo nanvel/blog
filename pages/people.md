@@ -1,5 +1,7 @@
-labels: Pages
+---
+tags: [pages]
 created: 2016-06-22T22:12
+---
 
 # People
 

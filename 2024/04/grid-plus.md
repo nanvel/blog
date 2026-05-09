@@ -1,8 +1,9 @@
-labels: Projects
-        Draft
+---
+tags: [projects, draft]
 created: 2024-04-29T20:29
 modified: 2024-04-29T20:29
 place: Bangkok, Thailand
+---
 
 # Grid plus trading bot
 

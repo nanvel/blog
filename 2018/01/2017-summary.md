@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2017-01-13T12:06
 modified: 2017-01-13T12:06
 place: Phuket, Thailand
+---
 
 # 2017 Summary
 
@@ -32,7 +34,7 @@ Study in Siam Driving school in Thalang.
 
 ## Read some books
 
-[Books 2017](http://nanvel.name/pages/books#2017)
+[[pages/books#2017|Books 2017]]
 
 ## Work
 

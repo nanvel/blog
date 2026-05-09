@@ -1,9 +1,10 @@
-labels: Blog
-        Projects
+---
+tags: [blog, projects]
 created: 2013-07-07T00:00
 modified: 2014-07-09T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # AMV HUB project
 
@@ -21,7 +22,7 @@ For now score calculates as:
 ```python
 score = 100 * views / period * ((likes - 2 * dislikes) / period)
 score = score if score > 0 else 0
-```
+
 
 **UPD 2013-07-16**
 
@@ -57,4 +58,4 @@ Please let us know how you would like to proceed.
 
 Thank you,
 DigitalOcean Support
-```
+

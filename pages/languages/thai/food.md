@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2016-07-23T22:51
 modified: 2017-01-01T20:40
+---
 
 # Food
 

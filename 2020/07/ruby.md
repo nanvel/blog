@@ -1,8 +1,9 @@
-labels: Ruby
-        Blog
+---
+tags: [ruby, blog]
 created: 2020-07-08T12:25
 modified: 2022-10-15T14:55
 place: Phuket, Thailand
+---
 
 # Ruby notes
 
@@ -24,7 +25,7 @@ require 'socket'
 __END__
 
 ...  # data
-```
+
 
 `load` and `require` serve similar purposes, though require is much more commonly used.
 `require_relative` was introduced in Ruby 1.9.
@@ -39,14 +40,14 @@ BEGIN {
 END {
   ... # global shutdown
 }
-```
+
 
 Load path: `$LOAD_PATH` or `$:`.
 
 Autoloading, register name of the undefined constant and library to load:
 ```ruby
 autoload :TCPSocket, 'socket'
-```
+
 
 ## Syntax
 
@@ -61,13 +62,13 @@ Module1::
 
 a = Array.new
   .push('example') # works because the first characted is period
-```
+
 
 ### `::`
 
 ```ruby
 Encoding::Converter  # namespace
-```
+
 
 ### `*` - splat operator
 
@@ -78,7 +79,7 @@ x, y = 1, 2, 3 # 3 is not assigned
 x, y, z = 1, *[2, 3]
 x, *y = 1, 2, 3 # x = 1, y = [2, 3]
 *x, y = 1, 2, 3 # x = [1, 2], y = 3
-```
+
 
 ### Loops
 
@@ -90,7 +91,7 @@ The loop variables of a for loop are not local to the loop, they remain defined 
 for i in arr do
   puts i
 end
-```
+
 
 The only difference between the for version of the loop and the each version is that the block of code that follows an iterator does define a new variable scope.
 
@@ -98,7 +99,7 @@ The only difference between the for version of the loop and the each version is 
 1..10.each do |i|
   puts i
 end
-```
+
 
 ```ruby
 loop do
@@ -106,27 +107,27 @@ loop do
   # next
   break
 end
-```
+
 
 ```ruby
 while x > 0:
   puts x
   x = x - 1
 end
-```
+
 
 ```ruby
 until x < 0:
   puts x
   x -= 1
 end
-```
+
 
 Inline:
 ```ruby
 x = 0
 puts x = x + 1 while x < 10
-```
+
 
 Break out from nested loops:
 ```ruby
@@ -139,7 +140,7 @@ for a in aa do
     end
   end
 end
-```
+
 
 !!! tip "Throw and return value"
     If `throw` is called, then the return value of the corresponding `catch` is, by default, nil. You can, however, specify an arbitrary return value for catch by passing a second argument to `throw`.
@@ -152,18 +153,18 @@ $global_var = 1
 @@class_variable = 1
 @instance_variable = 1
 local_variable = 1
-```
+
 
 Parallel assignment:
 
 ```ruby
 x, y = 1, 2
-```
+
 
 Constans can be defined outside class:
 ```ruby
 MyClass::MY_CONST = 1
-```
+
 
 Instance and class variables are encapsulated and effectively private, and constants are effectively public.
 
@@ -191,7 +192,7 @@ Methods are always invoked on an object (the receiver, and methods are called me
 def say
   # method body goes here
 end
-```
+
 
 When a method is defined outside a class or module, it is effectively a global function (technically, becomes a private method of the Object class).
 
@@ -204,7 +205,7 @@ end
 def sefl.my_class_method(x)
   # ...
 end
-```
+
 
 Blocks can be passed to methods:
 ```ruby
@@ -215,14 +216,14 @@ end
 take_block do
   puts "Block call"
 end
-```
+
 
 Procs are stored blocks:
 ```ruby
 talk = Proc.new do
   puts "I am talking."
 end
-```
+
 
 Assignment methods:
 ```ruby
@@ -231,14 +232,14 @@ def a=(x):
 end
 
 # my_object.a = 10  # => 11
-```
+
 
 Qustion mark suffix:
 ```ruby
 def can_call?
   true
 end
-```
+
 
 A question mark is used to mark predicates - methods that return a Boolean value.
 
@@ -247,7 +248,7 @@ Exclamation mark suffix: is used to indicate that caution is required with the u
 ```ruby
 def delete!
 end
-```
+
 
 Often exclamation mark is used in mutator method that alters the objects in place.
 Example: `#sort` vs `#sort!`.
@@ -259,13 +260,13 @@ o = 'message'
 def o.printme
   puts self
 end
-```
+
 
 Undefine method:
 
 ```ruby
 undef my_method
-```
+
 
 When method name resolution algorithm fails to find a method, it looks up a method named method_missing instead.
 
@@ -275,7 +276,7 @@ def my_method
 end
 
 alias my_method_new_name my_method
-```
+
 
 Params:
 
@@ -283,7 +284,7 @@ Params:
 def a_method(s, len=10) end
 def a_method(s, *a) end
 def a_method(s:, len: 10) end
-```
+
 
 Methods can be represented as instances of the Method class:
 
@@ -293,7 +294,7 @@ p = m.to_proc
 
 unbound_m = Fixnum.instance_method('+')
 unbound_m.bind(2).call
-```
+
 
 Methods are not closures. The only binding is self - the object on which the method is to be invoked.
 
@@ -306,14 +307,14 @@ Eval private methods from outside:
 obj.send(:abc)
 obj.public_send(:abc)
 obj.instance_eval { ... }
-```
+
 
 Chaining (overriding methods with original call):
 ```ruby
 def my_method(a, b)
   super(a, b + 1)
 end
-```
+
 
 If you use super without arguments (bare keywords) - then all the arguments that were passed to the current method are passed to the superclass method.
 
@@ -331,13 +332,13 @@ elsif a == 2
 else
   puts 'another'
 end
-```
+
 
 ```text
 && -> and
 || -> or
 ! - not
-```
+
 
  Ternary operator:
  ```ruby
@@ -348,7 +349,7 @@ Statement (or expression) modifier:
 ```ruby
 code if expression
 code unless expression
-```
+
 
 #### Altering control flow
 
@@ -382,7 +383,7 @@ when 2
 else
   puts 3
 end
-```
+
 
 ```ruby
 case
@@ -391,7 +392,7 @@ case
   when x == 2 then
     'two'
 end
-```
+
 
 #### `===` - case equality
 
@@ -402,7 +403,7 @@ For some classes, `===` is a membership or matching operator.
 /\d+/ === '123'
 String === 's'
 :s === 's'
-```
+
 
 #### `<=>` operator
 
@@ -410,7 +411,7 @@ String === 's'
 1 <=> 5 # -1
 5 <=> 5 # 0
 9 <=> 5 # 1
-```
+
 
 ### Input/Output
 
@@ -418,18 +419,18 @@ String === 's'
 puts 'Hello!'  # prints the string and appends a newline (unless already ends with a newline)
 print 'Hello!'  # prints the string (without appending a newline)
 p 'Hello!'  # same a puts + converts objects to string (more programmer friendly)
-```
+
 
 Program args:
 ```ruby
 x = ARGV[0]
-```
+
 
 ### Threads
 
 ```ruby
 Thread.new { File.read(f) }
-```
+
 
 The key feature of Queue that makes it suitable for concurrent programming is that the deq method blocks if the queue is empty and waits until the producer thread adds a value to the queue.
 
@@ -441,7 +442,7 @@ Ruby's fibers are coroutines (semicoroutines), they are no lightweight threads.
 f = Fiber.new do |message|
   message = Fiber.yield('Hello!')
 end
-```
+
 
 ### Introspection (reflection)
 
@@ -449,7 +450,7 @@ Set instance variable:
 ```ruby
 obj.instance_variable_set(:@a, 0)
 Math.const_set(:EPI, Math::E * Math::PI)
-```
+
 
 ```ruby
 o.public_methods
@@ -460,7 +461,7 @@ def add_method(c, m, &b)
     define_method(m, &b)
   }
 end
-```
+
 
 Module, Class and Object implement several callback methods, or hooks. These methods are not defined by default.
 Using hooks we can extend Ruby's behavior when classes are subclassed, when modules are included, or when methods are defined.
@@ -474,7 +475,7 @@ o.class
 o.class.superclass
 o.instance_if? String # o.class == String
 o.is_a? String # instance of any subclass os String, String === o
-```
+
 
 Example of metaprogramming in ruby: attr_readers/attr_accessor.
 
@@ -484,7 +485,7 @@ class Point
   # attributes :x => 0, :y => 0
   attributes x:0, y:0  # Ruby 1.9
 end
-```
+
 
 The goal of metaprogramming in Ruby is often the creation of domain-specific languages, or DSLs.
 
@@ -493,25 +494,25 @@ The goal of metaprogramming in Ruby is often the creation of domain-specific lan
 Run inline:
 ```bash
 ruby -e 'puts "Hello world!"'
-```
+
 
 ```bash
 irb  # interactive ruby
 irb --simple-prompt
 pry
-```
+
 
 [pry](https://github.com/pry/pry)
 
 ```ruby
 require 'pry'
 binding.pry
-```
+
 
 Documentation:
 ```bash
 ri Math::sqrt
-```
+
 
 ## Types
 
@@ -549,7 +550,7 @@ Ruby's arrays are untyped and mutable.
 Last element:
 ```ruby
 s[s.length - 1]
-```
+
 
 `%w` and `%W` - array literals.
 
@@ -560,19 +561,19 @@ Array.new(3) # [nil, nil, nil]
 Array.new(2, 0) # [0, 0]
 
 Array.new(3) {|i| i + 1} # [1, 2, 3]
-```
+
 
 Ranges:
 ```ruby
 x..y # Range.new(x, y)
 x...y # Range.new(x, y, true)
-```
+
 
 ```ruby
 a[-2..-1] # last 2 elements
 
 a[-2,2] = nil # delete last 2 elements
-```
+
 
 Operations:
 ```ruby
@@ -581,7 +582,7 @@ a & b
 
 # clear, compact!, delete_if, each_index, empty?, fill, flatten!, include?, 
 # index, join, pop, push, reverse,reverse_each, rindex, sort, sort!, uniq!, unshift.
-```
+
 
 ### Set
 
@@ -593,7 +594,7 @@ Set.new(1..5)
 Set.new(1. 2, 3)
 
 s.subset? t
-```
+
 
 ### Strings
 
@@ -633,14 +634,14 @@ HEREDOC
 
 # Python 2 style
 "%d %s" % [3, 'rubies']
-```
+
 
 Embedded documents as multiline comments:
 ```ruby
 =begin Multiline comment ...
 Another line ...
 =end
-```
+
 
 Multiline:
 ```ruby
@@ -653,14 +654,14 @@ without_newline = 'line 1 '\
 a = "This string literal
 has two lines \
 but is written on three."
-```
+
 
 Double quoted `"` string literals support `\t`, `\n`, `\r`, `\"`.
 
 Unicode:
 ```ruby
 "\u{A5}"  # same as \u00A5
-```
+
 
 Edit string:
 ```ruby
@@ -669,7 +670,7 @@ s[-1] = 'x'
 s[5,0] = 'y' # insert without deleting
 
 s[5,2] = '' # delete 2 positions 
-```
+
 
 Ranges:
 ```ruby
@@ -677,7 +678,7 @@ s[0,2]  # first 2 letters (psition, length)
 
 s[2..3] # positions 2 and 3
 s[2...3] # position 2 only
-```
+
 
 Contains:
 ```ruby
@@ -686,7 +687,7 @@ s['x'] # contails L
 while(s['x'])
   s['x'] = 'y'
 end
-```
+
 
 Regular expressions:
 ```ruby
@@ -695,12 +696,12 @@ Regular expressions:
 "powerball" =~ /b/
 
 s[/[aeiou]/] = '*' # replace
-```
+
 
 `sub` (substitute - replace the first occurrence), `gsug` (global substitute - replace all), `sub!`, `gsub!` for replace:
 ```ruby
 phone.sub!(/#.*$/, '')
-```
+
 
 Regular expression modifier characters:
 
@@ -735,7 +736,7 @@ $ - End of line.
 \A - Beginning of string.
 \z or \Z (before newline) - End of string.
 \G - Last match finished.
-```
+
 
 Exclude characters:
 `[^-. ]` - all substrings that don't contain `-`, `.`, or a space.
@@ -744,23 +745,23 @@ Conversion:
 ```ruby
 "1".to_i
 "1.1".to_f
-```
+
 
 Character literals:
 ```
 ?A # equal to char('A')
-```
+
 
 Succ method:
 ```ruby
 'a'.succ # 'b'
 'b'.succ # 'c'
-```
+
 
 Encodings:
 ```ruby
 Encoding.list
-```
+
 
 ### Numbers
 
@@ -791,7 +792,7 @@ Examples:
 a = 1
 Float(a)
 a.to_f
-```
+
 
 ### Symbols
 
@@ -807,14 +808,14 @@ name = 'my_symbol'
 :"#{name}"
 
 %s[""] # :'"'
-```
+
 
 ### Hashes
 
 ```ruby
 { "a" => 1 }
 { a: 1 } # same as { :a => 1 }, just colon moves to the end of the hash key and replaces the arrow.
-```
+
 
 Hash keys must be hashable (should have method `hash`, returns fixnum hashcode).
 
@@ -830,7 +831,7 @@ h.invert # swap keys and values
 h.clear
 h.each_key
 h.each_value
-```
+
 
 #### Strings as keys
 
@@ -845,7 +846,7 @@ Consider making a private copy or calling the freeze method. If you must use mut
 ```ruby
 (1..2)  # includes ending values
 (1...2)  # excludes ending values
-```
+
 
 `==` test equally.
 `===` for matching and membership.
@@ -855,7 +856,7 @@ Consider making a private copy or calling the freeze method. If you must use mut
 ```ruby
 -> { 1 + 1 }
 ->(a) { a + 1 }
-```
+
 
 #### Procs vs Lambdas
 
@@ -876,7 +877,7 @@ p.(1, 2)
 
 lambda?(p) # false
 lambda?(l) # true
-```
+
 
 `proc` method in `lambda` in 1.8 and `Proc.new` in 1.9.
 
@@ -898,7 +899,7 @@ Use `{ }` or `do/end`.
 do |var|
   put 123
 end
-```
+
 
 Accept block:
 
@@ -906,18 +907,18 @@ Accept block:
 def print_message(&b)
   puts(b.call)
 end
-```
+
 
 Check if block given:
 
 ```ruby
 yield y if block_given? # iterator?
-```
+
 
 Block local variables:
 ```ruby
 1.upto(4) { |x; y, z| p x } # y and z - are block local variables
-```
+
 
 #### Proc object
 
@@ -939,7 +940,7 @@ Customer = Struct.new(:name, :address) do
 end
 
 dave = Customer.new("Dave", "123 Main")
-```
+
 
 Making immutable:
 ```ruby
@@ -947,7 +948,7 @@ Point = Struct.new('Point', :x, :y)
 class Point
   undef x=, y=, []=
 end
-```
+
 
 Open and add a method:
 ```ruby
@@ -958,7 +959,7 @@ class << Point
     Point.new(x, y)
   end
 end
-```
+
 
 ### Enumerable
 
@@ -972,14 +973,14 @@ Rhyming methods:
 Turn array into enumerable when passing for processing:
 ```ruby
 process(data.to_enum)
-```
+
 
 Usage:
 ```ruby
 for line, number in text.each_line.with_index
   p "#{number + 1}: #{line}"
 end
-```
+
 
 Turning externally iterable into an Enumerable:
 
@@ -991,7 +992,7 @@ module Iterable
     loop { yield self.next }
   end
 end
-```
+
 
 ### Iterators
 
@@ -1000,7 +1001,7 @@ In Ruby, the iterator method is in control and "pushes" values to the block that
 ```ruby
 numbers = [1, 2, 3]
 numbers.each { |n| puts n }
-```
+
 
 Use `next` instead of return if want to return specific value(s) from the block.
 
@@ -1023,7 +1024,7 @@ else
 ensure
   # code that always runs
 end
-```
+
 
 !!! tip "return in ensure"
     If an `ensure` clause includes a `return` statement, then exception propagation stops, and the containing method returns. `break` and `next` have similar effects.
@@ -1039,7 +1040,7 @@ The third argument is backtrace (array if strings).
 ```ruby
 raise ValueError
 raise ValueError, 'value error'
-```
+
 
 `$!` refers to the Exception object that is being handled.
 
@@ -1051,7 +1052,7 @@ rescue Exception # catch all
 rescue StandardError # retry
   retry
 end
-```
+
 
 The code in the ensure clause is guaranteed to run, but it does not affect the value of the begin statement.
 
@@ -1074,7 +1075,7 @@ end
 # or
 
 MyCls.new.extend(Enumerable)
-```
+
 
 It is legal to include one module into another.
 
@@ -1093,7 +1094,7 @@ end
 
 Base64.encode(data)
 Base64::MY_CONST
-```
+
 
 Creating modules like Math or Kernel: define your methods as instance methods of the module. Then use module_function to convert those methods to "modulefunctions" (module_function is similar to private, protected).
 
@@ -1126,7 +1127,7 @@ class Customer
       @cust_addr = addr
    end
 end
-```
+
 
 Class can be reopened (take existing class and open it).
 
@@ -1136,7 +1137,7 @@ Extending a class:
 class Sequence
   include Enumerable
 end
-```
+
 
 Overriding methods:
 
@@ -1146,7 +1147,7 @@ end
 
 def *(factor)
 end
-```
+
 
 `new` method - allocates memory to hold the new object, initializes the state of that newly allocated "empty" object by invoking `initialize` method with `new` arguments.
 
@@ -1165,12 +1166,12 @@ class Value
     @x = value
   end
 end
-```
+
 
 Using setter within class:
 ```ruby
 self.x=1
-```
+
 
 attr_reader/attr_accessor can be used:
 ```ruby
@@ -1181,7 +1182,7 @@ class Value
     @x = x
   end
 end
-```
+
 
 Class attr_reader/attr_accessor:
 ```ruby
@@ -1190,7 +1191,7 @@ class Value
     attr_reader :a, :b
   end
 end
-```
+
 
 If a subclass assigns a value to a class variable already in use by a superclass, it does not create its own private copy of the class variable, but instead alters the value seen by the superclass.
 
@@ -1205,7 +1206,7 @@ class Dog
     self  # Dog
   end
 end
-```
+
 
 #### Singleton
 
@@ -1225,7 +1226,7 @@ class ExampleState
 end
 
 ExampleState.instance.inc
-```
+
 
 #### Memoization
 
@@ -1233,7 +1234,7 @@ ExampleState.instance.inc
 def something
   @something = Something.new()
 end
-```
+
 
 #### Copy
 
@@ -1241,7 +1242,7 @@ Shallow copy:
 ```ruby
 obj.clone
 obj.dup
-```
+
 
 If an object defines `initialize_copy` - it will be used to create a copy.
 
@@ -1253,7 +1254,7 @@ Dup: does not copy singleton methods of an object.
 Deep copy:
 ```ruby
 Marshal.load(Marshal.dump(o))
-```
+
 
 #### Subclassing
 
@@ -1315,13 +1316,13 @@ Deadlock - is the condition that occurs when all threads are waiting to acquire 
 Time.now # (same as Time.new)
 Time.local(2007, 7, 8)
 Time.utc(2007, 7, 7, 9, 10)
-```
+
 
 #### Files
 
 ```ruby
 File.unlink('fname') # remove file
-```
+
 
 #### Threads
 
@@ -1348,7 +1349,7 @@ rspec spec/folter/test_spec.rb
 rspec spec/folder/test_spec.rb --example(-e) name
 rspec spec/folder/test_spec.rb:25 (code line)
 rspec --only-failures (requires config)
-```
+
 
 Pending:
 ```ruby
@@ -1356,7 +1357,7 @@ if 'does something' do
   pending 'Not implemented yet ...'
   expect().to be()
 end
-```
+
 
 ##### Testing
 
@@ -1367,7 +1368,7 @@ Expect:
 Arrays:
 ```ruby
 expect().to match_array
-```
+
 
 `describe` and `it` - organization.
 `expect` - verification.

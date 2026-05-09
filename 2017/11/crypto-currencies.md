@@ -1,11 +1,10 @@
-labels: Draft
-        Blockchain
-        Finance
-        Crypto
+---
+tags: [draft, blockchain, finance, crypto]
 created: 2017-11-05T14:19
 modified: 2018-07-28T11:16
 place: Phuket, Thailand
 comments: true
+---
 
 # Crypto currencies
 
@@ -13,7 +12,7 @@ comments: true
 
 It’s just the economic miracle of mathematics, cryptography and computer science.
 
-[Crypto currencies index](/pages/crypto/index)
+[[pages/crypto/index|Crypto currencies index]]
 
 ## To consider
 

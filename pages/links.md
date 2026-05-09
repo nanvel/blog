@@ -1,6 +1,8 @@
-labels: Pages
+---
+tags: [pages]
 created: 2014-01-01T00:00
 modified: 2021-10-02T14:32
+---
 
 # Links storage
 

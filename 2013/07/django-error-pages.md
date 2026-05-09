@@ -1,8 +1,9 @@
-labels: Blog
-        Django
+---
+tags: [blog, django]
 created: 2013-07-20T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Django project error pages
 
@@ -11,7 +12,7 @@ comments: true
 Snippets error pages implementation for django project: ```404.html``` and ```500.html``` templates, custom error views, urls configs, test.
 
 ```project/apps/core/tests/test_views.py```:
-```python
+python
 from django.test import TestCase
 from django.test.client import RequestFactory
 
@@ -35,7 +36,7 @@ class TestErrorPages(TestCase):
         self.assertIn('500 Internal Server Error', unicode(response))
 ```
 
-```project/apps/core/views.py```:
+project/apps/core/views.py```:
 ```python
 from django.http import HttpResponseServerError, HttpResponseNotFound
 from django.template import Context
@@ -52,16 +53,16 @@ def handler404(request, template_name='404.html'):
     t = get_template(template_name)
     ctx = Context({})
     return HttpResponseNotFound(t.render(ctx))
-```
+
 
 Add to ```project/urls.py```:
 ```python
 handler500 = 'project.apps.core.views.handler500'
 handler404 = 'project.apps.core.views.handler404'
-```
+
 
 ```project/templates/404.html```:
-```html
+html
 <!DOCTYPE html>
 <html lang="en">
     <head>

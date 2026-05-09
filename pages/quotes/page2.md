@@ -1,6 +1,8 @@
-labels: Quotes
+---
+tags: [quotes]
 created: 2017-09-14T10:20
 modified: 2022-01-15T14:06
+---
 
 # Quotes page 2
 

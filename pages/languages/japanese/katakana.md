@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-07-10T20:35
+---
 
 # Katakana
 

@@ -1,8 +1,9 @@
-labels: Projects
-        Blog
+---
+tags: [projects, blog]
 created: 2023-01-21T13:15
 modified: 2025-08-27T10:56
 place: Bangkok, Thailand
+---
 
 # Cipher - a backtesting framework
 

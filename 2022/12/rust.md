@@ -1,9 +1,10 @@
-labels: Draft
-        Rust
+---
+tags: [draft, rust]
 created: 2022-12-09T23:37
 modified: 2024-12-25T16:17
 place: Bangkok, Thailand
 comments: false
+---
 
 # Rust notes
 
@@ -49,7 +50,7 @@ cargo new <project name>
 caego update  # update dependencies
 cargo run
 cargo publish  # publish a library to crates.io
-```
+
 
 ## Rust
 
@@ -61,19 +62,19 @@ rustc --version
 
 rustc main.rs
 ./main
-```
+
 
 Open the Rust book locally:
 ```bash
 rustup docs --book
-```
+
 
 ### Output
 
 ```rust
 println!("Output ...")
 eprintln!("Error ...")
-```
+
 
 ### Input
 
@@ -84,7 +85,7 @@ let mut guess = String::new();
 io::stdin().
     .read_line(&mut guess)
     .expect("Failed to read line!")
-```
+
 
 ### Variables
 
@@ -92,7 +93,7 @@ Variables are immutable by default.
 
 ```rust
 let apples = 5;
-```
+
 
 ### Types
 
@@ -100,7 +101,7 @@ let apples = 5;
 
 ```text
 i8, i32 (default), u32, i64, u64
-```
+
 
 Handling overflow:
 - `wrapping_*`
@@ -119,7 +120,7 @@ let s = String::new();
 let s = String::from("initial contents");
 let s = "initial contents".to_string();
 let s = r"c:\..."  // raw string
-```
+
 
 Concat:
 
@@ -133,19 +134,19 @@ let s2 = String::from("tac");
 let s3 = String::from("toe");
 
 let s = format!("{s1}-{s2}-{s3}");
-```
+
 
 Iterate:
 
 ```rust
 for c in "Word".chars() {}
 for b in "Word".bytes() {}
-```
+
 
 String slice (stir):
 ```
 &str
-```
+
 
 String literals are slices.
 
@@ -155,7 +156,7 @@ String literals are slices.
 let tup: (i32, f64, u8) = (600, 6.4, 1);
 
 let five_hundred = tup.0
-```
+
 
 Zero-tuple, or unit type: `()`.
 
@@ -167,7 +168,7 @@ Rust uses unit type where there is no meaningful value to carry.
 let a: [i32, 5] = [1, 2, 3, 4, 5];
 let a = [3; 5];  // [3, 3, 3, 3, 3]
 let i = a[0];
-```
+
 
 References:
 ```rust
@@ -176,7 +177,7 @@ let a = [1, 2, 3, 4, 5];
 let slice = &a[1..3];
 
 assert_eq!(slice, &[2, 3]);
-```
+
 
 Methods like filtering, sorting, etc. are provided as methods on slices. Rust implicitly converts a reference to an array to a slice.
 
@@ -191,7 +192,7 @@ Box (allocates memory on the heap):
 let t = (12, "eggs")
 let b = Box::new(t)  // Box<(i32, &str)>
 // when b goes out of scope - memory freed on heep
-```
+
 
 #### Smart pointers
 
@@ -222,7 +223,7 @@ let user1 = User {
     active: true,
     sign_in_count: 1,
 };
-```
+
 
 !!! note "Private and public fields"
     A struct's fields, even private fields, are accessible throughout the module where the struct is declared, and its submodules. Outside the module, only public fields are accessible.
@@ -239,12 +240,12 @@ fn build_user(email: String, username: String) -> User {
         sign_in_count: 1,
     }
 }
-```
+
 
 Tuple struct:
 ```rust
 struct Color(i32, i32, i32);
-```
+
 
 Update:
 ```rust
@@ -252,7 +253,7 @@ let user2 = User {
     email: String::from("another@example.com"),
     ..user1
 };
-```
+
 
 Methods:
 ```rust
@@ -267,7 +268,7 @@ impl Rectangle {
         self.width * self.height
     }
 }
-```
+
 
 Associated functions (clss methods):
 ```rust
@@ -281,7 +282,7 @@ impl Rectangle {
 }
 
 let sq = Rectangle::square(3);
-```
+
 
 #### Enum
 
@@ -301,13 +302,13 @@ impl Message {
 
 let m = Message::Write(String::from("Test"));
 m.call()
-```
+
 
 `Option` enum:
 ```python
 let some_number = Some('a') // Option<char>
 let absent_number: Option<i32> = None;
-```
+
 
 #### Collections
 
@@ -321,7 +322,7 @@ dict -> HashMap<K, V> where K: Eq + Hash
 - -> BTreeMap<K, V> where K: Ord
 set -> HashSet<T> where T: Eq, Hash
 - -> BTreeSet<T> where T: Ord
-```
+
 
 #### Vectors
 
@@ -339,14 +340,14 @@ let does_not_exist = primes.get(100);
 for i in &primes {
     println!("{i}");
 }
-```
+
 
 Vectors can store enumes.
 
 Buffer large enough to hold the items:
 ```rust
 Vec::with_capacity(1000)
-```
+
 
 #### Hash Map
 
@@ -364,7 +365,7 @@ let score = scores.get(&team_name).copied().unwrap_or(0);
 for (key, value) in &scores {
     println!("{key}: {value}");
 }
-```
+
 
 `scores.insert` - overrides.
 `scores.entry` - inserts if not present.
@@ -375,14 +376,14 @@ for word in text.split_whitespace() {
     let count = map.entry(word).or_insert(0);
     *count += 1;
 }
-```
+
 
 #### Custom types
 
 ```rust
 type Kilometers = i32;
 type Thunk = Box<dyn Fn() + Send + 'static>;
-```
+
 
 #### Never type
 
@@ -393,7 +394,7 @@ Never returns, divergent function:
 fn bar() -> ! {
     // --snip--
 }
-```
+
 
 #### Function type
 
@@ -414,7 +415,7 @@ fn main() {
 
     println!("The answer is: {answer}");
 }
-```
+
 
 Unlike closures, `fn` is a type rather than a trait.
 
@@ -423,14 +424,14 @@ Closure can be returned:
 fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
     Box::new(|x| x + 1)
 }
-```
+
 
 ### Expressions
 
 Statement:
 ```rust
 let y = 1;
-```
+
 
 Expression inside `{}`:
 ```rust
@@ -438,7 +439,7 @@ let y = {
     let x = 0;
     x + 1
 }
-```
+
 
 Expressions do not end with `;`.
 
@@ -449,7 +450,7 @@ match (T:from_str(&s[..index]), T::from_str(&s[index + 1..])) {
     (Ok(l), Ok(r)) => Some((l, r)),
     _ => None,
 }
-```
+
 
 ### Loops
 
@@ -463,7 +464,7 @@ All Rust functions are thread-safe.
 def five() -> i32 {
     5
 }
-```
+
 
 ### Closures
 
@@ -478,7 +479,7 @@ fn  add_one_v1   (x: u32) -> u32 { x + 1 }
 let add_one_v2 = |x: u32| -> u32 { x + 1 };
 let add_one_v3 = |x|             { x + 1 };
 let add_one_v4 = |x|               x + 1  ;
-```
+
 
 Closures can capture values from their environment in three ways, which directly map to the three ways a function can take a parameter: borrowing immutably, borrowing mutably, and taking ownership. The closure will decide which of these to use based on what the body of the function does with the captured values.
 
@@ -503,7 +504,7 @@ assert_eq!(v1_iter.next(), Some(&1));
 assert_eq!(v1_iter.next(), Some(&2));
 assert_eq!(v1_iter.next(), Some(&3));
 assert_eq!(v1_iter.next(), None);
-```
+
 
 - `iter` method produces an iterator over immutable references
 - `into_iter` iterator that takes ownership and returns owned values
@@ -515,7 +516,7 @@ let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
 assert_eq!(v2, vec![2, 3, 4]);
 
 shoes.into_iter().filter(|s| s.size == shoe_size).collect()
-```
+
 
 ### Library
 
@@ -535,7 +536,7 @@ A package can have multiple binary crates by placing files in the src/bin direct
 src/main.rs  // binary with the package name
 src/lib.rs  // lib with the package name
 src/bin/*.rs  // other binaries
-```
+
 
 #### Declare a module
 
@@ -557,7 +558,7 @@ use crate::proteins::AminoAcid;
 use ::image::Puxels;  // image crate
 use self::image::Sampler;  // image module
 pub use self::image::Sampler;
-```
+
 
 Naming a module a `prelude` is just a convention that tells users it's ment to be imported using `*`.
 
@@ -578,7 +579,7 @@ Modules can also define statics and constants.
 ```rust
 pub const ROOM_TEMPERATURE: f64 = 20.0;
 pub static ROOM_TEMPERATURE: f64 = 20.0;
-```
+
 
 Constant - similar to `c++ #define` (compiled into code in every place it is used).
 
@@ -607,14 +608,14 @@ enum Option<T> {
     Some(T),
     None,
 }
-```
+
 
 Do not unwind stack on panic:
 
 ```toml
 [profile.release]
 panic = 'abort'
-```
+
 
 Error propagation with `?`:
 ```rust
@@ -628,7 +629,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
     Ok(username)
 }
-```
+
 
 `?` can also be used on Option.
 
@@ -645,7 +646,7 @@ Traits are similar to a feature often called interfaces in other languages, alth
 For any type T that implements the FromStr trait.
 ```rust
 <T: FromStr>
-```
+
 
 ```rust
 pub trait Summary {
@@ -657,7 +658,7 @@ impl Summary for NewsArticle {
         format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
 }
-```
+
 
 With associated types, we don’t need to annotate types because we can’t implement a trait on a type multiple times:
 ```rust
@@ -666,7 +667,7 @@ impl Iterator for Counter {
 
     fn next(&mut self) -> Option<Self::Item> {}
 }
-```
+
 
 ### Lifetimes
 
@@ -684,7 +685,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
         y
     }
 }
-```
+
 
 The function signature now tells Rust that for some lifetime `'a`, the function takes two parameters, both of which are string slices that live at least as long as lifetime `'a`.
 
@@ -695,12 +696,12 @@ An instance of ImportantExcerpt can’t outlive the reference it holds in its pa
 struct ImportantExcerpt<'a> {
     part: &'a str,
 }
-```
+
 
 All string literals have the 'static lifetime, which we can annotate as follows:
 ```rust
 let s: &'static str = "I have a static lifetime.";
-```
+
 
 Lifetime and generic:
 ```rust
@@ -721,7 +722,7 @@ where
         y
     }
 }
-```
+
 
 ### Generics
 
@@ -742,7 +743,7 @@ impl Point<f32> {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
     }
 }
-```
+
 
 The type `Point<f32>` will have a distance_from_origin method; other instances of `Point<T>` where T is not of type f32 will not have this method defined.
 
@@ -772,7 +773,7 @@ where
 {}
 
 fn returns_summarizable() -> impl Summary {} // doesn't work for multiple types returned
-```
+
 
 #### Turbofish
 
@@ -782,7 +783,7 @@ fn returns_summarizable() -> impl Summary {} // doesn't work for multiple types 
 let a = [1, 2, 3];
 
 let doubled = a.iter().map(|x| x * 2).collect::<Vec<i32>>();
-```
+
 
 ### Attributes
 
@@ -799,7 +800,7 @@ Examples:
 assert!
 debug_assert!
 format!("Example {}", arg)
-```
+
 
 Types:
 
@@ -839,11 +840,11 @@ mod tests {
         assert_eq!(result, 4);
     }
 }
-```
+
 
 ```shell
 cargo test
-```
+
 
 Macros:
 
@@ -863,12 +864,12 @@ fn it_works() -> Result<(), String> {
         Err(String::from("two plus two does not equal four"))
     }
 }
-```
+
 
 Running a single test:
 ```shell
 cargo test example_test
-```
+
 
 We can run all the tests in a module by filtering on the module’s name.
 
@@ -917,7 +918,7 @@ cargo new --lib common
 cargo new backend
 cargo new frontend
 cargo workspaces init
-```
+
 
 ## Vocabulary
 

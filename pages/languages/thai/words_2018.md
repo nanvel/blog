@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2018-03-26T20:29
 modified: 2018-09-12T21:34
+---
 
 # Words 2018
 

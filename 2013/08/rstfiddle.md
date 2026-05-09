@@ -1,9 +1,9 @@
-labels: Blog
-        Flask
-        Projects
+---
+tags: [blog, flask, projects]
 created: 2013-08-31T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # rSTfiddle site wrote using Flask web microframework
 

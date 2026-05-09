@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2023-01-14T19:11
 modified: 2023-01-14T19:11
 place: Bangkok, Thailand
+---
 
 # 2022 Summary
 

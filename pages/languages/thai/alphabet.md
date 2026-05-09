@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2016-09-13T17:22
 modified: 2018-04-01T09:59
+---
 
 # Alphabet
 

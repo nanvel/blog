@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-07-16T18:26
+---
 
 # Pronunciation
 

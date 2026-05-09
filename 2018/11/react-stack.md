@@ -1,14 +1,14 @@
-labels: Draft
-        JS
-        React
+---
+tags: [draft, js, react]
 created: 2018-11-18T20:40
 modified: 2018-11-18T20:40
 place: Thailand, Phuket
 comments: true
+---
 
 # React stack
 
-[react notes](/2016/05/react-notes)
+[[2016/05/react-notes|react notes]]
 
 To learn about:
 - v4 vs v5
@@ -36,7 +36,7 @@ fetch('http://...', {
 	},
 	body: JSON.stringify(...)
 })
-```
+
 
 ## Links
 

@@ -1,9 +1,10 @@
-labels: Draft
-        Electronics
+---
+tags: [draft, electronics]
 created: 2022-04-23T21:52
 modified: 2022-04-23T21:52
 place: Phuket, Thailand
 comments: false
+---
 
 # Electronics
 

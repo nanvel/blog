@@ -1,9 +1,9 @@
-labels: DynamoDB
-        Tornado
-        Asynchronous
+---
+tags: [dynamo-db, tornado, asynchronous]
 created: 2015-03-01T15:23
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 1.2: Asynchronous api calls (tornado)
 
@@ -16,7 +16,7 @@ pip freeze
 botocore==0.65.0
 tornado==4.1
 tornado-botocore==0.1.6
-```
+
 
 Updated User Wallet example:
 ```python
@@ -283,7 +283,7 @@ if __name__ == '__main__':
     # WARNING:root:user_wallet table already exists.
     # {'Item': {'user_id': {'S': 'badff6d6-41d4-46fb-ae74-ba19a2e69cb1'}, 'balance': {'N': '100'}}, 'ResponseMetadata': {'RequestId': '469JL4V0C9GQQJUHCF512VUGVNVV4KQNSO5AEMVJF66Q9ASUAAJG'}}
     # {'user_id': 'badff6d6-41d4-46fb-ae74-ba19a2e69cb1', 'balance': 100}
-```
+
 
 Tornado application:
 ```python
@@ -323,4 +323,4 @@ if __name__ == "__main__":
 # Updated
 # nanvel-air:example_1_2 nanvel$ curl http://localhost:5000/wallet/aa4d10c5-dd78-42ca-a077-3789b52ebbe3
 # 123
-```
+

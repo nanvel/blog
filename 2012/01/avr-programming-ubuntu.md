@@ -1,9 +1,9 @@
-labels: Blog
-        Microcontrollers
-        Linux
+---
+tags: [blog, microcontrollers, linux]
 created: 2012-01-05T00:00
 place: Alchevs'k, Ukraine
 comments: true
+---
 
 # AVR-microcontroller programming under Ubuntu
 
@@ -27,7 +27,7 @@ As for software, You'll need a compiler for AVR C and a program to communicate w
 
 ```bash
 apt-cache search avr
-```
+
 
 ```
 avr-evtd - AVR watchdog daemon for Linkstation/Kuroboxes
@@ -52,20 +52,20 @@ sdcc-libraries - Small Device C Compiler (libraries)
 simulavr - Емулятор мікроконтролерів Atmel
 uisp - Маленький внутрішньосхемний програматор для мікроконтролерів Atmel AVR
 arduino - AVR development board IDE and built-in libraries
-```
+
 
 Install avr-gcc compiler and libraries:
 
 ```bash
 sudo apt-get update
 sudo apt-get install avr-libc
-```
+
 
 To work with USB-ASP program loader we need avrdude package:
 
 ```bash
 sudo apt-get install avrdude
-```
+
 
 Lets write a program and load it to the device. As an example: led flashes once per second. The led is connected to microcontroller's pin 1, and I use a crystal oscillator 4 MHz.
 
@@ -115,30 +115,30 @@ int main()
 
     return 0;
 }
-```
+
 
 Compile:
 ```bash
 avr-gcc -mmcu=atmega8535 -Os -o main.o main.c
-```
+
 
 Here we specify the model of the microcontroller, level of code optimization, file input and output respectively. To view all supported microcontrollers:
 
 ```bash
 avr-gcc --target-help
-```
+
 
 Link:
 ```bash
 avr-objcopy -O ihex main.o main.hex
-```
+
 
 Here we specified the output file type - intel hex, name of the input and output files. If you have multiple source files, then you need to compile each of them and specify all the obtained object files to avr-objcopy.
 
 Load the program into the uc:
 ```bash
 sudo avrdude -p m8535 -c usbasp -U flash:w:main.hex
-```
+
 
 Note the sudo, Ubuntu, by default, will not allow avrdude to work with USB-ports without root privileges (adding rule to /etc/udev/rules.d/ can solve the issue). 
 
@@ -154,22 +154,22 @@ main.o: main.c
     avr-gcc -mmcu=atmega8535 -Os -o main.o main.c
 load: 
     sudo avrdude -p m8535 -c usbasp -U flash:w:main.hex
-```
+
 
 Now we can compile as follows:
 ```bash
 make
-```
+
 
 And upload the program:
 ```bash
 sudo make load
-```
+
 
 Compilling assembler (AVRA):
 ```bash
 avra -I $(INCLUDEDIR) -fI -o $(FILE) $(FILE)
-```
+
 
 <iframe width="480" height="270" src="https://www.youtube.com/embed/PV276wCVX2s" frameborder="0" allowfullscreen></iframe>
 

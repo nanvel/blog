@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2017-08-20T21:55
 modified: 2017-08-20T21:55
+---
 
 # Vocabulary
 

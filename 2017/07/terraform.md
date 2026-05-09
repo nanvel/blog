@@ -1,9 +1,10 @@
-labels: Draft
-        Tools
+---
+tags: [draft, tools]
 created: 2017-07-07T20:12
 modified: 2017-08-19T13:23
 place: Phuket, Thailand
 comments: true
+---
 
 # Terraform notes
 
@@ -55,7 +56,7 @@ variable "<name>" {
 	[default = <default value>]
 	[type = "<type>"]
 }
-```
+
 
 Providing a variable value:
 
@@ -76,7 +77,7 @@ Type options (terrafomr can gues the type):
 output "<name>" {
 	value = <value>
 }
-```
+
 
 ### Data sources
 
@@ -98,7 +99,7 @@ resource "aws_instance" "app" {
 	sudo service myservice start
 	EOF
 }
-```
+
 `user_data` - a script that executes when the server is booting.
 
 ### Don't put terraform state under version control
@@ -131,7 +132,7 @@ resource "aws_s3_bucket" "terraform_state" {
 		prevent_destroy = true
 	}
 }
-```
+
 
 ```bash
 terraform apply
@@ -141,7 +142,7 @@ terraform remote config \
 	-backend-config="key=global/s3/terraform.tfstate" \
 	-backend-config="region=us-east-1" \
 	-backend-config="encrypt=true"
-```
+
 
 ### Project structure and isolation
 
@@ -168,7 +169,7 @@ resource "aws_iam_user" "example" {
     count = 10
 	name = "myuser.${count.index}"
 }
-```
+
 
 Or
 
@@ -177,7 +178,7 @@ resource "aws_iam_user" "example" {
     count = "${length(var.names)}"
 	name = "${element(var.names,count.index)}"
 }
-```
+
 
 ### If statement
 

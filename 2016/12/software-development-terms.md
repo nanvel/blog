@@ -1,15 +1,16 @@
-labels: Blog
-        SoftwareDevelopment
+---
+tags: [blog, software-development]
 created: 2016-12-22T22:25
 modified: 2023-09-05T15:36
 place: Phuket, Thailand
 comments: true
+---
 
 # Software development terms
 
 [TOC]
 
-See also [Principles from software development](/2015/10/principles-software) and [DynamoDB in examples, Example 1.5: Distributed system terms](/2015/06/dynamodb-example-1-5).
+See also [[2015/10/principles-software|Principles from software development]] and [[2015/06/dynamodb-example-1-5|DynamoDB in examples, Example 1.5: Distributed system terms]].
 
 ## Accidental complexity
 
@@ -48,7 +49,7 @@ Code smell - a symptom of bad OO design. Smells are certain structures in the co
 
 ## Complex universal vs simple specific
 
-Vote for simple specific. [KISS](/2015/10/principles-software#kiss).
+Vote for simple specific. [[2015/10/principles-software#kiss|KISS]].
 
 ## Composition vs inheritance
 

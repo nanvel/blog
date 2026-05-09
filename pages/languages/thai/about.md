@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2017-06-07T14:16
 modified: 2022-08-22T10:40
+---
 
 # Thai language
 

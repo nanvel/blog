@@ -1,8 +1,9 @@
-labels: Projects
-        Blog
+---
+tags: [projects, blog]
 created: 2019-04-09T21:44
 modified: 2019-04-21T14:14
 place: Phuket, Thailand
+---
 
 # Crypto/blockchain projects intelligence
 

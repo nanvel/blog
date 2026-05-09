@@ -1,7 +1,8 @@
-labels: Pages
-        Quotes
+---
+tags: [pages, quotes]
 created: 2017-07-22T20:50
 modified: 2017-07-29T12:51
+---
 
 # Quotes
 

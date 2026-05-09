@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-06-08T23:26
+---
 
 # Resources
 

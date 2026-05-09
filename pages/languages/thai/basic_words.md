@@ -1,6 +1,8 @@
-labels: Thai
+---
+tags: [thai]
 created: 2017-10-13T12:21
 modified: 2017-11-12T12:15
+---
 
 # Basic words
 

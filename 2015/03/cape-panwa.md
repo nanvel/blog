@@ -1,8 +1,9 @@
-labels: Blog
-        Places
+---
+tags: [blog, places]
 created: 2015-03-15T12:55
 place: Phuket, Thailand
 comments: true
+---
 
 # Cape Panwa places, Phuket
 

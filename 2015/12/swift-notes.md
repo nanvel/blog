@@ -1,11 +1,10 @@
-labels: Blog
-        Swift
-        Mobile
-        iOS
+---
+tags: [blog, swift, mobile, ios]
 created: 2015-12-27T09:55
 modified: 2016-10-22T10:24
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Swift language notes
 
@@ -34,7 +33,7 @@ $R0: [Any] = 3 values {
   [1] = "Text"
   [2] = 1.2
 }
-```
+
 
 ### Tuple
 
@@ -54,7 +53,7 @@ i: Int = 0
 $R0: Int = 1
   5> a.0
 $R1: Int = 1
-```
+
 
 Perhaps the most powerful use of tuples is the ability to return multiple values from a function.
 
@@ -73,7 +72,7 @@ t: String = ""
   4> (t, _) = a
   5> t
 $R1: String = "Name"
-```
+
 
 ### Array
 
@@ -86,7 +85,7 @@ a: [String] = 3 values {
   [1] = "Two"
   [2] = "Three"
 }
-```
+
 
 Available methods:
 
@@ -101,7 +100,7 @@ Create an empty array:
 a: [String] = 0 values
   2> var b = Array<Int>()
 b: [Int] = 0 values
-```
+
 
 Default value for array:
 ```bash
@@ -113,7 +112,7 @@ a: [Int] = 5 values {
   [3] = 10
   [4] = 10
 }
-```
+
 
 #### Array usage
 
@@ -167,7 +166,7 @@ $R5: [Int] = 4 values {
   [2] = 3
   [3] = 1
 }
-```
+
 
 Iterate:
 ```bash
@@ -191,7 +190,7 @@ a: [Int] = 3 values {
 0 1
 1 2
 2 3
-```
+
 
 ### Set
 
@@ -215,7 +214,7 @@ $R2: Set<Int> = {
   [0] = 2
   [1] = 1
 }
-```
+
 
 Shorter form of initialization:
 ```
@@ -225,7 +224,7 @@ a: Set<Int> = {
   [1] = 3
   [2] = 1
 }
-```
+
 
 #### Set usage
 
@@ -264,7 +263,7 @@ $R0: [String : Int] = 1 key/value pair {
     value = 1
   }
 }
-```
+
 
 Currently only String, Int, Double and Bool data types are suitable for use as keys within s Swift dictionary.
 
@@ -284,7 +283,7 @@ Function is a first-class type.
   3. }
   4> mySum(arg1: 1, arg2: 2)
 $R1: Int = 3
-```
+
 
 !!! attention "Swift 3"
     All labels are required.
@@ -305,7 +304,7 @@ i: String = "Word"
 $R0: String = "Word test"
   7> i
 $R1: String = "Word"
-```
+
 
 Allow to modify parameter value (modification in-place):
 ```bash
@@ -317,7 +316,7 @@ i: String = "Word"
   5> testVarArg(&i)
   6> i
 $R0: String = "Word test"
-```
+
 
 Variable number or arguments:
 ```bash
@@ -331,7 +330,7 @@ Variable number or arguments:
   8.
   8> sumOf(1, 2, 3)
 $R0: Int = 6
-```
+
 A variadic parameter accepts zero or more values of a specified type. A function may have at most one variadic parameter.
 
 Default parameters:
@@ -343,7 +342,7 @@ Default parameters:
 5
   5> testParams()
 0
-```
+
 
 #### Internal and external parameter names
 
@@ -355,7 +354,7 @@ External parameter names:
   4> testParams(externalParam: 1)
 1
   5>
-```
+
 If you provide an external parameter name for a parameter, that external name must always be used when you call the function.
 
 Omitting external parameter names:
@@ -365,7 +364,7 @@ Omitting external parameter names:
   3. }
   4> testParams(1, 2)
 1 2
-```
+
 The first parameter omits its external parameter name by default.
 
 ### Enumeration
@@ -378,7 +377,7 @@ The first parameter omits its external parameter name by default.
   5.
   5> Numbers.One
 $R0: Numbers = One
-```
+
 
 Enumerations can have methods associated with them:
 ```bash
@@ -401,7 +400,7 @@ one: Numbers = One
 0
  16> print(one.to_int())
 1
-```
+
 
 It is possible to use string or floating-point numbers as the raw type of an enumeration:
 ```bash
@@ -411,7 +410,7 @@ It is possible to use string or floating-point numbers as the raw type of an enu
   4.
   4> Numbers.One.rawValue
 $R0: String = "one"
-```
+
 
 Once enum type is known, you can use a shorter dot syntax:
 ```bash
@@ -424,7 +423,7 @@ number: Number = One
   6> number = .Two
   7> number
 $R0: Number = Two
-```
+
 
 You can use shorter dot syntax also in switch statement:
 ```bash
@@ -444,7 +443,7 @@ number: Number = One
  13. }
  14.
 One
-```
+
 
 #### Mutating methods
 
@@ -470,7 +469,7 @@ resolution: Resolution = VGA
 $R0: Resolution = XVGA
  15> resolution.bigger()
 This one is the largest.
-```
+
 
 ### Structure
 
@@ -486,7 +485,7 @@ example: Example = {
   text = "Some text"
   one = 1
 }
-```
+
 
 #### Memberwise Initializers
 
@@ -500,7 +499,7 @@ resolution: Resolution = {
   width = 640
   height = 480
 }
-```
+
 
 #### Mutating methods
 
@@ -527,7 +526,7 @@ $R0: Resolution = {
   width = 320
   height = 240
 }
-```
+
 
 #### Fallible initializer
 
@@ -554,7 +553,7 @@ name: Name? = (name = "ok") {
  15.   print("Fail")
  16. }
 Fail
-```
+
 
 ### Class
 
@@ -570,7 +569,7 @@ point: Point = {
   x = 0
   y = 0
 }
-```
+
 
 #### Class vs Structure
 
@@ -613,7 +612,7 @@ point: Point = {
   x = 1
   y = 1
 }
-```
+
 
 Deinit example:
 ```bash
@@ -643,7 +642,7 @@ Deinit.
  15> writeName()
 Name
 Deinit.
-```
+
 
 Swift provides two ways to resolve strong reference cycles when you work with properties of class type: weak references and unowned references.
 
@@ -661,7 +660,7 @@ repl.swift:2:7: note: stored property 'a' without initial value prevents synthes
   5.   }
   6. }
   7.
-```
+
 If your custom type has a stored property that is logically allowed to have "no value" - declare the property with an optional type. Properties with of optional type are automatically initialized with value of nil.
 
 Alternative initializers and initializers without external names:
@@ -688,7 +687,7 @@ Init 1
 testInit2: TestInit = {
   a = 10
 }
-```
+
 
 #### Designated and convenience initializers
 
@@ -721,7 +720,7 @@ Init.
 name: Name = {
   name = "Haruhi"
 }
-```
+
 
 #### Inheritance
 
@@ -751,7 +750,7 @@ namedPoint: NamedPoint = {
   }
   name = "Name"
 }
-```
+
 
 Any class that does not inherit from another class is known as a base class.
 
@@ -779,7 +778,7 @@ point: LongNamePoint = {
 }
  14> print(point.name())
 Long name of (0, 0).
-```
+
 
 Using ```super``` keyword:
 ```
@@ -811,7 +810,7 @@ longName: LongName = {
 $R0: String = "Ryuko Matoi"
  16> longName.name()
 $R1: String = "This is long name of Ryuko Matoi"
-```
+
 
 You can prevent a method, property, pr subscript from being overridden by marking it as final:
 ```bash
@@ -830,7 +829,7 @@ You can prevent a method, property, pr subscript from being overridden by markin
  12. }
  13.
 repl.swift:9:17: error: instance method overrides a 'final' instance method
-```
+
 
 #### Property getter/setter
 
@@ -858,7 +857,7 @@ Get value ...
 Get name for (0, 0)
  16> point.name = "New name"
 Set name
-```
+
 
 #### Identity operators
 
@@ -888,7 +887,7 @@ resolution3: Resolution = {
 }
  10> resolution3 === resolution1
 $R2: Bool = true
-```
+
 
 ```Identical to``` (```===```) vs ```Equal to``` (```==```): ```Identical to``` means that two constants or variables of class type refer to exactly the same class instance, ```Equal to``` means that they are considered equal or equivalent in value.
 
@@ -896,7 +895,7 @@ $R2: Bool = true
 
 A lazy stored property is a property whose initial value is not calculated until the first time it is used.
 
-```bash
+bash
   1> class AnotherCls {
   2.   init() {
   3.     print("AnotherCls init ...")
@@ -923,7 +922,7 @@ $R0: AnotherCls = {}
 
 Classes, structures and anumerations can define computed properties, which do not actually store a value, they provide a getter and an optional setter instead.
 
-```bash
+bash
   1> class Resolution {
   2.   var width = 640
   3.   var height = 480
@@ -953,7 +952,7 @@ Property observers observe and respond to chnges in a property's value.
 
 It is possible to specify name for changed parameter value, default names are newValue and oldValue.
 
-```bash
+bash
   1> class Resolution {
   2.   var width = 640 {
   3.     willSet {
@@ -978,7 +977,7 @@ Old value: 640
 
 Belongs to type, not instance.
 
-```bash
+bash
   1> class Resolution {
   2.   static let dpi = 300
   3.   var width = 640
@@ -999,7 +998,7 @@ $R0: Int = 300
 
 #### Type methods
 
-```bash
+bash
   1> class TestTypeMtehod {
   2.   static let message = "Static method."
   3.   static func type_method() {
@@ -1025,7 +1024,7 @@ Available modifiers:
 
 ### Integer
 
-```bash
+bash
   1> let a: Int = 1
 a: Int = 1
   2> let a: UInt = 1  // Unsigned integer
@@ -1035,7 +1034,7 @@ $R0: Int = 9223372036854775807
 ```
 
 Increment:
-```bash
+bash
   1> var x = 1
 x: Int = 1
   2> x += 1
@@ -1053,7 +1052,7 @@ Double represents a 64-bit floating-point number (precision of at least 15 decim
 Float represents a 32-bit floating-point number (precision can be as little as 6 decimal digits).
 
 Numeric literals:
-```bash
+bash
   1> 10
 $R0: Int = 10
   2> 0b1010
@@ -1076,7 +1075,7 @@ $R10: Int = 10000
 
 #### Empty string
 
-```bash
+bash
   1> let s1 = ""
 s1: String = ""
   2> let s2 = String()
@@ -1089,7 +1088,7 @@ $R1: Bool = true
 
 #### String interpolation
 
-```bash
+bash
   1> var a = 1
 a: Int = 1
   2> "a = \(a)"
@@ -1118,7 +1117,7 @@ Commonly used special characters:
 
 #### Unicode
 
-```bash
+bash
   1> "\u{24}"
 $R0: String = "$"
   2> "\u{1f496}"
@@ -1127,7 +1126,7 @@ $R1: String = "💖"
 
 #### Methods
 
-```bash
+bash
   1> import Foundation
   2> "  Hello  ".trimmingCharacters(in: .whitespacesAndNewlines) 
 $R0: String = "Hello"
@@ -1149,7 +1148,7 @@ $R4: String = "Hello, World"
 
 ### Boolean
 
-```bash
+bash
   1> true
 $R0: Bool = true
   2> 1 == 1
@@ -1161,7 +1160,7 @@ $R2: Bool = false
 ### nil
 
 Special value allows to set an optional variable to a valueless state:
-```bash
+bash
   1> var i: Int? = 10
 i: Int? = 10
   2> i
@@ -1179,7 +1178,7 @@ In Swift, ```nil``` is not a pointer - it is the absence of a value of a certain
 
 For greater code efficiency and execution performance, Apple recommends the use of constants rather than variables whenever possible.
 
-```bash
+bash
   1> let a = 1
 a: Int = 1
   2> a += 1
@@ -1197,14 +1196,14 @@ a: Int = 1
 ```
 
 Multiple variables inline:
-```bash
+bash
   1> var one = 1, two = 2
 one: Int = 1
 two: Int = 2
 ```
 
 Using unicode and reserved words as variable name:
-```bash
+bash
   1> let сім = 7
 сім: Int = 7
   2> var `for` = 1
@@ -1220,7 +1219,7 @@ There are two ways in which the the type may be identified:
 - type annotation at the point of constant or variable declaration
 - type inference - the compiler looks to see what type of value is being assigned at the point that it is initialized and uses that as the type
 
-```bash
+bash
   1> let a: String = "string"
 a: String = "string"
   2> let a = "string"
@@ -1229,7 +1228,7 @@ a: String = "string"
 
 ### Type casting
 
-```bash
+bash
   1> var a = 100
 a: Int = 100
   2> a + 1.2
@@ -1247,7 +1246,7 @@ $R0: Double = 101.2
 ```
 
 or:
-```bash
+bash
   1> var a = 100
 a: Int = 100
   2> Double(a) + 1.2
@@ -1259,7 +1258,7 @@ $R0: Double = 101.2
 Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
 
 Use ```is``` to check whether an instance is of a certain subclass type:
-```bash
+bash
   1> class Cat {}
   2> class Dog {}
   3> let cat = Cat()
@@ -1271,7 +1270,7 @@ $R1: Bool = false
 ```
 
 There are two forms for downcasting operator: the conditional form (```as?``` - returns an optional value of the type you are trying to downcast) and the forced (```as!``` - attempts to downcast and force-unwraps the result).
-```bash
+bash
   1> class Animal {}
   2> class Cat: Animal {}
   3> class Dog: Animal {}
@@ -1299,7 +1298,7 @@ works
 
 Defines an alternative name for an existing type.
 
-```bash
+bash
   1> typealias MyInt = UInt32
   2> let a: MyInt = 10
 a: MyInt = 10
@@ -1311,7 +1310,7 @@ The purpose of the optional type is to provide a safe and consistent approach to
 
 To mark the value as optional - add question mark (?) after the type of a value.
 
-```bash
+bash
   1> var optionalString: String?
 optionalString: String? = nil
   2> if let str = optionalString { 
@@ -1326,7 +1325,7 @@ Value
 ```
 
 Same using ```== nil``` check:
-```bash
+bash
   1> var optionalString: String?
 optionalString: String? = nil
   2> if optionalString != nil {
@@ -1342,7 +1341,7 @@ Value
 If an optional has a value assigned to it, that value is said to be "wrapped" within the optional. That's why we use "!" to force unwrap the value.
 
 Use default value:
-```bash
+bash
   1> var optionalString: String?
 optionalString: String? = nil
   2> optionalString ?? "Optional value"
@@ -1353,7 +1352,7 @@ $R1: String = "Value"
 ```
 
 Where statement to disallow optional binding:
-```bash
+bash
   1> var optionalString: String? = "optional"
 optionalString: String? = "optional"
   2> var number = 1
@@ -1365,7 +1364,7 @@ number: Int = 1
 
 ### Ranges
 
-```bash
+bash
   1> 1...4
 $R0: Range<Int> = 1..<5
   2> 1..<4
@@ -1378,7 +1377,7 @@ In "```1..<10```" "```..<```" - half-closed range operator.
 
 Generic code enables you to write reusable functions and type that can work with any type.
 
-```bash
+bash
   1> func doublePrint<T>(a: T) { 
   2.   print("\(a) \(a)")
   3. } 
@@ -1394,7 +1393,7 @@ Closures in Swift are similar to lambdas in other programming languages.
 Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables, hence the name "closures".
 The code in a closure has access to objects that were available in the scope where the closure was created.
 
-```bash
+bash
   1> let numbers = [1, 2, 3]
 numbers: [Int] = 3 values {
   [0] = 1
@@ -1416,7 +1415,7 @@ $R0: [Int] = 3 values {
 
 Classes, structures, and enumerations can define subscripts, which are shortcuts for accessing the member elements of a collection, list, or sequence.
 
-```bash
+bash
   1> class Resolution { 
   2.   subscript(width: Int, height: Int) -> String {
   3.     get { 
@@ -1455,7 +1454,7 @@ Extensions in Swift can:
 - Define and use new nested types
 - Make an existing type conform to a protocol
 
-```bash
+bash
   1> class Name { 
   2.   var firstName = "Ryuko"
   3.   var lastName = "Matoi"
@@ -1475,14 +1474,14 @@ $R0: String = "Ryuko Matoi"
 ```
 
 An extension can extend an existing type to make it adopt one or more protocols:
-```bash
+bash
 extension SomeType: SomeProtocol, AnotherProtocol {
   ...
 }
 ```
 
 Extension works with native types:
-```bash
+bash
   1> extension Int { 
   2.   func say(fraze: String) {
   3.     for _ in 0..<self { 
@@ -1500,7 +1499,7 @@ Hello world!
 
 A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can be adopted by a class, structure, or enumeration.
 
-```bash
+bash
   1> protocol MyProtocol { 
   2.   var setableVariable: String { get set } 
   3. } 
@@ -1525,12 +1524,12 @@ repl.swift:2:7: note: protocol requires property 'setableVariable' with type 'St
 Comments can include Markdown syntax to add rich text and embedded images that display in Xcode’s Quick Help.
 
 One line comment (two forward-slashes):
-```bash
+bash
 // comment cotent
 ```
 
 Multiline comment:
-```bash
+bash
 /* multiple line
 comment */
 ```
@@ -1538,7 +1537,7 @@ Multiline comments can be nested (allows to comment large blocks of code even if
 
 ### Std output
 
-```bash
+bash
   1> print(123)
 123
   2> print("Hello!")
@@ -1551,7 +1550,7 @@ a = 1.
 
 ### Optional value unwrapping
 
-```bash
+bash
   1> var v: String? = "Test"
 v: String? = "Test"
   2> if let message = v { 
@@ -1568,7 +1567,7 @@ Test
 ```
 
 Forced unwrapping:
-```bash
+bash
   1> var v: String? = "Test"
 v: String? = "Test"
   2> v!
@@ -1581,7 +1580,7 @@ $R0: String = "Test"
 
 In a ```if``` statement, the conditional must be a Boolean expression.
 
-```bash
+bash
   1> if true { 
   2.   print("true") 
   3. } else { 
@@ -1592,7 +1591,7 @@ true
 ```
 
 The ternary operator:
-```bash
+bash
   1> var i = 10
 i: Int = 10
   2> i > 5 ? i+5 : i
@@ -1603,7 +1602,7 @@ $R0: Int = 15
 
 Unlike an if statement, a guard statement always has an else clause.
 
-```bash
+bash
   1> enum MyError: ErrorType { 
   2.   case Error1
   3. } 
@@ -1624,7 +1623,7 @@ It lets you write the code that's typically executed without wrapping it in an `
 
 Considers a value and compares it against several posible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully.
 
-```bash
+bash
   1> func check(i: Int) { 
   2.   switch i { 
   3.     case 1: 
@@ -1649,7 +1648,7 @@ Other
 ```
 
 The where statement may be used within a switch case match to add additional criteria required for a positive match:
-```bash
+bash
   1> var a = 10, b = 11
 a: Int = 10
 b: Int = 11
@@ -1670,7 +1669,7 @@ passed
 ```
 
 Matching tuples:
-```bash
+bash
   1> let point = (10, 2)
 point: (Int, Int) = {
   0 = 10
@@ -1697,7 +1696,7 @@ The second element is 2
 ```
 
 Value binding:
-```bash
+bash
   1> let point = (10, 2) 
 point: (Int, Int) = {
   0 = 10
@@ -1713,7 +1712,7 @@ point: (Int, Int) = {
 ```
 
 Break causes the switch statement to end it's execution immediately, and to transfer controlto the first line after the switch statement's closing brace:
-```bash
+bash
   1> let i = 1
 i: Int = 1
   2> switch i { 
@@ -1727,7 +1726,7 @@ i: Int = 1
 ```
 
 Using ```fallthrough```:
-```bash
+bash
   1> let i = 10
   2> switch i { 
   3.   case 10, 11: 
@@ -1744,7 +1743,7 @@ Between 1..100
 ```
 
 Use break in empty default:
-```bash
+bash
   1> var i = 10
 i: Int = 10
   2> switch i {
@@ -1759,7 +1758,7 @@ i: Int = 10
 
 #### for-in loop
 
-```bash
+bash
   1> var a = ["One", "Two"]
 a: [String] = 2 values {
   [0] = "One"
@@ -1776,7 +1775,7 @@ Two
 #### for loop
 
 Classic c++ like for loop:
-```bash
+bash
   1> for var i=0; i<3; i++ {
   2.   print(i) 
   3. } 
@@ -1788,7 +1787,7 @@ Classic c++ like for loop:
 
 #### while loop
 
-```bash
+bash
   1> var i = 2
 i: Int = 2
   2> while i > 0 { 
@@ -1801,7 +1800,7 @@ i: Int = 2
 
 #### repeat-while loop
 
-```bash
+bash
   1> var i = 2
 i: Int = 2
   2> repeat { 
@@ -1816,7 +1815,7 @@ i: Int = 2
 
 Works with break and continue.
 
-```bash
+bash
   1> label1: for i in 1...3 { 
   2.   label2: for j in 1...3 { 
   3.     if j == 2 { 
@@ -1852,7 +1851,7 @@ See [Error Handling in Swift 2.0](https://www.bignerdranch.com/blog/error-handli
 In Swift, errors are represented by values of types that conform to the ErrorType protocol. This empty protocol indicates that a type can be used for error handling.
 
 Enumerations are used for classifying errors:
-```bash
+bash
   1> enum MyError: ErrorType { 
   2.   case Bad 
   3.   case Worse 
@@ -1860,7 +1859,7 @@ Enumerations are used for classifying errors:
 ```
 
 Throwing an error lets you indicate that something unexpected happened:
-```bash
+bash
   1> class MyError: ErrorType { 
   2.   var message: String
   3.   init(message: String) { 
@@ -1874,7 +1873,7 @@ $E0: MyError = {
 ```
 
 Functions must be marked with throws to be able to propagate an error:
-```bash
+bash
   1> enum MyError: ErrorType { 
   2.   case Bad 
   3.   case Worse 
@@ -1903,7 +1902,7 @@ There are four ways to handle errors in Swift. You can:
 - assert that the error will not occur
 
 Catching errors with do/catch:
-```bash
+bash
   1> enum MyError: ErrorType { 
   2.   case Bad 
   3.   case Worse 
@@ -1919,7 +1918,7 @@ Bad error
 ```
 
 If you mark a throwing call with ```try!```, you are promising the compiler that that error will never happen and you do not need to catch it. If the statement does produce an error, the application will stop execution and you should start debugging:
-```bash
+bash
   1> enum MyError: ErrorType { 
   2.   case Bad 
   3.   case Worse 
@@ -1933,7 +1932,7 @@ fatal error: 'try!' expression unexpectedly raised an error: MyError.Bad: file /
 ```
 
 Converting errors to Optional Values:
-```bash
+bash
 // If an error is thrown while evaluating the try? expression, the value of the expression is nil.
   1> class MyError: ErrorType {} 
   2> func funcThrows() throws -> Int {
@@ -1952,7 +1951,7 @@ $R0: Int? = nil
 
 You use a defer statement to execute a set of statements just before code execution leaves the current block. Performs regardless of how execution leaves the current block of code: error, return or break.
 
-```bash
+bash
   1> class MyError: ErrorType {}
   2> func raisesError() throws { 
   3.   defer { 
@@ -1969,7 +1968,7 @@ $E2: MyError = {}
 
 #### Assert
 
-```bash
+bash
   1> assert(1 == 1)
   2> assert(1 == 2)
 assertion failed: : file /var/folders/ds/mbjdvd2n3qlcck8x3s694n5h0000gn/T/./lldb/11395/repl4.swift, line 2
@@ -1989,7 +1988,7 @@ Swift provides three different access levels for entities within your code:
 
 Guiding principle of access levels: No entity can be defined in terms of another entity that has lower (more restrictive) access level.
 
-```bash
+bash
 public class SomePublicClass {}
 internal func SomeInternalFunction() {}
 private var somePrivateVariable = 0
@@ -1999,7 +1998,7 @@ private var somePrivateVariable = 0
 
 Classes and structures can provide their own implementations of existing operators.
 
-```bash
+bash
   1> struct Vector { 
   2.   var x: Double 
   3.   var y: Double
@@ -2026,7 +2025,7 @@ $R0: Vector = {
 
 ### Literal expression
 
-```bash
+bash
   1> __FILE__
 $R0: String = "/var/folders/ds/mbjdvd2n3qlcck8x3s694n5h0000gn/T/./lldb/13457/repl2.swift"
   2> __LINE__
@@ -2039,7 +2038,7 @@ $R3: String = "__lldb_expr_8"
 
 #### A wildcard expression
 
-```bash
+bash
   1> var x = 0
 x: Int = 0
   2> (x, _) = (10, 20) 
@@ -2051,7 +2050,7 @@ $R0: Int = 10
 
 ### Singleton
 
-```swift
+swift
 final class Shared {
      static let shared = Shared()
 
@@ -2100,7 +2099,7 @@ When the operation is naturally described by a verb, use the verb’s imperative
 
 The language helps you to be clear about the types of values your code can work with.
 
-```bash
+bash
   1> var a = 1
 a: Int = 1
   2> a = "1"
@@ -2112,7 +2111,7 @@ a = "1"
 ### Type annotation
 
 Providing type explicitly:
-```bash
+bash
   1> let one: Double = 1
 one: Double = 1
 ```
@@ -2165,7 +2164,7 @@ To open playground: ```Xcode -> File -> New -> Playground ...```.
 
 REPL stands for **R**ead **E**val **P**rint **L**oop.
 
-```bash
+bash
 nanvel$ swift
 Welcome to Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81). Type :help for assistance.
   1> var s = 0
@@ -2179,7 +2178,7 @@ s: Int = 0
 
 ### Executing code from a source file
 
-```bash
+bash
 nanvel$ echo 'print("Hello World!")' > main.swift
 nanvel$ swift main.swift 
 Hello World!

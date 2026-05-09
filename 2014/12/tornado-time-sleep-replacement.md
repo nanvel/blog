@@ -1,9 +1,9 @@
-labels: Blog
-        Tornado
-        Asynchronous
+---
+tags: [blog, tornado, asynchronous]
 created: 2014-12-06T16:02
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Tornado time.sleep() replacement
 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     options.parse_command_line()
     application.listen(5000)
     ioloop.IOLoop.instance().start()
-```
+
 
 Output:
 ```
@@ -77,4 +77,4 @@ self.sleep()
 [I 141206 15:54:40 web:1635] 200 GET / (::1) 5038.38ms
 [W 141206 15:54:40 tornado_sleep:17] Hello 4
 [I 141206 15:54:41 web:1635] 200 GET / (::1) 5033.03ms
-```
+

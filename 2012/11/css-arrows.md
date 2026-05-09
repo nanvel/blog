@@ -1,7 +1,8 @@
-labels: Blog
-        CSS
+---
+tags: [blog, css]
 created: 2012-11-29T00:00
 place: Starobilsk, Ukraine
+---
 
 # CSS arrows
 
@@ -129,7 +130,7 @@ body {
     margin: 20px;
     position: relative;
 }
-```
+
 
 Arrow up:
 ```html
@@ -159,7 +160,7 @@ Arrow up:
     top: -6px;
     left: 94px;
 }
-```
+
 
 <div class="box arrow-up"></div>
 
@@ -191,7 +192,7 @@ Arrow right:
     top: 19px;
     right: -6px;
 }
-```
+
 
 <div class="box arrow-right"></div>
 
@@ -223,7 +224,7 @@ Arrow down:
     bottom: -6px;
     left: 94px;
 }
-```
+
 
 <div class="box arrow-down"></div>
 
@@ -255,6 +256,6 @@ Arrow left:
     top: 19px;
     left: -6px;
 }
-```
+
 
 <div class="box arrow-left"></div>

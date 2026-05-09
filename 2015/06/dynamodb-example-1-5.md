@@ -1,11 +1,10 @@
-labels: Databases
-        DynamoDB
-        Cassandra
-        Distributed
+---
+tags: [databases, dynamo-db, cassandra, distributed]
 created: 2015-06-28T18:48
 modified: 2019-05-27T18:13
 place: Kyiv, Ukraine
 comments: true
+---
 
 # DynamoDB in examples, Example 1.5: Distributed system terms
 
@@ -44,7 +43,7 @@ Hash key: user_id
 Range key: status:created
 # get all account activities
 SELECT activity_id FROM activities where status = 'account' AND created > '2015-01-01';
-```
+
 
 Or if we need to store user relations:
 ```text
@@ -52,7 +51,7 @@ Table: relations
 Hash key: user0_id:user1_id
 # get users relation
 SELECT relation FROM relations WHERE user0_id = '...' AND user1_id = '...';
-```
+
 
 ## Denormalization
 
@@ -89,7 +88,7 @@ Employing the analogy of the human fingerprint, given a single fingerprint, we w
 >>> m = hashlib.md5('input2')
 >>> m.hexdigest()
 '3eaa25d43fac6e39a12c3936942b72c8'
-```
+
 
 It applies to hash key data and result determines target database instance.
 
@@ -145,7 +144,7 @@ Hash key: user_id
 Range key: created
 # returns all user activities created since 2015 year
 SELECT activity_id FROM activities WHERE user_id='123' AND created > '2015-01-01';
-```
+
 
 ## Sparse field
 
@@ -180,6 +179,6 @@ UUID('e646341c-b4df-4ef3-a26b-3f4ff93ecd32')
 # Generate a random UUID from host ID and random value.
 >>> uuid.uuid1()
 UUID('738edea6-1dae-11e5-9188-283737190a60')
-```
+
 
 UUID is a replacement for autoincremental field for distributed databases.

@@ -1,8 +1,10 @@
-labels: Draft
+---
+tags: [draft]
 created: 2017-05-21T13:06
 modified: 2017-08-09T19:37
 place: Phuket, Thailand
 comments: true
+---
 
 # Random things
 
@@ -77,7 +79,7 @@ Translation from bytes representation to in-memory representation.
 If I need to access ES installed on a server, from my laptop:
 ```bash
 ssh -L 9201:localhost:9200 <server user>@<server ip>
-```
+
 
 Port 9200 from my server will be available locally as port 9201.
 

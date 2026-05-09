@@ -1,9 +1,10 @@
-labels: Draft
-        ML
+---
+tags: [draft, ml]
 created: 2017-04-02T23:32
 modified: 2018-07-23T15:39
 place: Phuket, Thailand
 comments: true
+---
 
 # Machine learning
 

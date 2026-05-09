@@ -1,10 +1,10 @@
-labels: Draft
-        AWS
-        HighScalability
+---
+tags: [draft, aws, high-scalability]
 created: 2017-06-08T16:38
 modified: 2017-11-27T14:36
 place: Phuket, Thailand
 comments: true
+---
 
 # System engineering
 
@@ -135,27 +135,27 @@ Use a nonstandard port for ssh.
 Memory usage:
 ```bash
 free -f
-```
+
 
 Disk usage:
 ```bash
 df -h
-```
+
 
 Date:
 ```bash
 date
-```
+
 
 Get a service status:
 ```bash
 service <service name> status
-```
+
 
 Watch file changes:
 ```bash
 tail -f <file path>
-```
+
 
 ## SSL
 
@@ -169,7 +169,7 @@ These files are required (`/etc/nginx/ssl/`):
 Generating `dhparam`:
 ```bash
 sudo openssl dhparam -out /etc/nginx/ssl/dhparam4096.pem 4096
-```
+
 
 
 ## Best practices
@@ -205,7 +205,7 @@ https://en.wikipedia.org/wiki/Private_network
 10.0.0.0 – 10.255.255.255
 172.16.0.0 – 172.31.255.255
 192.168.0.0 – 192.168.255.255
-```
+
 
 Private network: the shared [private networking on DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-digitalocean-private-networking) droplets is represented by a second interface on each server that has no internet access.
 

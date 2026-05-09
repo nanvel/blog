@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2016-01-01T18:35
 place: Kyiv, Ukraine
 comments: true
+---
 
 # 2015 Summary
 

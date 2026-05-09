@@ -1,6 +1,8 @@
-labels: Pages
+---
+tags: [pages]
 created: 2015-10-05
 modified: 2016-08-20
+---
 
 # Meetups
 

@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-06-28T11:21
+---
 
 # Phrases
 

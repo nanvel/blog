@@ -1,8 +1,9 @@
-labels: Blog
-        Django
+---
+tags: [blog, django]
 created: 2014-07-06T00:00
 place: Kyiv, Ukraine
 comments: true
+---
 
 # [Django] Save model instance into json dict
 
@@ -21,14 +22,14 @@ data = {
     'content': 'Example content',
     'site': Site.objects.get_current(),
 }
-```
+
 
 If I try to dump dicts above, I'll get ```TypeError``` exception:
 ```python
 >>> import json
 >>> json.dumps(data)
 TypeError: <User: exampleuser> is not JSON serializable
-```
+
 
 Possible solution:
 ```python
@@ -58,7 +59,7 @@ def decode(data):
                 model=value['model'])
             new_data[node] = user_type.get_object_for_this_type(id=value['id'])
     return new_data
-```
+
 
 ```python
 >>> data
@@ -70,4 +71,4 @@ TypeError: <User: exampleuser> is not JSON serializable
 '{"count": 10, "user": {"model": "user", "id": 1, "app_label": "auth"}, "title": "Example title"}'
 >>> decode(json.loads(encoded))
 {u'count': 10, u'user': <User: exampleuser>, u'title': u'Example title'}
-```
+

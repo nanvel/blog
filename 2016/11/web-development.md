@@ -1,4 +1,7 @@
-labels: Draft
+---
+tags: [draft]
+---
+
 		SoftwareDevelopment
 		WebDevelopment
 created: 2016-11-29T11:56

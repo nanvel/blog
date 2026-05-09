@@ -1,8 +1,9 @@
-labels: Blog
-        Documentation
+---
+tags: [blog, documentation]
 created: 2013-02-23T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Project documentation with Sphinx
 
@@ -16,14 +17,14 @@ comments: true
 
 ```bash
 $ pip install Sphinx
-```
+
 
 ## Step 2: create folder in which documentation will be stored
 
 ```bash
 $ mkdir docs
 $ cd docs
-```
+
 
 ## Step 3: initialize docs folder
 
@@ -31,12 +32,12 @@ $ cd docs
 $ sphinx-quickstart
 # answer to several questions
 # enter 'y' for 'Separate source and build directories'
-```
+
 
 Add to ```.gitignore```:
 ```bash
 docs/build
-```
+
 
 ## Step 4: modify ```Makefile```, add target to run simple http server
 
@@ -44,18 +45,18 @@ Add to ```Makefile```:
 ```makefile
 serve:
 	make html && cd build/html/ && python -m SimpleHTTPServer 8001
-```
+
 
 Check that all works fine:
 ```bash
 $ make serve
 # Open http://127.0.0.1:8001 in browser.
-```
+
 
 ## Step 5: edit source files
 
 ```index.rst```:
-```rst
+rst
 .. myproject documentation master file
 
 Welcome to myproject's documentation!
@@ -70,7 +71,7 @@ Contents:
     usage.rst
 ```
 
-```init.rst```:
+init.rst```:
 ```rst
 .. myproject init
 
@@ -83,10 +84,10 @@ Init
 - ``cp settings_local.py.default settings_local.py``
 - ``make syncdb``
 - ``make run``
-```
+
 
 ```usage.rst```:
-```rst
+rst
 .. myproject usage
 
 Usage
@@ -102,13 +103,13 @@ make run
 ```
 
 Try autodoc extension:
-```rst
+rst
 .. automodule:: io
    :members:
 ```
 
 If You use django, add next lines to ```conf.py```:
-```python
+python
 sys.path.insert(0, os.path.relpath('../../../myapp'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'myapp.settings'
 ```

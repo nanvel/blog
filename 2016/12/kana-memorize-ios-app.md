@@ -1,10 +1,10 @@
-labels: Blog
-        Projects
-        iOS
+---
+tags: [blog, projects, ios]
 created: 2016-12-14T09:46
 modified: 2017-01-14T10:06
 place: Phuket, Thailand
 comments: true
+---
 
 # Kana memorize iOS app
 

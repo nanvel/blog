@@ -1,11 +1,10 @@
-labels: Blog
-        Django
-        SearchEngines
-        Elasticsearch
+---
+tags: [blog, django, search-engines, elasticsearch]
 created: 2013-07-17T00:00
 modified: 2016-03-26T15:56
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Django + haystack + elasticsearch simple example project
 
@@ -29,7 +28,7 @@ class Note(models.Model):
 
     def __unicode__(self):
         return self.title
-```
+
 
 Next I put few steps that lead to search feature implementation.
 
@@ -38,14 +37,14 @@ Next I put few steps that lead to search feature implementation.
 ```text
 pip install django-haystack==2.0.0
 pip install pyelasticsearch==0.5
-```
+
 
 Install elasticsearch on OS X:
 ```bash
 brew install elasticsearch
 # and launch:
 elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.90.2/config/elasticsearch.yml
-```
+
 
 Install elasticsearch on Ubuntu 12.04:
 ```bash
@@ -53,7 +52,7 @@ sudo apt-get update
 sudo apt-get install openjdk-7-jre-headless -y
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.0.deb
 sudo dpkg -i elasticsearch-0.90.0.deb
-```
+
 
 **2. Update django settings**
 
@@ -82,7 +81,7 @@ HAYSTACK_CONNECTIONS = {
 }
 
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
-```
+
 
 The last line will enable signal processor that for every change in the models will run ```update_index```: [https://django-haystack.readthedocs.org/en/latest/signal_processors.html#realtime-realtimesignalprocessor](https://django-haystack.readthedocs.org/en/latest/signal_processors.html#realtime-realtimesignalprocessor).
 
@@ -106,7 +105,7 @@ class NoteIndex(indexes.SearchIndex, indexes.Indexable):
     def index_queryset(self, using=None):
         """Used when the entire index for model is updated."""
         return self.get_model().objects.filter(timestamp__lte=timezone.now())
-```
+
 
 This was a little bit confusing for me.
 The text field here is the most important. All You want to be available for search should be here.
@@ -117,7 +116,7 @@ Let's create it.
 {# templates/search/indexes/notes/note_text.txt #}
 {{ object.title }}
 {{ object.body }}
-```
+
 
 Then why we need the rest of fields? They will be present in search results. If the title field will be missing here, ```results[n].title``` will cause an exception.
 
@@ -138,7 +137,7 @@ class NotesSearchForm(SearchForm):
 
     def no_query_found(self):
         return self.searchqueryset.all()
-```
+
 
 ```python
 # views.py
@@ -151,7 +150,7 @@ def notes(request):
     form = NotesSearchForm(request.GET)
     notes = form.search()
     return render_to_response('notes.html', {'notes': notes})
-```
+
 
 **5. Add the form to search page template**
 
@@ -171,18 +170,18 @@ def notes(request):
 </p>
 {% endfor %}
 {% endblock %}
-```
+
 
 **6. Before using search we need to create index**
 
 ```bash
 python manage.py rebuild_index
-```
+
 
 After every data update should be launched:
 ```bash
 python manage.py update_index
-```
+
 
 But it is not necessary if we use RealtimeSignalProcessor.
 
@@ -198,7 +197,7 @@ Links:
 Add
 ```text
 script.disable_dynamic: true
-```
+
 
 to ```/etc/elasticsearch/elasticsearch.yml```
 

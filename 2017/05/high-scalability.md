@@ -1,10 +1,10 @@
-labels: Draft
-        HighScalability
-        SoftwareDevelopment
+---
+tags: [draft, high-scalability, software-development]
 created: 2017-05-07T20:54
 modified: 2018-08-27T11:20
 place: Phuket, Thailand
 comments: true
+---
 
 # High scalability
 
@@ -49,7 +49,7 @@ Many applications today are data-intensive. Raw CPU power is rarely a limiting f
 
 Help to handle spikes, scale horizintally and make system more reliable.
 
-See [Feeds](/2016/08/feeds).
+See [[2016/08/feeds|Feeds]].
 
 ## Big data?
 

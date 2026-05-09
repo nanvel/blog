@@ -1,7 +1,8 @@
-labels: Draft
-        SoftwareDevelopment
+---
+tags: [draft, software-development]
 created: 2016-08-24T23:29
 place: Phuket, Thailand
+---
 
 # Feeds
 

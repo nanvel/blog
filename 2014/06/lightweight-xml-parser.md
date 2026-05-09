@@ -1,8 +1,9 @@
-labels: Blog
-        XML
+---
+tags: [blog, xml]
 created: 2014-06-22T00:00
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Lightweight xml parser
 
@@ -62,7 +63,7 @@ TEST_DATASET = [{
         }
     }},
 ]
-```
+
 
 Gist: [https://gist.github.com/nanvel/f944eae1f02d47b6d6a4](https://gist.github.com/nanvel/f944eae1f02d47b6d6a4)
 
@@ -219,4 +220,4 @@ if __name__ == '__main__':
         sax.parseString(test_data['xml'], parser)
         assert parser.data == test_data['data'], '{0} != {1}'.format(
             parser.data, test_data['data'])
-```
+

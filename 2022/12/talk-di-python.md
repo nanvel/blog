@@ -1,11 +1,10 @@
-labels: Talk
-        Python
-        SoftwareDevelopment
-        SoftwareDesign
+---
+tags: [talk, python, software-development, software-design]
 created: 2022-12-24T12:56
 modified: 2022-12-24T12:56
 place: Bangkok, Thailand
 comments: false
+---
 
 # Dependency Injection with dependency-injector
 

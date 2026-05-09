@@ -1,9 +1,9 @@
-labels: Blog
-        Tornado
-        Asynchronous
+---
+tags: [blog, tornado, asynchronous]
 created: 2014-07-26T00:00
 place: Kyiv, Ukraine
 comments: true
+---
 
 # [tornado] Async handlers, code refactor
 
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     )
     application.listen(8000)
     IOLoop.instance().start()
-```
+
 
 Make it async:
 ```python
@@ -84,7 +84,7 @@ class FBHandler(RequestHandler):
 
 
 ...
-```
+
 
 Add gen sugar:
 ```python
@@ -118,7 +118,7 @@ class FBHandler(RequestHandler):
 
 
 ...
-```
+
 
 Hold handlers as simple as possible:
 ```python
@@ -154,4 +154,4 @@ class FBHandler(RequestHandler):
 
 
 ...
-```
+

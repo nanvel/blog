@@ -1,8 +1,9 @@
-labels: Blog
-        Python
+---
+tags: [blog, python]
 created: 2015-02-07T12:36
 place: Phuket, Thailand
 comments: true
+---
 
 # Get youtube/vimeo/vevo/vine video thumbnail
 
@@ -70,4 +71,4 @@ if __name__ == '__main__':
     print Thumbnail.vimeo(video_id='45370040')
     print Thumbnail.vevo(video_id='x9fMmU')
     print Thumbnail.vine(video_id='OUBbPBrh2qH')
-```
+

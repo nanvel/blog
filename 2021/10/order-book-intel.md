@@ -1,8 +1,9 @@
-labels: Projects
-        Blog
+---
+tags: [projects, blog]
 created: 2021-10-02T02:14
 modified: 2021-10-02T02:14
 place: Phuket, Thailand
+---
 
 # Order book intelligence
 

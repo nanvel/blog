@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-06-26T18:44
+---
 
 # Grammar
 

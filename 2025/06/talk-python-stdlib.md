@@ -1,9 +1,10 @@
-labels: Talk
-        Python
+---
+tags: [talk, python]
 created: 2025-06-23T20:31
 modified: 2025-06-23T20:31
 place: Bangkok, Thailand
 comments: false
+---
 
 # Python stdlib you probably don't know but should
 

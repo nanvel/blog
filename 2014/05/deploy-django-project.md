@@ -1,9 +1,9 @@
-labels: Blog
-        Django
-        Server
+---
+tags: [blog, django, server]
 created: 2014-05-04T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # A way to deploy a django project, detailed instruction
 
@@ -27,7 +27,7 @@ You can access it using the following credentials:
 IP Address: xxx.xxx.xxx.xxx
 Username: root
 Password: xxxxxxxxxxxx
-```
+
 
 ## Step 2 - Update system
 
@@ -35,7 +35,7 @@ Password: xxxxxxxxxxxx
 ssh root@xxx.xxx.xxx.xxx
 apt-get update
 apt-get upgrade
-```
+
 
 ## Step 3 - Create user
 
@@ -47,7 +47,7 @@ vim /etc/sudoers
 # add 'deploy  ALL=(ALL:ALL) ALL'
 usermod deploy -s /bin/bash
 exit
-```
+
 
 ## Step 4 - Use ssh key to access the server instead of enter password
 
@@ -55,13 +55,13 @@ exit
 # on development machine
 ssh-copy-id deploy@xxx.xxx.xxx.xxx
 ssh deploy@xxx.xxx.xxx.xxx
-```
+
 
 ## Step 5 - Install necessary packages
 
 ```bash
 sudo apt-get install git nginx python-dev python-virtualenv postgresql postgresql-server-dev-9.3
-```
+
 
 ## Step 6 - Generate ssh keys (to configure access to your private repository)
 
@@ -69,7 +69,7 @@ sudo apt-get install git nginx python-dev python-virtualenv postgresql postgresq
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 # add key to your repository ssh keys
-```
+
 
 ## Step 7 - Create folders and clone the project source
 
@@ -82,7 +82,7 @@ git clone https://nanvel@bitbucket.org/nanvel/helloworld.git
 mkdir media
 mkdir static
 mkdir conf
-```
+
 
 Result:
 ```
@@ -92,7 +92,7 @@ Result:
 -- media
 -- static
 -- conf
-```
+
 
 ## Step 8 - Create virtual environment and install necessary python packages
 
@@ -102,7 +102,7 @@ virtualenv .env --no-site-packages
 source .env/bin/activate
 pip install -r requirements.txt
 pip install psycopg2 flup
-```
+
 
 ## Step 9 - Create database, configure postgresql
 
@@ -116,14 +116,14 @@ template1=# \q
 
 vim /etc/postgresql/9.3/main/pg_hba.conf
 # add 'local   helloworld     helloworld                               password'
-```
+
 
 ## Step 10 - Update the project settings
 
 Set admins, database credentials, SECRET_KEY, etc.
 
 ```helloworld/helloword/settings/local.py```:
-```python
+python
 from .utils import rel
 
 
@@ -155,7 +155,7 @@ MEDIA_ROOT = rel('../media/')
 STATIC_ROOT = rel('../static/')
 ```
 
-```bash
+bash
 cd /home/deploy/sites/helloworld/helloworld/
 source .env/bin/activate
 python manage.py syncdb
@@ -164,7 +164,7 @@ python manage.py collectstatic
 
 ## Step 11 - Nginx configuration
 
-```/etc/nginx/fastcgi_params```:
+/etc/nginx/fastcgi_params```:
 ```nginx
 fastcgi_param QUERY_STRING $query_string;
 fastcgi_param REQUEST_METHOD $request_method;
@@ -182,10 +182,10 @@ fastcgi_param REMOTE_PORT $remote_port;
 fastcgi_param SERVER_ADDR $server_addr;
 fastcgi_param SERVER_PORT $server_port;
 fastcgi_param SERVER_NAME $server_name;
-```
+
 
 ```/etc/nginx/nginx.conf```:
-```nginx
+nginx
 user deploy;
 worker_processes 2;
 pid /run/nginx.pid;
@@ -239,7 +239,7 @@ http {
 }
 ```
 
-```/home/deploy/sites/helloworld/nginx.conf```:
+/home/deploy/sites/helloworld/nginx.conf```:
 ```nginx
 server {
     server_name  www.mydomain.com;
@@ -276,14 +276,14 @@ server {
         root   html;
     }
 }
-```
+
 
 ! change ```mydomain.com``` to proper name.
 
 ## Step 12 - Configure fastcgi
 
 ```/etc/init.d/fastcgi_helloworld```:
-```bash
+bash
 #! /bin/bash
 
 ### BEGIN INIT INFO
@@ -340,7 +340,7 @@ esac
 exit $?
 ```
 
-```bash
+bash
 sudo chmod +x /etc/init.d/fastcgi_helloworld
 sudo update-rc.d fastcgi_helloworld defaults
 sudo /etc/init.d/fastcgi_helloworld start

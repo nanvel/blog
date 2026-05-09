@@ -1,8 +1,9 @@
-labels: DynamoDB
-        Databases
+---
+tags: [dynamo-db, databases]
 created: 2015-03-08T14:28
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 2: Unique page views
 
@@ -91,7 +92,7 @@ if __name__ == '__main__':
     # False
     # True
     # False
-```
+
 
 But what it we need also:
 

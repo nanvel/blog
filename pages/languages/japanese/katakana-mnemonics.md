@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-11-20T01:03
+---
 
 # Katakana mnemonics
 

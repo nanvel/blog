@@ -1,5 +1,7 @@
-labels: Thai
+---
+tags: [thai]
 created: 2017-01-15T11:48
+---
 
 # Colors
 

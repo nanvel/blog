@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-07-16T17:39
+---
 
 # Numbers
 

@@ -1,8 +1,9 @@
-labels: Draft
-        SoftwareDesign
+---
+tags: [draft, software-design]
 created: 2023-12-21T09:40
 modified: 2023-12-21T09:40
 place: Bangkok, Thailand
+---
 
 # Software Design
 
@@ -146,7 +147,7 @@ class Event:
 @dataclass
 class MyEvent(Event):
     value: str
-```
+
 
 Events can help with the single responsibility principle.
 
@@ -236,7 +237,7 @@ Testing pyramid (top to bottom): ene-to-end, integration, unit.
 
 ## Microservices
 
-[Notes on microservices](https://nanvel.name/2015/08/microservices).
+[[2015/08/microservices|Notes on microservices]].
 
 ## OLTP
 

@@ -1,9 +1,10 @@
-labels: Draft
-        Trading
+---
+tags: [draft, trading]
 created: 2018-07-28T12:00
 modified: 2021-10-14T14:42
 place: Ukraine, Starobil's'k
 comments: true
+---
 
 # Crypto trader vocabulary
 

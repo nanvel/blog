@@ -1,8 +1,9 @@
-labels: Blog
-        Server
+---
+tags: [blog, server]
 created: 2013-05-01T00:00
 place: Starobilsk, Ukraine
 comemnts: true
+---
 
 # Domain configuration in nginx config
 
@@ -17,7 +18,7 @@ server {
     server_name mydomain.com;
     # The rest of your configuration goes here
 }
-```
+
 
 Dot at the end of site domain can cause problems.
 
@@ -29,13 +30,13 @@ server {
     }
     # The rest of your configuration goes here
 }
-```
+
 
 For old nginx versions:
 ```diff
 - return 301 http://mydomain.com$request_uri;
 + rewrite  ^/(.*)$  http://mydomain.com/$1 permanent;
-```
+
 
 Links:
 

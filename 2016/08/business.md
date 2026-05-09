@@ -1,9 +1,10 @@
-labels: Draft
-        Business
+---
+tags: [draft, business]
 created: 2016-08-30T10:20
 modified: 2021-10-12T21:51
 place: Phuket, Thailand
 comments: true
+---
 
 # Business
 
@@ -108,7 +109,7 @@ Tricks:
 
 ### 5. Market
 
-[Traction channels](/2016/06/business-terms#traction-channels) (According to "Traction: How Any Startup Can Achieve Explosive Customer Growth" by Gabriel Weinberg and Justin Mares).
+[[2016/06/business-terms#traction-channels|Traction channels]] (According to "Traction: How Any Startup Can Achieve Explosive Customer Growth" by Gabriel Weinberg and Justin Mares).
 
 Check out [moz.com](https://moz.com/) blog.
 

@@ -1,4 +1,7 @@
-labels: Blog
+---
+tags: [blog]
+---
+
 		SoftwareDevelopment
 created: 2015-10-24T14:41
 modified: 2025-08-17T16:04
@@ -70,7 +73,7 @@ try:
     x = my_dict["key"]
 except KeyError:
     # say sorry
-```
+
 
 ## Fail fast
 

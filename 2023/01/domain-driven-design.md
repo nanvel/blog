@@ -1,8 +1,9 @@
-labels: Draft
-        SoftwareDesign
+---
+tags: [draft, software-design]
 created: 2023-01-21T13:29
 modified: 2023-12-20T19:51
 place: Bangkok, Thailand
+---
 
 # Domain Driven Design
 
@@ -153,7 +154,7 @@ tests
   conftest.py
   unit
   integration
-```
+
 
 Adapters (concrete implementations of an interface that goes from our system to the outside world):
 - Repository: abstraction around persistent storage.
@@ -291,7 +292,7 @@ class Order:
     order_id: int
     sku: Sku
     quantity: Quantity
-```
+
 
 ### Aggregates
 
@@ -431,7 +432,7 @@ class SqlAlchemyUnitOfWork(AbstractUnitOfWork):
 with uow:
     uow.my_entities.add(MyModel)
     uow.commit()
-```
+
 
 ### Domain Services
 
@@ -561,7 +562,7 @@ A common, costly mistake is to build a complex infrastructure and use industrial
 
 When complexity gets out o hand, developers can no longer understand the software well enough to change or extend it easily and safely.
 
-The [XP](https://nanvel.name/2023/09/extreme-programming) process assumes that you can improve a design by refactoring, and that you will do this often and rapidly.
+The [[2023/09/extreme-programming|XP]] process assumes that you can improve a design by refactoring, and that you will do this often and rapidly.
 
 Many XP practices are aimed at this specific problem of maintaining a coherent design that is being constantly changed by many people.
 

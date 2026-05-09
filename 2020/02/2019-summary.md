@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2020-02-07T16:13
 modified: 2020-02-07T16:13
 place: Phuket, Thailand
+---
 
 # 2019 Summary
 

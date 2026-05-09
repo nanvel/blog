@@ -1,8 +1,9 @@
-labels: Blog
-        Bash
+---
+tags: [blog, bash]
 created: 2014-04-05T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # [bash] Copy user from one htpasswd file to another
 
@@ -44,7 +45,7 @@ case "$1" in
     ;;
 esac
 exit $?
-```
+
 
 ## Usage example
 
@@ -58,7 +59,7 @@ nanvel$ /usr/sbin/htpasswd -b -c .htpasswd2 misaka misakapass
 Adding password for user misaka
 nanvel$ /usr/sbin/htpasswd -b .htpasswd2 adzusa adzusapass
 Adding password for user adzusa
-```
+
 
 As a result, I have two files:
 ```bash
@@ -69,7 +70,7 @@ yui:$apr1$FeI4sM9r$qOHL9H6njqZ0Qe5QAUG6N0
 cat .htpasswd2
 misaka:$apr1$Zg/Wq3Tl$uOPB4IaQmklCGqcEqEJFP.
 adzusa:$apr1$fwUSR8yI$LJlsvnFAmTAIvPbOVeqXS/
-```
+
 
 Let's try to copy ```izumi``` to ```.htpasswd2```:
 ```bash
@@ -89,7 +90,7 @@ izumi:$apr1$IFUc4Sgr$EWXwKc5MpairBuuoyWaTj0
 nanvel$ cat .htpasswd2.bak
 misaka:$apr1$Zg/Wq3Tl$uOPB4IaQmklCGqcEqEJFP.
 adzusa:$apr1$fwUSR8yI$LJlsvnFAmTAIvPbOVeqXS/
-```
+
 
 ## Run script from python code
 
@@ -102,4 +103,4 @@ proc = subprocess.Popen(
     stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 output = proc.communicate()[0]
 code = proc.poll()
-```
+

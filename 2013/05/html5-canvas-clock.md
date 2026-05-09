@@ -1,9 +1,9 @@
-labels: Blog
-        HTML
-        JS
+---
+tags: [blog, html, js]
 created: 2013-05-01T00:01
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # [HTML5] Canvas, first steps
 
@@ -67,4 +67,4 @@ Simple example: display second arrow.
         </script>
     </body>
 </html>
-```
+

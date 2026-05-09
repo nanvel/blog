@@ -1,9 +1,10 @@
-labels: DynamoDB
-        Databases
+---
+tags: [dynamo-db, databases]
 created: 2015-03-14T21:04
 modified: 2016-10-11T07:52
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 2.1: Key schema and counters
 
@@ -73,7 +74,7 @@ if __name__ == '__main__':
     # 34
     # If we will have only ~5000 page views,
     # we will need to retrive and process about half of megabite of data
-```
+
 
 **DON'T DO LIKE THIS! ^**
 
@@ -199,6 +200,6 @@ if __name__ == '__main__':
     print(ddb_page.get(page_id=page_id2)['views_count'])
     # 50
     # 34
-```
+
 
 Be careful selecting a place for counters: in my example, if a single page will have a lot of views same time, we may face a throttled writes issue.

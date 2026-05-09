@@ -1,6 +1,8 @@
-labels: Pages
+---
+tags: [pages]
 created: 2015-11-01T00:00
 modified: 2021-10-02T14:34
+---
 
 # Oleksandr Polieno aka nanvel
 

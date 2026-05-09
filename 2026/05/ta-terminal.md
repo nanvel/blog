@@ -1,8 +1,9 @@
-labels: Projects
-        Trading
+---
+tags: [projects, trading]
 created: 2026-05-03T11:36
 modified: 2026-05-03T11:36
 place: Bangkok, Thailand
+---
 
 # TA Trading Terminal
 

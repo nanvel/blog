@@ -1,7 +1,9 @@
-labels: Life
+---
+tags: [life]
 created: 2016-12-31T19:58
 modified: 2016-12-31T23:15
 place: Phuket, Thailand
+---
 
 # 2016 Summary
 

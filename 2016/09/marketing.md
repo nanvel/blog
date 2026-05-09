@@ -1,10 +1,10 @@
-labels: Draft
-        Business
-        SEO
+---
+tags: [draft, business, seo]
 created: 2016-09-02T21:42
 modified: 2019-04-21T14:15
 place: Phuket, Thailand
 comments: true
+---
 
 # Marketing
 
@@ -56,7 +56,7 @@ If you don't fill out your meta tags, Google will automatically use text from yo
 Don't relay on Open Directory Project and Yahoo Directory:
 ```html
 <meta name="robots" content="noodp, noydir" />
-```
+
 
 ### On-page SEO
 
@@ -82,7 +82,7 @@ Check list:
 If you have a duplicate page, use this tag:
 ```html
 <link rel="canonical" href="http://url-to-original-page.com" />
-```
+
 
 Freelance writers:
 
@@ -158,7 +158,7 @@ Viral.
 
 ### Traction
 
-See [traction channels](/2016/06/business-terms#traction-channels).
+See [[2016/06/business-terms#traction-channels|traction channels]].
 
 ### A keyword
 

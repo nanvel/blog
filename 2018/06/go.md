@@ -1,10 +1,11 @@
-labels: Draft
-        Go
+---
+tags: [draft, go]
 created: 2018-06-29T12:22
 modified: 2018-06-29T12:22
 place: Phuket, Thailand
-visible: true
 comments: true
+visible: true
+---
 
 # Go, the language notes
 

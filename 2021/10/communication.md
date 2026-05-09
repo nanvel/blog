@@ -1,10 +1,10 @@
-labels: Draft
-        Business
-        Communication
+---
+tags: [draft, business, communication]
 created: 2021-10-14T00:12
 modified: 2024-01-01T20:20
 place: Phuket, Thailand
 comments: true
+---
 
 # Communication
 

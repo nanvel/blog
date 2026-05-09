@@ -1,6 +1,8 @@
-labels: Notes
+---
+tags: [notes]
 created: 2016-04-23T09:24
 place: Kyiv, Ukraine
+---
 
 # Гімнастичні вправи для очей
 

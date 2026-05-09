@@ -1,8 +1,9 @@
-labels: Blog
-        JS
+---
+tags: [blog, js]
 created: 2013-04-30T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # Crossbrowser skip to content link
 
@@ -50,7 +51,7 @@ This js solves problem happens while implementing 'skip to content' feature in w
         });
     });
 })(jQuery)
-```
+
 
 Links:
 

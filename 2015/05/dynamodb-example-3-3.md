@@ -1,8 +1,9 @@
-labels: Databases
-        DynamoDB
+---
+tags: [databases, dynamo-db]
 created: 2015-05-10T23:08
 place: Chiang Mai, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 3.3: Mark item as deleted
 
@@ -34,4 +35,4 @@ GLOBAL_SECONDARY_INDEXES = [{
     ],
 }]
 # 'deleted_created' -> '{deleted}_{created}'.format(deleted=1 if deleted else 0, created=created)
-```
+

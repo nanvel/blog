@@ -1,8 +1,9 @@
-labels: Projects
-        Blog
+---
+tags: [projects, blog]
 created: 2025-03-23T10:20
 modified: 2025-03-23T10:20
 place: Bangkok, Thailand
+---
 
 # Gold Ledger - accounting for gold suppliers and retailers
 

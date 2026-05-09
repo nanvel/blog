@@ -1,8 +1,9 @@
-labels: Blog
-        Tornado
+---
+tags: [blog, tornado]
 created: 2015-03-08T20:55
 place: Phuket, Thailand
 comments: true
+---
 
 # Efficient actions counter using tornado IOLoop.add_timeout
 
@@ -11,7 +12,7 @@ Redis used as temporary storage and sqlite3 as persistent storage for counters.
 ```bash
 pip install tornado==4.1
 pip install redis
-```
+
 
 Create sqlite table:
 ```bash
@@ -19,7 +20,7 @@ Create sqlite table:
 SQLite version 3.8.5 2014-08-15 22:37:57
 Enter ".help" for usage hints.
 sqlite> CREATE TABLE counters(action TEXT PRIMARY KEY, count INTEGER DEFAULT 0);
-```
+
 
 ```python
 import datetime
@@ -109,7 +110,7 @@ if __name__ == "__main__":
     # [W 150308 20:27:14 app:46] Incremented.
     # [I 150308 20:27:14 web:1825] 200 POST /action (::1) 1.72ms
     # [W 150308 20:27:15 app:32] Saved to sqlite3.
-```
+
 
 ```bash
 (.env)nanvel-air:tornado_counter nanvel$ sqlite3 counters.sqlite3
@@ -118,4 +119,4 @@ Enter ".help" for usage hints.
 sqlite> select * from counters;
 open_new_tab|3
 open_browser|21
-```
+

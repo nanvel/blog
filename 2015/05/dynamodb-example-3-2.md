@@ -1,8 +1,9 @@
-labels: Databases
-        DynamoDB
+---
+tags: [databases, dynamo-db]
 created: 2015-05-01T14:52
 place: Phuket, Thailand
 comments: true
+---
 
 # DynamoDB in examples, Example 3.2: FilterExpression and pagination issue
 
@@ -169,6 +170,6 @@ if __name__ == '__main__':
     user_orders = ddb_order.get_user_orders(user_id=user_id, limit=10, last=user_orders[1])
     print(len(user_orders[0]))
     # 9
-```
+
 
 As we can see, ```get_user_orders``` returns only 7 results while limit set to 10.

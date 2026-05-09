@@ -1,9 +1,10 @@
-labels: Draft
-        Databases
+---
+tags: [draft, databases]
 created: 2017-05-10T12:38
 modified: 2023-12-26T19:34
 place: Phuket, Thailand
 comments: true
+---
 
 # Databases
 
@@ -25,7 +26,7 @@ As with everything else in architecture, the proper answer is "it depends".
 
 ## DB types
 
-- [relational databases](/2016/02/sql)
+- [[2016/02/sql|relational databases]]
 - object-oriented databases
 - key/value stores
 - column-oriented databases
@@ -96,7 +97,7 @@ Weak durability by writing to disk asynchronously.
 
 Weak durability by writing to disk asynchronously.
 
-See also [Redis, usage examples](/2015/08/redis-rethink).
+See also [[2015/08/redis-rethink|Redis, usage examples]].
 
 ### AWS RedShift
 
@@ -131,7 +132,7 @@ session_factory = sessionmaker(
         isolation_level="REPEATABLE",
     )
 )
-```
+
 
 [PostgreSQL isolation levels](https://www.postgresql.org/docs/current/transaction-iso.html).
 

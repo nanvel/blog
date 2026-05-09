@@ -1,5 +1,7 @@
-labels: Japanese
+---
+tags: [japanese]
 created: 2016-11-05T23:42
+---
 
 # Hiragana strokes
 

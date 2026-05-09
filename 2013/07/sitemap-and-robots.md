@@ -1,14 +1,15 @@
-labels: Blog
-        Django
+---
+tags: [blog, django]
 created: 2013-07-21T00:00
 place: Starobilsk, Ukraine
 comments: true
+---
 
 # sitemap.xml and robots.txt
 
 ```sitemap.xml``` and ```robots.txt``` examples and urls configuration.
 
-```urls.py```:
+urls.py```:
 ```python
 from django.views.generic.simple import direct_to_template
 
@@ -19,7 +20,7 @@ urlpatterns += patterns('',
     (r'^sitemap\.xml$', direct_to_template,
         {'template': 'sitemap.txt', 'mimetype': 'text/xml'}),
 )
-```
+
 
 Or use ```TemplateView``` for Django version above 1.4:
 ```python
@@ -32,10 +33,10 @@ urlpatterns += patterns('',
     (r'^sitemap\.xml$', TemplateView.as_view(
         template_name='sitemap.xml', content_type='text/xml')),
 )
-```
+
 
 ```templates/sitemap.xml```:
-```xml
+xml
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -49,7 +50,7 @@ xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.sitema
 </urlset>
 ```
 
-```templates/robots.txt```:
+templates/robots.txt```:
 ```text
 User-agent: Yandex
 Disallow: /admin
@@ -67,7 +68,7 @@ Crawl-delay: 30
 Disallow: /admin
 Disallow: /static
 Disallow: /media
-```
+
 
 Note, You should extend robots.txt by urls You don't wan't to be indexed by search crawlers.
 Opposite to ```robots.txt```, ```sitemap.xml``` should contains urls of pages You want search engines knows about.

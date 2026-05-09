@@ -1,9 +1,9 @@
-labels: Projects
-        Rust
-        Blog
+---
+tags: [projects, rust, blog]
 created: 2026-01-18T14:26
 modified: 2026-01-18T14:26
 place: Bangkok, Thailand
+---
 
 # Scalper-rs: a desktop app for scalping (trading) written in Rust
 

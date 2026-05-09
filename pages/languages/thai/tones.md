@@ -1,5 +1,7 @@
-labels: Thai
+---
+tags: [thai]
 created: 2022-11-13T23:22
+---
 
 # Tones
 

@@ -1,9 +1,10 @@
-labels: Blog
-        Business
+---
+tags: [blog, business]
 created: 2016-06-12T15:59
 modified: 2016-08-28T10:45
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Business terms
 

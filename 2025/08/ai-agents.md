@@ -1,9 +1,9 @@
-labels: Draft
-        AI
-        ML
+---
+tags: [draft, ai, ml]
 created: 2025-08-17T15:43
 modified: 2025-08-17T15:43
 place: Bangkok, Thailand
+---
 
 # AI Agents
 

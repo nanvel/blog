@@ -1,10 +1,10 @@
-labels: Blog
-        SearchEngines
-        Elasticsearch
+---
+tags: [blog, search-engines, elasticsearch]
 created: 2016-06-04T10:33
 modified: 2017-08-09T19:40
 place: Kyiv, Ukraine
 comments: true
+---
 
 # Elasticsearch notes
 
@@ -24,7 +24,7 @@ Elasticsearch is a real-time distributed search and analytics engine built on to
 ```bash
 brew install elasticsearh
 curl http://localhost:9200/?pretty
-```
+
 
 ## API
 
@@ -62,13 +62,13 @@ co(function *() {
   // console.log(response.headers)
   // console.log(response.status)
 }).catch(error => console.log(error))
-```
+
 
 ### Elasticsearch status
 
 ```text
 GET /
-```
+
 
 ```json
 {
@@ -83,7 +83,7 @@ GET /
   },
   "tagline": "You Know, for Search"
 }
-```
+
 
 Response headers and status code:
 ```text
@@ -92,13 +92,13 @@ Response headers and status code:
   "content-length": "331"
 }
 200
-```
+
 
 ### Cluster health
 
 ```text
 GET /_cluster/health
-```
+
 
 ```json
 {
@@ -118,7 +118,7 @@ GET /_cluster/health
   "task_max_waiting_in_queue_millis": 0,
   "active_shards_percent_as_number": 50
 }
-```
+
 
 Status names:
 
@@ -134,7 +134,7 @@ PUT /myindex/mytype/1
   "attr1": "val1",
   "attr2": 42
 }
-```
+
 
 ```json
 {
@@ -149,7 +149,7 @@ PUT /myindex/mytype/1
   },
   "created": true
 }
-```
+
 
 Elasticsearch creates an index and type automatically if they don't exist.
 
@@ -157,7 +157,7 @@ Elasticsearch creates an index and type automatically if they don't exist.
 
 ```text
 HEAD /myindex/mytype/1
-```
+
 
 Response status code == 200 if the document was found or 404 otherwise.
 
@@ -165,7 +165,7 @@ Response status code == 200 if the document was found or 404 otherwise.
 
 ```text
 GET /myindex/mytype/1
-```
+
 
 ```json
 {
@@ -179,13 +179,13 @@ GET /myindex/mytype/1
     "attr2": 42
   }
 }
-```
+
 
 ### Delete a document
 
 ```text
 DELETE /myindex/mytype/1
-```
+
 
 ```json
 {
@@ -200,7 +200,7 @@ DELETE /myindex/mytype/1
     "failed": 0
   }
 }
-```
+
 
 ### Search lite
 
@@ -208,7 +208,7 @@ DELETE /myindex/mytype/1
 
 ```text
 GET /myindex/mytype/_search?q=attr2:42
-```
+
 
 ```json
 {
@@ -236,7 +236,7 @@ GET /myindex/mytype/_search?q=attr2:42
     ]
   }
 }
-```
+
 
 ### Search with Query DSL
 
@@ -252,7 +252,7 @@ GET /myindex/mytype/_search
     }
   }
 }
-```
+
 
 ```json
 {
@@ -280,7 +280,7 @@ GET /myindex/mytype/_search
     ]
   }
 }
-```
+
 
 There are two DSLs:
 
@@ -335,7 +335,7 @@ GET /myindex/mytype/_validate/query[?explain]
 
   }
 }
-```
+
 
 ### Index settings
 
@@ -347,13 +347,13 @@ PUT /myindex2
     "number_of_replicals": 1
   }
 }
-```
+
 
 ```json
 {
   "acknowledged": true
 }
-```
+
 
 See also:
 
@@ -386,18 +386,18 @@ PUT /myindex
     }
   }
 }
-```
+
 
 ```json
 {
   "acknowledged": true
 }
-```
+
 
 It is possible to add a new field type with
 ```text
 PUT /myindex/_mapping/newfield
-```
+
 
 ## Queries
 
@@ -418,7 +418,7 @@ GET /myindex/mytype/_search
 
 Search type inside all indexes:
 GET /_all/mytype/_search
-```
+
 
 equal to:
 ```text
@@ -428,7 +428,7 @@ GET /_search
     "match_all": {}
   }
 }
-```
+
 
 ```json
 {
@@ -447,7 +447,7 @@ GET /_search
     ]
   }
 }
-```
+
 
 ### Exact match
 
@@ -460,7 +460,7 @@ GET /_search
     }
   }
 }
-```
+
 
 ### Full text search
 
@@ -473,7 +473,7 @@ GET /myindex/mytype/_search
     }
   }
 }
-```
+
 
 ```json
 {
@@ -501,7 +501,7 @@ GET /myindex/mytype/_search
     ]
   }
 }
-```
+
 
 See [languages elasticsearch supports](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html).
 
@@ -517,7 +517,7 @@ For language detection see [chromium-compact-language-detector](https://github.c
     }
   }
 }
-```
+
 
 Same as:
 ```json
@@ -529,7 +529,7 @@ Same as:
     }
   }
 }
-```
+
 
 The ```match_phrase``` query first analyses the query string to produce a list of terms. It then searches for all the terms, but keeps only documents that contain **all** of the search terms, **in the same position** relative to each other.
 
@@ -548,7 +548,7 @@ Wildcards available:
     }
   }
 }
-```
+
 
 See also [regexp query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html).
 
@@ -572,7 +572,7 @@ Compound clause:
     "should": {}
   }
 }
-```
+
 
 ### Filtering a query
 
@@ -589,7 +589,7 @@ Compound clause:
     }
   }
 }
-```
+
 
 Filtering multiple values:
 ```json
@@ -604,7 +604,7 @@ Filtering multiple values:
     }
   }
 }
-```
+
 
 ### A query as a filter
 
@@ -625,7 +625,7 @@ Filtering multiple values:
     }
   }
 }
-```
+
 
 ### Boosting
 
@@ -644,7 +644,7 @@ Filtering multiple values:
     }
   }
 }
-```
+
 
 Practically, there is no simple formula for deciding on the "correct" boost value for a particular query clause. It's a matter of try-it-and-see.
 
@@ -665,7 +665,7 @@ By default, Elasticsearch orders matching results by their relevance score.
     }
   }
 }
-```
+
 
 Multilevel sorting:
 ```json
@@ -686,7 +686,7 @@ Multilevel sorting:
     }
   ]
 }
-```
+
 
 [Sorting on Multivalue Fields (arrays)](https://www.elastic.co/guide/en/elasticsearch/guide/current/_sorting.html#_sorting_on_multivalue_fields).
 
@@ -716,7 +716,7 @@ GET /myindex/mytype/_search?search_type=count
     }
   }
 }
-```
+
 
 Elasticsearch supports [nested aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-nested-aggregation.html) and combining aggregations and search.
 
@@ -795,7 +795,7 @@ PUT /myindex
     }
   }
 }
-```
+
 
 A search time solution also available.
 
@@ -832,7 +832,7 @@ Use [Index aliases](https://www.elastic.co/guide/en/elasticsearch/reference/curr
 
 ```bash
 ssh -L 9201:localhost:9200 <server user>@<server ip>
-```
+
 
 `server:9200` -> `localhost:9201`.
 
@@ -855,7 +855,7 @@ A nodes container, holds a slice of all the data in the index.
 Algorithm uses to route documents to shards:
 ```python
 shard = hash(routing) % number_of_primary_shards
-```
+
 That's why we can't increase the number of shards for an existing index.
 
 ### An index
@@ -881,7 +881,7 @@ Built-in analyzers:
 ```text
 GET /_analyze?analyzer=standard
 "Some text."
-```
+
 
 ```json
 {
@@ -902,7 +902,7 @@ GET /_analyze?analyzer=standard
     }
   ]
 }
-```
+
 
 Analyzer is a wrapper that combines three functions into a single package:
 
@@ -931,7 +931,7 @@ PUT /myindex
     }
   }
 }
-```
+
 
 ### Document id
 
