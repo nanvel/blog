@@ -2,7 +2,6 @@
 tags: [blog, django, api]
 created: 2013-06-13T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # [Django] Trigger GA event on server side
@@ -14,7 +13,7 @@ comments: true
 pip install django-google-analytics
 pip install pyga==2.4.2
 pip install mock==1.0.1
-
+```
 
 **2. utility code**
 ```python
@@ -32,7 +31,7 @@ pip install mock==1.0.1
             analytics_code = code_set[0].web_property_id
             tracker = Tracker(analytics_code.replace('UA', 'MO'), site.domain)
             tracker.track_event(event, session, visitor)
-
+```
 
 **3. test for utility**
 ```python
@@ -62,7 +61,7 @@ class UtilsTestCase(TestCase):
         tracker_value = requests.Tracker(mobile_analytics_code, site.domain)
         ga_event('a', 'b')
         TrackerMock.assert_called_once_with(mobile_analytics_code, site.domain)
-
+```
 
 The beautiful thing here is that while no Google Analytics objects added, tracking will be disabled. So, events shouldn't trigger while testing app.
 

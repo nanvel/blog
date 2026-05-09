@@ -3,7 +3,6 @@ tags: [talk, python]
 created: 2022-11-13T22:37
 modified: 2022-11-13T22:37
 place: Chiang Mai, Thailand
-comments: false
 ---
 
 # A Brief History of Python Async

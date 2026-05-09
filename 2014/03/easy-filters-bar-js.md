@@ -2,7 +2,6 @@
 tags: [blog, js]
 created: 2014-03-31T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Easy filters bar, pure js
@@ -16,7 +15,7 @@ I have a view available at ```/instances/```. I can specify status of items to v
 /instances/?order=-created&status=moderated
 /instances/?status=modified&ismine=true
 ...
-
+```
 
 Let's create filter buttons allow to apply filters.
 
@@ -127,4 +126,4 @@ Only URI.js is required, no jQuery and similar libraries.
     </script>
 </body>
 </html>
-
+```

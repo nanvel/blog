@@ -1,0 +1,56 @@
+upstream blog {
+    server 127.0.0.1:{{ server_port }} fail_timeout=0;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name nanvel.name;
+
+    ssl_certificate /etc/ssl/{{ project_name }}_chain.crt;
+    ssl_certificate_key /etc/ssl/{{ project_name }}.key;
+
+    if ($host !~* ^(nanvel.name)$) {
+        return 444;
+    }
+
+    location ~* \.(jpg|jpeg|gif|png|ico|pdf|html|htm|css|js|txt|zip) {
+    	root {{ project_dir }};
+      log_not_found off;
+    }
+
+    location / {
+        proxy_cache off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-Ip $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_pass http://blog;
+    }
+
+    error_page 500 502 503 504 {{ project_dir }}/engine/templates/500.html;
+    error_page 400 402 403 404 {{ project_dir }}/engine/templates/400.html;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name www.nanvel.name;
+
+    ssl_certificate /etc/ssl/{{ project_name }}_chain.crt;
+    ssl_certificate_key /etc/ssl/{{ project_name }}.key;
+
+    return 301 https://nanvel.name$request_uri;
+}
+
+server {
+    listen 80;
+    server_name nanvel.name;
+    return 301 https://nanvel.name$request_uri;
+}
+
+server {
+    listen 80;
+    server_name www.nanvel.name;
+    return 301 https://nanvel.name$request_uri;
+}

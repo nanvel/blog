@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-05-17T16:40
 place: Rim Ping, Lamphun, Thailand
-comments: true
 ---
 
 # DynamoDB in examples, Example 4: Tweets. Throttled reads and caching
@@ -92,4 +91,4 @@ if __name__ == '__main__':
     print(ddb_tweet.get(tweet_id=tweet['tweet_id']))
     # {'tweet_id': {'S': 'aead2db2-0216-43e5-9769-bd7153217e61'}, 'created': {'S': '2015-05-17 14:17:10.531644'}, 'text': {'S': 'Example tweet.'}}
     # {'tweet_id': {'S': 'aead2db2-0216-43e5-9769-bd7153217e61'}, 'text': {'S': 'Example tweet.'}, 'created': {'S': '2015-05-17 14:17:10.531644'}}
-
+```

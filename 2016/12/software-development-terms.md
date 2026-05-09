@@ -3,7 +3,6 @@ tags: [blog, software-development]
 created: 2016-12-22T22:25
 modified: 2023-09-05T15:36
 place: Phuket, Thailand
-comments: true
 ---
 
 # Software development terms

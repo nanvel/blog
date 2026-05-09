@@ -3,7 +3,6 @@ tags: [blog, python]
 created: 2011-11-04T00:00
 modified: 2016-11-28T14:54
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # Python

@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2013-01-01T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # Schema- and data-migration in Django with South
@@ -14,18 +13,18 @@ Documentation and tutorials available at [http://south.aeracode.org/](http://sou
 Task: User profile application.
 
 ```project/requirements.txt```:
-text
+```text
 django==1.4.3
 south==0.7.6
 ```
 
 Create project, add users application, add ```users``` and ```south``` to INSTALLED_APPS, configure DATABASES.
-bash
+```bash
 python manage.py syncdb
 ```
 
 **Create initial migrations (once)**:
-bash
+```bash
 python manage.py schemamigration users --initial
 Creating migrations directory at '.../project/users/migrations'...
 Creating __init__.py in '../project/users/migrations'...
@@ -35,7 +34,7 @@ Created 0001_initial.py. You can now apply this migration with: ./manage.py migr
 Create initial migrations for each app You created.
 
 Create the model:
-python
+```python
 from django.db import models
 
 
@@ -46,14 +45,14 @@ class UserProfile(models.Model):
 ```
 
 We need to create a new table for this model, schema-migration:
-bash
+```bash
 python manage.py schemamigration users --auto
 + Added model users.UserProfile
 Created 0002_auto__add_userprofile.py. You can now apply this migration with: ./manage.py migrate users
 ```
 
 Don't forget to add ```0002_auto__add_userprofile.py``` to git index, execute migrations:
-bash
+```bash
 python manage.py migrate users
 Running migrations for users:
 - Migrating forwards to 0002_auto__add_userprofile.
@@ -66,7 +65,7 @@ Installed 0 object(s) from 0 fixture(s)
 What if requirements were updated and we need to store phone number additionally?
 
 **Add `phone` field to the model:**
-python
+```python
 class UserProfile(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
@@ -75,7 +74,7 @@ class UserProfile(models.Model):
 ```
 
 Create schema-migration and execute it:
-bash
+```bash
 python manage.py schemamigration users --auto
  + Added field phone on users.UserProfile
 Created 0003_auto__add_field_userprofile_phone.py. You can now apply this migration with: ./manage.py migrate users
@@ -90,7 +89,7 @@ Installed 0 object(s) from 0 fixture(s)
 
 **Add one more model?**
 
-python
+```python
 class Country(models.Model):
     name = models.CharField(max_length=100)
 
@@ -104,7 +103,7 @@ class UserProfile(models.Model):
 ```
 
 Same as before (schemamigration -> migrate):
-bash
+```bash
 python manage.py schemamigration users --auto
  + Added model users.Country
  + Added field country on users.UserProfile
@@ -123,7 +122,7 @@ Installed 0 object(s) from 0 fixture(s)
 instead ```name```, we need to use ```fname``` and ```lname```, and we already have some data in the table.
 
 We can accomplish this with two schema- and one data-migration. In data-migration we need to copy data from ```name``` field to ```fname``` and ```lname``` fields, for example:
-text
+```text
 (name == 'Mikuru Asahina') -> (fname == 'Mikuru', lname == 'Asahina')
 ```
 
@@ -133,7 +132,7 @@ Roadmap:
 - copy data from ```name``` field to ```fname``` and ```lname```
 - remove ```name``` field
 
-python
+```python
 class UserProfile(models.Model):
     name = models.CharField(max_length=200)
     fname = models.CharField(max_length=100, blank=True, null=True)
@@ -144,7 +143,7 @@ class UserProfile(models.Model):
     phone = models.CharField(max_length=20, blank=True, null=True)
 ```
 
-bash
+```bash
 python manage.py schemamigration users --auto
  + Added field fname on users.UserProfile
  + Added field lname on users.UserProfile
@@ -159,14 +158,14 @@ Installed 0 object(s) from 0 fixture(s)
 ```
 
 Create data-migration:
-bash
+```bash
 python manage.py datamigration users split_name
 Created 0006_split_name.py.
 ```
 
 Edit automatically created ```project/users/migrations/0006_split_name.py``` file.
 
-python
+```python
 class Migration(DataMigration):
 
     def forwards(self, orm):
@@ -188,7 +187,7 @@ class Migration(DataMigration):
 ```
 
 Migration execution looks the same as for schema-migration:
-bash
+```bash
 python manage.py migrate users
 Running migrations for users:
  - Migrating forwards to 0006_split_name.
@@ -199,7 +198,7 @@ Installed 0 object(s) from 0 fixture(s)
 ```
 
 Finally remove ```name``` field:
-python
+```python
 class UserProfile(models.Model):
     fname = models.CharField(max_length=100, blank=True, null=True)
     lname = models.CharField(max_length=100, blank=True, null=True)
@@ -209,7 +208,7 @@ class UserProfile(models.Model):
     phone = models.CharField(max_length=20, blank=True, null=True)
 ```
 
-bash
+```bash
 python manage.py schemamigration users --auto
  ? The field 'UserProfile.name' does not have a default specified, yet is NOT NULL.
  ? Since you are removing this field, you MUST specify a default

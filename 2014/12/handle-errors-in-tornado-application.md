@@ -2,7 +2,6 @@
 tags: [blog, tornado]
 created: 2014-12-06T23:14
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Handle errors in a tornado application, the right way
@@ -83,7 +82,7 @@ if __name__ == '__main__':
     application = MyApplication()
     application.listen(5000)
     ioloop.IOLoop.instance().start()
-
+```
 
 debug == False:
 ```json
@@ -93,7 +92,7 @@ debug == False:
       "message":"Wrong age value."
    }
 }
-
+```
 
 debug == True:
 ```json
@@ -109,4 +108,4 @@ debug == True:
       "code":400
    }
 }
-
+```

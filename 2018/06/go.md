@@ -3,7 +3,6 @@ tags: [draft, go]
 created: 2018-06-29T12:22
 modified: 2018-06-29T12:22
 place: Phuket, Thailand
-comments: true
 visible: true
 ---
 

@@ -2,7 +2,6 @@
 tags: [blog, tornado, django]
 created: 2015-07-04T14:07
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Django or Tornado?

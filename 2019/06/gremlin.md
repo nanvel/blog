@@ -16,34 +16,34 @@ Gremlin is the name of the graph traversal and query language provided by Tinker
 Create TinkerGraph:
 ```groovy
 graph = TinkerGraph.open()
-
+```
 
 Load from GraphML:
 ```groovy
 graph.io(graphml()).readGraph('air-routes.graphml')
-
+```
 
 To prevent output, add `[]`:
 ```groovy
 a=g.V().has('code','AUS').out().toList();[]
-
+```
 
 ## Query
 
 ```groovy
 g = graph.traversal()
-
+```
 
 has and hasLabel:
 ```groovy
 g.V().hasLabel('airport').has('code','DFW')
 g.V().has('airport','code','DFW')
-
+```
 
 next() - a terminal step:
 ```groovy
 g.V().has('airport','code','DFW').next().getClass()
-
+```
 Ends the graph traversal and returns a concrete object that you can work with further in your application.
 
 has():
@@ -51,7 +51,7 @@ has():
 g.V().has('region')
 g.V().hasNot('region')
 g.V().not(has('region'))
-
+```
 
 groupCount():
 ```groovy
@@ -61,34 +61,34 @@ g.V().group().by(label).by(count())
 
 g.V().hasLabel('airport').groupCount().by('country')
 g.V().hasLabel('country').group().by('code').by(out().count())
-
+```
 
 path - visited vertices and edges:
 ```groovy
 g.V().has('airport','code','LCY').outE().inV().path()
-
+```
 
 ```groovy
 g.V().has('airport','code','AUS').out().as('a').out().as('b').
       path().by('code').from('a').to('b').limit(10)
-
+```
 
 If edge exist:
 ```groovy
 g.V().has('code','AUS').out('route').has('code','DFW').hasNext()
-
+```
 
 Select edge between two vertices:
 ```groovy
 g.V().has('code','MIA').outE().as('e').inV().has('code','DFW').select('e')
-
+```
 
 Limit:
 ```groovy
 g.V().hasLabel('airport').limit(20).values('code')
 g.V().hasLabel('airport').tail(20).values('code')
 g.V().hasLabel('airport').range(0,20).values('code')
-
+```
 
 Locate by id:
 ```groovy
@@ -98,7 +98,7 @@ g.V().hasId(between(1,6))
 g.V().has(id,between(1,6))
 g.V(3).values('code')
 g.V(3,6,8,15).values('code')
-
+```
 
 Labels:
 ```groovy
@@ -108,14 +108,14 @@ g.V().hasLabel('airport').count()
 g.V().has(label,neq('airport')).count()
 g.V().where(label().is(neq('airport'))).count()
 g.V().not(hasLabel('airport')).count()
-
+```
 
 Equal:
 ```groovy
 g.V().has('runways',eq(3)).count()
 g.V().has('runways',3).count()
 g.V().values('runways').is(3).count()
-
+```
 
 Starts with:
 ```groovy
@@ -123,7 +123,7 @@ g.V().hasLabel('airport').has('city',between('Dal','Dam')).values('city')
 g.V().hasLabel('airport').
       filter{ it.get().value('city').startsWith('Dal')}.
       values('city')
-
+```
 
 Boolean:
 ```groovy
@@ -132,7 +132,7 @@ g.V().has('code','AUS').and().has('icao','KAUS')
 g.V().hasLabel('airport').
   where(out().count().is(lt(100).and(gt(94)))).
   group().by('code').by(out().count())
-
+```
 
 Where:
 ```groovy
@@ -141,7 +141,7 @@ g.V().has('runways',gt(5))
 g.V().where(values('runways').is(gt(5)))
 
 g.V().hasLabel('airport').where(out('route').count().is(gt(60))).count()
-
+```
 
 Finding two vertices in one query:
 ```groovy
@@ -149,14 +149,14 @@ g.V().has('code','NCE').values('region').as('r').
   V().hasLabel('airport').as('a').values('region').
       where(eq('r')).by().
       local(select('a').values('city','code','region').fold())
-
+```
 
 If/than/else (choose):
 ```groovy
 g.V().has('region','US-TX').choose(values('longest').is(gt(12000)),
                                    values('code'),
                                    values('desc'))
-
+```
 
 Case/switch (option):
 ```groovy
@@ -164,7 +164,7 @@ g.V().hasLabel('airport').choose(values('code')).
                             option('DFW',values('desc')).
                             option('AUS',values('region')).
                             option('LAX',values('runways'))
-
+```
 
 Union and group:
 ```groovy
@@ -177,24 +177,24 @@ g.V().has('airport','code','DFW').
       group().by().by(out().count())
 
 [v[8]:221]]
-
+```
 
 sideEffect:
 ```groovy
 g.V(3).sideEffect(out().count().store('a')).
        out().out().count().as('b').select('a','b')
-
+```
 
 aggregate (temporary collection):
 ```groovy
 g.V().has('code','AUS').out().aggregate('nonstop').
      out().where(without('nonstop')).dedup().count()
-
+```
 
 coalesce - return the first has result:
 ```groovy
 g.V(3).coalesce(out('fly'),__.in('contains')).valueMap()
-
+```
 
 simplePath - do not trevel the same path again:
 ```groovy
@@ -202,12 +202,12 @@ g.V().has('code','AUS').
       repeat(out().simplePath()).
         until(has('code','AGR')).
         path().by('code').limit(10)
-
+```
 
 Create if not exist:
 ```groovy
 g.V().has('code','XYZ').fold().coalesce(unfold(),addV().property('code','XYZ'))
-
+```
 
 Delete:
 ```groovy
@@ -216,27 +216,27 @@ g.V().has('code','AUS').outE().as('e').inV().has('code','LHR').select('e').drop(
 
 # properties
 g.V().has('code','SFO').properties('desc').drop()
-
+```
 
 Properties:
 ```groovy
 g.V().has('code','AUS').property(list,'code','ABIA')
 g.V().has('code','AUS').properties().hasValue('ABIA').drop()
 g.V(3).property(set,'hw',"hello").property(set,'hw','world')
-
+```
 
 sack - a side effect:
 ```groovy
 g.V().has('code','AUS').sack(assign).by('runways').
   V().has('code','SAF').out().
       sack(minus).by('runways').sack().fold()
-
+```
 
 Profile:
 ```groovy
 g.V().has('region','US-TX').out().has('region','US-CA').
                             out().has('country','DE').profile()
-
+```
 
 ### Walk a graph
 

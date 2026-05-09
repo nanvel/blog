@@ -3,7 +3,6 @@ tags: [blog, python, asynchronous]
 created: 2016-11-27T17:12
 modified: 2023-01-20T22:30
 place: Phuket, Thailand
-comments: true
 ---
 
 # Python AsyncIO
@@ -65,7 +64,7 @@ if __name__ == '__main__':
 # 1
 # 2
 # 3
-
+```
 
 In case of coroutine:
 
@@ -98,7 +97,7 @@ if __name__ == '__main__':
 	c.send(None)
 	for i in (0, 1, 2, 3):
 		c.send(i)
-
+```
 
 Subgenerator is allowed to return with a value, and the value is made available to the delegating generator.
 
@@ -139,7 +138,7 @@ if __name__ == '__main__':
 # 2
 # 3
 # 4
-
+```
 
 ### async/await
 
@@ -149,14 +148,14 @@ asyncio required that all generators meant to be used as a coroutine had to be d
 @asyncio.coroutine
 def py34_coroutine():
     yield from avaitable()
-
+```
 
 Since Python 3.5 native coroutines are their own completely distinct type, before they were just [enhanced generators](https://www.python.org/dev/peps/pep-0342/). `async` syntax makes coroutines a native Python language feature, and clearly separates them from generators.
 
 ```
 async def py35_coroutine():
     await avaitable()
-
+```
 
 Features:
 
@@ -179,7 +178,7 @@ class AsyncContextManager:
 
     async def __aexit__(self, exc_type, exc, tb):
         await log('exiting context')
-
+```
 
 An asynchronous iterable is able to call asynchronous code in its iter implementation, and asynchronous iterator can call asynchronous code in its next method.
 
@@ -197,7 +196,7 @@ class AsyncIterable:
 
     async def fetch_data(self):
         ...
-
+```
 
 ## Tasks and coroutines
 
@@ -207,14 +206,14 @@ See [Python Tasks and coroutines documentation](https://docs.python.org/3/librar
 
 ```python
 loop.set_debug(True)
-
+```
 
 In debug mode many additional checks are enabled.
 
 ```python
 import gc
 gc.set_debug(gc.DEBUG_UNCOLLECTABLE)
-
+```
 
 When a native coroutine is garbage collected, a RuntimeWarning is raised if it was never awaited on.
 
@@ -231,7 +230,7 @@ aioes
 aiozmq
 aio-s3
 ...
-
+```
 Datadog - [aiomeasures](https://pypi.python.org/pypi/aiomeasures/0.5.13).
 
 ### aiohttp.web
@@ -248,17 +247,17 @@ def index(request):
 
 my_web_app = web.Application()
 my_web_app.router.add_route('GET', '/', index)
-
+```
 
 #### Static files serving while development
 
 ```python
 app.router.add_static('/static', '/path/to/static', name='static')
-
+```
 URL reverse:
 ```python
 app.router.static.url(filename="...")
-
+```
 
 #### Deployment
 
@@ -268,7 +267,7 @@ http://aiohttp.readthedocs.io/en/v0.22.3/gunicorn.html
 pip install gunicorn
 
 gunicorn -b 0.0.0.0:8000 -k aiohttp.worker.GunicornWebWorker -w 9 -t 60 project.app:app
-
+```
 
 Flags:
 
@@ -281,7 +280,7 @@ Flags:
 #!/bin/bash
 
 exec .env/bin/gunicorn -b 0.0.0.0:9001 -k aiohttp.worker.GunicornWebWorker -w 2 -t 60 app:app --env=APP_EMAIL=... --env SMTP_PORT=...
-
+```
 
 Links:
 
@@ -316,7 +315,7 @@ async def close_pg(app):
 ...
 
 app.on_cleanup.append(close_pg)
-
+```
 
 https://docs.aiohttp.org/en/stable/tutorial.html#graceful-shutdown
 
@@ -329,7 +328,7 @@ sem = asyncio.Semaphore(5)
 
 with (yield from sem):  
     page = yield from get(url, compress=True)
-
+```
 
 ### Executors
 
@@ -439,7 +438,7 @@ if __name__ == '__main__':
         if channel:
             loop.run_until_complete(channel.close())
             logger.warning("Connection closed in a clean way.")
-
+```
 
 ### socket.io
 
@@ -479,7 +478,7 @@ async def listen():
 if __name__ == '__main__':
     ioloop = asyncio.get_event_loop()
     ioloop.run_until_complete(listen())
-
+```
 
 ## To investigate
 

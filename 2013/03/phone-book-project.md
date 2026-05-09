@@ -2,7 +2,6 @@
 tags: [blog, django, projects]
 created: 2013-03-23T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # Phone Book project

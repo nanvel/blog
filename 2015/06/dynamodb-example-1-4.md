@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-06-06T22:09
 place: Dream Story, Kyiv, Ukraine
-comments: true
 ---
 
 # DynamoDB in examples, Example 1.4: DynamoDB and Celery using green threads
@@ -14,7 +13,7 @@ To enable [eventlet pool](http://celery.readthedocs.org/en/latest/userguide/conc
 ```bash
 $ pip install celery
 $ pip install eventlet
-
+```
 
 ```python
 # main.py
@@ -75,14 +74,14 @@ if __name__ == '__main__':
     for i in range(10):
         user_id = str(uuid.uuid4())
         UpdateBalance.delay(user_id=user_id)
-
+```
 
 Results using eventlet:
 ```bash
 $ celery worker -A main -P eventlet -c 1000
 $ python main.py
 
-text
+```text
  -------------- celery@nanvel-air.local v3.1.18 (Cipater)
 ---- **** -----
 --- * ***  * -- Darwin-14.3.0-x86_64-i386-64bit
@@ -120,12 +119,12 @@ text
 ```
 
 Results using prefork:
-bash
+```bash
 $ celery worker -A main -c 2
 $ python main.py
 ```
 
-text
+```text
  -------------- celery@nanvel-air.local v3.1.18 (Cipater)
 ---- **** -----
 --- * ***  * -- Darwin-14.3.0-x86_64-i386-64bit

@@ -19,7 +19,7 @@ place: Alchevs'k, Ukraine
 {{ block.super }} - вміст блоку
 {% ssi %} - включення іншого файлу за абсолютним шляхом
 {% ssi ... parsed %} - якщо потрібна обробка файлу у контексті шаблона (!ALLOWED_INCLUDE_ROOTS required)
-
+```
 
 1.2. Теги:
 ```django
@@ -27,14 +27,14 @@ place: Alchevs'k, Ukraine
 {% templatetag %} - замість
 екранування ({%, %}, {{, }}, {, }, {#, #})
 {% with object.item.count as count %} ... {% endwith %}
-
+```
 
 1.3. Розгалуження:
 ```django
 {% if %} {% else %} {% endif %}
 {% ifequal %} {% endifequal %}
 {% ifnotequal %} {% endifnotequal %}
-
+```
 
 1.4. Цикли:
 
@@ -57,7 +57,7 @@ forloop.revcounter0
 forloop.first - True for firsy item
 forloop.last
 forloop.parentloop - посилання на зовнішній forloop
-
+```
 
 1.5. Форматування:
 ```django
@@ -75,7 +75,7 @@ forloop.parentloop - посилання на зовнішній forloop
 {% regroup people by gender as gender_list %}
 {% for gender in gender_list %} {% for item in gender.list %}
 {% endfor %} {% endfor %}
-
+```
 
 1.6. Додатково:
 ```django
@@ -83,7 +83,7 @@ forloop.parentloop - посилання на зовнішній forloop
 {% comment %} {% endcomment %}
 {% debug %} - вивід відлагоджувальної інформації
 {% csrf_token %}
-
+```
 
 ## 2. Шаблонні фільтри
 
@@ -128,7 +128,7 @@ forloop.parentloop - посилання на зовнішній forloop
 {{ value|wordwrap:5 }} - Joel is a slug -> Joel \n is a \n slug
 {{ value|yesno:"yeah,no,maybe" }}
 {{ value|divisibleby:2 }} - bool(value % 2 == 0)
-
+```
 
 2.2. Упорядкування:
 ```django
@@ -139,7 +139,7 @@ forloop.parentloop - посилання на зовнішній forloop
 {{ value|linenumbers }} one two ... -> 1. one 2. two ...
 {{ list|slice:"2" }} ['a', 'b', 'c'] -> ['a', 'b']
 {{ value|unordered_list }}
-
+```
 
 2.2. Властивості:
 ```django
@@ -148,14 +148,14 @@ forloop.parentloop - посилання на зовнішній forloop
 {{ value|divisibley:"3" }} - Ділиться на 3
 {{ value|langth_is:"4" }}
 {{ value|wordcount }}
-
+```
 
 ## 3. Форматування дат
 
 Для фільтрів Django:
 ```|date:"F j, Y"```
 У дужках - для datetime:
-datetime.datetime.strfdate(date, format)```
+```datetime.datetime.strfdate(date, format)```
 
 ```
 a    - a.m., p.m.
@@ -190,4 +190,4 @@ y    - 0..99 - рік
 Y    - 1999
 z    - 0..365
 Z    - -43200 ... 43200 - зміщення часового поясу у секундах
-
+```

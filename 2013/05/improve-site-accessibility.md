@@ -2,7 +2,6 @@
 tags: [blog, accessibility]
 created: 2013-05-19T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # 10 steps to improve site accessibility
@@ -14,10 +13,10 @@ Main:
 - To hide some text but leave it visible for screen readers use:
 ```css
 .hidden { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
-
+```
 ```html
 <a href="/viev/?pages=10"><span class="hidden">View items per page: </span>10</a>
-
+```
 - Use alt attribute for images and title for links
 - Use right order for Hx elements: top header element should be H1
 - Use role attribute

@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2014-03-24T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Three ways to change widget in Django ModelForm
@@ -10,7 +9,7 @@ comments: true
 The problem: replace TextInput with Textarea.
 
 ```models.py```:
-python
+```python
 from django.db import models
 
 
@@ -20,7 +19,7 @@ class MyModel(models.model):
         max_length=5000, help_text='Your amazing description')
 ```
 
-forms.py```:
+```forms.py```:
 ```python
 from django import forms
 
@@ -33,7 +32,7 @@ class MyForm(forms.ModelForm):
 
     class Meta:
         model = MyModel
-
+```
 
 This is the worst one. Why? Help text specified in the model field will be not visible in form.
 
@@ -52,7 +51,7 @@ class MyForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(MyForm, self).__init__(*args, **kwargs)
         self.fields['description'].widget = forms.Textarea
-
+```
 
 And the best:
 ```python
@@ -68,4 +67,4 @@ class MyForm(forms.ModelForm):
         widgets = {
             'description': forms.Textarea,
         }
-
+```

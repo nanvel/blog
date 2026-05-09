@@ -3,7 +3,6 @@ tags: [blog, django, projects]
 created: 2013-08-17T00:00
 modified: 2013-08-27T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # django-ga-mail reusable app
@@ -20,7 +19,7 @@ Installation is quite simple.
 
 ```bash
 $ pip install django-ga-mail
-
+```
 
 Add ga_mail to your ```INSTALLED_APPS```:
 ```python
@@ -28,7 +27,7 @@ INSTALLED_APPS = (
     ...,
     'ga_mail',
 )
-
+```
 
 Set next variables in settings:
 ```python
@@ -42,7 +41,7 @@ ANALYTICS_BLOCKS = (
     'new_visitors_30days_today',
     'new_visitors_7days_today_vs_14days_7days',
     'pageviews_7days_today')
-
+```
 
 Check that ```MANAGERS``` variable contains necessary emails.
 
@@ -61,7 +60,7 @@ Call ```python manage.py ga_mail``` to send analytics report.
 I added next line to ```/etc/crontab``` to send analytics one time a week:
 ```text
 22 5    * * 2   deploy  cd /home/deploy/envs/mysite/ && .env/bin/python manage.py ga_mail
-
+```
 
 **UPD 2013-08-27**
 

@@ -2,7 +2,6 @@
 tags: [blog, python, ubuntu]
 created: 2013-02-24T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Launcher icon for a python script on Ubuntu
@@ -19,7 +18,7 @@ Exec=[full path to your executable and executable name, for example /usr/local/b
 Icon=[full path to your executable's icon and icon name, for example /usr/local/share/icons/apps/myapp.png]
 Terminal=false
 StartupNotify=true
-
+```
 
 Links:
 

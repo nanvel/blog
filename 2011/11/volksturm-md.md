@@ -2,7 +2,6 @@
 tags: [blog, electronics]
 created: 2011-11-25T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Volksturm S metal detector project

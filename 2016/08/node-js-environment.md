@@ -3,7 +3,6 @@ tags: [draft, js, node-js]
 created: 2016-08-13T15:27
 modified: 2016-09-05T21:02
 place: Tokyo, Japan
-comments: true
 ---
 
 # Node.js environment notes

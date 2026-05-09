@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static site builder for nanvel.name blog.
+"""Static site builder for blog.nanvel.com blog.
 
 Usage:
     uv run python build.py
@@ -14,11 +14,12 @@ from pathlib import Path
 import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader
+from pygments.formatters import HtmlFormatter
 
 BLOG_ROOT = Path(__file__).parent.parent
 OUT = BLOG_ROOT / "_site"
 TEMPLATES_DIR = BLOG_ROOT / "templates"
-SKIP_DIRS = {".git", "templates", "_site", ".github", ".idea", "__pycache__"}
+SKIP_DIRS = {".git", "templates", "_site", ".github", ".idea", "__pycache__", "scripts"}
 SKIP_SUFFIXES = {".py", ".toml", ".txt", ".cfg", ".ini"}
 # Asset extensions copied alongside pages
 ASSET_SUFFIXES = {".pdf", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".mp4", ".zip", ".ico"}
@@ -111,8 +112,11 @@ def _absolutize_assets(text: str, dir_uri: str) -> str:
 
 
 _MD = markdown.Markdown(
-    extensions=["toc", "fenced_code", "tables", "attr_list"],
-    extension_configs={"toc": {"anchorlink": True}},
+    extensions=["toc", "fenced_code", "tables", "attr_list", "admonition", "codehilite"],
+    extension_configs={
+        "toc": {"anchorlink": True},
+        "codehilite": {"guess_lang": False, "css_class": "highlight"},
+    },
 )
 
 
@@ -143,6 +147,10 @@ def parse_page(path: Path) -> Page | None:
 
     body = _resolve_obsidian_links(body)
     body = _absolutize_assets(body, dir_uri)
+
+    # Close any unclosed fenced code block (old posts omitted the closing ```)
+    if len(re.findall(r"^```", body, re.MULTILINE)) % 2 != 0:
+        body = body.rstrip() + "\n```\n"
 
     _MD.reset()
     html = _MD.convert(body)
@@ -202,8 +210,10 @@ def build() -> None:
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(path, dest)
 
-    # Copy static template assets
-    shutil.copy2(TEMPLATES_DIR / "style.css", OUT / "style.css")
+    # Copy static template assets, appending Pygments CSS to style.css
+    highlight_css = HtmlFormatter(style="friendly").get_style_defs(".highlight")
+    combined_css = (TEMPLATES_DIR / "style.css").read_text() + "\n" + highlight_css
+    (OUT / "style.css").write_text(combined_css, encoding="utf-8")
     shutil.copy2(TEMPLATES_DIR / "favicon.ico", OUT / "favicon.ico")
 
     # --- Jinja2 environment ----------------------------------------------

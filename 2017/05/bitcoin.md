@@ -3,7 +3,6 @@ tags: [draft, bitcoin, distributed, p2p]
 created: 2017-05-21T12:01
 modified: 2018-06-27T21:02
 place: Phuket, Thailand
-comments: true
 ---
 
 # Bitcoin

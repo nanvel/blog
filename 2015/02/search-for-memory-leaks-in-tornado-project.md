@@ -3,7 +3,6 @@ tags: [blog, python, tornado]
 created: 2015-02-15T13:01
 modified: 2017-06-29T20:26
 place: Phuket, Thailand
-comments: true
 ---
 
 # Search for memory leaks in a tornado project
@@ -13,7 +12,7 @@ Guppy doesn't work with Python 3 (for February 2015).
 requirements.txt:
 ```text
 guppy
-
+```
 
 Use MemoryHandler to inspect memory usage:
 ```python
@@ -67,7 +66,7 @@ if __name__ == "__main__":
     options.parse_command_line()
     application.listen(5000)
     ioloop.IOLoop.instance().start()
-
+```
 
 ```bash
 nanvel-air:leaks nanvel$ curl http://localhost:5000/leak
@@ -110,7 +109,7 @@ Partition of a set of 153822 objects. Total size = 206002744 bytes.
     28     22   0    11536   0 205832240 100 dict of guppy.etc.Glue.Interface
     29    202   0    11312   0 205843552 100 module
 <168 more rows. Type e.g. '_.more' to view.></pre>
-
+```
 
 **UPD: 2017-06-29**
 

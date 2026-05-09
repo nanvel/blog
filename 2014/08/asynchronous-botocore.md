@@ -3,7 +3,6 @@ tags: [blog, tornado, aws, asynchronous]
 created: 2014-08-30T00:00
 modified: 2017-05-22T23:07
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # [tornado] Asynchronous botocore
@@ -27,7 +26,7 @@ PyPI: [https://pypi.python.org/pypi/tornado-botocore](https://pypi.python.org/py
 Installation:
 ```bash
 pip install tornado-botocore
-
+```
 
 Usage example:
 ```python
@@ -47,7 +46,7 @@ if __name__ == '__main__':
         region_name='us-east-1')
     ec2.call(callback=on_response)
     IOLoop.instance().start()
-
+```
 
 Another one:
 ```python
@@ -76,7 +75,7 @@ def send(self, ...):
     res = yield gen.Task(ses_send_email.call,
         Source=source, Message=message, Destination=destination)
     raise gen.Return(res)
-
+```
 
 ## HTTP client independent approach
 
@@ -143,4 +142,4 @@ class AWSClient(object):
                 'headers': e.headers,
                 'body': e.body
             }
-
+```

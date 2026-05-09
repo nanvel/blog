@@ -2,7 +2,6 @@
 tags: [blog, css, html]
 created: 2012-08-23T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # HTML/CSS best practice
@@ -11,7 +10,7 @@ comments: true
 
 ```html
 <link href="/styles/style.css" rel="stylesheet">
-
+```
 
 ## 2. Class selectors for styles
 
@@ -19,19 +18,19 @@ comments: true
 
 ```css
 .comment-body
-
+```
 
 ## 4. Urls without http/https
 
 ```html
 <script src="//www.site.com/static/js/script.js"></script>
-
+```
 
 ## 5. Don't use quotes in url()
 
 ```css
 background: url(//www.site.com/static/img/bg.png);
-
+```
 
 ## 6. Divide blocks by one empty line and section - by 2 lines
 
@@ -41,7 +40,7 @@ background: url(//www.site.com/static/img/bg.png);
   <li>One Piece</li>
   <li>Bleach</li>
 </ul>
-
+```
 
 ## 8. Only lower case for classes/ids
 
@@ -49,13 +48,13 @@ background: url(//www.site.com/static/img/bg.png);
 
 ```html
 <meta charset="utf-8">
-
+```
 
 ## 10. Comments inside css
 
 ```css
 {# TODO(Developer Name): What to do #}
-
+```
 
 ## 11. HTML5
 
@@ -63,13 +62,13 @@ background: url(//www.site.com/static/img/bg.png);
 
 ```html
 <img src="image.png" alt="Image title">
-
+```
 
 ## 13. Single line for short definitions
 
 ```css
 .style-white {color: #fff;}
-
+```
 
 ## 14. Ordering - alphabetically
 
@@ -89,7 +88,7 @@ background: url(//www.site.com/static/img/bg.png);
 h1,
 h2,
 h3 {color: #fff;}
-
+```
 
 Links:
 

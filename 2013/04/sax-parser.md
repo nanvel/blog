@@ -2,7 +2,6 @@
 tags: [blog, xml]
 created: 2013-04-14T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # SAX parser
@@ -79,7 +78,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+```
 
 Also can be useful: [xml.dom](http://docs.python.org/dev/library/xml.dom.pulldom.html).
 

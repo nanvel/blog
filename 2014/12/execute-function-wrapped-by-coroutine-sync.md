@@ -3,7 +3,6 @@ tags: [blog, tornado, asynchronous]
 created: 2014-12-07T20:47
 modified: 2014-12-27T00:00
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Execute function wrapped by tornado.gen.coroutine synchronously
@@ -32,7 +31,7 @@ def sleep(seconds=2):
 if __name__ == "__main__":
     options.parse_command_line()
     ioloop.IOLoop.instance().run_sync(sleep, timeout=1000)
-
+```
 
 **UPD 2014-12-27**
 
@@ -46,4 +45,4 @@ def my_task():
     ioloop_inst = SelectIOLoop.instance()
     ioloop_inst.initialize()
     ioloop_inst.run_sync(sleep, timeout=1000)
-
+```

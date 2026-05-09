@@ -2,7 +2,6 @@
 tags: [blog, scrapers]
 created: 2014-03-29T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Scrap NAICS codes and save them to sqlite database
@@ -17,7 +16,7 @@ I'll use [Beautifu](http://www.crummy.com/software/BeautifulSoup/) soup for scra
 Install requirements:
 ```bash
 pip install beautifulsoup4
-
+```
 
 Code:
 ```python
@@ -74,7 +73,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+```
 
 Result:
 ```bash
@@ -88,4 +87,4 @@ sqlite> select * from Codes where code like '111%';
 111992|Peanut Farming
 111998|All Other Miscellaneous Crop Farming
 sqlite> .q
-
+```

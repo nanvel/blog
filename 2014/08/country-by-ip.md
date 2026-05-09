@@ -2,7 +2,6 @@
 tags: [blog, tornado, geo]
 created: 2014-08-23T00:00
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Get country code/name by IP address
@@ -11,7 +10,7 @@ Using tornado and [maxmind geoip2](http://dev.maxmind.com/geoip/geoip2/downloada
 ```bash
 pip install tornado
 pip install geoip2
-
+```
 
 Use ```self.country``` to get client country code:
 ```python
@@ -60,4 +59,4 @@ if __name__ == '__main__':
     )
     application.listen(8000)
     IOLoop.instance().start()
-
+```

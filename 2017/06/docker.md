@@ -3,7 +3,6 @@ tags: [draft]
 created: 2017-06-06T22:57
 modified: 2023-12-26T20:53
 place: Phuket, Thailand
-comments: true
 ---
 
 # Docker notes
@@ -34,7 +33,7 @@ ENV NAME World
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
-
+```
 
 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) and
 [Dockerfile best practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
@@ -48,72 +47,72 @@ on docker docs.
 ```bash
 docker build -t <image tag> .
 docker build -f Dockerfile.my  # specify dockerfile name
-
+```
 
 ## Containers
 
 Run (for web app):
 ```bash
 docker run -p 4000:80 <image tag>
-
+```
 
 In background (detached mode):
 ```bash
 docker run -d <image tag>
-
+```
 
 List containers:
 ```bash
 docker ps  # running
 docker ps -a  # all containers
-
+```
 
 Stop:
 ```bash
 docker stop <container id>
 docker kill <container id>  # force stop
-
+```
 
 Remove (from current machine):
 ```bash
 docker rm <container id>
 docker rm $(docker ps -a -q)  # remove all containers
-
+```
 
 ## Images
 
 List images:
 ```bash
 docker images -a
-
+```
 
 Remove (from current machine):
 ```bash
 docker rmi <image id>
 docker rmi $(docker images -q)  # remove all images
-
+```
 
 ## Networks
 
 List networks:
 ```bash
 docker network ls
-
+```
 
 Inspect:
 ```bash
 docker network inspect <network name>
-
+```
 
 Create:
 ```
 docker network create -d <driver> <network name>
-
+```
 
 Running containers inside a network:
 ```
 docker run --net=my_network ...
-
+```
 
 ## Troubleshooting
 
@@ -121,12 +120,12 @@ In case of failed image build, use --debug key:
 
 ```bash
 image build --debug
-
+```
 
 sh into the image:
 ```bash
 docker run -it <container id> bash
-
+```
 
 On OSX I have an error when I run shub image build for first time: Detected error connecting to Docker daemon's host.
 
@@ -134,7 +133,7 @@ Try this to solve it:
 ```bash
 docker-machine restart default
 eval $(docker-machine env default)
-
+```
 
 ## AWS ECS (EC2 Container Service)
 
@@ -144,7 +143,7 @@ instance ->
 image ->
 task definition ->
 service
-
+```
 
 ## Vocabulary
 
@@ -173,7 +172,7 @@ services:
       - webnet
 networks:
   webnet:
-
+```
 
 ```yaml
 version: "3"
@@ -201,7 +200,7 @@ services:
       - POSTGRES_PASSWORD=abc123
     ports:
       - "54321:5432"
-
+```
 
 `PYTHONDONTWRITEBYTECODE` - instructs not to write `.pyc` files.
 

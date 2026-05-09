@@ -3,7 +3,6 @@ tags: [databases, draft]
 created: 2017-01-03T15:39
 modified: 2017-01-03T15:39
 place: Phuket, Thailand
-comments: true
 ---
 
 # MongoDB
@@ -18,7 +17,7 @@ db = client.my_db
 
 collection = db.my_collection
 # or db['my_collection']
-
+```
 
 ## Create documents
 
@@ -26,7 +25,7 @@ collection = db.my_collection
 fb.my_collection.insert_one({
 	'field': 'value'
 })
-
+```
 
 ## Vocabulary
 

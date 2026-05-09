@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2013-04-16T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # [Django] Pass iterator to response
@@ -29,4 +28,4 @@ def my_view(request):
     response = HttpResponse(my_iterator(), content_type='text/plain')
     response['Content-Disposition'] = 'attachment; filename=sometext.txt'
     return response
-
+```

@@ -3,7 +3,6 @@ tags: [gtd, draft, talk]
 created: 2022-10-14T15:29
 modified: 2022-10-14T15:29
 place: Bangkok, Thailand
-comments: false
 ---
 
 # What To Do Framework

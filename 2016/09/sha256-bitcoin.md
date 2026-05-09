@@ -3,7 +3,6 @@ tags: [blog, cryptography, blockchain, bitcoin]
 created: 2016-09-27T12:47
 modified: 2016-10-02T11:52
 place: Phuket, Thailand
-comments: true
 description: There is a lottery in bitcoin network that takes place every ~10 minutes. The lottery winner submits a new block to blockchain and awards with bitcoins. The winner is someone who was first to find a nonce that beeing concatenated with some other data  results in a hash function output smaller than some value
 keywords: bitcoin,mining,sha256
 image: /2016/09/bitcoinmining.png
@@ -32,7 +31,7 @@ block_hash = sha256(sha256(
     bits +
     nonce
 ))
-
+```
 
 ## An example using python
 
@@ -51,7 +50,7 @@ exp = bits >> 24  # 0x18
 mant = bits & 0xffffff  # 0x48ed4
 target_hexstr = '%064x' % (mant * (1<<(8*(exp - 3))))
 # '0000000000000000048ed4000000000000000000000000000000000000000000'
-
+```
 
 ```python
 import hashlib
@@ -81,7 +80,7 @@ print(binascii.b2a_hex(second_hash[::-1]))
 # b'0000002005dff584057d6f6fa7276bf0df228b5afc7f75db1c164601000000000000000076101602fbe0b2afe3fd7a5cc8da47ebcfe5c09d160ccb2df22b280798126e535e76ea57d48e0418f6a8b09b'
 # b'57e9fff3d914c07dd4eadc189887cbcc0ead44bc0e753c6ee963e59e618b215d'
 # b'00000000000000000244bf1d3600aada272d2d08aa1919a88ba9ecd14f42f3ae'
-
+```
 
 ## SHA-256
 
@@ -287,7 +286,7 @@ if __name__ == '__main__':
     assert binascii.b2a_hex(list_to_digest(sha256(''))) == b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
     block = b'0000002005dff584057d6f6fa7276bf0df228b5afc7f75db1c164601000000000000000076101602fbe0b2afe3fd7a5cc8da47ebcfe5c09d160ccb2df22b280798126e535e76ea57d48e0418f6a8b09b'
     assert list_to_digest(sha256(block)) == hashlib.sha256(block).digest()
-
+```
 
 ## Optimizations
 
@@ -464,7 +463,7 @@ if __name__ == '__main__':
         55624467632295270487489375918890129241800824638908068782,
         75916835553102774891823884113900634385218467396093025039177034268615350443547
     ]
-
+```
 
 It gives us about 30% efficiency increase. We may still improve the algorithm for a few more percents (see [The Unreasonable Fundamental Incertitudes Behind Bitcoin Mining](https://arxiv.org/pdf/1310.7935v3.pdf)).
 
@@ -492,7 +491,7 @@ binascii.b2a_hex(struct.pack('<L', 10))  # little-endian
 # b'0a000000'
 binascii.b2a_hex(struct.pack('>L', 10))  # big-endian
 # b'0000000a'
-
+```
 
 `L` - unsigned long, 4 bites.
 

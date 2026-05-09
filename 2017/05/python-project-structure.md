@@ -3,7 +3,6 @@ tags: [draft, python, software-development]
 created: 2017-05-07T15:17
 modified: 2017-05-07T15:17
 place: Phuket, Thailand
-comments: true
 ---
 
 # Python project structure
@@ -24,7 +23,7 @@ myproject
 -- file.py
 - README.md
 - setup.py
-
+```
 
 ## Tests folder
 
@@ -37,7 +36,7 @@ myproject
 -- mymodule1
 -- mymodule2
 - tests
-
+```
 It is bad because there may be another tests module in the python path or a local tests module. So `from tests import ...` may be a source of errors (`from myproject.tests import ...` is more reliable).
 
 Good:
@@ -47,7 +46,7 @@ myproject
 -- mymodule1
 -- mymodule2
 -- tests
-
+```
 
 And tests per module is even better idea as we can distribute module together with tests.
 
@@ -58,4 +57,4 @@ See [flake8](http://flake8.pycqa.org/en/latest/).
 ```
 myproject
 - .flake8
-
+```

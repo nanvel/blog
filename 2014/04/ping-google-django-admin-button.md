@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2014-04-06T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Ping google django admin button
@@ -13,11 +12,11 @@ comments: true
 
 Edit ```admin/change_form.html```:
 
-bash
+```bash
 cp .env/lib/python2.7/site-packages/django/contrib/admin/templates/admin/change_form.html myproject/templates/admin/
 ```
 
-diff
+```diff
 --- a/myproject/templates/admin/change_form.html
 +++ b/myproject/templates/admin/change_form.html
 @@ -28,6 +28,9 @@
@@ -31,7 +30,7 @@ diff
 ```
 
 Edit ```admin.py``` file:
-python
+```python
 from django.contrib import admin, messages
 from django.contrib.sitemaps import ping_google
 

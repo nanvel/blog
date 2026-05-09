@@ -147,7 +147,7 @@ class Event:
 @dataclass
 class MyEvent(Event):
     value: str
-
+```
 
 Events can help with the single responsibility principle.
 

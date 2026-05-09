@@ -3,7 +3,6 @@ tags: [blog, projects]
 created: 2012-12-16T00:00
 modified: 2014-12-16T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # nanvel.name weblog project

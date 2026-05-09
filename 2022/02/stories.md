@@ -3,7 +3,6 @@ tags: [draft]
 created: 2022-02-09T01:04
 modified: 2022-02-09T01:04
 place: Bangkok, Thailand
-comments: false
 ---
 
 # Stories

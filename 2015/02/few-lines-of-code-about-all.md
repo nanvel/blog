@@ -2,7 +2,6 @@
 tags: [blog, python]
 created: 2015-02-17T00:00
 place: Phuket, Thailand
-comments: true
 ---
 
 # A few lines of code about ```__all__```
@@ -12,10 +11,10 @@ dates/
     - __init__.py
     - tomorrow.py
     - tomorrow_all.py
-
+```
 
 ```tomorrow.py```:
-python
+```python
 import datetime
 
 
@@ -24,7 +23,7 @@ def tomorrow():
 ```
 
 tomorrow_all.py:
-python
+```python
 import datetime
 
 
@@ -37,10 +36,10 @@ def tomorrow():
 
 1. Without ```__all__```
 
-__init__.py```:
+```__init__.py```:
 ```python
 from .tomorrow import *
-
+```
 
 ```python
 >>> from dates import tomorrow
@@ -49,16 +48,16 @@ datetime.date(2015, 2, 18)
 >>> from dates import datetime
 >>> datetime
 <module 'datetime' from '/Users/nanvel/myprojects/tests/all_test/.env/lib/python2.7/lib-dynload/datetime.so'>
-
+```
 
 2. With ```__all__```
 
 ```__init__.py```:
-python
+```python
 from .tomorrow_all import *
 ```
 
-text
+```text
 >>> from dates import tomorrow
 >>> tomorrow()
 datetime.date(2015, 2, 18)
@@ -70,10 +69,10 @@ ImportError: cannot import name datetime
 
 3. ```__all__``` is not required
 
-__init__.py```:
+```__init__.py```:
 ```python
 from .tomorrow import tomorrow
-
+```
 
 ```text
 >>> from dates import tomorrow
@@ -83,4 +82,4 @@ datetime.date(2015, 2, 18)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ImportError: cannot import name datetime
-
+```

@@ -2,7 +2,6 @@
 tags: [blog, css]
 created: 2013-07-06T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Play icon using pure css
@@ -55,7 +54,7 @@ comments: true
         </div>
     </body>
 </html>
-
+```
 
 Links:
 

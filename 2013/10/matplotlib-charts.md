@@ -3,7 +3,6 @@ tags: [blog, signal-processing]
 created: 2013-10-05T00:00
 modified: 2017-11-25T12:08
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Displaying charts with Matplotlib
@@ -20,7 +19,7 @@ if __name__ == '__main__':
     x = [sin(2 * pi / T * 5 * i) for i in t] # 5 sin periods
     plt.plot(t, x)
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 1](gr_mpl_1.png)
 
@@ -37,7 +36,7 @@ if __name__ == '__main__':
     plt.xlabel('t')
     plt.ylabel('sin')
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 2](gr_mpl_2.png)
 
@@ -55,7 +54,7 @@ if __name__ == '__main__':
     plt.xlabel('t')
     plt.ylabel('sin')
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 3](gr_mpl_3.png)
 
@@ -75,7 +74,7 @@ if __name__ == '__main__':
     plt.subplot(122)
     plt.plot(t, x2, 'g-')
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 4](gr_mpl_4.png)
 
@@ -95,7 +94,7 @@ if __name__ == '__main__':
     fig2.canvas.set_window_title('sin chart example 2')
     plt.plot(t, x2)
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 5](gr_mpl_5.png)
 
@@ -114,7 +113,7 @@ if __name__ == '__main__':
     plt.ylabel('sin')
     plt.legend([p1, p2], ['5 periods', '1 period'])
     plt.show()
-
+```
 
 ![Charts using matplotlib, example 6](gr_mpl_6.png)
 

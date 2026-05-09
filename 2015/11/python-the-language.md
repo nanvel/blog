@@ -3,7 +3,6 @@ tags: [blog, python]
 created: 2015-11-22T21:33
 modified: 2022-10-22T16:41
 place: Kyiv, Ukraine
-comments: true
 visible: true
 ---
 
@@ -40,7 +39,7 @@ Variables are not boxes, they are labels attached to boxes.
 4469989248
 >>> id(d)
 4469989304
-
+```
 
 The sharing of string literals is an optimization technique called interning. CPython also uses it for small numbers.
 
@@ -49,7 +48,7 @@ The sharing of string literals is an optimization technique called interning. CP
 Python 3 allows [non-ASCII identifiers](https://www.python.org/dev/peps/pep-3131/) in sourse code:
 ```bash
 >>> こ = 'ko'
-
+```
 
 May be useful for teaching children programming.
 
@@ -71,7 +70,7 @@ Everything in Python is an object:
 ...
 >>> type(a)
 <class 'function'>
-
+```
 
 #### object to type relation
 
@@ -102,12 +101,12 @@ AttributeError: 'A' object has no attribute '__a'
 1
 >>> a._A__a
 1
-
+```
 
 #### ```__str__``` vs ```__repr__```
 
 ```__repr__``` returns a string representing the object sa the developer wants to see it.
-__str__``` returns a string representing the object as the user wants to see it.
+```__str__``` returns a string representing the object as the user wants to see it.
 
 #### Magic methods
 
@@ -150,7 +149,7 @@ True
 True
 >>> bool(D)
 False
-
+```
 
 ### Classes
 
@@ -161,7 +160,7 @@ Class is an object. Therefore each class must be an instance of some other class
 <class 'type'>
 >>> type.__class__
 <class 'type'>
-
+```
 
 #### Inheritance
 
@@ -185,7 +184,7 @@ Functions in Python are first-class objects (like integers, strings, dictionarie
 ['__annotations__', '__call__', ... , '__str__', '__subclasshook__']
 >>> a.__str__()
 '<function a at 0x10ab872f0>'
-
+```
 
 #### Key-only arguments in Python 3
 
@@ -205,7 +204,7 @@ TypeError: f() takes 1 positional argument but 2 were given
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: f() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
-
+```
 
 #### Function annotation
 
@@ -223,7 +222,7 @@ Python 3 provides syntax to attach metadata to the parameters of a function decl
 15
 >>> f.__annotations__
 {'a': <class 'str'>, 'return': <class 'str'>, 'b': 'int < 10'}
-
+```
 
 No processing is done with the annotations. They are merely stored in the ```__annotations__```  attribute of the function and have no meaning to the Python interpreter. Annotations may be used by tools such as IDEs, frameworks, and decorators.
 
@@ -253,7 +252,7 @@ UnboundLocalError: local variable 'id' referenced before assignment
 <built-in function id>
 >>> c()
 1
-
+```
 
 When Python compiles the body of the ```b``` function, it decides that ```id``` is a local variable because it is assigned within the function.
 
@@ -273,7 +272,7 @@ Don't do it.
 [1]
 >>> f()
 [1, 1]
-
+```
 
 #### Modification in place
 
@@ -287,7 +286,7 @@ When we pass mutable object as argument to function where it would be modified. 
 >>> f(a)
 >>> a
 {'a': 2}
-
+```
 
 #### Closures
 
@@ -320,7 +319,7 @@ An example from the Fluent Python book:
 ('series',)
 >>> avg.__closure__[0].cell_contents
 [10, 11, 12]
-
+```
 
 Each item in ```avg.__closure__``` corresponds to a name in ```avg.__code__.co_freevars```.
 
@@ -345,7 +344,7 @@ Unpacking a tuple:
     a, **middle, b = range(2)
         ^
 SyntaxError: invalid syntax
-
+```
 
 ### Strings
 
@@ -359,7 +358,7 @@ Strings comparison:
 (4, 5)
 >>> s1 == s2
 False
-
+```
 
 Two strings are canonical equivalents but different sequences. We need to normalize strings before comparison (see [unicodedata.normalize](https://docs.python.org/3.5/library/unicodedata.html#unicodedata.normalize)).
 
@@ -375,7 +374,7 @@ Two strings are canonical equivalents but different sequences. We need to normal
 >>> a.append(u'c')
 >>> a
 array('u', u'abc')
-
+```
 
 See also [```memoryview```](https://docs.python.org/3/c-api/memoryview.html).
 
@@ -404,7 +403,7 @@ List comprehensions has their own local scope in Python 3:
 ['1', '2', '3']
 >>> i
 1
-
+```
 
 ```bash
 # python2.7
@@ -415,7 +414,7 @@ List comprehensions has their own local scope in Python 3:
 ['1', '2', '3']
 >>> i
 '3'
-
+```
 
 ### Slycing
 
@@ -435,14 +434,14 @@ a = (1, 2, 3, 4, 5, 6, 7, 9, 10)
 (1, 3, 5)
 >>> a[0:6:3]
 (1, 4)
-
+```
 
 Reverse:
 ```bash
 >>> a = '123'
 >>> a[::-1]
 '321'
-
+```
 
 ### Sorting
 
@@ -452,7 +451,7 @@ Sort list in place:
 >>> a.sort()
 >>> a
 [1, 2, 3]
-
+```
 
 Sort using ```sorted``` function:
 ```bash
@@ -461,7 +460,7 @@ Sort using ```sorted``` function:
 [1, 2, 3]
 >>> a
 [1, 3, 2]
-
+```
 
 Sorting algorithm Python uses in [Timsort](https://en.wikipedia.org/wiki/Timsort), an adaptive algorithm that switches from insertion sort to merge sort strategies depending on how ordered the data is.
 
@@ -476,7 +475,7 @@ Every collection in Python is iterable.
 a
 b
 c
-
+```
 
 If an object has ```__getitem__``` and ```__len__``` methods, it is iterable:
 ```bash
@@ -493,7 +492,7 @@ If an object has ```__getitem__``` and ```__len__``` methods, it is iterable:
 1
 2
 3
-
+```
 
 Another way to create an iterable object is to define ```__iter__``` method that returns an iterator:
 ```bash
@@ -509,7 +508,7 @@ Another way to create an iterable object is to define ```__iter__``` method that
 1
 2
 3
-
+```
 
 We can create our own iterator, it sould be a class with ```__iter__``` and ```__next__``` methods. ```__iter__``` should return ```self``` and ```__next__``` should raise ```StopIteration``` when there are no further items:
 ```bash
@@ -537,7 +536,7 @@ We can create our own iterator, it sould be a class with ```__iter__``` and ```_
 1
 2
 3
-
+```
 
 Also we can return a generator as iterator:
 ```bash
@@ -553,7 +552,7 @@ Also we can return a generator as iterator:
 1
 2
 3
-
+```
 
 #### Iterator vs iterable
 
@@ -590,7 +589,7 @@ There are two ways to define a generator:
 1
 2
 3
-
+```
 
 #### Generator vs iterator
 
@@ -632,7 +631,7 @@ def generator():
 if __name__ == '__main__':
   for i in generator():
     print(i)
-
+```
 
 ### Coroutines
 
@@ -666,7 +665,7 @@ Finish
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
-
+```
 
 For comprehensive explanation see: [Coroutines at wla.berkeley.edu](http://wla.berkeley.edu/~cs61a/fa11/lectures/streams.html#coroutines).
 
@@ -684,7 +683,7 @@ def py34_coroutine():
 
 async def py35_coroutine():
     await avaitable()
-
+```
 
 ### Exceptions
 
@@ -712,7 +711,7 @@ Runs anyway.
 Error: Can't convert 'int' object to str implicitly
 Runs anyway.
 'a'
-
+```
 
 #### Reraise a catched exception
 
@@ -738,7 +737,7 @@ Traceback (most recent call last):
   File "<stdin>", line 4, in <module>
   File "<stdin>", line 2, in <module>
 ValueError: invalid literal for int() with base 10: 'a'
-
+```
 
 `raise` is preferable as we don't have `File "<stdin>", line 4, in <module>` line in the traceback.
 
@@ -759,7 +758,7 @@ The context manager protocol consists of the ```__enter__``` and ```__exit__``` 
 Enter
 Inner
 Exit
-
+```
 
 The same using ```contextlib```:
 
@@ -777,7 +776,7 @@ The same using ```contextlib```:
 Enter
 Inner
 Exit
-
+```
 
 ### Flow control
 
@@ -794,7 +793,7 @@ def http_error(status):
             return "I'm a teapot"
         case _:
             return "Something's wrong with the internet"
-
+```
 
 ## Standard library
 
@@ -833,7 +832,7 @@ Namedtuple represents object with only data user attributes, it uses less memory
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: can't set attribute
-
+```
 
 ### collections.defaultdict
 
@@ -851,7 +850,7 @@ KeyError: 'x'
 defaultdict(<type 'list'>, {'x': [1]})
 >>> dict(b)
 {'x': [1]}
-
+```
 
 ### http
 
@@ -859,7 +858,7 @@ A simple way to serve static:
 ```bash
 cd static
 python -m http.server 8001
-
+```
 
 See [http.server](https://docs.python.org/3.5/library/http.server.html#module-http.server).
 
@@ -876,7 +875,7 @@ Use list/generator comprehensions instead.
 >>> from operator import add
 >>> reduce(add, [1, 2, 3])
 6
-
+```
 
 ### functools.lru_cache
 
@@ -907,7 +906,7 @@ A weak reference to an object is not enough to keep the object alive: when the o
 >>> del(a)
 >>> b() is None
 True
-
+```
 
 ```list``` and ```dict``` types do not directly support weak references.
 
@@ -921,7 +920,7 @@ True
 
 ABC uses to check if the object has an interface we need (for example, if it can behave like a dict or an iterable). We can check if the object has necessary attributes and so if it walks like a duck and swims like a duck and quacks like a duck, it must be a duck. Alternative way is to check if the object subclasses an ABC that describes necessary interface.
 
-abc``` module contains decorators that can be used to define abstract methods (methods that must be present).
+```abc``` module contains decorators that can be used to define abstract methods (methods that must be present).
 
 ```bash
 >>> import abc
@@ -944,7 +943,7 @@ True
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: Can't instantiate abstract class D with abstract methods quack
-
+```
 
 ### itertools
 
@@ -962,7 +961,7 @@ For example:
 0
 0.2
 0.6000000000000001
-
+```
 
 ## Thirdparty
 
@@ -1020,7 +1019,7 @@ Deep copy is a copy of an object in which all the objects that are attributes of
 4333741320
 >>> id(c2.a)
 4335027272
-
+```
 
 ```id(c1.a) == id(c.a)``` but ```id(c2.a) != id(c.a)```.
 
@@ -1076,7 +1075,7 @@ There is a great [talk by David Beazley on PyCon 2015](https://www.youtube.com/w
 
 User-defined types are hashable by default because their hash value is their ```id()``` and they all compare not equal.
 
-bash
+```bash
 >>> a = [1, 2]
 >>> hash(a)
 Traceback (most recent call last):
@@ -1097,7 +1096,7 @@ We can't modify it.
 
 Immutable types in Python are: tuple.
 
-bash
+```bash
 >>> a = (1, 2, 3)
 >>> a[0] = 5
 Traceback (most recent call last):
@@ -1126,7 +1125,7 @@ Class metaprogramming is the art of creating or customizing classes at runtime.
 Means that we manage object creation, for example: create a class using ```type()``` or overriding ```__new__()``` method to return alternative object instance instead of creating new.
 
 A useful example - register class on class initialization:
-python
+```python
 class Registry(object):
 
     _items = {}

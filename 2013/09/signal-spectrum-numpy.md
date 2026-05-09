@@ -2,7 +2,6 @@
 tags: [blog, signal-processing]
 created: 2013-09-27T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Signal spectrum using NumPy
@@ -23,7 +22,7 @@ if __name__ == '__main__':
     plt.xlabel('time(seconds)')
     plt.ylabel('signal')
     plt.show()
-
+```
 
 ![Original signal](signal_1.png)
 
@@ -57,7 +56,7 @@ plt.plot(t, SIGNAL)
 plt.xlabel('time(seconds)')
 plt.ylabel('signal')
 plt.show()
-
+```
 
 ![Processed](signal_2.png)
 
@@ -74,7 +73,7 @@ plt.bar(frq, abs(y))
 plt.xlabel('Freq (Hz)')
 plt.ylabel('|Y(freq)|')
 plt.show()
-
+```
 
 ![Signal spectrum](signal_3.png)
 

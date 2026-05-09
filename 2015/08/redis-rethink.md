@@ -3,7 +3,6 @@ tags: [blog, databases, redis]
 created: 2015-08-15T10:15
 modified: 2016-02-20T21:31
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Redis, usage examples
@@ -63,7 +62,7 @@ if __name__ == '__main__':
     # 2015-08-24 15:53:51,162 Sleep 3s.
     # 2015-08-24 15:53:52,188 10
     # ~10ms vs >1s.
-
+```
 
 Pros:
 
@@ -145,7 +144,7 @@ if __name__ == '__main__':
     # 2015-08-24 17:30:38,491 Update cache.
     # 2015-08-24 17:30:38,492 Run hard task.
     # 2015-08-24 17:30:39,483 Get cache: 10.
-
+```
 
 ```update_hard_task_cache``` executes every 2 seconds.
 
@@ -164,7 +163,7 @@ The second issue is easy to fix: use flag in redis that shows that one of instan
 
 ![Cache with manual expiration check](cache3.png)
 
-python
+```python
 import datetime
 import logging
 
@@ -259,7 +258,7 @@ Cons:
 
 ### 4. Scripting
 
-python
+```python
 import datetime
 import logging
 
@@ -344,7 +343,7 @@ if __name__ == '__main__':
 
 ### 5. Cache functions and decorators
 
-python
+```python
 import datetime
 import logging
 
@@ -457,7 +456,7 @@ If some data updates a lot, it may be more efficient to keep the most recent dat
 
 In this example we will allow to user to send password reset request only once per 5s.
 
-python
+```python
 import logging
 import time
 
@@ -502,7 +501,7 @@ Let's count views of job posting. We will store relations (job_id/user_id) in RD
 The problem here is that we need to run count query against particular job_id to get job views count. Imagine if we have page with dozens of jobs where we need to show views counts ...
 We can solve this problem keeping counters in redis.
 
-python
+```python
 import logging
 
 from redis import StrictRedis
@@ -552,7 +551,7 @@ What if counter expire or someone will flush redis db?
 
 In this case we can easily restore count from RDB. If we haven't ability to restore counters easily, we need to backup counters values to RDB periodically.
 
-python
+```python
 import logging
 
 from redis import StrictRedis
@@ -622,7 +621,7 @@ Another key point about restore function is that we don't want to keep all data 
 
 What if we keep user session in redis and we need to show these jobs with views counts. Will we do two requests to redis?
 
-python
+```python
 import logging
 
 from redis import StrictRedis
@@ -739,7 +738,7 @@ if __name__ == '__main__':
 
 ### 1. Let's use lists to show latest 3 job views.
 
-python
+```python
 import logging
 
 from redis import StrictRedis
@@ -772,7 +771,7 @@ if __name__ == '__main__':
 
 ### 2. Use sorted set to show top 3 jobs by views
 
-python
+```python
 import logging
 
 from redis import StrictRedis
@@ -826,7 +825,7 @@ See: [Tornado-Redis vs Redis-py](https://github.com/leporo/tornado-redis#tornado
 
 ### 3. If redis works slow
 
-bash
+```bash
 redis-cli
 > info
 > # check number of connections, memory, etc.
@@ -836,7 +835,7 @@ redis-cli
 
 ### 4. Don't use KEYS command in your code
 
-python
+```python
 keys = redis.keys('jobs:{job_id}:*')
 for key in keys:
     redis.delete(key)

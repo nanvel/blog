@@ -2,7 +2,6 @@
 tags: [blog, python]
 created: 2014-12-27T14:41
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Python static method and class inheritance
@@ -38,7 +37,7 @@ if __name__ == '__main__':
     print Child2.my_value()
     print Child2().my_value()
     print Base.my_value()
-
+```
 
 Output:
 ```text
@@ -49,4 +48,4 @@ None
 None
 None
 None
-
+```

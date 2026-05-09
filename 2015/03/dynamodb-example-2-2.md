@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-03-21T13:22
 place: Phuket, Thailand
-comments: true
 ---
 
 # DynamoDB in examples, Example 2.2: Table secondary indexes
@@ -176,4 +175,4 @@ if __name__ == '__main__':
     # [{'user_id': '4fc8283c-20b5-4326-9432-544f699136a6', 'page_id': '01e379a2-6628-48e9-97ba-b082b3e2112f', 'page_id_user_id': '01e379a2-6628-48e9-97ba-b082b3e2112f_4fc8283c-20b5-4326-9432-544f699136a6', 'created': '2015-03-21 13:19:45.469416'}]
     # [{'user_id': 'b5f76efb-2d9e-4dd0-ac26-9108596c74e6', 'page_id': '8c8a3660-aaf2-4189-a239-3ae3538ff75d', 'page_id_user_id': '8c8a3660-aaf2-4189-a239-3ae3538ff75d_b5f76efb-2d9e-4dd0-ac26-9108596c74e6', 'created': '2015-03-21 13:19:44.270737'}, ...]
     # [{'user_id': 'b80f1750-4069-4d77-a2d1-edb83f8c9230', 'page_id': '6ea0815e-c4f5-4e02-8ce8-97d028f230ed', 'page_id_user_id': '6ea0815e-c4f5-4e02-8ce8-97d028f230ed_b80f1750-4069-4d77-a2d1-edb83f8c9230', 'created': '2015-03-21 13:19:44.440595'}, ...]
-
+```

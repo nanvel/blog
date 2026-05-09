@@ -3,7 +3,6 @@ tags: [draft, finance, crypto, trading]
 created: 2024-03-18T19:39
 modified: 2024-03-18T19:39
 place: Bangkok, Thailand
-comments: true
 ---
 
 # Options

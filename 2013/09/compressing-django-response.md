@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2013-09-17T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # [Django] Compress response generator output
@@ -23,7 +22,7 @@ def myview(request):
         content_type='text/plain')
     response['Content-Disposition'] = 'attachment; filename=mygenerator.txt'
 return response
-
+```
 
 Add magic:
 ```python
@@ -69,4 +68,4 @@ def myview(request):
         content_type='application/x-gzip')
     response['Content-Disposition'] = 'attachment; filename=mygenerator.gz'
 return response
-
+```

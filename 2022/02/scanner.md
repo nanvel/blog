@@ -3,7 +3,6 @@ tags: [projects]
 created: 2022-02-13T14:24
 modified: 2022-02-13T14:24
 place: Phuket, Thailand
-comments: false
 ---
 
 # Futures scanner

@@ -3,7 +3,6 @@ tags: [blog, scm]
 created: 2012-05-25T00:00
 modified: 2017-01-15T11:57
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # Git commands
@@ -17,7 +16,7 @@ Get help:
 git help <command>
 git <command> --help
 man git-<command>
-
+```
 
 Set git user username and email:
 ```bash
@@ -27,7 +26,7 @@ git config --global user.email "someone@mail.com"
 # locally (for current project)
 git config user.name "Some One"
 git config user.email "someone@mail.com"
-
+```
 
 ## Manage repositories
 
@@ -36,25 +35,25 @@ Init:
 git init .
 git add main.c module.c
 git commit -a -m 'init'
-
+```
 
 Add a remote repository:
 ```bash
 git remote add github git@github.com:username/project.git
 # or edit .git/config manually
-
+```
 
 ## Get information
 
 View untracked files:
 ```bash
 git status
-
+```
 
 View file history:
 ```bash
 git log my_file
-
+```
 
 View commits differences:
 ```bash
@@ -62,37 +61,37 @@ git diff xxxxxxx..xxxxxxx # xxxxxxx - commit hash
 git diff master..my_branch
 # current uncommited changes:
 git diff
-
+```
 
 Diff for specified user:
 ```bash
 git diff master..my_branch --author 'User Name'
-
+```
 
 View list of changed files:
 ```bash
 git diff --name-only master..some_branch
 git diff --name-only SHA1 SHA2
 git diff --name-only HEAD~10 HEAD~5
-
+```
 
 Show list of commits:
 ```bash
 git log
 # for user
 got log --author 'User Name'
-
+```
 
 Show file from specified revision:
 ```bash
 git show <treeish>:<file>
 git show HEAD~4:tests.py
-
+```
 
 Show changes history for specified line of code:
 ```bash
 git blame path/to/file -L <line number>
-
+```
 
 ## Branches
 
@@ -102,41 +101,41 @@ git branch my_branch_name
 git checkout my_branch_name
 # or simpler:
 git checkout -b my_branch_name
-
+```
 
 Pull the latest branch code from remote repository:
 ```bash
 git pull origin my_branch
-
+```
 
 Pull latest changes from remote repository and ignore local changes:
 ```bash
 git fetch
 git reset --hard origin/mybranch
-
+```
 
 Delete a local branch:
 ```bash
 git branch -d the_local_branch
-
+```
 
 Delete a remote branch:
 ```bash
 git push origin --delete branch_to_remove
-
+```
 
 Copy branch from origin:
 ```bash
 git fetch
 git checkout -b new_branch origin/new_branch
-
+```
 
 Merge branch:
 ```bash
 git commit -a -m 'some changes'
 git checkout master
 git merge my_branch --no-ff
-
+```
 
 ## Work with codebase
 
@@ -145,18 +144,18 @@ Push change to remote repository:
 # some changes
 git commit -a -m 'Something was changed'
 git push origin master
-
+```
 
 Move or delete files:
 ```bash
 git mv my_file.c new_name.c
 git rm my_file.c
-
+```
 
 Restore deleted files:
 ```bash
 git checkout deleted_file.c
-
+```
 
 Extend latest commit:
 ```bash
@@ -164,12 +163,12 @@ Extend latest commit:
 git commit -a -m 'Something was changed'
 git add some_new_file.c
 git commit -a --amend
-
+```
 
 Rollback the last commit:
 ```bash
 git reset --hard HEAD^
-
+```
 
 Revert changes in one file:
 ```bash
@@ -179,12 +178,12 @@ git checkout origin/master -- filename
 git checkout HEAD -- filename
 # the version before the most recent commit
 git checkout HEAD^ -- filename
-
+```
 
 Copy commit from one branch to another (cherry-pick):
 ```bash
 git cherry-pick xxxxxxx # xxxxxxx - commit hash
-
+```
 
 Hide/restore not commited changes (stashing):
 ```bash
@@ -194,7 +193,7 @@ git stash
 git stash list
 # restore latest stashed changes
 git stash apply
-
+```
 
 Rebase (interactive):
 ```bash
@@ -206,7 +205,7 @@ git rebase -i origin/master
 # to squash all commits into one: mark all commits with "s" except the first one
 # force push:
 git push -f origin my_branch
-
+```
 
 Links:
 

@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-04-12T12:45
 place: Phuket, Thailand
-comments: true
 ---
 
 # DynamoDB in examples, Example 3: Toys store orders
@@ -243,7 +242,7 @@ if __name__ == '__main__':
     print(orders_in_progress)
     # ([{'product_id': 'ad3ffb1e-f3eb-46bc-bebc-201034f757e6', 'user_id': 'e7aa25d8-2b1b-4fea-a735-4dbeeff06aaa', 'created': 1428791681, 'order_status_created': '201_1428791681', 'order_status': 201, 'order_id': 'f14e47c3-0232-430c-b79c-65b9ab000110'}], None)
     # ([{'product_id': '2d0126e0-92f7-437d-a938-41f95046d502', 'user_id': '917d107b-035e-4c02-a06b-343840fee92e', 'created': 1428791681, 'order_status_created': '101_1428791681', 'order_status': 101, 'order_id': '5ce48b08-2041-4d6b-82b4-7b1814d918ff'}, {'product_id': '2d0126e0-92f7-437d-a938-41f95046d502', 'user_id': '539f35ca-aed1-4353-80c2-0cd496bca092', 'created': 1428791681, 'order_status_created': '101_1428791681', 'order_status': 101, 'order_id': '3e5a8e0d-f76d-48ee-9c41-279f548f19cb'}], None)
-
+```
 
 ## Reserved words
 

@@ -2,7 +2,6 @@
 tags: [blog, linux, raspberry-pi]
 created: 2013-03-02T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Photo registrator on Raspberry Pi
@@ -26,7 +25,7 @@ What I done to make it works:
 ## 1. Script for making photos on usb webcam
 
 ```fswebcam``` utility was used. It can be installed using package manager.
-bash
+```bash
 #!/bin/sh
 
 DEVICE=/dev/video0
@@ -39,7 +38,7 @@ PHOTOS_DIR=/home/cameraman/photos
 
 Using nginx.
 
-nginx.conf```:
+```nginx.conf```:
 ```nginx
 user cameraman;
 worker_processes 1;
@@ -82,7 +81,7 @@ http {
         }
     }
 }
-
+```
 
 ## 3. FastCGI server for files list page
 
@@ -120,7 +119,7 @@ if __name__ == '__main__':
             WSGIServer(app, bindAddress=SOCKET).run()
     else:
         WSGIServer(app, bindAddress=SOCKET).run()
-
+```
 
 System V script for the server:
 
@@ -169,7 +168,7 @@ case "$1" in
   ;;
 esac
 exit $?
-
+```
 
 ## 4. Periadically remove old photos
 
@@ -207,7 +206,7 @@ def remove_old_photos():
 
 if __name__ == '__main__':
     remove_old_photos()
-
+```
 
 Code and instructions how to install scripts available at [bitbucket](https://bitbucket.org/nanvel/cameraman/overview).
 

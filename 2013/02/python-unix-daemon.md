@@ -2,7 +2,6 @@
 tags: [blog, python]
 created: 2013-02-16T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Python way to create a unix daemon
@@ -10,7 +9,7 @@ comments: true
 We can easily put a program into background using '&':
 ```bash
 python myprogram.py &
-
+```
 
 But that does not correctly detach the process from the terminal session that started it. So, if I'll close terminal, the program will be terminated.
 
@@ -53,7 +52,7 @@ class App():
 app = App()
 daemon_runner = runner.DaemonRunner(app)
 daemon_runner.do_action()
-
+```
 
 Usage:
 ```bash
@@ -63,7 +62,7 @@ usage: md.py start|stop|restart
 started with pid 8699
 > python mydaemon.py stop
 Terminating on signal 15
-
+```
 
 Links:
 

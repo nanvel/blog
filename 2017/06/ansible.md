@@ -3,7 +3,6 @@ tags: [blog, tools, server]
 created: 2017-06-12T18:44
 modified: 2017-11-28T11:06
 place: Phuket, Thailand
-comments: true
 ---
 
 # Ansible notes
@@ -42,12 +41,12 @@ ansible <group> -b -m <command> -a <arguments>  # -b == become (root)
 ansible <group> -m ping -u <username>
 ansible mygroup -b -m yum -a "name=ntp state=present"
 ansible .... --limit "192.168.60.1"  # limit to one instance, can use patterns
-
+```
 
 Verbose:
 ```bash
 ansible ... -vvvv
-
+```
 
 Combine commands into playbooks.
 
@@ -105,12 +104,12 @@ Example:
     - do something
       ...
     - include: my-handlers.yml
-
+```
 
 Privileged access (use sudo):
 ```
 become: yes
-
+```
 
 [Handlers](http://docs.ansible.com/ansible/playbooks_intro.html#handlers-running-operations-on-change): Running Operations On Change.
 
@@ -131,7 +130,7 @@ become: yes
   # when: "(is_local is defined) and is_local"
   # when: "'ready' in my_result.stdout"
   # when: "my_result.stdout.find(another_var + '/some.js') == -1"
-
+```
 
 `changed_when`
 `failed_when`
@@ -147,7 +146,7 @@ become: yes
 - include: playbook2.yml
   vars:
     - myvar: myvalue
-
+```
 
 And can combine with `when` and `with` loop statements.
 
@@ -171,12 +170,12 @@ db
 [multi:vars]
 ansible_ssh_user=myuser
 ansible_ssh_private_key_file=~/...
-
+```
 
 Can specify which inventory to use:
 ```bash
 ansible-playbook myplaybook.yml -i inventories/myinventory
-
+```
 
 Inventories can be dynamic.
 
@@ -189,7 +188,7 @@ Use all lowercase letters.
 Passing a variables file:
 ```bash
 ansible-playbook playbook.yaml --extra-vars "@vars.yml"
-
+```
 
 [Registered variables](http://docs.ansible.com/ansible/playbooks_variables.html#registered-variables): save command stdout and stderr.
 
@@ -198,7 +197,7 @@ ansible-playbook playbook.yaml --extra-vars "@vars.yml"
   register:
     my_command_result
 # "{{ my_command_result.stdout }}"
-
+```
 
 [Facts](http://docs.ansible.com/ansible/playbooks_variables.html#information-discovered-from-systems-facts) are information derived from speaking with your remote systems.
 
@@ -214,7 +213,7 @@ Using `~/.bash_profile`:
       path=~/.bash_profile
       regexp=^ENV_VAR=
       line=ENV_VAR=value
-
+```
 For system-wide use: `/etc/environment`.
 
 Per play:
@@ -223,17 +222,17 @@ Per play:
   ...
   environment:
     my_env_var: my_value
-
+```
 
 Per shell command can use templates:
 ```jinja2
 cd {{ app_home }} && ENV_KEY1={{ env_val1 }} ENV_KEY2={{ env_val2 }} {{ app_venv }}/bin/python myapp.py
-
+```
 
 Task:
 ```yaml
 - shell: "{{ lookup('template', 'mytemplate.j2') }}"
-
+```
 
 Per supervisor config:
 ```jinja2
@@ -243,7 +242,7 @@ process_name=myapp
 user={{ app_user }}
 directory={{ app_home }}
 environment=ENV_KEY1="{{ env_value1 }}",ENV_KEY2="{{ env_value2 }}"
-
+```
 
 #### Sensitive values
 
@@ -252,7 +251,7 @@ ansible/variables/<env>-sensitive.yml
 # (don't put it under git index)
 # or specify them in command line:
 ansible-playbook myplaybook.yml --extra-vars="myvar=myvalue"
-
+```
 
 So `vars_files` will look like:
 ```yaml
@@ -260,14 +259,14 @@ vars_files:
   - common.yml
   - "myservice_{{ env }}.yml"
   - "myservice_{{ env }}_sensitive.yml"
-
+```
 
 And `env` can be specified inside inventories:
 ```conf
 # ...
 [all:vars]
 env=development
-
+```
 
 Variable prompt:
 ```yaml
@@ -279,7 +278,7 @@ vars_prompt:
     prompt: "What is password?"
     private: yes
     confirm: yes
-
+```
 
 Or use Ansible vault.
 
@@ -290,28 +289,28 @@ Encryption: AES-256.
 Edit:
 ```
 ansible-vault edit
-
+```
 
 Run:
 ```bash
 ansible-playbook playbook.yml --ask-vault-pass
-
+```
 
 Works faster with:
 ```bash
 pip install cryptography
-
+```
 
 String encryption:
 ```bash
 ansible-vault encrypt_string <some string> --vault-password-file <password file>
-
+```
 This command will output a string ready to be included in a YAML file. 
 
 File encryption:
 ```bash
 ansible-vault encrypt <file path> --vault-password-file <password file>
-
+```
 Replace the file.
 
 ### Roles
@@ -324,19 +323,19 @@ my_role/
     main.yml
   tasks/
     main.yml
-
+```
 
 ```yaml
 - hosts: all
   roles:
     - my_role
-
+```
 
 Meta:
 ```yaml
 ---
 dependencied: []
-
+```
 
 #### Ansible galaxy
 
@@ -344,7 +343,7 @@ A repository for roles.
 
 ```bash
 ansible-galaxy init <role name>
-
+```
 
 ## Usage
 
@@ -352,14 +351,14 @@ ansible-galaxy init <role name>
 
 ```bash
 ansible-doc <module name>
-
+```
 
 ### Debug
 
 Verbose:
 ```bash
 ansible-playbook playbook.yml -v
-
+```
 
 ### Environments
 
@@ -368,13 +367,13 @@ Can specify environment inside inventories:
 # ...
 [all:vars]
 env=development
-
+```
 
 And then use it when loading variables:
 ```yaml
 vars_files:
   - "myservice_{{ env }}.yml"
-
+```
 
 ### Tags
 
@@ -388,12 +387,12 @@ tasks:
     someaction: someargs
     tags:
       - setup
-
+```
 
 ```bash
 ansible-playbook myplaybook.yml --tags "install"
 ansible-playbook myplaybook.yml --skip-tags "install"
-
+```
 
 ### Vagrant
 
@@ -410,7 +409,7 @@ vagrant ssh
 vagrant halt  # shut down
 vagrant destroy  # completely destroy the box
 vagrant ssh-config  # ssh details
-
+```
 
 Vagrant features:
 
@@ -450,7 +449,7 @@ Vagrant.configure("2") do |config|
   # ...
 
 end
-
+```
 
 !!! tip "Reach host machine"
     Host machine is available at `10.0.2.2`.
@@ -481,14 +480,14 @@ Host bastion.example.com
   ControlMaster auto
   ControlPath ~/.ssh/ansible-%r@%h:%p
   ControlPersist 5m
-
+```
 
 ```text
 # ansible.cfg
 [ssh_connection]
 ssh_args = -F ./ssh.cfg -o ControlMaster=auto -o ControlPersist=30m
 control_path = ~/.ssh/ansible-%%r@%%h:%%p
-
+```
 
 Doesn't work for me ^, so I just put the configuration to `~/.ssh/config`.
 
@@ -498,7 +497,7 @@ Specify it in inventories:
 ```conf
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
-
+```
 
 ### Copy source code
 
@@ -517,7 +516,7 @@ One way:
         - ../<some folder>
         - ../<some file>
       notify: server restart
-
+```
 
 ## Examples
 
@@ -572,7 +571,7 @@ One way:
         requirements: "/home/{{ user }}/<project name>/requirements.txt"
         virtualenv: "/home/{{ user }}/.venv"
       become_user: "{{ user }}"
-
+```
 
 ## Best practices
 
@@ -592,7 +591,7 @@ See [Ansible Best Practices](http://docs.ansible.com/ansible/playbooks_best_prac
   - playbook1.yml
   - playbook2.yml
   - Vagrantfile
-
+```
 
 ## Vocabulary
 

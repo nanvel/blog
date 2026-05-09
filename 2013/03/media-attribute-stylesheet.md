@@ -2,7 +2,6 @@
 tags: [blog, html]
 created: 2013-03-08T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # media attribute in link[rel=stylesheet]
@@ -20,7 +19,7 @@ comments: true
         <div class="cube"></div>
     </body>
 </html>
-
+```
 
 ```css
 /* normal.css */
@@ -33,7 +32,7 @@ small.css:
 .cube {
     background-color: #0a0;
 }
-
+```
 
 Result:
 

@@ -3,7 +3,6 @@ tags: [blog, django, js]
 created: 2012-07-30T00:00
 modified: 2015-02-15T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Multiple files uploading with Django and valums file-uploader
@@ -30,7 +29,7 @@ Place it there You want to see uploader:
         <!-- or put a simple form for upload here -->
     </noscript>
 </div>
-
+```
 
 Initialize file-uploader:
 ```js
@@ -38,7 +37,7 @@ var uploader = new qq.FileUploader({
     element: document.getElementById('file-uploader'),
     action: '/server/upload/'
 });
-
+```
 
 My configuration for uploader shown on the image:
 ```js
@@ -74,7 +73,7 @@ element: lb.find('.js-image-uploader')[0]._,
         $(el).find('.qq-progress span')[0].setStyle('width', (loaded/total*300).round() + 'px');
     }
 });
-
+```
 
 ## Step 2: Django
 
@@ -123,7 +122,7 @@ def upload_image(request):
         locks.unlock(fd)
         os.close(fd)
     return HttpResponse(dumps({'success': True}), mimetype='application/json')
-
+```
 
 Test:
 ```python
@@ -148,7 +147,7 @@ def test_upload_image(self):
             os.remove(file_path)
         response = upload_image(request)
         self.assertTrue(os.path.exists(file_path))
-
+```
 
 Check out also these:
 

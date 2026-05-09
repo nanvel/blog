@@ -3,7 +3,6 @@ tags: [software-development, api, blog]
 created: 2016-02-14T08:59
 modified: 2017-06-11T21:26
 place: New York, USA
-comments: true
 ---
 
 # RESTful API design conventions
@@ -36,9 +35,9 @@ Pattern: ```major.minor.patch```.
 Example:
 
 ```1.0.0``` - initial version.
-1.0.1``` - minor bug fixes, there are no new features was added and interface exactly the same as in the previous version.
+```1.0.1``` - minor bug fixes, there are no new features was added and interface exactly the same as in the previous version.
 ```1.1.0``` - some new features was added, the interface were extended. The API is fully compatible with the previous version.
-2.0.0``` - there are changes in the API interface made it incompatible with the previous version.
+```2.0.0``` - there are changes in the API interface made it incompatible with the previous version.
 
 Major version increment == backward incompatibility.
 Minor version increment == extended but fully compatible.
@@ -66,12 +65,12 @@ For example:
 /accounts/123
 /store/123/products
 /store/123/products/123
-
+```
 
 It may be useful for large applications to prefix URL with module name:
 ```
 /mymodule/myobjects/objid
-
+```
 
 ### Underscore, dash or CamelCase
 
@@ -80,7 +79,7 @@ There are a lot of ways to split words in an url making it more readable we can 
 /products/myFavouriteProduct
 /products/my_vavourite_product
 /products/my-favourite-product
-
+```
 
 You can use even a colon as a splitter.
 Using dash looks the best practice. You are allowed to use what you think is right, but mixing them is a bad decision.
@@ -98,19 +97,19 @@ Here are a few points in favor of the dashes ([source](https://stackoverflow.com
 HTML forms uses ```application/x-www-form-urlencoded``` (or ```multipart/form-data``` if contains binary data), a request body looks like:
 ```
 parameter=value&also=another
-
+```
 
 Using Python we can encode data into this format using urllib:
 ```bash
 >>> from urllib.parse import urlencode
 >>> urlencode({'parameter': 'value', 'also': 'another'})
 'parameter=value&also=another'
-
+```
 
 JSON format is also popular same for request body and response. Use proper content type:
 ```
 Content-Type: 'application/json; charset=UTF-8'
-
+```
 
 ## Response
 
@@ -127,18 +126,18 @@ In case if you need to return a list of results, use a ```results``` node:
       }
    ]
 }
-
+```
 
 ### Status codes
 
 ```200``` - Success
-201``` - Created
+```201``` - Created
 ```400``` - Error
-401``` - Unauthorized
+```401``` - Unauthorized
 ```403``` - Forbidden
-404``` - Not found
+```404``` - Not found
 ```500``` - Unknown error
-503``` - Service unavailable
+```503``` - Service unavailable
 
 See more: [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
@@ -150,7 +149,7 @@ Empty response must be empty. Bad practice:
    "success": true,
    "code": 0
 }
-
+```
 
 Use status codes to show that transaction succeeded.
 
@@ -171,7 +170,7 @@ Example:
       }
    ]
 }
-
+```
 
 ## Pagination
 

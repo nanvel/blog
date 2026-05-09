@@ -3,7 +3,6 @@ tags: [blog, databases, lua]
 created: 2014-11-09T00:00
 modified: 2015-09-24T00:00
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Select my friends activities, nosql way
@@ -26,7 +25,7 @@ JOIN friends fr ON fr.friend_id=act.user_id AND fr.user_id='{user_id}'
 WHERE act.timestamp < {last}
 ORDER BY act.timestamp DESC
 LIMIT {limit};
-
+```
 
 Let's try to use redis for this task. Simplified plan is next:
 
@@ -69,7 +68,7 @@ def search(self, user, last, limit):
     return users
     """
     return self.conn.eval(SCRIPT, 0, user, last, get_timestamp(), limit)
-
+```
 
 Full script and it's output see on gist: [https://gist.github.com/nanvel/8725b9c71c0040b0472b](https://gist.github.com/nanvel/8725b9c71c0040b0472b)
 
@@ -96,7 +95,7 @@ CREATE INDEX activities_user_id_index ON activities (user_id);
 CREATE INDEX activities_timestamp_index ON activities (timestamp);
 CREATE INDEX friends_user_id_index ON friends (user_id);
 CREATE INDEX friends_friend_id_index ON friends (friend_id);
-
+```
 
 Activities count: 30000
 Friends count: 25000

@@ -102,7 +102,7 @@ Records can be retrieved using api, for the one above:
   "updated_at": "2024-05-02T10:37:00",
   "is_template": false
 }
-
+```
 
 Trend lines can be selected from suggestions or drawn:
 ![trend lines](trend_lines.png)

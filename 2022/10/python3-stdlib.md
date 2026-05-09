@@ -3,7 +3,6 @@ tags: [python]
 created: 2022-10-22T16:45
 modified: 2023-09-11T23:32
 place: Bangkok, Thailand
-comments: true
 ---
 
 # Python 3 standard library notes
@@ -40,7 +39,7 @@ r = re.compile(r'(\d+)')
 list(r.finditer('1, 100'))
 # [<re.Match object; span=(0, 1), match='1'>,
 #  <re.Match object; span=(3, 6), match='100'>]
-
+```
 
 Regular expression flags:
 
@@ -76,7 +75,7 @@ def myfunc_list(arg):
 myfunc('s')
 myfunc(1)
 myfunc([1])
-
+```
 
 ## itertools.chain
 
@@ -86,7 +85,7 @@ from itertools import chain
 
 for i in chain([1, 2, 3], [4, 5, 6]):
     print(i)
-
+```
 
 ## itertools.islice
 
@@ -94,7 +93,7 @@ for i in chain([1, 2, 3], [4, 5, 6]):
 islice(range(100), 5)  # first 5
 islice(range(100), 5, 10)  # 5 to 10
 islice(range(100), 0, 100, 10)  # 0, 10, 20, ...
-
+```
 
 ## itertools.dropwhile, itertools.takewhile
 
@@ -105,7 +104,7 @@ from itertools import dropwhile
 
 
 dropwhile(lambda x: x < 10, [-1, 1, 10, 100])
-
+```
 
 ## itertools.compress
 
@@ -117,7 +116,7 @@ every_third = cycle([False, False, True])
 data = range(10)
 
 compress(data, every_third)  # [2, 5, 8]
-
+```
 
 ## itertools.groupby
 
@@ -128,7 +127,7 @@ from itertools import groupby
 
 for k, g in groupby(data, operator.attgetter('x')):
     print(k, g)
-
+```
 
 ## itertools.accumulate
 
@@ -137,14 +136,14 @@ from itertools import accumulate
 
 
 accumulate(range(5))  # 0, 1, 3, 6, 10
-
+```
 
 ## itertools.product
 
 ```python
 list(product(['a', 'b'], ['0', '1']))
 # [('a', '0'), ('a', '1'), ('b', '0'), ('b', '1')]
-
+```
 
 ## itertools.permutations, itertools.combinations
 
@@ -159,7 +158,7 @@ list(permutations([1, 2, 3], 2))
 
 list(combinations([1, 2, 3], 2))
 # [(1, 2), (1, 3), (2, 3)]
-
+```
 
 `combinations` - unique combinations.
 
@@ -170,7 +169,7 @@ Make it easy to programmatically combine other context managers and cleanup func
 ```python
 with ExitStack() as stack:
     files = [stack.enter_context(open(fname)) for fname in filenames]
-
+```
 
 ## operator
 
@@ -190,7 +189,7 @@ invert(c)
 
 attrgetter('arg')
 itemgetter(0)
-
+```
 
 ## time
 
@@ -204,7 +203,7 @@ process_time()  # cpu time
 
 time.get_clock_info('monotonic')
 # namespace(implementation='mach_absolute_time()', monotonic=True, adjustable=False, resolution=4.166666666666667e-08)
-
+```
 
 ## statistics
 
@@ -232,7 +231,7 @@ variance([10, 5, 4, 2, 7, 9])
 # 9.366666666666667
 stdev([10, 5, 4, 2, 7, 9])
 # 3.0605010483034745
-
+```
 
 ## linecache
 
@@ -253,7 +252,7 @@ import filecmp
 
 dc = filecmp.dircmp('example/dir1', 'example/dir2')
 dc.report()
-
+```
 
 ## os.path
 
@@ -271,7 +270,7 @@ os.path.getatime(path)  # access time
 os.path.getmtime(path)  # modification time
 os.path.getctime(path)  # creation time
 os.path.getsize(path)  # size in bytes
-
+```
 
 ## pathlib
 
@@ -289,7 +288,7 @@ f.write_bytes("Example content".encode('utf-8'))
 
 with f.open('r', encoding='utf-8') as handle:
     handle.read()
-
+```
 
 Deleting files: for files, symbolic links, and most other path types, use `unlink()`.
 
@@ -303,7 +302,7 @@ import glob
 
 for name in sorted(glob.glob('dir/*')):
     print(name)
-
+```
 
 `fnmatch` - unix-style glob pattern matching.
 
@@ -324,7 +323,7 @@ import tempfile
 with tempfile.SpooledTemporaryFile(max_size=100, mode='w+t', encoding='utf-8') as temp:
     # temp._rolled, temp._file  # rollover to disk?
     ...
-
+```
 
 ## mmap
 
@@ -338,7 +337,7 @@ Memory-map files.
 ```python
 with codecs.open(filename, mode='w', encoding=encoding) as f:
     ...
-
+```
 
 Error handling modes:
 
@@ -363,7 +362,7 @@ text = 'example text'
 stream.write(text)
 stream.flush()
 print(buffer.getvalue())
-
+```
 
 `IncrementalEncoder`, `IncrementalDecoder`: for large data sets, encodings operate better incrementally, working on one small chunk of data at a time.
 
@@ -384,7 +383,7 @@ with shelve.open('test_shelf.db') as s:
         'int': 10,
         's': 'string',
     }
-
+```
 
 ## dbm
 
@@ -419,7 +418,7 @@ with sqlite3.connect(db_filename) as conn:
 
     for row in cursor.fetchall():
         pass
-
+```
 
 Locking modes (isolation levels):
 
@@ -432,7 +431,7 @@ In-memory:
 ```python
 with sqlite3.connect(':memory:') as conn:
     ...
-
+```
 
 Python functions in SQL:
 ```python
@@ -444,12 +443,12 @@ with qlite3.connect(db_filename) as conn:
     conn.create_function('decrypt', 1, decrypt)
     cursor = conn.cursor()
     query = "SELECT id, decrypt(details) FROM task;"
-
+```
 
 Regexp:
 ```python
 query = "SELECT * FROM table WHERE column REGEXP'.*pattern.*';"
-
+```
 
 ## csv
 
@@ -470,12 +469,12 @@ GNU zlib compression.
 
 ```python
 compressed = zlib.compress(data, level)  # levels 0-9 
-
+```
 
 Checksums:
 ```python
 checksum = zlib.adler32(data)  # adler32, crc32
-
+```
 
 ## tarfile
 
@@ -507,7 +506,7 @@ Executors are used for managing pools of workers, and futures are used for manag
 with futures.ThreadPoolExecutor(max_workers=2) as ex:
     f = ex.submit(task, 5)
     result = f.result()
-
+```
 
 ## subprocess
 
@@ -519,7 +518,7 @@ import subprocess
 
 completed = subproces.run(['ls', '-l'])
 print(completed.returncode)
-
+```
 
 Pass PIPE for the stdout and stderr arguments to capture the output.
 
@@ -530,7 +529,7 @@ cat = subprocess.Popen(
 )
 
 print(cat.stdout)
-
+```
 
 Exit codes:
 
@@ -549,7 +548,7 @@ for t in main_thread.enumerate():
     if t is main_thread:
         continue
     ...
-
+```
 
 Event objects are a simple way to communicate between threads safely.
 
@@ -620,12 +619,12 @@ Does not require a central registar and can guarantee uniqueness across space an
 Compact:
 ```python
 json.dumps(data, separators=(',', ':'))
-
+```
 
 `json.tool` - command-line program for reformatting JSON data to be easier to read:
 ```bash
 python3 -m json.tool example.json
-
+```
 
 ## smtplib
 
@@ -670,7 +669,7 @@ Interface for the GNU readline library (useful for command line completion).
 Environment:
 ```bash
 LANG_en_US LC_CTYPE=en_US LC_ALL=en_US python3 ...
-
+```
 
 ## Developer tools
 
@@ -695,14 +694,14 @@ def test_with_subtest(self):
     for pat in ['a', 'B', 'c', 'D']:
         with self.subTest(pattern=pat):
             self.assertRegex('abc', pat)
-
+```
 
 `expectFailure`:
 ```python
 @unittest.expectedFailure
 def test_never_passes(self):
     self.assertTrue(False)
-
+```
 
 ## trace
 
@@ -712,12 +711,12 @@ import trace
 
 tracer = trace.Trace(count=False, trace=True)
 tracer.run('example(1)')
-
+```
 
 Or using the tool:
 ```console
 python3 -m trace example.py
-
+```
 
 ## pdb
 
@@ -741,7 +740,7 @@ Class browser: scan Python source files to find both classes and stand-alone fun
 
 ```python
 sys.stdin.read()
-
+```
 
 ## Importlib
 
@@ -773,7 +772,7 @@ def SomeExchange:
 
 
 exchange: ExchangeProtocol = SomeExchange()
-
+```
 
 Types can be then checked with `mypy`.
 
@@ -783,12 +782,12 @@ venv:
 ```console
 python3 -m venv .venv                             
 source .venv/bin/activate
-
+```
 
 docs:
 ```console
 pydoc -p 5000
-
+```
 
 ## Links
 

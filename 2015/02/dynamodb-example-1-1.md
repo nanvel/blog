@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-02-22T21:45
 place: Phuket, Thailand
-comments: true
 ---
 
 # DynamoDB in examples, Example 1.1: DDBTable class
@@ -51,7 +50,7 @@ if __name__ == '__main__':
     # output:
     # user_wallet table already exists.
     # {'user_id': '975ddae9-312e-472b-8aec-f7a3825132eb', 'balance': 100}
-
+```
 
 DDBTable and fields classes:
 ```python
@@ -253,11 +252,11 @@ class DDBTable(object):
             data[key] = self.FIELDS[key].decode(
                 val[self.FIELDS[key].AMAZON_TYPE])
         return data
-
+```
 
 If You use tornado, try [tornado-botocore](https://github.com/nanvel/tornado-botocore):
 ```python
 # pip install tornado-botocore
 from tornado_botocore import Botocore
-
+```
 to do requests asynchronously.

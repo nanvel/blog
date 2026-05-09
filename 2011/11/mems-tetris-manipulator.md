@@ -2,7 +2,6 @@
 tags: [blog, projects, microcontrollers]
 created: 2011-11-20T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Маніпулятор для гри у тетріс на базі МЕМС-акселерометра
@@ -132,7 +131,7 @@ int main(void)
   while(1);
   return 0;
 }
-
+```
 
 Тетріс був написаний ще влітку на Delphi, just for fun, потрібно було лише додати підтримку маніпулятора.
 

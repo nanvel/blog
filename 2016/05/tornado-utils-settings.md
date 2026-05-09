@@ -2,7 +2,6 @@
 tags: [blog, tornado]
 created: 2016-05-01T10:24
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Tornado utils. Settings
@@ -17,7 +16,7 @@ All settings located in the ```defines.py``` file, similar to what we have in op
 ```python
 # ...
 Setting(name='MY_SETTING', content_type=int, default=100, description="My setting.")
-
+```
 
 There are two ways to change the default setting value:
 
@@ -32,7 +31,7 @@ from project.settings import settings
 class MyClass:
 
     MY_CONST = settings.MY_SETTING
-
+```
 
 ## The implementation
 
@@ -48,10 +47,10 @@ Project structure:
   	   - models.py
   	   - tests.py
   	- __init__.py
-
+```
 
 ```project/app.py```:
-python
+```python
 from project.settings import settings
 
 from tornado.ioloop import IOLoop
@@ -73,11 +72,11 @@ if __name__ == '__main__':
     IOLoop.instance().start()
 ```
 
-project/project/settings/__init__.py```:
+```project/project/settings/__init__.py```:
 ```python
 from .models import *
 from .tests import *
-
+```
 
 project/project/defines.py:
 ```python
@@ -94,10 +93,10 @@ DEFINES = (
     Setting(name='DEBUG', content_type=bool, default=True, description="Enable debug mode."),
     Setting(name='PORT', content_type=int, default=8000, description="Port, default: 8000."),
 )
-
+```
 
 ```project/project/models.py```:
-
+```
 import os
 
 from tornado import options
@@ -215,7 +214,7 @@ class BooleanSettingType(SettingType):
 settings = Settings(defines=DEFINES)
 ```
 
-project/project/settings/tests.py```:
+```project/project/settings/tests.py```:
 ```python
 import os
 import sys
@@ -277,3 +276,4 @@ class TornadoSettingsTestCase(TestCase):
         if self.ENV_SETTING_NAME in os.environ:
             del os.environ[self.ENV_SETTING_NAME]
         sys.argv = list(self._sys_argv)
+```

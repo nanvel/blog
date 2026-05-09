@@ -2,7 +2,6 @@
 tags: [blog, css, js]
 created: 2012-11-25T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # CSS and JS notes
@@ -21,7 +20,7 @@ else if (docElm.mozRequestFullScreen) {
 else if (docElm.webkitRequestFullScreen) {
     docElm.webkitRequestFullScreen();
 }
-
+```
 
 Cancel fullscreen:
 ```js
@@ -34,7 +33,7 @@ else if (document.mozCancelFullScreen) {
 else if (document.webkitCancelFullScreen) {
     document.webkitCancelFullScreen();
 }
-
+```
 
 ## Unselectable text
 
@@ -48,7 +47,7 @@ else if (document.webkitCancelFullScreen) {
     -o-user-select: none;
     user-select: none;
 }
-
+```
 
 ## Remove outline
 
@@ -60,7 +59,7 @@ a {
 button::-moz-focus-inner {
     border: 0;
 }
-
+```
 
 ## Remove outline for button
 
@@ -68,7 +67,7 @@ button::-moz-focus-inner {
 $('button').focus(function(){
     $(this).blur();
 })
-
+```
 
 ## Place one image over another
 
@@ -78,7 +77,7 @@ html:
     <img src="http://host/img1.png" class="back">
     <img src="http://host/img2.png" class="front">
 </div>
-
+```
 
 css:
 ```css
@@ -97,35 +96,35 @@ css:
     top: 30px;
     left: 70px;
 }
-
+```
 
 ## Prevent putting IE into compatibility mode
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=8" />
-
+```
 
 ## Disable autocomplete
 
 ```html
 <input type="text" autocomplete="off">
-
+```
 
 ## Open link in new tab
 
 ```js
 window.open(url, '_blank');
 window.focus();
-
+```
 
 ## Check browser is Chrome
 
 ```js
 var is_chrome = /chrome/.test(navigator.userAgent.toLowerCase()
-
+```
 
 ## Submit form in new tab
 
 ```html
 <form target="_blank">...</form>
-
+```

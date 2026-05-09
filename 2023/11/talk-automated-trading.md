@@ -3,7 +3,6 @@ tags: [talk, trading]
 created: 2023-11-25T18:17
 modified: 2023-11-25T18:17
 place: Bangkok, Thailand
-comments: false
 ---
 
 # The Theory of Automated Trading

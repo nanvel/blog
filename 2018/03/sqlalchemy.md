@@ -3,7 +3,6 @@ tags: [draft, databases]
 created: 2018-03-08T14:04
 modified: 2018-03-08T14:04
 place: Phuket, Thailand
-comments: true
 ---
 
 # SQLAlchemy

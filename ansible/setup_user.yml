@@ -1,0 +1,25 @@
+---
+- hosts:
+  - server
+  vars_files:
+  - variables.yml
+  tasks:
+  - name: "project group"
+    become: yes
+    group:
+      name: "{{ project_group }}"
+      state: present
+  - name: "project user"
+    become: yes
+    user:
+      name: "{{ project_user }}"
+      shell: /bin/bash
+      groups: "{{ project_group }}"
+      append: yes
+  - name: "ssh directory"
+    become: yes
+    file:
+      path: "/home/{{ project_user }}/.ssh"
+      recurse: yes
+      owner: "{{ project_user }}"
+      state: directory

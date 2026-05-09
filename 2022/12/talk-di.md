@@ -3,7 +3,6 @@ tags: [talk, ruby, software-development, software-design]
 created: 2022-12-03T11:10
 modified: 2022-12-03T11:10
 place: Bangkok, Thailand
-comments: false
 ---
 
 # Dependency Injection with Dry::Container
@@ -327,7 +326,7 @@ if __FILE__ == $0
   remove_task.call(0)
   print_tasks.call
 end
-
+```
 
 Tests example:
 ```ruby
@@ -433,4 +432,4 @@ RSpec.describe 'A container test' do
     expect { print_tasks.call }.to output("- 1: Example text.\n").to_stdout
   end
 end
-
+```

@@ -3,7 +3,6 @@ tags: [draft, js, react]
 created: 2018-11-18T20:40
 modified: 2018-11-18T20:40
 place: Thailand, Phuket
-comments: true
 ---
 
 # React stack
@@ -36,7 +35,7 @@ fetch('http://...', {
 	},
 	body: JSON.stringify(...)
 })
-
+```
 
 ## Links
 

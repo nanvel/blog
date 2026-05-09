@@ -3,7 +3,6 @@ tags: [blog, workspace, life, gtd]
 created: 2014-01-19T00:00
 modified: 2024-01-01T20:05
 place: Phuket, Thailand
-comments: true
 ---
 
 # Workspaces

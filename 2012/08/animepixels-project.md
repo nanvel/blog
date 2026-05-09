@@ -3,7 +3,6 @@ tags: [blog, projects]
 created: 2012-08-18T00:00
 modified: 2014-07-09T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Animepixels project
@@ -137,7 +136,7 @@ Search by tags/colors/size was implemented.
 
 **UPD 2014-07-09**
 
-
+```
 Hey there,
 
 We have booted your server from the recovery mode.

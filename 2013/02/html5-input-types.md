@@ -2,7 +2,6 @@
 tags: [blog, html, js]
 created: 2013-02-18T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # HTML5 input types
@@ -36,7 +35,7 @@ In chromium I got following result:
         </script>
     </body>
 </html>
-
+```
 
 Links:
 

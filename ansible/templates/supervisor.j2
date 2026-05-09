@@ -1,0 +1,7 @@
+[program:{{ project_name }}]
+process_name={{ project_name }}
+directory={{ project_dir }}
+command={{ project_venv }}/bin/python engine/app.py --PORT={{ server_port }} --GITHUB_VALIDATE_IP=true --GITHUB_SECRET={{ github_secret }} --DEBUG=false --UPDATE_TIMEOUT=0
+user={{ project_user }}
+autostart=true
+autorestart=true

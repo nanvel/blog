@@ -2,7 +2,6 @@
 tags: [databases, dynamo-db]
 created: 2015-03-29T12:56
 place: KLIA2, Malaysia
-comments: true
 ---
 
 # DynamoDB in examples, Example 2.3: Pagination
@@ -57,7 +56,7 @@ if __name__ == '__main__':
     print(views, last)
     # [{'page_id': '83017f95-e4ca-4c25-a56b-d521897c0f70', 'user_id': 'e1b98531-b366-460a-8aca-994e03171a80', 'created': '2015-03-29 13:15:55.293803', 'page_id_user_id': '83017f95-e4ca-4c25-a56b-d521897c0f70_e1b98531-b366-460a-8aca-994e03171a80'}, {'page_id': '83017f95-e4ca-4c25-a56b-d521897c0f70', 'user_id': 'c3c728d5-1db0-465e-935c-0bcf34151546', 'created': '2015-03-29 13:15:55.355471', 'page_id_user_id': '83017f95-e4ca-4c25-a56b-d521897c0f70_c3c728d5-1db0-465e-935c-0bcf34151546'}]
     # {'page_id': {'S': '83017f95-e4ca-4c25-a56b-d521897c0f70'}, 'created': {'S': '2015-03-29 13:15:55.355471'}, 'page_id_user_id': {'S': '83017f95-e4ca-4c25-a56b-d521897c0f70_c3c728d5-1db0-465e-935c-0bcf34151546'}}
-
+```
 
 ^^ This way is preferable.
 
@@ -180,7 +179,7 @@ if __name__ == '__main__':
         limit=2)
     print(views)
     # [{'page_id': '02246f83-140b-4850-9893-967229a37aef', 'page_id_user_id': '02246f83-140b-4850-9893-967229a37aef_79603222-1e31-4b1e-93a9-381d90d00945', 'page_id_user_id_created': '02246f83-140b-4850-9893-967229a37aef_79603222-1e31-4b1e-93a9-381d90d00945_2015-03-29 13:36:07.714803', 'user_id': '79603222-1e31-4b1e-93a9-381d90d00945', 'created': '2015-03-29 13:36:07.714803'}, {'page_id': '02246f83-140b-4850-9893-967229a37aef', 'page_id_user_id': '02246f83-140b-4850-9893-967229a37aef_bc75c6b9-da95-4cec-b232-a0eac6a53033', 'page_id_user_id_created': '02246f83-140b-4850-9893-967229a37aef_bc75c6b9-da95-4cec-b232-a0eac6a53033_2015-03-29 13:36:07.692193', 'user_id': 'bc75c6b9-da95-4cec-b232-a0eac6a53033', 'created': '2015-03-29 13:36:07.692193'}]
-
+```
 
 Query response [limited to 1MB](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html).
 If You need to iterate through all query results:
@@ -230,4 +229,4 @@ if __name__ == '__main__':
         for j in range(3):
             ddb_page_view.view(page_id=random.choice(pages), user_id=user_id)
     ddb_page_view.scan_page_views(page_id=pages[0])
-
+```

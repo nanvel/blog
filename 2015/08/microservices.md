@@ -3,7 +3,6 @@ tags: [blog, microservices, software-development, distributed]
 created: 2015-08-09T14:28
 modified: 2016-03-05T16:34
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Notes on microservices

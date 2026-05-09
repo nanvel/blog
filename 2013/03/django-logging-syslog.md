@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2013-03-11T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # [Django] Logging to syslog
@@ -32,7 +31,7 @@ LOGGING = {
         },
     }
 }
-
+```
 
 If I want to use custom logger like this:
 ```python
@@ -41,7 +40,7 @@ import logging
 
 my_logger = logging.getLogger('myapp.mylogger')
 my_logger.info('Hi!')
-
+```
 
 I have to add the logger to LOGGING dict:
 ```python
@@ -57,7 +56,7 @@ I have to add the logger to LOGGING dict:
         'propagate': True,
     },
 }
-
+```
 
 Logging to syslog:
 ```python
@@ -83,7 +82,7 @@ from logging.handlers import SysLogHandler
             'propagate': True,
         },
     },
-
+```
 
 Logs will be available in ```/var/log/syslog```.
 

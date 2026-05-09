@@ -3,7 +3,6 @@ tags: [blog, html, web-development]
 created: 2016-12-02T09:28
 modified: 2016-12-02T09:28
 place: Phuket, Thailand
-comments: true
 ---
 
 # HTML header content
@@ -17,9 +16,8 @@ comments: true
 **/favicon.ico**
 
 ```html
-
-<link rel="shortcut icon" href="/templates/favicon.ico">
-
+<link rel="shortcut icon" href="/favicon.ico">
+```
 
 [Favicon](https://en.wikipedia.org/wiki/Favicon) was introduced in 1999 by Internet Explorer 5. Mostly deprecated in favor of favicon.png, but still a good fallback solution.
 
@@ -35,7 +33,7 @@ The `sizes` attribute was introduced in HTML5 to specify several different versi
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-
+```
 
 Sizes:
 
@@ -56,7 +54,7 @@ Sizes:
 
 ```html
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
+```
 
 **/mstile.png**
 
@@ -67,7 +65,7 @@ IE10:
 ```html
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
-
+```
 
 IE11: `/browserconfig.xml`
 
@@ -81,7 +79,7 @@ IE11: `/browserconfig.xml`
     </tile>
   </msapplication>
 </browserconfig>
-
+```
 
 Tile size: 270x270 is recommended.
 
@@ -91,7 +89,7 @@ Safari got pinned tabs in OS X 10.11. Safari pinned tabs use a new type of icon:
 
 ```html
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="orange">
-
+```
 
 `color` - hover color.
 
@@ -99,7 +97,7 @@ Safari got pinned tabs in OS X 10.11. Safari pinned tabs use a new type of icon:
 
 ```html
 <link rel="manifest" href="/manifest.json">
-
+```
 
 Came with Android Chrome M39.
 
@@ -121,7 +119,7 @@ Came with Android Chrome M39.
 	"theme_color": "#ffffff",
 	"display": "standalone"
 }
-
+```
 
 Images from the xml must be available: `android-chrome-192x192.png`, `android-chrome-512x512.png`.
 
@@ -129,7 +127,7 @@ Images from the xml must be available: `android-chrome-192x192.png`, `android-ch
 
 ```html
 <meta name="theme-color" content="#ffffff">
-
+```
 
 `theme-color` meta tag allows to set the toolbar color in Chrome for Android starting from version 39.
 
@@ -150,7 +148,7 @@ See [[2016/09/marketing#ideas-for-keywords|how to generate a list of keywords]].
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
 <meta property="og:description" content="Memorize hiragana and katakana with mnemonics and flash cards game">
-
+```
 
 [Image size](https://www.h3xed.com/web-and-internet/how-to-use-og-image-meta-tag-facebook-reddit) = ~1200x1200.
 

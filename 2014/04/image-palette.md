@@ -2,7 +2,6 @@
 tags: [blog, python, image-processing]
 created: 2014-04-07T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Image palette using PIL
@@ -56,4 +55,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+```

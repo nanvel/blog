@@ -2,7 +2,6 @@
 tags: [blog, databases]
 created: 2014-12-28T01:46
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Caching using redis get/setex issue
@@ -136,7 +135,7 @@ if __name__ == '__main__':
         from_cache,
         key=KEY, timeout=5, func=hard_task))
     logger.info('second result: {result}'.format(result=result))
-
+```
 
 Simple:
 ```text
@@ -148,7 +147,7 @@ console2$ python test_cache.py
 [I 141228 01:40:47 test_cache:106] Run hard task with value = 1
 [I 141228 01:40:49 test_cache:121] first result: 1
 [I 141228 01:40:49 test_cache:125] second result: b'1'
-
+```
 
 Optimized:
 ```text
@@ -159,4 +158,4 @@ console1$python test_cache.py
 console2$ python test_cache.py
 [I 141228 01:42:23 test_cache:121] first result: b'1'
 [I 141228 01:42:23 test_cache:125] second result: b'1'
-
+```

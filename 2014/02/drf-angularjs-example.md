@@ -2,7 +2,6 @@
 tags: [blog, django, angular-js]
 created: 2014-02-28T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Django, Django Rest Framework, AngularJS example project
@@ -25,17 +24,17 @@ source .env/bin/activate
 pip install -r requirements.txt
 make syncdb
 make migrate
-
+```
 
 ## 2. Install Django Rest Framework
 
 ```bash
 pip install djangorestframework
-
+```
 
 ```python
 INSTALLED_APPS += ('rest_framework',)
-
+```
 
 ## 3. Create accounts app and models
 
@@ -59,7 +58,7 @@ class ProfilePhoto(models.Model):
 
     def __unicode__(self):
         return self.title or 'noname'
-
+```
 
 ## 4. Profile api resource
 
@@ -90,7 +89,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
 router = routers.DefaultRouter()
 
 router.register(r'profile', ProfileViewSet)
-
+```
 
 ```python
 # urls.py
@@ -120,13 +119,13 @@ if settings.DEBUG:
 
 handler500 = 'profileedit.apps.core.views.handler500'
 handler404 = 'profileedit.apps.core.views.handler404'
-
+```
 
 Check it:
 ```bash
 make run
 firefox http://127.0.0.1:8000/api/
-
+```
 
 ![Django rest api web interface](djangorestapiweb.png)
 
@@ -174,7 +173,7 @@ firefox http://127.0.0.1:8000/api/
     </form>
 </div>
 {% endblock content %}
-
+```
 
 ## 6. AngularJS code
 
@@ -208,7 +207,7 @@ profileEditApp.controller('profileEditCtrl', function ($scope, $http) {
         });
     }
 });
-
+```
 
 ## 7. Show profile photos
 
@@ -274,7 +273,7 @@ router = routers.DefaultRouter()
 
 router.register(r'profile', ProfileViewSet)
 router.register(r'photo', ProfilePhotoViewSet)
-
+```
 
 ```js
 /* core.js */
@@ -300,7 +299,7 @@ profileEditApp.controller('profileEditCtrl', function ($scope, $http) {
         });
     }
 });
-
+```
 
 ## 8. Upload new photo
 
@@ -359,7 +358,7 @@ profileEditApp.controller('profileEditCtrl', function ($scope, $http) {
     </div>
 </div>
 {% endblock content %}
-
+```
 
 ```js
 /* core.js */
@@ -383,7 +382,7 @@ var uploader = new qq.FileUploader({
         });
     },
 });
-
+```
 
 The project on Bitbucket: [https://bitbucket.org/nanvel/profileedit](https://bitbucket.org/nanvel/profileedit).
 

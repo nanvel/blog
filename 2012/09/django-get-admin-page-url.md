@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2012-09-29T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # [Django] Get admin page url
@@ -19,14 +18,14 @@ from my_project.apps.my_app.models import MyModel
     url = reverse('admin:{app_label}_{model}_changelist'.format(
         app_label=content_type.app_label,
         model=content_type.model))
-
+```
 
 Other url-patterns:
 ```
 'admin:index'
 'admin:{app_label}_{model}_add'
 'admin:{app_label}_{model}_change' choice.id
-
+```
 
 UPD, simple helper:
 ```python
@@ -66,4 +65,4 @@ class AdminURLs(object):
 
 # usage:
 # url = AdminURLs.url(obj=user, action='change', id=123)
-
+```

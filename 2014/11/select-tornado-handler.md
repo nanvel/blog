@@ -2,7 +2,6 @@
 tags: [blog, tornado]
 created: 2014-11-22T11:21
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # Ways to select tornado handler depends on request content
@@ -11,7 +10,7 @@ Looks like I can't easily select handler depends on request content in new torna
 
 ```TypeError: issubclass() arg 1 must be a class -> AttributeError: '_RequestDispatcher' object has no attribute 'stream_request_body'```
 
-python
+```python
 from tornado import web, options, ioloop
 
 

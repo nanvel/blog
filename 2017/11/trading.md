@@ -3,7 +3,6 @@ tags: [blog, finance, crypto, trading]
 created: 2017-11-16T14:08
 modified: 2024-12-30T13:42
 place: Phuket, Thailand
-comments: true
 ---
 
 # Trading

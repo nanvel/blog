@@ -2,7 +2,7 @@
 """
 Preprocess blog markdown files:
   1. Convert frontmatter from custom format to Obsidian YAML (labels -> tags)
-  2. Convert /path and https://nanvel.name/path links to Obsidian [[path|text]]
+  2. Convert /path and https://blog.nanvel.com/path links to Obsidian [[path|text]]
 
 Usage:
   python preprocess.py           # dry-run: print changed files + diffs
@@ -79,8 +79,8 @@ def parse_frontmatter(content: str) -> tuple[dict[str, str | list[str]], str]:
             i += 1
             continue
 
-        # 8-space indented continuation (only meaningful for labels)
-        if line.startswith("        ") and current_key == "labels":
+        # 8-space or tab-indented continuation (only meaningful for labels)
+        if (line.startswith("        ") or line.startswith("\t")) and current_key == "labels":
             val = line.strip()
             if val:
                 current_values.append(val)
@@ -143,15 +143,17 @@ _FENCE_RE = re.compile(r"^```", re.MULTILINE)
 def convert_links(body: str) -> str:
     """Replace internal markdown links with Obsidian [[path|text]] links."""
 
-    # Split on code fences so we never touch content inside them
+    # Split on code fences. re.split consumes the ``` separator, so we must
+    # restore it before every part after the first (both opening and closing fences).
+    # parts[0], parts[2], parts[4] … are outside fences → process for links
+    # parts[1], parts[3], parts[5] … are inside fences  → leave untouched
     parts = _FENCE_RE.split(body)
-    # parts[0], parts[2], parts[4] … are outside fences
-    # parts[1], parts[3], parts[5] … are inside fences
     result = []
     for idx, part in enumerate(parts):
+        if idx > 0:
+            result.append("```")  # restore the consumed fence marker
         if idx % 2 == 1:
-            # inside a code block – restore the fence markers and leave alone
-            result.append("```" + part)
+            result.append(part)   # inside code block — leave as-is
         else:
             result.append(_LINK_RE.sub(_replace_link, part))
 

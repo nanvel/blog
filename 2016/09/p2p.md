@@ -3,7 +3,6 @@ tags: [draft, p2p, distributed]
 created: 2016-09-28T22:20
 modified: 2016-09-28T22:20
 place: Phuket, Thailand
-comments: true
 ---
 
 # Peer-to-peer network

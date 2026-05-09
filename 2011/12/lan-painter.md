@@ -2,7 +2,6 @@
 tags: [blog, projects, qt]
 created: 2011-12-01T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # Lan Painter project

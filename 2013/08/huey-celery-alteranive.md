@@ -2,7 +2,6 @@
 tags: [blog, task-queue]
 created: 2013-08-03T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Huey - a nice celery alternative
@@ -21,22 +20,22 @@ To make sure that task was successfully done, we will calculate ```datetime.now(
 Huey is available on PyPI:
 ```bash
 pip install huey
-
+```
 
 Also we'll need redis:
 ```bash
 pip install redis
-
+```
 
 requirements.txt:
 ```text
 Django==1.5.1
 huey==0.4.1
 redis==2.7.6
-
+```
 
 ```myproject/settings.py```:
-python
+```python
 HUEY = {
     'backend': 'huey.backends.redis_backend',  # required.
     'name': 'hueytest',
@@ -50,7 +49,7 @@ HUEY = {
 
 See more about huey settings in [it's documentation](http://huey.readthedocs.org/en/latest/django.html#huey-settings).
 
-myproject/apps/myapp/tasks.py```:
+```myproject/apps/myapp/tasks.py```:
 ```python
 import datetime
 import os
@@ -68,10 +67,10 @@ def hard_task():
         'time_%s.txt' % datetime.datetime.strftime(now, '%Y%d%m_%H%M%S'))
     with open(path, 'w') as f:
         f.write('Task done.')
-
+```
 
 ```myproject/apps/myapp/views.py```:
-python
+```python
 from django.shortcuts import render_to_response, redirect
 
 from .tasks import hard_task
@@ -87,12 +86,12 @@ def hardview(request):
 ```
 
 Running consumers:
-bash
+```bash
 python manage.py run_huey
 ```
 
 I got an error: ``No handlers could be found for logger "huey.consumer":``, but this can be easily fixed:
-python
+```python
 # myproject/settings.py:
 LOGGING = {
     'version': 1,
@@ -130,7 +129,7 @@ LOGGING = {
 ```
 
 Logs (see ```/var/logs/syslog```):
-text
+```text
 Jul 28 22:15:26 nanvel-ws Setting signal handler
 Jul 28 22:15:26 nanvel-ws Huey consumer initialized with following commands#012+ hard_task
 Jul 28 22:15:26 nanvel-ws 4 worker threads
@@ -154,14 +153,14 @@ Author advised us to use [supervisor](http://supervisord.org/): [https://github.
 
 So, let's install and configure it.
 
-bash
+```bash
 sudo pip install supervisor
 echo_supervisord_conf > supervisord.conf
 vim supervisord.conf
 ```
 
 Add this to supervisord.conf:
-text
+```text
 [program:huey]
 command=/home/deploy/envs/hueytest/.env/bin/python manage.py run_huey
 directory=/home/deploy/envs/hueytest
@@ -176,7 +175,7 @@ sudo service supervisord start
 ```
 
 Check is all ok:
-bash
+```bash
 sudo supervisorctl
 huey                             RUNNING    pid 31875, uptime 0:00:24
 supervisor> exit
@@ -186,14 +185,14 @@ deploy   31248  0.0  0.0  13584   920 pts/4    S+   22:24   0:00 grep --color=au
 ```
 
 Stopping process:
-bash
+```bash
 supervisor> stop huey
 huey: stopped
 supervisor> exit
 ```
 
 more commands:
-bash
+```bash
 supervisor> help
 
 default commands (type help <topic>):

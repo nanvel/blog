@@ -2,7 +2,6 @@
 tags: [blog, software-development]
 created: 2015-09-05T22:26
 place: Batumi, Georgia
-comments: true
 ---
 
 # Position/reverse/stop pagination
@@ -196,4 +195,4 @@ if __name__ == '__main__':
     # ['D3', 'D2']
     # Request cursor: cD0yJnI9dA==, limit: 2
     # ['D1', 'D0']
-
+```

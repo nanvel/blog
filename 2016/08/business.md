@@ -3,7 +3,6 @@ tags: [draft, business]
 created: 2016-08-30T10:20
 modified: 2021-10-12T21:51
 place: Phuket, Thailand
-comments: true
 ---
 
 # Business

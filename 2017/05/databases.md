@@ -3,7 +3,6 @@ tags: [draft, databases]
 created: 2017-05-10T12:38
 modified: 2023-12-26T19:34
 place: Phuket, Thailand
-comments: true
 ---
 
 # Databases
@@ -132,7 +131,7 @@ session_factory = sessionmaker(
         isolation_level="REPEATABLE",
     )
 )
-
+```
 
 [PostgreSQL isolation levels](https://www.postgresql.org/docs/current/transaction-iso.html).
 

@@ -154,7 +154,7 @@ tests
   conftest.py
   unit
   integration
-
+```
 
 Adapters (concrete implementations of an interface that goes from our system to the outside world):
 - Repository: abstraction around persistent storage.
@@ -292,7 +292,7 @@ class Order:
     order_id: int
     sku: Sku
     quantity: Quantity
-
+```
 
 ### Aggregates
 
@@ -432,7 +432,7 @@ class SqlAlchemyUnitOfWork(AbstractUnitOfWork):
 with uow:
     uow.my_entities.add(MyModel)
     uow.commit()
-
+```
 
 ### Domain Services
 

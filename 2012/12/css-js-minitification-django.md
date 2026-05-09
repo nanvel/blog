@@ -3,7 +3,6 @@ tags: [blog, django, css, js]
 created: 2012-12-05T00:00
 modified: 2014-04-02T00:00
 place: Alchevs'k, Ukraine
-comments: true
 ---
 
 # CSS and JS minification with django-pipeline
@@ -28,13 +27,13 @@ Read [the docs](http://django-pipeline.readthedocs.org/en/latest/index.html).
 requirements.txt:
 ```text
 django-pipeline
-
+```
 
 settings.py:
 ```python
 INSTALLED_APPS += ('pipeline',)
 STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
-
+```
 
 For settings I use directory based module, very usefull practice:
 ```
@@ -46,14 +45,14 @@ For settings I use directory based module, very usefull practice:
         - pipeline.py
         ...
     ...
-
+```
 
 Don't forget to include all settings files in ```__init__.py```:
 ```python
 from .admins import *
 from .pipeline import *
 ...
-
+```
 
 ## Step 2 (configure pipeline)
 
@@ -122,7 +121,7 @@ PIPELINE_COMPILERS = (
 PIPELINE_LESS_BINARY = '/usr/local/bin/lessc'
 
 PIPELINE_DISABLE_WRAPPER = True
-
+```
 
 [Read more](http://django-pipeline.readthedocs.org/en/latest/configuration.html) about configuration.
 
@@ -139,17 +138,17 @@ sudo gem install rubygems-update
 sudo gem update rubygems
 sudo gem install less
 sudo ln -s /var/lib/gems/1.8/bin/lessc /usr/bin/
-
+```
 
 Additionally for Debian:
 ```bash
 sudo gem install therubyracer
-
+```
 
 Install yui-compressor:
 ```bash
 sudo apt-get install yui-compressor
-
+```
 
 ## Step 4 (is it works?)
 
@@ -176,20 +175,20 @@ class RubyLesscCompiler(SubProcessCompiler):
             outfile
         )
         return self.execute_command(command, cwd=dirname(infile))
-
+```
 
 Check paths to binaries are right:
 ```python
 PIPELINE_YUI_BINARY = '/usr/bin/yui-compressor'
 PIPELINE_LESS_BINARY = '/usr/local/bin/lessc'
-
+```
 
 and fix them or create symbolic links.
 
 To test all works fine, run:
 ```
 manage.py collectstatic
-
+```
 
 On every change in .less files will generated file with same name but with .css extension, so we don't need to use less.js.
 I don't think You need to have automatically generated css files under version control, so just add them to .gitignore.
@@ -210,7 +209,7 @@ Load ```compressed``` template tag module and add compressed_css and compressed_
     {% compressed_js 'jquery' %}
     {% compressed_js 'weblog' %}
 {% endblock %}
-
+```
 
 Links:
 

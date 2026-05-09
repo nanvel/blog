@@ -2,7 +2,6 @@
 tags: [blog, django, projects]
 created: 2013-08-25T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # NicEdit widget for Django
@@ -20,12 +19,12 @@ django-nicedit on GitHub: [https://github.com/nanvel/django-nicedit](https://git
 To get the latest stable release from PyPi:
 ```bash
 pip install django-nicedit
-
+```
 
 To get the latest commit from GitHub:
 ```bash
 pip install -e git+git://github.com/nanvel/django-nicedit.git#egg=nicedit
-
+```
 
 Add nicedit to ```INSTALLED_APPS```:
 ```python
@@ -34,7 +33,7 @@ INSTALLED_APPS = (
     'south',
     'nicedit',
 )
-
+```
 
 Add nicedit URLs to ```urls.py```:
 ```python
@@ -42,21 +41,21 @@ urlpatterns = patterns('',
     ...
     url(r'^nicedit/', include('nicedit.urls')),
 )
-
+```
 
 Migrate database:
 ```bash
 python manage.py migrate nicedit
-
+```
 
 ```MEDIA_ROOT``` should be specified, example:
-python
+```python
 MEDIA_ROOT = os.path.join(os.path.dirname('__file__'), '../media')
 MEDIA_URL = '/media/'
 ```
 
 Add to urls configuration:
-python
+```python
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -67,7 +66,7 @@ if settings.DEBUG:
 
 ## Usage
 
-forms.py```:
+```forms.py```:
 ```python
 from django import forms
 
@@ -77,10 +76,10 @@ from nicedit.widgets import NicEditWidget
 class MessageForm(forms.Form):
     message = forms.CharField(
         widget=NicEditWidget(attrs={'style': 'width: 800px;'}))
-
+```
 
 ```views.py```:
-python
+```python
 from django.shortcuts import render
 
 from .forms import MessageForm
@@ -92,7 +91,7 @@ def home(request):
 ```
 
 template:
-django
+```django
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -111,7 +110,7 @@ django
 ```
 
 Usage in admin:
-python
+```python
 # -*- coding: utf-8 -*-
 from django import forms
 from django.contrib import admin

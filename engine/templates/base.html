@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}{% end %} - nanvel.name</title>
+    {% block meta %}{% end %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="/engine/templates/style.css?v=5" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34097174-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34097174-1');
+    </script>
+  </head>
+  <body>
+    <aside>
+      <a href="{{ reverse_url('index') }}" class="home">&#x1f3e1;</a>
+        {% block sidebar %}
+        {% end %}
+    </aside>
+    <section>
+      {% block content %}
+      {% end %}
+    </section>
+    <div style="clear: both;"></div>
+    <footer>&copy; 2011-{{ datetime.datetime.utcnow().strftime('%Y') }}, <a href="/pages/oleksandr-polieno">Oleksandr Polieno</a>. Powered by <a href="https://github.com/nanvel/c2p2" target="_blank">c2p2</a>.</footer>
+  </body>
+</html>

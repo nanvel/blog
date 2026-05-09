@@ -3,7 +3,6 @@ tags: [databases, distributed, talk, cassandra, dynamo-db]
 created: 2022-11-13T23:06
 modified: 2022-11-13T23:06
 place: Chiang Mai, Thailand
-comments: false
 ---
 
 # DynamoDB and Cassandra talk

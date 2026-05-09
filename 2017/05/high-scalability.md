@@ -3,7 +3,6 @@ tags: [draft, high-scalability, software-development]
 created: 2017-05-07T20:54
 modified: 2018-08-27T11:20
 place: Phuket, Thailand
-comments: true
 ---
 
 # High scalability

@@ -2,7 +2,6 @@
 tags: [blog, api]
 created: 2013-10-26T00:00
 place: Starobil's'k, Ukraine
-comments: true
 ---
 
 # Trac api
@@ -32,7 +31,7 @@ trac-admin /PATH_TO_TRAC/mytrac permission add <username> TRAC_ADMIN
 # test it
 tracd -p 8020 -s --basic-auth="*,/PATH_TO_TRAC/mytrac/.htpasswd,realm" /PATH_TO_TRAC/mytrac
 # navigate to http://127.0.0.1:8020
-
+```
 
 Using trac api to create a new ticket:
 ```python
@@ -57,7 +56,7 @@ if __name__ == '__main__':
         attributes
     )
     print 'Ticket #{ticket_id} was created'.format(ticket_id=ticket_id)
-
+```
 
 Result (navigate to ```http://127.0.0.1:8020/ticket/1```):
 

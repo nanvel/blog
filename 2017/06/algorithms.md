@@ -3,7 +3,6 @@ tags: [draft, algorithms]
 created: 2017-06-11T10:45
 modified: 2018-03-01T15:06
 place: Phuket, Thailand
-comments: true
 ---
 
 # Algorithms

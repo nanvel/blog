@@ -3,7 +3,6 @@ tags: [blog, django, testing]
 created: 2014-04-03T00:00
 modified: 2016-04-27T20:58
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # Testing Django applications
@@ -42,19 +41,19 @@ myapp
 -- test_models.py
 -- test_forms.py
 -- test_views.py
-
+```
 
 Prefix ```test_``` is useful when I try to find files with tests in sublime text using mutual search. And this splits tests from tests utils and factories files.
 
 ```tests/__init__.py``` have to looks like:
-python
+```python
 from .test_models import *
 from .test_forms import *
 from .test_views import *
 ```
 
 From here I want to strongly recommend to use relative imports to refer to files from current app:
-diff
+```diff
 + from ..models import MyModel
 - from myproject.myapp.models import MyModel
 ```
@@ -64,7 +63,7 @@ This one simple thing may make your app reusable.
 ## Names for tests and TestCases
 
 I like to use names like this:
-python
+```python
 from django.test import TestCase
 
 
@@ -83,7 +82,7 @@ class MyAppTagsTestCase(TestCase):
 ```
 
 So, if I want to run test for certain app models, I enter in shell:
-bash
+```bash
 python manage.py test myapp.MyAppModelsTestCase
 ```
 
@@ -95,7 +94,7 @@ A single test have to assert behavior of a single view, model, form, middlewar, 
 If particular code migrates from one test case to another, then we have to use base ```TestCase``` class or ```factories/utils```.
 For example, create user and login using his credentials. We can place this code into helper function:
 
-python
+```python
 from django.contrib.auth.models import User
 from django.test import TestCase
 
@@ -109,7 +108,7 @@ class MyAppBaseTestCase(TestCase):
 ```
 
 Bad thing here is that we hard coded username and password. But, a trick is to use password == username, so password are always available:
-python
+```python
 class MyViewTestCase(BaseTestCase):
 
     def test_my_view(self):
@@ -128,7 +127,7 @@ Another one - dajngo-any.
 
 Example of test without and with django-any:
 
-python
+```python
 # example models
 
 class Genre(models.Model):
@@ -178,7 +177,7 @@ class AnimeModelsTest(TestCase):
 ```
 
 django-any fills fields with valid data automatically:
-text
+```text
 slag = ltqltDNuEhBOEiFMmPCsdFTIhQOCiocoOykr
 ganre.caption = hbgZlPrrXMCQjYhxJZqKAoZCSwbboh
 ganre.description = ['Lorem ipsum dolor sit amet,
@@ -191,7 +190,7 @@ added_by = XGiY
 ```
 
 Or create your own factory:
-python
+```python
 from django.contrib.auth.models import User
 
 
@@ -213,7 +212,7 @@ class UserFactory(object):
 ```
 
 Usage:
-python
+```python
 user = UserFactory.create()
 ```
 
@@ -226,7 +225,7 @@ One more way to fill models with necessary data is fixtures. But using fixtures 
 Use it only if no other alternatives. Client executes a lot of code we don't want to test in this particular test. Tempate tags and filters, context processors, middlewares are examples of things to test where Client absolutely redundant.
 
 Don't do like this:
-python
+```python
 from django.test import TestCase
 from django.test.client import Client
 
@@ -237,7 +236,7 @@ class MyTestCase(TestCase):
         self.c = Client()
 ```
 
-self.client``` already available in django TestCase!
+```self.client``` already available in django TestCase!
 
 Sometimes Client can't be used and we have to find alternative ways to test our code, for example, my test for error pages:
 ```python
@@ -287,7 +286,7 @@ class TestErrorPages(TestCase):
         response = handler500(request)
         self.assertEqual(response.status_code, 500)
         self.assertIn('500 Internal Server Error', unicode(response))
-
+```
 
 ## ImageField with null == False in tests
 
@@ -317,20 +316,20 @@ class ImageFactory(object):
         f.name = 'testimage%d.png' % self.counter
         f.seek(0)
         return f
-
+```
 
 Or even easier way:
 ```python
 imgfile = StringIO('GIF87a\x01\x00\x01\x00\x80\x01\x00\x00\x00\x00ccc,\x00'
     '\x00\x00\x00\x01\x00\x01\x00\x00\x02\x02D\x01\x00;')
 imgfile.name = 'img.gif'
-
+```
 
 Don't forget to remove saved files from media folder:
 ```python
 path = my_mode_instance.image.path
 os.remove(path)
-
+```
 
 ## Patch/Mock
 
@@ -356,7 +355,7 @@ Mock is a black box that have every (roughly) methods and every properties we as
 >>> mock.my_method()
 'Hello!'
 # type help(Mock) to see all available features
-
+```
 
 In some tests there is not necessary to run particular parts of code (because their were already tested by another tests), we just need:
 
@@ -365,7 +364,7 @@ In some tests there is not necessary to run particular parts of code (because th
 - to know that method was executed with specified args
 
 ```mock.patch``` allows to do patching with easy, there are two ways to use it, as decorator and as context manager:
-python
+```python
 import datetime
 
 from mock import patch
@@ -377,14 +376,14 @@ def test_some_feature(self):
         # do something
 ```
 
-python
+```python
 @patch.object(timezone, 'now', return_value=datetime.datetime(2013, 2, 27)):
 def test_some_feature(self, mock_now):
     # do something
 ```
 
 Another example:
-python
+```python
 from mock import patch
 
 from google_analytics.models import GoogleAnalytics
@@ -415,7 +414,7 @@ def test_ga_event(self, TrackerMock):
 ```
 
 Not necessary to use ```mock.patch``` for patching, you can write your own context manager to patch your code:
-python
+```python
 from contextlib import contextmanager
 
 from mymodule import MyClass
@@ -442,7 +441,7 @@ def my_patch(value=1):
 First I test ```__unicode__``` method (just to create initial test case for model), and then add test for every new method.
 Don't save data to database when testing model methods:
 
-python
+```python
 # Bad
 mymodel = MyModel.objects.create(
     required_field1=value1, required_field2=valued2, field3=value3)
@@ -457,7 +456,7 @@ self.assertEqual(mymodel.some_method_uses_only_field3(), ...)
 
 Form is a place where mistakes frequently appears, and find them with test cost much less then if user find them on production.
 Form test example:
-python
+```python
 from django.test import TestCase
 
 from ..forms import ProfileForm
@@ -511,7 +510,7 @@ class ProfileFormTest(TestCase):
 ## Testing context processors
 
 Use RequestContext:
-python
+```python
 from django.template import RequestContext
 from django.test.client import RequestFactory
 
@@ -528,7 +527,7 @@ self.assertIn('MyVar', context)
 Create request using RequestFactory and pass it to middleware.
 Or create mock and pass it to middleware instead request.
 
-python
+```python
 from django.test.client import RequestFactory
 
 from .middlewares import MyMiddleware
@@ -544,7 +543,7 @@ Also you can check that middleware was included to ```MIDDLEWARE_CLASSES``` sett
 
 ## Testing template tags
 
-python
+```python
 from django.template import Template, Context
 
 
@@ -557,7 +556,7 @@ self.assertEqual(result, ...)
 ## Testing template filters
 
 Think about it like about function:
-python
+```python
 from .templatetags.myapp_tags import myfilter
 
 
@@ -570,7 +569,7 @@ self.assertEqual(result, ...)
 Use call_command to execute command.
 Use StringIO to obtain stdout/stderr.
 
-python
+```python
 from StringIO import StringIO
 
 from django.core.management import call_command

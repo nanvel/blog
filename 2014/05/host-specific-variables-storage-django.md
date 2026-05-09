@@ -2,7 +2,6 @@
 tags: [blog, django]
 created: 2014-05-11T00:00
 place: Kyiv, Ukraine
-comments: true
 ---
 
 # [Django] Where to store host specific variables
@@ -15,10 +14,10 @@ myproject/
         - __init__.py
         - default.py
         - local.py
-
+```
 
 ```__init__.py```:
-python
+```python
 from .default import *
 
 
@@ -30,7 +29,7 @@ except ImportError:
     logger.error("settings/local.py was not found!")
 ```
 
-local.py``` shouldn't be under git index.
+```local.py``` shouldn't be under git index.
 
 Useful practice to add few patterns of local.py for different hosts:
 
@@ -50,7 +49,7 @@ export VIRTUALENV_DISTRIBUTE=true
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 export SOME_VAR=someval
-
+```
 
 To make ```SOME_VAR``` available in ```django.conf.settings```:
 ```python
@@ -60,4 +59,4 @@ from sys import environ
 ...
 
 SOME_VAR = getattr(environ, 'SOME_VAR', <default value>)
-
+```

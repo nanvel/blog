@@ -3,7 +3,6 @@ tags: [draft]
 created: 2023-09-23T11:55
 modified: 2023-09-23T11:55
 place: Bangkok, Thailand
-comments: false
 ---
 
 # eXtreme Programming

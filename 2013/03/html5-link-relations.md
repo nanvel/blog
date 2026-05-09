@@ -2,7 +2,6 @@
 tags: [blog, html]
 created: 2013-03-05T00:00
 place: Starobilsk, Ukraine
-comments: true
 ---
 
 # HTML5 link relations
@@ -14,14 +13,14 @@ Regular links simply point to another page. Relations are a way to explain why i
 Link to stylesheet file.
 ```html
 <link rel="stylesheet" href="style.css" />
-
+```
 
 **rel=alternate**
 
 Link to RSS or Atom feed.
 ```html
 <link rel="alternate" type="application/atom+xml" title="My weblog feed" href="/feed/" />
-
+```
 
 **rel=archives**
 
@@ -42,9 +41,8 @@ Next blog post, etc.
 **rel=icon**
 
 ```html
-
-<link rel="shortcut icon" href="/templates/favicon.ico">
-
+<link rel="shortcut icon" href="/favicon.ico">
+```
 
 **rel=license**
 
