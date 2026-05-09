@@ -13,37 +13,40 @@
 {% endif %}
 {% endblock %}
 
-{% block sidebar %}
-<div class="sidebar-block">
-  <span class="block-title">Tags</span>
-  <ul class="tags">
-    {% for tag in page.tags %}
-      <li><a href="/tags/{{ tag }}/">{{ tag | replace('-', ' ') }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-<div class="sidebar-block">
-  <span class="block-title">Created</span>
-  <time datetime="{{ page.created.strftime('%Y-%m-%d') }}" pubdate>{{ page.created.strftime('%B %d, %Y') }}</time>
-</div>
-{% if page.modified and page.modified != page.created %}
-<div class="sidebar-block">
-  <span class="block-title">Modified</span>
-  <time datetime="{{ page.modified.strftime('%Y-%m-%d') }}">{{ page.modified.strftime('%B %d, %Y') }}</time>
-</div>
-{% endif %}
-<div class="sidebar-block">
-  <span class="block-title">Edit</span>
-  <a href="https://github.com/nanvel/blog/blob/master/{{ page.uri }}.md" target="_blank">&#x270D;&nbsp; edit on GitHub</a>
-</div>
-{% endblock %}
-
-{% block content %}
-  <article>
+{% block body %}
+<div class="lg:grid lg:grid-cols-[1fr_180px] lg:gap-14">
+  <article class="article-content min-w-0">
     {{ page.html | safe }}
-    <time datetime="{{ page.created.strftime('%Y-%m-%d') }}" pubdate></time>
-    <div class="license">
-      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="creative-commons">CC BY-SA 3.0</a>
+    <div class="mt-10 pt-6 border-t border-slate-100">
+      <p class="text-xs text-slate-400">
+        Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="hover:text-slate-600 transition-colors">CC BY-SA 3.0</a>
+      </p>
     </div>
   </article>
+  <aside class="mt-10 lg:mt-1 space-y-6 text-sm">
+    {% if page.tags %}
+    <div>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Tags</h2>
+      <div class="flex flex-wrap gap-1.5">
+        {% for tag in page.tags %}
+        <a href="/tags/{{ tag }}/" class="px-2.5 py-1 text-xs rounded-full bg-slate-100 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">{{ tag | replace('-', ' ') }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    <div>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-1.5">Published</h2>
+      <time datetime="{{ page.created.strftime('%Y-%m-%d') }}" pubdate class="text-slate-600">{{ page.created.strftime('%b %d, %Y') }}</time>
+    </div>
+    {% if page.modified and page.modified != page.created %}
+    <div>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-1.5">Updated</h2>
+      <time datetime="{{ page.modified.strftime('%Y-%m-%d') }}" class="text-slate-600">{{ page.modified.strftime('%b %d, %Y') }}</time>
+    </div>
+    {% endif %}
+    <div>
+      <a href="https://github.com/nanvel/blog/blob/master/{{ page.uri }}.md" target="_blank" class="text-xs text-slate-400 hover:text-slate-700 transition-colors">Edit on GitHub →</a>
+    </div>
+  </aside>
+</div>
 {% endblock %}

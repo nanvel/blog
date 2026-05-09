@@ -6,20 +6,22 @@ modified: 2021-10-02T14:34
 
 # Oleksandr Polieno aka nanvel
 
-I can be called a computer geek. Computers and programming is something that I am ready to read, listen, watch, talk about forever. I am amazed by the speed of information technologies evolution, and how much it is changing our World. I can't stand apart from the so interesting things.
+Computer geek. Programming, systems, and how technology shapes the world —
+endlessly fascinating topics that never get old.
 
-I consider myself an engineer. It is not enough for me to know that it works properly, I need to know how and why it works. This knowledge makes me happy. Knowing that it works the way conceived by me makes me much happier. My goal - control, complexity - just the price I pay for the goal.
+Engineering mindset: knowing something works isn't quite enough; understanding
+*how* and *why* matters more. That curiosity drives most of what ends up here,
+even when it means wading through a lot of complexity.
 
-Why do I need a blog:
+Why this blog exists:
 
-- I do not remember, so I remember it all (I write all)
-- I do not repeat
-    - I don't need to learn something again, I'll quickly remember that looking at my notes
-    - I don't need to answer questions, I can refer to the site where answers are
-- I share experience
-- I delve deeper into issue while writing about it
+- Notes make it easy to revisit something instead of relearning it from scratch
+- Pointing people to a post beats explaining the same thing repeatedly
+- Writing forces deeper thinking on a topic
+- A place to share what's been learned along the way
 
-`Nanvel` is an engineer name from `Bern Up! Excess` anime, who creates things those amaze others.
+`Nanvel` is an engineer character from the anime `Burn Up! Excess`, known for
+building things that surprise people.
 
 I am on:
 
