@@ -17,7 +17,8 @@ comments: true
 **/favicon.ico**
 
 ```html
-<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="shortcut icon" href="/templates/favicon.ico">
 ```
 
 [Favicon](https://en.wikipedia.org/wiki/Favicon) was introduced in 1999 by Internet Explorer 5. Mostly deprecated in favor of favicon.png, but still a good fallback solution.

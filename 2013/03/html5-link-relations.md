@@ -41,7 +41,8 @@ Next blog post, etc.
 **rel=icon**
 
 ```html
-<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="shortcut icon" href="/templates/favicon.ico">
 ```
 
 **rel=license**

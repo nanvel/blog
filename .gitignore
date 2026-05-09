@@ -1,6 +1,4 @@
 .DS_Store
 .idea
-venv
 .venv
 *.retry
-local_*
