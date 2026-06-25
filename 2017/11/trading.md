@@ -840,6 +840,7 @@ Journals:
 - [Trademetria](https://www.trademetria.com/)
 - [EdgeWonk](https://edgewonk.com/)
 - [Trader's Diary](https://fsr-develop.com/)
+- [Tradonite](https://tradonite.com/)
 
 Open source:
 
