@@ -7,6 +7,8 @@ place: Bangkok, Thailand
 
 # AI Agents
 
+Agent ~= control flow defined by LLM.
+
 An AI agent is a software system that can perceive its environment,
 make decisions, and take actions to achieve specific goals with some degree of autonomy.
 
@@ -26,6 +28,12 @@ Human vs agent:
 - Emotional intelligence
 - Leadership
 - Ethical oversight
+
+Kinds of agents:
+
+- Router
+- Fully autonomous
+- Developer intuition + LLM control
 
 ## Design Patterns
 
@@ -64,3 +72,4 @@ Reasoning - the cognitive process of drawing conclusions, making inferences, and
 [Goose Architecture](https://block.github.io/goose/docs/goose-architecture/)
 [AI Engineering](https://www.amazon.com/AI-Engineering-Building-Applications-Foundation-ebook/dp/B0DPLNK9GN/) by Chip Huyen
 [Agentic AI Design Patterns](https://www.linkedin.com/pulse/agentic-ai-design-patterns-satyam-mittal-wamrc/) by Satyam M.
+[LangChain Academy](https://academy.langchain.com/collections)

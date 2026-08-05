@@ -204,13 +204,17 @@ modified: 2023-01-14T19:09
 - [+] Unknown Market Wizards by Jack D. Schwager
 - [+] The New Trading for a Living by Alexander Elder
 - Mastering the Trade by John Carter
-- [The Rust Prograsmming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
 
 ## 2025
 
 - [+] A Man for All Markets by Edward Thorp
 - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurelien Geron
 - [+] Agentic Artificial Intelligence by Pascal Bornet
+
+## 2026
+
+- The Art of Thinking Clearly by Rolf Dobelli
 
 ## In progress
 
