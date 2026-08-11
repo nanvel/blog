@@ -214,10 +214,10 @@ modified: 2023-01-14T19:09
 
 ## 2026
 
-- The Art of Thinking Clearly by Rolf Dobelli
-
 ## In progress
 
+- Agentic Engineering at Scale by Chris Ford
+- The Art of Thinking Clearly by Rolf Dobelli
 - AI Engineering by Chip Huyen
 - Build a Large Language Model (From Scratch) by Sebastian Raschka
 - Software Architecture: The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani

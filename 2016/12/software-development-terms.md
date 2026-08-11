@@ -50,6 +50,11 @@ Code smell - a symptom of bad OO design. Smells are certain structures in the co
 
 Vote for simple specific. [[2015/10/principles-software#kiss|KISS]].
 
+## Complex vs complicated
+
+Complex systems have emergent behavior that must be probed holistically.
+Complicated systems are dense and obscure, but knowable with enough inspection.
+
 ## Composition vs inheritance
 
 > Favor object composition over class inheritance.
@@ -81,6 +86,10 @@ A form of polymorphism where functions operate on any object that implements the
 ## Functional programming
 
 It is a declarative programming paradigm, which means programming is done with expressions.
+
+## Grep walk
+
+Tracing a concept through variable names, references, modules, and call sites until a rough model of the system begins to emerge.
 
 ## Hacker
 

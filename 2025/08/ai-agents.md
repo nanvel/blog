@@ -60,6 +60,9 @@ Benefits of multi-agent:
 - Parallel execution -> less latency (chained -> higher latency)
 - Easier to test
 
+## Coding Agent Harness
+
+
 ## Vocabulary
 
 Reasoning - the cognitive process of drawing conclusions, making inferences, and forming judgments based on available information, evidence, or premises. Thinking in a logical way.
@@ -73,3 +76,4 @@ Reasoning - the cognitive process of drawing conclusions, making inferences, and
 [AI Engineering](https://www.amazon.com/AI-Engineering-Building-Applications-Foundation-ebook/dp/B0DPLNK9GN/) by Chip Huyen
 [Agentic AI Design Patterns](https://www.linkedin.com/pulse/agentic-ai-design-patterns-satyam-mittal-wamrc/) by Satyam M.
 [LangChain Academy](https://academy.langchain.com/collections)
+[Agentic Engineering at Scale by Chris Ford]([https://www.oreilly.com/library/view/agentic-engineering-at/0642572344306/](https://www.oreilly.com/library/view/agentic-engineering-at/0642572344306/))
